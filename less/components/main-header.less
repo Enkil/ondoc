@@ -1,0 +1,65 @@
+.main-header{
+  background-color: @white-color;
+  box-shadow: 2px 0px 2px rgba(0,0,0,0.3);
+  z-index: 20;
+
+  &__logo{
+
+  }
+
+  &__question{
+    line-height: 21px;
+
+    &:before{
+      content: "";
+      width: 15px;
+      height: 22px;
+      padding-right: 21px;
+      margin-bottom: 5px;
+      line-height: 63px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-lamp.png) no-repeat;
+    }
+  }
+
+  &__menu{
+
+  }
+
+  &__link{
+    .gotham-m;
+    font-size: 16px;
+    line-height: 63px;
+    color: @blue-color;
+    transition: 0.2s ease all;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+
+    &--logotext{
+      .gotham-m;
+      font-size: 22px;
+      color: @black-color;
+      font-weight: bold;
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    &--dropdown{
+      &:after{
+        content: "";
+        width: 10px;
+        height: 6px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/arrow-down.png) no-repeat;
+      }
+    }
+  }
+}

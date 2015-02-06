@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<!-- Заголовок страницы -->
-    <title>LK-monitoring</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Описание страницы">
-    <meta name="keywords" content="Ключевые слова">
+<head>
+  <title>LK-monitoring</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- HTML5 Shim IE8 support of HTML5 elements -->
-    <!--[if IE]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- Верхняя шапка -->
-    <header class="header">
-      <div class="container">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Описание страницы">
+  <meta name="keywords" content="Ключевые слова">
 
-        <div class="row">
-          <div class="col-2">
-            <a href="index.html" class="header_logo" title="OnDoc">
-              <img src="img/main-logo.png" alt="OnDoc" />
+  <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+  <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+  <meta property="og:url" content="http://ondoc.me"/>
+  <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+  <meta name="description" content="Крактое описание страницы в микроразметке"/>
+  <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+</head>
+<body>
+
+  <!-- PAGE HEADER -->
+  <header class="main-header">
+    <div class="container">
+      <div class="row">
+
+        <!-- Logo -->
+        <div class="col-xs-7">
+          <a class="main-header__logo main-header__link main-header__link--logotext" href="index.html" title="OnDoc - Персональное здравоохранение">
+            <img class="" src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+            <span class="hidden-xs hidden-sm" title="OnDoc - Персональное здравоохранение">OnDoc</span>
+          </a>
+        </div>
+
+        <!-- Question -->
+        <div class="col-xs-17">
+          <a href="#" class="main-header__link main-header__question">С чего начать?</a>
+        </div>
+
+        <!-- Profile -->
+        <div class="col-xs-12 pull-right">
+          <div class="dropdown pull-right">
+            <img class="" src="img/avatar.png" alt="Смирнов Иван"/>
+            <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
+              Смирнов Иван
             </a>
-          </div>
-          <div class="col-7">
-            <a href="#" class="question icon-lamp">С чего начать?</a>
-          </div>
-          <div class="col-3">
-            <div class="profile-menu pull-right">
-              <img src="img/avatar.png" class="avatar" alt="Смирнов Иван" />
-              <a href="#" class="profile-link dropdown-menu-link icon-arrow">Смирнов Иван</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Пункт 1</a></li>
-                <li><a href="#">Пункт 2</a></li>
-                <li><a href="#">Пункт 3</a></li>
-              </ul>
-            </div>
+            <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
+            </ul>
           </div>
         </div>
-      
+
+
       </div>
-    </header>
+    </div>
+  </header>
+  <!-- / PAGE HEADER -->
 
     <!-- Общий сблок -->
     <div class="main-page">
       <div class="container">
-        <div class="row main-row-customize">
-          <aside class="col-2 col-2-cust">
-            <!-- Боковая панель -->
+        <!--<div class="row main-row-customize">-->
+        <div class="row">
+
+          <!-- Left Sidebar -->
+          <aside class="col-xs-7 ">
+
             <div class="sidebar">
-              <!-- Блок с фото и именем -->
-              <div class="sidebar_profile">
-                <div class="profile-avatar">
-                  <img src="img/big-avatar.png" alt="Смирнов Иван" />
-                </div>
-                <p class="profile-name">Смирнов Иван</p>
+
+              <!-- Profile -->
+              <div class="sidebar__profile bottom-line-light text-center">
+                <img class="sidebar__avatar img-responsive" src="img/big-avatar.png" alt="Смирнов Иван" title="Смирнов Иван"/>
+                <p class="sidebar__name">Смирнов Иван</p>
               </div>
-              <!-- Навигация -->
-              <ul class="sidebar_menu">
-                <li class="menu-link"><a href="index.html" class="icon icon-heart">Состояние здоровья</a></li>
-                <li class="menu-link current"><a href="monitoring.html" class="icon icon-monitor">Монитор показателей</a></li>
-                <li class="menu-link"><a href="#" class="icon icon-cart">Медицинская карта</a></li>
-                <li class="menu-link"><a href="#" class="icon icon-data">Медицинские данные</a></li>
-                <li class="menu-link"><a href="#" class="icon icon-doctor">Врачи и клиники</a></li>
-                <li class="menu-link"><a href="#" class="icon icon-bonus">ВитаБонус</a></li>
-              </ul>
+
+              <!-- Menu -->
+              <div class="sidebar__menu">
+                <ul class="sidebar__menu-list">
+                  <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="index.html">Состояние здоровья</a></li>
+                  <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                  <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="">Медицинская карта</a></li>
+                  <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                  <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor" href="">Врачи и клиники</a></li>
+                  <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                </ul>
+              </div>
+
             </div>
+
           </aside>
-          <section class="col-10 col-10-cust">
+          <!-- / Left Sidebar -->
+
+
+          <section class="col-xs-29">
             <div class="row">
-              <div class="col-4">
+
+              <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
                     <p class="icon icon-pulse">Пульс <a href="monitoring-in.html" class="plus"></a></p>
@@ -108,7 +137,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+
+              <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
                     <p class="icon icon-pressure">Давление <a href="#" class="plus"></a></p>
@@ -145,7 +175,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+
+              <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
                     <p class="icon icon-weight">Вес <a href="#" class="plus"></a></p>
@@ -182,9 +213,13 @@
                   </div>
                 </div>
               </div>
+
             </div>
+
+
             <div class="row">
-              <div class="col-4">
+
+              <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
                     <p class="icon icon-sugar">Сахар <a href="#" class="plus"></a></p>
@@ -241,7 +276,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+
+              <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
                     <p class="icon icon-temperature">Температура <a href="#" class="plus"></a></p>
@@ -278,7 +314,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+
+              <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
                     <p class="icon icon-cholesterol">Холестерин <a href="#" class="plus"></a></p>
@@ -312,16 +349,16 @@
                   </div>
                   <div class="views">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-xs-9">
                         <a href="#" class="current">Общий</a>
                       </div>
-                      <div class="col-4">
+                      <div class="col-xs-12">
                         <a href="#">ЛПНП</a>
                       </div>
-                      <div class="col-3">
+                      <div class="col-xs-12">
                         <a href="#">ЛПВП</a>
                       </div>
-                      <div class="col-2">
+                      <div class="col-xs-6">
                         <a href="#">ТГ</a>
                       </div>
                     </div>
@@ -332,6 +369,7 @@
                 </div>
               </div>
             </div>
+
             <div class="settings">
               <a href="#" class="icon-setting">Настроить виджеты</a>
             </div>
@@ -340,11 +378,20 @@
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="copyright">OnDoc — система персонального здравоохранения</p>
+  <!-- PAGE FOOTER-->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <p class="main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <!-- / PAGE FOOTER-->
+
+  <!-- JavaScript-->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- / JavaScript -->
     
     <script src="js/libraries.js" ></script>
 
@@ -387,5 +434,5 @@
     </script>
     
     
-  </body>
+</body>
 </html>

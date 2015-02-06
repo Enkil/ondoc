@@ -1,0 +1,377 @@
+// Main content header with sorting links
+.content-header{
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  // Back link
+  &__back{
+    .gotham-m;
+    font-size: 15px;
+    color: @blue-color;
+    transition: 0.2s ease all;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+
+    &:before{
+      content: "";
+      width: 10px;
+      height: 17px;
+      margin-right: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-back.png) no-repeat
+    }
+  }
+
+  // Sorting links
+  &__sort-link{
+    .gotham-m;
+    font-size: 15px;
+    color: @blue-color;
+    transition: 0.2s ease all;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+
+    // Filter
+    &--filter{
+      &:before{
+        content: "";
+        width: 10px;
+        height: 12px;
+        padding-right: 16px;
+        display: inline-block;
+        background: url(../img/icon-filter.png) no-repeat;
+      }
+
+      &:after{
+        content: "";
+        width: 10px;
+        height: 6px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/arrow-down.png) no-repeat;
+      }
+    }
+  }
+}
+
+// Widgets of page main block
+
+.widget{
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+  &__header{
+
+  }
+
+  &__head-text{
+    .gotham-m;
+    font-size: 15px;
+    line-height: 60px;
+    display: inline-block;
+    margin-bottom: 0;
+
+    &:before{
+      content: "";
+      width: 14px;
+      height: 22px;
+      padding-right: 22px;
+      padding-bottom: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-consultation.png) no-repeat;
+    }
+  }
+
+  &__add-btn{
+    line-height: 60px;
+    margin-right: 15px;
+
+    &:hover{ opacity: 0.6; }
+  }
+
+  &__tabs-list{
+    padding-bottom: 55px;
+    height: 975px;
+    overflow: auto;
+  }
+
+  // Left tab in tabs list
+  &__tab{
+    padding: 20px 15px 15px 20px;
+    overflow: hidden;
+    
+    &:hover{
+      color: @red-color;
+      text-decoration: none;
+    }
+
+    &--active{
+      background-color: @lightblue-bg;
+
+      &:hover{
+        color: @black-color;
+        text-decoration: none;}
+    }
+
+    &-title{
+      .gotham-m;
+      font-size: 17px;
+      line-height: 21px;
+      letter-spacing: -0.2px;
+      margin: 0 0 12px 0;
+    }
+
+    &-description{
+      .gotham;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: -0.2px;
+    }
+
+    &-clinic{
+      .gotham;
+      font-size: 11px;
+      line-height: 14px;
+      letter-spacing: -0.2px;
+      color: rgba(0,0,0,.5);
+
+      &:before{
+        content: "";
+        width: 12px;
+        height: 13px;
+        padding-right: 18px;
+        padding-bottom: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/icon-widget-tab-clinic.png) no-repeat;
+      }
+    }
+
+    &-date{
+      .gotham;
+      font-size: 11px;
+      line-height: 14px;
+      letter-spacing: -0.2px;
+      color: rgba(0,0,0,.5);
+
+      &:before{
+        content: "";
+        width: 12px;
+        height: 13px;
+        padding-right: 18px;
+        padding-bottom: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/icon-widget-tab-date.png) no-repeat;
+      }
+    }
+  }
+
+  // Right form block
+  &__form-title{
+    .gotham-m;
+    font-size: 17px;
+    line-height: 65px;
+  }
+
+  &__head-links{
+    height: 70px;
+    display: table;
+  }
+
+  //  Links in head of form
+  &__head-link{
+    .gotham-m;
+    vertical-align: middle;
+    font-size: 15px;
+    padding-right: 42px;
+    padding-left: 42px;
+    color: @blue-color;
+    transition: 0.2s ease all;
+    display: table-cell;
+    width: 120px;
+    height: 70px;
+    margin: 0 auto;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+  }
+
+  // Links in form
+  &__form-link{
+    .gotham-m;
+    font-size: 15px;
+    color: @blue-color;
+    transition: 0.2s ease all;
+    display: inline-block;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+  }
+
+  // Descriptions in form
+  &__form-description-line{
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 35px auto 30px;
+      z-index: 5;
+    }
+  }
+
+  &__form-description{
+    .gotham;
+    display: inline-block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.2);
+    background-color: @white-color;
+    padding: 0 15px 0 15px;
+    z-index: 10;
+    position: relative;
+  }
+
+  // Form inputs
+  &__form{
+
+  }
+
+  &__textarea{
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 22px;
+    margin-bottom: 10px;
+    width: 93%;
+    display: block;
+    padding-top: 15px;
+    padding-left: 15px;
+    .gotham;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.2);
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+
+    // Soft slide-down placeholder
+    &::-webkit-input-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+
+    &::-moz-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+    &
+    :-ms-input-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+
+    &::placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus::-webkit-input-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus::-moz-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus:-ms-input-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus::placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+  }
+
+  // Upload icon
+  &__upload{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 45px;
+    margin-bottom: 50px;
+  }
+
+  &__upload-input{
+    opacity: 0;
+    display: none!important;
+  }
+
+  &__upload-icon{
+    color: @blue-color;
+    position: relative;
+    margin-top: 15px;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 41px;
+      height: 31px;
+      display: inline-block;
+      background: url(../img/icon-photo.png) no-repeat;
+
+      position: absolute;
+      left: -16px;
+      top: -9px;
+    }
+  }
+
+  &__submit-btn{
+    .gotham;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 35px;
+    color: @blue-color;
+    border-radius: 15px;
+    border: 1px solid @blue-color;
+    height: 35px;
+    width: 110px;
+    transition: 0.2s ease all;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: @white-color;
+
+    &:hover{
+      color: #fff;
+      background: @blue-color;
+    }
+    &:active{
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      outline: none;
+    }
+
+    &--yes{
+      .gotham-m;
+      width: 100px;
+    }
+  }
+}
