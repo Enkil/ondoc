@@ -422,6 +422,7 @@
                 <span>Вес</span>
               </label>
             </div>
+
             <div class="item">
               <input type="checkbox" id="check4" checked/>
               <label for="check4">
@@ -429,6 +430,7 @@
                 <span>Температура</span>
               </label>
             </div>
+
             <div class="item item-disabled">
               <input type="checkbox" id="check5" disabled/>
               <label for="check5">
@@ -436,6 +438,7 @@
                 <span>Сахар</span>
               </label>
             </div>
+
             <div class="item">
               <input type="checkbox" id="check6"/>
               <label for="check6">
@@ -444,9 +447,17 @@
               </label>
             </div>
           </div>
-          <div class="buttons">
-            <a href="#" class="btn">Отмена</a>
-            <input type="button" class="btn" value="ОК" />
+          <!--<div class="buttons">-->
+            <!--<a href="#" class="btn">Отмена</a>-->
+            <!--<input type="button" class="btn" value="ОК" />-->
+          <!--</div>-->
+
+          <!-- Submit form -->
+          <div class="row">
+            <div class="col-xs-36 text-center">
+              <input type="submit" form="form" class="widget__submit-btn" value="Отмена"/>
+              <input type="submit" form="form" class="widget__submit-btn widget__submit-btn--yes" value="OK"/>
+            </div>
           </div>
 
           <span class="icon-exit"></span>
@@ -490,7 +501,11 @@
       $('ul.tabs').on('click', 'li:not(.current)', function() {  
           $(this).addClass('current').siblings().removeClass('current')  
             .parents('.tabs-section').find('div.graph').eq($(this).index()).fadeIn(150).siblings('div.graph').hide();  
-      })  
+      })
+
+      $('.icon-exit').click(function (){
+        $('.settings-block').toggleClass('display-none');
+      })
 
     </script>
 

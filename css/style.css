@@ -975,8 +975,9 @@ input[type="button"] {
   background: rgba(0, 0, 0, 0.6);
 }
 .settings-block .widgets-block {
+  display: table;
+  padding-bottom: 24px;
   width: 425px;
-  height: 460px;
   background: #fff;
   position: fixed;
   top: 0;
@@ -998,7 +999,7 @@ input[type="button"] {
   margin-top: 24px;
 }
 .settings-block .buttons .btn {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .settings-block .btn {
   font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -1029,6 +1030,9 @@ input[type="button"] {
 }
 .settings-block .icon-exit:hover {
   opacity: 0.7;
+}
+.items-block {
+  margin-bottom: 30px;
 }
 .items-block .item {
   width: 98px;
@@ -1396,6 +1400,7 @@ input[type="button"] {
 }
 /* Пагинация */
 .pagination {
+  display: block !important;
   padding: 18px 15px 0;
 }
 .pagination .customize-select {
@@ -9101,6 +9106,9 @@ button.close {
   text-decoration: none;
   color: #00b8f5;
   outline: none;
+}
+.display-none {
+  display: none;
 }
 @font-face {
   font-family: 'Gotham-Medium';
