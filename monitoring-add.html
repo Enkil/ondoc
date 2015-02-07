@@ -589,11 +589,7 @@
         $(this).css('display', 'none');
       });
 
-//      $(".widget .exit").click(function () {
-//        $(".description").removeClass('current');
-//        $(".widget .plus").css('display', 'inherit');
-//      });
-
+      // Change widget on exit button
       $(".widget .exit").click(function () {
         $(this).parents(".widget").find(".description").removeClass('current');
         $(this).parents(".widget").find('.plus').css('display', 'block');
