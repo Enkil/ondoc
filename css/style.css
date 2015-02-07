@@ -493,10 +493,16 @@ input[type="button"] {
   list-style-type: none;
   cursor: pointer;
   padding: 18px 32px 17px 0px;
-  position: relative;
+  background-image: url(../img/list-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
 }
 .widget-list .list-item a {
   display: block;
+}
+.widget-list .list-item--time {
+  background-image: none;
+  position: relative;
 }
 .widget-list .list-item.active {
   background-color: #e8f6fa;
@@ -772,6 +778,7 @@ input[type="button"] {
   font-size: 16px;
   display: inline-block;
   vertical-align: middle;
+  margin: 0;
 }
 .recomendations-widget .progress-block {
   width: 290px;
@@ -930,6 +937,9 @@ input[type="button"] {
 }
 .description-block .list {
   text-align: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 .description-block .diagnosis p {
   padding-right: 10px;

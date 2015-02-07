@@ -346,8 +346,15 @@
 	  	list-style-type: none;
 		cursor: pointer;
 		padding: 18px 32px 17px 0px;
-	  position: relative;
+		background-image: url(../img/list-arrow.png);
+		background-repeat: no-repeat;
+		background-position: 92% 50%;
 		a{ display: block; }
+
+	  	&--time{
+		  background-image: none;
+		  position: relative;
+		}
 
 		&.active{
 			background-color: #e8f6fa;
@@ -620,6 +627,7 @@
 		font-size: 16px;
 		display: inline-block;
 		vertical-align: middle;
+	  margin: 0;
 	}
 	.progress-block{
 		width: 290px;
@@ -759,7 +767,14 @@
 		padding-left: 15px;
 		li{ list-style-type: disc; }
 	}
-	.list{ text-align: center; }
+	.list{
+	  text-align: center;
+
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+
+	}
 	.diagnosis p{ padding-right: 10px; }
 	.training{ text-align: center; }
 	.clinic-title{
