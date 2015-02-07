@@ -6,7 +6,7 @@
 	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
 	&--mini{ min-height: 355px; margin-bottom: 16px; }
 	&-head{
-		padding: 14px 40px 11px;
+		padding: 14px 50px 11px;
 		text-align: center;
 		position: relative;
 		p{
@@ -168,7 +168,7 @@
 		}
 		.buttons{
 			width: 100%;
-			padding: 0 24px;
+			padding: 0 25px 18px 25px;
 			position: absolute;
 			bottom: 0;
 			.exit, .okey{
@@ -419,11 +419,22 @@
 	&-block{
 		text-align: center;
 		&:hover p{ color: @blue-color; }
+
 		&:hover .icon-sun{ background-position: 0 -36px;}
 		&:hover .icon-eat{ background-position: -62px -36px;}
 		&:hover .icon-food{ background-position: -118px -36px;}
 		&:hover .icon-moon{ background-position: -183px -36px;}
 	}
+
+  	&-block--active{
+	  p{ color: @blue-color !important; }
+
+	  .icon-sun{ background-position: 0 -36px !important;}
+	  .icon-eat{ background-position: -62px -36px !important;}
+	  .icon-food{ background-position: -118px -36px !important;}
+	  .icon-moon{ background-position: -183px -36px !important;}
+	}
+
 	p{
 		font-size: 10px;
 		cursor: pointer;

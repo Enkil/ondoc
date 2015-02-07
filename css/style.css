@@ -126,7 +126,7 @@ input[type="button"] {
   margin-bottom: 16px;
 }
 .widget-head {
-  padding: 14px 40px 11px;
+  padding: 14px 50px 11px;
   text-align: center;
   position: relative;
 }
@@ -299,7 +299,7 @@ input[type="button"] {
 }
 .widget .description .buttons {
   width: 100%;
-  padding: 0 24px;
+  padding: 0 25px 18px 25px;
   position: absolute;
   bottom: 0;
 }
@@ -582,6 +582,21 @@ input[type="button"] {
 }
 .shedule-block:hover .icon-moon {
   background-position: -183px -36px;
+}
+.shedule-block--active p {
+  color: #0099cc !important;
+}
+.shedule-block--active .icon-sun {
+  background-position: 0 -36px !important;
+}
+.shedule-block--active .icon-eat {
+  background-position: -62px -36px !important;
+}
+.shedule-block--active .icon-food {
+  background-position: -118px -36px !important;
+}
+.shedule-block--active .icon-moon {
+  background-position: -183px -36px !important;
 }
 .shedule p {
   font-size: 10px;

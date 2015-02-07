@@ -315,7 +315,7 @@
                     </div>
                     <div class="shedule">
                       <div class="row">
-                        <div class="shedule-block col-xs-9">
+                        <div class="shedule-block shedule-block--active col-xs-9">
                           <p class="icon icon-sun"></p>
                           <p>Утром</p>
                         </div>
@@ -345,7 +345,7 @@
                         </div>
                         <div class="shedule">
                           <div class="row">
-                            <div class="shedule-block col-xs-9">
+                            <div class="shedule-block shedule-block--active col-xs-9">
                               <p class="icon icon-sun"></p>
                               <p>Утром</p>
                             </div>
@@ -475,16 +475,16 @@
                     <div class="views">
                       <div class="row">
                         <div class="col-xs-9">
-                          <a href="#" class="current">Общий</a>
+                          <a href="#" class="js-hol-find current">Общий</a>
                         </div>
                         <div class="col-xs-12">
-                          <a href="#">ЛПНП</a>
+                          <a class="js-hol-find" href="#">ЛПНП</a>
                         </div>
                         <div class="col-xs-9">
-                          <a href="#">ЛПВП</a>
+                          <a class="js-hol-find" href="#">ЛПВП</a>
                         </div>
                         <div class="col-xs-6">
-                          <a href="#">ТГ</a>
+                          <a class="js-hol-find" href="#">ТГ</a>
                         </div>
                       </div>
                     </div>
@@ -501,16 +501,16 @@
                         <div class="views">
                           <div class="row">
                             <div class="col-xs-9">
-                              <a href="#" class="current">Общий</a>
+                              <a href="#" class="js-hol-find current">Общий</a>
                             </div>
                             <div class="col-xs-12">
-                              <a href="#">ЛПНП</a>
+                              <a class="js-hol-find" href="#">ЛПНП</a>
                             </div>
                             <div class="col-xs-9">
-                              <a href="#">ЛПВП</a>
+                              <a class="js-hol-find" href="#">ЛПВП</a>
                             </div>
                             <div class="col-xs-6">
-                              <a href="#">ТГ</a>
+                              <a class="js-hol-find" href="#">ТГ</a>
                             </div>
                           </div>
                         </div>
@@ -589,9 +589,14 @@
         $(this).css('display', 'none');
       });
 
+//      $(".widget .exit").click(function () {
+//        $(".description").removeClass('current');
+//        $(".widget .plus").css('display', 'inherit');
+//      });
+
       $(".widget .exit").click(function () {
-        $(".description").removeClass('current');
-        $(".widget .plus").css('display', 'inherit');
+        $(this).parents(".widget").find(".description").removeClass('current');
+        $(this).parents(".widget").find('.plus').css('display', 'block');
       });
 
       $(".exit").click(function () {
@@ -601,7 +606,22 @@
       $('ul.tabs').on('click', 'li:not(.current)', function() {  
           $(this).addClass('current').siblings().removeClass('current')  
             .parents('.tabs-section').find('div.graph').eq($(this).index()).fadeIn(150).siblings('div.graph').hide();  
-      })  
+      });
+
+
+      // change class of sugar blocks
+      $('.shedule-block').click(function(){
+        $('.shedule-block--active').removeClass('shedule-block--active');
+        $(this).addClass('shedule-block--active');
+      });
+
+      // change class of holestirin blocks
+      $('.js-hol-find').click(function(event){
+        event.preventDefault();
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+      });
+
 
     </script>
     
