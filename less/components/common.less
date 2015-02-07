@@ -1,7 +1,3 @@
-.col-230px{
-  min-width: 231px;
-}
-
 .bottom-line-light{
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
@@ -20,4 +16,14 @@
 
 .non-padding-left{
   padding-left: 0;
+}
+
+// Base styles of all links. Uses like mixin
+.link-base{
+    color: @blue-color;
+    transition: 0.2s ease all;
+    &:hover{
+      text-decoration: none;
+      color: lighten(@blue-color, 8);
+    }
 }

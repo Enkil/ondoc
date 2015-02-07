@@ -29,14 +29,8 @@
   // Sorting links
   &__sort-link{
     .gotham-m;
+    .link-base;
     font-size: 15px;
-    color: @blue-color;
-    transition: 0.2s ease all;
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-      text-decoration: none;
-    }
 
     // Filter
     &--filter{
@@ -195,35 +189,23 @@
   //  Links in head of form
   &__head-link{
     .gotham-m;
+    .link-base;
     vertical-align: middle;
     font-size: 15px;
     padding-right: 42px;
     padding-left: 42px;
-    color: @blue-color;
-    transition: 0.2s ease all;
     display: table-cell;
     width: 120px;
     height: 70px;
     margin: 0 auto;
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-      text-decoration: none;
-    }
   }
 
   // Links in form
   &__form-link{
     .gotham-m;
+    .link-base;
     font-size: 15px;
-    color: @blue-color;
-    transition: 0.2s ease all;
     display: inline-block;
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-      text-decoration: none;
-    }
   }
 
   // Descriptions in form
@@ -349,15 +331,14 @@
 
   &__submit-btn{
     .gotham;
+    .link-base;
     display: inline-block;
     font-size: 17px;
     line-height: 33px;
-    color: @blue-color;
     border-radius: 15px;
     border: 1px solid @blue-color;
     height: 35px;
     width: 110px;
-    transition: 0.2s ease all;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -367,6 +348,7 @@
       color: #fff;
       background: @blue-color;
     }
+
     &:active{
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
       outline: none;

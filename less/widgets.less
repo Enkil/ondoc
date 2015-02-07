@@ -35,7 +35,7 @@
 			background: url(../img/widget-icons.png) no-repeat;
 		}
 	}
-	.bottom-line{ border-bottom: 1px solid rgba(0,0,0,0.10); }
+
 	.progress-block{
 		text-align: center;
 		padding: 18px 0;
@@ -316,7 +316,15 @@
 
 /* Оформление листа */ 
 .widget-list{
+
+  ul{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+  }
+
 	.list-item{
+	  	list-style-type: none;
 		cursor: pointer;
 		padding: 18px 32px 17px 0px;
 		background-image: url(../img/list-arrow.png);
@@ -328,6 +336,7 @@
 			background-color: #e8f6fa;
 			&:hover p{
 				color: #000;
+			  text-decoration: none;
 			}
 		}
 
@@ -359,7 +368,8 @@
 			color: @blue-color;
 		}
 		&:hover .name, &:hover .data, &:hover .event {
-			color: @red-color;
+		  color: @red-color;
+		  text-decoration: none;
 		}
 	}
 }

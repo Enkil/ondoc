@@ -1,16 +1,5 @@
 /* Общие стили */
 
-body{
-	background: @lightblue-bg;
-}
-a{
-	color: @blue-color;
-	transition: 0.2s ease all;
-	&:hover{
-		color: lighten(@blue-color, 8);
-	}
-}
-
 .to-left{ float: left; }
 .to-right{ float: right; }
 
@@ -18,82 +7,6 @@ a{
 .tal{ text-align: left; }
 .tac{ text-align: center; }
 
-
-
-/* =================
-   header styles
-   ================= */
-
-//.header{
-//	z-index: 1;
-//	min-width: 1180px;
-//	position: relative;
-//	background-color: #fff;
-//	box-shadow: 2px 0px 2px rgba(0,0,0,0.3);
-//	/* Логотип */
-//	&_logo{
-//		display: inline-block;
-//		padding: 7px 0;
-//	}
-//	/* С чего начать */
-//	.question{
-//		line-height: 60px;
-//		display: inline-block;
-//		vertical-align: middle;
-//		padding-left: 26px;
-//		&:hover{
-//			opacity: 0.7;
-//		}
-//	}
-//	.icon-lamp:before{
-//		content: "";
-//		width: 15px;
-//		height: 22px;
-//		padding-right: 7px;
-//		display: inline-block;
-//		vertical-align: middle;
-//		background: url(../img/icon-lamp.png) no-repeat;
-//	}
-//	/* Аватар и меню профиля */
-//	.profile-menu{
-//		width: 189px;
-//		padding: 10px 0;
-//		min-height: 62px;
-//		position: relative;
-//		.avatar{
-//			width: 43px;
-//			height: 43px;
-//			margin-right: 5px;
-//		}
-//		.avatar, .profile-link{
-//			display: inline-block;
-//			vertical-align: middle;
-//		}
-//		.profile-link{
-//			&:hover{
-//				opacity: 0.7;
-//			}
-//		}
-//		.icon-arrow:after{
-//			content: "";
-//			width: 10px;
-//			height: 6px;
-//			margin-left: 5px;
-//			display: inline-block;
-//			vertical-align: middle;
-//			background: url(../img/arrow-down.png) no-repeat;
-//		}
-//	}
-//}
-/* Выпадающее меню */ 
-//.dropdown-menu{
-//	width: 100%;
-//	text-align: left;
-//	position: absolute;
-//	background: #fff;
-//	left: 0; bottom: -60px;
-//	display: none;
-//}
 
 .display{ display: inherit; }
 
@@ -397,18 +310,3 @@ a{
 		background: url(../img/icon-back.png) no-repeat;
 	}
 } 
-
-
-/* =================
-   footer styles
-   ================= */
-
-.footer{
-	padding: 24px 0;
-	text-align: center;
-	background: @footer-bg;
-	.copyright{
-		font-size: 15px;
-		color: rgba(0,0,0,0.5);
-	}
-}
