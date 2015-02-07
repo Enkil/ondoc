@@ -9488,12 +9488,14 @@ button.close {
   line-height: 21px;
   letter-spacing: -0.2px;
   margin: 0 0 12px 0;
+  word-break: break-all;
 }
 .widget__tab-description {
   font-family: 'Gotham', Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.2px;
+  word-break: break-all;
 }
 .widget__tab-clinic {
   font-family: 'Gotham', Arial, sans-serif;
@@ -9501,6 +9503,7 @@ button.close {
   line-height: 14px;
   letter-spacing: -0.2px;
   color: rgba(0, 0, 0, 0.5);
+  word-break: break-all;
 }
 .widget__tab-clinic:before {
   content: "";
