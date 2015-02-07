@@ -126,7 +126,7 @@ input[type="button"] {
   margin-bottom: 16px;
 }
 .widget-head {
-  padding: 14px 0 11px;
+  padding: 14px 40px 11px;
   text-align: center;
   position: relative;
 }
@@ -136,6 +136,7 @@ input[type="button"] {
   color: #0099cc;
   display: inline-block;
   vertical-align: middle;
+  word-break: break-all;
 }
 .widget-head p .plus {
   width: 32px;
