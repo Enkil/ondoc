@@ -59,6 +59,7 @@ input[type="button"] {
   vertical-align: top;
 }
 .select-list .list-drop {
+  list-style-type: none;
   cursor: pointer;
   background: #fff;
   padding: 5px 10px 5px 5px;
@@ -9092,6 +9093,15 @@ button.close {
   text-decoration: none;
   color: #00b8f5;
 }
+.link-base:active {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.link-base:focus {
+  text-decoration: none;
+  color: #00b8f5;
+  outline: none;
+}
 @font-face {
   font-family: 'Gotham-Medium';
   src: url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/GothamPro-Medium.otf') format('opentype'), url('fonts/GothamPro-Medium.woff') format('woff'), url('fonts/GothamPro-Medium.ttf') format('truetype'), url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
@@ -9126,6 +9136,15 @@ a {
 a:hover {
   text-decoration: none;
   color: #00b8f5;
+}
+a:active {
+  text-decoration: none;
+  color: #00b8f5;
+}
+a:focus {
+  text-decoration: none;
+  color: #00b8f5;
+  outline: none;
 }
 .main-header {
   background-color: #ffffff;
@@ -9302,6 +9321,15 @@ a:hover {
   text-decoration: none;
   color: #00b8f5;
 }
+.content-header__sort-link:active {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.content-header__sort-link:focus {
+  text-decoration: none;
+  color: #00b8f5;
+  outline: none;
+}
 .content-header__sort-link--filter:before {
   content: "";
   width: 10px;
@@ -9444,6 +9472,15 @@ a:hover {
   text-decoration: none;
   color: #00b8f5;
 }
+.widget__head-link:active {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget__head-link:focus {
+  text-decoration: none;
+  color: #00b8f5;
+  outline: none;
+}
 .widget__form-link {
   font-family: 'Gotham-Medium', Arial, sans-serif;
   color: #0099cc;
@@ -9454,6 +9491,15 @@ a:hover {
 .widget__form-link:hover {
   text-decoration: none;
   color: #00b8f5;
+}
+.widget__form-link:active {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget__form-link:focus {
+  text-decoration: none;
+  color: #00b8f5;
+  outline: none;
 }
 .widget__form-description-line {
   position: relative;
@@ -9590,6 +9636,15 @@ a:hover {
 .widget__submit-btn:hover {
   text-decoration: none;
   color: #00b8f5;
+}
+.widget__submit-btn:active {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget__submit-btn:focus {
+  text-decoration: none;
+  color: #00b8f5;
+  outline: none;
 }
 .widget__submit-btn:hover {
   color: #fff;
