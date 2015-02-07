@@ -317,6 +317,25 @@
 /* Оформление листа */ 
 .widget-list{
 
+  .icon-time{
+	&:after{
+	  content: "";
+	  width: 24px;
+	  height: 24px;
+	  display: inline-block;
+	  position: absolute;
+	  left: 80%;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background: url(../img/time-icons.png) no-repeat;
+	}
+
+	&--full:after{ background-position: 0 0; }
+	&--half:after{ background-position: 0 -72px; }
+	&--start:after{ background-position: 0 -34px; }
+	&--end:after{ background-position: 0 -110px; }
+  }
+
   ul{
 	list-style-type: none;
 	margin-left: 0;
@@ -329,24 +348,6 @@
 		padding: 18px 32px 17px 0px;
 	  position: relative;
 		a{ display: block; }
-
-	  &:after{
-		content: "";
-		width: 24px;
-		height: 24px;
-		display: inline-block;
-		position: absolute;
-		left: 80%;
-		top: 50%;
-		transform: translateY(-50%);
-		background: url(../img/time-icons.png) no-repeat;
-//		background-position: 0 0;
-	  }
-
-	  &--full:after{ background-position: 0 0; }
-	  &--half:after{ background-position: 0 -72px; }
-	  &--start:after{ background-position: 0 -34px; }
-	  &--end:after{ background-position: 0 -110px; }
 
 		&.active{
 			background-color: #e8f6fa;

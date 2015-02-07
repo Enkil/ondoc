@@ -459,6 +459,31 @@ input[type="button"] {
   background: url(../img/triangle.png) no-repeat;
 }
 /* Оформление листа */
+.widget-list .icon-time:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../img/time-icons.png) no-repeat;
+}
+.widget-list .icon-time--full:after {
+  background-position: 0 0;
+}
+.widget-list .icon-time--half:after {
+  background-position: 0 -72px;
+}
+.widget-list .icon-time--start:after {
+  background-position: 0 -34px;
+}
+.widget-list .icon-time--end:after {
+  background-position: 0 -110px;
+}
 .widget-list ul {
   list-style-type: none;
   margin-left: 0;
@@ -472,31 +497,6 @@ input[type="button"] {
 }
 .widget-list .list-item a {
   display: block;
-}
-.widget-list .list-item:after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  position: absolute;
-  left: 80%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: url(../img/time-icons.png) no-repeat;
-}
-.widget-list .list-item--full:after {
-  background-position: 0 0;
-}
-.widget-list .list-item--half:after {
-  background-position: 0 -72px;
-}
-.widget-list .list-item--start:after {
-  background-position: 0 -34px;
-}
-.widget-list .list-item--end:after {
-  background-position: 0 -110px;
 }
 .widget-list .list-item.active {
   background-color: #e8f6fa;
