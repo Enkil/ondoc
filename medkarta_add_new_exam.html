@@ -373,7 +373,7 @@
                                     <div class="col-xs-36 text-center">
                                         <label class="widget__upload">
                                             <span class="widget__upload-icon">+</span>
-                                            <input type="file" onchange="this.previousSibling.previousSibling.innerHTML = this.value" class="widget__upload-input"/>
+                                            <input type="file" onchange="this.previousSibling.previousSibling.innerHTML = this.value" class="widget__upload-input" size="1"/>
                                         </label>
                                     </div>
                                 </div>
@@ -424,6 +424,10 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- / JavaScript -->
+
+    <script>
+        $('input[type="file"]').val().replace(/.+[\\\/]/, "");
+    </script>
 
 </body>
 </html>

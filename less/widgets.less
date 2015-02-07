@@ -327,10 +327,26 @@
 	  	list-style-type: none;
 		cursor: pointer;
 		padding: 18px 32px 17px 0px;
-		background-image: url(../img/list-arrow.png);
-		background-repeat: no-repeat;
-		background-position: 92% 50%;
+	  position: relative;
 		a{ display: block; }
+
+	  &:after{
+		content: "";
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		position: absolute;
+		left: 80%;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url(../img/time-icons.png) no-repeat;
+//		background-position: 0 0;
+	  }
+
+	  &--full:after{ background-position: 0 0; }
+	  &--half:after{ background-position: 0 -72px; }
+	  &--start:after{ background-position: 0 -34px; }
+	  &--end:after{ background-position: 0 -110px; }
 
 		&.active{
 			background-color: #e8f6fa;
