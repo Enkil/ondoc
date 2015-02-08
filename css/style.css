@@ -9443,23 +9443,19 @@ a:focus {
   margin: auto 0px auto 20px;
 }
 .widget__img-delete {
-  width: 9px;
-  height: 9px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   position: absolute;
-  top: -8px;
+  top: -5px;
   left: -6px;
-}
-.widget__img-delete img {
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
+  background-image: url(../img/delete-icon.png);
 }
 .widget__img-delete hr {
   color: #ffffff;
   width: 8px;
   position: absolute;
-  top: -12px;
+  top: -14px;
   left: 5px;
 }
 .widget__img-delete--drugs {
