@@ -9449,14 +9449,7 @@ a:focus {
   position: absolute;
   top: -5px;
   left: -6px;
-  background-image: url(../img/delete-icon.png);
-}
-.widget__img-delete hr {
-  color: #ffffff;
-  width: 8px;
-  position: absolute;
-  top: -14px;
-  left: 5px;
+  background-image: url(../img/icon-delete.png);
 }
 .widget__img-delete--drugs {
   top: 0;
