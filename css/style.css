@@ -9230,6 +9230,11 @@ a:focus {
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.3);
   z-index: 20;
 }
+.main-header__avatar {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
 .main-header__question {
   line-height: 21px;
 }
