@@ -36,12 +36,38 @@
   font-family: 'Gotham-Bold', Arial, sans-serif;
 }
 
+
+
+
+// Base styles of all links. Uses like mixin
+.link-base{
+  color: @blue-color;
+  transition: 0.2s ease all;
+  &:hover{
+    text-decoration: none;
+    color: lighten(@blue-color, 8);
+  }
+  &:active{
+    text-decoration: none;
+    color: lighten(@blue-color, 8);
+  }
+  &:focus{
+    text-decoration: none;
+    color: lighten(@blue-color, 8);
+    outline: none;
+  }
+}
+
 a{
   .link-base;
 }
 
-
-
+// Medium link
+.link-medium{
+  .gotham-m;
+  .link-base;
+  font-size: 14px;
+}
 
 
 

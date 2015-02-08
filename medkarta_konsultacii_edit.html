@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-consultation</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__logo main-header__link main-header__link--logotext" href="index.html" title="OnDoc - Персональное здравоохранение">
+                    <img class="" src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    <span class="hidden-xs hidden-sm" title="OnDoc - Персональное здравоохранение">OnDoc</span>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-17">
+                <a href="#" class="main-header__link main-header__question">С чего начать?</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-12 pull-right">
+                <div class="dropdown pull-right">
+                    <img class="" src="img/avatar.png" alt="Смирнов Иван"/>
+                    <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
+                        Смирнов Иван
+                    </a>
+                    <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+
+<!-- PAGE CONTENT-->
+<div class="main-page">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left Sidebar -->
+            <aside class="col-xs-7 ">
+
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/big-avatar.png" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="index.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart sidebar__menu-link--active" href="">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor" href="">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </aside>
+            <!-- / Left Sidebar -->
+
+
+            <!-- Right page block-->
+            <div class="col-xs-29">
+
+                <!-- Content Header - Filter -->
+                <div class="row content-header">
+
+                    <div class="col-xs-4">
+                        <a class="content-header__back" href="#">Назад</a>
+                    </div>
+                    <div class="col-xs-21 col-lg-offset-10">
+                        <a class="content-header__sort-link content-header__sort-link--filter" href="#">Фильтр</a>
+                    </div>
+
+                </div>
+                <!-- / Content Header - Filter -->
+
+
+                <!-- Content -->
+                <div class="widget row">
+
+                    <!-- Widget header -->
+                    <div class="row">
+                        <div class="col-xs-36 widget__header text-center">
+                            <div class="bottom-line-grey">
+                                <p class="widget__head-text">Консультации</p>
+                                <a class="widget__add-btn pull-right" href="#"><img src="img/icon-plus.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Widget header -->
+
+
+                    <!-- Widget body -->
+                    <div class="row">
+
+                        <!-- Left tabs block -->
+                        <div class="col-xs-11 widget__tabs-list  non-padding-right">
+                            <!-- Tab -->
+                            <div class="widget__tab widget__tab--active bottom-line-grey">
+                                <h3 class="widget__tab-title">Новая консультация</h3>
+                                <p class="widget__tab-description">Без описания</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">ЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОР</h3>
+                                <p class="widget__tab-description">Острый ринит и аллергический отекОстрый ринит и аллергический отекОстрый ринит и аллергический отек</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Невролог</h3>
+                                <p class="widget__tab-description">Воспаление узла коленцы</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Терапевт</h3>
+                                <p class="widget__tab-description">Остарая респираторная инфекция</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Гастроэнтеролог</h3>
+                                <p class="widget__tab-description">Дискенезия желчевыводящих путей</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Терапевт</h3>
+                                <p class="widget__tab-description">Остарая респираторная инфекция</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">ЛОР</h3>
+                                <p class="widget__tab-description">Острый ринит и аллергический отек</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Невролог</h3>
+                                <p class="widget__tab-description">Воспаление узла коленца</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Терапевт</h3>
+                                <p class="widget__tab-description">Остарая респираторная инфекция</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                            <!-- Tab -->
+                            <div class="widget__tab bottom-line-grey">
+                                <h3 class="widget__tab-title">Терапевт</h3>
+                                <p class="widget__tab-description">Остарая респираторная инфекцияинфекцияинфекцияинфекцияинфекцияинфекция</p>
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <span class="widget__tab-clinic pull-left">КлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиникаКлиника</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <time class="widget__tab-date pull-right">19.05.2014</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Tab -->
+                        </div>
+                        <!-- / Left tabs block -->
+
+                        <!-- Right form block -->
+                        <div class="col-xs-25 left-line-grey non-padding-left">
+
+                            <!-- Form title -->
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <p class="text-center widget__form-title">Редактирование записи</p>
+                                </div>
+                            </div>
+
+                            <!-- Form order -->
+                            <div class="row">
+                                <div class="col-xs-12 widget__head-links right-line-grey">
+                                    <a class="widget__head-link text-center" href="#">СМТ Клиника</a>
+                                </div>
+                                <div class="col-xs-12 widget__form-links right-line-grey">
+                                    <a class="widget__head-link text-center" href="#">Гастроэнтерология</a>
+                                </div>
+                                <div class="col-xs-12 widget__form-links">
+                                    <a class="widget__head-link text-center" href="#">Николаев В.В.</a>
+                                </div>
+                            </div>
+
+                            <!-- Form description -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center widget__form-description-line">
+                                    <span class="widget__form-description">Описание</span>
+                                </div>
+                            </div>
+
+                            <!-- Form inputs -->
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <form class="widget__form" action="" id="form">
+                                        <textarea class="widget__textarea" >Болит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит живот</textarea>
+                                        <textarea class="widget__textarea" placeholder="Диагноз">Гастрит</textarea>
+                                        <textarea class="widget__textarea" placeholder="Заключение врача">Гастрит, панкреатит</textarea>
+                                        <textarea class="widget__textarea" placeholder="Рекомендации врача">Мезим 3 раза в день, исключить острое</textarea>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- / Form inputs -->
+
+                            <!-- Form description -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center widget__form-description-line">
+                                    <span class="widget__form-description">Назначенные лекарства</span>
+                                </div>
+                            </div>
+
+                            <!-- Drugs -->
+                            <!-- Drugs Item-->
+                            <div class="row">
+                                <div class="col-xs-36">
+
+                                    <a class="link-medium widget__drugs">Мезим</a>
+
+                                    <a class="widget__img-delete widget__img-delete--drugs" href="#" title="Delete">
+                                        <img src="img/delete-icon.png" alt="Delete image" title="Delete"/>
+                                        <hr class="widget__img-delete-hr"/>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <span class="widget-margin widget__subtext">10 мг</span>
+                                    <span class="widget-margin widget__subtext">3 р/д</span>
+                                    <span class="widget-margin widget__subtext">18 дн.</span>
+                                    <span class="widget-margin widget__subtext">ПН, СР, ПТ</span>
+                                </div>
+                            </div>
+                            <!-- Drugs Item-->
+
+                            <!-- Drugs Item-->
+                            <div class="row">
+                                <div class="col-xs-36">
+
+                                    <a class="link-medium widget__drugs">Мезим</a>
+
+                                    <a class="widget__img-delete widget__img-delete--drugs" href="#" title="Delete">
+                                        <img src="img/delete-icon.png" alt="Delete image" title="Delete"/>
+                                        <hr class="widget__img-delete-hr"/>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <span class="widget-margin widget__subtext">10 мг</span>
+                                    <span class="widget-margin widget__subtext">3 р/д</span>
+                                    <span class="widget-margin widget__subtext">18 дн.</span>
+                                    <span class="widget-margin widget__subtext">ПН, СР, ПТ</span>
+                                </div>
+                            </div>
+                            <!-- Drugs Item-->
+
+                            <!-- Drugs Item-->
+                            <div class="row">
+                                <div class="col-xs-36">
+
+                                    <a class="link-medium widget__drugs">Мезим</a>
+
+                                    <a class="widget__img-delete widget__img-delete--drugs" href="#" title="Delete">
+                                        <img src="img/delete-icon.png" alt="Delete image" title="Delete"/>
+                                        <hr class="widget__img-delete-hr"/>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <span class="widget-margin widget__subtext">10 мг</span>
+                                    <span class="widget-margin widget__subtext">3 р/д</span>
+                                    <span class="widget-margin widget__subtext">18 дн.</span>
+                                    <span class="widget-margin widget__subtext">ПН, СР, ПТ</span>
+                                </div>
+                            </div>
+                            <!-- Drugs Item-->
+                            <!-- / Drugs-->
+
+
+                            <!-- Form description -->
+                            <div class="row widget__form-description-line">
+                                <div class="col-xs-18 text-center non-padding-right">
+                                    <span class="widget__form-description">Дата обследования</span>
+                                </div>
+                                <div class="col-xs-18 text-center non-padding-left">
+                                    <span class="widget__form-description">Дата повторного визита</span>
+                                </div>
+                            </div>
+
+                            <!-- Form link -->
+                            <div class="row">
+                                <div class="col-xs-18 text-center">
+                                    <a class="widget__form-link" href="#">19 сентября 2014</a>
+                                </div>
+                                <div class="col-xs-18 text-center">
+                                    <a class="widget__form-link" href="#">Выбрать</a>
+                                </div>
+                            </div>
+
+                            <!-- Horizontal line -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center widget__form-description-line">
+                                    <span class="widget__form-description"></span>
+                                </div>
+                            </div>
+
+                            <!-- Forms input "My Notes"-->
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <textarea class="widget__textarea" form="form" placeholder="Мои заметки"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Upload photo -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center">
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget__img-delete" href="#">
+                                            <img src="img/delete-icon.png" alt="Delete image" title="Delete"/>
+                                            <hr class="widget__img-delete-hr" title="Delete"/>
+                                        </a>
+                                        <img class="widget__notes-img-item" src="img/notes-img.png" alt="My Notes Image"/>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget__img-delete" href="#">
+                                            <img src="img/delete-icon.png" alt="Delete image" title="Delete"/>
+                                            <hr class="widget__img-delete-hr" title="Delete"/>
+                                        </a>
+                                        <img class="widget__notes-img-item" src="img/notes-img.png" alt="My Notes Image"/>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget__img-delete" href="#">
+                                            <img src="img/delete-icon.png" alt="Delete image" title="Delete"/>
+                                            <hr class="widget__img-delete-hr" title="Delete"/>
+                                        </a>
+                                        <img class="widget__notes-img-item" src="img/notes-img.png" alt="My Notes Image"/>
+                                    </div>
+
+                                    <!-- Upload -->
+                                    <label class="widget__upload">
+                                        <span class="widget__upload-icon">+</span>
+                                        <input type="file" onchange="this.previousSibling.previousSibling.innerHTML = this.value; this.val().replace(/^.*\\/, ""); " class="widget__upload-input" size="1"/>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <!-- Horizontal line -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center widget__form-description-line">
+                                    <span class="widget__form-description"></span>
+                                </div>
+                            </div>
+
+                            <!-- Submit form -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center">
+                                    <input type="submit" form="form" class="widget__submit-btn" value="Отмена"/>
+                                    <input type="submit" form="form" class="widget__submit-btn widget__submit-btn--yes" value="OK"/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- / Right form block -->
+
+                    </div>
+                    <!-- / Widget body -->
+                </div>
+                <!-- / Content -->
+
+            </div>
+            <!-- / Right page block-->
+
+        </div>
+    </div>
+</div>
+<!-- / PAGE CONTENT-->
+
+
+<!-- PAGE FOOTER-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <p class="main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+        </div>
+    </div>
+</footer>
+<!-- / PAGE FOOTER-->
+
+<!-- JavaScript-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jquery-autosize/jquery.autosize.min.js"></script>
+<script src="js/textarea_autoresize.js"></script>
+<!-- / JavaScript -->
+
+</body>
+</html>

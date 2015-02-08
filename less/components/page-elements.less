@@ -63,6 +63,66 @@
   background: #fff;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
+  &__drugs{
+    margin: auto 0px auto 20px;
+    position: relative;
+  }
+
+  &__subtext{
+    .gotham;
+    color: @grey-color-2;
+    font-size: 11px;
+    line-height: 13px;
+    margin: auto 0px auto 20px;
+  }
+
+  &__img{
+    &-delete{
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      position: absolute;
+      top: -8px;
+      left: -6px;
+
+      img{
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+      }
+
+      hr{
+        color: @white-color;
+        width: 8px;
+        position: absolute;
+        top: -12px;
+        left: 5px;
+      }
+
+      &--drugs{
+        top: 0;
+        bottom: 0;
+        left: 92%;
+      }
+    }
+  }
+
+  &__notes-img{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 6px;
+
+    &-item{
+      width: 45px;
+      height: 45px;
+      border-top: 1px solid @grey-color-2;
+      border-bottom: 1px solid @grey-color-2;
+      border-left: 2px solid @grey-color-2;
+      border-right: 1px solid @grey-color-2;
+    }
+  }
+
   &__header{
 
   }
@@ -233,7 +293,7 @@
     .gotham;
     display: inline-block;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.2);
+    color: @grey-color-2;
     background-color: @white-color;
     padding: 0 15px 0 15px;
     z-index: 10;
@@ -246,21 +306,22 @@
   }
 
   &__textarea{
-    height: 50px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin-left: 22px;
     margin-bottom: 10px;
     width: 93%;
     display: block;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding: 15px;
     .gotham;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.2);
+    color: @black-color;
     resize: none;
     outline: none;
     text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+
 
     // Soft slide-down placeholder
     &::-webkit-input-placeholder{
@@ -302,7 +363,8 @@
     overflow: hidden;
     cursor: pointer;
     width: 45px;
-    margin-bottom: 50px;
+    margin: 0;
+    vertical-align: middle;
   }
 
   &__upload-input{
@@ -313,7 +375,7 @@
   &__upload-icon{
     color: @blue-color;
     position: relative;
-    margin-top: 15px;
+    margin-top: 9px;
     display: inline-block;
 
     &:before{

@@ -10,6 +10,10 @@
   border-right: 1px solid rgba(0, 0, 0, 0.1);;
 }
 
+.left-line-grey{
+  border-left: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
 .non-padding-right{
   padding-right: 0;
 }
@@ -18,24 +22,6 @@
   padding-left: 0;
 }
 
-// Base styles of all links. Uses like mixin
-.link-base{
-  color: @blue-color;
-  transition: 0.2s ease all;
-  &:hover{
-    text-decoration: none;
-    color: lighten(@blue-color, 8);
-  }
-  &:active{
-    text-decoration: none;
-    color: lighten(@blue-color, 8);
-  }
-  &:focus{
-    text-decoration: none;
-    color: lighten(@blue-color, 8);
-    outline: none;
-  }
-}
 
 // Display types
 .display-none{
