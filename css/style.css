@@ -9265,9 +9265,11 @@ a:focus {
   font-size: 22px;
   color: #000000;
   font-weight: bold;
+  transition: none;
 }
 .main-header__link--logotext:hover {
   text-decoration: none;
+  color: #000000;
 }
 .main-header__link--dropdown:after {
   content: "";
