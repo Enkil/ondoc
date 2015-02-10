@@ -122,8 +122,9 @@ input[type="button"] {
   /* В маленьких виджетах */
 }
 .widget--mini {
-  min-height: 355px;
+  height: 435px;
   margin-bottom: 16px;
+  overflow: auto;
 }
 .widget-head {
   padding: 14px 50px 11px;
