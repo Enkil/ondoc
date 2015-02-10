@@ -683,14 +683,25 @@
 				background: url(../img/buttons-icons.png) no-repeat;
 			}
 		}
+
 		&--check{
 			color: @green-color;
 			border-color: @green-color;
+
 			&:before{
 				left: 10px;
 				background-position: 0 0;
 			}
+
+		  	&:hover{
+			  color: @white-color;
+			  background-color: @green-color;
+			  &:before{
+				background-position: -117px 0;
+			  }
+			}
 		}
+
 		&--record{
 			min-width: 200px;
 			color: @blue-color;
@@ -698,12 +709,26 @@
 			&:before{
 				background-position: -43px 0;
 			}
+		  	&:hover{
+			  color: lighten(@blue-color, 8);
+			}
 		}
+
 		&--cancel{
 			color: @red-color;
 			border-color: @red-color;
+
 			&:before{
 				background-position: -93px 0;
+			}
+
+		  	&:hover{
+			  color: @white-color;
+			  background-color: @red-color;
+
+			  &:before{
+				background-position: -144px 0;
+			  }
 			}
 		}
 	}

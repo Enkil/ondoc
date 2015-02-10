@@ -848,6 +848,13 @@ input[type="button"] {
   left: 10px;
   background-position: 0 0;
 }
+.buttons-block .btn--check:hover {
+  color: #ffffff;
+  background-color: #2dd25f;
+}
+.buttons-block .btn--check:hover:before {
+  background-position: -117px 0;
+}
 .buttons-block .btn--record {
   min-width: 200px;
   color: #0099cc;
@@ -856,12 +863,22 @@ input[type="button"] {
 .buttons-block .btn--record:before {
   background-position: -43px 0;
 }
+.buttons-block .btn--record:hover {
+  color: #00b8f5;
+}
 .buttons-block .btn--cancel {
   color: #dc4531;
   border-color: #dc4531;
 }
 .buttons-block .btn--cancel:before {
   background-position: -93px 0;
+}
+.buttons-block .btn--cancel:hover {
+  color: #ffffff;
+  background-color: #dc4531;
+}
+.buttons-block .btn--cancel:hover:before {
+  background-position: -144px 0;
 }
 /* Страница рекомендаций - оформление информации */
 .description-block {
