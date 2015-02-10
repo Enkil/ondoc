@@ -99,8 +99,43 @@ input[type="button"]{
 	font-size: 14px;
 	padding: 0 9px;
 	border-radius: 2px;
-	color: rgba(0,0,0,0.4);
+	color: @black-color;
 	border: 1px solid rgba(0,0,0,.2);
+  	outline: none;
+
+	// Soft slide-down placeholder
+	&::-webkit-input-placeholder{
+	  line-height: 20px;  transition: line-height 0.5s ease;
+	}
+
+	&::-moz-placeholder{
+	  line-height: 20px;  transition: line-height 0.5s ease;
+	}
+	&
+	:-ms-input-placeholder{
+	  line-height: 20px;  transition: line-height 0.5s ease;
+	}
+
+	&::placeholder{
+	  line-height: 20px;  transition: line-height 0.5s ease;
+	}
+
+	&:focus::-webkit-input-placeholder{
+	  line-height: 150px;  transition: line-height 0.5s ease;
+	}
+
+	&:focus::-moz-placeholder{
+	  line-height: 150px;  transition: line-height 0.5s ease;
+	}
+
+	&:focus:-ms-input-placeholder{
+	  line-height: 150px;  transition: line-height 0.5s ease;
+	}
+
+	&:focus::placeholder{
+	  line-height: 150px;  transition: line-height 0.5s ease;
+	}
+
 }
 
 .buttons-block{
