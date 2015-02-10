@@ -210,6 +210,24 @@
 			background: @blue-color;
 		}
 	}
+
+  	.icon{
+	  &:hover{
+		text-decoration: none;
+		color: lighten(@blue-color, 8);
+	  }
+	  &:active{
+		text-decoration: none;
+		outline: none;
+		color: @blue-color;
+	  }
+	  &:focus{
+		text-decoration: none;
+		outline: none;
+		color: @blue-color;
+	  }
+	}
+
 	.icon:before{
 		content: "";
 		width: 16px;

@@ -688,6 +688,13 @@
 			color: @green-color;
 			border-color: @green-color;
 
+			&:active{
+			  color: @green-color;
+			}
+			&:focus{
+			  color: @green-color;
+			}
+
 			&:before{
 				left: 10px;
 				background-position: 0 0;
@@ -712,11 +719,24 @@
 		  	&:hover{
 			  color: lighten(@blue-color, 8);
 			}
+			&:active{
+			  color: @blue-color;
+			}
+			&:focus{
+			  color: @blue-color;
+			}
 		}
 
 		&--cancel{
 			color: @red-color;
 			border-color: @red-color;
+
+			&:active{
+			  color: @red-color;
+			}
+			&:focus{
+			  color: @red-color;
+			}
 
 			&:before{
 				background-position: -93px 0;
