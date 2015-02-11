@@ -1,0 +1,76 @@
+.modal-consultation-delete{
+  background-color: @white-color;
+  width: 485px;
+  height: 175px;
+  border-radius: 17px;
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  &__wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+  }
+
+  // Element -> modal close cross
+  &__close{
+    width: 10px;
+    height: 10px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 460px;
+    background: url(../css/images/icon-modal-close.png) no-repeat;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  &__text{
+    .gotham;
+    font-size: 17px;
+    line-height: 22px;
+    color: @black-color;
+    margin: 45px 100px 35px 100px;
+    letter-spacing: -1.8px;
+  }
+
+  &__btn-no{
+    .gotham-m;
+    display: inline-block;
+    line-height: 35px;
+    color: @blue-color;
+    border: 1px solid @blue-color;
+    border-radius: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+  &__btn-yes{
+    .gotham-m;
+    display: inline-block;
+    line-height: 35px;
+    color: @red-color;
+    border: 1px solid @red-color;
+    border-radius: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 17px;
+    margin-left: 10px;
+    &:hover{
+      color: lighten(@red-color, 8);
+    }
+  }
+}

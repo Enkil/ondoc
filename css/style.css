@@ -9988,6 +9988,12 @@ a:focus {
 .widget-btn--delete:hover {
   color: #e26454;
 }
+.widget-btn--delete:active {
+  color: #e26454;
+}
+.widget-btn--delete:focus {
+  color: #e26454;
+}
 .widget-btn--delete:before {
   content: "";
   display: inline-block;
@@ -10076,6 +10082,76 @@ a:focus {
 .widget-btn--submit-yes:active {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   outline: none;
+}
+.modal-consultation-delete {
+  background-color: #ffffff;
+  width: 485px;
+  height: 175px;
+  border-radius: 17px;
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.modal-consultation-delete__wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+}
+.modal-consultation-delete__close {
+  width: 10px;
+  height: 10px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 460px;
+  background: url(../css/images/icon-modal-close.png) no-repeat;
+}
+.modal-consultation-delete__close:hover {
+  opacity: 0.7;
+}
+.modal-consultation-delete__text {
+  font-family: 'Gotham', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+  margin: 45px 100px 35px 100px;
+  letter-spacing: -1.8px;
+}
+.modal-consultation-delete__btn-no {
+  font-family: 'Gotham-Medium', Arial, sans-serif;
+  display: inline-block;
+  line-height: 35px;
+  color: #0099cc;
+  border: 1px solid #0099cc;
+  border-radius: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.modal-consultation-delete__btn-yes {
+  font-family: 'Gotham-Medium', Arial, sans-serif;
+  display: inline-block;
+  line-height: 35px;
+  color: #dc4531;
+  border: 1px solid #dc4531;
+  border-radius: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+  margin-left: 10px;
+}
+.modal-consultation-delete__btn-yes:hover {
+  color: #e26454;
 }
 
 /*# sourceMappingURL=style.css.map */
