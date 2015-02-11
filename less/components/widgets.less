@@ -1,0 +1,440 @@
+// BLOCK -> Widget
+.widget{
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+  // Element -> Left widget column with tabs list
+  &__left-column{
+    .non-padding-right;
+    height: 975px;
+    overflow: auto;
+  }
+
+  // Element -> Right widget column with widget data
+  &__right-column{
+    .left-line-grey;
+    padding: 0 38px 8px 30px;
+  }
+
+
+  &__notes-img{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 6px;
+    margin-bottom: 5px;
+
+    &-item{
+      width: 45px;
+      height: 45px;
+      border-top: 1px solid @grey-color-2;
+      border-bottom: 1px solid @grey-color-2;
+      border-left: 2px solid @grey-color-2;
+      border-right: 1px solid @grey-color-2;
+    }
+
+    &__notes-mb{
+      margin-bottom: 60px;
+      margin-top: 10px;
+    }
+  }
+
+
+  &__textarea{
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+
+
+    // Soft slide-down placeholder
+    &::-webkit-input-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+
+    &::-moz-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+    &
+    :-ms-input-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+
+    &::placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus::-webkit-input-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus::-moz-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus:-ms-input-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+    &:focus::placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+  }
+
+  // Upload icon
+  &__upload{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 45px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  &__upload-input{
+    opacity: 0;
+    display: none !important;
+  }
+
+  &__upload-icon{
+    color: @blue-color;
+    position: relative;
+    margin-top: 9px;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 41px;
+      height: 31px;
+      display: inline-block;
+      background: url(../img/icon-photo.png) no-repeat;
+
+      position: absolute;
+      left: -16px;
+      top: -9px;
+    }
+  }
+}
+
+
+// BLOCK -> Doctor
+.widget-doctor{
+
+  // Element -> Avatar
+  &__img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  }
+
+  // Element -> Name
+  &__name{
+    font-size: 14px;
+    .gotham-m;
+  }
+
+  // Element -> Clinic
+  &__clinic{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: rgba(0,0,0,.5);
+    word-break: break-all;
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      padding-right: 18px;
+      padding-bottom: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../css/images/icon-clinic.png) no-repeat;
+    }
+  }
+
+  // Element -> Date
+  &__date{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: rgba(0,0,0,.5);
+    word-break: break-all;
+
+    // modificator -> bigger date
+    &--bigger{
+      font-size: 14px;
+      color: @black-color;
+    }
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      padding-right: 18px;
+      padding-bottom: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../css/images/icon-date.png) no-repeat;
+    }
+  }
+}
+
+// BLOCK -> Widget header
+.widget-header{
+
+  &__text{
+    .gotham-m;
+    font-size: 15px;
+    line-height: 60px;
+    display: inline-block;
+    margin-bottom: 0;
+
+    &:before{
+      content: "";
+      width: 14px;
+      height: 22px;
+      padding-right: 22px;
+      padding-bottom: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-consultation.png) no-repeat;
+    }
+  }
+}
+
+// BLOCK -> Widget consultation
+.widget-consultation{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  // modificator -> with out margin
+  &--wo-margin{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // Element -> Consultation title
+  &__title{
+    .gotham;
+    display: inline-block;
+    font-size: 14px;
+    color: @grey-color-2;
+    background-color: @white-color;
+    padding: 0 15px 0 15px;
+    z-index: 10;
+    position: relative;
+  }
+
+  // Element -> Line over consultation title
+  &__line{
+    position: relative;
+    margin-bottom: 20px;
+
+    // modificator -> with out margin
+    &--wo-margin{
+      margin-bottom: 0;
+    }
+
+    // modificator -> margins for 2 text block with 1 line
+    &--wo-margin2{
+      margin-bottom: 0;
+
+      &:first-child{
+        margin-right: -13px;
+      }
+      &:last-child{
+        margin-left: -13px;
+        &:before{
+          margin: auto -18px auto 8px;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 8px auto 8px;
+      z-index: 5;
+    }
+  }
+
+  // Element -> Consultation text
+  &__text{
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    margin: 0;
+  }
+
+  // Element -> link in widget right column at consultation block
+  &__link{
+    .link-medium;
+    font-size: 15px;
+
+    // modificator -> smaller size
+    &--smaller{
+      font-size: 14px;
+    }
+  }
+
+  // Element -> margin bottom for drugs
+  &__drugs{
+    margin-bottom: 3px;
+  }
+
+  // Element -> small text under drug name
+  &__subtext{
+    .gotham;
+    color: @grey-color-2;
+    font-size: 11px;
+    line-height: 13px;
+    margin: auto 0px auto 20px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+// BLOCK -> One tab in left tabs list
+.widget-tab{
+  .bottom-line-grey;
+  padding: 20px 15px 15px 20px;
+  overflow: hidden;
+
+  &:hover{
+    color: @red-color;
+    text-decoration: none;
+  }
+
+  // modificator -> current active tab
+  &--active{
+    background-color: @lightblue-bg;
+    &:hover{
+      color: @black-color;
+      text-decoration: none;}
+  }
+
+  // Element -> tab title
+  &__title{
+    .gotham-m;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.2px;
+    margin: 0 0 12px 0;
+    word-break: break-all;
+  }
+
+  // Element -> tab text
+  &__description{
+    .gotham;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    word-break: break-all;
+  }
+
+  // Element -> Clinic
+  &__clinic{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: rgba(0,0,0,.5);
+    word-break: break-all;
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      padding-right: 18px;
+      padding-bottom: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../css/images/icon-clinic.png) no-repeat;
+    }
+  }
+
+  // Element -> Date
+  &__date{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: rgba(0,0,0,.5);
+    word-break: break-all;
+
+    // modificator -> bigger date
+    &--bigger{
+      font-size: 14px;
+      color: @black-color;
+    }
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      padding-right: 18px;
+      padding-bottom: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../css/images/icon-date.png) no-repeat;
+    }
+  }
+}
+
+
+
+// BLOCK -> Right column head links
+.widget-right-head{
+
+  // Element -> Right column title
+  &__title{
+    .gotham-m;
+    font-size: 17px;
+    line-height: 65px;
+  }
+
+  // Element -> list of head links of right column in wodget
+  &__list{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+  }
+
+  // Element -> list item
+  &__list-item{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Element -> list item link
+  &__link{
+    .link-medium;
+    font-size: 15px;
+    text-align: center;
+  }
+}
