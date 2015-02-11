@@ -42,9 +42,9 @@
   }
 
   &__menu-link{
-    .gotham-m;
+    .link-medium;
     font-size: 16px;
-    color: #fff;
+    color: @white-color;
     display: block;
     padding: 9px 30px 8px 50px;
     line-height: 16.5px;
@@ -55,8 +55,15 @@
 
     &:hover{
       background: rgba(255, 255, 255, .3);
-      color: #fff;
+      color: @white-color;
       text-decoration: none;
+    }
+
+    &:focus{
+      color: @white-color;
+    }
+    &:active{
+      color: @white-color;
     }
 
     &--active{

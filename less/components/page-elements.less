@@ -32,6 +32,11 @@
     .link-base;
     font-size: 15px;
 
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+
     // Filter
     &--filter{
       &:before{
@@ -42,16 +47,16 @@
         display: inline-block;
         background: url(../img/icon-filter.png) no-repeat;
       }
+    }
 
-      &:after{
-        content: "";
-        width: 10px;
-        height: 6px;
-        margin-left: 5px;
-        display: inline-block;
-        vertical-align: middle;
-        background: url(../img/arrow-down.png) no-repeat;
-      }
+    &:after{
+      content: "";
+      width: 10px;
+      height: 6px;
+      margin-left: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/arrow-down.png) no-repeat;
     }
   }
 }
