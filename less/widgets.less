@@ -854,6 +854,8 @@
 		background-image: url(../img/list-arrow.png);
 		background-repeat: no-repeat;
 		background-position: 99% 50%;
+
+
 		&:hover *{
 			color: @red-color;
 		}
@@ -879,11 +881,21 @@
 		&:before{
 			content: "";
 			width: 46px;
-			height: 47px;
+			height: 46px;
+		  	border: 1px solid rgba(0, 0, 0, 0.2);
+		  	border-radius: 50%;
 			position: absolute;
 			top: 50%; left: 0;
 			transform: translateY(-50%);
-			background: url(../img/icon-clinic.png) no-repeat;
+		}
+	  	&:after{
+		  content: "";
+		  width: 46px;
+		  height: 46px;
+		  position: absolute;
+		  top: 30px; left: 10px;
+		  transform: translateY(-50%);
+		  background: url(../img/clinic-logo.png) no-repeat;
 		}
 	}
 }

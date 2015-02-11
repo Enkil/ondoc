@@ -1,9 +1,9 @@
-// Main content header with sorting links
+// BLOCK -> Main content header with sorting links
 .content-header{
   margin-top: 10px;
   margin-bottom: 30px;
 
-  // Back link
+  // Element -> Back link
   &__back{
     .gotham-m;
     font-size: 15px;
@@ -26,18 +26,27 @@
     }
   }
 
-  // Sorting links
+  // Element -> Sorting links
   &__sort-link{
-    .gotham-m;
-    .link-base;
+    .link-medium;
     font-size: 15px;
 
-    &:hover{
-      color: lighten(@blue-color, 8);
-      text-decoration: none;
+    // modificator -> dropdown icon
+    &--dropdown{
+      cursor: pointer;
+
+      &:after{
+        content: "";
+        width: 10px;
+        height: 6px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/arrow-down.png) no-repeat;
+      }
     }
 
-    // Filter
+    // modificator -> filter link
     &--filter{
       &:before{
         content: "";
@@ -49,14 +58,9 @@
       }
     }
 
-    &:after{
-      content: "";
-      width: 10px;
-      height: 6px;
-      margin-left: 5px;
-      display: inline-block;
-      vertical-align: middle;
-      background: url(../img/arrow-down.png) no-repeat;
+    // modificator -> date array
+    &--dates{
+      font-size: 14px;
     }
   }
 }

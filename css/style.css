@@ -1080,14 +1080,27 @@ input[type="button"] {
 .description-block .clinic-title:before {
   content: "";
   width: 46px;
-  height: 47px;
+  height: 46px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url(../img/icon-clinic.png) no-repeat;
+}
+.description-block .clinic-title:after {
+  content: "";
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../img/clinic-logo.png) no-repeat;
 }
 /* Настройка виджетов */
 .settings-block {
@@ -9540,9 +9553,17 @@ a:focus {
   outline: none;
   color: #0099cc;
 }
-.content-header__sort-link:hover {
-  color: #00b8f5;
-  text-decoration: none;
+.content-header__sort-link--dropdown {
+  cursor: pointer;
+}
+.content-header__sort-link--dropdown:after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/arrow-down.png) no-repeat;
 }
 .content-header__sort-link--filter:before {
   content: "";
@@ -9552,14 +9573,8 @@ a:focus {
   display: inline-block;
   background: url(../img/icon-filter.png) no-repeat;
 }
-.content-header__sort-link:after {
-  content: "";
-  width: 10px;
-  height: 6px;
-  margin-left: 5px;
-  display: inline-block;
-  vertical-align: middle;
-  background: url(../img/arrow-down.png) no-repeat;
+.content-header__sort-link--dates {
+  font-size: 14px;
 }
 .widget {
   border-radius: 12px;
@@ -9707,7 +9722,7 @@ a:focus {
   padding-bottom: 18px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../css/images/icon-clinic.png) no-repeat;
+  background: url(../img/icon-clinic.png) no-repeat;
 }
 .widget-doctor__date {
   font-family: 'Gotham', Arial, sans-serif;
@@ -9729,7 +9744,7 @@ a:focus {
   padding-bottom: 16px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../css/images/icon-date.png) no-repeat;
+  background: url(../img/icon-date.png) no-repeat;
 }
 .widget-header__text {
   font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -9747,6 +9762,70 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
   background: url(../img/icon-consultation.png) no-repeat;
+}
+.widget-header__icon:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.widget-header__icon--pulse:before {
+  background: url(../img/icon-pulse.png) no-repeat;
+}
+.widget-header__icon--mass:before {
+  background: url(../img/icon-mass.png) no-repeat;
+}
+.widget-header__icon--sugar:before {
+  background: url(../img/icon-sugar.png) no-repeat;
+}
+.widget-header__icon--pressure:before {
+  background: url(../img/icon-pressure.png) no-repeat;
+}
+.widget-header__icon--holesterin:before {
+  background: url(../img/icon-holesterin.png) no-repeat;
+}
+.widget-header__icon--temperature:before {
+  background: url(../img/icon-temperature.png) no-repeat;
+}
+.widget-header__dropdown {
+  background: #fff;
+  padding: 5px 10px 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  z-index: 999;
+  transition: 0.2s ease all;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.widget-header__dropdown-list {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 15px 10px;
+}
+.widget-header__dropdown-item {
+  color: #0099cc;
+  transition: 0.2s ease all;
+  display: block;
+}
+.widget-header__dropdown-item:hover {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget-header__dropdown-item:active {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-header__dropdown-item:focus {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
 }
 .widget-consultation {
   margin-top: 20px;
@@ -9887,7 +9966,7 @@ a:focus {
   padding-bottom: 18px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../css/images/icon-clinic.png) no-repeat;
+  background: url(../img/icon-clinic.png) no-repeat;
 }
 .widget-tab__date {
   font-family: 'Gotham', Arial, sans-serif;
@@ -9909,7 +9988,7 @@ a:focus {
   padding-bottom: 16px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../css/images/icon-date.png) no-repeat;
+  background: url(../img/icon-date.png) no-repeat;
 }
 .widget-right-head__title {
   font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -9962,6 +10041,156 @@ a:focus {
   text-decoration: none;
   outline: none;
   color: #0099cc;
+}
+.widget-chart {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+.widget-data-table {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.widget-data-table__title {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.widget-data-table__table {
+  width: 84%;
+  margin: 0 auto;
+}
+.widget-data-table__table tr {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+}
+.widget-data-table__table tr:last-child {
+  border-bottom: none;
+}
+.widget-data-table__table td {
+  padding: 11px 0px 10px 7px;
+}
+.widget-data-table__date {
+  width: 18%;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.widget-data-table__time {
+  width: 20%;
+  padding-left: 0!important;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.widget-data-table__number {
+  width: 60%;
+  text-align: right;
+  padding-right: 20px!important;
+  font-size: 12px;
+}
+.widget-pagination {
+  margin-bottom: 12px;
+  padding: 0 20px 0;
+}
+.widget-pagination__show-by {
+  font-family: 'Gotham-Medium', Arial, sans-serif;
+  color: #0099cc;
+  transition: 0.2s ease all;
+  font-size: 13px;
+}
+.widget-pagination__show-by:hover {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget-pagination__show-by:active {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-pagination__show-by:focus {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-pagination__show-by--dropdown {
+  cursor: pointer;
+}
+.widget-pagination__show-by--dropdown:after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/arrow-down.png) no-repeat;
+}
+.widget-pagination__dropdown {
+  background: #fff;
+  padding: 5px 10px 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  z-index: 999;
+  transition: 0.2s ease all;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.widget-pagination__dropdown-list {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 15px 10px;
+}
+.widget-pagination__dropdown-item {
+  color: #0099cc;
+  transition: 0.2s ease all;
+  display: block;
+}
+.widget-pagination__dropdown-item:hover {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget-pagination__dropdown-item:active {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-pagination__dropdown-item:focus {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-pagination__numeration-list {
+  text-align: right;
+}
+.widget-pagination__numeration-item {
+  display: inline-block;
+  margin: 0 2px;
+}
+.widget-pagination__numeration-link {
+  font-family: 'Gotham-Medium', Arial, sans-serif;
+  color: #0099cc;
+  transition: 0.2s ease all;
+  font-size: 13px;
+}
+.widget-pagination__numeration-link:hover {
+  text-decoration: none;
+  color: #00b8f5;
+}
+.widget-pagination__numeration-link:active {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-pagination__numeration-link:focus {
+  text-decoration: none;
+  outline: none;
+  color: #0099cc;
+}
+.widget-pagination__numeration-link--active {
+  color: #000000;
 }
 .widget-btn {
   font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -10179,8 +10408,8 @@ a:focus {
   color: #e26454;
 }
 .bg-blur .js-page-wrapper {
-  -webkit-filter: blur(10px) grayscale(50%);
-          filter: blur(10px) grayscale(50%);
+  -webkit-filter: blur(5px) grayscale(50%);
+          filter: blur(5px) grayscale(50%);
   background: rgba(0, 0, 0, 0.13);
 }
 
