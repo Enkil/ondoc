@@ -16,7 +16,6 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "Chart.js": "~1.0.1",
     "highcharts": "~4.0.4",
     "jquery-autosize": "~1.18.17"
   }

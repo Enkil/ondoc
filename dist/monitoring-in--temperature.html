@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+</head>
+<body>
+
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__logo main-header__link main-header__link--logotext" href="index.html" title="OnDoc - Персональное здравоохранение">
+                    <img class="" src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    <span class="hidden-xs hidden-sm" title="OnDoc - Персональное здравоохранение">OnDoc</span>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-17">
+                <a href="#" class="main-header__link main-header__question">С чего начать?</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-12 pull-right">
+                <div class="dropdown pull-right">
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+                    <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
+                        Смирнов Иван
+                    </a>
+                    <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+
+<!-- PAGE CONTENT-->
+<div class="main-page">
+  <div class="container">
+    <div class="row">
+
+      <!-- Left Sidebar -->
+            <aside class="col-xs-7 ">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/big-avatar.png" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active" href="index.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor" href="">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+
+      <!-- Right page block-->
+      <div class="col-xs-29">
+
+
+        <!-- Content Header - Filter -->
+        <div class="row content-header">
+
+          <!-- Back link -->
+          <div class="col-xs-4">
+            <a class="content-header__back" href="#">Назад</a>
+          </div>
+
+          <!-- Month picker -->
+          <div class="col-xs-4 col-lg-offset-10">
+            <a class="content-header__sort-link content-header__sort-link--dropdown" href="#">Месяц</a>
+
+            <!-- Month dropdown -->
+            <div class="widget-header__dropdown display-none">
+              <ul class="widget-header__dropdown-list">
+                <li class="widget-header__dropdown-item" data-value='1'>Январь</li>
+                <li class="widget-header__dropdown-item" data-value='2'>Февраль</li>
+                <li class="widget-header__dropdown-item" data-value='3'>Март</li>
+                <li class="widget-header__dropdown-item" data-value='4'>Апрель</li>
+                <li class="widget-header__dropdown-item" data-value='5'>Март</li>
+                <li class="widget-header__dropdown-item" data-value='6'>Май</li>
+                <li class="widget-header__dropdown-item" data-value='7'>Июнь</li>
+                <li class="widget-header__dropdown-item" data-value='8'>Июль</li>
+                <li class="widget-header__dropdown-item" data-value='9'>Август</li>
+                <li class="widget-header__dropdown-item" data-value='10'>Сентябрь</li>
+                <li class="widget-header__dropdown-item" data-value='11'>Октябрь</li>
+                <li class="widget-header__dropdown-item" data-value='12'>Декабрь</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Date picker -->
+          <div class="col-xs-17 col-lg-offset-1">
+            <time class="content-header__sort-link content-header__sort-link--dates">21/05/2014</time>
+            <span class="content-header__sort-link content-header__sort-link--dates">-</span>
+            <time class="content-header__sort-link content-header__sort-link--dates">21/06/2014</time>
+          </div>
+
+        </div>
+        <!-- / Content Header - Filter -->
+
+
+        <!-- Content -->
+        <div class="row widget">
+
+          <!-- Widget header -->
+          <div class="">
+            <div class="col-xs-36 widget-header text-center">
+              <div class="">
+                <p class="widget-header__text widget-header__icon widget-header__icon--temperature">Температура</p>
+                <a class="widget-btn widget-btn--plus pull-right" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <!-- / Widget header -->
+
+          <!-- Chart -->
+          <div class="">
+            <div class="col-xs-36">
+
+              <div class="widget-chart" id="chart"></div>
+
+            </div>
+          </div>
+
+          <!-- Horizontal line -->
+          <div class=" widget-consultation widget-consultation--wo-margin">
+            <div class="col-xs-36 text-center widget-consultation__line widget-consultation__line--wo-margin">
+              <span class="widget-consultation__title"></span>
+            </div>
+          </div>
+
+          <!-- Widget data progress table -->
+          <div class="">
+
+            <div class="col-xs-36 widget-data-table">
+
+              <!-- Widget data table title-->
+              <p class="widget-data-table__title">Внесенные данные</p>
+
+              <div class="row">
+
+                <!-- First data table -->
+                <div class="col-xs-12">
+                  <table class="widget-data-table__table">
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                  </table>
+                </div>
+
+                <!-- Second data table -->
+                <div class="col-xs-12">
+                  <table class="widget-data-table__table">
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                  </table>
+                </div>
+
+                <!-- Third data table -->
+                <div class="col-xs-12">
+                  <table class="widget-data-table__table">
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="widget-data-table__date"><span class="grey">1 / 09</span></td>
+                      <td class="widget-data-table__time"><span class="grey">15:56</span></td>
+                      <td class="widget-data-table__number"><span>70</span></td>
+                    </tr>
+
+                  </table>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!-- / Widget data progress table -->
+
+          <!-- Pagination -->
+          <div class="">
+            <div class="col-xs-36">
+
+              <div class="widget-pagination">
+                <div class="row">
+
+                  <!-- Show by -->
+                  <div class="col-xs-12">
+                    <span class="widget-pagination__show-by">Показывать по <span class="widget-pagination__show-by widget-pagination__show-by--dropdown">30</span></span>
+                  </div>
+
+                  <!-- Month dropdown -->
+                  <div class="widget-pagination__dropdown display-none">
+                    <ul class="widget-pagination__dropdown-list">
+                      <li class="widget-pagination__dropdown-item" data-value='10'>10</li>
+                      <li class="widget-pagination__dropdown-item" data-value='20'>20</li>
+                      <li class="widget-pagination__dropdown-item" data-value='30'>30</li>
+                      <li class="widget-pagination__dropdown-item" data-value='50'>50</li>
+                    </ul>
+                  </div>
+
+                  <!-- Numeration -->
+                  <div class="col-xs-18  pull-right">
+                    <ul class="widget-pagination__numeration-list">
+                      <li class="widget-pagination__numeration-item"><a class="widget-pagination__numeration-link widget-pagination__numeration-link--active" href="#">1</a></li>
+                      <li class="widget-pagination__numeration-item"><a class="widget-pagination__numeration-link" href="#">2</a></li>
+                      <li class="widget-pagination__numeration-item"><a class="widget-pagination__numeration-link" href="#">3</a></li>
+                      <li class="widget-pagination__numeration-item"><a class="widget-pagination__numeration-link" href="#">4</a></li>
+                      <li class="widget-pagination__numeration-item"><a class="widget-pagination__numeration-link" href="#">5</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- / Pagination -->
+
+        </div>
+        <!-- / Content -->
+
+
+      </div>
+      <!-- / Right page block-->
+
+    </div>
+  </div>
+</div>
+<!-- / PAGE CONTENT-->
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+</body>
+</html>

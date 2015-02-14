@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__logo main-header__link main-header__link--logotext" href="index.html" title="OnDoc - Персональное здравоохранение">
+                    <img class="" src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    <span class="hidden-xs hidden-sm" title="OnDoc - Персональное здравоохранение">OnDoc</span>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-17">
+                <a href="#" class="main-header__link main-header__question">С чего начать?</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-12 pull-right">
+                <div class="dropdown pull-right">
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+                    <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
+                        Смирнов Иван
+                    </a>
+                    <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+<!-- Общий сблок -->
+<div class="main-page">
+  <div class="container">
+    <!--<div class="row main-row-customize">-->
+    <div class="row">
+
+      <!-- Left Sidebar -->
+            <aside class="col-xs-7 ">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/big-avatar.png" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active" href="index.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor" href="">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+          <section class="col-xs-29">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="widget widget--mini">
+                  <div class="widget-head bottom-line-grey">
+
+                    <p class="icon icon-pulse">Пульс <a href="#" class="plus"></a></p>
+                  </div>
+                  
+                  <div class="widget-content">
+                    <div class="date-block clearfix">
+                      <div class="month pull-left">
+                        <form action="" method="">
+                          <div class="select-list">
+                            <div class="select-list-text">Месяц</div>
+                            <input type="hidden" class="select-value" name="select-value" value="0" />
+                            <ul class="list-drop">
+                              <li class="list-drop-item" data-value='1'>Январь</li>
+                              <li class="list-drop-item" data-value='2'>Февраль</li>
+                              <li class="list-drop-item" data-value='3'>Март</li>
+                              <li class="list-drop-item" data-value='4'>Апрель</li>
+                              <li class="list-drop-item" data-value='5'>Март</li>
+                              <li class="list-drop-item" data-value='6'>Май</li>
+                              <li class="list-drop-item" data-value='7'>Июнь</li>
+                              <li class="list-drop-item" data-value='8'>Июль</li>
+                              <li class="list-drop-item" data-value='9'>Август</li>
+                              <li class="list-drop-item" data-value='10'>Сентябрь</li>
+                              <li class="list-drop-item" data-value='11'>Октябрь</li>
+                              <li class="list-drop-item" data-value='12'>Декабрь</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="date pull-right">
+                        <p>21/05/2014 - 21/06/2014</p>
+                      </div>
+                    </div>
+                    <div class="timetable">
+                      <img src="img/mini-graph.png" alt="">
+                    </div>
+                    <!-- Всплывающий блок -->
+                    <div class="description">
+                      <form action="">
+                        <div class="add-block">
+                          <p>Добавить показание</p>
+                          <a href="#" class="date">21/05/2014</a>
+                        </div>
+                        <div class="indication">
+                          <input type="text" class="indication-value" value="115" />
+                          <p>уд/мин</p>
+                        </div>
+                        <div class="buttons clearfix">
+                          <a href="#" class="exit to-left">Отмена</a>
+                          <a href="#" class="okey to-right">Ок</a>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="widget widget--mini">
+                  <div class="widget-head bottom-line-grey">
+                    <p class="icon icon-pressure">Давление <a href="#" class="plus"></a></p>
+                  </div>
+                  <div class="widget-content">
+                    <div class="date-block clearfix">
+                      <div class="month pull-left">
+                        <form action="" method="">
+                          <div class="select-list">
+                            <div class="select-list-text">Месяц</div>
+                            <input type="hidden" class="select-value" name="select-value" value="0" />
+                            <ul class="list-drop">
+                              <li class="list-drop-item" data-value='1'>Январь</li>
+                              <li class="list-drop-item" data-value='2'>Февраль</li>
+                              <li class="list-drop-item" data-value='3'>Март</li>
+                              <li class="list-drop-item" data-value='4'>Апрель</li>
+                              <li class="list-drop-item" data-value='5'>Март</li>
+                              <li class="list-drop-item" data-value='6'>Май</li>
+                              <li class="list-drop-item" data-value='7'>Июнь</li>
+                              <li class="list-drop-item" data-value='8'>Июль</li>
+                              <li class="list-drop-item" data-value='9'>Август</li>
+                              <li class="list-drop-item" data-value='10'>Сентябрь</li>
+                              <li class="list-drop-item" data-value='11'>Октябрь</li>
+                              <li class="list-drop-item" data-value='12'>Декабрь</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="date pull-right">
+                        <p>21/05/2014 - 21/06/2014</p>
+                      </div>
+                    </div>
+                    <div class="timetable">
+                      <img src="img/mini-graph.png" alt="">
+                    </div>
+
+                    <!-- Всплывающий блок -->
+                    <div class="description">
+                      <form action="">
+                        <div class="add-block">
+                          <p>Добавить показание</p>
+                          <a href="#" class="date">21/05/2014</a>
+                        </div>
+                        <div class="indication">
+                          <div class="inline-column slash">
+                            <input type="text" class="indication-value" value="130" />
+                            <p>Систола</p>
+                          </div>
+                          <div class="inline-column">
+                            <input type="text" class="indication-value" value="100" />
+                            <p>Диастола</p>
+                          </div>
+                        </div>
+                        <div class="buttons clearfix">
+                          <a href="#" class="exit to-left">Отмена</a>
+                          <a href="#" class="okey to-right">Ок</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="widget widget--mini">
+                  <div class="widget-head bottom-line-grey">
+                    <p class="icon icon-weight">Вес <a href="#" class="plus"></a></p>
+                  </div>
+                  <div class="widget-content">
+                    <div class="date-block clearfix">
+                      <div class="month pull-left">
+                        <form action="" method="">
+                          <div class="select-list">
+                            <div class="select-list-text">Месяц</div>
+                            <input type="hidden" class="select-value" name="select-value" value="0" />
+                            <ul class="list-drop">
+                              <li class="list-drop-item" data-value='1'>Январь</li>
+                              <li class="list-drop-item" data-value='2'>Февраль</li>
+                              <li class="list-drop-item" data-value='3'>Март</li>
+                              <li class="list-drop-item" data-value='4'>Апрель</li>
+                              <li class="list-drop-item" data-value='5'>Март</li>
+                              <li class="list-drop-item" data-value='6'>Май</li>
+                              <li class="list-drop-item" data-value='7'>Июнь</li>
+                              <li class="list-drop-item" data-value='8'>Июль</li>
+                              <li class="list-drop-item" data-value='9'>Август</li>
+                              <li class="list-drop-item" data-value='10'>Сентябрь</li>
+                              <li class="list-drop-item" data-value='11'>Октябрь</li>
+                              <li class="list-drop-item" data-value='12'>Декабрь</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="date pull-right">
+                        <p>21/05/2014 - 21/06/2014</p>
+                      </div>
+                    </div>
+                    <div class="timetable">
+                      <img src="img/mini-graph.png" alt="">
+                    </div>
+                    <!-- Всплывающий блок -->
+                    <div class="description">
+                      <form action="">
+                        <div class="add-block">
+                          <p>Добавить показание</p>
+                          <a href="#" class="date">21/05/2014</a>
+                        </div>
+                        <div class="indication">
+                          <input type="text" class="indication-value" value="80" />
+                          <p>кг</p>
+                        </div>
+                        <div class="buttons clearfix">
+                          <a href="#" class="exit to-left">Отмена</a>
+                          <a href="#" class="okey to-right">Ок</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="widget widget--mini">
+                  <div class="widget-head bottom-line-grey">
+                    <p class="icon icon-sugar">Сахар <a href="#" class="plus"></a></p>
+                  </div>
+                  <div class="widget-content">
+                    <div class="date-block clearfix">
+                      <div class="month pull-left">
+                        <form action="" method="">
+                          <div class="select-list">
+                            <div class="select-list-text">Месяц</div>
+                            <input type="hidden" class="select-value" name="select-value" value="0" />
+                            <ul class="list-drop">
+                              <li class="list-drop-item" data-value='1'>Январь</li>
+                              <li class="list-drop-item" data-value='2'>Февраль</li>
+                              <li class="list-drop-item" data-value='3'>Март</li>
+                              <li class="list-drop-item" data-value='4'>Апрель</li>
+                              <li class="list-drop-item" data-value='5'>Март</li>
+                              <li class="list-drop-item" data-value='6'>Май</li>
+                              <li class="list-drop-item" data-value='7'>Июнь</li>
+                              <li class="list-drop-item" data-value='8'>Июль</li>
+                              <li class="list-drop-item" data-value='9'>Август</li>
+                              <li class="list-drop-item" data-value='10'>Сентябрь</li>
+                              <li class="list-drop-item" data-value='11'>Октябрь</li>
+                              <li class="list-drop-item" data-value='12'>Декабрь</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="date pull-right">
+                        <p>21/05/2014 - 21/06/2014</p>
+                      </div>
+                    </div>
+                    <div class="shedule">
+                      <div class="row">
+                        <div class="shedule-block shedule-block--active col-xs-9">
+                          <p class="icon icon-sun"></p>
+                          <p>Утром</p>
+                        </div>
+                        <div class="shedule-block col-xs-9">
+                          <p class="icon icon-eat"></p>
+                          <p>До еды</p>
+                        </div>
+                        <div class="shedule-block col-xs-9">
+                          <p class="icon icon-food"></p>
+                          <p>После еды</p>
+                        </div>
+                        <div class="shedule-block col-xs-9">
+                          <p class="icon icon-moon"></p>
+                          <p>Вечером</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timetable">
+                      <img src="img/mini-graph-2.png" alt="">
+                    </div>
+                    <!-- Всплывающий блок -->
+                    <div class="description min-padding">
+                      <form action="">
+                        <div class="add-block min-margin">
+                          <p>Добавить показание</p>
+                          <a href="#" class="date">21/05/2014</a>
+                        </div>
+                        <div class="shedule">
+                          <div class="row">
+                            <div class="shedule-block shedule-block--active col-xs-9">
+                              <p class="icon icon-sun"></p>
+                              <p>Утром</p>
+                            </div>
+                            <div class="shedule-block col-xs-9">
+                              <p class="icon icon-eat"></p>
+                              <p>До еды</p>
+                            </div>
+                            <div class="shedule-block col-xs-9">
+                              <p class="icon icon-food"></p>
+                              <p>После еды</p>
+                            </div>
+                            <div class="shedule-block col-xs-9">
+                              <p class="icon icon-moon"></p>
+                              <p>Вечером</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="indication indication--inline">
+                            <input type="text" class="indication-value" value="4" />
+                            <span class="comma">,</span>
+                            <input type="text" class="indication-value" value="6" />
+                            <p>ммоль/л</p>
+                        </div>
+                        <div class="buttons clearfix">
+                          <a href="#" class="exit to-left">Отмена</a>
+                          <a href="#" class="okey to-right">Ок</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="widget widget--mini">
+                  <div class="widget-head bottom-line-grey">
+                    <p class="icon icon-temperature">Температура <a href="#" class="plus"></a></p>
+                  </div>
+                  <div class="widget-content">
+                    <div class="date-block clearfix">
+                      <div class="month pull-left">
+                        <form action="" method="">
+                          <div class="select-list">
+                            <div class="select-list-text">Месяц</div>
+                            <input type="hidden" class="select-value" name="select-value" value="0" />
+                            <ul class="list-drop">
+                              <li class="list-drop-item" data-value='1'>Январь</li>
+                              <li class="list-drop-item" data-value='2'>Февраль</li>
+                              <li class="list-drop-item" data-value='3'>Март</li>
+                              <li class="list-drop-item" data-value='4'>Апрель</li>
+                              <li class="list-drop-item" data-value='5'>Март</li>
+                              <li class="list-drop-item" data-value='6'>Май</li>
+                              <li class="list-drop-item" data-value='7'>Июнь</li>
+                              <li class="list-drop-item" data-value='8'>Июль</li>
+                              <li class="list-drop-item" data-value='9'>Август</li>
+                              <li class="list-drop-item" data-value='10'>Сентябрь</li>
+                              <li class="list-drop-item" data-value='11'>Октябрь</li>
+                              <li class="list-drop-item" data-value='12'>Декабрь</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="date pull-right">
+                        <p>21/05/2014 - 21/06/2014</p>
+                      </div>
+                    </div>
+                    <div class="timetable">
+                      <img src="img/mini-graph.png" alt="">
+                    </div>
+                    <!-- Всплывающий блок -->
+                    <div class="description">
+                      <form action="">
+                        <div class="add-block">
+                          <p>Добавить показание</p>
+                          <a href="#" class="date">21/05/2014</a>
+                        </div>
+                        <div class="indication indication--inline">
+                            <input type="text" class="indication-value" value="36" />
+                            <span class="comma">,</span>
+                            <input type="text" class="indication-value" value="6" />
+                            <span class="degree"><img src="img/icon-degree.png" alt="∘С"></span>
+                        </div>
+                        <div class="buttons clearfix">
+                          <a href="#" class="exit to-left">Отмена</a>
+                          <a href="#" class="okey to-right">Ок</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="widget widget--mini">
+                  <div class="widget-head bottom-line-grey">
+                    <p class="icon icon-cholesterol">ХолестеринХолестеринХолестеринХолестеринХолестеринХолестерин <a href="#" class="plus"></a></p>
+                  </div>
+                  <div class="widget-content">
+                    <div class="date-block clearfix">
+                      <div class="month pull-left">
+                        <form action="" method="">
+                          <div class="select-list">
+                            <div class="select-list-text">Месяц</div>
+                            <input type="hidden" class="select-value" name="select-value" value="0" />
+                            <ul class="list-drop">
+                              <li class="list-drop-item" data-value='1'>Январь</li>
+                              <li class="list-drop-item" data-value='2'>Февраль</li>
+                              <li class="list-drop-item" data-value='3'>Март</li>
+                              <li class="list-drop-item" data-value='4'>Апрель</li>
+                              <li class="list-drop-item" data-value='5'>Март</li>
+                              <li class="list-drop-item" data-value='6'>Май</li>
+                              <li class="list-drop-item" data-value='7'>Июнь</li>
+                              <li class="list-drop-item" data-value='8'>Июль</li>
+                              <li class="list-drop-item" data-value='9'>Август</li>
+                              <li class="list-drop-item" data-value='10'>Сентябрь</li>
+                              <li class="list-drop-item" data-value='11'>Октябрь</li>
+                              <li class="list-drop-item" data-value='12'>Декабрь</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="date pull-right">
+                        <p>21/05/2014 - 21/06/2014</p>
+                      </div>
+                    </div>
+                    <div class="views">
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <a href="#" class="js-hol-find current">Общий</a>
+                        </div>
+                        <div class="col-xs-12">
+                          <a class="js-hol-find" href="#">ЛПНП</a>
+                        </div>
+                        <div class="col-xs-9">
+                          <a class="js-hol-find" href="#">ЛПВП</a>
+                        </div>
+                        <div class="col-xs-6">
+                          <a class="js-hol-find" href="#">ТГ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timetable">
+                      <img src="img/mini-graph-2.png" alt="">
+                    </div>
+                    <!-- Всплывающий блок -->
+                    <div class="description">
+                      <form action="">
+                        <div class="add-block min-margin">
+                          <p>Добавить показание</p>
+                          <a href="#" class="date">21/05/2014</a>
+                        </div>
+                        <div class="views">
+                          <div class="row">
+                            <div class="col-xs-9">
+                              <a href="#" class="js-hol-find current">Общий</a>
+                            </div>
+                            <div class="col-xs-12">
+                              <a class="js-hol-find" href="#">ЛПНП</a>
+                            </div>
+                            <div class="col-xs-9">
+                              <a class="js-hol-find" href="#">ЛПВП</a>
+                            </div>
+                            <div class="col-xs-6">
+                              <a class="js-hol-find" href="#">ТГ</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="indication indication--inline">
+                            <input type="text" class="indication-value" value="3" />
+                            <span class="comma">,</span>
+                            <input type="text" class="indication-value" value="4" />
+                        </div>
+                        <div class="buttons clearfix">
+                          <a href="#" class="exit to-left">Отмена</a>
+                          <a href="#" class="okey to-right">Ок</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="settings">
+              <a href="#" class="icon-setting">Настроить виджеты</a>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+    
+</body>
+</html>
