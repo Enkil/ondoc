@@ -47,8 +47,8 @@ gulp.task('less', function() {
         .pipe(csscomb())
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({ suffix: '.min' }))
-        //.pipe(minifycss())
-        .pipe(csso())
+        .pipe(minifycss())
+        //.pipe(csso())
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
         .pipe(livereload())
@@ -227,9 +227,9 @@ gulp.task('bundle-libraries-auto', ['bower'], function(){
 gulp.task('build', function(callback) {
     runSequence('html',
         'bundle-libraries-auto',
+        'js',
         'less',
         'fonts',
-        'js',
         'images',
         'clean',
         callback)

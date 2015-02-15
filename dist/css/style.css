@@ -2107,14 +2107,12 @@ input[type='button']
 {
     text-decoration: none;
 
-    color: #09c;
     outline: none;
 }
 .sorting .icon:focus
 {
     text-decoration: none;
 
-    color: #09c;
     outline: none;
 }
 .sorting .icon:before

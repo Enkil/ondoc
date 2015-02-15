@@ -11891,12 +11891,13 @@ $('.shedule-block').click(function(){
 });
 
 // change class of holestirin blocks
-$('.js-hol-find').click(function(event){
-    event.preventDefault();
-    $('.current').removeClass('current');
-    $(this).addClass('current');
-});
-
+if($('.js-hol-find').length){
+    $('.js-hol-find').click(function(event){
+        event.preventDefault();
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+    });
+}
 
 $(function(){
 
