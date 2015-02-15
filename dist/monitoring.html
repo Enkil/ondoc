@@ -102,7 +102,7 @@
               <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
-                    <p class="icon icon-pulse">Пульс <a href="monitoring-in.html" class="plus"></a></p>
+                    <p class="icon icon-pulse">Пульс <a href="monitoring-in--pulse.html" class="plus"></a></p>
                   </div>
                   <div class="date-block clearfix">
                     <div class="month pull-left">
@@ -140,7 +140,7 @@
               <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
-                    <p class="icon icon-pressure">Давление <a href="#" class="plus"></a></p>
+                    <p class="icon icon-pressure">Давление <a href="monitoring-in--pressure.html" class="plus"></a></p>
                   </div>
                   <div class="date-block clearfix">
                     <div class="month pull-left">
@@ -178,7 +178,7 @@
               <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
-                    <p class="icon icon-weight">Вес <a href="#" class="plus"></a></p>
+                    <p class="icon icon-weight">Вес <a href="monitoring-in--mass.html" class="plus"></a></p>
                   </div>
                   <div class="date-block clearfix">
                     <div class="month pull-left">
@@ -221,7 +221,7 @@
               <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
-                    <p class="icon icon-sugar">Сахар <a href="#" class="plus"></a></p>
+                    <p class="icon icon-sugar">Сахар <a href="monitoring-in--sugar.html" class="plus"></a></p>
                   </div>
                   <div class="date-block clearfix">
                     <div class="month pull-left">
@@ -279,7 +279,7 @@
               <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
-                    <p class="icon icon-temperature">Температура <a href="#" class="plus"></a></p>
+                    <p class="icon icon-temperature">Температура <a href="monitoring-in--temperature.html" class="plus"></a></p>
                   </div>
                   <div class="date-block clearfix">
                     <div class="month pull-left">
@@ -317,7 +317,7 @@
               <div class="col-xs-12">
                 <div class="widget widget--mini">
                   <div class="widget-head bottom-line">
-                    <p class="icon icon-cholesterol">Холестерин <a href="#" class="plus"></a></p>
+                    <p class="icon icon-cholesterol">Холестерин <a href="monitoring-in--holesterin.html" class="plus"></a></p>
                   </div>
                   <div class="date-block clearfix">
                     <div class="month pull-left">
@@ -371,6 +371,79 @@
 
             <div class="settings">
               <a href="#" class="icon-setting">Настроить виджеты</a>
+
+
+                <!-- Настройка виджетов -->
+                <div class="settings-block display-none">
+                    <div class="background"></div>
+                    <div class="widgets-block">
+                        <form action="">
+                            <p class="head">Настройка виджетов</p>
+
+                            <div class="items-block">
+
+                                <div class="item">
+                                    <input type="checkbox" id="check1" checked/>
+                                    <label for="check1">
+                                        <i class="icon icon-pulse"></i>
+                                        <span>Пульс</span>
+                                    </label>
+                                </div>
+
+                                <div class="item">
+                                    <input type="checkbox" id="check2" checked/>
+                                    <label for="check2">
+                                        <i class="icon icon-pressure"></i>
+                                        <span>Давление</span>
+                                    </label>
+                                </div>
+
+                                <div class="item">
+                                    <input type="checkbox" id="check3"/>
+                                    <label for="check3">
+                                        <i class="icon icon-weight"></i>
+                                        <span>Вес</span>
+                                    </label>
+                                </div>
+
+                                <div class="item">
+                                    <input type="checkbox" id="check4" checked/>
+                                    <label for="check4">
+                                        <i class="icon icon-temp"></i>
+                                        <span>Температура</span>
+                                    </label>
+                                </div>
+
+                                <div class="item item-disabled">
+                                    <input type="checkbox" id="check5" disabled/>
+                                    <label for="check5">
+                                        <i class="icon icon-sugar"></i>
+                                        <span>Сахар</span>
+                                    </label>
+                                </div>
+
+                                <div class="item">
+                                    <input type="checkbox" id="check6"/>
+                                    <label for="check6">
+                                        <i class="icon icon-cholesterol"></i>
+                                        <span>Холестерин</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit form -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center">
+                                    <input type="submit" class="widget-btn widget-btn--submit-no" value="Отмена"/>
+                                    <input type="submit" class="widget-btn widget-btn--submit-yes" value="OK"/>
+                                </div>
+                            </div>
+
+                            <span class="icon-exit"></span>
+                        </form>
+                    </div>
+                </div>
+
             </div>
           </section>
         </div>

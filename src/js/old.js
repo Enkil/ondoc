@@ -10,7 +10,7 @@ $(".tabs a").click(function () {
     $("a").toggleClass('current');
 });
 
-// toggle displat:nonoe for question block in index page of user cabinet
+// toggle display:none for question block in index page of user cabinet
 $(".exit").click(function () {
     $(".quiz").toggleClass('display-none');
 });
@@ -53,8 +53,15 @@ $(function(){
 });
 
 
-$('.icon-exit').click(function (){
-    $('.settings-block').toggleClass('display-none');
+// Show edit block of mini widget on monitoring-aad.html
+$(".widget .plus").click(function () {
+    $(this).parents(".widget").find(".description").addClass('current');
+    $(this).css('display', 'none');
 });
 
 
+// Hide edit block of mini widget on monitoring-aad.html
+$(".widget .exit").click(function () {
+    $(this).parents(".widget").find(".description").removeClass('current');
+    $(this).parents(".widget").find('.plus').css('display', 'block');
+});

@@ -24,6 +24,7 @@ var gulp = require('gulp'),
     mainBowerFiles = require('main-bower-files'),
     runSequence = require('run-sequence'),
     notifier = require('node-notifier'),
+    pngquant = require('imagemin-pngquant'),
     del = require('del');
 
 // Copy fonts
@@ -37,22 +38,23 @@ gulp.task('fonts', function(){
 var path = require('path');
 gulp.task('less', function() {
     return gulp.src('src/css/style.less')
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
         //.pipe(uncss({ html: ['dist/*.html'] }))
         .pipe(autoprefixer('last 4 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4', '> 4%'))
-        //.pipe(csscomb())
+        .pipe(csscomb())
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({ suffix: '.min' }))
         //.pipe(minifycss())
-        //.pipe(csso())
+        .pipe(csso())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
         .pipe(livereload())
 });
 
-// Cope hichcharts to src/js, because in another way ot no build correctly
+// Copy hichcharts to src/js, because in another way ot no build correctly
 gulp.task('highcharts-copy', function(){
     gulp.src('bower_components/highcharts/highcharts-all.js')
         .pipe(gulp.dest('src/js/highcharts-all.js'))
@@ -61,12 +63,14 @@ gulp.task('highcharts-copy', function(){
 // Scripts
 gulp.task('js', ['highcharts-copy'], function() {
     return gulp.src('src/js/**/*.js')
+        //.pipe(sourcemaps.init())
         //.pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/js'))
         .pipe(livereload())
 });
@@ -74,7 +78,12 @@ gulp.task('js', ['highcharts-copy'], function() {
 // Images
 gulp.task('images', function() {
     return gulp.src('src/img/**/*')
-        .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+        .pipe(cache(imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            use: [pngquant()],
+            interlaced: true
+        })))
         .pipe(gulp.dest('dist/img'))
         .pipe(livereload())
 });
