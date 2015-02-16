@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__logo main-header__link main-header__link--logotext" href="index.html" title="OnDoc - Персональное здравоохранение">
+                    <img class="" src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    <span class="hidden-xs hidden-sm" title="OnDoc - Персональное здравоохранение">OnDoc</span>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-17">
+                <a href="#" class="main-header__link main-header__question">С чего начать?</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-12 pull-right">
+                <div class="dropdown pull-right">
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+                    <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
+                        Смирнов Иван
+                    </a>
+                    <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+    <!-- Общий сблок -->
+    <div class="main-page">
+      <div class="container">
+        <!--<div class="row main-row-customize">-->
+        <div class="row">
+
+
+<!-- Left Sidebar -->
+            <aside class="col-xs-7 ">
+                <div class="sidebar-profile">
+
+                    <!-- Menu -->
+                    <div class="sidebar-profile__menu">
+                        <ul class="sidebar-profile__menu-list">
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--profile" href="">Профиль</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--security" href="">Безопасность</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--notifications" href="">Уведомления</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--privacy" href="">Приватность</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--family" href="">Семейный доступ</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--history" href="">История покупок</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+          <section class="col-xs-29">
+            <div class="quiz row">
+
+              <div class="col-xs-24">
+                <p class="question">Вы курите?</p>
+                <div class="answer">
+                  <form action="" method="">
+                    <input type="radio" name="smokquiz" id="yes"/>
+                    <label for="yes">Да</label>
+                    
+                    <input type="radio" name="smokquiz" id="no"/>
+                    <label for="no">Нет</label>
+                   
+                    <input type="radio" name="smokquiz" id="some"/>
+                    <label for="some">Иногда</label>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-xs-12 pull-right text-right">
+                <a href="#" class="why">Зачем отвечать на вопросы?</a>
+                <a href="#" class="exit" title="Закрыть">
+                  <img src="img/icon-exit.png" alt="X" />
+                </a>     
+              </div>
+            </div>
+
+
+            <div class="diagrams">
+              <div class="row">
+
+                <div class="col-xs-12">
+                  <!-- http://cssdeck.com/labs/3iicdta1 -->
+                  <img src="img/round-progress.png" alt="" />
+                </div>
+
+                <div class="col-xs-24 tabs-section">
+                  <ul class="tabs">
+                    <li class="current">Обзор</li>
+                    <li>Оценка рисков</li>
+                  </ul>
+                  <div class="graph graph-review">
+                    <img src="img/graph.jpg" alt="" />
+                  </div>
+                  <div class="graph graph-rating">
+                    <img src="img/graph.jpg" alt="" />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="widgets-block">
+              <div class="row">
+
+
+                <div class="col-xs-12">
+                  <div class="widget widget--middle">
+                    <div class="widget-head bottom-line-grey">
+                      <p class="icon icon-recomendation">Рекомендации</p>
+                    </div>
+                    <div class="progress-block bottom-line-grey">
+                      <p>15 из 20 выполнено</p>
+                      <div class="progress">
+                        <div class="percent"></div>
+                      </div>
+                    </div>
+                    <div class="widget-list">
+                      <ul>
+                        <li class="list-item bottom-line-grey ">
+                          <a href="#">
+                            <p class="name">Пройти флюорографию</p>
+                            <p class="data">до 20 августа 2014</p>
+                          </a>
+                        </li>
+                        <li class="list-item bottom-line-grey">
+                          <a href="#">
+                            <p class="name">Сделать УЗИ органов брюшной полости</p>
+                            <p class="data">до 31 сентября 2014</p>
+                          </a>
+                        </li>
+                        <li class="list-item bottom-line-grey">
+                          <a href="#">
+                            <p class="name">Пройти вакцинацию против Гриппа</p>
+                            <p class="data">до 1 октября 2014</p>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a href="#">
+                            <p class="name">Сдать анализ крови</p>
+                            <p class="data">до 1 ноября 2014</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-xs-12">
+                  <div class="widget widget--middle">
+                    <div class="widget-head bottom-line-grey">
+                      <p class="icon icon-course">Текущий курс <a href="#" class="plus">+</a></p>
+                    </div>
+                    <div class="progress-block bottom-line-grey">
+                      <p>15<span class="grey"> / 21 дн. курса</span></p>
+                      <div class="progress">
+                        <div class="percent"></div>
+                      </div>
+                    </div>
+                    <div class="widget-list course-list">
+                      <ul>
+                        <li class="list-item list-item--time icon-time icon-time--start bottom-line-grey">
+                          <a href="#">
+                            <p class="name">Мезим</p>
+                            <p class="time">
+                              <span class="current">16:00</span>
+                              <span>21:00</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li class="list-item list-item--time icon-time icon-time--full bottom-line-grey">
+                          <a href="#">
+                            <p class="name">Ноотропил</p>
+                            <p class="time">
+                              <span>9:00</span>
+                              <span class="current">15:00</span>
+                              <span>21:00</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li class="list-item list-item--time icon-time icon-time--end bottom-line-grey">
+                          <a href="#">
+                            <p class="name">Валидол</p>
+                            <p class="time">
+                              <span class="current">10:00</span>
+                              <span>21:00</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li class="list-item list-item--time icon-time icon-time--half bottom-line-grey">
+                          <a href="#">
+                            <p class="name">Смекта</p>
+                            <p class="time">
+                              <span>9:00</span>
+                              <span class="current">15:00</span>
+                              <span>21:00</span>
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12">
+                  <div class="widget widget--middle">
+                    <div class="widget-head bottom-line-grey">
+                      <p class="icon icon-event">События</p>
+                    </div>
+                    <div class="widget-list">
+                      <ul>
+                        <li class="list-item bottom-line-grey icon-arrow">
+                          <a href="#">
+                            <p class="name">18 февраля</p>
+                            <p class="event">Сдать анализ крови</p>
+                          </a>
+                        </li>
+                        <li class="list-item bottom-line-grey icon-arrow">
+                          <a href="#">
+                            <p class="name">11 января</p>
+                            <p class="event">Повторный визит к иммунологу</p>
+                          </a>
+                        </li>
+                        <li class="list-item bottom-line-grey icon-arrow">
+                          <a href="#">
+                            <p class="name">21 декабря</p>
+                            <p class="event">Сделать рентген шеи</p>
+                          </a>
+                        </li>
+                        <li class="list-item bottom-line-grey icon-arrow">
+                          <a href="#">
+                            <p class="name">11 декабря</p>
+                            <p class="event">Прием у гастроэнтеролога</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="settings">
+              <a href="#" class="icon-setting">Настроить блоки</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+    
+    
+</body>
+</html>

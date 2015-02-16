@@ -1,34 +1,7 @@
-.sidebar{
+.sidebar-profile{
   padding: 25px 0 18px;
-  border-radius: 10px;
-  background: #32bec7;
 
   &__profile{
-
-  }
-
-  &__avatar{
-    width: 144px;
-    height: 144px;
-    margin: 0 auto;
-    display: inline-block;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    img{ width: 100%; }
-  }
-
-  &__name{
-    .gotham-m;
-    font-size: 20px;
-    color: #fff;
-    margin: 0 auto;
-    font-size: 20px;
-    line-height: 29px;
-    padding: 10px 5px;
-    word-wrap: break-word;
-  }
-
-  &__menu{
 
   }
 
@@ -81,16 +54,16 @@
       left: 15px;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../img/sidebar-icons.png") no-repeat;
+      background: url("../img/profile-icons.png") no-repeat;
       background-position: 0 0;
     }
 
-    &--monitor:before{ background-position: 0 -43px; }
-    &--cart:before{ background-position: 0 -84px; }
-    &--data:before{ background-position: 0 -136px; }
-    &--doctor:before{ background-position: 0 -183px; }
-    &--bonus:before{ background-position: 0 -224px; }
+    &--profile:before{ background-position: -5px, -211px; }
+    &--security:before{ background-position: -5px, -271px; }
+    &--notifications:before{ background-position: -5px, -5px; }
+    &--privacy:before{ background-position: -5px, -373px; }
+    &--family:before{ background-position: -5px, -77px; }
+    &--history:before{ background-position: -5px, -139px; }
   }
 }
-
 
