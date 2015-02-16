@@ -12884,6 +12884,127 @@ a:focus
 {
     background-position: 0 -224px;
 }
+.sidebar-profile
+{
+    padding: 25px 0 18px;
+}
+.sidebar-profile__menu-list
+{
+    padding: 18px 10px 0 10px;
+}
+.sidebar-profile__menu-item
+{
+    display: block;
+
+    margin-bottom: 4px;
+}
+.sidebar-profile__menu-link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 16.5px;
+
+    position: relative;
+
+    display: block;
+
+    padding: 9px 30px 8px 50px;
+
+    -webkit-transition: .2s ease all;
+    -webkit-transition: .5s ease background;
+            transition: .2s ease all;
+            transition: .5s ease background;
+    text-decoration: none;
+
+    color: #09c;
+    color: #fff;
+    border-radius: 30px;
+}
+.sidebar-profile__menu-link:hover
+{
+    text-decoration: none;
+
+    color: #00b8f5;
+}
+.sidebar-profile__menu-link:active
+{
+    text-decoration: none;
+
+    color: #09c;
+    outline: none;
+}
+.sidebar-profile__menu-link:focus
+{
+    text-decoration: none;
+
+    color: #09c;
+    outline: none;
+}
+.sidebar-profile__menu-link:hover
+{
+    text-decoration: none;
+
+    color: #fff;
+    background: rgba(255, 255, 255, .3);
+}
+.sidebar-profile__menu-link:focus
+{
+    color: #fff;
+}
+.sidebar-profile__menu-link:active
+{
+    color: #fff;
+}
+.sidebar-profile__menu-link--active
+{
+    text-decoration: none;
+
+    color: #fff;
+    background: rgba(255, 255, 255, .3);
+}
+.sidebar-profile__menu-link:before
+{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+
+    content: '';
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background: url('../img/profile-icons.png') no-repeat;
+    background-position: 0 0;
+}
+.sidebar-profile__menu-link--profile:before
+{
+    background-position: -5px, -211px;
+}
+.sidebar-profile__menu-link--security:before
+{
+    background-position: -5px, -271px;
+}
+.sidebar-profile__menu-link--notifications:before
+{
+    background-position: -5px, -5px;
+}
+.sidebar-profile__menu-link--privacy:before
+{
+    background-position: -5px, -373px;
+}
+.sidebar-profile__menu-link--family:before
+{
+    background-position: -5px, -77px;
+}
+.sidebar-profile__menu-link--history:before
+{
+    background-position: -5px, -139px;
+}
 .main-footer
 {
     background: #d7eaf0;
@@ -12961,6 +13082,12 @@ a:focus
 
     color: #09c;
     outline: none;
+}
+.content-header__sort-link:hover
+{
+    text-decoration: none;
+
+    color: #00b8f5;
 }
 .content-header__sort-link--dropdown
 {
@@ -13641,6 +13768,12 @@ a:focus
     color: #09c;
     outline: none;
 }
+.widget-right-head__link:hover
+{
+    text-decoration: none;
+
+    color: #00b8f5;
+}
 .widget-chart
 {
     width: 100%;
@@ -14253,6 +14386,12 @@ a:focus
 
     margin-right: 10px;
 }
+.medcard-filter__link:hover
+{
+    text-decoration: none;
+
+    color: #00b8f5;
+}
 .medcard-filter__link:after
 {
     display: inline-block;
@@ -14345,6 +14484,12 @@ a:focus
     height: 30px;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+.medcard-filter__date-link:hover
+{
+    text-decoration: none;
+
+    color: #00b8f5;
 }
 .medcard-filter__date-link:before
 {
