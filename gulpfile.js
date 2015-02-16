@@ -65,7 +65,7 @@ gulp.task('js', ['highcharts-copy'], function() {
     return gulp.src('src/js/**/*.js')
         //.pipe(sourcemaps.init())
         //.pipe(jshint('.jshintrc'))
-        .pipe(jshint.reporter('jshint-stylish'))
+        //.pipe(jshint.reporter('jshint-stylish'))
         .pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({ suffix: '.min' }))
@@ -93,7 +93,6 @@ var htmlopts = { /* plugin options */ };
 gulp.task('html', function() {
     return gulp.src('src/**/*.html')
         .pipe(processhtml(/* opts и*/))
-        .pipe(livereload())
         .pipe(gulp.dest('dist'))
         .pipe(livereload())
 });

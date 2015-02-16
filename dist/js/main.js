@@ -11819,6 +11819,42 @@ $(document).ready(function() {
 });
 
 /*
+Show-hide medcard filter block
+ */
+
+$(document).ready(function() {
+
+    $('.content-header__sort-link--filter').click(function(event){
+        event.preventDefault();
+        $('.medcard-filter').toggleClass('display-none');
+    });
+
+});
+
+/*
+Onclick hide tag in filter block
+ */
+
+$(document).ready(function() {
+
+    $(".medcard-filter__tag-close").click(function () {
+        $(this).parents(".medcard-filter__tag").addClass('display-none');
+    });
+
+});
+
+/*
+Hide all tags onclick to Clear filters
+ */
+$(document).ready(function() {
+
+    $(".medcard-filter__tag--clear").click(function () {
+        $(".medcard-filter__tag").addClass('display-none');
+    });
+
+});
+
+/*
 Toggle css class to modal window for delete consultation.
 Start by click on "Delete" button
  */
@@ -11916,14 +11952,14 @@ $(function(){
 });
 
 
-// Show edit block of mini widget on monitoring-aad.html
+// Show edit block of mini widget on monitoring.html
 $(".widget .plus").click(function () {
     $(this).parents(".widget").find(".description").addClass('current');
     $(this).css('display', 'none');
 });
 
 
-// Hide edit block of mini widget on monitoring-aad.html
+// Hide edit block of mini widget on monitoring.html
 $(".widget .exit").click(function () {
     $(this).parents(".widget").find(".description").removeClass('current');
     $(this).parents(".widget").find('.plus').css('display', 'block');
@@ -11962,6 +11998,14 @@ Textaera height autoresize
 $(document).ready(function(){
     $('textarea').autosize();
 });
+/*
+Change height of widget left (tabs list) column to height of the right widget column
+ */
+
+$(".widget__left-column").css("height", $(".widget__right-column").height() )
+$(window).resize(function(){
+    $(".widget__left-column").css("height", $(".widget__right-column").height() )
+})
 /*
  Highcharts JS v4.0.4 (2014-09-02)
 

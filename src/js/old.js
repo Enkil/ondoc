@@ -54,14 +54,14 @@ $(function(){
 });
 
 
-// Show edit block of mini widget on monitoring-aad.html
+// Show edit block of mini widget on monitoring.html
 $(".widget .plus").click(function () {
     $(this).parents(".widget").find(".description").addClass('current');
     $(this).css('display', 'none');
 });
 
 
-// Hide edit block of mini widget on monitoring-aad.html
+// Hide edit block of mini widget on monitoring.html
 $(".widget .exit").click(function () {
     $(this).parents(".widget").find(".description").removeClass('current');
     $(this).parents(".widget").find('.plus').css('display', 'block');

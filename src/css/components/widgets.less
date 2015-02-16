@@ -7,8 +7,7 @@
   // Element -> Left widget column with tabs list
   &__left-column{
     .non-padding-right;
-    height: 975px;
-    overflow: auto;
+    overflow-y: scroll;
   }
 
   // Element -> Right widget column with widget data
@@ -62,31 +61,24 @@
     &::-webkit-input-placeholder{
       line-height: 20px;  transition: line-height 0.5s ease;
     }
-
     &::-moz-placeholder{
       line-height: 20px;  transition: line-height 0.5s ease;
     }
-    &
-    :-ms-input-placeholder{
+    &:-ms-input-placeholder{
       line-height: 20px;  transition: line-height 0.5s ease;
     }
-
     &::placeholder{
       line-height: 20px;  transition: line-height 0.5s ease;
     }
-
     &:focus::-webkit-input-placeholder{
       line-height: 150px;  transition: line-height 0.5s ease;
     }
-
     &:focus::-moz-placeholder{
       line-height: 150px;  transition: line-height 0.5s ease;
     }
-
     &:focus:-ms-input-placeholder{
       line-height: 150px;  transition: line-height 0.5s ease;
     }
-
     &:focus::placeholder{
       line-height: 150px;  transition: line-height 0.5s ease;
     }
@@ -571,7 +563,7 @@
     }
   }
 
-  // Element -> dropdown block
+  // Element -> down block
   &__dropdown{
     background: #fff;
     padding: 5px 10px 5px 5px;

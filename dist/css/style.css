@@ -12531,7 +12531,7 @@ button.close
 }
 .display-none
 {
-    display: none;
+    display: none!important;
 }
 @font-face
 {
@@ -13003,9 +13003,8 @@ a:focus
 }
 .widget__left-column
 {
-    overflow: auto;
+    overflow-y: scroll;
 
-    height: 975px;
     padding-right: 0;
 }
 .widget__right-column
@@ -13061,25 +13060,6 @@ a:focus
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     outline: none;
-}
-.widget__textarea::-webkit-input-placeholder
-{
-    line-height: 20px;
-
-    -webkit-transition: line-height .5s ease;
-            transition: line-height .5s ease;
-}
-.widget__textarea::-moz-placeholder
-{
-    line-height: 20px;
-
-    transition: line-height .5s ease;
-}
-.widget__textarea :-ms-input-placeholder
-{
-    line-height: 20px;
-
-    transition: line-height .5s ease;
 }
 .widget__textarea::-webkit-input-placeholder
 {
@@ -14184,4 +14164,227 @@ a:focus
 
     -webkit-filter: blur(-5px) grayscale(0%);
             filter: blur(-5px) grayscale(0%);
+}
+.medcard-filter
+{
+    margin-top: 20px;
+    padding: 20px 12px 15px 12px;
+
+    border-radius: 13px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+}
+.medcard-filter__input
+{
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 15px;
+
+    display: block;
+
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    outline: none;
+    background-image: url('../img/icon-search.png');
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+}
+.medcard-filter__input::-webkit-input-placeholder
+{
+    line-height: 20px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.medcard-filter__input::-moz-placeholder
+{
+    line-height: 20px;
+
+    transition: line-height .5s ease;
+}
+.medcard-filter__input:-ms-input-placeholder
+{
+    line-height: 20px;
+
+    transition: line-height .5s ease;
+}
+.medcard-filter__input::placeholder
+{
+    line-height: 20px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.medcard-filter__input:focus::-webkit-input-placeholder
+{
+    line-height: 150px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.medcard-filter__input:focus::-moz-placeholder
+{
+    line-height: 150px;
+
+    transition: line-height .5s ease;
+}
+.medcard-filter__input:focus:-ms-input-placeholder
+{
+    line-height: 150px;
+
+    transition: line-height .5s ease;
+}
+.medcard-filter__input:focus::placeholder
+{
+    line-height: 150px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.medcard-filter__link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+
+    margin-right: 10px;
+}
+.medcard-filter__link:after
+{
+    display: inline-block;
+
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/arrow-down.png) no-repeat;
+}
+.medcard-filter__tag
+{
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+
+    position: relative;
+
+    display: inline-block;
+
+    height: 30px;
+    margin: 5px;
+    padding-right: 32px;
+    padding-left: 15px;
+
+    color: #000;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+}
+.medcard-filter__tag--clear
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding-right: 0;
+
+    cursor: pointer;
+
+    color: rgba(0, 0, 0, .2);
+    background-color: transparent;
+}
+.medcard-filter__tag--clear:hover
+{
+    color: rgba(20, 20, 20, .2);
+}
+.medcard-filter__tag--clear:active
+{
+    color: rgba(20, 20, 20, .2);
+}
+.medcard-filter__tag--clear:focus
+{
+    color: rgba(20, 20, 20, .2);
+}
+.medcard-filter__tag-close
+{
+    position: absolute;
+    top: 9px;
+    left: 85%;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    cursor: pointer;
+
+    background: url(../img/icon-close.png) no-repeat;
+}
+.medcard-filter__tag-close:hover
+{
+    opacity: .7;
+}
+.medcard-filter__tag-close--clear
+{
+    left: -5px;
+}
+.medcard-filter__date-link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.medcard-filter__date-link:before
+{
+    display: inline-block;
+
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+
+    content: '';
+
+    background: url(../img/icon-date--blue.png) no-repeat;
+}
+.medcard-filter__find
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+
+    display: inline-block;
+
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 4px;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    color: #09c;
+    border: 1px solid #09c;
+    border-radius: 15px;
+    outline: none;
+    background-color: #fff;
+}
+.medcard-filter__find:hover
+{
+    color: #fff;
+    background: #09c;
+}
+.medcard-filter__find:active
+{
+    outline: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
