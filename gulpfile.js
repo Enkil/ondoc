@@ -89,10 +89,11 @@ gulp.task('images', function() {
 });
 
 // HTML
-var htmlopts = { /* plugin options */ };
 gulp.task('html', function() {
     return gulp.src('src/**/*.html')
-        .pipe(processhtml(/* opts и*/))
+        .pipe(processhtml({
+            recursive: true
+        }))
         .pipe(gulp.dest('dist'))
         .pipe(livereload())
 });

@@ -17,7 +17,6 @@
   "dependencies": {
     "bootstrap": "~3.3.2",
     "highcharts": "~4.0.4",
-    "jquery-autosize": "~1.18.17",
-    "javascript-detect-element-resize": "~0.5.3"
+    "jquery-autosize": "~1.18.17"
   }
 }
