@@ -78,12 +78,12 @@ gulp.task('js', ['highcharts-copy'], function() {
 // Images
 gulp.task('images', function() {
     return gulp.src('src/img/**/*')
-        .pipe(cache(imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            use: [pngquant()],
-            interlaced: true
-        })))
+        // .pipe(cache(imagemin({
+        //     optimizationLevel: 3,
+        //     progressive: true,
+        //     use: [pngquant()],
+        //     interlaced: true
+        // })))
         .pipe(gulp.dest('dist/img'))
         .pipe(livereload())
 });

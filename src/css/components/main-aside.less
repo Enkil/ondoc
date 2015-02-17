@@ -112,7 +112,7 @@
   &__menu-link{
     .link-medium;
     font-size: 16px;
-    color: @white-color;
+    color: @blue-color;
     display: block;
     padding: 9px 30px 8px 50px;
     line-height: 16.5px;
@@ -122,7 +122,7 @@
     transition: 0.5s ease background;
 
     &:hover{
-      background: rgba(255, 255, 255, .3);
+      background: @blue-color;
       color: @white-color;
       text-decoration: none;
     }
@@ -142,23 +142,35 @@
 
     &:before{
       content: "";
-      width: 24px;
-      height: 24px;
+      width: 27px;
+      height: 28px;
       display: inline-block;
       position: absolute;
       left: 15px;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../img/profile-icons.png") no-repeat;
+      background-repeat: no-repeat;
       background-position: 0 0;
     }
 
-    &--profile:before{ background-position: -5px, -211px; }
-    &--security:before{ background-position: -5px, -271px; }
-    &--notifications:before{ background-position: -5px, -5px; }
-    &--privacy:before{ background-position: -5px, -373px; }
-    &--family:before{ background-position: -5px, -77px; }
-    &--history:before{ background-position: -5px, -139px; }
+    &--profile:before{ background-image: url("../img/icon-profile.png"); }
+    &--profile:hover:before { background-image: url("../img/icon-profile-hover.png"); }
+
+    &--security:before{ background-image: url("../img/icon-security.png"); background-size: 81%; }
+    &--security:hover:before { background-image: url("../img/icon-security-hover.png"); background-size: 81%; }
+
+    &--notifications:before{ background-image: url("../img/icon-notifications.png"); }
+    &--notifications:hover:before { background-image: url("../img/icon-notifications-hover.png"); }
+
+    &--privacy:before{ background-image: url("../img/icon-privacy.png"); top: 67%; }
+    &--privacy:hover:before { background-image: url("../img/icon-privacy-hover.png"); top: 67%; }
+
+    &--family:before{ background-image: url("../img/icon-family.png"); }
+    &--family:hover:before { background-image: url("../img/icon-family-hover.png"); }
+
+    &--history:before{ background-image: url("../img/icon-history.png"); }
+    &--history:hover:before { background-image: url("../img/icon-history-hover.png"); }
+
   }
 }
 
