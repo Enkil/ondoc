@@ -52,7 +52,7 @@ $(document).ready(function() {
     });
 
     // Change state to "add new doctor form"
-    $('.medcard-doctor__icon-plus').click(function(event){
+    $('.medcard-doctor__icon-plus, .medcard-doctor__notfind-btn').click(function(event){
         event.preventDefault();
         $(".medcard-doctor__head, .medcard-doctor__body").addClass('display-none')
         $(".medcard-doctor__add-body").removeClass('display-none');
