@@ -13426,6 +13426,73 @@ a:focus
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
+.profile-popup
+{
+    position: absolute;
+    z-index: 20;
+    top: 110px;
+    right: 0;
+    left: 0;
+
+    display: none;
+
+    width: 324px;
+    margin: auto;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .2);
+}
+.profile-popup__actions
+{
+    margin-top: 15px;
+}
+.profile-popup__btn
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 33px;
+
+    display: inline-block;
+
+    padding: 0 14px;
+
+    color: #5db7d8;
+    border: 1px solid #5db7d8;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.profile-popup__btn:hover
+{
+    color: #fff;
+    background: #5db7d8;
+}
+.profile-popup__btn:active
+{
+    font-weight: bold;
+
+    outline: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.profile-overlay
+{
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .5;
+    background: #fff;
+
+    filter: alpha(opacity=80);
+}
 .main-footer
 {
     background: #d7eaf0;
