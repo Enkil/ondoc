@@ -11857,6 +11857,40 @@ $(document).ready(function() {
     });
 
 });
+
+/*
+Show-hide/Change state Select Doctor Pop-Up
+ */
+
+$(document).ready(function() {
+
+    // Show pop-up
+    $('#js-find-doctor').click(function(event){
+        event.preventDefault();
+        $(".medcard-doctor__wrapper").toggleClass('display-none');
+    });
+
+    // Hide pop-up onclick to close btn (cross icon)
+    $('.medcard-doctor__close').click(function(event){
+        event.preventDefault();
+        $(".medcard-doctor__wrapper").toggleClass('display-none');
+    });
+
+    // Change state to "add new doctor form"
+    $('.medcard-doctor__icon-plus').click(function(event){
+        event.preventDefault();
+        $(".medcard-doctor__head, .medcard-doctor__body").addClass('display-none')
+        $(".medcard-doctor__add-body").removeClass('display-none');
+    });
+
+    // Change state to "Doctor searching" on click to cancel btn
+    $('.medcard-doctor__add-btn-no').click(function(event){
+        event.preventDefault();
+        $(".medcard-doctor__add-body").addClass('display-none');
+        $(".medcard-doctor__head, .medcard-doctor__body").removeClass('display-none')
+    })
+
+});
 /*
 Show-hide medcard filter block
  */

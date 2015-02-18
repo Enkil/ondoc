@@ -121,7 +121,7 @@
 
         <!-- Choose specialisation Pop-UP -->
         <div class="medcard-spec__wrapper display-none">
-            <div class="medcard-spec row">
+            <div class="row medcard-spec">
 
                 <span class="medcard-spec__close"></span>
 
@@ -142,6 +142,19 @@
                             <!-- Specs column in letter section-->
                             <div class="col-xs-9">
                                 
+                                <div class="medcard-spec__item">
+                                    Дерматовенерология
+                                </div>
+                                <div class="medcard-spec__item medcard-spec__item--checked">
+                                    Детская стоматология
+                                </div>
+
+                            </div>
+                            <!-- / Specs column in letter section-->
+
+                            <!-- Specs column in letter section-->
+                            <div class="col-xs-9">
+
                                 <div class="medcard-spec__item">
                                     Дерматовенерология
                                 </div>
@@ -696,8 +709,254 @@
                                         </div>
 
                                         <div class="col-xs-12 widget-right-head__list-item">
-                                            <a class="widget-right-head__link" href="#">Выберите врача</a>
+                                            <a class="widget-right-head__link" id="js-find-doctor" href="#">Выберите врача</a>
                                         </div>
+
+                                        <!-- Doctor select Pop-Up -->
+<div class="medcard-doctor__wrapper display-none">
+    <div class="row medcard-doctor">
+
+        <span class="medcard-doctor__close"></span>
+
+        <!-- Pop-Up Header -->
+        <div class="col-xs-36 medcard-doctor__head">
+
+            <h2 class="medcard-doctor__title">Выберите врача</h2>
+
+            <div class="medcard-doctor__icon-line">
+                <a class="medcard-doctor__icon medcard-doctor__icon--doc" href="#"></a>
+                <a class="medcard-doctor__icon medcard-doctor__icon--doc-liked" href="#"></a>
+                <a class="medcard-doctor__icon medcard-doctor__icon--doc-fave" href="#"></a>
+                <a class="medcard-doctor__icon-plus" href="#"></a>
+            </div>
+
+            <div class="medcard-doctor__search">
+                <input class="medcard-doctor__search-input" type="text" placeholder="Поиск по ФИО"/>
+            </div>
+
+        </div>
+        <!-- / Pop-Up Header -->
+
+        <!-- Pop-Up Doctor search Body -->
+        <div class="col-xs-36 medcard-doctor__body">
+
+            <!-- Content of Doctor find state -->
+            <div class="medcard-doctor__doc-find-wrapper">
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                        <span class="medcard-doctor__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                        <span class="medcard-doctor__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                        <span class="medcard-doctor__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+            </div>
+            <!-- / Content of Doctor find state -->
+
+            <!-- Content of Doctor add state -->
+            <div class="medcard-doctor__notfind-wrapper display-none">
+
+                <div class="col-xs-36 text-center">
+                    <img class="medcard-doctor__notfind-img" src="img/doc-add.png" alt="Добавить врача"/>
+                </div>
+
+                <div class="col-xs-36 text-center">
+                    <p class="medcard-doctor__notfind-text">
+                        Такой врач не найден. <br/>
+                        Хотите добавить?
+                    </p>
+                </div>
+                
+                <div class="col-xs-36 text-center">
+                    <a class="medcard-doctor__notfind-btn" href="#">Добавить врача</a>
+                </div>
+
+            </div>
+            <!-- / Content of Doctor add state -->
+
+        </div>
+        <!-- / Pop-UP Body -->
+
+        <!-- Pop-Up Doctor Add Body-->
+        <div class="col-xs-36 medcard-doctor__add-body display-none">
+
+            <h2 class="medcard-doctor__title">Добавление врача</h2>
+
+            <p class="medcard-doctor__add-text">
+                Отправьте запрос на добавление нового врача. Мы проверим данные, заполним профиль и добавим его в общий список.
+            </p>
+
+            <form class="medcard-doctor__add-form" action="#">
+                <input class="medcard-doctor__add-input" type="text" placeholder="Фамилия"/>
+                <input class="medcard-doctor__add-input" type="text" placeholder="Имя"/>
+                <input class="medcard-doctor__add-input" type="text" placeholder="Отчество"/>
+                <input class="medcard-doctor__add-input" type="text" placeholder="Специализация"/>
+                <div class="medcard-doctor__up-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Город" value="Москва"/></div>
+                <div class="medcard-doctor__down-lined"><input class="medcard-doctor__add-input medcard-doctor__add-input--down-lined" type="text" placeholder="Контактный телефон"/></div>
+            </form>
+
+            <div class="text-center col-xs-36">
+                <a class="medcard-doctor__add-btn-no" href="#">Отмена</a>
+                <input class="medcard-doctor__add-btn-save" type="submit" value="Сохранить"/>
+            </div>
+
+        </div>
+        <!-- Pop-Up Doctor Add -->
+
+    </div>
+</div>
+<!-- / Doctor select Pop-Up -->
 
                                     </div>
 
@@ -815,7 +1074,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <p class="main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
             </div>
         </div>
     </footer>

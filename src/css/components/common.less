@@ -27,3 +27,31 @@
 .display-none{
   display: none!important;
 }
+
+// Soft slide-down placeholder effect
+.placeholder-effect(@lh){
+  &::-webkit-input-placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &::-moz-placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &:-ms-input-placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &::placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &:focus::-webkit-input-placeholder{
+    line-height: 150px;  transition: line-height 0.5s ease;
+  }
+  &:focus::-moz-placeholder{
+    line-height: 150px;  transition: line-height 0.5s ease;
+  }
+  &:focus:-ms-input-placeholder{
+    line-height: 150px;  transition: line-height 0.5s ease;
+  }
+  &:focus::placeholder{
+    line-height: 150px;  transition: line-height 0.5s ease;
+  }
+}
