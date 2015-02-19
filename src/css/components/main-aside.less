@@ -664,6 +664,7 @@ input[type="checkbox"] {
     width: 44px;
     -webkit-appearance: none;
     -webkit-transition: .5s;
+    outline: none!important;
 }
 
 input[type="checkbox"]:after {
@@ -676,12 +677,14 @@ input[type="checkbox"]:after {
     top: 1px;
     width: 22px;
     border-radius: 100%;
+  outline: none;
 }
 
 input[type="checkbox"]:checked {
     background-position: 0 0, 45px 0;
     padding-left: 18px;
     padding-right: 0;
+  outline: none;
 }
 input[type="checkbox"]:before {
     color: @red-color;
@@ -693,11 +696,13 @@ input[type="checkbox"]:before {
     position: absolute;
     top: 6px;
     width: 560px;
+  outline: none;
 }
 input[type="checkbox"]:checked:before {
     content: 'При авторизации будет запрашиваться одноразовый смс-пароль';
     left: 60px;
     color: @black-color;
+  outline: none;
 }
 
 
