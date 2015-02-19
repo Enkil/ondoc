@@ -410,42 +410,16 @@
     .gotham;
     font-size: 14px;
     color: @black-color;
-    resize: none;
     outline: none;
     text-overflow: ellipsis;
     transition: height 0.2s;
     max-height: 250px;
 
     // Soft slide-down placeholder
-    &::-webkit-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::-moz-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:-ms-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-webkit-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-moz-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus:-ms-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
+    .placeholder-effect(20);
   }
 
 }
-
-
 
 .profile-popup {
   display: none;
@@ -499,6 +473,232 @@
 }
 
 
+
+
+// Страница Безопасность
+
+.security-link {
+
+    .link-medium;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 20px 8px 20px;
+    line-height: 16.5px;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s ease background;
+    background-repeat: no-repeat;
+
+     &:hover {
+      background: @blue-color;
+      color: @white-color;
+      text-decoration: none;
+    }
+
+    &:focus{
+      color: @white-color;
+    }
+    &:active{
+      color: @white-color;
+    }
+
+}
+
+.security-label {
+  .gotham;
+    font-size: 14px;
+    color: @grey-color;
+    line-height: 14px;
+    letter-spacing: -0.013em;
+}
+
+.security-email {
+  padding-top: 30px;
+  &__text {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 19px;
+    color: @black-color;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  &__saved {
+    margin-top: 9px;
+  }
+
+}
+
+.security {
+  &__input {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 7px 14px;
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+
+    // Soft slide-down placeholder
+    &::-webkit-input-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+    &::-moz-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+    &:-ms-input-placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+    &::placeholder{
+      line-height: 20px;  transition: line-height 0.5s ease;
+    }
+    &:focus::-webkit-input-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+    &:focus::-moz-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+    &:focus:-ms-input-placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+    &:focus::placeholder{
+      line-height: 150px;  transition: line-height 0.5s ease;
+    }
+
+  }
+  &__line {
+      .line-full-width();
+      margin-top: 25px;
+    }
+
+    &-telephone {
+    padding-top: 10px;
+      &__text {
+        .gotham-m;
+        font-size: 16px;
+        line-height: 19px;
+        color: @black-color;
+        margin-top: 10px;
+      }
+  }
+
+  &-link {
+   &__save {
+      .security-link();
+      border: 1px solid @blue-color;
+      color: @blue-color;
+      &:hover {
+      background: @blue-color;
+      }
+    }
+
+    &__proove {
+      .security-link();
+      border: 1px solid @orange-color;
+      color: @orange-color;
+      &:hover {
+      background: @orange-color;
+      }
+    }
+
+    &__delete-profile {
+      .security-link();
+      border: 1px solid @red-color;
+      color: @red-color;
+      padding: 6px 20px 4px 31px;
+      background-image: url(../img/icon-trash.png);
+      background-repeat: no-repeat;
+      background-position: 13px 50%;
+      font-size: 14px;
+      &:hover {
+      background: @red-color;
+      }
+    }
+  } 
+
+  
+}
+
+.security-authorisation {
+    margin-top: 15px;
+    &__text {
+      margin-top: 5px;
+      .gotham-m;
+      font-size: 17px;
+    }
+  }
+
+.security-password {
+    margin-bottom: 17px;
+    margin-top: 10px;
+  }
+
+
+
+
+input, input:visited, input:focus, input:before, input:after {
+  outline: none;
+ -moz-outline: none;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Toggle */
+
+input[type="checkbox"] {
+    background-color: #e5e5e5;
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 5px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 25px;
+    padding-right: 10px;
+    position: relative;
+    width: 44px;
+    -webkit-appearance: none;
+    -webkit-transition: .5s;
+}
+
+input[type="checkbox"]:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 23px;
+    left: 2px;
+    position: relative;
+    top: 1px;
+    width: 22px;
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked {
+    background-position: 0 0, 45px 0;
+    padding-left: 18px;
+    padding-right: 0;
+}
+input[type="checkbox"]:before {
+    color: @red-color;
+    content: 'Для подключения этой функции  необходимо подтвердить номер телефона';
+    font: 12.5px/20px sans-serif;
+    height: 20px;
+    left: 60px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 6px;
+    width: 560px;
+}
+input[type="checkbox"]:checked:before {
+    content: 'При авторизации будет запрашиваться одноразовый смс-пароль';
+    left: 60px;
+    color: @black-color;
+}
 
 
 

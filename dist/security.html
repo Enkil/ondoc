@@ -92,83 +92,101 @@
 
           <section class="col-xs-28">
 
-            <div class="row widget">
-
-              <form action="">
-              
-                <!-- Profile-info-top -->
-
-                <div class="row">
-                    <!-- блок с юзер пик -->
-                    <div class="col-xs-offset-2 col-xs-9 profile-img text-center">
-                      <div class="profile-img__logo">
-                        <!-- кнопка удалить лого -->
-                        <a class="profile-img__logo-delete" href=""></a>
-                        <!-- фото юзера -->
-                        <img src="img/img-profile.jpg" alt="">
-                        <a href="" class="profile-img__logo-choose">Выбрать фото</a>
-                      </div>
-                      
-                    </div>
-                     <!-- блок с юзер пик -->
-
-                     <!-- блок с инфо юзера -->
-                    <div class="col-xs-offset-2 col-xs-22 user-info">
-                      <div class="user-info__id text-right">OnDoc ID 666777889</div>
-                      <input type="text" placeholder="Смирнов" class="user-info__input">
-                      <input type="text" placeholder="Иван" class="user-info__input">
-                      <input type="text" placeholder="Викторович" class="user-info__input">
-                      <input type="text" placeholder="Москва" class="user-info__input">
-
-                      <div class="user-data">
-                        <a href="" class="user-data__sex user-data__sex-male--active ">Мужчина</a>
-                        <a href="" class="user-data__sex user-data__sex-female">Женщина</a>
-                        <a href="" class="user-data__calendar">30.02.1987</a>
-
-                      </div>
-
-                    </div>
-                     <!-- блок с инфо юзера -->
-                </div>
-
-                <!-- Profile-info-top -->
+            <div class="row widget-security">
 
 
-                <!-- profile-info о страховых компаниях -->
+            	<form action="">
 
-                <div class="row info-insurance">
-                  <div class="col-xs-36 text-center info-insurance__line">
-                    <span class="info-insurance__title">Информация о страховых компаниях</span>
-                  </div>
-                </div>
+            		<!-- email -->
 
-                <!-- profile-info о страховых компаниях -->
+            		<div class="row security-email">
+            			<div class="col-xs-offset-1 col-xs-36 security-label">Email</div>
+            		</div>
 
-                <!-- дмс -->
+            		<div class="row">
 
-                <div class="row policy">
-                  <div class="col-xs-offset-1 col-xs-2"><span class="policy__title">ДМС</span></div>
-                  <div class="col-xs-16"><input type="text" class="policy__input" placeholder="Компания ДМС"></div>
-                  <div class="col-xs-16"><input type="text" class="policy__input" placeholder="Компания ДМС"></div>
-                </div>
-                <div class="row policy">
-                  <div class="col-xs-offset-1 col-xs-2"><span class="policy__title">ДМС</span></div>
-                  <div class="col-xs-16"><input type="text" class="policy__input" placeholder="Компания ДМС"></div>
-                  <div class="col-xs-16"><input type="text" class="policy__input" placeholder="Компания ДМС"></div>
-                </div>
+            			<div class="col-xs-offset-1 col-xs-12 security-email__saved">
+            				<span class="security-email__text">mymail@informail.ru</span>
+            				<a href="" class="security-email__delete"><img src="img/icon-delete.png" alt=""></a>
+            			</div>
+            			<div class="col-xs-17"><input type="text" class="security__input" placeholder="Новый email"></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
+            			
+            		</div>
 
-                <!-- дмс -->
+            		<!-- email -->
 
-                <!-- submit -->
 
-                <div class="row">
-                  <div class="col-xs-35 text-right">
-                    <input type="submit" value="Сохранить" class="user-btn__submit">
-                  </div>
-                </div>
+            		<div class="row">
+            			<div class="col-xs-36 security__line"></div>
+            		</div>
 
-          </form>
 
+            		<!-- telephone -->
+
+					<div class="row security-telephone">
+            			<div class="col-xs-offset-1 col-xs-36 security-label">Телефон</div>
+            		</div>
+
+            		<div class="row">
+
+            			<div class="col-xs-offset-1 col-xs-6 security-email__saved">
+            				<span class="security-telephone__text">+7 911 230 64 64</span>
+            			</div>
+            			<div class="col-xs-6"><a href="" class="security-link__proove">Подтвердить</a></div>
+            			<div class="col-xs-17"><input type="text" class="security__input" placeholder="Новый Телефон"></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
+            			
+            		</div>
+
+            		<!-- telephone -->
+
+
+            		<!-- двухэтапная авторизация -->
+
+            		<div class="row security-authorisation">
+            			<div class="col-xs-offset-1 col-xs-10 security-authorisation__text">Двухэтапная авторизация</div>
+            			<div class="col-xs-20"><input type="checkbox" unchecked></div>
+            		</div>
+
+            		<!-- двухэтапная авторизация -->
+
+            		<div class="row">
+            			<div class="col-xs-36 security__line"></div>
+            		</div>
+
+            		<!-- пароли -->
+
+            		<div class="row security-password">
+            			<div class="col-xs-offset-1 col-xs-36 security-label">Пароль</div>
+            		</div>
+
+            		<div class="row">
+
+            			<div class="col-xs-offset-1 col-xs-9"><input type="text" class="security__input" placeholder="Текущий пароль"></div>
+            			<div class="col-xs-10"><input type="text" class="security__input" placeholder="Новый пароль"></div>
+            			<div class="col-xs-10"><input type="text" class="security__input" placeholder="Подтвердите новый пароль"></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
+            			
+            		</div>
+
+            		<!-- пароли -->
+
+            		<div class="row">
+            			<div class="col-xs-36 security__line"></div>
+            		</div>
+
+            		<!-- delete -->
+
+            		<div class="row">
+            			<div class="col-xs-offset-1 col-xs-35 security__delete">
+            				<a href="" class="security-link__delete-profile">Удалить аккаунт</a>
+            			</div>
+            		</div>
+
+            		<!-- delete -->
+            		
+            	</form>
 
 
 
@@ -181,16 +199,7 @@
       </div>
     </div>
 
-    <!-- Popup -->
-    
-    <div class="profile-popup">
-      <img src="img/img-profile.jpg" alt="">
-      <div class="profile-popup__actions">
-        <a href="" class="profile-popup__btn">Отмена</a>
-        <a href="" class="profile-popup__btn">Сохранить</a>
-      </div>
-    </div>
-    <div class="profile-overlay"></div>
+
 
     <!-- PAGE FOOTER-->
     <footer class="main-footer">

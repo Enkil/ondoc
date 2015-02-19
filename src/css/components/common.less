@@ -55,3 +55,24 @@
     line-height: 150px;  transition: line-height 0.5s ease;
   }
 }
+
+.line-full-width {
+
+    position: relative;
+    margin-bottom: 20px;
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 8px auto 8px;
+      z-index: 5;
+    
+}
+}

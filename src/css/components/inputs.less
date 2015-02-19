@@ -1,0 +1,57 @@
+
+
+
+input, input:visited, input:focus {
+  outline:none;
+}
+
+/* Toggle */
+
+input[type="checkbox"] {
+    background-color: #e5e5e5;
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 5px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 25px;
+    padding-right: 10px;
+    position: relative;
+    width: 44px;
+    -webkit-appearance: none;
+    -webkit-transition: .5s;
+}
+
+input[type="checkbox"]:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 23px;
+    left: 2px;
+    position: relative;
+    top: 1px;
+    width: 22px;
+    border-radius: 100%;
+}
+/* input[type="checkbox"]:checked:after {
+  left: -13px;
+} */
+input[type="checkbox"]:checked {
+    background-position: 0 0, 45px 0;
+    padding-left: 18px;
+    padding-right: 0;
+}
+input[type="checkbox"]:before {
+    color: #000;
+    content: 'Для подключения этой функции  необходимо подтвердить номер телефона';
+    font: 12.5px/20px sans-serif;
+    height: 20px;
+    left: 60px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 6px;
+    width: 300px;
+}
+input[type="checkbox"]:checked:before {
+    content: 'При авторизации будет запрашиваться одноразовый смс-пароль';
+    left: 60px;
+}
