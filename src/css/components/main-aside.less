@@ -104,11 +104,6 @@
     padding: 0 10px 0 10px;
   }
 
-  &__menu-item{
-    display: block;
-    margin-bottom: 4px;
-  }
-
   &__menu-link{
     .link-medium;
     font-size: 16px;
@@ -120,12 +115,17 @@
     text-decoration: none;
     position: relative;
     transition: 0.5s ease background;
+    background-repeat: no-repeat;
 
-    &:hover{
+    &:hover {
       background: @blue-color;
       color: @white-color;
       text-decoration: none;
     }
+
+   &--current {
+    color: @white-color;
+   }
 
     &:focus{
       color: @white-color;
@@ -172,6 +172,26 @@
     &--history:hover:before { background-image: url("../img/icon-history-hover.png"); }
 
   }
+
+   &__menu-item{
+    display: block;
+    margin-bottom: 4px;
+
+    &--current {
+        background: @blue-color;
+        color: @white-color!important;
+        text-decoration: none;
+        border-radius: 30px;
+
+        a:before {
+          background-image: url("../img/icon-profile-hover.png");
+          background-repeat: no-repeat;
+      }
+
+    }
+    
+  }
+
 }
 
 
