@@ -12028,16 +12028,24 @@ $(document).ready(function() {
         }
     });
 
-    $('.monitoring-widget__close, .monitoring-widget__save').click(function(event){
+    $('.monitoring-widget__close').click(function(event){
         event.preventDefault();
         $(this).parents('.monitoring-widget').find('.monitoring-widget__subheader, .monitoring-widget__body').removeClass('display-none');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('display-none');
+
         if($(this).parents('.monitoring-widget').find('.monitoring-widget__hol-shedule').length){
             $(this).parents('.monitoring-widget').find('.monitoring-widget__hol-shedule').removeClass('display-none');
         }
+
         if($(this).parents('.monitoring-widget').find('.monitoring-widget__sugar-shedule').length){
             $(this).parents('.monitoring-widget').find('.monitoring-widget__sugar-shedule').removeClass('display-none');
         }
+    });
+
+    $('.monitoring-widget__save').click(function(event){
+        event.preventDefault();
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
     });
 
 });

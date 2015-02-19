@@ -211,13 +211,12 @@
   }
 
   &__values-slash{
-    &:after{
-      font-size: 21px;
-      position: absolute;
-      top: 30%;
-      right: -19px;
-      content: '/';
-    }
+    display: inline-block;
+    font-size: 22px;
+    position: relative;
+    bottom: 30px;
+    right: -10px;
+    margin-right: 7px;
   }
 
   // Element -> comma to separate inputs
@@ -254,6 +253,20 @@
     &--hol{
       margin-top: 10px;
     }
+
+    &--error{
+      border: 1px solid @red-color;
+      color: @red-color;
+      margin-top: 10px;
+    }
+  }
+
+  &__value--error{
+    .gotham-m;
+    color: @red-color;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 10px;
   }
 
   // Element -> widget add value state input description

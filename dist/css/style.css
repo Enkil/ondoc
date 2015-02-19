@@ -15983,15 +15983,17 @@ a:focus
 {
     margin-left: 10px;
 }
-.monitoring-widget__values-slash:after
+.monitoring-widget__values-slash
 {
-    font-size: 21px;
+    font-size: 22px;
 
-    position: absolute;
-    top: 30%;
-    right: -19px;
+    position: relative;
+    right: -10px;
+    bottom: 30px;
 
-    content: '/';
+    display: inline-block;
+
+    margin-right: 7px;
 }
 .monitoring-widget__values-comma
 {
@@ -16032,6 +16034,23 @@ a:focus
 .monitoring-widget__value-add--hol
 {
     margin-top: 10px;
+}
+.monitoring-widget__value-add--error
+{
+    margin-top: 10px;
+
+    color: #dc4531;
+    border: 1px solid #dc4531;
+}
+.monitoring-widget__value--error
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: #dc4531;
 }
 .monitoring-widget__value-description
 {
