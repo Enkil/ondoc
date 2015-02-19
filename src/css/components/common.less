@@ -28,7 +28,7 @@
   display: none!important;
 }
 
-// Soft slide-down placeholder effect
+// Mix-in -> Soft slide-down placeholder effect
 .placeholder-effect(@lh){
   &::-webkit-input-placeholder{
     line-height: @lh;  transition: line-height 0.5s ease;
@@ -75,4 +75,16 @@
       z-index: 5;
     
 }
+}
+
+.arrow-down{
+  &:after{
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+    content: '';
+    vertical-align: middle;
+    background: url(../img/arrow-down.png) no-repeat;
+  }
 }
