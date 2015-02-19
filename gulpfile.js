@@ -54,14 +54,20 @@ gulp.task('less', function() {
         .pipe(livereload())
 });
 
-// Copy hichcharts to src/js, because in another way ot no build correctly
+// Copy hichcharts to src/js, because in another way it is not build correctly
 gulp.task('highcharts-copy', function(){
     gulp.src('bower_components/highcharts/highcharts-all.js')
         .pipe(gulp.dest('src/js/highcharts-all.js'))
 });
 
+// Copy ekko-lightbox to src/js, because in another way it is not build correctly
+gulp.task('lightbox-copy', function(){
+    gulp.src('bower_components/ekko-lightbox/dist/ekko-lightbox.js')
+        .pipe(gulp.dest('src/js/ekko-lightbox.js'))
+});
+
 // Scripts
-gulp.task('js', ['highcharts-copy'], function() {
+gulp.task('js', ['highcharts-copy', 'lightbox-copy'], function() {
     return gulp.src('src/js/**/*.js')
         //.pipe(sourcemaps.init())
         //.pipe(jshint('.jshintrc'))
@@ -156,7 +162,7 @@ gulp.task('bower', function(cb){
 var underscore = require('underscore');
 var underscoreStr = require('underscore.string');
 
-var exclude = ['highcharts'];
+var exclude = ['highcharts', 'ekko-lightbox'];
 
 gulp.task('bundle-libraries-auto', ['bower'], function(){
     var bowerFile = require('./bower.json');

@@ -118,7 +118,6 @@
     cursor: pointer;
     position: absolute;
     top: 9px;
-//    left: 85%;
     right: 10px;
     background: url(../img/icon-close.png) no-repeat;
     &:hover{
@@ -714,4 +713,32 @@
       background-color: @blue-color;
     }
   }
+}
+
+// Custom lightbox
+.ekko-lightbox > .modal-dialog{
+  max-width: 500px!important;
+
+  a{
+    color: @white-color;
+  }
+
+}
+.ekko-lightbox > .modal-dialog{
+  text-align: center;
+}
+
+.ekko-lightbox .glyphicon-menu-left {
+  left: 0;
+  float: left;
+  padding-left: 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.ekko-lightbox .glyphicon-menu-right {
+  right: 0;
+  float: right;
+  padding-right: 15px;
+  text-align: right;
 }
