@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html>
-<!-- build:include html/components/head.html -->
-This will be replaced by the content of head.html
-<!-- /build -->
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+</head>
 <body>
 
 
-<!-- build:include html/components/header.html -->
-This will be replaced by the content of header.html
-<!-- /build -->
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__logo main-header__link main-header__link--logotext" href="index.html" title="OnDoc - Персональное здравоохранение">
+                    <img class="" src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    <span class="hidden-xs hidden-sm" title="OnDoc - Персональное здравоохранение">OnDoc</span>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-17">
+                <a href="#" class="main-header__link main-header__question">С чего начать?</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-12 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle hidden-xs">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="profile.html">Профиль</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active" href="">Безопасность</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выйти</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
 
 
 <!-- PAGE CONTENT-->
@@ -16,9 +73,32 @@ This will be replaced by the content of header.html
   <div class="container">
     <div class="row">
 
-      <!-- build:include html/components/left-sidebar.html -->
-      This will be replaced by the content of left-sidebar.html
-      <!-- /build -->
+      <!-- Left Sidebar -->
+            <aside class="col-xs-7 ">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/big-avatar.png" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active" href="index.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="medkarta_konsultacii.html">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor" href="">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
 
 
       <!-- Right page block-->
@@ -73,7 +153,7 @@ This will be replaced by the content of header.html
           <div class="">
             <div class="col-xs-36 widget-header text-center">
               <div class="">
-                <p class="widget-header__text widget-header__icon widget-header__icon--holesterin">Холестерин</p>
+                <p class="widget-header__text widget-header__icon widget-header__icon--cholesterol">Холестерин</p>
                 <a class="widget-btn widget-btn--plus pull-right" href="#"></a>
               </div>
             </div>
@@ -330,9 +410,20 @@ This will be replaced by the content of header.html
 </div>
 <!-- / PAGE CONTENT-->
 
-<!-- build:include html/components/footer.html -->
-This will be replaced by the content of footer.html
-<!-- /build -->
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
 
 </body>
 </html>

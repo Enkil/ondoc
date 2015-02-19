@@ -12037,8 +12037,8 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).parents('.monitoring-widget').find('.monitoring-widget__subheader, .monitoring-widget__body').addClass('display-none');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').removeClass('display-none');
-        if($(this).parents('.monitoring-widget').find('.monitoring-widget__hol-shedule').length){
-            $(this).parents('.monitoring-widget').find('.monitoring-widget__hol-shedule').first().addClass('display-none');
+        if($(this).parents('.monitoring-widget').find('.monitoring-widget__chol-shedule').length){
+            $(this).parents('.monitoring-widget').find('.monitoring-widget__chol-shedule').first().addClass('display-none');
         }
         if($(this).parents('.monitoring-widget').find('.monitoring-widget__sugar-shedule').length){
             $(this).parents('.monitoring-widget').find('.monitoring-widget__sugar-shedule').first().addClass('display-none');
@@ -12050,8 +12050,8 @@ $(document).ready(function() {
         $(this).parents('.monitoring-widget').find('.monitoring-widget__subheader, .monitoring-widget__body').removeClass('display-none');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('display-none');
 
-        if($(this).parents('.monitoring-widget').find('.monitoring-widget__hol-shedule').length){
-            $(this).parents('.monitoring-widget').find('.monitoring-widget__hol-shedule').removeClass('display-none');
+        if($(this).parents('.monitoring-widget').find('.monitoring-widget__chol-shedule').length){
+            $(this).parents('.monitoring-widget').find('.monitoring-widget__chol-shedule').removeClass('display-none');
         }
 
         if($(this).parents('.monitoring-widget').find('.monitoring-widget__sugar-shedule').length){
@@ -12117,14 +12117,14 @@ $(document).ready(function() {
 });
 
 /*
-Toogle state of holesterin block items
+Toogle state of cholesterol block items
  */
 $(document).ready(function() {
-    if($('.js-hol-find').length){
-        $('.js-hol-find').click(function(event){
+    if($('.js-chol-find').length){
+        $('.js-chol-find').click(function(event){
             event.preventDefault();
-            $('.monitoring-widget__hol-shedule--active').removeClass('monitoring-widget__hol-shedule--active');
-            $(this).addClass('monitoring-widget__hol-shedule--active');
+            $('.monitoring-widget__chol-shedule--active').removeClass('monitoring-widget__chol-shedule--active');
+            $(this).addClass('monitoring-widget__chol-shedule--active');
         });
     }
 });

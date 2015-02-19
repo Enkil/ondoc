@@ -10827,9 +10827,9 @@ input[type='checkbox']:checked:before
 {
     background: url(../img/icon-pulse.png) no-repeat;
 }
-.widget-header__icon--mass:before
+.widget-header__icon--weight:before
 {
-    background: url(../img/icon-mass.png) no-repeat;
+    background: url(../img/icon-weight.png) no-repeat;
 }
 .widget-header__icon--sugar:before
 {
@@ -10839,9 +10839,9 @@ input[type='checkbox']:checked:before
 {
     background: url(../img/icon-pressure.png) no-repeat;
 }
-.widget-header__icon--holesterin:before
+.widget-header__icon--cholesterol:before
 {
-    background: url(../img/icon-holesterin.png) no-repeat;
+    background: url(../img/icon-cholesterol.png) no-repeat;
 }
 .widget-header__icon--temperature:before
 {
@@ -13472,7 +13472,7 @@ input[type='checkbox']:checked:before
 
     background: url(../img/icon-pressure--blue.png) no-repeat;
 }
-.monitoring-widget__title--mass:before
+.monitoring-widget__title--weight:before
 {
     display: inline-block;
 
@@ -13483,7 +13483,7 @@ input[type='checkbox']:checked:before
     content: '';
     vertical-align: middle;
 
-    background: url(../img/icon-mass--blue.png) no-repeat;
+    background: url(../img/icon-weight--blue.png) no-repeat;
 }
 .monitoring-widget__title--sugar:before
 {
@@ -13511,7 +13511,7 @@ input[type='checkbox']:checked:before
 
     background: url(../img/icon-temperature--blue.png) no-repeat;
 }
-.monitoring-widget__title--holesterin:before
+.monitoring-widget__title--cholesterol:before
 {
     display: inline-block;
 
@@ -13522,7 +13522,7 @@ input[type='checkbox']:checked:before
     content: '';
     vertical-align: middle;
 
-    background: url(../img/icon-holesterin--blue.png) no-repeat;
+    background: url(../img/icon-cholesterol--blue.png) no-repeat;
 }
 .monitoring-widget__buttons
 {
@@ -13707,7 +13707,7 @@ input[type='checkbox']:checked:before
 {
     margin-top: 10px;
 }
-.monitoring-widget__value-add--hol
+.monitoring-widget__value-add--chol
 {
     margin-top: 10px;
 }
@@ -13860,32 +13860,32 @@ input[type='checkbox']:checked:before
 
     background-position: -183px 0;
 }
-.monitoring-widget__hol-shedule
+.monitoring-widget__chol-shedule
 {
     padding: 0 20px 30px;
 
     text-align: center;
 }
-.monitoring-widget__hol-shedule .row [class*=col-]:first-child
+.monitoring-widget__chol-shedule .row [class*=col-]:first-child
 {
     text-align: left;
 }
-.monitoring-widget__hol-shedule .row [class*=col-]:last-child
+.monitoring-widget__chol-shedule .row [class*=col-]:last-child
 {
     text-align: right;
 }
-.monitoring-widget__hol-shedule-link
+.monitoring-widget__chol-shedule-link
 {
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 }
-.monitoring-widget__hol-shedule--active
+.monitoring-widget__chol-shedule--active
 {
     cursor: default;
 
     color: #000 !important;
 }
-.monitoring-widget__hol-shedule--add-value
+.monitoring-widget__chol-shedule--add-value
 {
     margin-top: 30px;
     margin-bottom: 45px;
