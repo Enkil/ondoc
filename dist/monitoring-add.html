@@ -44,16 +44,33 @@
             <!-- Profile -->
             <div class="col-xs-12 pull-right">
                 <div class="dropdown pull-right">
+
                     <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
                     <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
                         Смирнов Иван
                     </a>
+
                     <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
                     <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
                     </ul>
+
+                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                    <!-- Select period dropdown -->
+                    <div class="monitoring-widget__dropdown display-none">
+                        <ul>
+                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Select period dropdown -->
+
                 </div>
             </div>
         </div>
@@ -200,16 +217,21 @@
                           <p>Добавить показание</p>
                           <a href="#" class="date">21/05/2014</a>
                         </div>
+
                         <div class="indication">
+
                           <div class="inline-column slash">
                             <input type="text" class="indication-value" value="130" />
                             <p>Систола</p>
                           </div>
+
                           <div class="inline-column">
                             <input type="text" class="indication-value" value="100" />
                             <p>Диастола</p>
                           </div>
+
                         </div>
+
                         <div class="buttons clearfix">
                           <a href="#" class="exit to-left">Отмена</a>
                           <a href="#" class="okey to-right">Ок</a>

@@ -45,16 +45,21 @@
             <!-- Profile -->
             <div class="col-xs-12 pull-right">
                 <div class="dropdown pull-right">
+
                     <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
-                    <a class="dropdown-toggle main-header__link hidden-xs" type="button" id="page-header__menu" data-toggle="dropdown" aria-expanded="true">
-                        Смирнов Иван
-                    </a>
-                    <a class="dropdown-toggle main-header__link main-header__link--dropdown" id="page-header__menu" data-toggle="dropdown" aria-expanded="true"></a>
-                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="page-header__menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 1</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 2</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пункт 3</a></li>
-                    </ul>
+
+                    <a class="main-header__link main-header__dropdown-toggle hidden-xs">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="profile.html">Профиль</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active" href="">Безопасность</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выйти</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
                 </div>
             </div>
         </div>
