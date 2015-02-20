@@ -84,3 +84,16 @@ $(document).ready(function ($) {
         });
     });
 });
+
+/*
+Toogle doctor info pop-up
+ */
+
+$(document).ready(function() {
+
+    $('.widget-doctor__name').click(function(event){
+        event.preventDefault();
+        $('.medcard-docinfo').toggleClass('display-none');
+    });
+
+});
