@@ -10,6 +10,12 @@
     padding: 0 10px 0 10px;
   }
 
+  &__menu-item{
+display: block;
+margin-bottom: 4px;
+list-style: none;
+ }
+
   &__menu-link{
     .link-medium;
     font-size: 16px;
@@ -51,19 +57,6 @@
 	background-position: 15px 50%;
     }
 
-    // &:before{
-    //   content: "";
-    //   width: 27px;
-    //   height: 28px;
-    //   display: inline-block;
-    //   position: absolute;
-    //   left: 15px;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    //   background-repeat: no-repeat;
-    //   background-position: 0 0;
-    // }
-
     &--profile{ background-image: url("../img/icon-profile.png"); }
     &--profile:hover, &--profile.sidebar-profile__menu-link--active { background-image: url("../img/icon-profile-hover.png"); }
 
@@ -82,25 +75,6 @@
     &--history{ background-image: url("../img/icon-history.png"); }
     &--history:hover, &--history.sidebar-profile__menu-link--active  { background-image: url("../img/icon-history-hover.png"); }
 
-  }
-
-   &__menu-item{
-    display: block;
-    margin-bottom: 4px;
-
-    &--current {
-        background: @blue-color;
-        color: @white-color!important;
-        text-decoration: none;
-        border-radius: 30px;
-
-        a:before {
-          background-image: url("../img/icon-profile-hover.png");
-          background-repeat: no-repeat;
-      }
-
-    }
-    
   }
 
 }
@@ -210,25 +184,30 @@
     &-female {
       background-image: url("../img/icon-woman.png");
     }
-    &-female--active {
-      background-image: url("../img/icon-woman-hover.png");
-      background-color: @blue-color;
-      color: @white-color;
-        &:hover {
-         color: @white-color;
+
+    &-female.user-data__sex--active {
+    	  background-image: url("../img/icon-woman-hover.png");
+	      background-color: @blue-color;
+	      color: @white-color;
+	        &:hover {
+	         color: @white-color;
       }
     }
+    
+
     &-male {
       background-image: url("../img/icon-man.png");
     }
-    &-male--active {
-      background-image: url("../img/icon-man-hover.png");
-      background-color: @blue-color;
-      color: @white-color;
-        &:hover {
-         color: @white-color;
+
+    &-male.user-data__sex--active {
+    	  background-image: url("../img/icon-man-hover.png");
+	      background-color: @blue-color;
+	      color: @white-color;
+	        &:hover {
+	         color: @white-color;
       }
     }
+   
   }
 
   &__calendar {

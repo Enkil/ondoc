@@ -16886,6 +16886,14 @@ a:focus
 {
     padding: 0 10px 0 10px;
 }
+.sidebar-profile__menu-item
+{
+    display: block;
+
+    margin-bottom: 4px;
+
+    list-style: none;
+}
 .sidebar-profile__menu-link
 {
     font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -17016,25 +17024,6 @@ a:focus
 .sidebar-profile__menu-link--history.sidebar-profile__menu-link--active
 {
     background-image: url('../img/icon-history-hover.png');
-}
-.sidebar-profile__menu-item
-{
-    display: block;
-
-    margin-bottom: 4px;
-}
-.sidebar-profile__menu-item--current
-{
-    text-decoration: none;
-
-    color: #fff !important;
-    border-radius: 30px;
-    background: #5db7d8;
-}
-.sidebar-profile__menu-item--current a:before
-{
-    background-image: url('../img/icon-profile-hover.png');
-    background-repeat: no-repeat;
 }
 .profile-img__logo
 {
@@ -17227,13 +17216,13 @@ a:focus
 {
     background-image: url('../img/icon-woman.png');
 }
-.user-data__sex-female--active
+.user-data__sex-female.user-data__sex--active
 {
     color: #fff;
     background-color: #5db7d8;
     background-image: url('../img/icon-woman-hover.png');
 }
-.user-data__sex-female--active:hover
+.user-data__sex-female.user-data__sex--active:hover
 {
     color: #fff;
 }
@@ -17241,13 +17230,13 @@ a:focus
 {
     background-image: url('../img/icon-man.png');
 }
-.user-data__sex-male--active
+.user-data__sex-male.user-data__sex--active
 {
     color: #fff;
     background-color: #5db7d8;
     background-image: url('../img/icon-man-hover.png');
 }
-.user-data__sex-male--active:hover
+.user-data__sex-male.user-data__sex--active:hover
 {
     color: #fff;
 }
