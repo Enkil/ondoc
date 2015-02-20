@@ -13681,6 +13681,7 @@ input:after
     /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
     /* Меняем фон чекбокса, когда он включен. */
     /* Сдвигаем переключатель чекбокса, когда он включен. */
+    /* Меняем фон для включенного состояния */
     /* Показываем получение фокуса. */
 }
 .medcard-docinfo__allow-check + label
@@ -13714,7 +13715,7 @@ input:after
     content: '';
 
     border-radius: 13px;
-    background: #5db7d8;
+    background: rgba(0, 0, 0, .2);
 }
 .medcard-docinfo__allow-check:not(checked) + label:after
 {
@@ -13736,6 +13737,10 @@ input:after
 .medcard-docinfo__allow-check:checked + label:after
 {
     right: 17px;
+}
+.medcard-docinfo__allow-check:checked + label:before
+{
+    background: #5db7d8;
 }
 .medcard-docinfo__allow-check + label
 {

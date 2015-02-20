@@ -1020,7 +1020,7 @@
       width: 44px;
       height: 27px;
       border-radius: 13px;
-      background: @blue-color;
+      background: @grey-color-2;
     }
 
     /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
@@ -1044,6 +1044,11 @@
     /* Сдвигаем переключатель чекбокса, когда он включен. */
     &:checked + label:after {
       right: 17px;
+    }
+
+    /* Меняем фон для включенного состояния */
+    &:checked + label:before {
+      background: @blue-color;
     }
 
     /* Показываем получение фокуса. */
