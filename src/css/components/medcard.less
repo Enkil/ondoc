@@ -218,14 +218,6 @@
     height: 290px;
     border-bottom: 1px solid @grey-color-3;
     position: relative;
-
-//    &:after{
-//      content: '';
-//      position: absolute;
-//      display: block;
-//      height: 50px;
-//      background-color: red;
-//    }
   }
 
   // Element -> Pop-Up title
@@ -263,8 +255,6 @@
     border-radius: 20px;
     margin-top: 3px;
     margin-bottom: 3px;
-//    word-wrap: break-word;
-//    white-space: pre-line;
     word-break: break-all;
     max-width: 180px;
 
@@ -286,6 +276,7 @@
     }
   }
 
+  // Element -> Button in the specs pop-up
   &__btn{
     .gotham-m;
     outline: none;
@@ -311,6 +302,7 @@
     }
   }
 
+  // Element -> Close cross btn in specs pop-up
   &__close{
     position: absolute;
     top: 25px;
@@ -741,4 +733,330 @@
   float: right;
   padding-right: 15px;
   text-align: right;
+}
+
+
+// BLOCK -> Doctor info pop-up
+.medcard-docinfo{
+  width: 300px;
+  position: absolute;
+  z-index: 100;
+  background-color: @white-color;
+  border-radius: 8px;
+  box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+  padding: 25px 0 0 0;
+  left: 195px;
+  top: -100px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 100px;
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid @white-color; /* Добавляем треугольник */
+  }
+
+  &__star{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-star.png") no-repeat;
+    cursor: pointer;
+    &:hover{  opacity: 0.6;  }
+  }
+
+  &__doc-avatar{
+    text-align: center;
+  }
+
+  &__doc-avatar-img{
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid @grey-color-2;
+  }
+
+  &__doc-name{
+    .gotham-m;
+    font-size: 14px;
+    color: @black-color;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+
+  &__doc-specs{
+    .gotham;
+    font-size: 13px;
+    text-align: center;
+    color: @black-color;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+
+  &__block{
+    padding-bottom: 15px;
+//    position: relative;
+  }
+
+  &__title-line{
+    position: relative;
+    text-align: center;
+    padding-bottom: 15px;
+
+    &:before{
+      position: absolute;
+      z-index: 5;
+      top: -15px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 1px;
+      margin: auto;
+      content: '';
+      border-bottom: 1px solid @grey-color-2;
+    }
+  }
+
+  &__title{
+    .gotham;
+    font-size: 14px;
+    color: @grey-color-2;
+    z-index: 110;
+    padding: 0 5px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    background-color: @white-color;
+  }
+
+  &__exp-rank{
+    .gotham;
+    font-size: 13px;
+    color: @black-color;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 20px;
+
+    &:before{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      content: '';
+      background: url(../img/icon-doc-rank.png);
+    }
+  }
+
+  &__exp-years{
+    .gotham;
+    font-size: 13px;
+    color: @black-color;
+    margin: 5px 0 0 0;
+    margin-right: 15px;
+    margin-left: 20px;
+
+    &:before{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      content: '';
+      background: url(../img/icon-doc-exp.png);
+    }
+  }
+
+  &__phone{
+    .gotham-m;
+    font-size: 14px;
+    color: @blue-color;
+    display: block;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+
+  &__location{
+    overflow: hidden;
+    position: relative;
+    padding-top: 15px;
+
+    &:nth-child(2){  padding-top: 0!important;  }
+    &:nth-child(even){
+      padding-bottom: 15px;
+      border-bottom: 1px solid @grey-color-2;
+    }
+    &:nth-child(odd){
+      padding-bottom: 15px;
+      border-bottom: 1px solid @grey-color-2;
+    }
+    &:last-child{
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    &:nth-child(2) .medcard-docinfo__clinic-arrow{
+      top: calc(50% - 15px);
+    }
+  }
+
+  &__clinic-arrow{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    bottom: 0;
+    right: 15px;
+    background: url(../img/list-arrow.png) no-repeat;
+    &:hover{  opacity: 0.6  }
+  }
+
+  &__clinic-logo{
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid @grey-color-2 ;
+    margin-left: 20px;
+  }
+
+  &__clinic-name{
+    .gotham-m;
+    font-size: 13px;
+    color: @black-color;
+    margin: 10px 20px 5px 15px;
+    word-break: break-all;
+  }
+
+  &__clinic-subway{
+    .gotham;
+    font-size: 13px;
+    color: @black-color;
+    margin: 0 20px 0 15px;
+    word-break: break-all;
+
+    &:before{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      content: '';
+      background: url(../img/icon-doc-subway.png);
+    }
+  }
+
+  &__about{
+    .gotham;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+
+  &__support-status{
+    .gotham;
+    font-size: 13px;
+    color: @grey-color-2;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-bottom: 0;
+
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      content: '';
+      background: url(../img/icon-doc--ondocked.png);
+    }
+  }
+
+  // Element -> allow view profile checkbox
+  &__allow-check{
+    /* Cначала обозначаем стили для IE8 и более старых версий
+        т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 25px;
+    height: 25px;
+
+    /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+        селекторы с плюсом. Показываем, что label кликабелен. */
+    & + label{  cursor: pointer }
+
+    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+        Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+        в них все нижеследующие стили не сработают. */
+
+    /* Прячем оригинальный чекбокс. */
+    &:not(checked) {
+      position: absolute;
+      opacity: 0;
+    }
+
+    &:not(checked) + label {
+      position: relative; /* будем позиционировать псевдочекбокс относительно label */
+      padding: 0 70px 0 0; /* оставляем справа от label место под псевдочекбокс */
+    }
+
+    /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+    &:not(checked) + label:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 44px;
+      height: 27px;
+      border-radius: 13px;
+      background: @blue-color;
+    }
+
+    /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+    &:not(checked) + label:after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      right: 2px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: @white-color;
+      transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+    }
+
+    /* Меняем фон чекбокса, когда он включен. */
+//    &:checked + label:before {
+//      background: #9FD468;
+//    }
+
+    /* Сдвигаем переключатель чекбокса, когда он включен. */
+    &:checked + label:after {
+      right: 17px;
+    }
+
+    /* Показываем получение фокуса. */
+    //    &:focus + label:before {
+    //      box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+    //    }
+
+    & + label{
+      .gotham;
+      font-size: 14px;
+      line-height: 14px;
+      margin-right: 15px;
+      margin-left: 20px;
+    }
+  }
 }

@@ -43,7 +43,7 @@ gulp.task('less', function() {
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
         //.pipe(uncss({ html: ['dist/*.html'] }))
-        .pipe(autoprefixer('last 4 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4', '> 4%'))
+        .pipe(autoprefixer('> 2%'))
         .pipe(csscomb())
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({ suffix: '.min' }))
