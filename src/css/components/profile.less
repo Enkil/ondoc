@@ -22,11 +22,14 @@
     position: relative;
     transition: 0.5s ease background;
     background-repeat: no-repeat;
+	background-position: 15px 50%;
 
     &:hover {
       background: @blue-color;
       color: @white-color;
       text-decoration: none;
+      background-repeat: no-repeat;
+	background-position: 15px 50%;
     }
 
    &--current {
@@ -41,41 +44,43 @@
     }
 
     &--active{
-      background: rgba(255, 255, 255, .3);
+      background: @blue-color;
       color: #fff;
       text-decoration: none;
-    }
-
-    &:before{
-      content: "";
-      width: 27px;
-      height: 28px;
-      display: inline-block;
-      position: absolute;
-      left: 15px;
-      top: 50%;
-      transform: translateY(-50%);
       background-repeat: no-repeat;
-      background-position: 0 0;
+	background-position: 15px 50%;
     }
 
-    &--profile:before{ background-image: url("../img/icon-profile.png"); }
-    &--profile:hover:before { background-image: url("../img/icon-profile-hover.png"); }
+    // &:before{
+    //   content: "";
+    //   width: 27px;
+    //   height: 28px;
+    //   display: inline-block;
+    //   position: absolute;
+    //   left: 15px;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   background-repeat: no-repeat;
+    //   background-position: 0 0;
+    // }
 
-    &--security:before{ background-image: url("../img/icon-security.png"); background-size: 81%; }
-    &--security:hover:before { background-image: url("../img/icon-security-hover.png"); background-size: 81%; }
+    &--profile{ background-image: url("../img/icon-profile.png"); }
+    &--profile:hover, &--profile.sidebar-profile__menu-link--active { background-image: url("../img/icon-profile-hover.png"); }
 
-    &--notifications:before{ background-image: url("../img/icon-notifications.png"); }
-    &--notifications:hover:before { background-image: url("../img/icon-notifications-hover.png"); }
+    &--security{ background-image: url("../img/icon-security.png");  }
+    &--security:hover, &--security.sidebar-profile__menu-link--active  { background-image: url("../img/icon-security-hover.png");  }
 
-    &--privacy:before{ background-image: url("../img/icon-privacy.png"); top: 67%; }
-    &--privacy:hover:before { background-image: url("../img/icon-privacy-hover.png"); top: 67%; }
+    &--notifications{ background-image: url("../img/icon-notifications.png"); }
+    &--notifications:hover, &--notifications.sidebar-profile__menu-link--active  { background-image: url("../img/icon-notifications-hover.png"); }
 
-    &--family:before{ background-image: url("../img/icon-family.png"); }
-    &--family:hover:before { background-image: url("../img/icon-family-hover.png"); }
+    &--privacy{ background-image: url("../img/icon-privacy.png"); top: 67%; }
+    &--privacy:hover, &--privacy.sidebar-profile__menu-link--active  { background-image: url("../img/icon-privacy-hover.png"); top: 67%; }
 
-    &--history:before{ background-image: url("../img/icon-history.png"); }
-    &--history:hover:before { background-image: url("../img/icon-history-hover.png"); }
+    &--family{ background-image: url("../img/icon-family.png"); }
+    &--family:hover, &--family.sidebar-profile__menu-link--active  { background-image: url("../img/icon-family-hover.png"); }
+
+    &--history{ background-image: url("../img/icon-history.png"); }
+    &--history:hover, &--history.sidebar-profile__menu-link--active  { background-image: url("../img/icon-history-hover.png"); }
 
   }
 

@@ -16907,6 +16907,7 @@ a:focus
     color: #5db7d8;
     border-radius: 30px;
     background-repeat: no-repeat;
+    background-position: 15px 50%;
 }
 .sidebar-profile__menu-link:hover
 {
@@ -16934,6 +16935,8 @@ a:focus
 
     color: #fff;
     background: #5db7d8;
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
 }
 .sidebar-profile__menu-link--current
 {
@@ -16952,78 +16955,65 @@ a:focus
     text-decoration: none;
 
     color: #fff;
-    background: rgba(255, 255, 255, .3);
-}
-.sidebar-profile__menu-link:before
-{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-
-    display: inline-block;
-
-    width: 27px;
-    height: 28px;
-
-    content: '';
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-
+    background: #5db7d8;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 15px 50%;
 }
-.sidebar-profile__menu-link--profile:before
+.sidebar-profile__menu-link--profile
 {
     background-image: url('../img/icon-profile.png');
 }
-.sidebar-profile__menu-link--profile:hover:before
+.sidebar-profile__menu-link--profile:hover,
+.sidebar-profile__menu-link--profile.sidebar-profile__menu-link--active
 {
     background-image: url('../img/icon-profile-hover.png');
 }
-.sidebar-profile__menu-link--security:before
+.sidebar-profile__menu-link--security
 {
     background-image: url('../img/icon-security.png');
-    background-size: 81%;
 }
-.sidebar-profile__menu-link--security:hover:before
+.sidebar-profile__menu-link--security:hover,
+.sidebar-profile__menu-link--security.sidebar-profile__menu-link--active
 {
     background-image: url('../img/icon-security-hover.png');
-    background-size: 81%;
 }
-.sidebar-profile__menu-link--notifications:before
+.sidebar-profile__menu-link--notifications
 {
     background-image: url('../img/icon-notifications.png');
 }
-.sidebar-profile__menu-link--notifications:hover:before
+.sidebar-profile__menu-link--notifications:hover,
+.sidebar-profile__menu-link--notifications.sidebar-profile__menu-link--active
 {
     background-image: url('../img/icon-notifications-hover.png');
 }
-.sidebar-profile__menu-link--privacy:before
+.sidebar-profile__menu-link--privacy
 {
     top: 67%;
 
     background-image: url('../img/icon-privacy.png');
 }
-.sidebar-profile__menu-link--privacy:hover:before
+.sidebar-profile__menu-link--privacy:hover,
+.sidebar-profile__menu-link--privacy.sidebar-profile__menu-link--active
 {
     top: 67%;
 
     background-image: url('../img/icon-privacy-hover.png');
 }
-.sidebar-profile__menu-link--family:before
+.sidebar-profile__menu-link--family
 {
     background-image: url('../img/icon-family.png');
 }
-.sidebar-profile__menu-link--family:hover:before
+.sidebar-profile__menu-link--family:hover,
+.sidebar-profile__menu-link--family.sidebar-profile__menu-link--active
 {
     background-image: url('../img/icon-family-hover.png');
 }
-.sidebar-profile__menu-link--history:before
+.sidebar-profile__menu-link--history
 {
     background-image: url('../img/icon-history.png');
 }
-.sidebar-profile__menu-link--history:hover:before
+.sidebar-profile__menu-link--history:hover,
+.sidebar-profile__menu-link--history.sidebar-profile__menu-link--active
 {
     background-image: url('../img/icon-history-hover.png');
 }
