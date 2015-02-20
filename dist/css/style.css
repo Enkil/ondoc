@@ -15023,6 +15023,120 @@ a:focus
 
     margin-top: 5px;
 }
+.security-authorisation__input
+{
+    width: 25px;
+    height: 25px;
+    margin: 0 3px 0 0;
+    /* Cначала обозначаем стили для IE8 и более старых версий
+	        т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+
+    vertical-align: top;
+    /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+	        селекторы с плюсом. Показываем, что label кликабелен. */
+    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+	        Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+	        в них все нижеследующие стили не сработают. */
+    /* Прячем оригинальный чекбокс. */
+    /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+    /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+    /* Меняем фон чекбокса, когда он включен. */
+    /* Сдвигаем переключатель чекбокса, когда он включен. */
+    /* Меняем фон для включенного состояния */
+}
+.security-authorisation__input + label
+{
+    cursor: pointer;
+}
+.security-authorisation__input:not(checked)
+{
+    position: absolute;
+
+    opacity: 0;
+}
+.security-authorisation__input:not(checked) + label
+{
+    position: relative;
+    /* будем позиционировать псевдочекбокс относительно label */
+
+    padding: 7px 20px 0 0;
+    /* оставляем справа от label место под псевдочекбокс */
+}
+.security-authorisation__input:not(checked) + label:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 44px;
+    height: 27px;
+
+    content: '';
+
+    border-radius: 13px;
+    background: rgba(0, 0, 0, .2);
+}
+.security-authorisation__input:not(checked) + label:after
+{
+    position: absolute;
+    top: 1px;
+    right: 18px;
+
+    width: 24px;
+    height: 24px;
+
+    content: '';
+    -webkit-transition: all .2s;
+            transition: all .2s;
+
+    border-radius: 50%;
+    background: #fff;
+    /* анимация, чтобы чекбокс переключался плавно */
+}
+.security-authorisation__input:checked + label:after
+{
+    right: 2px;
+}
+.security-authorisation__input:checked + label:before
+{
+    background: #5db7d8;
+}
+.security-authorisation__input + label
+{
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+
+    margin-right: 15px;
+    margin-left: 20px;
+}
+.security-authorisation__label--unchecked
+{
+    font: 12.5px/20px sans-serif;
+
+    position: relative;
+    top: 6px;
+
+    letter-spacing: 1px;
+
+    color: #dc4531;
+    outline: none;
+}
+.security-authorisation__label--checked
+{
+    font: 12.5px/20px sans-serif;
+
+    position: relative;
+    top: 6px;
+
+    display: none;
+
+    letter-spacing: 1px;
+
+    color: #000;
+    outline: none;
+}
 .security-password
 {
     margin-top: 10px;
@@ -15034,9 +15148,9 @@ input:focus,
 input:before,
 input:after
 {
+         outline: 0;
          outline: none;
 
     -moz-outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* Toggle */

@@ -77,10 +77,17 @@ This will be replaced by the content of header.html
 
             		<div class="row security-authorisation">
             			<div class="col-xs-offset-1 col-xs-10 security-authorisation__text">Двухэтапная авторизация</div>
-            			<div class="col-xs-20"><input type="checkbox" unchecked></div>
+            			<div class="col-xs-24">
+                            <input type="checkbox" class="security-authorisation__input" unchecked id="security-authorisation-double">
+                            <label for="security-authorisation-double"></label> <!-- нужен для позиционирования оформления чексокса -->
+                            <span class="security-authorisation__label--unchecked">Для подключения этой функции  необходимо подтвердить номер телефона</span>
+                            <span class="security-authorisation__label--checked">При авторизации будет запрашиваться одноразовый смс-пароль</span>
+
+                        </div>
             		</div>
 
             		<!-- двухэтапная авторизация -->
+
 
             		<div class="row">
             			<div class="col-xs-36 security__line"></div>

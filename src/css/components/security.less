@@ -160,6 +160,104 @@
       .gotham-m;
       font-size: 17px;
     }
+
+    &__input{
+	    /* Cначала обозначаем стили для IE8 и более старых версий
+	        т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+	    vertical-align: top;
+	    margin: 0 3px 0 0;
+	    width: 25px;
+	    height: 25px;
+
+	    /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+	        селекторы с плюсом. Показываем, что label кликабелен. */
+	    & + label{  cursor: pointer }
+
+	    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+	        Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+	        в них все нижеследующие стили не сработают. */
+
+	    /* Прячем оригинальный чекбокс. */
+	    &:not(checked) {
+	      position: absolute;
+	      opacity: 0;
+	    }
+
+	    &:not(checked) + label {
+	      position: relative; /* будем позиционировать псевдочекбокс относительно label */
+	      padding: 7px 20px 0 0; /* оставляем справа от label место под псевдочекбокс */
+	    }
+
+	    /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+	    &:not(checked) + label:before {
+	      content: '';
+	      position: absolute;
+	      top: 0;
+	      bottom: 0;
+	      right: 0;
+	      width: 44px;
+	      height: 27px;
+	      border-radius: 13px;
+	      background: @grey-color-2;
+	    }
+
+	    /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+	    &:not(checked) + label:after {
+	      content: '';
+	      position: absolute;
+	      top: 1px;
+	      right: 18px;
+	      width: 24px;
+	      height: 24px;
+	      border-radius: 50%;
+	      background: @white-color;
+	      transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+	    }
+
+	    /* Меняем фон чекбокса, когда он включен. */
+	//    &:checked + label:before {
+	//      background: #9FD468;
+	//    }
+
+	    /* Сдвигаем переключатель чекбокса, когда он включен. */
+	    &:checked + label:after {
+	      right: 2px;
+	    }
+
+	    /* Меняем фон для включенного состояния */
+	    &:checked + label:before {
+	      background: @blue-color;
+	    }
+
+	    & + label{
+	      .gotham;
+	      font-size: 14px;
+	      line-height: 14px;
+	      margin-right: 15px;
+	      margin-left: 20px;
+	    }
+	  }
+
+	 &__label--unchecked {
+	 	color: @red-color;
+	  font: 12.5px/20px sans-serif;
+	  letter-spacing: 1px;
+	  outline: none;
+	  position: relative;
+	  top: 6px;
+	 }
+
+	 &__label--checked {
+	  display: none;
+	  color: @black-color;
+	  font: 12.5px/20px sans-serif;
+	  letter-spacing: 1px;
+	  outline: none;
+	  position: relative;
+	  top: 6px;
+	 }
+
+
   }
 
 .security-password {
@@ -171,66 +269,11 @@
 
 
 input, input:visited, input:focus, input:before, input:after {
-  outline: none;
- -moz-outline: none;
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	  outline:0;
+	  outline: none;
+	 -moz-outline: none;
+	 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-/* Toggle */
-
-//input[type="checkbox"] {
-//    background-color: #e5e5e5;
-//    background-size: 100% 100%, 200% 100%;
-//    background-position: 0 0, 5px 0;
-//    border-radius: 25px;
-//    cursor: pointer;
-//    height: 25px;
-//    padding-right: 10px;
-//    position: relative;
-//    width: 44px;
-//    -webkit-appearance: none;
-//    -webkit-transition: .5s;
-//    outline: none!important;
-//}
-//
-//input[type="checkbox"]:after {
-//    background-color: #fff;
-//    content: '';
-//    display: block;
-//    height: 23px;
-//    left: 2px;
-//    position: relative;
-//    top: 1px;
-//    width: 22px;
-//    border-radius: 100%;
-//  outline: none;
-//}
-//
-//input[type="checkbox"]:checked {
-//    background-position: 0 0, 45px 0;
-//    padding-left: 18px;
-//    padding-right: 0;
-//  outline: none;
-//}
-//input[type="checkbox"]:before {
-//    color: @red-color;
-//    content: 'Для подключения этой функции  необходимо подтвердить номер телефона';
-//    font: 12.5px/20px sans-serif;
-//    height: 20px;
-//    left: 60px;
-//    letter-spacing: 1px;
-//    position: absolute;
-//    top: 6px;
-//    width: 560px;
-//  outline: none;
-//}
-//input[type="checkbox"]:checked:before {
-//    content: 'При авторизации будет запрашиваться одноразовый смс-пароль';
-//    left: 60px;
-//    color: @black-color;
-//  outline: none;
-//}
-
 
   
 
