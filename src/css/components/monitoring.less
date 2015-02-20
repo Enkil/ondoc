@@ -1,11 +1,12 @@
 // BLOCK -> mini widget on monitoring page
 .monitoring-widget{
-  height: 430px;
-  background: #fff;
+  height: 355px;
+  background: @white-color;
   border-radius: 10px;
-  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 1px 0px @grey-color-2;
   margin-bottom: 16px;
   position: relative;
+  padding-bottom: 25px;
 
   // Element -> widget header
   &__header{
@@ -17,7 +18,7 @@
 
   // Element -> widget subheader
   &__subheader{
-    margin: 20px 20px 25px 20px;
+    margin: 20px 20px 20px 20px;
     overflow: hidden;
   }
 
@@ -187,8 +188,12 @@
 
   &__chart{
     width: 260px;
-    height: 220px;
+    height: 225px;
     text-align: center;
+
+    &--less{
+      height: 175px;
+    }
   }
 
   // Element -> widget add value state body
@@ -304,7 +309,7 @@
 
   // Element -> sugar shedule
   &__sugar-shedule{
-    padding: 0 10px 8px;
+    padding: 0 10px 2px;
 
     &--add-value{
       padding: 0;
@@ -314,7 +319,8 @@
 
   &__sugar-shedule-block{
     text-align: center;
-    &:hover p{ color: @blue-color; }
+    p{  margin: 0;  }
+    &:hover p{ color: @blue-color;  margin: 0;}
 
     &:hover .monitoring-widget__sugar-shedule-icon--sun{ background-position: 0 -36px;}
     &:hover .monitoring-widget__sugar-shedule-icon--eat{ background-position: -62px -36px;}
@@ -389,7 +395,7 @@
     &--add-value {
       padding: 0;
       margin-top: 30px;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
     }
   }
 }

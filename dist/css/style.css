@@ -13755,8 +13755,9 @@ input:after
 {
     position: relative;
 
-    height: 430px;
+    height: 355px;
     margin-bottom: 16px;
+    padding-bottom: 25px;
 
     border-radius: 10px;
     background: #fff;
@@ -13776,7 +13777,7 @@ input:after
 {
     overflow: hidden;
 
-    margin: 20px 20px 25px 20px;
+    margin: 20px 20px 20px 20px;
 }
 .monitoring-widget__title
 {
@@ -13976,9 +13977,13 @@ input:after
 .monitoring-widget__chart
 {
     width: 260px;
-    height: 220px;
+    height: 225px;
 
     text-align: center;
+}
+.monitoring-widget__chart--less
+{
+    height: 175px;
 }
 .monitoring-widget__value-body
 {
@@ -14117,7 +14122,7 @@ input:after
 }
 .monitoring-widget__sugar-shedule
 {
-    padding: 0 10px 8px;
+    padding: 0 10px 2px;
 }
 .monitoring-widget__sugar-shedule--add-value
 {
@@ -14128,8 +14133,14 @@ input:after
 {
     text-align: center;
 }
+.monitoring-widget__sugar-shedule-block p
+{
+    margin: 0;
+}
 .monitoring-widget__sugar-shedule-block:hover p
 {
+    margin: 0;
+
     color: #5db7d8;
 }
 .monitoring-widget__sugar-shedule-block:hover .monitoring-widget__sugar-shedule-icon--sun
@@ -14242,7 +14253,7 @@ input:after
 .monitoring-widget__chol-shedule--add-value
 {
     margin-top: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     padding: 0;
 }
 .tooltip-custom + .tooltip > .tooltip-inner
