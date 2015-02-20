@@ -11933,6 +11933,11 @@ $(document).ready(function() {
         $('.medcard-docinfo').toggleClass('display-none');
     });
 
+    $('.js-doc-find').click(function(event){
+        event.preventDefault();
+        $('.medcard-docinfo').toggleClass('display-none');
+    });
+
 });
 /*
 Show-hide medcard filter block

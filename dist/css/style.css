@@ -14026,9 +14026,13 @@ input:after
 .monitoring-widget__values-degree
 {
     position: relative;
-    top: -4px;
 
     display: inline-block;
+
+    width: 19px;
+    height: 19px;
+
+    background: url('../img/icon-degree.png');
 }
 .monitoring-widget__value-add
 {
