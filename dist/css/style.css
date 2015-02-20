@@ -13973,6 +13973,13 @@ input:after
 
     margin: 0 20px 0 20px;
 }
+.monitoring-widget__chart
+{
+    width: 260px;
+    height: 220px;
+
+    text-align: center;
+}
 .monitoring-widget__value-body
 {
     overflow: hidden;
