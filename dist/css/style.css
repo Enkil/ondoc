@@ -17792,7 +17792,7 @@ a:focus
 }
 .user-info__input
 {
-    font-family: 'Gotham', Arial, sans-serif;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
     display: block;
@@ -18570,6 +18570,9 @@ a:focus
 .security-link__delete-profile:hover
 {
     background: #dc4531;
+    background-image: url(../img/icon-trash-white.png);
+    background-repeat: no-repeat;
+    background-position: 13px 50%;
 }
 .security-authorisation
 {
@@ -18730,6 +18733,10 @@ input:after
 
     border-radius: 15px;
     background: #fff;
+}
+.security-widget
+{
+    display: none;
 }
 .security-widget__background
 {
