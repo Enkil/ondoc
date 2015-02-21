@@ -9,6 +9,7 @@
   // Element -> Medcard dropdown filter search input
   &__input{
     .gotham;
+    .placeholder-effect(20px);
     font-size: 15px;
     height: 30px;
     width: 100%;
@@ -21,32 +22,6 @@
     background-position: 10px 50%;
     outline: none;
     margin-bottom: 15px;
-
-    // Soft slide-down placeholder
-    &::-webkit-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::-moz-placeholder{
-      line-height: 30px;  transition: line-height 0.5s ease;
-    }
-    &:-ms-input-placeholder{
-      line-height: 30px;  transition: line-height 0.5s ease;
-    }
-    &::placeholder{
-      line-height: 30px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-webkit-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-moz-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus:-ms-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
   }
 
   // Element -> Medcard dropdown filter link
@@ -87,7 +62,7 @@
     border-radius: 12px;
     margin: 5px;
 
-    // Mofificator -> Medcard dropdown filter tag for clear filters/tags
+    // Modificator -> Medcard dropdown filter tag for clear filters/tags
     &--clear{
       .gotham-m;
       background-color: transparent;
@@ -509,6 +484,7 @@
     color: @grey-color-2;
     display: block;
     margin-bottom: 10px;
+    word-break: break-all;
     
     &--rank{
       &:before{
@@ -608,6 +584,7 @@
     margin-right: 8px;
     margin-left: 8px;
     margin-top: 28px;
+    letter-spacing: -0.2px;
   }
 
   &__add-form{
@@ -983,85 +960,403 @@
   }
 
   // Element -> allow view profile checkbox
-  &__allow-check{
-    /* Cначала обозначаем стили для IE8 и более старых версий
-        т.е. здесь мы немного облагораживаем стандартный чекбокс. */
-    vertical-align: top;
-    margin: 0 3px 0 0;
-    width: 25px;
-    height: 25px;
+  &__allow-check {
+    .checkbox-blue;
+  }
+}
 
-    /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
-        селекторы с плюсом. Показываем, что label кликабелен. */
-    & + label{  cursor: pointer }
 
-    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
-        Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
-        в них все нижеследующие стили не сработают. */
+/* BLOCK -> Find/Add Clinic pop-up */
+.medcard-clinic{
+  width: 490px;
+  height: 625px;
+  background-color: @white-color;
+  border-radius: 6px;
+  padding: 20px 0 15px 0;
 
-    /* Прячем оригинальный чекбокс. */
-    &:not(checked) {
-      position: absolute;
-      opacity: 0;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  &__wrapper{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+  }
+
+  &__close{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+    &:hover{
+      opacity: 0.7;
     }
+  }
 
-    &:not(checked) + label {
-      position: relative; /* будем позиционировать псевдочекбокс относительно label */
-      padding: 0 70px 0 0; /* оставляем справа от label место под псевдочекбокс */
+  &__head{
+    border-bottom: 1px solid @grey-color-3;
+  }
+
+  &__title{
+    .gotham-m;
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+
+  }
+
+  &__icon-line{
+    text-align: center;
+    margin-bottom: 15px;
+    height: 31px;
+    position: relative;
+  }
+
+  &__icon{
+    width: 26px;
+    height: 26px;
+    line-height: 31px;
+    margin: 0 8px;
+    display: inline-block;
+    color: transparent;
+    margin-top: 2px;
+    vertical-align: middle;
+
+    &--clinic{
+      background:url("../img/icon-clinic--blue.png") no-repeat;
+      margin-top: 5px;
+      &:hover{
+        opacity: 0.6;
+      }
+      &-active{
+
+      }
     }
+    &--clinic-liked{
+      background: url("../img/icon-clinic--liked.png") no-repeat;
+      margin-top: 5px;
+      &:hover{
+        opacity: 0.6;
+      }
+      &-active{
 
-    /* Оформление первой части чекбокса в выключенном состоянии (фон). */
-    &:not(checked) + label:before {
-      content: '';
+      }
+    }
+    &--clinic-fave{
+      background: url("../img/icon-clinic--fave.png") no-repeat;
+      margin-top: 0;
+      &:hover{
+        opacity: 0.6;
+      }
+      &-active{
+
+      }
+    }
+  }
+
+  &__icon-plus {
+    position: absolute;
+    right: 7px;
+    line-height: 31px;
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background: url('../img/icon-btn-plus.png') no-repeat;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__search{
+    margin-bottom: 15px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+
+  &__search-input{
+    .gotham;
+    .placeholder-effect(30px);
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    display: block;
+    border: 1px solid @grey-color-2;
+    border-radius: 12px;
+    padding-left: 10px;
+    outline: none;
+  }
+
+  &__body{
+    height: 470px;
+    overflow-y: scroll;
+  }
+
+  &__item{
+    padding: 15px 12px 5px 12px;
+    border-bottom: 1px solid @grey-color-3;
+    transition: 0.2s ease all;
+
+    &:hover{
+      background-color: #e8f6fa;
+    }
+  }
+
+  &__avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    position: relative;
+
+    &-ondocked{
+      display: inline-block;
       position: absolute;
-      top: 0;
       bottom: 0;
-      right: 0;
-      width: 44px;
-      height: 27px;
-      border-radius: 13px;
-      background: @grey-color-2;
-    }
-
-    /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
-    &:not(checked) + label:after {
-      content: '';
-      position: absolute;
-      top: 1px;
-      right: 2px;
-      width: 24px;
-      height: 24px;
+      width: 17px;
+      height: 17px;
+      padding: 0;
+      border: none;
       border-radius: 50%;
-      background: @white-color;
-      transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+      background: url("../img/icon-doc--ondocked.png") no-repeat;
+    }
+  }
+
+  &__clinic-name{
+    .link-medium;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+
+  &__clinic-specs{
+    .gotham;
+    font-size: 13px;
+    color: @grey-color;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &__info{
+    .gotham;
+    font-size: 11px;
+    color: @grey-color-2;
+    display: block;
+    margin-bottom: 10px;
+    word-break: break-all;
+
+    &--mappin{
+      &:before{
+        content: "";
+        background: url("../img/icon-map-pin.png") no-repeat;
+        width: 12px;
+        height: 11px;
+        margin-right: 5px;
+        display: inline-block;
+      }
     }
 
-    /* Меняем фон чекбокса, когда он включен. */
-//    &:checked + label:before {
-//      background: #9FD468;
-//    }
-
-    /* Сдвигаем переключатель чекбокса, когда он включен. */
-    &:checked + label:after {
-      right: 17px;
+    &--worktime{
+      &:before{
+        content: "";
+        background: url("../img/icon-worktime.png") no-repeat;
+        width: 12px;
+        height: 10px;
+        margin-right: 5px;
+        display: inline-block;
+      }
     }
 
-    /* Меняем фон для включенного состояния */
-    &:checked + label:before {
-      background: @blue-color;
+    &--exp{
+      &:before{
+        content: "";
+        background: none;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        display: inline-block;
+      }
     }
 
-    /* Показываем получение фокуса. */
-    //    &:focus + label:before {
-    //      box-shadow: 0 0 0 3px rgba(255,255,0,.5);
-    //    }
+    &--subway{
+      &:before{
+        content: "";
+        background: url("../img/icon-doc-subway.png") no-repeat;
+        width: 12px;
+        height: 8px;
+        margin-right: 5px;
+        display: inline-block;
+      }
+    }
+  }
 
-    & + label{
-      .gotham;
-      font-size: 14px;
-      line-height: 14px;
-      margin-right: 15px;
-      margin-left: 20px;
+  &__notfind-img{
+    width: 118px;
+    height: 118px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  &__notfind-text{
+    .gotham;
+    font-size: 14px;
+    text-align: center;
+    color: @grey-color;
+    margin-bottom: 55px;
+  }
+
+  &__notfind-btn{
+    .gotham-m;
+    display: inline-block;
+    width: 210px;
+    height: 35px;
+    font-size: 17px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid @blue-color;
+    border-radius: 15px;
+    transition: 0.2s ease all;
+
+    &:before{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 9px;
+      content: '';
+      background: url(../img/icon-cross.png) no-repeat;
+    }
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__add-body{
+
+  }
+
+  &__add-text{
+    .gotham;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 28px;
+    letter-spacing: -0.2px;
+  }
+
+  &__add-form{
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  &__add-input{
+    .gotham;
+    .placeholder-effect(30px);
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid @grey-color-2;
+    padding-left: 10px;
+    border-radius: 12px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  &__up-lined{
+    margin-top: 30px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid @grey-color-2;
+      top: -15px;
+      width: 100%;
+    }
+  }
+
+  &__down-lined{
+    margin-bottom: 15px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid @grey-color-2;
+      bottom: -15px;
+      width: 100%;
+    }
+  }
+
+  &__add-buttons{
+
+  }
+
+  &__add-btn-no{
+    .gotham;
+    font-size: 17px;
+    display: inline-block;
+    height: 35px;
+    line-height: 33px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    color: @blue-color;
+    border: 1px solid @blue-color;
+    border-radius: 15px;
+    outline: 0;
+    background-color: @white-color;
+
+    &:hover{
+      color: @white-color;
+      background-color: @blue-color;
+    }
+  }
+
+  &__add-btn-save{
+    .gotham-m;
+    font-size: 17px;
+    display: inline-block;
+    height: 35px;
+    line-height: 33px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: @blue-color;
+    border: 1px solid @blue-color;
+    border-radius: 15px;
+    outline: 0;
+    background-color: @white-color;
+
+    &:hover{
+      color: @white-color;
+      background-color: @blue-color;
     }
   }
 }

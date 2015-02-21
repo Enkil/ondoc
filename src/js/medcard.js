@@ -102,3 +102,38 @@ $(document).ready(function() {
     });
 
 });
+
+
+/*
+ Show-hide/Change state Select Clinic Pop-Up
+ */
+
+$(document).ready(function() {
+
+    // Show pop-up
+    $('#js-find-clinic').click(function(event){
+        event.preventDefault();
+        $(".medcard-clinic__wrapper").toggleClass('display-none');
+    });
+
+    // Hide pop-up onclick to close btn (cross icon)
+    $('.medcard-clinic__close').click(function(event){
+        event.preventDefault();
+        $(".medcard-clinic__wrapper").toggleClass('display-none');
+    });
+
+    // Change state to "add new doctor form"
+    $('.medcard-clinic__icon-plus, .medcard-clinic__notfind-btn').click(function(event){
+        event.preventDefault();
+        $(".medcard-clinic__head, .medcard-clinic__body").addClass('display-none')
+        $(".medcard-clinic__add-body").removeClass('display-none');
+    });
+
+    // Change state to "Doctor searching" on click to cancel btn
+    $('.medcard-clinic__add-btn-no').click(function(event){
+        event.preventDefault();
+        $(".medcard-clinic__add-body").addClass('display-none');
+        $(".medcard-clinic__head, .medcard-clinic__body").removeClass('display-none')
+    })
+
+});

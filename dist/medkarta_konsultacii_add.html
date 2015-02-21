@@ -706,8 +706,347 @@
                                     <div class="widget-right-head__list">
 
                                         <div class="col-xs-12 right-line-grey widget-right-head__list-item">
-                                            <a class="widget-right-head__link" href="#">Выберите клинику</a>
+                                            <a class="widget-right-head__link" href="#" id="js-find-clinic">Выберите клинику</a>
                                         </div>
+
+                                        <!-- clinic select Pop-Up -->
+<div class="medcard-clinic__wrapper display-none">
+    <div class="row medcard-clinic">
+
+        <span class="medcard-clinic__close"></span>
+
+        <!-- Pop-Up Header -->
+        <div class="col-xs-36 medcard-clinic__head">
+
+            <h2 class="medcard-clinic__title">Выберите клинику</h2>
+
+            <div class="medcard-clinic__icon-line">
+                <a class="medcard-clinic__icon medcard-clinic__icon--clinic" href="#"></a>
+                <a class="medcard-clinic__icon medcard-clinic__icon--clinic-liked" href="#"></a>
+                <a class="medcard-clinic__icon medcard-clinic__icon--clinic-fave" href="#"></a>
+                <a class="medcard-clinic__icon-plus" href="#"></a>
+            </div>
+
+            <div class="medcard-clinic__search">
+                <input class="medcard-clinic__search-input" type="text" placeholder="Поиск по названию"/>
+            </div>
+
+        </div>
+        <!-- / Pop-Up Header -->
+
+        <!-- Pop-Up clinic search Body -->
+        <div class="col-xs-36 medcard-clinic__body">
+
+            <!-- Content of clinic find state -->
+            <div class="">
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-clinic__info medcard-clinic__info--exp"></span>
+                                <span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+            </div>
+            <!-- / Content of clinic find state -->
+
+            <!-- Content of clinic add state -->
+            <div class="display-none">
+
+                <div class="col-xs-36 text-center">
+                    <img class="medcard-clinic__notfind-img" src="img/clinic-add.png" alt="Добавить клинику"/>
+                </div>
+
+                <div class="col-xs-36 text-center">
+                    <p class="medcard-clinic__notfind-text">
+                        Такая клиника не найдена. <br/>
+                        Хотите добавить?
+                    </p>
+                </div>
+
+                <div class="col-xs-36 text-center">
+                    <a class="medcard-clinic__notfind-btn" href="#">Добавить клинику</a>
+                </div>
+
+            </div>
+            <!-- / Content of clinic add state -->
+
+        </div>
+        <!-- / Pop-UP Body -->
+
+        <!-- Pop-Up clinic Add Body-->
+        <div class="col-xs-36 medcard-clinic__add-body display-none">
+
+            <h2 class="medcard-clinic__title">Добавление клиники</h2>
+
+            <p class="medcard-clinic__add-text">
+                Отправьте запрос на добавление новой клиники. Мы проверим данные, заполним профиль и добавим ее в общий список.
+            </p>
+
+            <form class="medcard-clinic__add-form" action="#">
+                <input class="medcard-clinic__add-input" type="text" placeholder="Название клиники"/>
+                <div class="medcard-clinic__up-lined"><input class="medcard-clinic__add-input" type="text" placeholder="Город" value="Москва"/></div>
+                <div class=""><input class="medcard-clinic__add-input" type="text" placeholder="Адрес"/></div>
+                <div class="medcard-clinic__down-lined"><input class="medcard-clinic__add-input" type="text" placeholder="Телефон (необязательно)"/></div>
+            </form>
+
+            <div class="text-center col-xs-36">
+                <a class="medcard-clinic__add-btn-no" href="#">Отмена</a>
+                <input class="medcard-clinic__add-btn-save" type="submit" value="Сохранить"/>
+            </div>
+
+        </div>
+        <!-- Pop-Up clinic Add -->
+
+    </div>
+</div>
+<!-- / clinic select Pop-Up -->
 
                                         <div class="col-xs-12 right-line-grey widget-right-head__list-item">
                                             <a class="widget-right-head__link " href="#">Выберите специализацию</a>
@@ -948,7 +1287,7 @@
                 <input class="medcard-doctor__add-input" type="text" placeholder="Отчество"/>
                 <input class="medcard-doctor__add-input" type="text" placeholder="Специализация"/>
                 <div class="medcard-doctor__up-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Город" value="Москва"/></div>
-                <div class="medcard-doctor__down-lined"><input class="medcard-doctor__add-input medcard-doctor__add-input--down-lined" type="text" placeholder="Контактный телефон"/></div>
+                <div class="medcard-doctor__down-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Контактный телефон"/></div>
             </form>
 
             <div class="text-center col-xs-36">
