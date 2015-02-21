@@ -236,6 +236,10 @@
 	      margin-right: 15px;
 	      margin-left: 20px;
 	    }
+
+      // & + label.security-authorisation__label--unchecked {
+      //   display: none;
+      // }
 	  }
 
 	 &__label--unchecked {
@@ -275,6 +279,31 @@ input, input:visited, input:focus, input:before, input:after {
 	 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-  
 
+// Модальные окна
+
+.security-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: table;
+  width: 425px;
+  margin: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.security-widget {
+  
+  &__background {
+    .background-modal;
+  }
+  .widgets-block {
+    .widget;
+  }
+}
 
