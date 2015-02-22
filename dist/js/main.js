@@ -12228,6 +12228,10 @@ $(document).ready(function() {
         $(this).parent().find(".security-authorisation__label--checked").css("display","block");
     });
 
+    // Модальные окна
+
+    $(".security-modal").css('display','none');
+
 });
 /*
  Toggle css class to some dropdown blocks

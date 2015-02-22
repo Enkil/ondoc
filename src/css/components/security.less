@@ -287,28 +287,136 @@ input, input:visited, input:focus, input:before, input:after {
 
 .security-modal {
   position: fixed;
+  z-index: 100;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: table;
-  width: 425px;
-  margin: auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-radius: 15px;
-  background: #fff;
-}
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
 
-.security-widget {
-
-  display: none;
-  
-  &__background {
-    .background-modal;
-  }
   .widgets-block {
-    .widget;
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    display: table;
+    margin: auto;
+    padding: 40px 0 20px;
+    border-radius: 6px;
+    background-color: #fff;
   }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  // прописываем правила для отступов заголовков отключения
+
+  &__email-disconnect .security-modal__title, &__telephone-disconnect.security-modal__title {
+    margin-bottom: 35px;
+  }
+
+  &__btn--cancel {
+      .security-link();
+      padding: 10px 25px 8px;
+      border: 1px solid @blue-color;
+      color: @blue-color;
+      &:hover {
+      background: @blue-color;
+      }
+  }
+  &__btn--disconnect {
+      .security-link();
+      padding: 10px 25px 8px;
+      border: 1px solid @red-color;
+      color: @red-color;
+      &:hover {
+      background: @red-color;
+      }
+  }
+
+  &__btn--proove {
+      .security-link();
+      padding: 10px 25px 8px;
+      border: 1px solid @blue-color;
+      color: @blue-color;
+      &:hover {
+      background: @blue-color;
+      }
+  }
+
+  &__input {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 7px 14px;
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+    margin-bottom: 15px;
+
+    .placeholder-effect(22px);
+  }
+
+  &__description {
+    .gotham;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+  &__error-message {
+    .gotham;
+    font-size: 14px;
+    line-height: 17px;
+    color: @red-color;
+  }
+
+  &__link-send {
+    .gotham;
+    font-size: 15px;
+    color: @blue-color;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__text--success {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
 }
+
+
 
