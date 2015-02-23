@@ -627,6 +627,7 @@ input[type='button']
     font-size: 12px;
 
     color: rgba(0, 0, 0, .4);
+    outline: none!important;
 }
 .widget .reactions-block
 {
@@ -646,6 +647,7 @@ input[type='button']
     padding-left: 45px;
 
     color: rgba(0, 0, 0, .9);
+    outline: none!important;
 }
 .widget .reactions-block .reaction:last-child
 {
@@ -1078,6 +1080,7 @@ input[type='button']
     vertical-align: middle;
 
     color: #000;
+    outline: none!important;
 }
 .recomendations-widget .progress-block
 {
@@ -1246,6 +1249,7 @@ input[type='button']
     font-size: 15px;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
 }
 .description-block .head-line
 {
@@ -9015,6 +9019,8 @@ button.close
 
     margin-right: 15px;
     margin-left: 20px;
+
+    outline: none!important;
 }
 .background-modal
 {
@@ -9473,6 +9479,7 @@ a:focus
     margin: 0;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
 }
 .content-header
 {
@@ -9647,6 +9654,7 @@ a:focus
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
+    outline: none!important;
     outline: none;
 }
 .widget__textarea::-webkit-input-placeholder
@@ -9768,6 +9776,7 @@ a:focus
     word-break: break-all;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
 }
 .widget-doctor__clinic:before
 {
@@ -9794,6 +9803,7 @@ a:focus
     word-break: break-all;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
 }
 .widget-doctor__date--bigger
 {
@@ -9955,6 +9965,7 @@ a:focus
     padding: 0 15px 0 15px;
 
     color: rgba(0, 0, 0, .2);
+    outline: none!important;
     background-color: #fff;
 }
 .widget-consultation__line
@@ -10010,6 +10021,7 @@ a:focus
     margin: 0;
 
     color: #000;
+    outline: none!important;
 }
 .widget-consultation__link
 {
@@ -10060,6 +10072,7 @@ a:focus
     margin: auto 0 auto 20px;
 
     color: rgba(0, 0, 0, .2);
+    outline: none!important;
 }
 .widget-consultation__subtext:first-child
 {
@@ -10110,6 +10123,8 @@ a:focus
 
     letter-spacing: -.2px;
     word-break: break-all;
+
+    outline: none!important;
 }
 .widget-tab__clinic
 {
@@ -10122,6 +10137,7 @@ a:focus
     word-break: break-all;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
 }
 .widget-tab__clinic:before
 {
@@ -10148,6 +10164,7 @@ a:focus
     word-break: break-all;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
 }
 .widget-tab__date--bigger
 {
@@ -10866,6 +10883,7 @@ a:focus
     font-size: 12px;
 
     color: rgba(0, 0, 0, .4);
+    outline: none!important;
 }
 .widget-security .reactions-block
 {
@@ -10885,6 +10903,7 @@ a:focus
     padding-left: 45px;
 
     color: rgba(0, 0, 0, .9);
+    outline: none!important;
 }
 .widget-security .reactions-block .reaction:last-child
 {
@@ -11033,6 +11052,7 @@ a:focus
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
+    outline: none!important;
     outline: none;
 }
 .widget-security__textarea::-webkit-input-placeholder
@@ -11290,6 +11310,7 @@ a:focus
 
     border: 1px solid #5db7d8;
     border-radius: 15px;
+    outline: none!important;
     background-color: #fff;
 }
 .widget-btn--submit-no:hover
@@ -11415,6 +11436,7 @@ a:focus
     letter-spacing: -1.8px;
 
     color: #000;
+    outline: none!important;
 }
 .modal-consultation-delete__btn-no
 {
@@ -11492,6 +11514,7 @@ a:focus
 
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
+    outline: none!important;
     outline: none;
     background-image: url('../img/icon-search.png');
     background-repeat: no-repeat;
@@ -11595,6 +11618,7 @@ a:focus
 
     color: #000;
     border-radius: 12px;
+    outline: none!important;
     background-color: #f2f2f2;
 }
 .medcard-filter__tag--clear
@@ -11796,6 +11820,7 @@ a:focus
     color: rgba(0, 0, 0, .2);
     border: 1px solid #f2f2f2;
     border-radius: 20px;
+    outline: none!important;
 }
 .medcard-spec__item:hover
 {
@@ -12017,6 +12042,7 @@ a:focus
 
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
+    outline: none!important;
     outline: none;
 }
 .medcard-doctor__search-input::-webkit-input-placeholder
@@ -12162,6 +12188,7 @@ a:focus
     margin-bottom: 5px;
 
     color: #8d8d8d;
+    outline: none!important;
 }
 .medcard-doctor__info
 {
@@ -12176,6 +12203,7 @@ a:focus
     word-break: break-all;
 
     color: rgba(0, 0, 0, .2);
+    outline: none!important;
 }
 .medcard-doctor__info--rank:before
 {
@@ -12247,6 +12275,7 @@ a:focus
     text-align: center;
 
     color: #8d8d8d;
+    outline: none!important;
 }
 .medcard-doctor__notfind-btn
 {
@@ -12294,6 +12323,8 @@ a:focus
     margin-left: 8px;
 
     letter-spacing: -.2px;
+
+    outline: none!important;
 }
 .medcard-doctor__add-form
 {
@@ -12316,6 +12347,7 @@ a:focus
 
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
+    outline: none!important;
     outline: none;
 }
 .medcard-doctor__add-input::-webkit-input-placeholder
@@ -12425,6 +12457,7 @@ a:focus
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 15px;
+    outline: none!important;
     outline: 0;
     background-color: #fff;
 }
@@ -12465,6 +12498,8 @@ a:focus
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px!important;
+
+    outline: none!important;
 }
 .ekko-lightbox .modal-header
 {
@@ -12634,6 +12669,7 @@ a:focus
     text-align: center;
 
     color: #000;
+    outline: none!important;
 }
 .medcard-docinfo__block
 {
@@ -12681,6 +12717,7 @@ a:focus
     text-align: center;
 
     color: rgba(0, 0, 0, .2);
+    outline: none!important;
     background-color: #fff;
 }
 .medcard-docinfo__exp-rank
@@ -12694,6 +12731,7 @@ a:focus
     margin-left: 20px;
 
     color: #000;
+    outline: none!important;
 }
 .medcard-docinfo__exp-rank:before
 {
@@ -12718,6 +12756,7 @@ a:focus
     margin-left: 20px;
 
     color: #000;
+    outline: none!important;
 }
 .medcard-docinfo__exp-years:before
 {
@@ -12833,6 +12872,7 @@ a:focus
     word-break: break-all;
 
     color: #000;
+    outline: none!important;
 }
 .medcard-docinfo__clinic-subway:before
 {
@@ -12855,6 +12895,8 @@ a:focus
 
     margin-right: 15px;
     margin-left: 20px;
+
+    outline: none!important;
 }
 .medcard-docinfo__support-status
 {
@@ -12867,6 +12909,7 @@ a:focus
     margin-left: 20px;
 
     color: rgba(0, 0, 0, .2);
+    outline: none!important;
 }
 .medcard-docinfo__support-status:before
 {
@@ -12970,6 +13013,8 @@ a:focus
 
     margin-right: 15px;
     margin-left: 20px;
+
+    outline: none!important;
 }
 /* BLOCK -> Find/Add Clinic pop-up */
 .medcard-clinic
@@ -13130,6 +13175,7 @@ a:focus
 
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
+    outline: none!important;
     outline: none;
 }
 .medcard-clinic__search-input::-webkit-input-placeholder
@@ -13275,6 +13321,7 @@ a:focus
     margin-bottom: 5px;
 
     color: #8d8d8d;
+    outline: none!important;
 }
 .medcard-clinic__info
 {
@@ -13289,6 +13336,7 @@ a:focus
     word-break: break-all;
 
     color: rgba(0, 0, 0, .2);
+    outline: none!important;
 }
 .medcard-clinic__info--mappin:before
 {
@@ -13360,6 +13408,7 @@ a:focus
     text-align: center;
 
     color: #8d8d8d;
+    outline: none!important;
 }
 .medcard-clinic__notfind-btn
 {
@@ -13407,6 +13456,8 @@ a:focus
     margin-left: 8px;
 
     letter-spacing: -.2px;
+
+    outline: none!important;
 }
 .medcard-clinic__add-form
 {
@@ -13429,6 +13480,7 @@ a:focus
 
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
+    outline: none!important;
     outline: none;
 }
 .medcard-clinic__add-input::-webkit-input-placeholder
@@ -13538,6 +13590,7 @@ a:focus
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 15px;
+    outline: none!important;
     outline: 0;
     background-color: #fff;
 }
@@ -14662,6 +14715,7 @@ a:focus
     padding: 0 15px 0 15px;
 
     color: rgba(0, 0, 0, .5);
+    outline: none!important;
     background-color: #fff;
 }
 .policy
@@ -14696,6 +14750,7 @@ a:focus
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
+    outline: none!important;
     outline: none;
 }
 .policy__input::-webkit-input-placeholder
@@ -14886,6 +14941,7 @@ a:focus
     letter-spacing: -.013em;
 
     color: #8d8d8d;
+    outline: none!important;
 }
 .security-email
 {
@@ -14928,6 +14984,7 @@ a:focus
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
+    outline: none!important;
     outline: none;
 }
 .security__input::-webkit-input-placeholder
@@ -15320,6 +15377,8 @@ a:focus
 
     margin-right: 15px;
     margin-left: 20px;
+
+    outline: none!important;
 }
 .security-authorisation__label--unchecked
 {
@@ -15640,6 +15699,7 @@ input:after
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
+    outline: none!important;
     outline: none;
 }
 .security-modal__input::-webkit-input-placeholder
@@ -15702,6 +15762,8 @@ input:after
     line-height: 17px;
 
     margin-bottom: 15px;
+
+    outline: none!important;
 }
 .security-modal__error-message
 {
@@ -15711,6 +15773,7 @@ input:after
     line-height: 17px;
 
     color: #dc4531;
+    outline: none!important;
 }
 .security-modal__link-send
 {
@@ -15726,6 +15789,7 @@ input:after
     cursor: pointer;
 
     color: #5db7d8;
+    outline: none!important;
 }
 .security-modal__text--success
 {
@@ -15985,6 +16049,8 @@ form input[type='checkbox'] + label,
 .modal-main-content p a
 {
     font-family: 'Gotham', Arial, sans-serif;
+
+    outline: none!important;
 }
 .gotham-m,
 body,
@@ -16144,6 +16210,12 @@ form input[type='password']
 {
     background: url(../img/ico-checkbox-active.png) no-repeat;
     background-size: 100%;
+}
+.android-popup .form-control:focus
+{
+    border-color: #c4c6c2;
+    outline: none!important;
+    box-shadow: none;
 }
 /* btn styles */
 .btn

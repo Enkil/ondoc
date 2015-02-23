@@ -146,6 +146,7 @@
 
 .gotham, /*p,*/ li, /*span,*/ .p--reg, form input[type='text'], form textarea, form select, form input[type='password'], form input[type="checkbox"] + label, .arrow-main-right, .about__text__text, .footer__nav a, .logo_f, .slide .text p, .modal-main-content p, .modal-main-content p a {
   font-family: 'Gotham', Arial, sans-serif;
+  outline: none!important;
 }
 
 .gotham-m, body, a, .btn, .slide .text h2 {
@@ -265,6 +266,11 @@ a {
   background-size: 100%;
 }
 
+.android-popup .form-control:focus{
+    outline: none!important;
+    border-color: #c4c6c2;;
+  box-shadow: none;
+}
 /* btn styles */
 .btn {
   display: inline-block;
