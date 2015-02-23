@@ -12486,16 +12486,18 @@ a:focus
 }
 .ekko-lightbox > .modal-dialog
 {
-    max-width: 500px!important;
-    max-height: 90%!important;
+    max-width: 700px!important;
+    height: 90% !important;
+
+    text-align: center;
 }
 .ekko-lightbox > .modal-dialog a
 {
     color: #fff;
 }
-.ekko-lightbox > .modal-dialog
+.ekko-lightbox img
 {
-    text-align: center;
+    display: inline-block;
 }
 .lightbox-arrow
 {
