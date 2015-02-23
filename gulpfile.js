@@ -47,7 +47,7 @@ gulp.task('less', function() {
         .pipe(csscomb())
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(minifycss())
+        //.pipe(minifycss())
         //.pipe(csso())
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))

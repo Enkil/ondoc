@@ -9,6 +9,7 @@ input[type='button']
 /* Кастомизация селекта - Месяц (первый вариант) */
 .customize-select select
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -61,6 +62,7 @@ input[type='button']
 /* Стилизация селекта - Месяц (второй вариант) */
 .select-list
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -266,6 +268,7 @@ input[type='button']
 }
 .widget-head p
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -426,6 +429,7 @@ input[type='button']
 }
 .widget .description .add-block p
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14.5px;
 
@@ -453,6 +457,7 @@ input[type='button']
 }
 .widget .description .indication-value
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 22px;
     line-height: 20px;
@@ -550,6 +555,7 @@ input[type='button']
 }
 .widget .reception-day
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
     display: inline-block;
@@ -616,6 +622,7 @@ input[type='button']
 }
 .widget .comment-block .date
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 12px;
 
@@ -629,6 +636,7 @@ input[type='button']
 }
 .widget .reactions-block .reaction
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -645,6 +653,7 @@ input[type='button']
 }
 .widget .reactions-block .reaction.active
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 }
 .widget .reactions-block .reaction:before
@@ -808,6 +817,7 @@ input[type='button']
 }
 .widget-list .list-item .name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
     margin-bottom: 4px;
@@ -862,6 +872,7 @@ input[type='button']
 }
 .date-block .date p
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -950,6 +961,7 @@ input[type='button']
 }
 .pulse-info .head
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
     line-height: 21px;
@@ -1055,6 +1067,7 @@ input[type='button']
 /* Стилизация виджета рекомендации */
 .recomendations-widget .complete
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 16px;
 
@@ -1092,6 +1105,7 @@ input[type='button']
 }
 .buttons-block .btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
     line-height: 15px;
@@ -1217,6 +1231,7 @@ input[type='button']
 }
 .description-block .header-list
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
 
@@ -1226,6 +1241,7 @@ input[type='button']
 }
 .description-block .header-list span
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
 
@@ -1293,6 +1309,7 @@ input[type='button']
 }
 .description-block .date
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 }
@@ -1365,6 +1382,7 @@ input[type='button']
 }
 .description-block .clinic-title p
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
@@ -1485,6 +1503,7 @@ input[type='button']
 }
 .settings-block .btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 15px;
@@ -1940,6 +1959,7 @@ input[type='button']
 }
 .settings a
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
     display: inline-block;
@@ -2067,6 +2087,7 @@ input[type='button']
 }
 .pagination .customize-select
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
@@ -2094,6 +2115,7 @@ input[type='button']
 }
 .numeration li a
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 }
@@ -2127,6 +2149,7 @@ input[type='button']
 }
 .breadcrumbs .back
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -8985,6 +9008,7 @@ button.close
 }
 .checkbox-blue + label
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -9018,15 +9042,15 @@ button.close
 }
 .gotham
 {
-    font-family: 'Gotham', Arial, sans-serif;
+    font-family: 'Gotham', Arial, sans-serif !important;
 }
 .gotham-m
 {
-    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
 }
 .gotham-b
 {
-    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
 }
 .link-base
 {
@@ -9084,6 +9108,7 @@ a:focus
 }
 .link-medium
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
     -webkit-transition: .2s ease all;
@@ -9193,6 +9218,7 @@ a:focus
 }
 .main-header__dropdown-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 }
@@ -9206,6 +9232,7 @@ a:focus
 }
 .main-header__link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 63px;
@@ -9223,6 +9250,7 @@ a:focus
 }
 .main-header__link--logotext
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -9294,6 +9322,7 @@ a:focus
 }
 .sidebar__name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
     line-height: 29px;
@@ -9317,6 +9346,7 @@ a:focus
 }
 .sidebar__menu-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
@@ -9424,6 +9454,7 @@ a:focus
 }
 .main-footer__copyright
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
     line-height: 65px;
@@ -9439,6 +9470,7 @@ a:focus
 }
 .content-header__back
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -9468,6 +9500,7 @@ a:focus
 }
 .content-header__sort-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -9581,6 +9614,7 @@ a:focus
 }
 .widget__textarea
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -9704,11 +9738,13 @@ a:focus
 }
 .widget-doctor__name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 }
 .widget-doctor__clinic
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
@@ -9734,6 +9770,7 @@ a:focus
 }
 .widget-doctor__date
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
@@ -9765,6 +9802,7 @@ a:focus
 }
 .widget-header__text
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
     line-height: 60px;
@@ -9890,6 +9928,7 @@ a:focus
 }
 .widget-consultation__title
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -9949,6 +9988,7 @@ a:focus
 }
 .widget-consultation__text
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -9958,6 +9998,7 @@ a:focus
 }
 .widget-consultation__link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -9996,6 +10037,7 @@ a:focus
 }
 .widget-consultation__subtext
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
     line-height: 13px;
@@ -10034,6 +10076,7 @@ a:focus
 }
 .widget-tab__title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 21px;
@@ -10045,6 +10088,7 @@ a:focus
 }
 .widget-tab__description
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -10054,6 +10098,7 @@ a:focus
 }
 .widget-tab__clinic
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
@@ -10079,6 +10124,7 @@ a:focus
 }
 .widget-tab__date
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
@@ -10110,6 +10156,7 @@ a:focus
 }
 .widget-right-head__title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 65px;
@@ -10152,6 +10199,7 @@ a:focus
 }
 .widget-right-head__link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -10260,6 +10308,7 @@ a:focus
 }
 .widget-pagination__show-by
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
@@ -10372,6 +10421,7 @@ a:focus
 }
 .widget-pagination__numeration-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
@@ -10442,6 +10492,7 @@ a:focus
 }
 .widget-security-head p
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -10602,6 +10653,7 @@ a:focus
 }
 .widget-security .description .add-block p
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14.5px;
 
@@ -10629,6 +10681,7 @@ a:focus
 }
 .widget-security .description .indication-value
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 22px;
     line-height: 20px;
@@ -10726,6 +10779,7 @@ a:focus
 }
 .widget-security .reception-day
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
     display: inline-block;
@@ -10792,6 +10846,7 @@ a:focus
 }
 .widget-security .comment-block .date
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 12px;
 
@@ -10805,6 +10860,7 @@ a:focus
 }
 .widget-security .reactions-block .reaction
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -10821,6 +10877,7 @@ a:focus
 }
 .widget-security .reactions-block .reaction.active
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 }
 .widget-security .reactions-block .reaction:before
@@ -10939,6 +10996,7 @@ a:focus
 }
 .widget-security__textarea
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -11055,6 +11113,7 @@ a:focus
 }
 .widget-btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 0;
 
@@ -11199,6 +11258,7 @@ a:focus
 }
 .widget-btn--submit-no
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -11225,6 +11285,7 @@ a:focus
 }
 .widget-btn--submit-yes
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -11251,6 +11312,7 @@ a:focus
 }
 .user-btn__submit
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -11324,6 +11386,7 @@ a:focus
 }
 .modal-consultation-delete__text
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
     line-height: 22px;
@@ -11336,6 +11399,7 @@ a:focus
 }
 .modal-consultation-delete__btn-no
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
@@ -11352,6 +11416,7 @@ a:focus
 }
 .modal-consultation-delete__btn-yes
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
@@ -11395,6 +11460,7 @@ a:focus
 }
 .medcard-filter__input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
 
@@ -11466,6 +11532,7 @@ a:focus
 }
 .medcard-filter__link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -11493,6 +11560,7 @@ a:focus
 }
 .medcard-filter__tag
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -11512,6 +11580,7 @@ a:focus
 }
 .medcard-filter__tag--clear
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
     margin-top: 10px;
@@ -11561,6 +11630,7 @@ a:focus
 }
 .medcard-filter__date-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -11591,6 +11661,7 @@ a:focus
 }
 .medcard-filter__find
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -11663,6 +11734,7 @@ a:focus
 }
 .medcard-spec__title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
@@ -11680,6 +11752,7 @@ a:focus
 }
 .medcard-spec__letter
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
 
@@ -11687,6 +11760,7 @@ a:focus
 }
 .medcard-spec__item
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
 
@@ -11726,6 +11800,7 @@ a:focus
 }
 .medcard-spec__btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -11829,6 +11904,7 @@ a:focus
 }
 .medcard-doctor__title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
@@ -11909,6 +11985,7 @@ a:focus
 }
 .medcard-doctor__search-input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -12024,6 +12101,7 @@ a:focus
 }
 .medcard-doctor__doc-name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -12057,6 +12135,7 @@ a:focus
 }
 .medcard-doctor__doc-specs
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -12067,6 +12146,7 @@ a:focus
 }
 .medcard-doctor__info
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
@@ -12139,6 +12219,7 @@ a:focus
 }
 .medcard-doctor__notfind-text
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -12150,6 +12231,7 @@ a:focus
 }
 .medcard-doctor__notfind-btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
@@ -12184,6 +12266,7 @@ a:focus
 }
 .medcard-doctor__add-text
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -12200,6 +12283,7 @@ a:focus
 }
 .medcard-doctor__add-input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -12305,6 +12389,7 @@ a:focus
 }
 .medcard-doctor__add-btn-no
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -12331,6 +12416,7 @@ a:focus
 }
 .medcard-doctor__add-btn-save
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -12355,9 +12441,20 @@ a:focus
     color: #fff;
     background-color: #5db7d8;
 }
+.ekko-lightbox .modal-title
+{
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 14px!important;
+}
+.ekko-lightbox .modal-header
+{
+    border-bottom: none;
+}
 .ekko-lightbox > .modal-dialog
 {
     max-width: 500px!important;
+    max-height: 90%!important;
 }
 .ekko-lightbox > .modal-dialog a
 {
@@ -12449,6 +12546,7 @@ a:focus
 }
 .medcard-docinfo__doc-name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -12463,6 +12561,7 @@ a:focus
 }
 .medcard-docinfo__doc-specs
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -12506,6 +12605,7 @@ a:focus
 }
 .medcard-docinfo__title
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -12523,6 +12623,7 @@ a:focus
 }
 .medcard-docinfo__exp-rank
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -12546,6 +12647,7 @@ a:focus
 }
 .medcard-docinfo__exp-years
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -12569,6 +12671,7 @@ a:focus
 }
 .medcard-docinfo__phone
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -12647,6 +12750,7 @@ a:focus
 }
 .medcard-docinfo__clinic-name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
@@ -12658,6 +12762,7 @@ a:focus
 }
 .medcard-docinfo__clinic-subway
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -12681,6 +12786,7 @@ a:focus
 }
 .medcard-docinfo__about
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 12px;
     line-height: 14px;
@@ -12690,6 +12796,7 @@ a:focus
 }
 .medcard-docinfo__support-status
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -12794,6 +12901,7 @@ a:focus
 }
 .medcard-docinfo__allow-check + label
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -12858,6 +12966,7 @@ a:focus
 }
 .medcard-clinic__title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
@@ -12946,6 +13055,7 @@ a:focus
 }
 .medcard-clinic__search-input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -13061,6 +13171,7 @@ a:focus
 }
 .medcard-clinic__clinic-name
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -13094,6 +13205,7 @@ a:focus
 }
 .medcard-clinic__clinic-specs
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
 
@@ -13104,6 +13216,7 @@ a:focus
 }
 .medcard-clinic__info
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
@@ -13176,6 +13289,7 @@ a:focus
 }
 .medcard-clinic__notfind-text
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -13187,6 +13301,7 @@ a:focus
 }
 .medcard-clinic__notfind-btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
@@ -13221,6 +13336,7 @@ a:focus
 }
 .medcard-clinic__add-text
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -13237,6 +13353,7 @@ a:focus
 }
 .medcard-clinic__add-input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -13342,6 +13459,7 @@ a:focus
 }
 .medcard-clinic__add-btn-no
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -13368,6 +13486,7 @@ a:focus
 }
 .medcard-clinic__add-btn-save
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -13422,6 +13541,7 @@ a:focus
 }
 .monitoring-widget__title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -13537,6 +13657,7 @@ a:focus
 }
 .monitoring-widget__period
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
@@ -13591,6 +13712,7 @@ a:focus
 }
 .monitoring-widget__dropdown-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 }
@@ -13604,6 +13726,7 @@ a:focus
 }
 .monitoring-widget__date
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
@@ -13634,6 +13757,7 @@ a:focus
 }
 .monitoring-widget__value-title
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -13689,6 +13813,7 @@ a:focus
 }
 .monitoring-widget__value-add
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 22px;
 
@@ -13720,6 +13845,7 @@ a:focus
 }
 .monitoring-widget__value--error
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -13882,6 +14008,7 @@ a:focus
 }
 .monitoring-widget__chol-shedule-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 }
@@ -13899,6 +14026,7 @@ a:focus
 }
 .tooltip-custom + .tooltip > .tooltip-inner
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
@@ -14034,6 +14162,7 @@ a:focus
 }
 .sidebar-profile__menu-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
@@ -14191,6 +14320,7 @@ a:focus
 }
 .profile-img__logo-choose
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
@@ -14233,6 +14363,7 @@ a:focus
 }
 .user-info__input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -14311,6 +14442,7 @@ a:focus
 }
 .user-data__sex
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
     line-height: 16.5px;
@@ -14456,6 +14588,7 @@ a:focus
 }
 .info-insurance__title
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -14483,6 +14616,7 @@ a:focus
 }
 .policy__input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -14579,6 +14713,7 @@ a:focus
 }
 .profile-popup__btn
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
@@ -14623,6 +14758,7 @@ a:focus
 }
 .security-link
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
@@ -14680,6 +14816,7 @@ a:focus
 }
 .security-label
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -14694,6 +14831,7 @@ a:focus
 }
 .security-email__text
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
     line-height: 19px;
@@ -14709,6 +14847,7 @@ a:focus
 }
 .security__input
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
@@ -14812,6 +14951,7 @@ a:focus
 }
 .security-telephone__text
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -14822,6 +14962,7 @@ a:focus
 }
 .security-link__save
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
@@ -14884,6 +15025,7 @@ a:focus
 }
 .security-link__proove
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
@@ -14947,6 +15089,7 @@ a:focus
 }
 .security-link__delete-profile
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
     font-size: 14px;
@@ -15018,6 +15161,7 @@ a:focus
 }
 .security-authorisation__text
 {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
@@ -15104,6 +15248,7 @@ a:focus
 }
 .security-authorisation__input + label
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -15154,3 +15299,2178 @@ input:after
     -moz-outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* start the foundation style */
+/* start the base fraimwork styles. Can include base construction - forms/buttins/navigation and other */
+/* modul section */
+.col
+{
+    float: left;
+
+    min-height: 1px;
+    padding: 0 14px;
+}
+.row .column
+{
+    float: left;
+}
+.row .column:first-child
+{
+    padding-left: 0;
+}
+.row .column:last-child
+{
+    padding-right: 0;
+}
+.column1
+{
+    width: 8.33%;
+}
+.column2
+{
+    width: 16.66%;
+}
+.column3
+{
+    width: 25%;
+}
+.column4
+{
+    width: 33.33%;
+}
+.column5
+{
+    width: 41.66%;
+}
+.column6
+{
+    width: 50%;
+}
+.column7
+{
+    width: 58.33%;
+}
+.column8
+{
+    width: 66.66%;
+}
+.column9
+{
+    width: 75%;
+}
+.column10
+{
+    width: 83.11%;
+}
+.column11
+{
+    width: 91.66%;
+}
+.column12
+{
+    width: 100%;
+}
+.row-inline .column
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+.row:after,
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.modal-footer:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+
+    height: 0;
+
+    content: ' ';
+}
+.to-left
+{
+    float: left;
+}
+.to-right
+{
+    float: right;
+}
+.row--inline
+{
+    font-size: 0;
+}
+.row--inline > .col
+{
+    float: none;
+}
+.row--inline > .col:first-child
+{
+    padding: 0 10px;
+}
+.row--inline > .col:last-child
+{
+    padding: 0 9px;
+}
+.row--inline:after
+{
+    display: none;
+}
+.row .col:first-child
+{
+    padding-left: 0;
+}
+.row .col:last-child
+{
+    padding-right: 0;
+}
+.row .single
+{
+    float: none;
+
+    margin: 0 auto;
+}
+.text-right
+{
+    text-align: right;
+}
+.s-1
+{
+    width: 8.33%;
+}
+.s-2
+{
+    width: 16.66%;
+}
+.s-3
+{
+    width: 25%;
+}
+.s-4
+{
+    width: 33.33%;
+}
+.s-5
+{
+    width: 41.66%;
+}
+.s-6
+{
+    width: 50%;
+}
+.s-7
+{
+    width: 58.33%;
+}
+.s-8
+{
+    width: 66.66%;
+}
+.s-9
+{
+    width: 75%;
+}
+.s-10
+{
+    width: 83.11%;
+}
+.s-11
+{
+    width: 91.66%;
+}
+.s-12
+{
+    width: 100%;
+}
+.s-20
+{
+    width: 20%;
+}
+/* main fraimwork start here */
+.inbox,
+.col,
+i,
+.ico,
+.mock-up
+{
+    box-sizing: border-box;
+}
+.to-left
+{
+    float: left;
+}
+.to-right
+{
+    float: right;
+}
+.inline,
+.row--inline > .col,
+i,
+.ico,
+.socio
+{
+    display: inline-block;
+    zoom: 1;
+
+    vertical-align: top;
+
+    *display: inline;
+}
+.clear,
+.row:after,
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.modal-footer:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+
+    height: 0;
+
+    content: ' ';
+}
+/* basic typography */
+@font-face
+{
+    font-family: 'Gotham-Medium';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/GothamPro-Medium.otf') format('opentype'), url('fonts/GothamPro-Medium.woff') format('woff'), url('fonts/GothamPro-Medium.ttf') format('truetype'), url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
+}
+@font-face
+{
+    font-family: 'GothamProMedium';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/GothamPro-Medium.otf') format('opentype'), url('fonts/GothamPro-Medium.woff') format('woff'), url('fonts/GothamPro-Medium.ttf') format('truetype'), url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
+}
+.gotham,
+li,
+.p--reg,
+form input[type='text'],
+form textarea,
+form select,
+form input[type='password'],
+form input[type='checkbox'] + label,
+.arrow-right,
+.about__text__text,
+.footer__nav a,
+.logo_f,
+.slide .text p,
+.modal-content p,
+.modal-content p a
+{
+    font-family: 'Gotham', Arial, sans-serif;
+}
+.gotham-m,
+body,
+a,
+.btn,
+.slide .text h2
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+}
+.gotham-b
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+}
+/* i ico*/
+i.milk-icon-heart,
+.features-item__ico,
+.ico
+{
+    font-size: 0;
+
+    text-indent: -9999px;
+}
+/* basic typography */
+body
+{
+    font-family: 'Gotham';
+    font-size: 14px;
+}
+.container--medium h2,
+.about__text__header h2
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 43px;
+
+    margin-bottom: 5px;
+
+    color: #fff;
+}
+/*p,*/
+li
+{
+    font-size: 17px;
+}
+.p--big
+{
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #fff;
+}
+.p--reg
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-bottom: 15px;
+
+    color: #fff;
+}
+a
+{
+    font-size: 17px;
+
+    text-decoration: none;
+}
+.link
+{
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+}
+.link:hover
+{
+    color: #2fc2c9;
+}
+.link
+{
+    font-size: 16px;
+    line-height: 19px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: #10abd2;
+}
+/* form style input and other */
+form input[type='text'],
+form textarea,
+form select,
+form input[type='password']
+{
+    font-size: 32px;
+    line-height: 36px;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 25px 0 8px;
+
+    text-align: center;
+
+    border: 0;
+    border-bottom: 1px solid #c4c6c2;
+    outline: none;
+    background: none;
+}
+form label
+{
+    cursor: pointer;
+}
+form button
+{
+    margin: 0;
+
+    cursor: pointer;
+
+    outline: none;
+}
+form input[type='checkbox']
+{
+    display: none;
+
+    margin: 20px;
+}
+form input[type='checkbox'] + label
+{
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    color: rgba(0, 0, 0, .9);
+}
+form input[type='checkbox'] + label::before
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/ico-checkbox.png) no-repeat;
+    background-size: 100%;
+}
+form input[type='checkbox']:checked + label::before
+{
+    background: url(../img/ico-checkbox-active.png) no-repeat;
+    background-size: 100%;
+}
+/* btn styles */
+.btn
+{
+    font-size: 22px;
+    line-height: 26px;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: 14px 35px;
+
+    -webkit-transition: .4s all ease;
+            transition: .4s all ease;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+}
+.btn--blue
+{
+    background: #10abd2;
+}
+.btn:hover
+{
+    background-color: #2fc2c9;
+}
+.btn:active
+{
+    background-color: #2aa2a8;
+}
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper
+{
+    position: relative;
+
+    padding: 0;
+
+    *zoom: 1;
+}
+.bx-wrapper img
+{
+    display: block;
+
+    max-width: 100%;
+}
+/** THEME
+===================================*/
+.bx-wrapper .bx-viewport
+{
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+        -ms-transform: translatez(0);
+            transform: translatez(0);
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto
+{
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+}
+/* PAGER */
+.bx-wrapper .bx-pager
+{
+    font-family: Arial;
+    font-size: .85em;
+    font-weight: bold;
+
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #666;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item
+{
+    display: inline-block;
+
+    *zoom: 1;
+    *display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a
+{
+    display: block;
+
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+
+    text-indent: -9999px;
+
+    opacity: .5;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: 0;
+    background: #e4e4e4;
+    background: transparent;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active
+{
+    opacity: 1;
+    background: #fff;
+}
+/* container */
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-medium
+{
+    width: 1030px;
+    margin: 0 auto;
+}
+.container--medium
+{
+    width: 1100px;
+    margin: 0 auto;
+}
+.container--big
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header */
+.main-header2
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+    width: 100%;
+    min-width: 1200px;
+    padding: 13px 0;
+
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
+}
+.main-header2 .logo
+{
+    width: 121px;
+}
+.main-header2 .logo img
+{
+    width: 100%;
+}
+.main-header2_links
+{
+    line-height: 47px;
+
+    text-align: right;
+}
+.main-header2_links a,
+.main-header2_links span
+{
+    line-height: 33px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+.main-header2_links .symbol
+{
+    height: 28px;
+    margin: 0 5px;
+}
+.main-header2 .link
+{
+    font-family: 'Gotham-Medium';
+    font-size: 17px;
+
+    color: #10abd2;
+}
+/* slider */
+.slider-section
+{
+    min-width: 1200px;
+    min-height: 600px;
+    margin-top: 75px;
+}
+/* features-section */
+.features-section
+{
+    min-width: 1200px;
+    padding: 70px 0;
+
+    text-align: center;
+
+    background: url(../img/background-first.jpg) no-repeat center;
+    background-size: cover;
+}
+.features-section h2
+{
+    font-size: 40px;
+
+    letter-spacing: -.1px;
+}
+.features-row
+{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.features-item__ico
+{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+
+    border-radius: 100%;
+    background: #fff;
+}
+.features-item__ico--first
+{
+    background: white url(../img/ico-plus-first.png) no-repeat center;
+}
+.features-item__ico--second
+{
+    background: white url(../img/ico-plus-second.png) no-repeat center;
+}
+.features-item__ico--third
+{
+    background: white url(../img/ico-plus-third.png) no-repeat center;
+}
+.features-item__ico--four
+{
+    background: white url(../img/ico-plus-four.png) no-repeat center;
+}
+.features-item__ico--five
+{
+    background: white url(../img/ico-plus-five.png) no-repeat center;
+}
+.features-item__list
+{
+    text-align: center;
+}
+.features-item__list li
+{
+    font-size: 14px;
+    line-height: 16px;
+
+    min-height: 1px;
+    margin-bottom: 12px;
+
+    list-style-type: none;
+
+    color: #fff;
+}
+.features-item__last-list li
+{
+    margin-bottom: 19px;
+}
+/* promo */
+.promo
+{
+    min-width: 1200px;
+    padding: 60px 0;
+
+    background: url(../img/background-second.jpg) no-repeat center;
+    background-size: cover;
+}
+.promo__text
+{
+    width: 475px;
+    margin-top: 45px;
+}
+.promo_block
+{
+    position: relative;
+}
+.promo_logotype
+{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.arrow-right
+{
+    display: block;
+
+    padding-left: 15px;
+
+    text-decoration: none;
+
+    color: #10abd2;
+    background: url(../img/ico-arrow-right.png) no-repeat left center;
+}
+.arrow-right--big-margin
+{
+    margin-bottom: 47px;
+}
+/* prome next*/
+.promo--next
+{
+    box-sizing: border-box;
+    min-width: 1200px;
+    min-height: 600px;
+    padding: 60px 0;
+
+    text-align: center;
+
+    background: url(../img/background-third.jpg) no-repeat center;
+    background-size: cover;
+}
+.promo--next h2,
+.promo--next .p--big
+{
+    padding: 0 20px;
+
+    color: rgba(0, 0, 0, .9);
+}
+.promo--next .p--big
+{
+    padding: 0 40px;
+}
+section
+{
+    overflow: hidden;
+}
+/* about */
+.blue-label
+{
+    font-size: 18px;
+
+    padding: 7px 15px;
+
+    color: #fff;
+    border-radius: 6px;
+    background: #78cce2;
+}
+.about
+{
+    position: relative;
+
+    min-width: 1200px;
+    min-height: 536px;
+    padding: 60px 0 0;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.about .mock-up
+{
+    position: relative;
+    bottom: -400px;
+
+    display: inline-block;
+
+    margin-right: 80px;
+    margin-left: 50px;
+
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+    vertical-align: bottom;
+
+    opacity: 0;
+}
+.about .mock-up.active
+{
+    bottom: 0;
+
+    opacity: 1;
+}
+.about .p--all
+{
+    width: 100%;
+}
+.about_logotype
+{
+    position: relative;
+    bottom: 0;
+
+    padding-top: 20px;
+}
+.about--center
+{
+    text-align: center;
+
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.about h2,
+.about .p--big
+{
+    color: rgba(0, 0, 0, .9);
+}
+.about .p--big
+{
+    padding-right: 0;
+}
+.about p
+{
+    width: 88%;
+    margin-bottom: 20px;
+}
+.about p:last-child
+{
+    margin-bottom: 0;
+}
+.about h2
+{
+    margin-bottom: 20px;
+}
+.about h4
+{
+    font-size: 20px;
+    line-height: 22px;
+
+    margin-bottom: 20px;
+    padding-right: 80px;
+}
+.about a
+{
+    display: inline-block;
+
+    text-align: center;
+    vertical-align: top;
+}
+.about__text
+{
+    display: inline-block;
+
+    width: 553px;
+    margin-top: 120px;
+    padding-bottom: 20px;
+
+    vertical-align: top;
+}
+.about__text--small p
+{
+    width: 80%;
+}
+.about__text--big
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.about__text--big p
+{
+    width: 100%;
+}
+.about__text__header
+{
+    font-size: 40px;
+    line-height: 43px;
+
+    margin-bottom: 30px;
+
+    color: rgba(0, 0, 0, .9);
+}
+.about__text__text
+{
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 15px;
+
+    color: rgba(0, 0, 0, .9);
+}
+.about__text--right
+{
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+.about__text__label
+{
+    margin-bottom: 20px !important;
+}
+.about--revert .mock-up
+{
+    float: right;
+}
+.about--revert .about__text
+{
+    margin-top: 80px;
+}
+.mock-up
+{
+    width: 356px;
+    height: 537px;
+    padding: 80px 20px 0 20px;
+
+    background: url(../img/iphone-mock-up.png) no-repeat top center;
+}
+.mock-up__image
+{
+    overflow: hidden;
+
+    width: 315px;
+    height: 456px;
+}
+.mock-up__image__img
+{
+    /*width: 100%;*/
+}
+.app-button
+{
+    margin: 20px 0;
+}
+.devices
+{
+    position: relative;
+
+    width: 670px;
+    height: 250px;
+    margin: 30px auto 0;
+}
+.devices .image
+{
+    position: absolute;
+}
+.ipad
+{
+    z-index: 2;
+    bottom: 9px;
+    left: -50px;
+
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+
+    opacity: 0;
+}
+.ipad.active
+{
+    left: 0;
+
+    opacity: 1;
+}
+.iphone
+{
+    z-index: 3;
+    bottom: 0;
+    left: -50px;
+
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+    -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+
+    opacity: 0;
+}
+.iphone.active
+{
+    left: 250px;
+
+    opacity: 1;
+}
+.imac
+{
+    z-index: 1;
+    right: 0;
+}
+.register
+{
+    min-width: 1200px;
+    padding: 60px 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-six.png) no-repeat center;
+    background-size: cover;
+}
+.register h2,
+.register .p--big
+{
+    color: rgba(0, 0, 0, .9);
+}
+.register .p--big
+{
+    margin-bottom: 90px;
+}
+.register__back
+{
+    width: 108px;
+    height: 107px;
+    margin: 0 auto 30px;
+
+    background: url(../img/ico-register.png) no-repeat center;
+}
+.footer
+{
+    min-width: 1200px;
+    padding: 50px 0;
+
+    background: #f3f3f3;
+}
+.footer__nav li
+{
+    margin-bottom: 15px;
+
+    list-style-type: none;
+}
+.footer__nav a
+{
+    font-size: 15px;
+    line-height: 20px;
+
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+    text-decoration: none;
+
+    color: #000;
+}
+.footer__nav a:hover
+{
+    color: #64b4b4;
+}
+.footer__bottom
+{
+    margin-top: 40px;
+    padding-top: 20px;
+
+    border-top: 1px solid #ccc;
+}
+.logo_f
+{
+    font-size: 15px;
+    line-height: 35px;
+
+    padding-left: 45px;
+
+    color: #000;
+    background: url('../img/ico-logo-min.png') no-repeat left center;
+}
+.socio
+{
+    font-size: 0;
+
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-decoration: none;
+
+    border-radius: 100px;
+    background-color: #cfcfcf;
+}
+.socio:hover
+{
+    background-color: #ababab;
+}
+.socio--vk
+{
+    background-image: url(../img/ico-vk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socio--tw
+{
+    background-image: url(../img/ico-tw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socio--fb
+{
+    background-image: url(../img/ico-fb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socio--g
+{
+    background-image: url(../img/ico-g.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide
+{
+    position: relative;
+
+    width: 100%;
+    min-width: 1200px;
+    height: 600px;
+}
+.slide .text
+{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+
+    width: 1100px;
+    margin-left: -530px;
+
+    text-align: center;
+}
+.slide .text h2
+{
+    font-size: 57px;
+    line-height: 60px;
+
+    margin-bottom: 20px;
+
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+}
+.slide .text p
+{
+    font-size: 26px;
+    line-height: 30px;
+
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+}
+.slide--first
+{
+    background: url(../img/slide-1.jpg) no-repeat;
+    background-position: 50% 40%;
+    background-size: cover;
+}
+.slide--second
+{
+    background: url(../img/slide-2.jpg) no-repeat center;
+    background-size: cover;
+}
+.slide--third
+{
+    background: url(../img/slide-3.jpg) no-repeat center;
+    background-size: cover;
+}
+.slide--four
+{
+    background: url(../img/slide-4.jpg) no-repeat center;
+    background-size: cover;
+}
+.bx-prev,
+.bx-next
+{
+    font-size: 0;
+
+    position: absolute;
+    top: 50%;
+
+    width: 31px;
+    height: 80px;
+    margin-top: -40px;
+
+    opacity: .5;
+}
+.bx-prev:hover,
+.bx-next:hover
+{
+    opacity: 1;
+}
+.bx-prev
+{
+    left: 40px;
+
+    background: url(../img/ico-prev.png) no-repeat center;
+}
+.bx-next
+{
+    right: 40px;
+
+    background: url(../img/ico-next.png) no-repeat center;
+}
+/* modal-wrapper */
+body,
+html
+{
+    width: 100%;
+    height: 100%;
+}
+.overflow
+{
+    overflow: hidden;
+}
+.modal-wrapper
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    vertical-align: middle;
+
+    background: rgba(255, 255, 255, .95);
+}
+.modal-wrapper.active
+{
+    display: table;
+}
+.table-cell
+{
+    display: table-cell;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+}
+.modal-content
+{
+    position: relative;
+
+    width: 550px;
+    margin: 0 auto;
+}
+.modal-content h2
+{
+    font-size: 32px;
+    line-height: 32px;
+
+    margin-bottom: 40px;
+
+    color: #000;
+}
+.modal-content a
+{
+    font-size: 22px;
+    line-height: 26px;
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    text-decoration: none;
+
+    color: #10abd2;
+}
+.modal-content button
+{
+    min-width: 210px;
+    margin: 30px 0 50px;
+}
+.modal-content p
+{
+    font-size: 17px;
+    line-height: 22px;
+
+    margin: 30px 0 10px;
+
+    color: #000;
+}
+.modal-content p a
+{
+    font-size: 17px;
+    line-height: 22px;
+
+    text-decoration: none;
+
+    color: #10abd2;
+}
+.modal-content p a:hover
+{
+    color: #2fc2c9;
+}
+.close-modal
+{
+    font-size: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 23px;
+    height: 23px;
+
+    background: url(../img/ico-modal-close.png) no-repeat center;
+    background-size: 100%;
+}
+.close-modal.white
+{
+    background: url(../img/ico-close-white.png) no-repeat center;
+}
+.close-modal:hover
+{
+    opacity: .7;
+}
+.modal-menu
+{
+    background: rgba(5, 152, 211, .8);
+}
+.modal-menu .close-modal
+{
+    top: 20px;
+    left: 20px;
+}
+.modal-menu .href
+{
+    font-size: 32px;
+    line-height: 40px;
+
+    display: block;
+
+    margin-bottom: 30px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+/* After registration modal */
+.after-registration-modal-wrapper
+{
+    position: fixed;
+    z-index: 100000000000;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, .3);
+}
+.after-registration-modal-wrapper.active
+{
+    display: block;
+}
+.after-registration-modal-container
+{
+    font-family: 'Gotham';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    position: relative;
+    top: 50%;
+
+    width: 600px;
+    margin: 0 auto;
+    margin-top: -150px;
+    padding: 20px;
+
+    border-radius: 20px;
+    background: white;
+}
+.after-registration-modal-container .title
+{
+    font-family: 'Gotham-Medium';
+    font-size: 16px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+.after-registration-modal-container b
+{
+    font-family: 'Gotham-Medium';
+}
+.after-registration-modal-container .go-to-dashboard
+{
+    font-size: 16px;
+    line-height: 6px;
+
+    display: inline-block;
+
+    width: 86px;
+    padding: 14px 35px;
+
+    -webkit-transition: .4s all ease;
+            transition: .4s all ease;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    background: #10abd2;
+}
+.after-registration-modal-container .go-to-dashboard:hover
+{
+    background-color: #2fc2c9;
+}
+.after-registration-modal-container .modal-close
+{
+    position: absolute;
+    top: -5px;
+    right: 0;
+
+    width: 30px;
+    height: 37px;
+
+    background: url(../img/cancel.png) no-repeat bottom left;
+}
+.btn-social
+{
+    width: 146px;
+    height: 43px;
+    margin-right: 10px;
+}
+.btn-social img
+{
+    width: 100%;
+}
+.btn-social:hover
+{
+    opacity: .8;
+}
+.top-navigation
+{
+    min-width: 1200px;
+    margin-top: 75px;
+    padding: 28px 0;
+}
+.sub-nav
+{
+    text-align: center;
+}
+.sub-nav .column1
+{
+    width: 17%;
+}
+.sub-nav .column2
+{
+    width: 19%;
+}
+.sub-nav .column3
+{
+    width: 26%;
+}
+.sub-nav a
+{
+    font-family: 'Gotham-Medium';
+    font-size: 18px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    -webkit-transition: .4s ease all;
+            transition: .4s ease all;
+    white-space: nowrap;
+
+    color: #10abd2;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.sub-nav a:hover
+{
+    color: #fff;
+    background: #10abd2;
+}
+.sub-nav a.active
+{
+    border-color: #10abd2;
+}
+.sub-nav a.active:hover
+{
+    color: #10abd2;
+    background: transparent;
+}
+.features
+{
+    margin: 55px auto 10px;
+
+    text-align: center;
+}
+.features .column2
+{
+    width: 20%;
+}
+.features-item img
+{
+    width: 85px;
+    margin-bottom: 15px;
+}
+.features-item p
+{
+    font-family: 'Gotham-Medium';
+    font-size: 14px;
+    line-height: 15px;
+
+    color: rgba(0, 0, 0, .66);
+}
+.about-block
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    min-height: 600px;
+    padding: 55px 0 61px;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.about-block h3
+{
+    font-size: 40px;
+    line-height: 49px;
+
+    position: relative;
+
+    margin-bottom: 55px;
+}
+.about-block .about-text,
+.about-block .mock-up-wrapper
+{
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+.about-block .label
+{
+    font-family: 'Gotham';
+    font-size: 18px;
+    font-weight: 400;
+
+    position: absolute;
+    top: -5px;
+
+    padding-left: 5px;
+
+    text-transform: uppercase;
+
+    color: #0b9bd1;
+}
+.about-text
+{
+    width: 540px;
+    padding-right: 20px;
+}
+.about-text h4
+{
+    font-family: 'Gotham-Medium';
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 35px;
+
+    letter-spacing: -1px;
+}
+.about-text p
+{
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -.3px;
+}
+.text-padding
+{
+    padding-top: 30px;
+    padding-right: 0;
+}
+.text-padding h4
+{
+    margin-bottom: 30px;
+}
+.goal:after
+{
+    position: absolute;
+    z-index: -1;
+    bottom: -35px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 108px;
+    height: 299px;
+    margin-left: 55px;
+
+    content: '';
+
+    background: url(../img/goal.png) no-repeat;
+}
+.promo-block
+{
+    min-width: 1200px;
+    padding: 15px 0 60px;
+}
+.promo-block h1
+{
+    font-family: 'Gotham-Medium';
+
+    width: 800px;
+    margin: 0 auto 25px;
+}
+.promo-block h1
+{
+    font-size: 40px;
+    line-height: 48px;
+
+    letter-spacing: -1px;
+}
+.promo-block h2
+{
+    font-family: 'Gotham-Medium';
+
+    width: 720px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.promo-block h2
+{
+    font-size: 20px;
+    line-height: 24px;
+}
+.about-text p
+{
+    font-family: 'Gotham';
+    font-weight: 400;
+}
+.about-revert .mock-up
+{
+    margin-left: 159px;
+}
+.about-block-another
+{
+    min-height: 400px;
+    padding-top: 62px;
+    padding-bottom: 30px;
+}
+.about-block-another .about-text
+{
+    width: 444px;
+}
+.about-block-another .mock-up-wrapper
+{
+    width: 550px;
+}
+.about-block-another .mock-up
+{
+    position: absolute;
+    bottom: -65px;
+}
+.about-block-another .mock-up--right
+{
+    top: auto;
+    bottom: -115px;
+}
+.link-arrow
+{
+    position: relative;
+
+    padding-left: 20px;
+}
+.link-arrow:before
+{
+    position: absolute;
+    left: 0;
+
+    content: 'â†’';
+}
+.registration-btn
+{
+    min-width: 1200px;
+    padding: 39px 0;
+
+    text-align: center;
+}
+/* ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¸ÐºÐ¾Ð½Ð¾Ñ‡Ð½Ð¾Ð³Ð¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° - Ñ€ÑƒÐ±Ð»Ñ */
+@font-face
+{
+    font-family: '-ruble';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/-ruble.eot?49070834');
+    src: url('fonts/-ruble.eot?49070834#iefix') format('embedded-opentype'), url('fonts/-ruble.woff?49070834') format('woff'), url('fonts/-ruble.ttf?49070834') format('truetype'), url('fonts/-ruble.svg?49070834#-ruble') format('svg');
+}
+[class^='icon-']:before,
+[class*=' icon-']:before
+{
+    font-family: '-ruble';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1em;
+
+    display: inline-block;
+
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+
+    speak: none;
+}
+.icon-ruble:before
+{
+    content: '\e800';
+}
+.popup-bg
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+
+    display: table;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .3);
+}
+.hide
+{
+    display: none !important;
+}
+/* Ð¡Ð°Ð¼Ð¾ Ð¾ÐºÐ½Ð¾ */
+.popup
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+.popup-wrapper
+{
+    position: relative;
+
+    width: 592px;
+    margin: auto;
+    padding: 20px 0 2px;
+
+    text-align: center;
+
+    border-radius: 20px;
+    background: #fff;
+}
+.popup-wrapper .exit
+{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.popup-wrapper p
+{
+    font-size: 17px;
+
+    margin: 15px 0;
+}
+.popup-wrapper .title
+{
+    font-family: 'Gotham-Medium';
+
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.popup-wrapper .btn-form
+{
+    font-family: 'Gotham';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+
+    min-width: 202px;
+    margin-bottom: 15px;
+    padding: 9px 12px;
+
+    cursor: pointer;
+}
+.popup input[type='email']
+{
+    font-family: 'Gotham';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+
+    display: block;
+
+    width: 500px;
+    height: 37px;
+    margin: 14px auto;
+    padding: 0 10px;
+
+    text-align: center;
+
+    border: 1px solid #c4c6c2;
+    border-radius: 20px;
+    background: none;
+}
+.popup
+{
+    font-family: 'Gotham', Arial, sans-serif;
+    font-weight: 400;
+}
+.popup .btn
+{
+    background: #10abd2;
+}
+.popup .btn.disabled
+{
+    background: #ccc;
+}
+/* milk-popups (begin) */
+.milk-container
+{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+.milk-bg
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 150%;
+    /* fix for mobile browsers */
+
+    background: rgba(255, 255, 255, .95);
+}
+.milk-bg.blue
+{
+    background: rgba(5, 152, 211, .95);
+}
+.milk-bg .gradient
+{
+    position: absolute;
+    /* IE6-9 fallback on horizontal gradient */
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(57, 212, 203, .9)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(57, 212, 203, .9) 0, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: -webkit-linear-gradient(315deg, rgba(57, 212, 203, .9) 0, rgba(255, 255, 255, 0) 100%);
+    background:         linear-gradient(135deg, rgba(57, 212, 203, .9) 0, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e639d4cb', endColorstr='#00ffffff', GradientType=1);
+}
+.milk-wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -255px;
+}
+.milk-scrollstop
+{
+    top: 0;
+
+    overflow: hidden;
+
+    height: 100%;
+}
+.milk-blur-background
+{
+    -webkit-transition: 500ms;
+            transition: 500ms;
+
+            filter: blur(3px);
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+         -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+            filter: url(/assets/v2/i/svg/blur.svg#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+}
+.milk-wrapper .popupmenu li
+{
+    font-size: 32px;
+    font-weight: 500;
+
+    margin-bottom: 1.2em;
+
+    text-align: center;
+}
+.milk-wrapper .popupmenu li a
+{
+    text-decoration: none;
+
+    color: white;
+}
+.milk-wrapper .popupmenu li a:hover
+{
+    opacity: .6;
+}
+.milk-container .milk-close-popup
+{
+    position: absolute;
+    top: 0;
+    left: 75px;
+
+    width: 75px;
+    height: 75px;
+
+    cursor: pointer;
+    -webkit-transition: 300ms;
+            transition: 300ms;
+
+    border-radius: 38px;
+    background: url(../img//milk_close.png) 50% 50% no-repeat;
+}
+.milk-container .milk-close-popup:hover
+{
+    opacity: .6;
+}
+.milk-container form
+{
+    overflow: hidden;
+
+    text-align: center;
+}
+.milk-container form .milk-close-popup
+{
+    top: 4px;
+    right: 0;
+    left: auto;
+
+    width: 23px;
+    height: 23px;
+
+    background: url(../img/milk_close_blue.png) 0 0 no-repeat;
+}
+.milk-container form .title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+.milk-container form .input
+{
+    display: inline-block;
+
+    width: 485px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.milk-container form .input input
+{
+    font-size: 32px;
+    line-height: 32px;
+
+    margin-top: 27px;
+    margin-bottom: 5px;
+    padding: 0;
+
+    text-align: center;
+
+    border: 0;
+    background: rgba(0, 0, 0, 0) !important;
+}
+.milk-container form .input input:focus
+{
+    background-position: 0 0;
+}
+.milk-container form .input input::-webkit-input-placeholder
+{
+    color: rgba(0, 0, 0, .4);
+}
+.milk-container form .input input:-moz-placeholder
+{
+    /* FF 4-18 */
+    color: rgba(0, 0, 0, .4);
+}
+.milk-container form .input input::-moz-placeholder
+{
+    /* FF 19+ */
+    color: rgba(0, 0, 0, .4);
+}
+.milk-container form .input input:-ms-input-placeholder
+{
+    /* IE 10+ */
+    color: rgba(0, 0, 0, .4);
+}
+.milk-container .submit-button
+{
+    font-size: 24px;
+    font-weight: 500;
+
+    display: inline-block;
+
+    width: 240px;
+    margin-bottom: 75px;
+    padding: 13px 0;
+
+    cursor: pointer;
+    -webkit-transition: 200ms;
+            transition: 200ms;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border-radius: 26px;
+    background-color: #10abd2;
+}
+.milk-container .submit-button:hover
+{
+    background-color: #2fc2c9;
+}
+.milk-container .link
+{
+    font-size: 24px;
+
+    display: block;
+
+    margin-bottom: 35px;
+
+    text-decoration: none;
+
+    color: #10abd2;
+}
+.milk-container .link:hover
+{
+    color: #2fc2c9;
+}
+.milk-container .error-hint
+{
+    font-size: 18px;
+    font-weight: lighter;
+
+    width: 550px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.milk-container form .input.error input,
+.milk-container .error-hint
+{
+    color: #de202c;
+}
+.milk-loader
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
+    margin-left: -64px;
+
+    opacity: 0;
+    background: url(../img//loader.gif) 0 0 no-repeat;
+}
+.milk-container .hint
+{
+    font-family: 'Gotham';
+    font-size: 17px;
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.milk-container .hint a
+{
+    text-decoration: none;
+
+    color: #10abd2;
+}
+.milk-container .hint a:hover
+{
+    color: #2fc2c9;
+}
+.milk-container .sms .submit-button,
+.milk-container .recovery .submit-button
+{
+    margin-bottom: 35px;
+}
+.milk-container .registration .submit-button
+{
+    width: 320px;
+}
+.milk-container .link.forgotten-password
+{
+    margin-bottom: 20px;
+}
+.milk-container .remember-me
+{
+    font-size: 22px;
+    line-height: 25px;
+
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+.milk-container .remember-me .milk-icon-heart
+{
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+
+    -webkit-transition: border 300ms;
+            transition: border 300ms;
+    vertical-align: bottom;
+
+    border: 2px solid rgba(0, 0, 0, .3);
+    border-radius: 13px;
+}
+.milk-container .remember-me.active .milk-icon-heart
+{
+    background: url(../img//icon_heart.png) 50% 50% no-repeat;
+}
+.milk-container .remember-me:hover .milk-icon-heart
+{
+    border: 2px solid rgba(0, 0, 0, .6);
+}
+/* milk-popups (end) */
