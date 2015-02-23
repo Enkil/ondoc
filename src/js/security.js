@@ -6,6 +6,10 @@ $(document).ready(function() {
 
     // Модальные окна
 
-    $(".security-modal").css('display','none');
+    // $(".security-modal").css('display','none');
 
+    $(".security-modal__close").click(function(){
+    	$(this).parent().parent().parent().parent().parent().find(".security-modal").addClass("display-none");
+    });
+  
 });

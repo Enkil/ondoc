@@ -18541,7 +18541,8 @@ a:focus
 {
     margin-right: 5px;
 }
-.security__input
+.security__input,
+.security-modal__textarea
 {
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
@@ -18565,57 +18566,71 @@ a:focus
     outline: none!important;
     outline: none;
 }
-.security__input::-webkit-input-placeholder
+.security__input::-webkit-input-placeholder,
+.security-modal__textarea::-webkit-input-placeholder
 {
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
-.security__input::-moz-placeholder
+.security__input::-moz-placeholder,
+.security-modal__textarea::-moz-placeholder
 {
     line-height: 20px;
 
     transition: line-height .5s ease;
 }
-.security__input:-ms-input-placeholder
+.security__input:-ms-input-placeholder,
+.security-modal__textarea:-ms-input-placeholder
 {
     line-height: 20px;
 
     transition: line-height .5s ease;
 }
-.security__input::placeholder
+.security__input::placeholder,
+.security-modal__textarea::placeholder
 {
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
-.security__input:focus::-webkit-input-placeholder
+.security__input:focus::-webkit-input-placeholder,
+.security-modal__textarea:focus::-webkit-input-placeholder
 {
     line-height: 150px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
-.security__input:focus::-moz-placeholder
+.security__input:focus::-moz-placeholder,
+.security-modal__textarea:focus::-moz-placeholder
 {
     line-height: 150px;
 
     transition: line-height .5s ease;
 }
-.security__input:focus:-ms-input-placeholder
+.security__input:focus:-ms-input-placeholder,
+.security-modal__textarea:focus:-ms-input-placeholder
 {
     line-height: 150px;
 
     transition: line-height .5s ease;
 }
-.security__input:focus::placeholder
+.security__input:focus::placeholder,
+.security-modal__textarea:focus::placeholder
 {
     line-height: 150px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+.security-modal__textarea
+{
+    height: 100px;
+
+    text-align: left!important;
 }
 .security__line
 {

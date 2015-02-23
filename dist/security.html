@@ -120,7 +120,7 @@
 
                         <!-- Попап емейл отключить  -->
 
-                        <div class="security-modal security-modal__email-disconnect" id="security-modal__email-disconnect">
+                        <div class="security-modal security-modal__email-disconnect display-none" id="security-modal__email-disconnect">
                             <div class="widgets-block">
                                 <form action="">
 
@@ -151,7 +151,7 @@
 
                         <!-- Попап подтвердить email  -->
 
-                        <div class="security-modal security-modal__email-proove" id="security-modal__email-proove">
+                        <div class="security-modal security-modal__email-proove display-none" id="security-modal__email-proove">
                             <div class="widgets-block">
                                 <form action="">
 
@@ -210,7 +210,7 @@
 
                         <!-- Попап успешное подтверждение email  -->
 
-                        <div class="security-modal security-modal__email-success" id="security-modal__email-success">
+                        <div class="security-modal security-modal__email-success display-none" id="security-modal__email-success">
                             <div class="widgets-block">
                                 <form action="">
 
@@ -296,7 +296,7 @@
 
                         <!-- Попап подтвердить телефон  -->
 
-                        <div class="security-modal security-modal__telephone-proove" id="security-modal__telephone-proove">
+                        <div class="security-modal security-modal__telephone-proove display-none" id="security-modal__telephone-proove">
                             <div class="widgets-block">
                                 <form action="">
 
@@ -355,7 +355,7 @@
 
                         <!-- Попап успешное подтверждение телефона  -->
 
-                        <div class="security-modal security-modal__telephone-success" id="security-modal__telephone-success">
+                        <div class="security-modal security-modal__telephone-success display-none" id="security-modal__telephone-success">
                             <div class="widgets-block">
                                 <form action="">
 
@@ -440,6 +440,48 @@
             		</div>
 
             		<!-- delete -->
+
+                     <!-- Попап удаление аккаунта  -->
+
+                    <div class="security-modal security-modal__account-delete" id="security-modal__account-delete">
+                        <div class="widgets-block">
+                            <form action="">
+
+                                <div class="row">
+                                    <span class="security-modal__close"></span>
+                                    <div class="col-xs-36">
+                                        <p class="security-modal__title">Удаление профиля</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-offset-2  col-xs-32">
+                                        <p class="security-modal__account-text">Нам всегда очень жаль расставаться с нашими пользователями.</p>
+                                        <p class="security-modal__account-text">В течение 30 дней можно восстановить доступ через обращение в службу поддержки, сохранив все данные. </p>
+                                        <p class="security-modal__account-text">По истечении этого срока вся информация будет окончательно удалена.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-offset-1 col-xs-34">
+                                        <textarea class="security-modal__textarea"></textarea>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-offset-7  col-xs-8">
+                                        <a href="" class="security-modal__btn--cancel">Отмена</a>
+                                    </div>
+                                    <div class="col-xs-offset-2  col-xs-10">
+                                        <a href="" class="security-modal__btn--disconnect">Удалить</a>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Попап емейл удаление аккаунта  -->
             		
             	</form>
 
