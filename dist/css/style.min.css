@@ -16243,6 +16243,10 @@ form input[type='password']
 {
     background: #10abd2;
 }
+.btn--blue:hover
+{
+    color: #fff;
+}
 .btn:hover
 {
     background-color: #2fc2c9;
