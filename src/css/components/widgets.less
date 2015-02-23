@@ -41,13 +41,15 @@
 
 
   &__textarea{
+    .gotham;
+    text-align: left;
+    height: 50px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     width: 100%;
     display: block;
     padding: 15px;
-    .gotham;
     font-size: 14px;
     color: @black-color;
     resize: none;
@@ -55,33 +57,9 @@
     text-overflow: ellipsis;
     transition: height 0.2s;
     max-height: 250px;
+    line-height: 20px;
 
-
-    // Soft slide-down placeholder
-    &::-webkit-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::-moz-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:-ms-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-webkit-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-moz-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus:-ms-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
+    .placeholder-effect(20px);
   }
 
   // Upload icon
@@ -90,6 +68,7 @@
     overflow: hidden;
     cursor: pointer;
     width: 45px;
+    height: 31px;
     margin: 0;
     vertical-align: middle;
   }
