@@ -12468,7 +12468,21 @@ a:focus
 }
 .ekko-lightbox .modal-header
 {
+    position: relative;
+
+    padding-bottom: 0;
+
     border-bottom: none;
+}
+.ekko-lightbox .modal-header .close
+{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+.ekko-lightbox .modal-body
+{
+    padding-top: 10px;
 }
 .ekko-lightbox > .modal-dialog
 {
@@ -12483,26 +12497,52 @@ a:focus
 {
     text-align: center;
 }
-.ekko-lightbox .glyphicon-menu-left
+.lightbox-arrow
+{
+    position: relative;
+
+    display: inline-block;
+    float: right;
+
+    padding-right: 15px;
+
+    opacity: .3!important;
+}
+.lightbox-arrow:hover
+{
+    opacity: 1!important;
+}
+.lightbox-arrow:before
+{
+    right: 0;
+
+    display: inline-block;
+    float: right;
+
+    width: 20px;
+    height: 45px;
+
+    content: '';
+    text-align: right;
+
+    background: url('../img/lightbox-arrow.png');
+}
+.lightbox-arrow--left
+{
+    float: left;
+
+    padding-left: 15px;
+}
+.lightbox-arrow--left:before
 {
     left: 0;
 
     float: left;
 
-    padding-left: 15px;
-
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     text-align: left;
-    vertical-align: middle;
-}
-.ekko-lightbox .glyphicon-menu-right
-{
-    right: 0;
-
-    float: right;
-
-    padding-right: 15px;
-
-    text-align: right;
 }
 .medcard-docinfo
 {

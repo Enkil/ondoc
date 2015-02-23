@@ -692,6 +692,18 @@
 
 .ekko-lightbox .modal-header{
   border-bottom: none;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.ekko-lightbox .modal-header .close{
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+.ekko-lightbox .modal-body{
+  padding-top: 10px;
 }
 
 .ekko-lightbox > .modal-dialog{
@@ -707,21 +719,41 @@
   text-align: center;
 }
 
-.ekko-lightbox .glyphicon-menu-left {
-  left: 0;
-  float: left;
-  padding-left: 15px;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.ekko-lightbox .glyphicon-menu-right {
-  right: 0;
-  float: right;
+.lightbox-arrow{
+  position: relative;
+  display: inline-block;
+  opacity: 0.3!important;
   padding-right: 15px;
-  text-align: right;
-}
+  float: right;
 
+  &:hover{
+    opacity: 1!important;
+  }
+
+  &:before{
+    display: inline-block;
+    width: 20px;
+    height: 45px;
+    content: '';
+    text-align: right;
+    float: right;
+    right: 0;
+    background: url("../img/lightbox-arrow.png");
+  }
+
+
+  &--left{
+    padding-left: 15px;
+    float: left;
+    &:before{
+      float: left;
+      left: 0;
+      text-align: left;
+      transform:         rotate(180deg);
+    }
+  }
+
+}
 
 // BLOCK -> Doctor info pop-up
 .medcard-docinfo{

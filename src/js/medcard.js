@@ -79,8 +79,11 @@ $(document).ready(function ($) {
         event.preventDefault();
         return $(this).ekkoLightbox({
             always_show_close: true,
-            left_arrow_class: '.glyphicon .glyphicon-menu-left',
-            right_arrow_class: '.glyphicon .glyphicon-menu-right'
+            //left_arrow_class: '.glyphicon .glyphicon-menu-left',
+            //right_arrow_class: '.glyphicon .glyphicon-menu-right'
+
+            left_arrow_class: '.lightbox-arrow .lightbox-arrow--left',
+            right_arrow_class: '.lightbox-arrow .lightbox-arrow--right'
         });
     });
 });
