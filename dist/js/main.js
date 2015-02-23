@@ -13691,6 +13691,11 @@ $(document).ready(function() {
     });
 
 });
+$(document).ready(function(){
+	$(".notifications-info span").click(function(){
+		$(this).toggleClass("notifications-info__active");
+	});
+});
 /*
 Lightbox for Bootstrap 3 by @ashleydw
 https://github.com/ashleydw/lightbox
