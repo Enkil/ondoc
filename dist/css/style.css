@@ -12486,8 +12486,9 @@ a:focus
 }
 .ekko-lightbox > .modal-dialog
 {
-    max-width: 700px!important;
+    max-width: 80%!important;
     height: 90% !important;
+    max-height: 90% !important;
 
     text-align: center;
 }
@@ -16499,7 +16500,7 @@ section
 
     min-width: 1200px;
     min-height: 536px;
-    padding: 60px 0 0;
+    padding: 60px 0 60px;
 
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;

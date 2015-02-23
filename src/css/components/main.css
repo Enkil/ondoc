@@ -636,7 +636,7 @@ section {
     min-height: 536px;
     min-width: 1200px;
     background: url(/assets/v3/css/img/background-section.jpg) repeat-x;
-    padding: 60px 0 0;
+    padding: 60px 0 40px;
     position: relative;
     border-bottom: 1px solid #ccc;
 }
