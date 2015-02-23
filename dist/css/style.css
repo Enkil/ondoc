@@ -12479,7 +12479,9 @@ a:focus
     margin-top: 15px;
     margin-bottom: 20px;
     margin-left: 10px;
+    padding-top: 0;
     padding-right: 24px;
+    padding-bottom: 0;
     padding-left: 24px;
 
     color: #5db7d8;
