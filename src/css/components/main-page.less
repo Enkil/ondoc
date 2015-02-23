@@ -550,7 +550,7 @@ a {
 }
 
 section {
-  overflow: hidden;
+//  overflow: hidden;
 }
 
 /* about */
@@ -566,7 +566,7 @@ section {
   min-height: 536px;
   min-width: 1200px;
   background: url(../img/background-section.jpg) repeat-x;
-  padding: 60px 0 60px;
+  padding: 60px 0 0;
   position: relative;
   border-bottom: 1px solid #ccc;
 }
@@ -595,6 +595,7 @@ section {
 .about--center {
   text-align: center;
   background: url(../img/background-section.jpg) repeat-x;
+  padding-bottom: 40px;
 }
 .about h2, .about .p--big {
   color: rgba(0, 0, 0, 0.9);
@@ -664,6 +665,10 @@ section {
 }
 .about--revert .about__text {
   margin-top: 80px;
+}
+
+.about--revert{
+  overflow: hidden;
 }
 
 .mock-up {

@@ -16557,10 +16557,6 @@ form input[type='password']
 {
     padding: 0 40px;
 }
-section
-{
-    overflow: hidden;
-}
 /* about */
 .blue-label
 {
@@ -16578,7 +16574,7 @@ section
 
     min-width: 1200px;
     min-height: 536px;
-    padding: 60px 0 60px;
+    padding: 60px 0 0;
 
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
@@ -16618,6 +16614,8 @@ section
 }
 .about--center
 {
+    padding-bottom: 40px;
+
     text-align: center;
 
     background: url(../img/background-section.jpg) repeat-x;
@@ -16716,6 +16714,10 @@ section
 .about--revert .about__text
 {
     margin-top: 80px;
+}
+.about--revert
+{
+    overflow: hidden;
 }
 .mock-up
 {
