@@ -98,7 +98,7 @@
 
 .notifications-delivery {
 
-	margin-top: 28px;
+	margin: 28px 0;
 
 	&__line {
 
@@ -167,6 +167,69 @@
 
 }
 
+// modal tize zone
+
+.notifications-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+
+  .widgets-block {
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    display: table;
+    margin: auto;
+    padding: 17px 0 0;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__line {
+  	.line-full-width();
+  	margin-bottom: 0;
+  }
+
+  &__title {
+  	.gotham-m;
+  	font-size: 17px;
+  }
+
+  &__zone-item {
+  	.gotham-m;
+  	display:block;
+  	padding: 9px 0;
+  	color:@black-color;
+  	border-top:1px solid @grey-color-1;
+  	&:hover {
+  		background-color: @lightblue-bg;
+  		color:@black-color;
+  	}
+  }
+
+}
 
 
 
