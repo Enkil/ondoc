@@ -20470,6 +20470,103 @@ input:after
     margin-right: 6px;
     margin-left: 18px;
 }
+.notifications-modal
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .6);
+}
+.notifications-modal .widgets-block
+{
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: table;
+
+    width: 480px;
+    margin: auto;
+    padding: 17px 0 0;
+
+    text-align: center;
+
+    border-radius: 6px;
+    background-color: #fff;
+}
+.notifications-modal__close
+{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    background: url(../img/icon-modal-close.png) no-repeat;
+}
+.notifications-modal__line
+{
+    position: relative;
+
+    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+.notifications-modal__line:before
+{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    height: 1px;
+    margin: auto 8px auto 8px;
+
+    content: '';
+
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.notifications-modal__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+}
+.notifications-modal__zone-item
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+
+    display: block;
+
+    padding: 9px 0;
+
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.notifications-modal__zone-item:hover
+{
+    color: #000;
+    background-color: #eef9fb;
+}
 /* modul section */
 .col
 {
