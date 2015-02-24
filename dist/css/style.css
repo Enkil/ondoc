@@ -18512,14 +18512,12 @@ a:focus
     font-size: 17px;
     line-height: 19px;
 
-    margin-top: 10px;
+    display: inline-block;
+
+    margin-top: 9px;
     margin-right: 5px;
 
     color: #000;
-}
-.security-email__saved
-{
-    margin-top: 9px;
 }
 .security-email__delete
 {
@@ -18527,6 +18525,7 @@ a:focus
 
     width: 17px;
     height: 17px;
+    margin-top: 9px;
 
     vertical-align: top;
 
@@ -18539,6 +18538,7 @@ a:focus
 
     width: 17px;
     height: 17px;
+    margin-top: 9px;
 
     vertical-align: top;
 
@@ -18549,6 +18549,7 @@ a:focus
 {
     display: inline-block;
 
+    margin-top: 9px;
     margin-right: 5px;
 }
 .security__input,
