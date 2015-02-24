@@ -8989,7 +8989,7 @@ button.close
 {
     position: absolute;
     top: 1px;
-    right: 2px;
+    right: 18px;
 
     width: 24px;
     height: 24px;
@@ -9004,7 +9004,7 @@ button.close
 }
 .checkbox-blue:checked + label:after
 {
-    right: 17px;
+    right: 2px;
 }
 .checkbox-blue:checked + label:before
 {
@@ -12989,7 +12989,7 @@ a:focus
 {
     position: absolute;
     top: 1px;
-    right: 2px;
+    right: 18px;
 
     width: 24px;
     height: 24px;
@@ -13004,7 +13004,7 @@ a:focus
 }
 .medcard-docinfo__allow-check:checked + label:after
 {
-    right: 17px;
+    right: 2px;
 }
 .medcard-docinfo__allow-check:checked + label:before
 {
@@ -17773,7 +17773,7 @@ input:after
 {
     position: absolute;
     top: 1px;
-    right: 2px;
+    right: 18px;
 
     width: 24px;
     height: 24px;
@@ -17788,7 +17788,7 @@ input:after
 }
 .notifications-delivery__input:checked + label:after
 {
-    right: 17px;
+    right: 2px;
 }
 .notifications-delivery__input:checked + label:before
 {
