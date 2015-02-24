@@ -76,6 +76,7 @@
   }
   &__text {
     margin-right: 5px;
+    display: inline-block;
   }
 }
 
@@ -97,32 +98,13 @@
     max-height: 250px;
 
     // Soft slide-down placeholder
-    &::-webkit-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::-moz-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:-ms-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-webkit-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-moz-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus:-ms-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
+    .placeholder-effect(20px);
 
   }
+
+  &__input--error {
+      border: 1px solid @red-color;
+    }
 
   &-modal__textarea {
     height: 100px;

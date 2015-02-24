@@ -18101,6 +18101,10 @@ a:focus
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
+.user-info__input--error
+{
+    border: 1px solid #dc4531;
+}
 .user-data
 {
     margin-top: 20px;
@@ -18539,6 +18543,8 @@ a:focus
 }
 .security-telephone__text
 {
+    display: inline-block;
+
     margin-right: 5px;
 }
 .security__input,
@@ -18625,6 +18631,10 @@ a:focus
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+.security__input--error
+{
+    border: 1px solid #dc4531;
 }
 .security-modal__textarea
 {
