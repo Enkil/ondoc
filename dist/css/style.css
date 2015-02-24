@@ -20970,7 +20970,7 @@ input:after
 }
 .notifications-delivery
 {
-    margin-top: 28px;
+    margin: 28px 0;
 }
 .notifications-delivery__line
 {
