@@ -46,18 +46,45 @@
     font-size: 17px;
     line-height: 19px;
     color: @black-color;
-    margin-top: 10px;
+    margin-top: 9px;
     margin-right: 5px;
+    display: inline-block;
   }
-
-  &__saved {
+  // &__saved {
+  //   margin-top: 9px;
+  // }
+  &__delete {
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icon-delete.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
     margin-top: 9px;
   }
 
 }
 
+.security-telephone {
+  &__delete {
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icon-delete.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+  }
+  &__text {
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 9px;
+  }
+}
+
+  
 .security {
-  &__input {
+  &__input, &-modal__textarea {
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
@@ -74,32 +101,19 @@
     max-height: 250px;
 
     // Soft slide-down placeholder
-    &::-webkit-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::-moz-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:-ms-input-placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &::placeholder{
-      line-height: 20px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-webkit-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::-moz-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus:-ms-input-placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
-    &:focus::placeholder{
-      line-height: 150px;  transition: line-height 0.5s ease;
-    }
+    .placeholder-effect(20px);
 
   }
+
+  &__input--error {
+      border: 1px solid @red-color;
+    }
+
+  &-modal__textarea {
+    height: 100px;
+    text-align: left!important;
+  }
+
   &__line {
       .line-full-width();
       margin-top: 25px;
@@ -124,6 +138,10 @@
       &:hover {
       background: @blue-color;
       }
+      &:focus{
+        color: @white-color;
+        background: @blue-color;
+      } 
     }
 
     &__proove {
@@ -133,6 +151,11 @@
       &:hover {
       background: @orange-color;
       }
+      &:focus{
+        background: @orange-color;
+        color: @white-color;
+      } 
+
     }
 
     &__delete-profile {
@@ -144,12 +167,18 @@
       background-repeat: no-repeat;
       background-position: 13px 50%;
       font-size: 14px;
+      cursor: pointer;
       &:hover {
       background: @red-color;
       background-image: url(../img/icon-trash-white.png);
       background-repeat: no-repeat;
       background-position: 13px 50%;
       }
+      &:focus{
+        background: @red-color;
+        color: @white-color;
+      } 
+      
     }
   } 
 
@@ -343,6 +372,10 @@ input, input:visited, input:focus, input:before, input:after {
       &:hover {
       background: @blue-color;
       }
+      &:focus {
+        background: @blue-color;
+        color: @white-color;
+      }
   }
   &__btn--disconnect {
       .security-link();
@@ -351,6 +384,10 @@ input, input:visited, input:focus, input:before, input:after {
       color: @red-color;
       &:hover {
       background: @red-color;
+      }
+      &:focus {
+        color: @white-color;
+        background: @red-color;
       }
   }
 
@@ -361,6 +398,10 @@ input, input:visited, input:focus, input:before, input:after {
       color: @blue-color;
       &:hover {
       background: @blue-color;
+      }
+      &:focus {
+        background: @blue-color;
+        color: @white-color;
       }
   }
 

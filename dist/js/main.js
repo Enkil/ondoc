@@ -13660,8 +13660,12 @@ $(document).ready(function() {
 
     // Модальные окна
 
-    $(".security-modal").css('display','none');
+    // $(".security-modal").css('display','none');
 
+    $(".security-modal__close").click(function(){
+    	$(this).parent().parent().parent().parent().parent().find(".security-modal").addClass("display-none");
+    });
+  
 });
 /*
  Toggle css class to some dropdown blocks
@@ -13690,6 +13694,11 @@ $(document).ready(function() {
         $('.widget-pagination__dropdown').toggleClass('display-none');
     });
 
+});
+$(document).ready(function(){
+	$(".notifications-info span").click(function(){
+		$(this).toggleClass("notifications-info__active");
+	});
 });
 /*
 Lightbox for Bootstrap 3 by @ashleydw
