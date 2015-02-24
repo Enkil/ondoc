@@ -2,9 +2,7 @@
 /* Стили для форм */
 input[type='button']
 {
-    border: none;
     outline: none;
-    background: none;
 }
 /* Кастомизация селекта - Месяц (первый вариант) */
 .customize-select select
@@ -147,25 +145,6 @@ input[type='button']
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 2px;
     outline: none;
-}
-.field-comment::-webkit-input-placeholder
-{
-    line-height: 20px;
-
-    -webkit-transition: line-height .5s ease;
-            transition: line-height .5s ease;
-}
-.field-comment::-moz-placeholder
-{
-    line-height: 20px;
-
-    transition: line-height .5s ease;
-}
-.field-comment :-ms-input-placeholder
-{
-    line-height: 20px;
-
-    transition: line-height .5s ease;
 }
 .field-comment::-webkit-input-placeholder
 {
