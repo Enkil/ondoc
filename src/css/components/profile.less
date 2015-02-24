@@ -346,3 +346,126 @@ list-style: none;
   z-index: 15;
 }
 
+
+// modal agreement
+
+.agreement-modal__btn {
+    .link-medium;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s ease background;
+    font-size: 15px;
+    margin: 15px 2px;
+    display: inline-block;
+    padding: 7px 40px;
+  }
+
+.agreement-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+
+  .widgets-block {
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 730px;
+    display: table;
+    margin: auto;
+    padding: 20px 0 20px;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  &__subtitle {
+    .gotham-b;
+    font-size: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    span { .gotham-m; }
+  }
+
+  &__textarea {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 7px 14px;
+    .gotham;
+    font-size: 13px;
+    line-height: 15px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    min-height: 400px;
+    max-height: 400px;
+    margin-bottom: 15px;
+  }
+
+  &__btn--reject {
+    .agreement-modal__btn();
+
+    &:hover, &:focus {
+      background: @blue-color;
+      color: @white-color;
+      text-decoration: none;
+    }
+
+  }
+
+  &__btn--accept, &__btn--decline {
+    .agreement-modal__btn();
+    background-color: @blue-color;
+    color: @white-color;
+    border:1px solid @white-color;
+    
+    &:hover, &:focus {
+      background: @white-color;
+      color: @blue-color;
+      text-decoration: none;
+      border:1px solid @blue-color;
+    }
+
+  }
+
+}
+
+
+
+
+
+
