@@ -135,6 +135,10 @@
       &:hover {
       background: @blue-color;
       }
+      &:focus{
+        color: @white-color;
+        background: @blue-color;
+      } 
     }
 
     &__proove {
@@ -144,6 +148,11 @@
       &:hover {
       background: @orange-color;
       }
+      &:focus{
+        background: @orange-color;
+        color: @white-color;
+      } 
+
     }
 
     &__delete-profile {
@@ -155,12 +164,18 @@
       background-repeat: no-repeat;
       background-position: 13px 50%;
       font-size: 14px;
+      cursor: pointer;
       &:hover {
       background: @red-color;
       background-image: url(../img/icon-trash-white.png);
       background-repeat: no-repeat;
       background-position: 13px 50%;
       }
+      &:focus{
+        background: @red-color;
+        color: @white-color;
+      } 
+      
     }
   } 
 
@@ -354,6 +369,10 @@ input, input:visited, input:focus, input:before, input:after {
       &:hover {
       background: @blue-color;
       }
+      &:focus {
+        background: @blue-color;
+        color: @white-color;
+      }
   }
   &__btn--disconnect {
       .security-link();
@@ -362,6 +381,10 @@ input, input:visited, input:focus, input:before, input:after {
       color: @red-color;
       &:hover {
       background: @red-color;
+      }
+      &:focus {
+        color: @white-color;
+        background: @red-color;
       }
   }
 
@@ -372,6 +395,10 @@ input, input:visited, input:focus, input:before, input:after {
       color: @blue-color;
       &:hover {
       background: @blue-color;
+      }
+      &:focus {
+        background: @blue-color;
+        color: @white-color;
       }
   }
 
