@@ -18527,6 +18527,7 @@ a:focus
     height: 17px;
     margin-top: 9px;
 
+    cursor: pointer;
     vertical-align: top;
 
     background-image: url(../img/icon-delete.png);

@@ -112,41 +112,41 @@
 
             			<div class="col-xs-offset-1 col-xs-12 security-email__saved">
             				<span class="security-email__text">mymail@informail.ru</span>
-            				<a href="" class="security-email__delete"></a>
+            				<a class="security-email__delete"></a>
+
+                            <!-- Попап емейл отключить  -->
+ 
+                            <div class="security-modal security-modal__email-disconnect display-none" id="security-modal__email-disconnect">
+                                <div class="widgets-block">
+                                    <form action="">
+
+                                        <div class="row">
+                                            <span class="security-modal__close"></span>
+                                            <div class="col-xs-36">
+                                                <p class="security-modal__title">Подтвердите отключение Email
+                                                    <br/>ivan.petrovich@yandex.ru
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-offset-7  col-xs-8">
+                                                <a href="" class="security-modal__btn--cancel">Отмена</a>
+                                            </div>
+                                            <div class="col-xs-offset-2  col-xs-10">
+                                                <a href="" class="security-modal__btn--disconnect">Отключить</a>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Попап емейл отключить  -->
  
             			</div>
             			<div class="col-xs-17"><input type="text" class="security__input" placeholder="Новый email"></div>
-            			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
-
-                        <!-- Попап емейл отключить  -->
-
-                        <div class="security-modal security-modal__email-disconnect display-none" id="security-modal__email-disconnect">
-                            <div class="widgets-block">
-                                <form action="">
-
-                                    <div class="row">
-                                        <span class="security-modal__close"></span>
-                                        <div class="col-xs-36">
-                                            <p class="security-modal__title">Подтвердите отключение Email
-                                                <br/>ivan.petrovich@yandex.ru
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-xs-offset-7  col-xs-8">
-                                            <a href="" class="security-modal__btn--cancel">Отмена</a>
-                                        </div>
-                                        <div class="col-xs-offset-2  col-xs-10">
-                                            <a href="" class="security-modal__btn--disconnect">Отключить</a>
-                                        </div>
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                        </div>
-
-                        <!-- Попап емейл отключить  -->
+            			<div class="col-xs-6"><a href="" class="security-link__save security-link__save--email">Сохранить</a></div>
 
 
                         <!-- Попап подтвердить email  -->
@@ -257,14 +257,14 @@
 
             			<div class="col-xs-offset-1 col-xs-12 security-telephone__saved">
             				<span class="security-telephone__text">+7 911 230 64 64</span>
-                            <a href="" class="security-link__proove">Подтвердить</a>
+                            <a href="" class="security-link__proove security-link__proove-telephone">Подтвердить</a>
             			</div>
             			<div class="col-xs-17"><input type="text" class="security__input security__input--error" placeholder="Новый Телефон"></div>
-            			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save security-link__save--telephone">Сохранить</a></div>
 
                         <!-- Попап отключить телефон  -->
 
-                        <div class="security-modal security-modal__telephone-disconnect" id="security-modal__telephone-disconnect">
+                        <div class="security-modal security-modal__telephone-disconnect display-none" id="security-modal__telephone-disconnect">
                             <div class="widgets-block">
                                 <form action="">
 
@@ -443,7 +443,7 @@
 
                      <!-- Попап удаление аккаунта  -->
 
-                    <div class="security-modal security-modal__account-delete" id="security-modal__account-delete">
+                    <div class="security-modal security-modal__account-delete display-none" id="security-modal__account-delete">
                         <div class="widgets-block">
                             <form action="">
 
