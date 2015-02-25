@@ -215,20 +215,7 @@ input[type='button']
 /* Общие стили виджета */
 .widget
 {
-    min-height: 550px;
-
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
     /* В маленьких виджетах */
-}
-.widget--mini
-{
-    overflow: auto;
-
-    height: 435px;
-    min-height: 435px;
-    margin-bottom: 16px;
 }
 .widget--middle
 {
@@ -9986,7 +9973,7 @@ a:focus
     display: block;
 
     height: 1px;
-    margin: auto 8px auto 8px;
+    margin: auto;
 
     content: '';
 
@@ -10468,24 +10455,14 @@ a:focus
 }
 .widget-security
 {
-    min-height: 550px;
     min-height: 100px;
     margin-bottom: 100px;
     padding-bottom: 26px;
-
-    border-radius: 10px;
     /* В маленьких виджетах */
+
     border-radius: 12px;
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
-}
-.widget-security--mini
-{
-    overflow: auto;
-
-    height: 435px;
-    min-height: 435px;
-    margin-bottom: 16px;
 }
 .widget-security--middle
 {
@@ -13623,6 +13600,8 @@ a:focus
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    /* Element -> sugar shedule */
+    /* Element -> sugar shedule for cap*/
 }
 .monitoring-widget__header
 {
@@ -13997,6 +13976,15 @@ a:focus
     margin-top: 20px;
     padding: 0;
 }
+.monitoring-widget__sugar-shedule-cap
+{
+    padding: 0 10px 2px;
+}
+.monitoring-widget__sugar-shedule-cap--add-value
+{
+    margin-top: 20px;
+    padding: 0;
+}
 .monitoring-widget__sugar-shedule-block
 {
     text-align: center;
@@ -14125,6 +14113,38 @@ a:focus
     margin-bottom: 30px;
     padding: 0;
 }
+.monitoring-widget__chol-shedule-cap
+{
+    padding: 0 20px 30px;
+
+    text-align: center;
+}
+.monitoring-widget__chol-shedule-cap .row [class*=col-]:first-child
+{
+    text-align: left;
+}
+.monitoring-widget__chol-shedule-cap .row [class*=col-]:last-child
+{
+    text-align: right;
+}
+.monitoring-widget__chol-shedule-cap-link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+}
+.monitoring-widget__chol-shedule-cap--active
+{
+    cursor: default;
+
+    color: #000 !important;
+}
+.monitoring-widget__chol-shedule-cap--add-value
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+}
 .tooltip-custom + .tooltip > .tooltip-inner
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -14244,6 +14264,25 @@ a:focus
     cursor: pointer;
 
     background: url('../img/tooltip-cross.png');
+}
+/* Widgets caps */
+.monitoring-cap
+{
+    margin-top: 90px;
+}
+.monitoring-cap__text
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+
+    margin-top: 35px;
+
+    color: rgba(0, 0, 0, .2);
+}
+.monitoring-cap__text--smaller
+{
+    font-size: 12px;
 }
 .sidebar-profile
 {
@@ -14395,21 +14434,10 @@ a:focus
 }
 .profile-widget
 {
-    min-height: 550px;
-
-    border-radius: 10px;
     /* В маленьких виджетах */
     border-radius: 12px;
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
-}
-.profile-widget--mini
-{
-    overflow: auto;
-
-    height: 435px;
-    min-height: 435px;
-    margin-bottom: 16px;
 }
 .profile-widget--middle
 {
@@ -16791,21 +16819,10 @@ input:after
 }
 .widget-notifications
 {
-    min-height: 550px;
-
-    border-radius: 10px;
     /* В маленьких виджетах */
     border-radius: 12px;
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
-}
-.widget-notifications--mini
-{
-    overflow: auto;
-
-    height: 435px;
-    min-height: 435px;
-    margin-bottom: 16px;
 }
 .widget-notifications--middle
 {
