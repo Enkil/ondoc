@@ -9299,7 +9299,8 @@ a:focus
     padding: 25px 0 18px;
 
     border-radius: 10px;
-    background: #32bec7;
+    background: -webkit-linear-gradient(310deg, #37d1cb, #20b3cd);
+    background:         linear-gradient(140deg, #37d1cb, #20b3cd);
 }
 .sidebar__avatar
 {
