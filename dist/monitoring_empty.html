@@ -620,16 +620,55 @@
                     </div>
                     <!-- / Mini widget -->
 
-                    <!-- Mini widget - No data for period -->
+                    <!-- Mini widget - Pulse no data (as example) -->
                     <div class="col-xs-12">
 
                         <div class="monitoring-widget">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--pulse" href="monitoring-in--pulse.html" title="Пульс">Пульс</a>
+                                <a class="monitoring-widget__add-btn" href="#" title="Добавить новое показание"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period tooltip-custom" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
 
                             <!-- Mini widget body -->
                             <div class="monitoring-widget__body">
 
                                 <!-- Monitoring widget cap -->
-                                <div class="row monitoring-cap">
+                                <div class="row monitoring-cap monitoring-cap--no-data">
 
                                     <div class="col-xs-36 text-center">
                                         <img src="img/icon-cap--period.png" alt=""/>
@@ -647,6 +686,344 @@
 
                             </div>
                             <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="115"/>
+                                        <p class="monitoring-widget__value-description">уд/мин</p>
+                                    </div>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Sugar no data -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--sugar" href="monitoring-in--sugar.html">Сахар</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Sugar shedule -->
+                            <div class="monitoring-widget__sugar-shedule">
+                                <div class="row">
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--sun"></p>
+                                        <p>Утром</p>
+                                    </div>
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--eat"></p>
+                                        <p>До еды</p>
+                                    </div>
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--food"></p>
+                                        <p>После еды</p>
+                                    </div>
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--moon"></p>
+                                        <p>Вечером</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Sugar shedule -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+
+                                <!-- Monitoring widget cap -->
+                                <div class="row monitoring-cap monitoring-cap--extra-filter">
+
+                                    <div class="col-xs-36 text-center">
+                                        <img src="img/icon-cap--period.png" alt=""/>
+                                    </div>
+
+                                    <div class="col-xs-36 text-center monitoring-cap__text">
+                                        <span>
+                                            Нет данных за <br/>
+                                            выбранный период
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <!-- / Monitoring widget cap-->
+
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- Sugar shedule -->
+                                <div class="monitoring-widget__sugar-shedule-cap monitoring-widget__sugar-shedule-cap--add-value">
+                                    <div class="row">
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--sun"></p>
+                                            <p>Утром</p>
+                                        </div>
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--eat"></p>
+                                            <p>До еды</p>
+                                        </div>
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--food"></p>
+                                            <p>После еды</p>
+                                        </div>
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--moon"></p>
+                                            <p>Вечером</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / Sugar shedule -->
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--sugar" type="text" value="4"/>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-comma">,</span>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--sugar" type="text" value="6"/>
+                                    </div>
+
+                                    <p class="monitoring-widget__value-description">ммоль/л</p>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Cholesterol no data-->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--cholesterol" href="monitoring-in--cholesterol.html">Холестерин</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- cholesterol shedule -->
+                            <div class="monitoring-widget__chol-shedule">
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href="#" class="js-chol-find monitoring-widget__chol-shedule-link monitoring-widget__chol-shedule--active">Общий</a>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ЛПНП</a>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ЛПВП</a>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ТГ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / cholesterol shedule -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+
+                                <!-- Monitoring widget cap -->
+                                <div class="row monitoring-cap monitoring-cap--extra-filter">
+
+                                    <div class="col-xs-36 text-center">
+                                        <img src="img/icon-cap--period.png" alt=""/>
+                                    </div>
+
+                                    <div class="col-xs-36 text-center monitoring-cap__text">
+                                        <span>
+                                            Нет данных за <br/>
+                                            выбранный период
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <!-- / Monitoring widget cap-->
+
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- cholesterol shedule -->
+                                <div class="monitoring-widget__chol-shedule-cap monitoring-widget__chol-cap-shedule--add-value">
+                                    <div class="row">
+                                        <div class="col-xs-9">
+                                            <a href="#" class="js-chol-find monitoring-widget__chol-shedule-cap-link monitoring-widget__chol-shedule-cap--active">Общий</a>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <a class="js-chol-find monitoring-widget__chol-shedule-cap-link" href="#">ЛПНП</a>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a class="js-chol-find monitoring-widget__chol-shedule-cap-link" href="#">ЛПВП</a>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <a class="js-chol-find monitoring-widget__chol-shedule-cap-link" href="#">ТГ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / cholesterol shedule -->
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--chol" type="text" value="3"/>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-comma">,</span>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--chol" type="text" value="4"/>
+                                    </div>
+
+                                    <p class="monitoring-widget__value-description"></p>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
 
                         </div>
 

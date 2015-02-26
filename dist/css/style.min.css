@@ -14260,6 +14260,14 @@ a:focus
 {
     margin-top: 90px;
 }
+.monitoring-cap--no-data
+{
+    margin-top: 28px;
+}
+.monitoring-cap--extra-filter
+{
+    margin-top: 10px;
+}
 .monitoring-cap__text
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
