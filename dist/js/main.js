@@ -13791,7 +13791,7 @@ $(document).ready(function(){
 	
 	$(".notifications-modal__close").click(function(event){
 		event.preventDefault();
-    	$(this).parent().parent().parent().parent().find(".notifications-modal").addClass("display-none");
+    	$(this).parent().parent().parent().parent().parent().parent().find(".notifications-modal").addClass("display-none");
     });
 
 
