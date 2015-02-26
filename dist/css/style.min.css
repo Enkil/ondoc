@@ -14282,6 +14282,69 @@ a:focus
 {
     font-size: 12px;
 }
+.monitoring-cap__pulse
+{
+    display: inline-block;
+
+    width: 72px;
+    height: 61px;
+
+    background: url('../img/icon-cap--pulse.png') no-repeat;
+}
+.monitoring-cap__pressure
+{
+    display: inline-block;
+
+    width: 73px;
+    height: 61px;
+
+    background: url('../img/icon-cap--pressure.png') no-repeat;
+}
+.monitoring-cap__weight
+{
+    display: inline-block;
+
+    width: 65px;
+    height: 61px;
+
+    background: url('../img/icon-cap--weight.png') no-repeat;
+}
+.monitoring-cap__sugar
+{
+    display: inline-block;
+
+    width: 50px;
+    height: 61px;
+
+    background: url('../img/icon-cap--sugar.png') no-repeat;
+}
+.monitoring-cap__temperature
+{
+    display: inline-block;
+
+    width: 66px;
+    height: 64px;
+
+    background: url('../img/icon-cap--temperature.png') no-repeat;
+}
+.monitoring-cap__cholesterol
+{
+    display: inline-block;
+
+    width: 44px;
+    height: 61px;
+
+    background: url('../img/icon-cap--cholesterol.png') no-repeat;
+}
+.monitoring-cap__no-data
+{
+    display: inline-block;
+
+    width: 67px;
+    height: 72px;
+
+    background: url('../img/icon-cap--period.png') no-repeat;
+}
 .sidebar-profile
 {
     padding: 0 0 18px;
