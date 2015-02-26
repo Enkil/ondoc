@@ -9046,7 +9046,7 @@ button.close
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .link-base:active
 {
@@ -9073,7 +9073,7 @@ a:hover
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 a:active
 {
@@ -9103,7 +9103,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .link-medium:active
 {
@@ -9355,7 +9355,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .sidebar__menu-link:active
 {
@@ -9498,7 +9498,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .content-header__sort-link:active
 {
@@ -9892,7 +9892,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-header__dropdown-item:active
 {
@@ -10005,7 +10005,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-consultation__link:active
 {
@@ -10212,7 +10212,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-right-head__link:active
 {
@@ -10320,7 +10320,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-pagination__show-by:active
 {
@@ -10392,7 +10392,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-pagination__dropdown-item:active
 {
@@ -10433,7 +10433,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-pagination__numeration-link:active
 {
@@ -11124,7 +11124,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .widget-btn:active
 {
@@ -12123,7 +12123,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .medcard-doctor__doc-name:active
 {
@@ -13258,7 +13258,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .medcard-clinic__clinic-name:active
 {
@@ -14328,7 +14328,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .sidebar-profile__menu-link:active
 {
@@ -15127,7 +15127,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .profile-img__logo-choose:active
 {
@@ -15260,7 +15260,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .user-data__sex:active
 {
@@ -15578,7 +15578,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .agreement-modal__btn:active
 {
@@ -15719,7 +15719,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .agreement-modal__btn--reject:active
 {
@@ -15774,7 +15774,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .agreement-modal__btn--accept:active,
 .agreement-modal__btn--decline:active
@@ -15830,7 +15830,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-link:active
 {
@@ -16088,7 +16088,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-link__save:active
 {
@@ -16157,7 +16157,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-link__proove:active
 {
@@ -16231,7 +16231,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-link__delete-profile:active
 {
@@ -16514,7 +16514,7 @@ input:after
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-modal__btn--cancel:active
 {
@@ -16584,7 +16584,7 @@ input:after
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-modal__btn--disconnect:active
 {
@@ -16653,7 +16653,7 @@ input:after
 {
     text-decoration: none;
 
-    color: #7ec6e0;
+    color: #7ec6e0 !important;
 }
 .security-modal__btn--proove:active
 {
@@ -20257,26 +20257,6 @@ html
 
     color: #5db7d8;
 }
-.ml-btn:hover
-{
-    text-decoration: none;
-
-    color: #7ec6e0;
-}
-.ml-btn:active
-{
-    text-decoration: none;
-
-    color: #5db7d8;
-    outline: none;
-}
-.ml-btn:focus
-{
-    text-decoration: none;
-
-    color: #5db7d8;
-    outline: none;
-}
 .ml-btn--big
 {
     display: inline-block;
@@ -20293,6 +20273,16 @@ html
 }
 .ml-btn--big:hover
 {
-    color: #5db7d8;
-    background-color: #fff;
+    color: #5db7d8 !important;
+    background-color: #fff !important;
+}
+.ml-btn--big:focus
+{
+    color: #fff;
+    background-color: #5db7d8;
+}
+.ml-btn--big:active
+{
+    color: #fff;
+    background-color: #5db7d8;
 }
