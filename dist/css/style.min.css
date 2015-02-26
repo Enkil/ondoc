@@ -21204,6 +21204,7 @@ input:after
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
 
     margin-top: 3px;
     padding: 0;
@@ -21306,12 +21307,16 @@ input:after
 }
 .notifications-delivery__title
 {
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+
     position: relative;
     z-index: 10;
 
     padding: 0 15px 0 15px;
 
     color: #8d8d8d;
+    outline: none!important;
     background-color: #fff;
 }
 .notifications-delivery__input
