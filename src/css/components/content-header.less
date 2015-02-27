@@ -1,19 +1,14 @@
+/* TODO: rewrite like on drugs page for every page witch use this*/
 // BLOCK -> Main content header with sorting links
 .content-header{
-  margin-top: 10px;
   margin-bottom: 30px;
 
   // Element -> Back link
   &__back{
     .gotham-m;
     font-size: 15px;
-    color: @blue-color;
-    transition: 0.2s ease all;
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-      text-decoration: none;
-    }
+    line-height: 35px;
+    display: inline-block;
 
     &:before{
       content: "";
@@ -30,11 +25,8 @@
   &__sort-link{
     .link-medium;
     font-size: 15px;
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-      text-decoration: none;
-    }
+    display: inline-block;
+    line-height: 35px;
 
     // modificator -> dropdown icon
     &--dropdown{

@@ -773,6 +773,19 @@
   left: 195px;
   top: -100px;
 
+  &--drugs{
+    left: 110px;
+    top: -550px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 550px!important;
+      border: 10px solid transparent; /* Прозрачные границы */
+      border-right: 10px solid @white-color; /* Добавляем треугольник */
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;

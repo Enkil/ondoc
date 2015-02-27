@@ -1,7 +1,7 @@
 // BLOCK -> Widget
 .widget{
   border-radius: 12px;
-  background: #fff;
+  background: @white-color;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
   // Element -> Left widget column with tabs list
@@ -101,6 +101,7 @@
 
 // BLOCK -> Doctor
 .widget-doctor{
+  margin-bottom: 15px;
 
   // Element -> Avatar
   &__img{
@@ -236,7 +237,7 @@
 
 // BLOCK -> Widget consultation
 .widget-consultation{
-  margin-top: 20px;
+//  margin-top: 20px;
   margin-bottom: 20px;
 
   // modificator -> with out margin
@@ -259,6 +260,7 @@
 
   // Element -> Line over consultation title
   &__line{
+    .text-center;
     position: relative;
     margin-bottom: 20px;
 

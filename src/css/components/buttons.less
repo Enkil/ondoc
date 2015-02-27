@@ -12,6 +12,8 @@
     border-radius: 13px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 14px;
     &:before{
       content: "";
@@ -29,17 +31,19 @@
     border-radius: 13px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 14px;
     color: @red-color;
     border: 1px solid @red-color;
     &:hover{
-      color: lighten(@red-color, 8);
+      color: lighten(@red-color, 8)!important;
     }
     &:active{
-      color: lighten(@red-color, 8);
+      color: lighten(@red-color, 8)!important;
     }
     &:focus{
-      color: lighten(@red-color, 8);
+      color: lighten(@red-color, 8)!important;
     }
     &:before{
       content: "";
@@ -53,7 +57,7 @@
   }
 
   &--plus{
-    line-height: 61px;
+    line-height: 60px;
     &:hover{ opacity: 0.6; }
     &:before{
       content: "";
