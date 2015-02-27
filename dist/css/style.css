@@ -19895,6 +19895,7 @@ a:focus
 }
 .security-link__delete-profile:hover
 {
+    color: #fff !important;
     background: #dc4531;
     background-image: url(../img/icon-trash-white.png);
     background-repeat: no-repeat;
