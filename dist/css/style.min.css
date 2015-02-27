@@ -9553,6 +9553,7 @@ a:focus
     padding: 0 38px 8px 30px;
 
     border-left: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
 }
 .widget__notes-img
 {
@@ -10946,6 +10947,7 @@ a:focus
     padding: 0 38px 8px 30px;
 
     border-left: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
 }
 .widget-security__notes-img
 {
@@ -15016,6 +15018,7 @@ a:focus
     padding: 0 38px 8px 30px;
 
     border-left: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
 }
 .profile-widget__notes-img
 {
@@ -17404,6 +17407,7 @@ input:after
     padding: 0 38px 8px 30px;
 
     border-left: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
 }
 .widget-notifications__notes-img
 {
@@ -18565,6 +18569,11 @@ form input[type='password']
     background: #fff;
 }
 /* container */
+.container-main
+{
+    width: 1200px;
+    margin: 0 auto;
+}
 .container-medium
 {
     width: 1030px;
@@ -18588,7 +18597,6 @@ form input[type='password']
     top: 0;
 
     width: 100%;
-    min-width: 1200px;
     padding: 13px 0;
 
     background: #fff;
@@ -20553,6 +20561,8 @@ form input[type='password']
 
     padding: 20px 15px 15px 20px;
 
+    cursor: pointer;
+
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 .drugs__tab:hover > .drugs__tab-title
@@ -20711,13 +20721,16 @@ form input[type='password']
     height: 35px;
     margin: 0;
 
-    cursor: pointer;
     text-transform: uppercase;
 
     color: #8d8d8d;
     border: 1px solid #ccc;
     border-radius: 100%;
     outline: none!important;
+}
+.drugs__drug-day--clickable
+{
+    cursor: pointer;
 }
 .drugs__drug-day--active
 {

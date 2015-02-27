@@ -154,6 +154,7 @@
     overflow: hidden;
     padding: 20px 15px 15px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
 
     &:hover > .drugs__tab-title{  color: @red-color;  }
 
@@ -282,7 +283,10 @@
     border: 1px solid @grey-color-6;
     border-radius: 100%;
     margin: 0;
-    cursor: pointer;
+
+    &--clickable{
+      cursor: pointer;
+    }
 
     &--active{
       border-color: @blue-color;
