@@ -21230,6 +21230,8 @@ input:after
 
     margin-top: 3px;
     padding: 0;
+
+    letter-spacing: -.02em;
 }
 .notifications-info__email
 {
@@ -21440,6 +21442,8 @@ input:after
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
 
     padding-top: 7px!important;
+
+    letter-spacing: -.013em;
 }
 .notifications-delivery__text
 {
