@@ -1114,16 +1114,16 @@ input[type='button']
 }
 .buttons-block .btn--check
 {
-    color: #2dd25f;
-    border-color: #2dd25f;
+    color: #2dd25f !important;
+    border-color: #2dd25f !important;
 }
 .buttons-block .btn--check:active
 {
-    color: #2dd25f;
+    color: #2dd25f !important;
 }
 .buttons-block .btn--check:focus
 {
-    color: #2dd25f;
+    color: #2dd25f !important;
 }
 .buttons-block .btn--check:before
 {
@@ -1133,8 +1133,8 @@ input[type='button']
 }
 .buttons-block .btn--check:hover
 {
-    color: #fff;
-    background-color: #2dd25f;
+    color: #fff !important;
+    background-color: #2dd25f !important;
 }
 .buttons-block .btn--check:hover:before
 {
@@ -1144,8 +1144,8 @@ input[type='button']
 {
     min-width: 200px;
 
-    color: #5db7d8;
-    border-color: #5db7d8;
+    color: #5db7d8 !important;
+    border-color: #5db7d8 !important;
 }
 .buttons-block .btn--record:before
 {
@@ -1153,28 +1153,28 @@ input[type='button']
 }
 .buttons-block .btn--record:hover
 {
-    color: #7ec6e0;
+    color: #fff !important;
 }
 .buttons-block .btn--record:active
 {
-    color: #5db7d8;
+    color: #5db7d8 !important;
 }
 .buttons-block .btn--record:focus
 {
-    color: #5db7d8;
+    color: #5db7d8 !important;
 }
 .buttons-block .btn--cancel
 {
-    color: #dc4531;
-    border-color: #dc4531;
+    color: #dc4531 !important;
+    border-color: #dc4531 !important;
 }
 .buttons-block .btn--cancel:active
 {
-    color: #dc4531;
+    color: #dc4531 !important;
 }
 .buttons-block .btn--cancel:focus
 {
-    color: #dc4531;
+    color: #dc4531 !important;
 }
 .buttons-block .btn--cancel:before
 {
@@ -1182,8 +1182,8 @@ input[type='button']
 }
 .buttons-block .btn--cancel:hover
 {
-    color: #fff;
-    background-color: #dc4531;
+    color: #fff !important;
+    background-color: #dc4531 !important;
 }
 .buttons-block .btn--cancel:hover:before
 {
@@ -20512,6 +20512,8 @@ form input[type='password']
 }
 .drugs__progress-bar
 {
+    overflow: hidden;
+
     width: 84%;
     height: 15px;
     margin: 0 auto;
@@ -20644,40 +20646,10 @@ form input[type='password']
 }
 .drugs__drug-time--config
 {
+    display: inline-block;
+
     margin: 0;
     margin-bottom: 20px;
-}
-.drugs__drug-time--config:before
-{
-    position: absolute;
-    top: 41px;
-    left: 255px;
-
-    display: inline-block;
-
-    width: 22px;
-    height: 22px;
-
-    content: '';
-    cursor: pointer;
-
-    background: url('../img/icon-drugs-time-config.png');
-}
-.drugs__drug-time--config:after
-{
-    position: absolute;
-    top: 41px;
-    right: 255px;
-
-    display: inline-block;
-
-    width: 22px;
-    height: 22px;
-
-    content: '';
-    cursor: pointer;
-
-    background: url('../img/icon-drugs-time-config--plus.png');
 }
 .drugs__drug-value
 {
@@ -20985,12 +20957,21 @@ form input[type='password']
 
     color: #000;
 }
+.drugs__dosage--dosage
+{
+    width: 120px;
+    margin: 10px 0;
+
+    text-align: center;
+
+    color: #000;
+}
 .drugs__dosage-popup
 {
     position: absolute;
     z-index: 100;
     top: 120px;
-    left: 140px;
+    left: 130px;
 
     padding: 15px;
     padding-bottom: 0;
@@ -21008,7 +20989,7 @@ form input[type='password']
 .drugs__dosage-popup--items
 {
     top: 132px;
-    right: 140px;
+    right: 130px;
     left: auto;
 }
 .drugs__dosage-popup:before
@@ -21056,4 +21037,30 @@ form input[type='password']
 
     color: #5db7d8;
     outline: none;
+}
+.drugs__time-plus
+{
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    background: url('../img/icon-drugs-time-config--plus.png') no-repeat;
+}
+.drugs__time-minus
+{
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    background: url('../img/icon-drugs-time-config.png') no-repeat;
 }

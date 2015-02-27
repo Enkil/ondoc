@@ -125,6 +125,7 @@
       height: 15px;
       margin: 0 auto;
       border-radius: 10px;
+      overflow: hidden;
       background: #e5e5e5;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
     }
@@ -231,30 +232,7 @@
     &--config{
       margin: 0;
       margin-bottom: 20px;
-
-      &:before{
-        content: '';
-        display: inline-block;
-        background: url("../img/icon-drugs-time-config.png");
-        width: 22px;
-        height: 22px;
-        position: absolute;
-        top: 41px;
-        left: 255px;
-        cursor: pointer;
-      }
-
-      &:after{
-        content: '';
-        display: inline-block;
-        background: url("../img/icon-drugs-time-config--plus.png");
-        width: 22px;
-        height: 22px;
-        position: absolute;
-        top: 41px;
-        right: 255px;
-        cursor: pointer;
-      }
+      display: inline-block;
     }
   }
 
@@ -443,13 +421,20 @@
       color: @black-color;
       width: 43px;
     }
+
+    &--dosage{
+      margin: 10px 0;
+      color: @black-color;
+      width: 120px;
+      text-align: center;
+    }
   }
 
   &__dosage-popup{
     position: absolute;
     z-index: 100;
     top: 120px;
-    left: 140px;
+    left: 130px;
     padding: 15px;
     padding-bottom: 0;
     cursor: default;
@@ -460,7 +445,7 @@
     box-shadow: 0 0 13px 2px @grey-color-2;
 
     &--items{
-      right: 140px;
+      right: 130px;
       left: auto;
       top: 132px;
     }
@@ -480,5 +465,25 @@
       line-height: 12px;
       cursor: pointer;
     }
+  }
+
+  &__time-plus{
+    background: url("../img/icon-drugs-time-config--plus.png") no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  &__time-minus{
+    background: url("../img/icon-drugs-time-config.png") no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px;
   }
 }
