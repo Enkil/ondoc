@@ -19284,6 +19284,8 @@ a:focus
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 16px;
+
+    margin-bottom: 4px;
 }
 .agreement-modal__text
 {
@@ -19369,7 +19371,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #fff;
+    color: #fff !important;
     background: #5db7d8;
 }
 .agreement-modal__btn--accept,
