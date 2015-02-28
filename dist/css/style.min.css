@@ -20960,6 +20960,58 @@ form input[type='password']
     border-radius: 4px;
     outline: none!important;
 }
+.drugs__dosage::-webkit-input-placeholder
+{
+    line-height: 30px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.drugs__dosage::-moz-placeholder
+{
+    line-height: 30px;
+
+    transition: line-height .5s ease;
+}
+.drugs__dosage:-ms-input-placeholder
+{
+    line-height: 30px;
+
+    transition: line-height .5s ease;
+}
+.drugs__dosage::placeholder
+{
+    line-height: 30px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.drugs__dosage:focus::-webkit-input-placeholder
+{
+    line-height: 150px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.drugs__dosage:focus::-moz-placeholder
+{
+    line-height: 150px;
+
+    transition: line-height .5s ease;
+}
+.drugs__dosage:focus:-ms-input-placeholder
+{
+    line-height: 150px;
+
+    transition: line-height .5s ease;
+}
+.drugs__dosage:focus::placeholder
+{
+    line-height: 150px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
 .drugs__dosage--time
 {
     width: 43px;
