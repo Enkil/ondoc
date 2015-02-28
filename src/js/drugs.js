@@ -39,12 +39,22 @@ $(document).ready(function() {
 
     $('.drugs__link--type').click(function(event){
         event.preventDefault();
-        $('.drugs__dosage-popup--types').toggleClass('display-none');
+        $(this).next().toggleClass('display-none');
     });
 
     $('.drugs__link--item').click(function(event){
         event.preventDefault();
-        $('.drugs__dosage-popup--items').toggleClass('display-none');
+        $(this).next().toggleClass('display-none');
+    });
+
+    $('.js__find-add-drug').click(function(event){
+        event.preventDefault();
+        $('.drugs__modal-wrapper').removeClass('display-none')
+    })
+
+    $('.drugs__modal-close').click(function(event){
+        event.preventDefault();
+        $('.drugs__modal-wrapper').addClass('display-none')
     });
 
 });

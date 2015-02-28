@@ -20674,14 +20674,13 @@ form input[type='password']
 
     display: inline-block;
 
-    width: 50px;
-
     color: #8d8d8d;
     outline: none!important;
 }
 .drugs__drug-value--input
 {
-    width: 85px;
+    width: 66px;
+    margin: 0 0 0 10px;
 }
 .drugs__drug-value-line
 {
@@ -20689,8 +20688,9 @@ form input[type='password']
 
     display: inline-block;
 
-    width: 40px;
+    width: 20px;
     height: 21px;
+    margin-left: 10px;
 
     vertical-align: middle;
 }
@@ -21056,6 +21056,16 @@ form input[type='password']
     background: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
 }
+.drugs__dosage-popup--modal-types
+{
+    left: 75px;
+}
+.drugs__dosage-popup--modal-items
+{
+    top: 132px;
+    right: 75px;
+    left: auto;
+}
 .drugs__dosage-popup--items
 {
     top: 132px;
@@ -21133,4 +21143,62 @@ form input[type='password']
     vertical-align: middle;
 
     background: url('../img/icon-drugs-time-config.png') no-repeat;
+}
+.drugs__modal-wrapper
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .6);
+}
+.drugs__modal-content
+{
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 570px;
+    height: 700px;
+    margin: auto;
+
+    border-radius: 6px;
+    background-color: #fff;
+}
+.drugs__modal-close
+{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    background: url(../img/icon-modal-close.png) no-repeat;
+}
+.drugs__modal-close:hover
+{
+    opacity: .7;
+}
+.drugs__modal-body
+{
+    overflow-y: scroll;
+
+    height: 635px;
+    padding: 0 38px 8px 30px;
 }
