@@ -158,16 +158,12 @@
 
     &:hover > .drugs__tab-title{  color: @red-color;  }
 
-    &:after{
+    &-img{
       position: absolute;
-      top: 50%;
+      top: calc(~'50% - 12px');
       right: 10%;
-      display: inline-block;
       width: 24px;
       height: 24px;
-      content: '';
-      transform: translateY(-50%);
-      background: url(../img/time-icons.png) no-repeat;
     }
 
     &--fulltime{

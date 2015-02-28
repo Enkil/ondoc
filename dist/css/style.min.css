@@ -20575,23 +20575,14 @@ form input[type='password']
 {
     color: #dc4531;
 }
-.drugs__tab:after
+.drugs__tab-img
 {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 12px);
     right: 10%;
-
-    display: inline-block;
 
     width: 24px;
     height: 24px;
-
-    content: '';
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-
-    background: url(../img/time-icons.png) no-repeat;
 }
 .drugs__tab--fulltime:after
 {
