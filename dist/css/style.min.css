@@ -13700,6 +13700,19 @@ Widgets
 
     background: url(../img/icon-consultations.png) no-repeat;
 }
+.medcard-widget__title--survey:before
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-survey.png) no-repeat;
+}
 .medcard-widget__body
 {
     overflow-y: scroll;
