@@ -9043,7 +9043,7 @@ button.close
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .link-base:active
 {
@@ -9070,7 +9070,7 @@ a:hover
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 a:active
 {
@@ -9100,7 +9100,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .link-medium:active
 {
@@ -9349,7 +9349,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .sidebar__menu-link:active
 {
@@ -9487,7 +9487,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .content-header__sort-link:active
 {
@@ -9502,6 +9502,10 @@ a:focus
 
     color: #5db7d8;
     outline: none;
+}
+.content-header__sort-link:hover
+{
+    color: #7ec6e0;
 }
 .content-header__sort-link--dropdown
 {
@@ -9719,6 +9723,10 @@ a:focus
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 }
+.widget-doctor__name:hover
+{
+    color: #7ec6e0;
+}
 .widget-doctor__clinic
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -9879,7 +9887,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-header__dropdown-item:active
 {
@@ -9993,7 +10001,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-consultation__link:active
 {
@@ -10200,7 +10208,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-right-head__link:active
 {
@@ -10308,7 +10316,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-pagination__show-by:active
 {
@@ -10380,7 +10388,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-pagination__dropdown-item:active
 {
@@ -10421,7 +10429,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-pagination__numeration-link:active
 {
@@ -11112,7 +11120,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .widget-btn:active
 {
@@ -12117,7 +12125,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .medcard-doctor__doc-name:active
 {
@@ -13270,7 +13278,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .medcard-clinic__clinic-name:active
 {
@@ -14411,7 +14419,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .sidebar-profile__menu-link:active
 {
@@ -15210,7 +15218,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .profile-img__logo-choose:active
 {
@@ -15343,7 +15351,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .user-data__sex:active
 {
@@ -15661,7 +15669,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .agreement-modal__btn:active
 {
@@ -15804,7 +15812,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .agreement-modal__btn--reject:active
 {
@@ -15859,7 +15867,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .agreement-modal__btn--accept:active,
 .agreement-modal__btn--decline:active
@@ -15915,7 +15923,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-link:active
 {
@@ -16173,7 +16181,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-link__save:active
 {
@@ -16242,7 +16250,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-link__proove:active
 {
@@ -16316,7 +16324,7 @@ a:focus
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-link__delete-profile:active
 {
@@ -16600,7 +16608,7 @@ input:after
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-modal__btn--cancel:active
 {
@@ -16670,7 +16678,7 @@ input:after
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-modal__btn--disconnect:active
 {
@@ -16739,7 +16747,7 @@ input:after
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .security-modal__btn--proove:active
 {
@@ -21084,7 +21092,7 @@ form input[type='password']
 {
     text-decoration: none;
 
-    color: #7ec6e0 !important;
+    color: #7ec6e0;
 }
 .drugs__dosage-popup-item:active
 {
