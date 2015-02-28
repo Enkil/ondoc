@@ -630,6 +630,8 @@
       border-bottom: 1px solid @grey-color-2;
       bottom: -15px;
       width: 100%;
+      margin-left: 8px;
+      margin-right: 8px;
     }
   }
 
@@ -1420,5 +1422,63 @@
       color: @white-color;
       background-color: @blue-color;
     }
+  }
+}
+
+
+/*
+Widgets
+*/
+
+.medcard-widget{
+  height: 435px;
+  background: @white-color;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 0px @grey-color-2;
+  margin-bottom: 16px;
+  position: relative;
+
+  &__header{
+    .bottom-line-grey;
+    text-align: center;
+    padding: 14px 50px 11px;
+    position: relative;
+  }
+
+  &__title{
+    .gotham-m;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    word-break: break-all;
+    text-align: center;
+
+    &--consultations{
+      &:before{
+        content: '';
+        display: inline-block;
+        margin-right: 6px;
+        width: 15px;
+        height: 22px;
+        vertical-align: middle;
+        background: url(../img/icon-consultations.png) no-repeat;
+      }
+    }
+  }
+
+  &__body{
+    height: 390px;
+    overflow-y: scroll;
+  }
+
+  &__add-btn{
+    position: absolute;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    right: 7px;
+    top: 8px;
+    background: url("../img/icon-plus.png") no-repeat;
+    &:hover{ opacity: 0.6; }
   }
 }
