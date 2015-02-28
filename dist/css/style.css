@@ -9530,8 +9530,6 @@ a:focus
 }
 .content-header__sort-link--dropdown
 {
-    width: 70px;
-
     cursor: pointer;
 }
 .content-header__sort-link--dropdown:after
