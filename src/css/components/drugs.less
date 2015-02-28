@@ -112,6 +112,10 @@
     &--smaller{
       color: @grey-color;
     }
+
+    &--medcard-widget{
+      line-height: 45px;
+    }
   }
 
   &__progress{
@@ -119,6 +123,12 @@
     width: 290px;
     padding: 10px 0;
     vertical-align: middle;
+
+    &--medcard-widget{
+      padding: 0;
+      width: 260px;
+      line-height: 15px;
+    }
 
     &-bar{
       width: 84%;
@@ -128,6 +138,11 @@
       overflow: hidden;
       background: #e5e5e5;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
+
+      &--medcard-widget{
+        display: inline-block;
+        width: 100%;
+      }
     }
 
     &-percents{

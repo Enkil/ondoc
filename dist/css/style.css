@@ -13675,6 +13675,14 @@ Widgets
 
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
+.medcard-widget__subheader
+{
+    padding: 0 20px 11px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
 .medcard-widget__title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -13713,11 +13721,28 @@ Widgets
 
     background: url(../img/icon-survey.png) no-repeat;
 }
+.medcard-widget__title--drugs:before
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-drugs.png) no-repeat;
+}
 .medcard-widget__body
 {
     overflow-y: scroll;
 
     height: 390px;
+}
+.medcard-widget__body--drugs
+{
+    height: 310px;
 }
 .medcard-widget__add-btn
 {
@@ -20641,6 +20666,10 @@ form input[type='password']
 {
     color: #8d8d8d;
 }
+.drugs__days--medcard-widget
+{
+    line-height: 45px;
+}
 .drugs__progress
 {
     display: inline-block;
@@ -20649,6 +20678,13 @@ form input[type='password']
     padding: 10px 0;
 
     vertical-align: middle;
+}
+.drugs__progress--medcard-widget
+{
+    line-height: 15px;
+
+    width: 260px;
+    padding: 0;
 }
 .drugs__progress-bar
 {
@@ -20661,6 +20697,12 @@ form input[type='password']
     border-radius: 10px;
     background: #e5e5e5;
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+.drugs__progress-bar--medcard-widget
+{
+    display: inline-block;
+
+    width: 100%;
 }
 .drugs__progress-percents
 {

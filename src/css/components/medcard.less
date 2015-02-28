@@ -1445,6 +1445,12 @@ Widgets
     position: relative;
   }
 
+  &__subheader{
+    .text-center;
+    .bottom-line-grey;
+    padding: 0 20px 11px;
+  }
+
   &__title{
     .gotham-m;
     font-size: 14px;
@@ -1477,11 +1483,26 @@ Widgets
       }
     }
 
+    &--drugs{
+      &:before{
+        content: '';
+        display: inline-block;
+        margin-right: 6px;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        background: url(../img/icon-drugs.png) no-repeat;
+      }
+    }
   }
 
   &__body{
     height: 390px;
     overflow-y: scroll;
+
+    &--drugs{
+      height: 310px;
+    }
   }
 
   &__add-btn{
