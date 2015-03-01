@@ -13746,10 +13746,38 @@ $(document).ready(function(){
 	
 	$(".agreement-modal__close, .agreement-modal__btn--reject").click(function(event){
 		event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().parent().find(".agreement-modal").addClass("display-none");
+    	$(this).parent().parent().parent().parent().parent().parent()
+    	.find(".agreement-modal").addClass("display-none");
     });
 
 
+    // lets close feedback modal
+	
+	$(".feedback-modal__close").click(function(event){
+		event.preventDefault();
+    	$(this).parent().parent().parent().parent().parent().parent()
+    	.find(".feedback-modal")
+    	.addClass("display-none");
+    });
+
+
+    // lets open thank you text
+	
+	$(".feedback-modal__btn--send").click(function(event){
+		event.preventDefault();
+    	$(this).parent().parent()
+    	.find(".feedback-modal__contact")
+    	.addClass("display-none")
+    	.parent().parent()
+    	.find(".feedback-modal__success")
+    	.removeClass("display-none")
+    	.parent().parent().parent().parent()
+    	.find(".feedback-modal")
+    	.fadeOut(3000);
+    	
+    });
+
+  
 }); 
 $(document).ready(function() {
 
@@ -13764,7 +13792,9 @@ $(document).ready(function() {
 
     $(".security-modal__close, .security-modal__btn--cancel").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().find(".security-modal").addClass("display-none");
+    	$(this).parent().parent().parent().parent().parent()
+        .find(".security-modal")
+        .addClass("display-none");
     });
 
 
@@ -13772,7 +13802,9 @@ $(document).ready(function() {
 
     $(".security-email__delete").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().find(".security-modal__email-disconnect").removeClass("display-none");
+    	$(this).parent().parent().parent()
+        .find(".security-modal__email-disconnect")
+        .removeClass("display-none");
     });
 
 
@@ -13780,7 +13812,13 @@ $(document).ready(function() {
 
     $(".security-modal__btn--disconnect").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().find(".security-modal__email-disconnect").addClass("display-none").parent().parent().parent().parent().parent().find(".security-modal__email-success").removeClass("display-none").fadeOut(3000);
+    	$(this).parent().parent().parent().parent().parent()
+        .find(".security-modal__email-disconnect")
+        .addClass("display-none")
+        .parent().parent().parent().parent().parent()
+        .find(".security-modal__email-success")
+        .removeClass("display-none")
+        .fadeOut(3000);
     });
 
 
@@ -13788,7 +13826,10 @@ $(document).ready(function() {
 
     $(".security-link__save--email").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().find(".security-modal__email-success").removeClass("display-none").fadeOut(3000);
+    	$(this).parent().parent().parent().parent().parent()
+        .find(".security-modal__email-success")
+        .removeClass("display-none")
+        .fadeOut(3000);
     });
 
 
@@ -13796,7 +13837,10 @@ $(document).ready(function() {
 
     $(".security-link__save--telephone").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().find(".security-modal__telephone-success").removeClass("display-none").fadeOut(3000);
+    	$(this).parent().parent().parent().parent().parent()
+        .find(".security-modal__telephone-success")
+        .removeClass("display-none")
+        .fadeOut(3000);
     });
 
 
@@ -13804,14 +13848,21 @@ $(document).ready(function() {
 
     $(".security-link__proove-telephone").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().find(".security-modal__telephone-proove").removeClass("display-none");
+    	$(this).parent().parent().parent().parent().parent()
+        .find(".security-modal__telephone-proove")
+        .removeClass("display-none");
     });
 
     // ... and then show success modal
 
     $(".security-modal__telephone-proove .security-modal__btn--proove").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().parent().parent().find(".security-modal__telephone-proove").addClass("display-none").parent().parent().parent().parent().parent().find(".security-modal__telephone-success").removeClass("display-none").fadeOut(3000);
+    	$(this).parent().parent().parent().parent().parent().parent().parent()
+        .find(".security-modal__telephone-proove")
+        .addClass("display-none").parent().parent().parent().parent().parent()
+        .find(".security-modal__telephone-success")
+        .removeClass("display-none")
+        .fadeOut(3000);
     });    
 
    
