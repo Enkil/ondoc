@@ -13898,6 +13898,12 @@ Widgets
 
     background: url('../img/icon-medcard-notes-cap.png') no-repeat;
 }
+.medcard-widget__cap-img--process
+{
+    width: 59px;
+
+    background: url('../img/icon-medcard-process-cap.png') no-repeat;
+}
 .medcard-widget__cap-text
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
