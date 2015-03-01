@@ -1547,6 +1547,16 @@ Widgets
     &--drugs{
       height: 305px;
     }
+
+    &--cap{
+      .text-center;
+      padding: 120px 25px 20px 25px;
+    }
+
+    &--cap-smaller{
+      .text-center;
+      padding: 80px 25px 20px 25px;
+    }
   }
 
   &__ticket{
@@ -1592,5 +1602,36 @@ Widgets
     top: 8px;
     background: url("../img/icon-plus.png") no-repeat;
     &:hover{ opacity: 0.6; }
+  }
+  
+  &__cap-img{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 35px;
+
+    &--consultation{
+      width: 42px;
+      background: url("../img/icon-medcard-consultation-cap.png") no-repeat;
+    }
+    &--survey{
+      width: 56px;
+      background: url("../img/icon-medcard-survey-cap.png") no-repeat;
+    }
+    &--immun{
+      width: 56px;
+      background: url("../img/icon-medcard-immun-cap.png") no-repeat;
+    }
+    &--notes{
+      width: 56px;
+      background: url("../img/icon-medcard-notes-cap.png") no-repeat;
+    }
+  }
+
+  &__cap-text{
+    .gotham-m;
+    font-size: 14px;
+    color: @grey-color-2;
+    letter-spacing: -1px;
   }
 }
