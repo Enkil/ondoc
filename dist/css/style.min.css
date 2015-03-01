@@ -21221,6 +21221,12 @@ form input[type='password']
 
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
+.drugs__tab--medcard-widget
+{
+    background-image: url(../img/list-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
 .drugs__tab:hover > .drugs__tab-title
 {
     color: #dc4531;
@@ -21229,7 +21235,7 @@ form input[type='password']
 {
     position: absolute;
     top: calc(50% - 12px);
-    right: 10%;
+    right: 15%;
 
     width: 24px;
     height: 24px;

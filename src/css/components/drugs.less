@@ -171,12 +171,18 @@
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     cursor: pointer;
 
+    &--medcard-widget{
+      background-image: url(../img/list-arrow.png);
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+    }
+
     &:hover > .drugs__tab-title{  color: @red-color;  }
 
     &-img{
       position: absolute;
       top: calc(~'50% - 12px');
-      right: 10%;
+      right: 15%;
       width: 24px;
       height: 24px;
     }
