@@ -20011,8 +20011,8 @@ Widgets
 }
 .security-link__save:focus
 {
-    color: #fff;
-    background: #5db7d8;
+    color: #5db7d8;
+    background: #fff;
 }
 .security-link__proove
 {
@@ -20080,8 +20080,8 @@ Widgets
 }
 .security-link__proove:focus
 {
-    color: #fff;
-    background: #ea900f;
+    color: #ea900f;
+    background: #fff;
 }
 .security-link__delete-profile
 {
@@ -20158,8 +20158,8 @@ Widgets
 }
 .security-link__delete-profile:focus
 {
-    color: #fff;
-    background: #dc4531;
+    color: #dc4531;
+    background: #fff;
 }
 .security-authorisation
 {
