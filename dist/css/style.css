@@ -13738,6 +13738,10 @@ Widgets
 
     background: url(../img/icon-drugs.png) no-repeat;
 }
+.medcard-widget__title--processing
+{
+    word-break: normal;
+}
 .medcard-widget__title--processing:before
 {
     display: inline-block;
