@@ -13665,6 +13665,10 @@ Widgets
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
 }
+.medcard-widget--smaller
+{
+    height: 355px;
+}
 .medcard-widget__header
 {
     position: relative;
@@ -13734,15 +13738,78 @@ Widgets
 
     background: url(../img/icon-drugs.png) no-repeat;
 }
+.medcard-widget__title--processing:before
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-processing.png) no-repeat;
+}
 .medcard-widget__body
 {
     overflow-y: scroll;
 
     height: 390px;
 }
+.medcard-widget__body--smaller
+{
+    height: 305px;
+}
 .medcard-widget__body--drugs
 {
     height: 310px;
+}
+.medcard-widget__ticket
+{
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+
+    letter-spacing: -.2px;
+    word-break: break-all;
+
+    outline: none!important;
+}
+.medcard-widget__ticket--rejected
+{
+    color: #dc4531;
+}
+.medcard-widget__ticket--rejected:before
+{
+    display: inline-block;
+
+    width: 14px;
+    height: 14px;
+    padding-right: 18px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-ticket-rejected.png) no-repeat;
+}
+.medcard-widget__ticket--process
+{
+    color: #ea900f;
+}
+.medcard-widget__ticket--process:before
+{
+    display: inline-block;
+
+    width: 14px;
+    height: 14px;
+    padding-right: 18px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-ticket-process.png) no-repeat;
 }
 .medcard-widget__add-btn
 {
