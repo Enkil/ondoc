@@ -168,3 +168,30 @@
   }
 }
 
+/* NEW BUTTONS */
+/* TODO: rework old needed. btns must be moere independent*/
+
+.widgets-btn{
+  .gotham-m;
+  .link-base;
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  touch-action: manipulation;
+
+  &--plus{
+    &:hover{ opacity: 0.6; }
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+      vertical-align: middle;
+      margin-right: 15px;
+      background: url('../img/icon-btn-plus.png') no-repeat;
+    }
+  }
+}

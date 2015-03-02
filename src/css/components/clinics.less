@@ -1,0 +1,468 @@
+.clinics{
+
+  &__header{
+    margin-bottom: 15px;
+  }
+
+  &__head-link{
+    .gotham-m;
+    font-size: 15px;
+    line-height: 35px;
+    display: inline-block;
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 20px;
+
+    &--docs{
+      &:before{
+        content: "";
+        width: 18px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-docs--blue.png") no-repeat;
+      }
+    }
+
+    &--clinics {
+      &:before {
+        content: "";
+        width: 19px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics--blue.png") no-repeat;
+      }
+    }
+
+    &--list{
+      padding: 0;
+      background-color: transparent!important;
+
+      &:hover{
+        background-color: transparent!important;
+      }
+
+      &:before {
+        content: "";
+        width: 19px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-list.png") no-repeat;
+      }
+    }
+
+    &--onmap{
+      padding: 0;
+      background-color: transparent!important;
+
+      &:hover{
+        background-color: transparent!important;
+      }
+
+      &:before {
+        content: "";
+        width: 19px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-onmap--grey.png") no-repeat;
+      }
+    }
+
+    &--all{
+      &:before {
+        content: "";
+        width: 23px;
+        height: 22px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics-all--blue.png") no-repeat;
+      }
+    }
+
+    &--my{
+      &:before {
+        content: "";
+        width: 24px;
+        height: 22px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics-my--blue.png") no-repeat;
+      }
+    }
+
+    &--fave{
+      &:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics-fave--blue.png") no-repeat;
+      }
+    }
+
+    &--active{
+      color: @white-color;
+      background-color: @blue-color;
+
+      &.clinics__head-link--docs:before{
+        background-image: url("../img/icon-docs--white.png");
+      }
+
+      &.clinics__head-link--clinics:before{
+        background-image: url("../img/icon-clinics--white.png");
+      }
+
+      &.clinics__head-link--list:before{
+        background-image: url("../img/icon-list--blue.png");
+      }
+
+      &.clinics__head-link--onmap:before{
+        background-image: url("../img/icon-onmap--blue.png");
+      }
+
+      &.clinics__head-link--all:before{
+        background-image: url("../img/icon-clinics-all--white.png");
+      }
+
+      &.clinics__head-link--my:before{
+        background-image: url("../img/icon-clinics-my--white.png");
+      }
+
+      &.clinics__head-link--fave:before{
+        background-image: url("../img/icon-clinics-fave--white.png");
+      }
+    }
+
+    &:hover {
+      color: @white-color;
+      background-color: @blue-color;
+
+      &.clinics__head-link--docs:before{
+        background-image: url("../img/icon-docs--white.png");
+      }
+
+      &.clinics__head-link--clinics:before{
+        background-image: url("../img/icon-clinics--white.png");
+      }
+
+      &.clinics__head-link--list:before{
+        background-image: url("../img/icon-list--blue.png");
+      }
+
+      &.clinics__head-link--onmap:before{
+        background-image: url("../img/icon-onmap--blue.png");
+      }
+
+      &.clinics__head-link--all:before{
+        background-image: url("../img/icon-clinics-all--white.png");
+      }
+
+      &.clinics__head-link--my:before{
+        background-image: url("../img/icon-clinics-my--white.png");
+      }
+
+      &.clinics__head-link--fave:before{
+        background-image: url("../img/icon-clinics-fave--white.png");
+      }
+    }
+
+    &--filter{
+      .arrow-down;
+
+      &:before{
+        content: "";
+        width: 10px;
+        height: 12px;
+        padding-right: 16px;
+        display: inline-block;
+        background: url("../img/icon-filter.png") no-repeat;
+      }
+
+      &:hover{
+        color: lighten(@blue-color, 8);
+      }
+    }
+  }
+
+  &__search{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/icon-search--blue.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &__search-input{
+    .gotham;
+    .placeholder-effect(30px);
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 15px;
+    display: inline-block;
+    background-color: @white-color;
+    height: 33px;
+    border: 1px solid @grey-color-2;
+    border-radius: 14px;
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat;
+    background-position: 8px 50%;
+  }
+
+  &__widget-header{
+    .bottom-line-grey;
+    height: 60px;
+    padding-top: 12px;
+  }
+
+  &__tab {
+    .bottom-line-grey;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 15px 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+
+    &:hover .clinics__tab-title{  color: @red-color;  }
+
+    &--active{
+      background-color: @lightblue-bg;
+    }
+
+    &-ondocked{
+      position: absolute;
+      top: 30px;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: url('../img/icon-doc--ondocked.png') no-repeat;
+    }
+  }
+
+  &__tab-title{
+    .gotham-m;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+    word-break: break-all;
+  }
+
+  &__tab-img{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid @grey-color-2;
+    border-radius: 50%;
+    background-color: @white-color;
+
+    position: relative;
+
+    img{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+  }
+
+  &__enroll-link{
+    .gotham-m;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid @blue-color;
+    border-radius: 14px;
+    display: inline-block;
+    margin: 15px 0 4px 0;
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 14px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icon-doc-enroll.png") no-repeat;
+    }
+  }
+
+  &__avatar{
+    position: relative;
+    width: 103px;
+    height: 103px;
+    border: 1px solid @grey-color-2;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-bottom: 25px;
+
+    img{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    &-ondocked{
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: url('../img/icon-doc--ondocked.png') no-repeat;
+    }
+  }
+
+  &__name{
+    .gotham-m;
+    font-size: 20px;
+    color: @black-color;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  &__star{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('../img/icon-star--unchecked.png') no-repeat;
+
+    &:hover{
+      background: url('../img/icon-star.png') no-repeat;
+    }
+  }
+
+  &__specs-link{
+    .gotham-m;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icon-clinic-specs.png") no-repeat;
+    }
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__docs-link{
+    .gotham-m;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 14px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icon-doc-enroll.png") no-repeat;
+    }
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__info{
+    .gotham;
+    font-size: 14px;
+    color: @grey-color-2;
+    display: block;
+    word-break: break-all;
+
+    &--checked{
+      .gotham-m;
+      color: @black-color;
+    }
+
+    &:before{
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 5px;
+      content: '';
+      vertical-align: middle;
+    }
+
+    &--mappin{
+      &:before{
+        background: url('../img/icon-map-pin.png') no-repeat;
+      }
+    }
+
+    &--worktime{
+      &:before{
+        background: url('../img/icon-worktime.png') no-repeat;
+      }
+    }
+
+    &--subway{
+      &:before{
+        background: url('../img/icon-doc-subway.png') no-repeat;
+      }
+    }
+  }
+
+  &__ondoc-support{
+    .gotham;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: @grey-color-2;
+
+    &:before{
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-doc--ondocked.png);
+    }
+  }
+}
