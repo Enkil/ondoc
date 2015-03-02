@@ -21972,6 +21972,7 @@ form input[type='password']
 .clinics__head-link--list
 {
     padding: 0;
+    padding-left: 12px;
 
     background-color: transparent!important;
 }
