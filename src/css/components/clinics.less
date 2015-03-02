@@ -115,6 +115,11 @@
       color: @white-color;
       background-color: @blue-color;
 
+      &:active, &:focus{
+        color: @white-color;
+        background-color: @blue-color;
+      }
+
       &.clinics__head-link--docs:before{
         background-image: url("../img/icon-docs--white.png");
       }
@@ -232,7 +237,7 @@
     .bottom-line-grey;
     position: relative;
     overflow: hidden;
-    padding: 20px 15px 0 20px;
+    padding: 20px 15px 8px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     cursor: pointer;
 
@@ -257,7 +262,7 @@
 
   &__tab-title{
     .gotham-m;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     margin-bottom: 10px;
     word-break: break-all;
@@ -426,6 +431,47 @@
       width: 12px;
       height: 11px;
       margin-right: 5px;
+      content: '';
+      vertical-align: middle;
+    }
+
+    &--mappin{
+      &:before{
+        background: url('../img/icon-map-pin.png') no-repeat;
+      }
+    }
+
+    &--worktime{
+      &:before{
+        background: url('../img/icon-worktime.png') no-repeat;
+      }
+    }
+
+    &--subway{
+      &:before{
+        background: url('../img/icon-doc-subway.png') no-repeat;
+      }
+    }
+  }
+
+  &__tab-info{
+    .gotham;
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: @grey-color-2;
+    display: block;
+    word-break: break-all;
+
+    &--checked{
+      .gotham-m;
+      color: @black-color;
+    }
+
+    &:before{
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 4px;
       content: '';
       vertical-align: middle;
     }

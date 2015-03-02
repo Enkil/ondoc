@@ -22059,6 +22059,12 @@ form input[type='password']
     color: #fff;
     background-color: #5db7d8;
 }
+.clinics__head-link--active:active,
+.clinics__head-link--active:focus
+{
+    color: #fff;
+    background-color: #5db7d8;
+}
 .clinics__head-link--active.clinics__head-link--docs:before
 {
     background-image: url('../img/icon-docs--white.png');
@@ -22247,7 +22253,7 @@ form input[type='password']
 
     overflow: hidden;
 
-    padding: 20px 15px 0 20px;
+    padding: 20px 15px 8px 20px;
 
     cursor: pointer;
 
@@ -22280,7 +22286,7 @@ form input[type='password']
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 
     margin: 0;
     margin-bottom: 10px;
@@ -22511,6 +22517,51 @@ form input[type='password']
     background: url('../img/icon-worktime.png') no-repeat;
 }
 .clinics__info--subway:before
+{
+    background: url('../img/icon-doc-subway.png') no-repeat;
+}
+.clinics__tab-info
+{
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 11px;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    word-break: break-all;
+
+    color: rgba(0, 0, 0, .2);
+    outline: none!important;
+}
+.clinics__tab-info--checked
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+
+    color: #000;
+}
+.clinics__tab-info:before
+{
+    display: inline-block;
+
+    width: 12px;
+    height: 11px;
+    margin-right: 4px;
+
+    content: '';
+    vertical-align: middle;
+}
+.clinics__tab-info--mappin:before
+{
+    background: url('../img/icon-map-pin.png') no-repeat;
+}
+.clinics__tab-info--worktime:before
+{
+    background: url('../img/icon-worktime.png') no-repeat;
+}
+.clinics__tab-info--subway:before
 {
     background: url('../img/icon-doc-subway.png') no-repeat;
 }
