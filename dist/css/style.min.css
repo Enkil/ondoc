@@ -9869,6 +9869,10 @@ a:focus
 {
     background: url(../img/icon-temperature.png) no-repeat;
 }
+.widget-header__icon--height:before
+{
+    background: url(../img/icon-height.png) no-repeat;
+}
 .widget-header__dropdown
 {
     line-height: 22px;
@@ -14107,6 +14111,19 @@ Widgets
     vertical-align: middle;
 
     background: url(../img/icon-cholesterol--blue.png) no-repeat;
+}
+.monitoring-widget__title--height:before
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-height--blue.png) no-repeat;
 }
 .monitoring-widget__buttons
 {
