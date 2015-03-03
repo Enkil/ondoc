@@ -1,10 +1,10 @@
-.clinics{
+.docs {
 
-  &__header{
+  &__header {
     margin-bottom: 15px;
   }
 
-  &__head-link{
+  &__head-link {
     .gotham-m;
     font-size: 15px;
     line-height: 35px;
@@ -13,8 +13,8 @@
     padding-right: 15px;
     padding-left: 20px;
 
-    &--docs{
-      &:before{
+    &--docs {
+      &:before {
         content: "";
         width: 18px;
         height: 21px;
@@ -37,13 +37,13 @@
       }
     }
 
-    &--list{
+    &--list {
       padding: 0;
       padding-left: 12px;
-      background-color: transparent!important;
+      background-color: transparent !important;
 
-      &:hover{
-        background-color: transparent!important;
+      &:hover {
+        background-color: transparent !important;
       }
 
       &:before {
@@ -57,12 +57,12 @@
       }
     }
 
-    &--onmap{
+    &--onmap {
       padding: 0;
-      background-color: transparent!important;
+      background-color: transparent !important;
 
-      &:hover{
-        background-color: transparent!important;
+      &:hover {
+        background-color: transparent !important;
       }
 
       &:before {
@@ -76,7 +76,7 @@
       }
     }
 
-    &--all{
+    &--all {
       &:before {
         content: "";
         width: 23px;
@@ -84,11 +84,11 @@
         margin-right: 8px;
         display: inline-block;
         vertical-align: middle;
-        background: url("../img/icon-clinics-all--blue.png") no-repeat;
+        background: url("../img/icon-docs--blue.png") no-repeat;
       }
     }
 
-    &--my{
+    &--my {
       &:before {
         content: "";
         width: 24px;
@@ -96,11 +96,11 @@
         margin-right: 8px;
         display: inline-block;
         vertical-align: middle;
-        background: url("../img/icon-clinics-my--blue.png") no-repeat;
+        background: url("../img/icon-docs-my--blue.png") no-repeat;
       }
     }
 
-    &--fave{
+    &--fave {
       &:before {
         content: "";
         width: 20px;
@@ -112,40 +112,40 @@
       }
     }
 
-    &--active{
+    &--active {
       color: @white-color;
       background-color: @blue-color;
 
-      &:active, &:focus{
+      &:active, &:focus {
         color: @white-color;
         background-color: @blue-color;
       }
 
-      &.clinics__head-link--docs:before{
+      &.docs__head-link--docs:before {
         background-image: url("../img/icon-docs--white.png");
       }
 
-      &.clinics__head-link--clinics:before{
+      &.docs__head-link--clinics:before {
         background-image: url("../img/icon-clinics--white.png");
       }
 
-      &.clinics__head-link--list:before{
+      &.docs__head-link--list:before {
         background-image: url("../img/icon-list--blue.png");
       }
 
-      &.clinics__head-link--onmap:before{
+      &.docs__head-link--onmap:before {
         background-image: url("../img/icon-onmap--blue.png");
       }
 
-      &.clinics__head-link--all:before{
-        background-image: url("../img/icon-clinics-all--white.png");
+      &.docs__head-link--all:before {
+        background-image: url("../img/icon-docs--white.png");
       }
 
-      &.clinics__head-link--my:before{
-        background-image: url("../img/icon-clinics-my--white.png");
+      &.docs__head-link--my:before {
+        background-image: url("../img/icon-docs-my--white.png");
       }
 
-      &.clinics__head-link--fave:before{
+      &.docs__head-link--fave:before {
         background-image: url("../img/icon-clinics-fave--white.png");
       }
     }
@@ -154,39 +154,39 @@
       color: @white-color;
       background-color: @blue-color;
 
-      &.clinics__head-link--docs:before{
+      &.docs__head-link--docs:before {
         background-image: url("../img/icon-docs--white.png");
       }
 
-      &.clinics__head-link--clinics:before{
+      &.docs__head-link--clinics:before {
         background-image: url("../img/icon-clinics--white.png");
       }
 
-      &.clinics__head-link--list:before{
+      &.docs__head-link--list:before {
         background-image: url("../img/icon-list--blue.png");
       }
 
-      &.clinics__head-link--onmap:before{
+      &.docs__head-link--onmap:before {
         background-image: url("../img/icon-onmap--blue.png");
       }
 
-      &.clinics__head-link--all:before{
-        background-image: url("../img/icon-clinics-all--white.png");
+      &.docs__head-link--all:before {
+        background-image: url("../img/icon-docs--white.png");
       }
 
-      &.clinics__head-link--my:before{
-        background-image: url("../img/icon-clinics-my--white.png");
+      &.docs__head-link--my:before {
+        background-image: url("../img/icon-docs-my--white.png");
       }
 
-      &.clinics__head-link--fave:before{
+      &.docs__head-link--fave:before {
         background-image: url("../img/icon-clinics-fave--white.png");
       }
     }
 
-    &--filter{
+    &--filter {
       .arrow-down;
 
-      &:before{
+      &:before {
         content: "";
         width: 10px;
         height: 12px;
@@ -195,14 +195,14 @@
         background: url("../img/icon-filter.png") no-repeat;
       }
 
-      &:hover{
+      &:hover {
         color: lighten(@blue-color, 8);
-        background-color: transparent!important;
+        background-color: transparent !important;
       }
     }
   }
 
-  &__search{
+  &__search {
     display: inline-block;
     width: 17px;
     height: 17px;
@@ -211,7 +211,7 @@
     background-repeat: no-repeat;
   }
 
-  &__search-input{
+  &__search-input {
     .gotham;
     .placeholder-effect(30px);
     font-size: 15px;
@@ -242,7 +242,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     cursor: pointer;
 
-    &:hover .clinics__tab-title{  color: @red-color;  }
+    &:hover .docs__tab-title{  color: @red-color;  }
 
     &--active{
       background-color: @lightblue-bg;
@@ -265,8 +265,15 @@
     .gotham-m;
     font-size: 16px;
     margin: 0;
-    margin-bottom: 10px;
-    word-break: break-all;
+    margin-bottom: 5px;
+  }
+
+  &__tab-specs{
+    .gotham;
+    font-size: 13px;
+    color: @grey-color;
+    word-break: normal;
+    margin-bottom: 5px;
   }
 
   &__tab-img{
@@ -279,17 +286,41 @@
     background-color: @white-color;
 
     position: relative;
+  }
 
-    img{
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      top: 8px;
-      bottom: 8px;
-      left: 8px;
-      right: 8px;
+  &__tab-info{
+    .gotham;
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: @grey-color-2;
+    display: block;
+    word-break: break-all;
+    position: relative;
+    padding-left: 15px;
+
+    &:before{
       display: inline-block;
-      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      content: '';
+      vertical-align: middle;
+      position: absolute;
+      left: 0;
+    }
+
+    &--rank{
+      word-break: normal;
+      &:before{
+        background: url("../img/icon-doc-rank.png");
+      }
+    }
+
+    &--exp{
+      &:before{
+        background: url("../img/icon-doc-exp.png");
+        left: 38px;
+      }
     }
   }
 
@@ -316,25 +347,18 @@
   }
 
   &__avatar{
-    width: 98px;
-    height: 98px;
+    position: relative;
+    width: 103px;
+    height: 103px;
     border: 1px solid @grey-color-2;
     border-radius: 50%;
     margin-top: 9px;
     margin-bottom: 25px;
-    padding: 20px;
-
-    img{
-      width: 60px;
-      height: 60px;
-      display: inline-block;
-      border-radius: 50%;
-    }
 
     &-ondocked{
       position: absolute;
-      bottom: 5px;
-      left: 5px;
+      bottom: 40px;
+      left: 10px;
       display: inline-block;
       width: 17px;
       height: 17px;
@@ -349,8 +373,8 @@
     .gotham-m;
     font-size: 20px;
     color: @black-color;
-    margin-top: 45px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     position: relative;
   }
 
@@ -371,49 +395,12 @@
       background: url('../img/icon-star.png') no-repeat;
     }
   }
-
-  &__specs-link{
-    .gotham-m;
+  &__specs{
+    .gotham;
     font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-
-    &:before{
-      content: "";
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
-      display: inline-block;
-      vertical-align: middle;
-      background: url("../img/icon-clinic-specs.png") no-repeat;
-    }
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-    }
-  }
-
-  &__docs-link{
-    .gotham-m;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-
-    &:before{
-      content: "";
-      width: 12px;
-      height: 14px;
-      margin-right: 8px;
-      display: inline-block;
-      vertical-align: middle;
-      background: url("../img/icon-doc-enroll.png") no-repeat;
-    }
-
-    &:hover{
-      color: lighten(@blue-color, 8);
-    }
+    color: @grey-color;
+    word-break: normal;
+    margin-bottom: 25px;
   }
 
   &__info{
@@ -423,77 +410,75 @@
     display: block;
     word-break: break-all;
 
-    &--checked{
-      .gotham-m;
-      color: @black-color;
-    }
-
     &:before{
       display: inline-block;
-      width: 12px;
-      height: 11px;
+      width: 10px;
+      height: 10px;
       margin-right: 5px;
       content: '';
-      vertical-align: middle;
     }
 
-    &--mappin{
+    &--rank{
+      word-break: normal;
       &:before{
-        background: url('../img/icon-map-pin.png') no-repeat;
+        background: url("../img/icon-doc-rank.png");
       }
     }
 
-    &--worktime{
+    &--exp{
       &:before{
-        background: url('../img/icon-worktime.png') no-repeat;
-      }
-    }
-
-    &--subway{
-      &:before{
-        background: url('../img/icon-doc-subway.png') no-repeat;
+        background: url("../img/icon-doc-exp.png");
       }
     }
   }
 
-  &__tab-info{
-    .gotham;
-    font-size: 11px;
-    margin-bottom: 10px;
-    color: @grey-color-2;
-    display: block;
-    word-break: break-all;
+  &__location{
+    .non-padding-left;
+    .non-padding-right;
+    margin-bottom: 20px;
 
-    &--checked{
-      .gotham-m;
-      color: @black-color;
+    &:last-child{
+      margin-bottom: 0;
     }
+  }
+
+  &__clinic-logo{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid @grey-color-2 ;
+
+    img{
+      height: 28px;
+      width: 28px;
+      border-radius: 50%;
+    }
+  }
+
+  &__clinic-name{
+    .gotham-m;
+    font-size: 13px;
+    margin-left: 7px;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__clinic-subway{
+    .gotham;
+    font-size: 13px;
+    color: @grey-color;
+    margin-left: 7px;
 
     &:before{
       display: inline-block;
-      width: 12px;
-      height: 11px;
-      margin-right: 4px;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
       content: '';
-      vertical-align: middle;
-    }
-
-    &--mappin{
-      &:before{
-        background: url('../img/icon-map-pin.png') no-repeat;
-      }
-    }
-
-    &--worktime{
-      &:before{
-        background: url('../img/icon-worktime.png') no-repeat;
-      }
-    }
-
-    &--subway{
-      &:before{
-        background: url('../img/icon-doc-subway.png') no-repeat;
-      }
+      background: url(../img/icon-doc-subway.png);
     }
   }
 
@@ -512,6 +497,26 @@
       content: '';
       vertical-align: middle;
       background: url(../img/icon-doc--ondocked.png);
+    }
+  }
+}
+
+.docs-allow{
+
+  &__input{
+    .checkbox-blue;
+  }
+
+  &__text{
+    display: block;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    line-height: 40px!important;
+    &:before{
+      top: 6px!important;
+    }
+    &:after{
+      top: 7px!important;
     }
   }
 }
