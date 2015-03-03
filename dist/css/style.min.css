@@ -22353,6 +22353,8 @@ form input[type='password']
 }
 .clinics__avatar
 {
+    position: relative;
+
     width: 98px;
     height: 98px;
     margin-top: 9px;
@@ -22487,7 +22489,7 @@ form input[type='password']
 
     word-break: break-all;
 
-    color: rgba(0, 0, 0, .2);
+    color: #8d8d8d;
     outline: none!important;
 }
 .clinics__info--checked
@@ -23143,7 +23145,7 @@ form input[type='password']
 
     word-break: break-all;
 
-    color: rgba(0, 0, 0, .2);
+    color: #8d8d8d;
     outline: none!important;
 }
 .docs__info:before
