@@ -22971,7 +22971,7 @@ form input[type='password']
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 
     margin: 0;
     margin-bottom: 5px;
@@ -23093,7 +23093,7 @@ form input[type='password']
 {
     position: absolute;
     bottom: 40px;
-    left: 10px;
+    left: 0;
 
     display: inline-block;
 
