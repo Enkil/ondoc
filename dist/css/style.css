@@ -26974,3 +26974,195 @@ form input[type='password']
 {
     top: 7px!important;
 }
+.docs-modal
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .6);
+}
+.docs-modal .widgets-block
+{
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: table;
+
+    width: 490px;
+    margin: auto;
+    padding: 16px 0 13px 0;
+
+    text-align: center;
+
+    border-radius: 6px;
+    background-color: #fff;
+}
+.docs-modal__close
+{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    background: url(../img/icon-modal-close.png) no-repeat;
+}
+.docs-modal__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+
+    margin-bottom: 20px;
+}
+.docs-modal__subtitle
+{
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 14px;
+
+    position: relative;
+    z-index: 10;
+
+    display: inline-block;
+
+    padding: 0 15px 0 15px;
+
+    color: rgba(0, 0, 0, .5);
+    outline: none!important;
+    background-color: #fff;
+}
+.docs-modal__line
+{
+    position: relative;
+
+    margin-bottom: 10px;
+}
+.docs-modal__line:before
+{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    height: 1px;
+    margin: auto 8px auto 8px;
+
+    content: '';
+
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.docs-modal__cmt
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 13px;
+
+    margin-bottom: 0;
+
+    letter-spacing: -.13em;
+    text-transform: uppercase;
+}
+.docs-modal__telephone--main
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+
+    margin: 11px 0 5px 0;
+}
+.docs-modal__telephone--another
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin: 15px 0 10px 0;
+}
+.docs-modal__address
+{
+    font-size: 11px;
+
+    display: inline-block;
+
+    margin-right: 15px;
+
+    color: #ccc;
+}
+.docs-modal__address:before
+{
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+
+    content: '';
+    vertical-align: middle;
+
+    background-image: url(../img/icon-map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.docs-modal__time
+{
+    font-size: 11px;
+
+    display: inline-block;
+
+    margin-right: 15px;
+
+    color: #ccc;
+}
+.docs-modal__time:before
+{
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+
+    content: '';
+    vertical-align: middle;
+
+    background-image: url(../img/icon-worktime.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.docs-modal__text
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 13px;
+
+    margin-bottom: 0;
+
+    letter-spacing: -.13em;
+}
+.docs-modal__place-info
+{
+    padding-bottom: 20px;
+}
