@@ -23069,6 +23069,13 @@ form input[type='password']
 
     background: url('../img/icon-doc-exp.png');
 }
+@media (max-width: 1025px)
+{
+    .docs__tab-info--exp:before
+    {
+        left: 10px;
+    }
+}
 .docs__enroll-link
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
