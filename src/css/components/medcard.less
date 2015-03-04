@@ -1553,13 +1553,22 @@ Widgets
   &__body{
     height: 385px;
     overflow-y: scroll;
+    @media (max-width:1025px) {
+      height: 350px;
+    }
 
     &--smaller{
       height: 300px;
+      @media (max-width:1025px) {
+        height: 265px;
+      }
     }
 
     &--drugs{
       height: 305px;
+      @media (max-width:1025px) {
+        height: 280px;
+      }
     }
 
     &--cap{

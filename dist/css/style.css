@@ -13861,13 +13861,34 @@ Widgets
 
     height: 385px;
 }
+@media (max-width: 1025px)
+{
+    .medcard-widget__body
+    {
+        height: 350px;
+    }
+}
 .medcard-widget__body--smaller
 {
     height: 300px;
 }
+@media (max-width: 1025px)
+{
+    .medcard-widget__body--smaller
+    {
+        height: 265px;
+    }
+}
 .medcard-widget__body--drugs
 {
     height: 305px;
+}
+@media (max-width: 1025px)
+{
+    .medcard-widget__body--drugs
+    {
+        height: 280px;
+    }
 }
 .medcard-widget__body--cap
 {
