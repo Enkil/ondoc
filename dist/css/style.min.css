@@ -27527,8 +27527,7 @@ form input[type='password']
 
     width: 680px;
     margin: auto;
-    padding: 20px 0 20px;
-    padding: 20px 20px 0;
+    padding: 30px 20px 0;
 
     text-align: center;
 
@@ -27580,57 +27579,10 @@ form input[type='password']
 
     background: url(../img/icon-person-blue.png) no-repeat;
 }
-.steps-modal__calendar
-{
-    font-size: 15px;
-    line-height: 16.5px;
-
-    position: relative;
-
-    display: inline-block;
-
-    padding: 9px 30px 8px 36px;
-
-    text-decoration: none;
-
-    color: #5db7d8;
-    border-radius: 30px;
-}
-.steps-modal__calendar:before,
-.steps-modal__calendar:after
-{
-    position: absolute;
-
-    display: inline-block;
-
-    width: 27px;
-    height: 28px;
-
-    content: '';
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-.steps-modal__calendar:before
-{
-    top: 50%;
-    left: 8px;
-
-    background-image: url('../img/icon-calendar.png');
-}
-.steps-modal__calendar:after
-{
-    top: 83%;
-    right: -5px;
-
-    background-image: url('../img/icon-arrow-down-blue.png');
-}
 .steps-modal .user-data
 {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .steps-modal .user-data__sex
 {
@@ -27708,9 +27660,11 @@ form input[type='password']
     line-height: 16.5px;
 
     position: relative;
+    left: -10px;
 
     display: inline-block;
 
+    margin-bottom: 4px;
     padding: 9px 30px 8px 36px;
 
     text-decoration: none;
@@ -27754,14 +27708,14 @@ form input[type='password']
 {
     position: relative;
 
-    width: 100px;
+    width: 93px;
     margin: 0 auto;
 }
 .steps-modal .user-data__height:before
 {
     position: absolute;
     top: 50%;
-    left: -16px;
+    left: -28px;
 
     display: inline-block;
 
@@ -27793,6 +27747,7 @@ form input[type='password']
     resize: none;
     -webkit-transition: height .2s;
             transition: height .2s;
+    text-align: center;
     text-overflow: ellipsis;
 
     color: #000;
@@ -27857,14 +27812,15 @@ form input[type='password']
 {
     position: relative;
 
-    width: 100px;
+    width: 93px;
     margin: 0 auto;
+    margin-bottom: 13px;
 }
 .steps-modal .user-data__weight:before
 {
     position: absolute;
     top: 50%;
-    left: -16px;
+    left: -30px;
 
     display: inline-block;
 
@@ -27896,6 +27852,7 @@ form input[type='password']
     resize: none;
     -webkit-transition: height .2s;
             transition: height .2s;
+    text-align: center;
     text-overflow: ellipsis;
 
     color: #000;
@@ -28025,4 +27982,74 @@ form input[type='password']
 .steps-modal__success
 {
     padding: 80px 0;
+}
+.steps-modal__img--present
+{
+    width: 125px;
+    height: 130px;
+    margin: 0 auto 35px;
+
+    background: url(../img/icon-present-blue.png) no-repeat;
+}
+.steps-modal__step--second .steps-modal__subtitle
+{
+    margin-bottom: 20px;
+}
+.steps-pagination__item
+{
+    display: inline-block;
+
+    width: 11px;
+    height: 11px;
+
+    background: url(../img/icon-pagination-not-active.png) no-repeat;
+}
+.steps-pagination__item--active
+{
+    background: url(../img/icon-pagination-active.png) no-repeat;
+}
+.steps-modal__img--list
+{
+    width: 89px;
+    height: 111px;
+    margin: 0 auto 35px;
+
+    background: url(../img/icon-list-blue.png) no-repeat;
+}
+.steps-modal__img--add
+{
+    width: 98px;
+    height: 98px;
+    margin: 0 auto 35px;
+
+    background: url(../img/icon-plus-big.png) no-repeat;
+}
+.steps-modal__img--person-private
+{
+    width: 109px;
+    height: 109px;
+    margin: 0 auto 35px;
+
+    background: url(../img/icon-person-private-blue.png) no-repeat;
+}
+.steps-modal__img--success
+{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 35px;
+
+    background: url(../img/icon-success.png) no-repeat;
+}
+.steps-modal__step--third .steps-pagination
+{
+    margin-top: 25px;
+}
+.steps-modal__step--fourth .steps-modal__subtitle,
+.steps-modal__step--fifth .steps-modal__subtitle
+{
+    margin-bottom: 15px;
+}
+.steps-modal__step--sixth .steps-modal__subtitle
+{
+    margin-bottom: 45px;
 }

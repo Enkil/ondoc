@@ -56,10 +56,9 @@
     width: 680px;
     display: table;
     margin: auto;
-    padding: 20px 0 20px;
     border-radius: 6px;
     background-color: #fff;
-    padding: 20px 20px 0;
+    padding: 30px 20px 0;
   }
 
   &__close {
@@ -95,173 +94,147 @@
     margin: 15px auto;
   }
 
-  &__calendar {
-    font-size: 15px;
-    color: @blue-color;
-    display: inline-block;
-    padding: 9px 30px 8px 36px;
-    line-height: 16.5px;
-    border-radius: 30px;
-    text-decoration: none;
-    position: relative;
-
-    &:before, &:after {
-      content: "";
-      width: 27px;
-      height: 28px;
-      display: inline-block;
-      position: absolute;
-      
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-    &:before { 
-      background-image: url("../img/icon-calendar.png"); 
-      left: 8px;
-      top: 50%;
-    }
-    &:after { 
-      background-image: url("../img/icon-arrow-down-blue.png"); 
-      top: 83%;
-      right: -5px;
-    }
-  }
 
   .user-data {
-  margin-top: 20px;
-  &__sex {
-    .link-medium;
-    font-size: 15px;
-    color: @blue-color;
-    display: inline-block;
-    padding: 9px 18px 8px 36px;
-    line-height: 16.5px;
-    border-radius: 30px;
-    text-decoration: none;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: 20% 42%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
-    &-female {
-      background-image: url("../img/icon-woman.png");
+    &__sex {
+      .link-medium;
+      font-size: 15px;
+      color: @blue-color;
+      display: inline-block;
+      padding: 9px 18px 8px 36px;
+      line-height: 16.5px;
+      border-radius: 30px;
+      text-decoration: none;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: 20% 42%;
+
+      &-female {
+        background-image: url("../img/icon-woman.png");
+      }
+
+      &-female.user-data__sex--active {
+          background-image: url("../img/icon-woman-hover.png");
+          background-color: @blue-color;
+          color: @white-color;
+            &:hover {
+             color: @white-color;
+        }
+      }
+      
+
+      &-male {
+        background-image: url("../img/icon-man.png");
+      }
+
+      &-male.user-data__sex--active {
+          background-image: url("../img/icon-man-hover.png");
+          background-color: @blue-color;
+          color: @white-color;
+            &:hover {
+             color: @white-color;
+        }
+      }
+     
     }
 
-    &-female.user-data__sex--active {
-        background-image: url("../img/icon-woman-hover.png");
-        background-color: @blue-color;
-        color: @white-color;
-          &:hover {
-           color: @white-color;
+    &__calendar {
+      font-size: 15px;
+      color: @blue-color;
+      display: inline-block;
+      padding: 9px 30px 8px 36px;
+      line-height: 16.5px;
+      border-radius: 30px;
+      text-decoration: none;
+      position: relative;
+      left: -10px;
+      margin-bottom: 4px;
+
+      &:before, &:after {
+        content: "";
+        width: 27px;
+        height: 28px;
+        display: inline-block;
+        position: absolute;
+        
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
       }
+      &:before { 
+        background-image: url("../img/icon-calendar.png"); 
+        left: 8px;
+        top: 50%;
+      }
+      &:after { 
+        background-image: url("../img/icon-arrow-down-blue.png"); 
+        top: 83%;
+        right: -5px;
+      }
+    }
+
+    &__height {
+      position: relative;
+      width: 93px;
+      margin: 0 auto;
+
+      &:before {
+        content: "";
+        width: 27px;
+        height: 28px;
+        display: inline-block;
+        position: absolute;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: url("../img/icon-height-grey.png"); 
+        left: -28px;
+        top: 50%;
+        
+      }
+
+      input {
+        .steps-modal__input-small();
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+    &__weight {
+      position: relative;
+      width: 93px;
+      margin: 0 auto;
+      margin-bottom: 13px;
+
+      &:before {
+        content: "";
+        width: 27px;
+        height: 28px;
+        display: inline-block;
+        position: absolute;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: url("../img/icon-weight-grey.png"); 
+        left: -30px;
+        top: 50%;
+        
+      }
+
+      input {
+        .steps-modal__input-small();
+        width: 100%;
+        text-align: center;
+      }
+
     }
     
-
-    &-male {
-      background-image: url("../img/icon-man.png");
-    }
-
-    &-male.user-data__sex--active {
-        background-image: url("../img/icon-man-hover.png");
-        background-color: @blue-color;
-        color: @white-color;
-          &:hover {
-           color: @white-color;
-      }
-    }
-   
   }
-
-  &__calendar {
-    font-size: 15px;
-    color: @blue-color;
-    display: inline-block;
-    padding: 9px 30px 8px 36px;
-    line-height: 16.5px;
-    border-radius: 30px;
-    text-decoration: none;
-    position: relative;
-
-    &:before, &:after {
-      content: "";
-      width: 27px;
-      height: 28px;
-      display: inline-block;
-      position: absolute;
-      
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-    &:before { 
-      background-image: url("../img/icon-calendar.png"); 
-      left: 8px;
-      top: 50%;
-    }
-    &:after { 
-      background-image: url("../img/icon-arrow-down-blue.png"); 
-      top: 83%;
-      right: -5px;
-    }
-  }
-
-  &__height {
-    position: relative;
-    width: 100px;
-    margin: 0 auto;
-
-    &:before {
-      content: "";
-      width: 27px;
-      height: 28px;
-      display: inline-block;
-      position: absolute;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-image: url("../img/icon-height-grey.png"); 
-      left: -16px;
-      top: 50%;
-      
-    }
-
-    input {
-      .steps-modal__input-small();
-      width: 100%;
-    }
-
-  }
-
-  &__weight {
-    position: relative;
-    width: 100px;
-    margin: 0 auto;
-
-    &:before {
-      content: "";
-      width: 27px;
-      height: 28px;
-      display: inline-block;
-      position: absolute;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-image: url("../img/icon-weight-grey.png"); 
-      left: -16px;
-      top: 50%;
-      
-    }
-
-    input {
-      .steps-modal__input-small();
-      width: 100%;
-    }
-
-  }
-  
-}
-
-  
+ 
 
   &__input--error {
     border: 1px solid @red-color;
@@ -296,3 +269,104 @@
   }
 
 }
+
+
+// step second
+
+
+.steps-modal {
+
+  &__img--present {
+    width: 125px;
+    height: 130px;
+    background: url(../img/icon-present-blue.png) no-repeat;
+    margin: 0px auto 35px;
+  }
+
+}
+
+.steps-modal__step--second {
+  .steps-modal__subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+.steps-pagination {
+  &__item {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../img/icon-pagination-not-active.png) no-repeat;
+  }
+  &__item--active {
+    background: url(../img/icon-pagination-active.png) no-repeat;
+  }
+}
+
+
+
+.steps-modal {
+
+  // step 3 img 
+
+  &__img--list {
+    width: 89px;
+    height: 111px;
+    background: url(../img/icon-list-blue.png) no-repeat;
+    margin: 0px auto 35px;
+  }
+
+  // step 4 img
+
+  &__img--add {
+    width: 98px;
+    height: 98px;
+    background: url(../img/icon-plus-big.png) no-repeat;
+    margin: 0px auto 35px;
+  }
+
+  // step 5 imag
+
+  &__img--person-private {
+    width: 109px;
+    height: 109px;
+    background: url(../img/icon-person-private-blue.png) no-repeat;
+    margin: 0px auto 35px;
+  }
+
+  // step 6 img 
+
+  &__img--success {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon-success.png) no-repeat;
+    margin: 0px auto 35px;
+  }
+
+}
+
+.steps-modal__step--third {
+  .steps-pagination {
+    margin-top: 25px;
+  }
+}
+
+.steps-modal__step--fourth, .steps-modal__step--fifth {
+  .steps-modal__subtitle {
+    margin-bottom: 15px;
+  }
+}
+
+.steps-modal__step--sixth {
+  .steps-modal__subtitle {
+    margin-bottom: 45px;
+  }
+}
+
+
+
+
+
+
+
+
