@@ -1,0 +1,130 @@
+.contact-info {
+
+	margin-top: 75px;
+	background: @blue-color url(../img/bg-contacts.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 25px;
+
+	&__title {
+		.gotham-m;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: -0.015em;
+		color: @white-color;
+		margin-bottom: 15px;
+	}
+
+	&__telephone {
+		.gotham-m;
+		font-size: 30px;
+		line-height: 33px;
+		letter-spacing: -0.015em;
+		color: @white-color;
+		margin-bottom: 15px;
+	}
+
+	&__address {
+		.gotham;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: -0.015em;
+		color: @white-color;
+	}
+
+}
+
+
+.contact-form {
+
+	padding: 30px 0;
+	background-color: @white-color;
+
+	&__title {
+		.gotham;
+		font-size: 17px;
+		line-height: 21px;
+		letter-spacing: -0.019em;
+		color: @black-color;
+	}
+
+	&__input, &__textarea {
+	    border-radius: 6px;
+	    border: 1px solid rgba(0, 0, 0, 0.2);
+	    margin-bottom: 10px;
+	    width: 100%;
+	    display: block;
+	    padding: 9px 14px;
+	    .gotham;
+	    font-size: 14px;
+	    color: @black-color;
+	    resize: none;
+	    outline: none;
+	    text-overflow: ellipsis;
+	    transition: height 0.2s;
+	    max-height: 250px;
+
+	  }
+
+	&__input {
+		// Soft slide-down placeholder
+	    .placeholder-effect(20px);
+	}
+
+	&__textarea {
+		height: 400px;
+	}
+
+	&__input--error {
+      border: 1px solid @red-color;
+    }
+
+    &__btn--send-success {
+    	.link-medium;
+	    font-size: 16px;
+	    display: inline-block;
+	    padding: 10px 37px 8px 52px;
+	    line-height: 16.5px;
+	    border-radius: 30px;
+	    text-decoration: none;
+	    position: relative;
+	    transition: 0.2s ease background;
+	    background-repeat: no-repeat;
+	    background: @blue-color;
+	    color: @white-color;
+	    border: 1px solid @blue-color;
+	    background: @blue-color url(../img//icon-checkmark-white.png) no-repeat;
+	    background-position: 15% 50%;
+
+	     &:hover {
+	      background: @white-color;
+	      color: @blue-color;
+	      text-decoration: none;
+	      border: 1px solid @blue-color;
+	    }
+
+	    &:focus{
+	      background: @white-color;
+	      color: @blue-color;
+	    }
+	    &:active{
+	      background: @white-color;
+	      color: @blue-color;
+	    }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
