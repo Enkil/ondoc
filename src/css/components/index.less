@@ -1,0 +1,298 @@
+
+//  modal
+
+.steps-modal__input-small {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 9px 14px;
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+
+    // Soft slide-down placeholder
+    .placeholder-effect(20px);
+  }
+
+  .steps-modal__btn {
+    .link-medium;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s ease background;
+    font-size: 15px;
+    margin: 15px 2px;
+    display: inline-block;
+    padding: 7px 40px;
+  }
+
+
+.steps-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+
+  .widgets-block {
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 680px;
+    display: table;
+    margin: auto;
+    padding: 20px 0 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 20px 20px 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.019em;
+  }
+
+  &__subtitle {
+    .gotham;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.019em;
+    margin-bottom: 4px;
+  }
+
+  &__img--profile {
+    width: 86px;
+    height: 86px;
+    background: url(../img/icon-person-blue.png) no-repeat;
+    margin: 15px auto;
+  }
+
+  &__calendar {
+    font-size: 15px;
+    color: @blue-color;
+    display: inline-block;
+    padding: 9px 30px 8px 36px;
+    line-height: 16.5px;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      width: 27px;
+      height: 28px;
+      display: inline-block;
+      position: absolute;
+      
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &:before { 
+      background-image: url("../img/icon-calendar.png"); 
+      left: 8px;
+      top: 50%;
+    }
+    &:after { 
+      background-image: url("../img/icon-arrow-down-blue.png"); 
+      top: 83%;
+      right: -5px;
+    }
+  }
+
+  .user-data {
+  margin-top: 20px;
+  &__sex {
+    .link-medium;
+    font-size: 15px;
+    color: @blue-color;
+    display: inline-block;
+    padding: 9px 18px 8px 36px;
+    line-height: 16.5px;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 20% 42%;
+
+    &-female {
+      background-image: url("../img/icon-woman.png");
+    }
+
+    &-female.user-data__sex--active {
+        background-image: url("../img/icon-woman-hover.png");
+        background-color: @blue-color;
+        color: @white-color;
+          &:hover {
+           color: @white-color;
+      }
+    }
+    
+
+    &-male {
+      background-image: url("../img/icon-man.png");
+    }
+
+    &-male.user-data__sex--active {
+        background-image: url("../img/icon-man-hover.png");
+        background-color: @blue-color;
+        color: @white-color;
+          &:hover {
+           color: @white-color;
+      }
+    }
+   
+  }
+
+  &__calendar {
+    font-size: 15px;
+    color: @blue-color;
+    display: inline-block;
+    padding: 9px 30px 8px 36px;
+    line-height: 16.5px;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      width: 27px;
+      height: 28px;
+      display: inline-block;
+      position: absolute;
+      
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    &:before { 
+      background-image: url("../img/icon-calendar.png"); 
+      left: 8px;
+      top: 50%;
+    }
+    &:after { 
+      background-image: url("../img/icon-arrow-down-blue.png"); 
+      top: 83%;
+      right: -5px;
+    }
+  }
+
+  &__height {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+
+    &:before {
+      content: "";
+      width: 27px;
+      height: 28px;
+      display: inline-block;
+      position: absolute;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url("../img/icon-height-grey.png"); 
+      left: -16px;
+      top: 50%;
+      
+    }
+
+    input {
+      .steps-modal__input-small();
+      width: 100%;
+    }
+
+  }
+
+  &__weight {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+
+    &:before {
+      content: "";
+      width: 27px;
+      height: 28px;
+      display: inline-block;
+      position: absolute;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url("../img/icon-weight-grey.png"); 
+      left: -16px;
+      top: 50%;
+      
+    }
+
+    input {
+      .steps-modal__input-small();
+      width: 100%;
+    }
+
+  }
+  
+}
+
+  
+
+  &__input--error {
+    border: 1px solid @red-color;
+  }
+
+
+  &__btn--next {
+    .steps-modal__btn();
+    background: @white-color;
+    color: @blue-color;
+    border:1px solid @blue-color;
+
+    &:hover, &:focus {
+      background: @blue-color;
+      color: @white-color!important;
+      text-decoration: none;
+      border:1px solid @white-color;
+    }
+
+  }
+
+  &__img-success {
+    background-image: url(../img/icon-success.png);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__success {
+    padding: 80px 0;
+  }
+
+}
