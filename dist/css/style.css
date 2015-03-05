@@ -26251,6 +26251,8 @@ form input[type='password']
     line-height: 22px;
 
     margin-bottom: 20px;
+
+    letter-spacing: -.019em;
 }
 .clinics-modal__subtitle
 {
@@ -26264,6 +26266,8 @@ form input[type='password']
     display: inline-block;
 
     padding: 0 15px 0 15px;
+
+    letter-spacing: -.013em;
 
     color: rgba(0, 0, 0, .5);
     outline: none!important;
@@ -26301,7 +26305,7 @@ form input[type='password']
 
     margin-bottom: 0;
 
-    letter-spacing: -.13em;
+    letter-spacing: -.013em;
     text-transform: uppercase;
 }
 .clinics-modal__telephone--main
@@ -26312,6 +26316,8 @@ form input[type='password']
     line-height: 25px;
 
     margin: 11px 0 5px 0;
+
+    letter-spacing: -.019em;
 }
 .clinics-modal__telephone--another
 {
@@ -26329,6 +26335,8 @@ form input[type='password']
     display: inline-block;
 
     margin-right: 15px;
+
+    letter-spacing: -.013em;
 
     color: #ccc;
 }
@@ -26355,6 +26363,8 @@ form input[type='password']
 
     margin-right: 15px;
 
+    letter-spacing: -.013em;
+
     color: #ccc;
 }
 .clinics-modal__time:before
@@ -26380,11 +26390,13 @@ form input[type='password']
 
     margin-bottom: 0;
 
-    letter-spacing: -.13em;
+    letter-spacing: -.013em;
 }
 .clinics-modal__place-info
 {
     padding-bottom: 20px;
+
+    letter-spacing: -.013em;
 }
 .docs__header
 {
@@ -27223,6 +27235,8 @@ form input[type='password']
     line-height: 22px;
 
     margin-bottom: 20px;
+
+    letter-spacing: -.019em;
 }
 .docs-modal__subtitle
 {
@@ -27236,6 +27250,8 @@ form input[type='password']
     display: inline-block;
 
     padding: 0 15px 0 15px;
+
+    letter-spacing: -.013em;
 
     color: rgba(0, 0, 0, .5);
     outline: none!important;
@@ -27273,7 +27289,7 @@ form input[type='password']
 
     margin-bottom: 0;
 
-    letter-spacing: -.13em;
+    letter-spacing: -.013em;
     text-transform: uppercase;
 }
 .docs-modal__telephone--main
@@ -27284,6 +27300,8 @@ form input[type='password']
     line-height: 25px;
 
     margin: 11px 0 5px 0;
+
+    letter-spacing: -.019em;
 }
 .docs-modal__telephone--another
 {
@@ -27301,6 +27319,8 @@ form input[type='password']
     display: inline-block;
 
     margin-right: 15px;
+
+    letter-spacing: -.013em;
 
     color: #ccc;
 }
@@ -27327,6 +27347,8 @@ form input[type='password']
 
     margin-right: 15px;
 
+    letter-spacing: -.013em;
+
     color: #ccc;
 }
 .docs-modal__time:before
@@ -27352,9 +27374,11 @@ form input[type='password']
 
     margin-bottom: 0;
 
-    letter-spacing: -.13em;
+    letter-spacing: -.013em;
 }
 .docs-modal__place-info
 {
     padding-bottom: 20px;
+
+    letter-spacing: -.013em;
 }
