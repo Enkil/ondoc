@@ -13893,6 +13893,17 @@ Widgets
         height: 265px;
     }
 }
+.medcard-widget__body--processing
+{
+    height: 300px;
+}
+@media (max-width: 1025px)
+{
+    .medcard-widget__body--processing
+    {
+        height: 247px;
+    }
+}
 .medcard-widget__body--drugs
 {
     height: 305px;
