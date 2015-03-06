@@ -523,3 +523,175 @@
     }
   }
 }
+
+
+
+
+// docs modal
+
+
+.docs-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+
+  .widgets-block {
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 490px;
+    display: table;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 16px 0 13px 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    letter-spacing: -0.019em;
+  }
+
+  &__subtitle {
+    .gotham;
+    font-size: 14px;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    color: rgba(0, 0, 0, .5);
+    outline: none!important;
+    background-color: #fff;
+    letter-spacing: -0.013em;
+  }
+
+  &__line{
+    position: relative;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 8px auto 8px;
+      z-index: 5;
+    }
+
+  }
+
+  &__cmt {
+    .gotham-m;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: -0.013em;
+    margin-bottom: 0;
+  }
+
+  &__telephone--main {
+      .gotham-m;
+      font-size: 22px;
+      line-height: 25px;
+      margin: 11px 0 5px 0;
+      letter-spacing: -0.019em;
+  }
+
+  &__telephone--another {
+      .gotham-m;
+      font-size: 18px;
+      line-height: 21px;
+      margin: 15px 0 10px 0;
+  }
+
+  &__address {
+    font-size: 11px;
+    margin-right: 15px;
+    display: inline-block;
+    color: @grey-color-6;
+    letter-spacing: -0.013em;
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url(../img/icon-map.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__time {
+    font-size: 11px;
+    margin-right: 15px;
+    display: inline-block;
+    color: @grey-color-6;
+    letter-spacing: -.013em;
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url(../img/icon-worktime.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__text {
+    .gotham-m;
+    font-size: 13px;
+    letter-spacing: -0.013em;
+    margin-bottom: 0;
+  }
+
+  &__place-info {
+    padding-bottom: 20px;
+    letter-spacing: -0.013em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
