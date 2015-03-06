@@ -14586,13 +14586,6 @@ Widgets
 
     text-align: center;
 }
-@media (max-width: 1025px)
-{
-    .monitoring-widget__chol-shedule a
-    {
-        font-size: 13px;
-    }
-}
 .monitoring-widget__chol-shedule .row [class*=col-]:first-child
 {
     text-align: left;
@@ -14606,12 +14599,28 @@ Widgets
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
+    line-height: 35px;
+
+    display: inline-block;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 25px;
+}
+@media (max-width: 1025px)
+{
+    .monitoring-widget__chol-shedule-link
+    {
+        font-size: 13px;
+    }
 }
 .monitoring-widget__chol-shedule--active
 {
     cursor: default;
 
-    color: #000 !important;
+    color: #fff !important;
+    background-color: #5db7d8;
 }
 .monitoring-widget__chol-shedule--add-value
 {

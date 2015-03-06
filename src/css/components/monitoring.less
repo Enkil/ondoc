@@ -420,20 +420,27 @@
   &__chol-shedule{
     padding: 0px 20px 30px;
     text-align: center;
-    @media (max-width:1025px) {
-      a{font-size: 13px;}
-    }
 
     .row [class*=col-]:first-child{ text-align: left; }
     .row [class*=col-]:last-child { text-align: right; }
 
     &-link{
       .gotham-m;
+      display: inline-block;
+      line-height: 35px;
+      padding-right: 10px;
+      padding-left: 10px;
       font-size: 15px;
+      border-radius: 25px;
+
+      @media (max-width:1025px) {
+        font-size: 13px;
+      }
     }
 
     &--active{
-      color: @black-color!important;
+      color: @white-color!important;
+      background-color: @blue-color;
       cursor: default;
     }
 
