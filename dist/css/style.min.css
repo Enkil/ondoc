@@ -22277,11 +22277,11 @@ form input[type='password']
     display: inline-block;
 
     width: 17px;
-    height: 17px;
+    height: 28px;
 
     background-image: url('../img/icon-search--blue.png');
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 50%;
 }
 .clinics__search-input
 {
