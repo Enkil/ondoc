@@ -21523,6 +21523,16 @@ form input[type='password']
     color: #8d8d8d;
     outline: none!important;
 }
+.drugs__drug-value--edit
+{
+    cursor: pointer;
+
+    color: #5db7d8;
+}
+.drugs__drug-value--edit:hover
+{
+    color: #7ec6e0;
+}
 .drugs__drug-value--input
 {
     width: 66px;

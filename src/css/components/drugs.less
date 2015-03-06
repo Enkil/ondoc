@@ -260,6 +260,15 @@
     color: @grey-color;
     display: inline-block;
 
+    &--edit{
+      color: @blue-color;
+      cursor: pointer;
+
+      &:hover{
+        color: lighten(@blue-color, 8);
+      }
+    }
+
     &--input{
       width: 66px;
       margin: 0 0 0 10px;
