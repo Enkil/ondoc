@@ -14,7 +14,7 @@ This will be replaced by the content of header.html
 <!-- PAGE CONTENT-->
 <div class="main-page">
     <div class="container">
-        <div class="row">
+        <div class="row drugs-page__history">
 
             <!-- build:include html/components/left-sidebar.html -->
             This will be replaced by the content of left-sidebar.html
@@ -30,10 +30,17 @@ This will be replaced by the content of header.html
                         <a class="drugs__header-back" href="#">Назад</a>
                     </div>
 
-                    <div class="col-xs-33 text-center">
-                        <a class="drugs__header-links drugs__header-links--current drugs__header-links--active" href="">Текущий курс</a>
-                        <a class="drugs__header-links drugs__header-links--history" href="">История курсов</a>
+                    <div class="col-xs-24 text-center">
+                        <a class="drugs__header-links drugs__header-links--current" href="">Текущий курс</a>
+                        <a class="drugs__header-links drugs__header-links--history drugs__header-links--active" href="">История курсов</a>
                         <a class="drugs__header-links drugs__header-links--catalog" href="">Справочник лекарств</a>
+                    </div>
+
+                    <div class="col-xs-9 text-right">
+                        <a class="docs__search" href="#"></a>
+                        <form action="" class="display-none js__search-form">
+                            <input type="search" placeholder="Поиск" class="docs__search-input"/>
+                        </form>
                     </div>
 
                 </div>
@@ -48,7 +55,9 @@ This will be replaced by the content of header.html
                         <div class="col-xs-36 text-center">
                             <div class="bottom-line-grey">
 
-                                <p class="drugs__days">15 /
+                                <a class="drugs__period">21/05/2014 - 21/06/2014</a>
+
+                               <!--  <p class="drugs__days">15 /
                                     <span class="drugs__days--smaller">20 дн. курса</span>
                                 </p>
 
@@ -58,7 +67,7 @@ This will be replaced by the content of header.html
                                     </div>
                                 </div>
 
-                                <a class="widget-btn--plus pull-right" href="drugs_add.html"></a>
+                                <a class="widget-btn--plus pull-right" href="drugs_add.html"></a> -->
 
                             </div>
                         </div>

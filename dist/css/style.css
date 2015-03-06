@@ -27382,6 +27382,26 @@ form input[type='password']
 
     letter-spacing: -.013em;
 }
+.drugs__period
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+
+    display: inline-block;
+
+    margin: 20px 0;
+
+    cursor: pointer;
+    letter-spacing: -.015em;
+
+    color: #5db7d8;
+}
+.drugs-page__history .widget__left-column img
+{
+    display: none;
+}
 .steps-modal__input-small
 {
     font-family: 'Gotham', Arial, sans-serif !important;
