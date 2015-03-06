@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "~3.3.2",
     "highcharts": "~4.0.4",
-    "ekko-lightbox": "~3.2.2"
+    "ekko-lightbox": "~3.2.2",
+    "ionrangeslider": "~2.0.6"
   }
 }
