@@ -10239,8 +10239,6 @@ a:focus
 
     min-height: 70px;
 
-    word-break: break-all;
-
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -21808,7 +21806,8 @@ form input[type='password']
 
     display: inline-block;
 
-    padding: 0 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .drugs__link--type
 {
@@ -21908,7 +21907,7 @@ form input[type='password']
     position: absolute;
     z-index: 100;
     top: 120px;
-    left: 130px;
+    left: 140px;
 
     padding: 15px;
     padding-bottom: 0;
@@ -21925,18 +21924,18 @@ form input[type='password']
 }
 .drugs__dosage-popup--modal-types
 {
-    left: 75px;
+    left: 100px;
 }
 .drugs__dosage-popup--modal-items
 {
     top: 132px;
-    right: 75px;
+    right: 105px;
     left: auto;
 }
 .drugs__dosage-popup--items
 {
     top: 132px;
-    right: 130px;
+    right: 145px;
     left: auto;
 }
 .drugs__dosage-popup:before
