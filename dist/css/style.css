@@ -14812,6 +14812,10 @@ Widgets
 
     color: rgba(0, 0, 0, .2);
 }
+.monitoring-cap__text--upper
+{
+    margin-top: 20px;
+}
 .monitoring-cap__text--smaller
 {
     font-size: 12px;
