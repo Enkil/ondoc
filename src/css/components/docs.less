@@ -701,7 +701,37 @@
   display: none;
 }
 
+.clinic-docs{
 
+  &__title{
+    .gotham-m;
+    display: inline-block;
+    line-height: 35px;
+    font-size: 15px;
+  }
+
+  &__link{
+    .arrow-down;
+    .gotham-m;
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
+    line-height: 30px;
+
+    &--addr{
+      padding-right: 60px;
+    }
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__widget-header{
+    .bottom-line-grey;
+    padding: 12px 20px 12px 20px;
+  }
+}
 
 
 

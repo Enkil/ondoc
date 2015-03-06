@@ -9493,6 +9493,10 @@ a:focus
 
     display: inline-block;
 }
+.content-header__back:hover
+{
+    color: #7ec6e0;
+}
 .content-header__back:before
 {
     display: inline-block;
@@ -23886,6 +23890,53 @@ form input[type='password']
 .drugs-page__history .widget__left-column img
 {
     display: none;
+}
+.clinic-docs__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+
+    display: inline-block;
+}
+.clinic-docs__link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    margin: 5px;
+}
+.clinic-docs__link:after
+{
+    display: inline-block;
+
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/arrow-down.png) no-repeat;
+}
+.clinic-docs__link--addr
+{
+    padding-right: 60px;
+}
+.clinic-docs__link:hover
+{
+    color: #7ec6e0;
+}
+.clinic-docs__widget-header
+{
+    padding: 12px 20px 12px 20px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 .steps-modal__input-small
 {
