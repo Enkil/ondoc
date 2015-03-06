@@ -21443,22 +21443,6 @@ form input[type='password']
     width: 24px;
     height: 24px;
 }
-.drugs__tab--fulltime:after
-{
-    background-position: 0 0;
-}
-.drugs__tab--halftime:after
-{
-    background-position: 0 -72px;
-}
-.drugs__tab--starttime:after
-{
-    background-position: 0 -34px;
-}
-.drugs__tab--starttime:after
-{
-    background-position: 0 -110px;
-}
 .drugs__tab--active
 {
     background-color: #eef9fb;
@@ -21471,8 +21455,6 @@ form input[type='password']
 
     width: 80%;
     margin: 0;
-
-    word-break: break-all;
 
     color: #000;
 }
@@ -22424,8 +22406,6 @@ form input[type='password']
 
     margin: 0;
     margin-bottom: 10px;
-
-    word-break: break-all;
 }
 .clinics__tab-img
 {
