@@ -9,11 +9,16 @@
       display: inline-block;
       line-height: 35px;
 
+      &:hover{
+        color: lighten(@blue-color, 8);
+      }
+
       &:before{
         content: "";
         width: 10px;
         height: 17px;
         margin-right: 6px;
+        margin-bottom: 2px;
         display: inline-block;
         vertical-align: middle;
         background: url(../img/icon-back.png) no-repeat

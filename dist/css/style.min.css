@@ -9504,6 +9504,7 @@ a:focus
     width: 10px;
     height: 17px;
     margin-right: 6px;
+    margin-bottom: 2px;
 
     content: '';
     vertical-align: middle;
@@ -21250,6 +21251,10 @@ form input[type='password']
 
     display: inline-block;
 }
+.drugs__header-back:hover
+{
+    color: #7ec6e0;
+}
 .drugs__header-back:before
 {
     display: inline-block;
@@ -21257,6 +21262,7 @@ form input[type='password']
     width: 10px;
     height: 17px;
     margin-right: 6px;
+    margin-bottom: 2px;
 
     content: '';
     vertical-align: middle;
