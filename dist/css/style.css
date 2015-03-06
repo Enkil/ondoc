@@ -8901,6 +8901,19 @@ body
 
     background: url(../img/arrow-down.png) no-repeat;
 }
+.arrow-up:after
+{
+    display: inline-block;
+
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/arrow-up.png) no-repeat;
+}
 /* Style common input checkbox */
 .checkbox-blue
 {
@@ -22165,19 +22178,6 @@ form input[type='password']
 {
     background-image: url('../img/icon-clinics-fave--white.png');
 }
-.clinics__head-link--filter:after
-{
-    display: inline-block;
-
-    width: 10px;
-    height: 6px;
-    margin-left: 5px;
-
-    content: '';
-    vertical-align: middle;
-
-    background: url(../img/arrow-down.png) no-repeat;
-}
 .clinics__head-link--filter:before
 {
     display: inline-block;
@@ -23409,4 +23409,145 @@ form input[type='password']
 .docs-allow__text:after
 {
     top: 7px!important;
+}
+/*
+Styles for filter block on consultations, clinics and docs pages
+*/
+.filter__check-round
+{
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 55px;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    color: #8d8d8d;
+    outline: none!important;
+}
+.filter__check-round-icon
+{
+    line-height: 55px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+
+    vertical-align: middle;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+.filter__check-round--active .filter__check-round-icon
+{
+    background: url('../img/icon_heart.png') 50% 50% no-repeat;
+    background-size: 10px 8px;
+}
+.filter__search
+{
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+
+    display: block;
+
+    width: 100%;
+    height: 33px;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 30px;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 14px;
+    outline: none!important;
+    background-color: #fff;
+    background-image: url('../img/icon-map-pin.png');
+    background-repeat: no-repeat;
+    background-position: 8px 50%;
+    background-size: 12px 15px;
+}
+.filter__search::-webkit-input-placeholder
+{
+    line-height: 30px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.filter__search::-moz-placeholder
+{
+    line-height: 30px;
+
+    transition: line-height .5s ease;
+}
+.filter__search:-ms-input-placeholder
+{
+    line-height: 30px;
+
+    transition: line-height .5s ease;
+}
+.filter__search::placeholder
+{
+    line-height: 30px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.filter__search:focus::-webkit-input-placeholder
+{
+    line-height: 150px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.filter__search:focus::-moz-placeholder
+{
+    line-height: 150px;
+
+    transition: line-height .5s ease;
+}
+.filter__search:focus:-ms-input-placeholder
+{
+    line-height: 150px;
+
+    transition: line-height .5s ease;
+}
+.filter__search:focus::placeholder
+{
+    line-height: 150px;
+
+    -webkit-transition: line-height .5s ease;
+            transition: line-height .5s ease;
+}
+.filter__subway
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 55px;
+}
+.filter__subway:after
+{
+    display: inline-block;
+
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/arrow-down.png) no-repeat;
+}
+.filter__subway:hover
+{
+    color: #7ec6e0;
+}
+.filter__tag-group
+{
+    margin-top: 10px;
 }
