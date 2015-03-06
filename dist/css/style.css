@@ -14608,6 +14608,13 @@ Widgets
 
     border-radius: 25px;
 }
+.monitoring-widget__chol-shedule-link:hover
+{
+    cursor: pointer;
+
+    color: #fff !important;
+    background-color: #5db7d8;
+}
 @media (max-width: 1025px)
 {
     .monitoring-widget__chol-shedule-link
