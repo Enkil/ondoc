@@ -11206,7 +11206,7 @@ a:focus
 
     color: #5db7d8;
     border: 1px solid #5db7d8;
-    border-radius: 13px;
+    border-radius: 25px;
 }
 .widget-btn--edit:before
 {
@@ -11233,7 +11233,7 @@ a:focus
 
     color: #dc4531;
     border: 1px solid #dc4531;
-    border-radius: 13px;
+    border-radius: 25px;
 }
 .widget-btn--delete:hover
 {
@@ -22069,7 +22069,7 @@ form input[type='password']
     padding-right: 15px;
     padding-left: 20px;
 
-    border-radius: 15px;
+    border-radius: 25px;
 }
 .clinics__head-link--docs:before
 {
@@ -22288,7 +22288,6 @@ form input[type='password']
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
-    line-height: 30px;
 
     display: inline-block;
 
@@ -22435,7 +22434,7 @@ form input[type='password']
     padding-left: 15px;
 
     border: 1px solid #5db7d8;
-    border-radius: 14px;
+    border-radius: 25px;
 }
 .clinics__enroll-link:before
 {
@@ -22457,7 +22456,6 @@ form input[type='password']
     width: 100px;
     height: 100px;
     margin-top: 9px;
-    margin-bottom: 25px;
     padding: 1px;
 
     border: 1px solid rgba(0, 0, 0, .2);
@@ -22466,7 +22464,7 @@ form input[type='password']
 .clinics__avatar--ondocked
 {
     position: absolute;
-    bottom: 40px;
+    bottom: 15px;
     left: 5px;
 
     display: inline-block;
@@ -22900,7 +22898,7 @@ form input[type='password']
     padding-right: 15px;
     padding-left: 20px;
 
-    border-radius: 15px;
+    border-radius: 25px;
 }
 .docs__head-link--docs:before
 {
@@ -23119,7 +23117,6 @@ form input[type='password']
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
-    line-height: 30px;
 
     display: inline-block;
 
@@ -23331,7 +23328,7 @@ form input[type='password']
     padding-left: 15px;
 
     border: 1px solid #5db7d8;
-    border-radius: 14px;
+    border-radius: 25px;
 }
 .docs__enroll-link:before
 {
