@@ -28,6 +28,11 @@
       padding-right: 18px;
       padding-left: 18px;
 
+      &:hover{
+        background-color: @blue-color-2;
+        border-radius: 15px;
+      }
+
       &--current{
         &:before{
           content: "";
@@ -84,17 +89,8 @@
 
 
         &:hover{
-          background-color: @white-color;
-          color: @blue-color;
-          &.drugs__header-links--current:before{
-            background-image: url("../img/icon-course--current--blue.png");
-          }
-          &.drugs__header-links--history:before{
-            background-image: url("../img/icon-course--history--blue.png");
-          }
-          &.drugs__header-links--catalog:before{
-            background-image: url("../img/icon-course--catalog--blue.png");
-          }
+          color: @white-color;
+          background-color: @blue-color;
         }
       }
     }

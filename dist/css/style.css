@@ -21275,6 +21275,11 @@ form input[type='password']
     padding-right: 18px;
     padding-left: 18px;
 }
+.drugs__header-links:hover
+{
+    border-radius: 15px;
+    background-color: #caedf5;
+}
 .drugs__header-links--current:before
 {
     display: inline-block;
@@ -21335,20 +21340,8 @@ form input[type='password']
 }
 .drugs__header-links--active:hover
 {
-    color: #5db7d8;
-    background-color: #fff;
-}
-.drugs__header-links--active:hover.drugs__header-links--current:before
-{
-    background-image: url('../img/icon-course--current--blue.png');
-}
-.drugs__header-links--active:hover.drugs__header-links--history:before
-{
-    background-image: url('../img/icon-course--history--blue.png');
-}
-.drugs__header-links--active:hover.drugs__header-links--catalog:before
-{
-    background-image: url('../img/icon-course--catalog--blue.png');
+    color: #fff;
+    background-color: #5db7d8;
 }
 .drugs__days
 {
