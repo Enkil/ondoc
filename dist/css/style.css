@@ -23212,7 +23212,7 @@ form input[type='password']
 
     overflow: hidden;
 
-    padding: 20px 15px 8px 20px;
+    padding: 10px 15px 8px 20px;
 
     cursor: pointer;
 
@@ -23255,6 +23255,7 @@ form input[type='password']
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 13px;
+    line-height: 14px;
 
     margin-bottom: 5px;
 
@@ -23281,12 +23282,12 @@ form input[type='password']
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
+    line-height: 10px;
 
     position: relative;
 
     display: block;
 
-    margin-bottom: 10px;
     padding-left: 15px;
 
     word-break: break-all;
