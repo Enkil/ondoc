@@ -20,6 +20,9 @@
   &__subheader{
     margin: 20px 20px 20px 20px;
     overflow: hidden;
+    @media (max-width:1025px) {
+      margin: 20px 15px 20px 15px;
+    }
   }
 
   // Element -> widget title
@@ -144,6 +147,10 @@
     position: relative;
     font-size: 13px;
     text-align: left;
+
+    @media (max-width:1025px) {
+      font-size: 11px;
+    }
   }
 
   // Element -> Select date period dropdown
@@ -190,6 +197,9 @@
     .gotham-m;
     font-size: 13px;
     text-align: right;
+    @media (max-width:1025px) {
+      font-size: 11px;
+    }
   }
 
   // Element -> widget body
@@ -212,6 +222,15 @@
   &__value-body{
     padding: 45px 25px 25px 25px;
     overflow: hidden;
+    @media (max-width:1025px) {
+      padding: 25px 15px 25px 15px;
+    }
+
+    &--sugar{
+      @media (max-width:1025px) {
+        padding: 10px 15px 25px 15px;
+      }
+    }
   }
 
   // Element -> widget add value state title
@@ -401,6 +420,10 @@
   &__chol-shedule{
     padding: 0px 20px 30px;
     text-align: center;
+    @media (max-width:1025px) {
+      a{font-size: 13px;}
+    }
+
     .row [class*=col-]:first-child{ text-align: left; }
     .row [class*=col-]:last-child { text-align: right; }
 
@@ -425,6 +448,11 @@
   &__chol-shedule-cap{
     padding: 0px 20px 30px;
     text-align: center;
+    @media (max-width:1025px) {
+      padding: 0px 0 30px;
+      a{font-size: 13px;}
+    }
+
     .row [class*=col-]:first-child{ text-align: left; }
     .row [class*=col-]:last-child { text-align: right; }
 
@@ -542,6 +570,10 @@
 /* Widgets caps */
 .monitoring-cap{
   margin-top: 90px;
+
+  @media (max-width:1025px) {
+    margin-top: 60px;
+  }
 
   &--no-data{
     margin-top: 28px;

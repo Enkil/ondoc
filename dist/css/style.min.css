@@ -10129,7 +10129,6 @@ a:focus
     margin: 0 0 5px 0;
 
     letter-spacing: -.2px;
-    word-break: break-all;
 }
 .widget-tab__description
 {
@@ -10141,7 +10140,6 @@ a:focus
     margin-bottom: 8px;
 
     letter-spacing: -.2px;
-    word-break: break-all;
 
     outline: none!important;
 }
@@ -10238,6 +10236,8 @@ a:focus
     display:         flex;
 
     min-height: 70px;
+
+    word-break: break-all;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -13761,7 +13761,7 @@ Widgets
 {
     position: relative;
 
-    padding: 14px 50px 11px;
+    padding: 14px 48px 11px;
 
     text-align: center;
 
@@ -14068,6 +14068,13 @@ Widgets
 
     margin: 20px 20px 20px 20px;
 }
+@media (max-width: 1025px)
+{
+    .monitoring-widget__subheader
+    {
+        margin: 20px 15px 20px 15px;
+    }
+}
 .monitoring-widget__title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -14220,6 +14227,13 @@ Widgets
 
     background: url(../img/arrow-down.png) no-repeat;
 }
+@media (max-width: 1025px)
+{
+    .monitoring-widget__period
+    {
+        font-size: 11px;
+    }
+}
 .monitoring-widget__dropdown
 {
     position: absolute;
@@ -14274,6 +14288,13 @@ Widgets
 
     text-align: right;
 }
+@media (max-width: 1025px)
+{
+    .monitoring-widget__date
+    {
+        font-size: 11px;
+    }
+}
 .monitoring-widget__body
 {
     overflow: hidden;
@@ -14296,6 +14317,20 @@ Widgets
     overflow: hidden;
 
     padding: 45px 25px 25px 25px;
+}
+@media (max-width: 1025px)
+{
+    .monitoring-widget__value-body
+    {
+        padding: 25px 15px 25px 15px;
+    }
+}
+@media (max-width: 1025px)
+{
+    .monitoring-widget__value-body--sugar
+    {
+        padding: 10px 15px 25px 15px;
+    }
 }
 .monitoring-widget__value-title
 {
@@ -14549,6 +14584,13 @@ Widgets
 
     text-align: center;
 }
+@media (max-width: 1025px)
+{
+    .monitoring-widget__chol-shedule a
+    {
+        font-size: 13px;
+    }
+}
 .monitoring-widget__chol-shedule .row [class*=col-]:first-child
 {
     text-align: left;
@@ -14580,6 +14622,17 @@ Widgets
     padding: 0 20px 30px;
 
     text-align: center;
+}
+@media (max-width: 1025px)
+{
+    .monitoring-widget__chol-shedule-cap
+    {
+        padding: 0 0 30px;
+    }
+    .monitoring-widget__chol-shedule-cap a
+    {
+        font-size: 13px;
+    }
 }
 .monitoring-widget__chol-shedule-cap .row [class*=col-]:first-child
 {
@@ -14731,6 +14784,13 @@ Widgets
 .monitoring-cap
 {
     margin-top: 90px;
+}
+@media (max-width: 1025px)
+{
+    .monitoring-cap
+    {
+        margin-top: 60px;
+    }
 }
 .monitoring-cap--no-data
 {
@@ -21468,6 +21528,13 @@ form input[type='password']
     width: 66px;
     margin: 0 0 0 10px;
 }
+@media (max-width: 1025px)
+{
+    .drugs__drug-value--input
+    {
+        margin: 0;
+    }
+}
 .drugs__drug-value-line
 {
     position: relative;
@@ -22536,8 +22603,6 @@ form input[type='password']
     font-size: 14px;
 
     display: block;
-
-    word-break: break-all;
 
     color: #8d8d8d;
     outline: none!important;
