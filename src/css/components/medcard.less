@@ -367,40 +367,53 @@
     position: relative;
   }
 
-  &__icon{
+  &__link{
     width: 26px;
     height: 26px;
     line-height: 31px;
     margin: 0 8px;
     display: inline-block;
     color: transparent;
-    margin-top: 2px;
+    margin-top: 2px;;
+    background-size: 26px 26px!important;
 
     &--doc{
-      background:url("../img/icon-doc.png") no-repeat;
-      &:hover{
-        opacity: 0.6;
-      }
-      &-active{
-
-      }
+      background: url("../img/icon-doc.png") no-repeat;
     }
+
     &--doc-liked{
       background: url("../img/icon-doc--liked.png") no-repeat;
-      &:hover{
-        opacity: 0.6;
-      }
-      &-active{
-
-      }
     }
+
     &--doc-fave{
       background: url("../img/icon-doc--fave.png") no-repeat;
-      &:hover{
-        opacity: 0.6;
-      }
-      &-active{
+    }
 
+    &:hover{
+      &.medcard-doctor__link--doc{
+        background: url("../img/icon-doc.png") no-repeat;
+      }
+
+      &.medcard-doctor__link--doc-liked{
+        background: url("../img/icon-docs-my--blue.png") no-repeat;
+      }
+
+      &.medcard-doctor__link--doc-fave{
+        background: url("../img/icon-clinics-fave--blue.png") no-repeat;
+      }
+    }
+
+    &--active{
+      &.medcard-doctor__link--doc{
+        background: url("../img/icon-doc.png") no-repeat;
+      }
+
+      &.medcard-doctor__link--doc-liked{
+        background: url("../img/icon-docs-my--blue.png") no-repeat;
+      }
+
+      &.medcard-doctor__link--doc-fave{
+        background: url("../img/icon-clinics-fave--blue.png") no-repeat;
       }
     }
   }
@@ -1102,44 +1115,53 @@
     position: relative;
   }
 
-  &__icon{
+  &__link{
     width: 26px;
     height: 26px;
     line-height: 31px;
     margin: 0 8px;
     display: inline-block;
     color: transparent;
-    margin-top: 2px;
-    vertical-align: middle;
+    margin-top: 2px;;
+    background-size: 26px 26px!important;
 
     &--clinic{
-      background:url("../img/icon-clinic--blue.png") no-repeat;
-      margin-top: 5px;
-      &:hover{
-        opacity: 0.6;
-      }
-      &-active{
-
-      }
+      background: url("../img/icon-clinic--blue.png") no-repeat;
     }
+
     &--clinic-liked{
       background: url("../img/icon-clinic--liked.png") no-repeat;
-      margin-top: 5px;
-      &:hover{
-        opacity: 0.6;
-      }
-      &-active{
-
-      }
     }
+
     &--clinic-fave{
       background: url("../img/icon-clinic--fave.png") no-repeat;
-      margin-top: 0;
-      &:hover{
-        opacity: 0.6;
-      }
-      &-active{
+    }
 
+    &:hover{
+      &.medcard-clinic__link--clinic{
+        background: url("../img/icon-clinic--blue.png") no-repeat;
+      }
+
+      &.medcard-clinic__link--clinic-liked{
+        background: url("../img/icon-clinics-my--blue.png") no-repeat;
+      }
+
+      &.medcard-clinic__link--clinic-fave{
+        background: url("../img/icon-clinics-fave--blue.png") no-repeat;
+      }
+    }
+
+    &--active{
+      &.medcard-clinic__link--clinic{
+        background: url("../img/icon-clinic--blue.png") no-repeat;
+      }
+
+      &.medcard-clinic__link--clinic-liked{
+        background: url("../img/icon-clinics-my--blue.png") no-repeat;
+      }
+
+      &.medcard-clinic__link--clinic-fave{
+        background: url("../img/icon-clinics-fave--blue.png") no-repeat;
       }
     }
   }

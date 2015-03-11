@@ -12094,7 +12094,7 @@ a:focus
 
     text-align: center;
 }
-.medcard-doctor__icon
+.medcard-doctor__link
 {
     line-height: 31px;
 
@@ -12106,30 +12106,43 @@ a:focus
     margin-top: 2px;
 
     color: transparent;
+    background-size: 26px 26px!important;
 }
-.medcard-doctor__icon--doc
+.medcard-doctor__link--doc
 {
     background: url('../img/icon-doc.png') no-repeat;
 }
-.medcard-doctor__icon--doc:hover
-{
-    opacity: .6;
-}
-.medcard-doctor__icon--doc-liked
+.medcard-doctor__link--doc-liked
 {
     background: url('../img/icon-doc--liked.png') no-repeat;
 }
-.medcard-doctor__icon--doc-liked:hover
-{
-    opacity: .6;
-}
-.medcard-doctor__icon--doc-fave
+.medcard-doctor__link--doc-fave
 {
     background: url('../img/icon-doc--fave.png') no-repeat;
 }
-.medcard-doctor__icon--doc-fave:hover
+.medcard-doctor__link:hover.medcard-doctor__link--doc
 {
-    opacity: .6;
+    background: url('../img/icon-doc.png') no-repeat;
+}
+.medcard-doctor__link:hover.medcard-doctor__link--doc-liked
+{
+    background: url('../img/icon-docs-my--blue.png') no-repeat;
+}
+.medcard-doctor__link:hover.medcard-doctor__link--doc-fave
+{
+    background: url('../img/icon-clinics-fave--blue.png') no-repeat;
+}
+.medcard-doctor__link--active.medcard-doctor__link--doc
+{
+    background: url('../img/icon-doc.png') no-repeat;
+}
+.medcard-doctor__link--active.medcard-doctor__link--doc-liked
+{
+    background: url('../img/icon-docs-my--blue.png') no-repeat;
+}
+.medcard-doctor__link--active.medcard-doctor__link--doc-fave
+{
+    background: url('../img/icon-clinics-fave--blue.png') no-repeat;
 }
 .medcard-doctor__icon-plus
 {
@@ -13241,7 +13254,7 @@ a:focus
 
     text-align: center;
 }
-.medcard-clinic__icon
+.medcard-clinic__link
 {
     line-height: 31px;
 
@@ -13252,39 +13265,44 @@ a:focus
     margin: 0 8px;
     margin-top: 2px;
 
-    vertical-align: middle;
-
     color: transparent;
+    background-size: 26px 26px!important;
 }
-.medcard-clinic__icon--clinic
+.medcard-clinic__link--clinic
 {
-    margin-top: 5px;
-
     background: url('../img/icon-clinic--blue.png') no-repeat;
 }
-.medcard-clinic__icon--clinic:hover
+.medcard-clinic__link--clinic-liked
 {
-    opacity: .6;
-}
-.medcard-clinic__icon--clinic-liked
-{
-    margin-top: 5px;
-
     background: url('../img/icon-clinic--liked.png') no-repeat;
 }
-.medcard-clinic__icon--clinic-liked:hover
+.medcard-clinic__link--clinic-fave
 {
-    opacity: .6;
-}
-.medcard-clinic__icon--clinic-fave
-{
-    margin-top: 0;
-
     background: url('../img/icon-clinic--fave.png') no-repeat;
 }
-.medcard-clinic__icon--clinic-fave:hover
+.medcard-clinic__link:hover.medcard-clinic__link--clinic
 {
-    opacity: .6;
+    background: url('../img/icon-clinic--blue.png') no-repeat;
+}
+.medcard-clinic__link:hover.medcard-clinic__link--clinic-liked
+{
+    background: url('../img/icon-clinics-my--blue.png') no-repeat;
+}
+.medcard-clinic__link:hover.medcard-clinic__link--clinic-fave
+{
+    background: url('../img/icon-clinics-fave--blue.png') no-repeat;
+}
+.medcard-clinic__link--active.medcard-clinic__link--clinic
+{
+    background: url('../img/icon-clinic--blue.png') no-repeat;
+}
+.medcard-clinic__link--active.medcard-clinic__link--clinic-liked
+{
+    background: url('../img/icon-clinics-my--blue.png') no-repeat;
+}
+.medcard-clinic__link--active.medcard-clinic__link--clinic-fave
+{
+    background: url('../img/icon-clinics-fave--blue.png') no-repeat;
 }
 .medcard-clinic__icon-plus
 {
