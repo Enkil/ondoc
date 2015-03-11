@@ -9549,23 +9549,6 @@ a:focus
 {
     color: #7ec6e0;
 }
-.content-header__sort-link--dropdown
-{
-    cursor: pointer;
-}
-.content-header__sort-link--dropdown:after
-{
-    display: inline-block;
-
-    width: 10px;
-    height: 6px;
-    margin-left: 5px;
-
-    content: '';
-    vertical-align: middle;
-
-    background: url(../img/arrow-down.png) no-repeat;
-}
 .content-header__sort-link--filter:before
 {
     display: inline-block;
@@ -10204,10 +10187,16 @@ a:focus
     font-size: 11px;
     line-height: 14px;
 
+    position: relative;
+
+    display: block;
+
+    padding-left: 15px;
+
     letter-spacing: -.2px;
     word-break: break-all;
 
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .2);
     outline: none!important;
 }
 .widget-tab__date--bigger
@@ -10218,12 +10207,13 @@ a:focus
 }
 .widget-tab__date:before
 {
+    position: absolute;
+    left: 0;
+
     display: inline-block;
 
     width: 12px;
     height: 13px;
-    padding-right: 18px;
-    padding-bottom: 16px;
 
     content: '';
     vertical-align: middle;

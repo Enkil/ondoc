@@ -15583,6 +15583,7 @@ $(document).ready(function() {
     $('.content-header__sort-link--filter').click(function(event){
         event.preventDefault();
         $('.medcard-filter').toggleClass('display-none');
+        $(this).toggleClass('arrow-up');
     });
 
 });
