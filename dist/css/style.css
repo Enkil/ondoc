@@ -14616,7 +14616,7 @@ Widgets
 }
 .monitoring-widget__chol-shedule
 {
-    padding: 0 20px 30px;
+    padding: 0 10px 17px;
 
     text-align: center;
 }
@@ -14671,8 +14671,6 @@ Widgets
 }
 .monitoring-widget__chol-shedule-cap
 {
-    padding: 0 20px 30px;
-
     text-align: center;
 }
 @media (max-width: 1025px)
@@ -14694,23 +14692,46 @@ Widgets
 {
     text-align: right;
 }
+.monitoring-widget__chol-shedule-cap--active
+{
+    cursor: default;
+
+    color: #fff !important;
+    background-color: #5db7d8;
+}
+.monitoring-widget__chol-shedule-cap--add-value
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+}
 .monitoring-widget__chol-shedule-cap-link
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
-}
-.monitoring-widget__chol-shedule-cap--active
-{
-    cursor: default;
+    line-height: 35px;
 
-    color: #000 !important;
+    display: inline-block;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 25px;
 }
-.monitoring-widget__chol-shedule-cap--add-value
+.monitoring-widget__chol-shedule-cap-link:hover
 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0;
+    cursor: pointer;
+
+    color: #fff !important;
+    background-color: #5db7d8;
+}
+@media (max-width: 1025px)
+{
+    .monitoring-widget__chol-shedule-cap-link
+    {
+        font-size: 13px;
+    }
 }
 .tooltip-custom + .tooltip > .tooltip-inner
 {

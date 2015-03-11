@@ -416,7 +416,7 @@
 
   // Element -> cholesterol shedule
   &__chol-shedule{
-    padding: 0px 20px 30px;
+    padding: 0px 10px 17px;
     text-align: center;
 
     .row [class*=col-]:first-child{ text-align: left; }
@@ -457,7 +457,6 @@
 
   // Element -> cholesterol shedule for cap state
   &__chol-shedule-cap{
-    padding: 0px 20px 30px;
     text-align: center;
     @media (max-width:1025px) {
       padding: 0px 0 30px;
@@ -467,20 +466,36 @@
     .row [class*=col-]:first-child{ text-align: left; }
     .row [class*=col-]:last-child { text-align: right; }
 
-    &-link{
-      .gotham-m;
-      font-size: 15px;
-    }
-
     &--active{
-      color: @black-color!important;
+      color: @white-color!important;
+      background-color: @blue-color;
       cursor: default;
     }
 
     &--add-value {
       padding: 0;
       margin-top: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    &-link{
+      .gotham-m;
+      display: inline-block;
+      line-height: 35px;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 15px;
+      border-radius: 25px;
+
+      &:hover{
+        color: @white-color!important;
+        background-color: @blue-color;
+        cursor: pointer;
+      }
+
+      @media (max-width:1025px) {
+        font-size: 13px;
+      }
     }
   }
 
