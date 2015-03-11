@@ -22629,7 +22629,11 @@ form input[type='password']
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
+    position: relative;
+
     display: block;
+
+    padding-left: 15px;
 
     color: rgba(0, 0, 0, .2);
     outline: none!important;
@@ -22643,6 +22647,9 @@ form input[type='password']
 }
 .clinics__tab-info:before
 {
+    position: absolute;
+    left: 0;
+
     display: inline-block;
 
     width: 12px;
@@ -23300,7 +23307,6 @@ form input[type='password']
 
     width: 10px;
     height: 10px;
-    margin-right: 5px;
 
     content: '';
     vertical-align: middle;
@@ -23315,7 +23321,7 @@ form input[type='password']
 }
 .docs__tab-info--exp:before
 {
-    left: 38px;
+    left: 30px;
 
     background: url('../img/icon-doc-exp.png');
 }
@@ -23323,7 +23329,7 @@ form input[type='password']
 {
     .docs__tab-info--exp:before
     {
-        left: 10px;
+        left: 5px;
     }
 }
 .docs__enroll-link
