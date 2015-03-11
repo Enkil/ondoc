@@ -7,7 +7,13 @@
   // Element -> Left widget column with tabs list
   &__left-column{
     .non-padding-right;
-    overflow-y: scroll;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   // Element -> Right widget column with widget data

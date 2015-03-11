@@ -9590,9 +9590,16 @@ a:focus
 }
 .widget__left-column
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     padding-right: 0;
+
+    -ms-overflow-style: none;
+}
+.widget__left-column::-webkit-scrollbar
+{
+    width: 0;
 }
 .widget__right-column
 {
@@ -11006,9 +11013,16 @@ a:focus
 }
 .widget-security__left-column
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     padding-right: 0;
+
+    -ms-overflow-style: none;
+}
+.widget-security__left-column::-webkit-scrollbar
+{
+    width: 0;
 }
 .widget-security__right-column
 {
@@ -15539,9 +15553,16 @@ Widgets
 }
 .profile-widget__left-column
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     padding-right: 0;
+
+    -ms-overflow-style: none;
+}
+.profile-widget__left-column::-webkit-scrollbar
+{
+    width: 0;
 }
 .profile-widget__right-column
 {
@@ -18248,9 +18269,16 @@ input:after
 }
 .widget-notifications__left-column
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     padding-right: 0;
+
+    -ms-overflow-style: none;
+}
+.widget-notifications__left-column::-webkit-scrollbar
+{
+    width: 0;
 }
 .widget-notifications__right-column
 {
@@ -23152,26 +23180,26 @@ form input[type='password']
 }
 .docs__search-input::-webkit-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .docs__search-input::-moz-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .docs__search-input:-ms-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .docs__search-input::placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
