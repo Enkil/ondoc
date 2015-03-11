@@ -14493,7 +14493,14 @@ Widgets
 }
 .monitoring-widget__sugar-shedule-block p
 {
+    font-size: 10px;
+
     margin: 0;
+    padding: 7px 0;
+
+    cursor: pointer;
+
+    color: rgba(0, 0, 0, .5);
 }
 .monitoring-widget__sugar-shedule-block:hover p
 {
@@ -14503,85 +14510,75 @@ Widgets
 }
 .monitoring-widget__sugar-shedule-block:hover .monitoring-widget__sugar-shedule-icon--sun
 {
-    background-position: 0 -36px;
+    background: url('../img/icon-sugar--sun-blue.png');
 }
 .monitoring-widget__sugar-shedule-block:hover .monitoring-widget__sugar-shedule-icon--eat
 {
-    background-position: -62px -36px;
+    background: url('../img/icon-sugar--eat-blue.png');
 }
 .monitoring-widget__sugar-shedule-block:hover .monitoring-widget__sugar-shedule-icon--food
 {
-    background-position: -118px -36px;
+    background: url('../img/icon-sugar--food-blue.png');
 }
 .monitoring-widget__sugar-shedule-block:hover .monitoring-widget__sugar-shedule-icon--moon
 {
-    background-position: -183px -36px;
-}
-.monitoring-widget__sugar-shedule-block p
-{
-    font-size: 10px;
-
-    padding: 7px 0;
-
-    cursor: pointer;
-
-    color: rgba(0, 0, 0, .5);
+    background: url('../img/icon-sugar--moon-blue.png');
 }
 .monitoring-widget__sugar-shedule-block--active p
 {
-    color: #5db7d8 !important;
+    color: #5db7d8;
 }
 .monitoring-widget__sugar-shedule-block--active .monitoring-widget__sugar-shedule-icon--sun
 {
-    background-position: 0 -36px !important;
+    background: url('../img/icon-sugar--sun-blue.png');
 }
 .monitoring-widget__sugar-shedule-block--active .monitoring-widget__sugar-shedule-icon--eat
 {
-    background-position: -62px -36px !important;
+    background: url('../img/icon-sugar--eat-blue.png');
 }
 .monitoring-widget__sugar-shedule-block--active .monitoring-widget__sugar-shedule-icon--food
 {
-    background-position: -118px -36px !important;
+    background: url('../img/icon-sugar--food-blue.png');
 }
 .monitoring-widget__sugar-shedule-block--active .monitoring-widget__sugar-shedule-icon--moon
 {
-    background-position: -183px -36px !important;
+    background: url('../img/icon-sugar--moon-blue.png');
 }
 .monitoring-widget__sugar-shedule-icon
 {
     display: inline-block;
 
+    -webkit-transition: all .2s ease-out;
+            transition: all .2s ease-out;
     vertical-align: middle;
-
-    background: url(../img/sugar-icons.png) no-repeat;
 }
 .monitoring-widget__sugar-shedule-icon--sun
 {
     width: 26px;
     height: 18px;
 
-    background-position: 0 0;
+    background: url('../img/icon-sugar--sun-grey.png');
 }
 .monitoring-widget__sugar-shedule-icon--eat
 {
     width: 19px;
     height: 18px;
 
-    background-position: -62px 0;
+    background: url('../img/icon-sugar--eat-grey.png');
 }
 .monitoring-widget__sugar-shedule-icon--food
 {
     width: 24px;
     height: 20px;
 
-    background-position: -118px 0;
+    background: url('../img/icon-sugar--food-grey.png');
 }
 .monitoring-widget__sugar-shedule-icon--moon
 {
     width: 18px;
     height: 19px;
 
-    background-position: -183px 0;
+    background: url('../img/icon-sugar--moon-grey.png');
 }
 .monitoring-widget__chol-shedule
 {
