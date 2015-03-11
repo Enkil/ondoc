@@ -48,10 +48,11 @@
 
   &__textarea{
     .gotham;
+    .placeholder-effect(20px);
     text-align: left;
     height: 50px;
     border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid @grey-color-2;
     margin-bottom: 10px;
     width: 100%;
     display: block;
@@ -65,7 +66,12 @@
     max-height: 250px;
     line-height: 20px;
 
-    .placeholder-effect(20px);
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   // Upload icon
@@ -383,7 +389,6 @@
     line-height: 21px;
     letter-spacing: -0.2px;
     margin: 0 0 5px 0;
-//    word-break: break-all;
   }
 
   // Element -> tab text
@@ -392,7 +397,6 @@
     font-size: 14px;
     line-height: 14px;
     letter-spacing: -0.2px;
-//    word-break: break-all;
     margin-bottom: 8px;
   }
 
@@ -402,17 +406,23 @@
     font-size: 11px;
     line-height: 14px;
     letter-spacing: -0.2px;
-    color: rgba(0,0,0,.5);
-    word-break: break-all;
+    color: @grey-color-2;
+
+    display: block;
+    position: relative;
+    padding-left: 15px;
+
     &:before{
       content: "";
       width: 12px;
       height: 13px;
-      padding-right: 18px;
-      padding-bottom: 18px;
+//      padding-right: 18px;
+//      padding-bottom: 18px;
       display: inline-block;
       vertical-align: middle;
       background: url(../img/icon-clinic.png) no-repeat;
+      position: absolute;
+      left: 0;
     }
   }
 

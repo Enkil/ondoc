@@ -9641,6 +9641,7 @@ a:focus
     line-height: 20px;
 
     display: block;
+    overflow: -moz-scrollbars-none;
 
     width: 100%;
     height: 50px;
@@ -9659,6 +9660,8 @@ a:focus
     border-radius: 6px;
     outline: none!important;
     outline: none;
+
+    -ms-overflow-style: none;
 }
 .widget__textarea::-webkit-input-placeholder
 {
@@ -9711,6 +9714,10 @@ a:focus
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+.widget__textarea::-webkit-scrollbar
+{
+    width: 0;
 }
 .widget__upload
 {
@@ -10164,20 +10171,26 @@ a:focus
     font-size: 11px;
     line-height: 14px;
 
-    letter-spacing: -.2px;
-    word-break: break-all;
+    position: relative;
 
-    color: rgba(0, 0, 0, .5);
+    display: block;
+
+    padding-left: 15px;
+
+    letter-spacing: -.2px;
+
+    color: rgba(0, 0, 0, .2);
     outline: none!important;
 }
 .widget-tab__clinic:before
 {
+    position: absolute;
+    left: 0;
+
     display: inline-block;
 
     width: 12px;
     height: 13px;
-    padding-right: 18px;
-    padding-bottom: 18px;
 
     content: '';
     vertical-align: middle;
@@ -11064,6 +11077,7 @@ a:focus
     line-height: 20px;
 
     display: block;
+    overflow: -moz-scrollbars-none;
 
     width: 100%;
     height: 50px;
@@ -11082,6 +11096,8 @@ a:focus
     border-radius: 6px;
     outline: none!important;
     outline: none;
+
+    -ms-overflow-style: none;
 }
 .widget-security__textarea::-webkit-input-placeholder
 {
@@ -11134,6 +11150,10 @@ a:focus
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+.widget-security__textarea::-webkit-scrollbar
+{
+    width: 0;
 }
 .widget-security__upload
 {
@@ -15604,6 +15624,7 @@ Widgets
     line-height: 20px;
 
     display: block;
+    overflow: -moz-scrollbars-none;
 
     width: 100%;
     height: 50px;
@@ -15622,6 +15643,8 @@ Widgets
     border-radius: 6px;
     outline: none!important;
     outline: none;
+
+    -ms-overflow-style: none;
 }
 .profile-widget__textarea::-webkit-input-placeholder
 {
@@ -15674,6 +15697,10 @@ Widgets
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+.profile-widget__textarea::-webkit-scrollbar
+{
+    width: 0;
 }
 .profile-widget__upload
 {
@@ -18320,6 +18347,7 @@ input:after
     line-height: 20px;
 
     display: block;
+    overflow: -moz-scrollbars-none;
 
     width: 100%;
     height: 50px;
@@ -18338,6 +18366,8 @@ input:after
     border-radius: 6px;
     outline: none!important;
     outline: none;
+
+    -ms-overflow-style: none;
 }
 .widget-notifications__textarea::-webkit-input-placeholder
 {
@@ -18390,6 +18420,10 @@ input:after
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+.widget-notifications__textarea::-webkit-scrollbar
+{
+    width: 0;
 }
 .widget-notifications__upload
 {
