@@ -12404,6 +12404,9 @@ a:focus
     margin-bottom: 20px;
 
     text-align: center;
+
+    background: url('../img/doc-add.png') no-repeat;
+    background-size: 110px 125px;
 }
 .medcard-doctor__notfind-text
 {
@@ -13564,6 +13567,9 @@ a:focus
     margin-bottom: 20px;
 
     text-align: center;
+
+    background: url('../img/clinic-add.png') no-repeat;
+    background-size: 118px 118px;
 }
 .medcard-clinic__notfind-text
 {
