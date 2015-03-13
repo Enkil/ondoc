@@ -398,11 +398,19 @@
     }
   }
 
+  &__info-block{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   &__info{
     .gotham;
     font-size: 14px;
     color: @grey-color;
     display: block;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
 
     &--checked{
       .gotham-m;
@@ -416,6 +424,9 @@
       margin-right: 5px;
       content: '';
       vertical-align: middle;
+      position: absolute;
+      left: 0;
+      top: 5px;
     }
 
     &--mappin{

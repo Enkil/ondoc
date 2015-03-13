@@ -22679,13 +22679,23 @@ form input[type='password']
 {
     color: #7ec6e0;
 }
+.clinics__info-block
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .clinics__info
 {
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
+    position: relative;
+
     display: block;
+
+    margin-bottom: 10px;
+    padding-left: 15px;
 
     color: #8d8d8d;
     outline: none!important;
@@ -22699,6 +22709,10 @@ form input[type='password']
 }
 .clinics__info:before
 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+
     display: inline-block;
 
     width: 12px;
