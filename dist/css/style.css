@@ -12462,8 +12462,8 @@ a:focus
 }
 .medcard-doctor__add-form
 {
-    margin-right: 8px;
-    margin-left: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 .medcard-doctor__add-input
 {
@@ -12547,8 +12547,9 @@ a:focus
     position: absolute;
     top: -15px;
 
-    width: 100%;
+    width: 490px;
     height: 1px;
+    margin-left: -16px;
 
     content: '';
 
@@ -12565,10 +12566,9 @@ a:focus
     position: absolute;
     bottom: -15px;
 
-    width: 100%;
+    width: 490px;
     height: 1px;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-left: -16px;
 
     content: '';
 
@@ -13617,8 +13617,8 @@ a:focus
 }
 .medcard-clinic__add-form
 {
-    margin-right: 8px;
-    margin-left: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 .medcard-clinic__add-input
 {
@@ -13702,8 +13702,9 @@ a:focus
     position: absolute;
     top: -15px;
 
-    width: 100%;
+    width: 490px;
     height: 1px;
+    margin-left: -16px;
 
     content: '';
 
@@ -13720,8 +13721,9 @@ a:focus
     position: absolute;
     bottom: -15px;
 
-    width: 100%;
+    width: 490px;
     height: 1px;
+    margin-left: -16px;
 
     content: '';
 
