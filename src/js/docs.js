@@ -33,6 +33,30 @@ $(document).ready(function() {
     	.find(".docs-modal").addClass("display-none");
     });
 
+    //// show-hide locations
+    $('.docs__show-all').click(function(event){
+        if($(this).hasClass("js__show-all--closed")){
+            event.preventDefault();
+            $('.docs__location.display-none').removeClass('display-none').addClass("js__docs__location--displayed");
+            $(this).addClass('arrow-up');
+            $(this).html("Скрыть места");
+            $(this).removeClass("js__show-all--closed")
+            $(this).addClass("js__show-all--openned")
+        }
+        else{
+            if($(this).hasClass("js__show-all--openned")){
+                console.log("finded");
+                event.preventDefault();
+                $('.docs__location.js__docs__location--displayed').addClass('display-none');
+                $(this).removeClass('arrow-up');
+                $(this).html("Показать места");
+                $(this).removeClass("js__show-all--openned");
+                $(this).addClass("js__show-all--closed");
+            }
+        };
+    });
+
+
 });
 
 /*

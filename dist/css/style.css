@@ -22676,6 +22676,41 @@ form input[type='password']
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.clinics__show-all
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 13px;
+
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+
+    color: #5db7d8;
+}
+.clinics__show-all:hover
+{
+    text-decoration: none;
+
+    color: #7ec6e0;
+}
+.clinics__show-all:active
+{
+    text-decoration: none;
+
+    color: #5db7d8;
+    outline: none;
+}
+.clinics__show-all:focus
+{
+    text-decoration: none;
+
+    color: #5db7d8;
+    outline: none;
+}
+.clinics__show-all:hover
+{
+    color: #7ec6e0;
+}
 .clinics__info
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -23583,6 +23618,41 @@ form input[type='password']
 .docs__location:last-child
 {
     margin-bottom: 0;
+}
+.docs__show-all
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 13px;
+
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+
+    color: #5db7d8;
+}
+.docs__show-all:hover
+{
+    text-decoration: none;
+
+    color: #7ec6e0;
+}
+.docs__show-all:active
+{
+    text-decoration: none;
+
+    color: #5db7d8;
+    outline: none;
+}
+.docs__show-all:focus
+{
+    text-decoration: none;
+
+    color: #5db7d8;
+    outline: none;
+}
+.docs__show-all:hover
+{
+    color: #7ec6e0;
 }
 .docs__clinic-logo
 {

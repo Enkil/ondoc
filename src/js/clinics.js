@@ -53,3 +53,30 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function(){
+
+    //// show-hide branch offices
+    $('.clinics__show-all').click(function(event){
+        if($(this).hasClass("js__show-all--closed")){
+            event.preventDefault();
+            $('.clinics__info-block.display-none').removeClass('display-none').addClass("js__clinics__info-block--displayed");
+            $(this).addClass('arrow-up');
+            $(this).html("Скрыть филиалы");
+            $(this).removeClass("js__show-all--closed")
+            $(this).addClass("js__show-all--openned")
+        }
+        else{
+            if($(this).hasClass("js__show-all--openned")){
+                console.log("finded");
+                event.preventDefault();
+                $('.clinics__info-block.js__clinics__info-block--displayed').addClass('display-none');
+                $(this).removeClass('arrow-up');
+                $(this).html("Показать все филиалы");
+                $(this).removeClass("js__show-all--openned");
+                $(this).addClass("js__show-all--closed");
+            }
+        };
+    });
+
+});

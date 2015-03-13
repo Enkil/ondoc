@@ -13498,6 +13498,33 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function(){
+
+    //// show-hide branch offices
+    $('.clinics__show-all').click(function(event){
+        if($(this).hasClass("js__show-all--closed")){
+            event.preventDefault();
+            $('.clinics__info-block.display-none').removeClass('display-none').addClass("js__clinics__info-block--displayed");
+            $(this).addClass('arrow-up');
+            $(this).html("Скрыть филиалы");
+            $(this).removeClass("js__show-all--closed")
+            $(this).addClass("js__show-all--openned")
+        }
+        else{
+            if($(this).hasClass("js__show-all--openned")){
+                console.log("finded");
+                event.preventDefault();
+                $('.clinics__info-block.js__clinics__info-block--displayed').addClass('display-none');
+                $(this).removeClass('arrow-up');
+                $(this).html("Показать все филиалы");
+                $(this).removeClass("js__show-all--openned");
+                $(this).addClass("js__show-all--closed");
+            }
+        };
+    });
+
+});
+
 /*
  Toggle search input display none
  */
@@ -13532,6 +13559,30 @@ $(document).ready(function() {
     	$(this).parent().parent().parent().parent().parent().parent()
     	.find(".docs-modal").addClass("display-none");
     });
+
+    //// show-hide locations
+    $('.docs__show-all').click(function(event){
+        if($(this).hasClass("js__show-all--closed")){
+            event.preventDefault();
+            $('.docs__location.display-none').removeClass('display-none').addClass("js__docs__location--displayed");
+            $(this).addClass('arrow-up');
+            $(this).html("Скрыть места");
+            $(this).removeClass("js__show-all--closed")
+            $(this).addClass("js__show-all--openned")
+        }
+        else{
+            if($(this).hasClass("js__show-all--openned")){
+                console.log("finded");
+                event.preventDefault();
+                $('.docs__location.js__docs__location--displayed').addClass('display-none');
+                $(this).removeClass('arrow-up');
+                $(this).html("Показать места");
+                $(this).removeClass("js__show-all--openned");
+                $(this).addClass("js__show-all--closed");
+            }
+        };
+    });
+
 
 });
 
