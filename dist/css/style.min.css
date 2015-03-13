@@ -22419,26 +22419,26 @@ form input[type='password']
 }
 .clinics__search-input::-webkit-input-placeholder
 {
-    line-height: 30px;
+    line-height: 23px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .clinics__search-input::-moz-placeholder
 {
-    line-height: 30px;
+    line-height: 23px;
 
     transition: line-height .5s ease;
 }
 .clinics__search-input:-ms-input-placeholder
 {
-    line-height: 30px;
+    line-height: 23px;
 
     transition: line-height .5s ease;
 }
 .clinics__search-input::placeholder
 {
-    line-height: 30px;
+    line-height: 23px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
