@@ -1598,7 +1598,8 @@ input[type='button']
 }
 .items-block label span
 {
-    font-family: 'Gotham-Medium';
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 12px;
     line-height: 16px;
 
@@ -1609,6 +1610,7 @@ input[type='button']
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+    letter-spacing: -.6px;
 
     color: rgba(0, 0, 0, .9);
 }
