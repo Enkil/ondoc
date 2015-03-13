@@ -1260,26 +1260,28 @@
     display: block;
     margin-bottom: 10px;
     word-break: break-all;
+    padding-left: 15px;
+    position: relative;
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 11px;
+      margin-right: 5px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+    }
 
     &--mappin{
       &:before{
-        content: "";
         background: url("../img/icon-map-pin.png") no-repeat;
-        width: 12px;
-        height: 11px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
 
     &--worktime{
       &:before{
-        content: "";
         background: url("../img/icon-worktime.png") no-repeat;
-        width: 12px;
-        height: 10px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
 
@@ -1296,12 +1298,7 @@
 
     &--subway{
       &:before{
-        content: "";
         background: url("../img/icon-doc-subway.png") no-repeat;
-        width: 12px;
-        height: 8px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
   }

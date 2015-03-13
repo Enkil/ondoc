@@ -13490,17 +13490,23 @@ a:focus
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
+    position: relative;
+
     display: block;
 
     margin-bottom: 10px;
+    padding-left: 15px;
 
     word-break: break-all;
 
     color: rgba(0, 0, 0, .2);
     outline: none!important;
 }
-.medcard-clinic__info--mappin:before
+.medcard-clinic__info:before
 {
+    position: absolute;
+    left: 0;
+
     display: inline-block;
 
     width: 12px;
@@ -13508,19 +13514,13 @@ a:focus
     margin-right: 5px;
 
     content: '';
-
+}
+.medcard-clinic__info--mappin:before
+{
     background: url('../img/icon-map-pin.png') no-repeat;
 }
 .medcard-clinic__info--worktime:before
 {
-    display: inline-block;
-
-    width: 12px;
-    height: 10px;
-    margin-right: 5px;
-
-    content: '';
-
     background: url('../img/icon-worktime.png') no-repeat;
 }
 .medcard-clinic__info--exp:before
@@ -13537,14 +13537,6 @@ a:focus
 }
 .medcard-clinic__info--subway:before
 {
-    display: inline-block;
-
-    width: 12px;
-    height: 8px;
-    margin-right: 5px;
-
-    content: '';
-
     background: url('../img/icon-doc-subway.png') no-repeat;
 }
 .medcard-clinic__notfind-img
