@@ -569,6 +569,7 @@
   &__show-by{
     .link-medium;
     font-size: 13px;
+    position: relative;
     
     &--dropdown{
       cursor: pointer;
@@ -587,30 +588,41 @@
 
   // Element -> down block
   &__dropdown{
-    background: #fff;
-    padding: 5px 10px 5px 5px;
-    border-radius: 4px;
+    .text-left;
+    line-height: 22px;
+    background: @white-color;
     border: 1px solid #f0f0f0;
     position: absolute;
     top: 20px;
-    left: 140px;
-    z-index: 999;
-    transition: 0.2s ease all;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+
+    &:before{
+      position: absolute;
+      top: -14px;
+      left: 16px;
+      content: '';
+      border: 7px solid transparent;
+      border-bottom: 7px solid @white-color;
+    }
   }
 
   // Element -> dropdown list
   &__dropdown-list{
-    list-style-type: none;
-    cursor: pointer;
     padding: 0;
-    margin: 15px 10px;
+    margin: 0;
   }
 
   // Element -> dropdown item
   &__dropdown-item{
-    .link-base;
+    .link-medium;
+    list-style-type: none;
     display: block;
+    font-size: 13px;
   }
 
   &__numeration-list{
