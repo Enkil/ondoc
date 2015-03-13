@@ -378,7 +378,7 @@
     background-size: 26px 26px!important;
 
     &--doc{
-      background: url("../img/icon-doc.png") no-repeat;
+      background: url("../img/icon-doc--grey.png") no-repeat;
     }
 
     &--doc-liked{
@@ -509,48 +509,40 @@
     display: block;
     margin-bottom: 10px;
     word-break: break-all;
+    position: relative;
+    padding-left: 15px;
+
+    &:before{
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+    }
     
     &--rank{
       &:before{
-        content: "";
         background: url("../img/icon-doc-rank.png");
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
   
     &--clinic{
       &:before{
-        content: "";
         background: url("../img/icon-doc-clinic.png");
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
   
     &--exp{
       &:before{
-        content: "";
         background: url("../img/icon-doc-exp.png");
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
   
     &--subway{
       &:before{
-        content: "";
         background: url("../img/icon-doc-subway.png");
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-        display: inline-block;
       }
     }
   }
@@ -1130,7 +1122,7 @@
     background-size: 26px 26px!important;
 
     &--clinic{
-      background: url("../img/icon-clinic--blue.png") no-repeat;
+      background: url("../img/icon-clinic--grey.png") no-repeat;
     }
 
     &--clinic-liked{

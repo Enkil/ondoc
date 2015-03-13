@@ -12118,7 +12118,7 @@ a:focus
 }
 .medcard-doctor__link--doc
 {
-    background: url('../img/icon-doc.png') no-repeat;
+    background: url('../img/icon-doc--grey.png') no-repeat;
 }
 .medcard-doctor__link--doc-liked
 {
@@ -12344,17 +12344,23 @@ a:focus
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
+    position: relative;
+
     display: block;
 
     margin-bottom: 10px;
+    padding-left: 15px;
 
     word-break: break-all;
 
     color: rgba(0, 0, 0, .2);
     outline: none!important;
 }
-.medcard-doctor__info--rank:before
+.medcard-doctor__info:before
 {
+    position: absolute;
+    left: 0;
+
     display: inline-block;
 
     width: 10px;
@@ -12362,43 +12368,21 @@ a:focus
     margin-right: 5px;
 
     content: '';
-
+}
+.medcard-doctor__info--rank:before
+{
     background: url('../img/icon-doc-rank.png');
 }
 .medcard-doctor__info--clinic:before
 {
-    display: inline-block;
-
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-
-    content: '';
-
     background: url('../img/icon-doc-clinic.png');
 }
 .medcard-doctor__info--exp:before
 {
-    display: inline-block;
-
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-
-    content: '';
-
     background: url('../img/icon-doc-exp.png');
 }
 .medcard-doctor__info--subway:before
 {
-    display: inline-block;
-
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-
-    content: '';
-
     background: url('../img/icon-doc-subway.png');
 }
 .medcard-doctor__notfind-img
@@ -13280,7 +13264,7 @@ a:focus
 }
 .medcard-clinic__link--clinic
 {
-    background: url('../img/icon-clinic--blue.png') no-repeat;
+    background: url('../img/icon-clinic--grey.png') no-repeat;
 }
 .medcard-clinic__link--clinic-liked
 {
