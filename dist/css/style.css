@@ -14641,7 +14641,9 @@ Widgets
 }
 .monitoring-widget__chol-shedule
 {
-    padding: 0 10px 17px;
+    display: table;
+
+    padding: 0 20px 17px;
 
     text-align: center;
 }
@@ -14660,7 +14662,7 @@ Widgets
     font-size: 15px;
     line-height: 35px;
 
-    display: inline-block;
+    display: table-cell;
 
     padding-right: 10px;
     padding-left: 10px;
