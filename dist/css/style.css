@@ -21567,6 +21567,8 @@ form input[type='password']
     width: 80%;
     margin: 0;
 
+    word-break: break-all;
+
     color: #000;
 }
 .drugs__drug-title
