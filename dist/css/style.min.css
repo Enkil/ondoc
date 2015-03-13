@@ -11424,7 +11424,7 @@ a:focus
     color: #5db7d8;
 }
 /* NEW BUTTONS */
-/* TODO: rework old needed. btns must be moere independent*/
+/* TODO: rework old needed. btns must be more independent*/
 .widgets-btn
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -11562,6 +11562,11 @@ a:focus
     border: 1px solid #5db7d8;
     border-radius: 16px;
 }
+.modal-consultation-delete__btn-no:hover
+{
+    color: #fff;
+    background-color: #5db7d8;
+}
 .modal-consultation-delete__btn-yes
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -11581,7 +11586,8 @@ a:focus
 }
 .modal-consultation-delete__btn-yes:hover
 {
-    color: #e26454 !important;
+    color: #fff;
+    background-color: #dc4531;
 }
 .bg-blur
 {
