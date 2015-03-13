@@ -12169,7 +12169,6 @@ a:focus
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
-    line-height: 30px;
 
     display: block;
 
@@ -12184,26 +12183,26 @@ a:focus
 }
 .medcard-doctor__search-input::-webkit-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-doctor__search-input::-moz-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .medcard-doctor__search-input:-ms-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .medcard-doctor__search-input::placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -13332,9 +13331,8 @@ a:focus
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
-    line-height: 30px;
 
-    display: block;
+    display: inline-block;
 
     width: 100%;
     height: 30px;
@@ -13347,26 +13345,26 @@ a:focus
 }
 .medcard-clinic__search-input::-webkit-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-clinic__search-input::-moz-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .medcard-clinic__search-input:-ms-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .medcard-clinic__search-input::placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -21921,10 +21919,10 @@ form input[type='password']
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
-    line-height: 30px;
 
     display: inline-block;
 
+    height: 30px;
     margin: 10px 0;
     padding: 0 10px;
 
@@ -21935,26 +21933,26 @@ form input[type='password']
 }
 .drugs__dosage::-webkit-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .drugs__dosage::-moz-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .drugs__dosage:-ms-input-placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     transition: line-height .5s ease;
 }
 .drugs__dosage::placeholder
 {
-    line-height: 30px;
+    line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
