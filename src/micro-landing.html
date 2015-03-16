@@ -7,35 +7,31 @@ This will be replaced by the content of head.html
 
 <!-- Header -->
 <header>
-    <div class="container-fluid ml-header">
+    <div class="container-fluid header-external header-external--nonfixed">
         <div class="container">
             <div class="row">
-                <div class="col-xs-36">
 
-                    <!-- Logo -->
-                    <div class="col-xs-8">
-                        <a class="ml-header__logo" href="index.html" title="OnDoc - Персональное здравоохранение">
-                            <img src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
-                            <span title="OnDoc - Персональное здравоохранение">OnDoc</span>
-                        </a>
-                    </div>
-                    <!-- / Logo -->
+                <!-- Logo -->
+                <div class="col-xs-8">
+                    <a class="header-external__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                        <img src="img/logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    </a>
+                    <a title="OnDoc - Персональное здравоохранение" class="header-external__link header-external__link--logotext" href="main.html">OnDoc</a>
+                </div>
 
-                    <!-- Links to apps -->
-                    <div class="col-xs-28 ml-header__links">
+                <!-- Links to apps -->
+                <div class="col-xs-28 text-right">
 
-                        <a href="#" class="ml-header__link get-popup" data-popup="android-popup" onclick="ga('send', 'event', 'go_to_gplay', 'click');">
-                            <img src="img/googleplay.png" alt="Google Play" />
-                        </a>
+                    <a href="" class="header-external__link header-external__link--apps"">
+                        <img src="img/appstore.png" alt="App Store" />
+                    </a>
 
-                        <a href="http://m.onelink.me/faf19571" class="ml-header__link" onclick="ga('send', 'event', 'go_to_appstore', 'click');">
-                            <img src="img/appstore.png" alt="App Store" />
-                        </a>
-
-                    </div>
-                    <!-- / Links to apps -->
+                    <a href="#" class="header-external__link header-external__link--apps header-external__link--gplay">
+                        <img src="img/googleplay.png" alt="Google Play" />
+                    </a>
 
                 </div>
+
             </div>
         </div>
     </div>

@@ -195,3 +195,66 @@
     }
   }
 }
+
+/*
+External pages buttons
+*/
+.ext-btn{
+  display: inline-block;
+  color: @white-color;
+  padding: 0 25px;
+  font-size: 0;
+  text-align: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  vertical-align: middle;
+  border: 1px solid @blue-color;
+  background-color: @blue-color;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  
+  &:hover{
+    color: @blue-color;
+    background-color: @white-color;
+  }
+
+  &--download{
+    .gotham-b;
+    font-size: 22px;
+    line-height: 53px;
+  }
+}
+
+.social-btn{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  touch-action: manipulation;
+  vertical-align: middle;
+  border-radius: 100%;
+  background-color: @grey-color-2;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+  background-position: 50% 50%;
+
+  &:hover{
+    background-color: @grey-color;
+  }
+
+  &--fb{
+    background-image: url(../img/social-btn--fb.png);
+  }
+  &--vk{
+    background-image: url(../img/social-btn--vk.png);
+  }
+  &--tw{
+    background-image: url(../img/social-btn--tw.png);
+  }
+  &--gp{
+    background-image: url(../img/social-btn--gp.png);
+  }
+}
+
+.ext-btn-wrapper{
+  margin: 60px 0;
+}
