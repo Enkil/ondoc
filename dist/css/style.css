@@ -24104,9 +24104,10 @@ form input[type='password']
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
-    line-height: 35px;
 
     display: inline-block;
+
+    padding-top: 8px;
 }
 .clinic-docs__link
 {
