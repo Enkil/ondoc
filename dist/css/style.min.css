@@ -23299,6 +23299,7 @@ form input[type='password']
 
     display: inline-block;
 
+    width: 100%;
     height: 33px;
     padding-right: 15px;
     padding-left: 30px;
