@@ -24115,22 +24115,11 @@ form input[type='password']
     font-size: 15px;
     line-height: 30px;
 
+    position: relative;
+
     display: inline-block;
 
     margin: 5px;
-}
-.clinic-docs__link:after
-{
-    display: inline-block;
-
-    width: 10px;
-    height: 6px;
-    margin-left: 5px;
-
-    content: '';
-    vertical-align: middle;
-
-    background: url(../img/arrow-down.png) no-repeat;
 }
 .clinic-docs__link--addr
 {
@@ -24145,6 +24134,46 @@ form input[type='password']
     padding: 12px 20px 12px 20px;
 
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.clinic-docs__dropdown
+{
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+
+    padding: 15px 15px 20px 15px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+}
+.clinic-docs__dropdown > ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+.clinic-docs__dropdown:before
+{
+    position: absolute;
+    top: -14px;
+    left: 10px;
+
+    content: '';
+
+    border: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+}
+.clinic-docs__dropdown-link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 13px;
+}
+.clinic-docs__dropdown-link:hover
+{
+    color: #7ec6e0;
 }
 .steps-modal__input-small
 {

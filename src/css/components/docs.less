@@ -721,12 +721,12 @@
   }
 
   &__link{
-    .arrow-down;
     .gotham-m;
     font-size: 15px;
     display: inline-block;
     margin: 5px;
     line-height: 30px;
+    position: relative;
 
     &--addr{
       padding-right: 60px;
@@ -740,6 +740,41 @@
   &__widget-header{
     .bottom-line-grey;
     padding: 12px 20px 12px 20px;
+  }
+
+  &__dropdown{
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+//    right: 0;
+    padding: 15px 15px 20px 15px;
+    border-radius: 10px;
+    background-color: @white-color;
+    box-shadow: 0 0 13px 2px @grey-color-2;
+
+    > ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &:before{
+      position: absolute;
+      top: -14px;
+      left: 10px;
+      content: '';
+      border: 7px solid transparent;
+      border-bottom: 7px solid @white-color;
+    }
+  }
+
+  &__dropdown-link{
+    .gotham-m;
+    font-size: 13px;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
   }
 }
 
