@@ -10011,22 +10011,6 @@ a:focus
 {
     margin-bottom: 0;
 }
-.widget-consultation__line--wo-margin2
-{
-    margin-bottom: 0;
-}
-.widget-consultation__line--wo-margin2:first-child
-{
-    margin-right: -13px;
-}
-.widget-consultation__line--wo-margin2:last-child
-{
-    margin-left: -13px;
-}
-.widget-consultation__line--wo-margin2:last-child:before
-{
-    margin: auto -18px auto 8px;
-}
 .widget-consultation__line:before
 {
     position: absolute;
