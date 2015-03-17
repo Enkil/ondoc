@@ -21272,7 +21272,7 @@ form input[type='password']
 }
 .drugs__header-links:hover
 {
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #caedf5;
 }
 .drugs__header-links--current:before
@@ -21318,7 +21318,7 @@ form input[type='password']
 {
     color: #fff;
     border: 1px solid #5db7d8;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #5db7d8;
 }
 .drugs__header-links--active.drugs__header-links--current:before
