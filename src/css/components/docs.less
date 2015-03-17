@@ -537,8 +537,6 @@
 
 
 // docs modal
-
-
 .docs-modal {
   position: fixed;
   z-index: 100;
@@ -778,7 +776,38 @@
   }
 }
 
+.docs-cap{
+  height: 760px;
 
+  &__wrapper{
+    .text-center;
+    margin-top: 115px;
+  }
 
+  &__img{
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+    margin-bottom: 10px;
 
+    &--docs{
+      background: url("../img/icon-docs-big-grey.png") no-repeat;
+    }
+    &--docs-my{
+      background: url("../img/icon-docs-my-big-grey.png") no-repeat;
+    }
+    &--docs-fave{
+      background: url("../img/icon-docs-fave-big-grey.png") no-repeat;
+    }
+  }
+
+  &__text{
+    .gotham-m;
+    font-size: 14px;
+    width: 180px;
+    margin: 0 auto;
+    color: @grey-color-2;
+    text-align: center;
+  }
+}
 

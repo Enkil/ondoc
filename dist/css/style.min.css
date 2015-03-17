@@ -22739,6 +22739,49 @@ form input[type='password']
 
     background: url(../img/icon-doc--ondocked.png);
 }
+.clinics-cap
+{
+    height: 760px;
+}
+.clinics-cap__wrapper
+{
+    margin-top: 115px;
+
+    text-align: center;
+}
+.clinics-cap__img
+{
+    display: inline-block;
+
+    width: 90px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.clinics-cap__img--clinics
+{
+    background: url('../img/icon-clinics-big-grey.png') no-repeat;
+}
+.clinics-cap__img--clinics-my
+{
+    background: url('../img/icon-clinics-my-big-grey.png') no-repeat;
+}
+.clinics-cap__img--clinics-fave
+{
+    background: url('../img/icon-clinics-fave-big-grey.png') no-repeat;
+}
+.clinics-cap__text
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+
+    width: 180px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, .2);
+}
 .clinics-modal
 {
     position: fixed;
@@ -24045,6 +24088,49 @@ form input[type='password']
 .clinic-docs__dropdown-link:hover
 {
     color: #7ec6e0;
+}
+.docs-cap
+{
+    height: 760px;
+}
+.docs-cap__wrapper
+{
+    margin-top: 115px;
+
+    text-align: center;
+}
+.docs-cap__img
+{
+    display: inline-block;
+
+    width: 77px;
+    height: 77px;
+    margin-bottom: 10px;
+}
+.docs-cap__img--docs
+{
+    background: url('../img/icon-docs-big-grey.png') no-repeat;
+}
+.docs-cap__img--docs-my
+{
+    background: url('../img/icon-docs-my-big-grey.png') no-repeat;
+}
+.docs-cap__img--docs-fave
+{
+    background: url('../img/icon-docs-fave-big-grey.png') no-repeat;
+}
+.docs-cap__text
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+
+    width: 180px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, .2);
 }
 .steps-modal__input-small
 {

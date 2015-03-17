@@ -109,47 +109,33 @@
             <!-- Right page block-->
             <div class="col-xs-26 col-md-28 col-lg-29">
 
-                <!-- Docs Header -->
-<div class="row docs__header">
+                <!-- Clinics Header -->
+<div class="row clinics__header">
 
-    <div class="col-xs-4">
-        <a class="content-header__back" href="#">Назад</a>
+    <div class="col-xs-14 text-left">
+        <a class="clinics__head-link clinics__head-link--docs" href="docs.html">Врачи</a>
+        <a class="clinics__head-link clinics__head-link--clinics clinics__head-link--active" href="clinics.html">Клиники</a>
     </div>
 
-    <div class="col-xs-28 text-center">
-        <span class="clinic-docs__title">Врачи клиники СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ СМТ</span>
+    <div class="col-xs-7 text-center">
+        <a class="clinics__head-link clinics__head-link--filter arrow-down" href="#">Фильтр</a>
     </div>
 
+    <div class="col-xs-15 text-right non-padding-right">
+        <a class="clinics__search" href="#"></a>
+        <form action="" class="display-none js__search-form">
+            <input type="search" placeholder="Поиск" class="clinics__search-input"/>
+        </form>
+    </div>
 
-</div>
-<!-- / Docs Header -->
+    <!-- Filter block -->
+<div class="col-xs-36  display-none medcard-filter">
 
-
-                <!-- Content -->
-                <div class="row widget">
-
-
-                    <!-- Docs widget header -->
-<div class="row">
+    <!-- Specs -->
     <div class="col-xs-36">
+        <a class="medcard-filter__link" href="">Специализации</a>
 
-                <div class="clinic-docs__widget-header">
-
-                    <a class="clinic-docs__link clinic-docs__link--addr arrow-down" href="#">линия Кадетская В.О., д.15</a>
-
-                    <div class="clinic-docs__dropdown display-none">
-                        <ul>
-                            <li><a class="clinic-docs__dropdown-link" href="">линия Кадетская В.О., д.15</a></li>
-                            <li><a class="clinic-docs__dropdown-link" href="">линия Кадетская В.О., д.15</a></li>
-                            <li><a class="clinic-docs__dropdown-link" href="">линия Кадетская В.О., д.15</a></li>
-                            <li><a class="clinic-docs__dropdown-link" href="">Москвоский пр. 22</a></li>
-                            <li><a class="clinic-docs__dropdown-link" href="">Москвоский пр. 22</a></li>
-                        </ul>
-                    </div>
-
-                    <a class="medcard-filter__link" href="">Специализации</a>
-
-                    <!-- Choose specialisation Pop-UP -->
+        <!-- Choose specialisation Pop-UP -->
 <div class="medcard-spec__wrapper display-none">
     <div class="row medcard-spec">
 
@@ -505,26 +491,120 @@
 </div>
 <!-- / Choose specialisation Pop-UP -->
 
-                    <span class="medcard-filter__tag">Акушер <span class="medcard-filter__tag-close"></span> </span>
-                    <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Акушер <span class="medcard-filter__tag-close"></span> </span>
+        <span class="medcard-filter__tag">Акушер <span class="medcard-filter__tag-close"></span> </span>
+        <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+    </div>
 
-                </div>
+    <!-- Search -->
+    <div class="col-xs-36">
+
+        <div class="row">
+
+            <div class="col-xs-11">
+                <form action="">
+                    <input class="filter__search" type="text" placeholder="Город" value="Санкт-Петербург"/>
+                </form>
+            </div>
+
+            <div class="col-xs-7 col-lg-6">
+                <span class="filter__check-round filter__check-round--active"><i class="filter__check-round-icon"> </i> Ближайшие</span>
+            </div>
+
+            <div class="col-xs-5 col-lg-4">
+                <a class="filter__subway" href="#">Метро</a>
+            </div>
+
+            <div class="col-xs-13 col-lg-15 filter__tag-group">
+                <span class="medcard-filter__tag">Горьковсая <span class="medcard-filter__tag-close"></span> </span>
+                <span class="medcard-filter__tag">Петроградская <span class="medcard-filter__tag-close"></span> </span>
+                <span class="medcard-filter__tag">Петроградская <span class="medcard-filter__tag-close"></span> </span>
+                <span class="medcard-filter__tag">Петроградская <span class="medcard-filter__tag-close"></span> </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Support and Find/Clear btn -->
+    <div class="col-xs-36">
+
+        <div class="row">
+
+            <div class="col-xs-18">
+                <span class="filter__check-round filter__check-round--active"><i class="filter__check-round-icon"> </i> Поддержка мед. карты OnDoc</span>
+            </div>
+
+            <div class="col-xs-18">
+                <input type="submit" class="pull-right medcard-filter__find" value="Найти"/>
+                <a href="#" class="pull-right medcard-filter__tag medcard-filter__tag--clear"> <span class="medcard-filter__tag-close medcard-filter__tag-close--clear"></span> Очистить фильтры</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- / Filter block -->
+
+</div>
+<!-- / Clinics Header -->
+
+
+                <!-- Content -->
+                <div class="row widget">
+
+
+                    <!-- Clinics widget header -->
+<div class="row">
+    <div class="col-xs-36 text-center">
+        <div class="clinics__widget-header">
+
+            <div class="col-xs-8 text-left">
+                <a class="clinics__head-link clinics__head-link--list" href="#"></a>
+                <a class="clinics__head-link clinics__head-link--onmap clinics__head-link--active" href="#"></a>
+            </div>
+
+            <div class="col-xs-20">
+                <a class="clinics__head-link clinics__head-link--all clinics__head-link--active" href="clinics.html">Все</a>
+                <a class="clinics__head-link clinics__head-link--my" href="clinics_cap--clinics-my.html">Мои</a>
+                <a class="clinics__head-link clinics__head-link--fave" href="clinics_cap--clinics-fave.html">Избранные</a>
+            </div>
+
+            <div class="col-xs-8">
+                <a class="widgets-btn--plus pull-right" href="#"></a>
+            </div>
+
+        </div>
     </div>
 </div>
-<!-- / Docs widget header -->
+<!-- / Clinics widget header -->
 
                     <!-- Widget body -->
                     <div class="row">
 
 
-                        <!-- build:include html/components/docs__left-column.html -->
-                        This will be replaced by the content of docs__left-column.html
-                        <!-- /build -->
+                        <div class="col-xs-36 clinics-cap">
 
+    <div class="clinics-cap__wrapper">
+        <!--<span class="clinics-cap__img clinics-cap__img--clinics"></span>-->
+        <!--<span class="clinics-cap__img clinics-cap__img--clinics-my"></span>-->
+        <span class="clinics-cap__img clinics-cap__img--clinics-fave"></span>
+    </div>
 
-                        <!-- build:include html/components/docs__right-column.html -->
-                        This will be replaced by the content of docs__right-column.html
-                        <!-- /build -->
+    <div class="col-xs-36">
+        <div class="clinics-cap__text">
+            Здесь появятся клиники, которые вы добавили в избранное.
+        </div>
+    </div>
+
+</div>
 
 
                     </div>

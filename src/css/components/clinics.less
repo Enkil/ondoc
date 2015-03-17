@@ -519,9 +519,43 @@
   }
 }
 
+.clinics-cap{
+  height: 760px;
+
+  &__wrapper{
+    .text-center;
+    margin-top: 115px;
+  }
+
+  &__img{
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    margin-bottom: 10px;
+
+    &--clinics{
+      background: url("../img/icon-clinics-big-grey.png") no-repeat;
+    }
+    &--clinics-my{
+      background: url("../img/icon-clinics-my-big-grey.png") no-repeat;
+    }
+    &--clinics-fave{
+      background: url("../img/icon-clinics-fave-big-grey.png") no-repeat;
+    }
+  }
+
+  &__text{
+    .gotham-m;
+    font-size: 14px;
+    width: 180px;
+    margin: 0 auto;
+    color: @grey-color-2;
+    text-align: center;
+  }
+}
+
+
 //  modal
-
-
 .clinics-modal {
   position: fixed;
   z-index: 100;
