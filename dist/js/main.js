@@ -16954,3 +16954,17 @@ this.valueCount.seriesBuilders[d],h.populateColumns(e)&&g.push(h);for(;e.length>
 e.series.length);d--;)i=b.series[d]||{},b.series[d]=g.merge(i,e.series[d]);else delete b.series;b=g.merge(e,b);a.call(f,b,c)}}),b):a.call(f,b,c)});l=function(){this.readers=[];this.pointIsArray=!0};l.prototype.populateColumns=function(a){var b=!0;j(this.readers,function(b){if(b.columnIndex===void 0)b.columnIndex=a.shift()});j(this.readers,function(a){a.columnIndex===void 0&&(b=!1)});return b};l.prototype.read=function(a,b){var c=this.pointIsArray,f=c?[]:{},e;j(this.readers,function(d){var e=a[d.columnIndex][b];
 c?f.push(e):f[d.configName]=e});if(this.name===void 0&&this.readers.length>=2&&(e=this.getReferencedColumnIndexes(),e.length>=2))e.shift(),e.sort(),this.name=a[e.shift()].name;return f};l.prototype.addColumnReader=function(a,b){this.readers.push({columnIndex:a,configName:b});if(!(b==="x"||b==="y"||b===void 0))this.pointIsArray=!1};l.prototype.getReferencedColumnIndexes=function(){var a,b=[],c;for(a=0;a<this.readers.length;a+=1)c=this.readers[a],c.columnIndex!==void 0&&b.push(c.columnIndex);return b};
 l.prototype.hasReader=function(a){var b,c;for(b=0;b<this.readers.length;b+=1)if(c=this.readers[b],c.configName===a)return!0}})(Highcharts);
+
+/*
+Toogle promo form
+ */
+
+$(document).ready(function() {
+
+    $('.promo-form__submit').click(function(event){
+        event.preventDefault();
+        $('.promo-form.display-none').toggleClass('display-none');
+        $(this).parents('.promo-form').toggleClass('display-none');
+    });
+
+});

@@ -1,0 +1,89 @@
+.fdc-promo{
+  margin-top: 76px;
+  height: 565px;
+  background-image: url("../img/fdc-promo-block-gb-img.png");
+  .simple-parallax;
+  position: relative;
+
+  &__title{
+    .gotham-m;
+    margin: 35px;
+    color: @white-color;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 1px 1px 2px @grey-color-5;
+    
+    @media (max-width: 1260px) {
+      margin: 5px;
+    }
+  }
+
+  &__tel{
+    .gotham-m;
+    font-size: 36px;
+    color: #99ffff;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 2px @grey-color-5;
+
+    &--text{
+      font-size: 22px;
+    }
+  }
+
+  &__concept{
+    display: table;
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  &__concept-group{
+    display: table-cell;
+    text-align: center;
+  }
+
+  &__concept-img{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 2px solid @white-color;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 35px;
+
+    &--1{
+      background-image: url("../img/fdc-promo__concept-bg-img--1.png");
+    }
+    &--2{
+      background-image: url("../img/fdc-promo__concept-bg-img--2.png");
+    }
+    &--3{
+      background-image: url("../img/fdc-promo__concept-bg-img--3.png");
+    }
+  }
+
+  &__concept-text{
+    .gotham-m;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: @white-color;
+    width: 160px;
+  }
+}
+
+.fdc-numbers{
+
+  &__num{
+    .gotham-m;
+    font-size: 40px;
+    color: @blue-color;
+  }
+
+  &__text{
+    .gotham-m;
+    font-size: 20px;
+    color: @blue-color;
+  }
+}
