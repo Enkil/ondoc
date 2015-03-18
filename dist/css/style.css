@@ -11541,6 +11541,8 @@ External pages buttons
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 22px;
     line-height: 56px;
+
+    border-radius: 45px;
 }
 .social-btn
 {
