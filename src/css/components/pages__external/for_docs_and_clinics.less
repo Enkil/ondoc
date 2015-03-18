@@ -1,8 +1,8 @@
 .fdc-promo{
+  .simple-parallax;
   margin-top: 76px;
   height: 565px;
   background-image: url("../img/fdc-promo-block-gb-img.png");
-  .simple-parallax;
   position: relative;
 
   &__title{
@@ -79,11 +79,171 @@
     .gotham-m;
     font-size: 40px;
     color: @blue-color;
+    display: block;
+    text-align: center;
+    margin-top: 44px;
+    line-height: 30px;
   }
 
   &__text{
     .gotham-m;
     font-size: 20px;
     color: @blue-color;
+    display: block;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+}
+
+.fdc-section{
+  background: linear-gradient(to bottom, #d6eaf2, #fbfbfc);
+  border-bottom: 1px solid @grey-color-2;
+  padding-top: 80px;
+
+
+  &__title{
+    .gotham-m;
+    font-size: 30px;
+    margin-bottom: 45px;
+    margin-top: 90px;
+
+    &--mt-smaller{
+      margin-top: 50px;
+    }
+
+    &--future{
+      margin-top: 15px;
+    }
+  }
+
+
+  &__devices{
+    position: relative;
+
+    &--clients{
+      height: 452px;
+    }
+
+    &--connect{
+      height: 450px;
+    }
+
+    &--care{
+      height: 460px;
+    }
+
+    &--results{
+      height: 450px;
+    }
+
+    &--loyalty{
+      height: 410px;
+    }
+
+    &--docs{
+      height: 460px;
+    }
+  }
+
+
+  &__iphone{
+    padding: 75px 15px 0;
+    position: absolute;
+    display: inline-block;
+    transition: all 1s ease;
+    vertical-align: bottom;
+    bottom: 0;
+//    bottom: -400px;
+//    opacity: 0;
+    background: url("../img/iphone-bg.png") no-repeat;
+
+    &--1{
+      right: 0;
+      z-index: 10;
+    }
+
+    &--2{
+      left: 90px;
+    }
+
+    &--3{
+      left: 30px;
+      background: url("../img/iphone-bg--2.png") no-repeat;
+    }
+
+    &--4{
+      right: 120px;
+    }
+
+    &--5{
+      right: 50px;
+      z-index: 10;
+      @media (max-width: 1025px) {
+        right: 0;
+      }
+    }
+
+    &--6{
+      right: 260px;
+      @media (max-width: 1025px) {
+        right: 190px;
+      }
+    }
+
+    &--7{
+      height: 330px;
+    }
+  }
+
+
+  &__app-screen{
+    overflow: hidden;
+    height: 375px;
+
+    &--2{
+      height: 330px;
+    }
+
+    &--3{
+      height: 320px;
+    }
+
+    &--5{
+      height: 380px;
+    }
+  }
+
+  &__note{
+    color: @blue-color;
+  }
+
+  &__future{
+    .gotham-m;
+    font-size: 18px;
+    color: @white-color;
+    line-height: 28px;
+    padding: 0 13px;
+    border-radius: 4px;
+    background-color: @blue-color;
+    display: inline-block;
+    margin-top: 25px;
+  }
+}
+
+.fdc-private-info{
+  .simple-parallax;
+  background-image: url("../img/private-info-bg.png");
+  height: 350px;
+  padding: 70px 0;
+
+  &__title{
+    .gotham-m;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  &__text{
+    margin-bottom: 40px;
   }
 }

@@ -1,3 +1,4 @@
+@import '../../bower_components/animate.css/animate.css';
 @import '../../bower_components/ekko-lightbox/dist/ekko-lightbox.css';
 @import '../../bower_components/ionrangeslider/css/ion.rangeSlider.css';
 /* Стили для форм */
@@ -11533,6 +11534,13 @@ External pages buttons
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 22px;
     line-height: 53px;
+}
+.ext-btn--md
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 56px;
 }
 .social-btn
 {
@@ -25230,7 +25238,7 @@ Styles for filter block on consultations, clinics and docs pages
 .header-external
 {
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     top: 0;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -25612,12 +25620,20 @@ Styles for filter block on consultations, clinics and docs pages
 {
     width: 100%;
     max-width: 365px;
+    height: 357px;
     padding: 20px;
 
     border-radius: 8px;
     background: -webkit-linear-gradient(310deg, #6cc, #0799d2);
     background:         linear-gradient(140deg, #6cc, #0799d2);
     box-shadow: 0 0 20px rgba(0, 0, 0, .35);
+}
+@media (max-width: 1090px)
+{
+    .promo-form
+    {
+        height: 377px;
+    }
 }
 .promo-form__title
 {
@@ -25912,6 +25928,13 @@ Styles for filter block on consultations, clinics and docs pages
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 40px;
+    line-height: 30px;
+
+    display: block;
+
+    margin-top: 44px;
+
+    text-align: center;
 
     color: #5db7d8;
 }
@@ -25921,5 +25944,187 @@ Styles for filter block on consultations, clinics and docs pages
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
 
+    display: block;
+
+    margin-bottom: 44px;
+
+    text-align: center;
+
     color: #5db7d8;
+}
+.fdc-section
+{
+    padding-top: 80px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    background: -webkit-linear-gradient(top, #d6eaf2, #fbfbfc);
+    background:         linear-gradient(to bottom, #d6eaf2, #fbfbfc);
+}
+.fdc-section__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+
+    margin-top: 90px;
+    margin-bottom: 45px;
+}
+.fdc-section__title--mt-smaller
+{
+    margin-top: 50px;
+}
+.fdc-section__title--future
+{
+    margin-top: 15px;
+}
+.fdc-section__devices
+{
+    position: relative;
+}
+.fdc-section__devices--clients
+{
+    height: 452px;
+}
+.fdc-section__devices--connect
+{
+    height: 450px;
+}
+.fdc-section__devices--care
+{
+    height: 460px;
+}
+.fdc-section__devices--results
+{
+    height: 450px;
+}
+.fdc-section__devices--loyalty
+{
+    height: 410px;
+}
+.fdc-section__devices--docs
+{
+    height: 460px;
+}
+.fdc-section__iphone
+{
+    position: absolute;
+    bottom: 0;
+
+    display: inline-block;
+
+    padding: 75px 15px 0;
+
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+    vertical-align: bottom;
+
+    background: url('../img/iphone-bg.png') no-repeat;
+}
+.fdc-section__iphone--1
+{
+    z-index: 10;
+    right: 0;
+}
+.fdc-section__iphone--2
+{
+    left: 90px;
+}
+.fdc-section__iphone--3
+{
+    left: 30px;
+
+    background: url('../img/iphone-bg--2.png') no-repeat;
+}
+.fdc-section__iphone--4
+{
+    right: 120px;
+}
+.fdc-section__iphone--5
+{
+    z-index: 10;
+    right: 50px;
+}
+@media (max-width: 1025px)
+{
+    .fdc-section__iphone--5
+    {
+        right: 0;
+    }
+}
+.fdc-section__iphone--6
+{
+    right: 260px;
+}
+@media (max-width: 1025px)
+{
+    .fdc-section__iphone--6
+    {
+        right: 190px;
+    }
+}
+.fdc-section__iphone--7
+{
+    height: 330px;
+}
+.fdc-section__app-screen
+{
+    overflow: hidden;
+
+    height: 375px;
+}
+.fdc-section__app-screen--2
+{
+    height: 330px;
+}
+.fdc-section__app-screen--3
+{
+    height: 320px;
+}
+.fdc-section__app-screen--5
+{
+    height: 380px;
+}
+.fdc-section__note
+{
+    color: #5db7d8;
+}
+.fdc-section__future
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 0 13px;
+
+    color: #fff;
+    border-radius: 4px;
+    background-color: #5db7d8;
+}
+.fdc-private-info
+{
+    height: 350px;
+    padding: 70px 0;
+
+    background-image: url('../img/private-info-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.fdc-private-info__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.fdc-private-info__text
+{
+    margin-bottom: 40px;
 }

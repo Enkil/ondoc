@@ -11,3 +11,8 @@ $(document).ready(function() {
     });
 
 });
+
+/*
+Init animation in scroll
+ */
+new WOW().init();
