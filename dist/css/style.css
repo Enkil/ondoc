@@ -9175,13 +9175,12 @@ a:focus
 
     width: 15px;
     height: 22px;
-    margin-bottom: 5px;
-    padding-right: 21px;
+    padding-right: 25px;
 
     content: '';
     vertical-align: middle;
 
-    background: url(../img/icon-lamp.png) no-repeat;
+    background: url(../img/icon-support.png) no-repeat;
 }
 .main-header__dropdown-toggle
 {
