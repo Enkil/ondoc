@@ -101,7 +101,26 @@
   background: linear-gradient(to bottom, #d6eaf2, #fbfbfc);
   border-bottom: 1px solid @grey-color-2;
   padding-top: 80px;
+  position: relative;
 
+  &--loyalty{
+    z-index: 50;
+  }
+  &--results{
+    z-index: 70;
+  }
+  &--care{
+    z-index: 90;
+  }
+  &--connect{
+    z-index: 110;
+  }
+  &--docs{
+    z-index: 130;
+  }
+  &--consultations{
+    z-index: 150;
+  }
 
   &__title{
     .gotham-m;
@@ -121,6 +140,14 @@
 
   &__devices{
     position: relative;
+    bottom: -400px;
+    opacity: 0;
+    transition: all 1s ease;
+
+    &--active{
+      bottom: 0;
+      opacity: 1;
+    }
 
     &--clients{
       height: 452px;
@@ -152,11 +179,8 @@
     padding: 75px 19px 0;
     position: absolute;
     display: inline-block;
-    transition: all 1s ease;
-    vertical-align: bottom;
     bottom: 0;
-//    bottom: -400px;
-//    opacity: 0;
+    vertical-align: bottom;
     background: url("../img/iphone-bg.png") no-repeat;
 
     &--1{
@@ -233,6 +257,8 @@
 }
 
 .fdc-private-info{
+  position: relative;
+  z-index: 170;
   background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;

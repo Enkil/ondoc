@@ -1,4 +1,3 @@
-@import '../../bower_components/animate.css/animate.css';
 @import '../../bower_components/ekko-lightbox/dist/ekko-lightbox.css';
 @import '../../bower_components/ionrangeslider/css/ion.rangeSlider.css';
 /* Стили для форм */
@@ -25946,11 +25945,37 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .fdc-section
 {
+    position: relative;
+
     padding-top: 80px;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background: -webkit-linear-gradient(top, #d6eaf2, #fbfbfc);
     background:         linear-gradient(to bottom, #d6eaf2, #fbfbfc);
+}
+.fdc-section--loyalty
+{
+    z-index: 50;
+}
+.fdc-section--results
+{
+    z-index: 70;
+}
+.fdc-section--care
+{
+    z-index: 90;
+}
+.fdc-section--connect
+{
+    z-index: 110;
+}
+.fdc-section--docs
+{
+    z-index: 130;
+}
+.fdc-section--consultations
+{
+    z-index: 150;
 }
 .fdc-section__title
 {
@@ -25972,6 +25997,18 @@ Styles for filter block on consultations, clinics and docs pages
 .fdc-section__devices
 {
     position: relative;
+    bottom: -400px;
+
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+
+    opacity: 0;
+}
+.fdc-section__devices--active
+{
+    bottom: 0;
+
+    opacity: 1;
 }
 .fdc-section__devices--clients
 {
@@ -26006,8 +26043,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     padding: 75px 19px 0;
 
-    -webkit-transition: all 1s ease;
-            transition: all 1s ease;
     vertical-align: bottom;
 
     background: url('../img/iphone-bg.png') no-repeat;
@@ -26098,6 +26133,9 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .fdc-private-info
 {
+    position: relative;
+    z-index: 170;
+
     height: 350px;
     padding: 70px 0;
 
