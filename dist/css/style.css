@@ -25607,13 +25607,6 @@ Styles for filter block on consultations, clinics and docs pages
     content: counters(item, '.') '. ';
     counter-increment: item;
 }
-.simple-parallax
-{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    background-size: cover;
-}
 /*
   Lead form on landings
 */
@@ -25770,8 +25763,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     background-image: url('../img/about_company-slide.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
+    background-attachment: local;
     background-size: cover;
 }
 .about-promo-block__text
@@ -25831,8 +25823,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     background-image: url('../img/fdc-promo-block-gb-img.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
+    background-attachment: local;
     background-size: cover;
 }
 .fdc-promo__title
@@ -26112,8 +26103,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     background-image: url('../img/private-info-bg.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
+    background-attachment: local;
     background-size: cover;
 }
 .fdc-private-info__title
