@@ -28616,7 +28616,8 @@ form input[type='password']
 
     color: #5db7d8;
     border: 1px solid #5db7d8;
-    background: #fff;
+    background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
+    background-position: 15% 50%;
 }
 .contact-form__btn--send-success:focus
 {
