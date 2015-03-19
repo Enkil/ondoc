@@ -12444,6 +12444,16 @@ html
 {
     padding-left: 0;
 }
+.non-padding-left-right
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+.non-margin-left-right
+{
+    margin-right: 0;
+    margin-left: 0;
+}
 .display-none
 {
     display: none!important;
