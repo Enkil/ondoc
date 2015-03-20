@@ -29190,6 +29190,15 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
+
+.page-text__h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page-text__place-date {
+    margin-bottom: 15px;
+}
 .list-sublevel
 {
     margin-top: 25px;
