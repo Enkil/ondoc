@@ -28621,13 +28621,21 @@ form input[type='password']
 }
 .contact-form__btn--send-success:focus
 {
+    text-decoration: none;
+
     color: #5db7d8;
-    background: #fff;
+    border: 1px solid #5db7d8;
+    background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
+    background-position: 15% 50%;
 }
 .contact-form__btn--send-success:active
 {
+    text-decoration: none;
+
     color: #5db7d8;
-    background: #fff;
+    border: 1px solid #5db7d8;
+    background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
+    background-position: 15% 50%;
 }
 /*
 Styles for filter block on consultations, clinics and docs pages
