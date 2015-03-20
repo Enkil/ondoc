@@ -15579,6 +15579,10 @@ External pages buttons
 
     -ms-overflow-style: none;
 }
+
+.medcard-spec__inner-wrapper::-webkit-scrollbar {
+    width: 0;
+}
 .medcard-spec__inner-wrapper:after
 {
     position: absolute;
