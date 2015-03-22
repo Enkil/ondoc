@@ -13690,7 +13690,7 @@ $(document).ready(function() {
     $('.js__find-add-drug').click(function(event){
         event.preventDefault();
         $('.drugs__modal-wrapper').removeClass('display-none')
-    })
+    });
 
     $('.drugs__modal-close').click(function(event){
         event.preventDefault();
@@ -13704,11 +13704,6 @@ $(document).ready(function() {
  * Toggle days state
  */
 $(document).ready(function() {
-
-    //$('.drugs__drug-day').click(function(){
-    //    $('.drugs__drug-day--active').removeClass('drugs__drug-day--active');
-    //    $(this).addClass('drugs__drug-day--active');
-    //});
 
     $('.js__drug-day').click(function(event){
         event.preventDefault();
@@ -16968,9 +16963,7 @@ e.series.length);d--;)i=b.series[d]||{},b.series[d]=g.merge(i,e.series[d]);else 
 c?f.push(e):f[d.configName]=e});if(this.name===void 0&&this.readers.length>=2&&(e=this.getReferencedColumnIndexes(),e.length>=2))e.shift(),e.sort(),this.name=a[e.shift()].name;return f};l.prototype.addColumnReader=function(a,b){this.readers.push({columnIndex:a,configName:b});if(!(b==="x"||b==="y"||b===void 0))this.pointIsArray=!1};l.prototype.getReferencedColumnIndexes=function(){var a,b=[],c;for(a=0;a<this.readers.length;a+=1)c=this.readers[a],c.columnIndex!==void 0&&b.push(c.columnIndex);return b};
 l.prototype.hasReader=function(a){var b,c;for(b=0;b<this.readers.length;b+=1)if(c=this.readers[b],c.configName===a)return!0}})(Highcharts);
 
-/*
-Toogle promo form
- */
+/* Toggle promo form */
 
 $(document).ready(function() {
 
@@ -16982,9 +16975,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Animation on scroll
- */
+/* Animation on scroll */
 
 $(window).on('scroll', function(){
     if(!$('#js__animate-1').length) {
@@ -17015,6 +17006,57 @@ $(window).on('scroll', function(){
         $('#js__animate-7').addClass('fdc-section__devices--active');
     }
 });
+
+/* Registration, login, password recovery, sms auth PopUps */
+$(document).ready(function () {
+
+    /* Show registration popup */
+    $('.js__find--reg').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--reg-popup').removeClass('display-none');
+    });
+
+    /* Show login popup */
+    $('.js__find--login').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--login-popup').removeClass('display-none');
+    });
+
+    /* Show recovery popup */
+    $('.js__find--recovery').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--recovery-popup').removeClass('display-none');
+    });
+
+    /* Show SMS popup */
+    $('.js__find--sms').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--sms-popup').removeClass('display-none');
+    });
+
+    /* Close popups */
+    $('.popup-login__close').click(function (event) {
+        event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+    });
+
+    /* Toogle heart checkbox */
+    $('.popup-login__check').click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass('popup-login__check--active');
+    });
+
+});
+
 google.maps.event.addDomListener(window, 'load', init);
 var map;
 function init() {
@@ -17073,3 +17115,52 @@ function init() {
         infowindow.open(map,marker);
     });
 }
+/* Registration, login, password recovery, sms auth PopUps */
+$(document).ready(function () {
+
+    /* Show registration popup */
+    $('.js__find--reg').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--reg-popup').removeClass('display-none');
+    });
+
+    /* Show login popup */
+    $('.js__find--login').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--login-popup').removeClass('display-none');
+    });
+
+    /* Show recovery popup */
+    $('.js__find--recovery').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--recovery-popup').removeClass('display-none');
+    });
+
+    /* Show SMS popup */
+    $('.js__find--sms').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--sms-popup').removeClass('display-none');
+    });
+
+    /* Close popups */
+    $('.popup-login__close').click(function (event) {
+        event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+    });
+
+    /* Toogle heart checkbox */
+    $('.popup-login__check').click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass('popup-login__check--active');
+    });
+
+});

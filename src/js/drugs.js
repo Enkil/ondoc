@@ -50,7 +50,7 @@ $(document).ready(function() {
     $('.js__find-add-drug').click(function(event){
         event.preventDefault();
         $('.drugs__modal-wrapper').removeClass('display-none')
-    })
+    });
 
     $('.drugs__modal-close').click(function(event){
         event.preventDefault();
@@ -64,11 +64,6 @@ $(document).ready(function() {
  * Toggle days state
  */
 $(document).ready(function() {
-
-    //$('.drugs__drug-day').click(function(){
-    //    $('.drugs__drug-day--active').removeClass('drugs__drug-day--active');
-    //    $(this).addClass('drugs__drug-day--active');
-    //});
 
     $('.js__drug-day').click(function(event){
         event.preventDefault();

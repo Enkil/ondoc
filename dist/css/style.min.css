@@ -18471,61 +18471,6 @@ a {
     color: #10abd2
 }
 
-.main-modal-mains form input[type=text], form input[type=password], form select, form textarea {
-    font-size: 32px;
-    line-height: 36px;
-    display: block;
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 auto 25px;
-    padding: 25px 0 8px;
-    text-align: center;
-    border: 0;
-    border-bottom: 1px solid #c4c6c2;
-    outline: 0;
-    background: 0 0
-}
-
-.main-modal-mains form label {
-    cursor: pointer
-}
-
-.main-modal-mains form button {
-    margin: 0;
-    cursor: pointer;
-    outline: 0
-}
-
-.main-modal-mains form input[type=checkbox] {
-    display: none;
-    margin: 20px
-}
-
-.main-modal-mains form input[type=checkbox] + label {
-    font-size: 22px;
-    line-height: 24px;
-    display: inline-block;
-    vertical-align: middle;
-    color: rgba(0, 0, 0, .9)
-}
-
-.main-modal-mains form input[type=checkbox] + label::before {
-    position: relative;
-    display: inline-block;
-    width: 26px;
-    height: 26px;
-    margin: 0 10px 0 0;
-    content: '';
-    vertical-align: middle;
-    background: url(../img/ico-checkbox.png) no-repeat;
-    background-size: 100%
-}
-
-.main-modal-mains form input[type=checkbox]:checked + label::before {
-    background: url(../img/ico-checkbox-active.png) no-repeat;
-    background-size: 100%
-}
-
 .android-popup .form-control:focus {
     border-color: #c4c6c2;
     outline: 0 !important;
@@ -23901,4 +23846,190 @@ a {
 
 .gm-style-iw a {
     color: #4272db
+}
+
+.popup-scrolltop {
+    overflow: hidden
+}
+
+.popup-login {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .95)
+}
+
+.popup-login__body {
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 500px;
+    margin: auto
+}
+
+.popup-login__header {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center
+}
+
+.popup-login__title {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
+    font-size: 32px
+}
+
+.popup-login__close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url(../img/icon-popup-login-close.png) no-repeat
+}
+
+.popup-login__close:hover {
+    opacity: .6
+}
+
+.popup-login__main {
+    text-align: center
+}
+
+.popup-login__input {
+    font-family: Gotham, Arial, sans-serif !important;
+    font-size: 24px;
+    line-height: 50px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 75px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 25px;
+    outline: 0 !important
+}
+
+.popup-login__input::-webkit-input-placeholder {
+    line-height: 50px;
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease
+}
+
+.popup-login__input::-moz-placeholder {
+    line-height: 50px;
+    transition: line-height .5s ease
+}
+
+.popup-login__input:-ms-input-placeholder {
+    line-height: 50px;
+    transition: line-height .5s ease
+}
+
+.popup-login__input::placeholder {
+    line-height: 50px;
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease
+}
+
+.popup-login__input:focus::-webkit-input-placeholder {
+    line-height: 150px;
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease
+}
+
+.popup-login__input:focus::-moz-placeholder {
+    line-height: 150px;
+    transition: line-height .5s ease
+}
+
+.popup-login__input:focus:-ms-input-placeholder {
+    line-height: 150px;
+    transition: line-height .5s ease
+}
+
+.popup-login__input:focus::placeholder {
+    line-height: 150px;
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease
+}
+
+.popup-login__btn-submit {
+    font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-size: 24px;
+    line-height: 53px;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 0 45px;
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;
+    color: #fff;
+    border: 1px solid #5db7d8;
+    border-radius: 25px;
+    outline: 0;
+    background-color: #5db7d8
+}
+
+.popup-login__btn-submit--login {
+    padding: 0 90px
+}
+
+.popup-login__btn-submit:hover {
+    color: #5db7d8;
+    background-color: #fff
+}
+
+.popup-login__text {
+    font-family: Gotham, Arial, sans-serif !important;
+    font-size: 16px;
+    margin: 0;
+    outline: 0 !important
+}
+
+.popup-login__big-link {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-size: 22px;
+    display: block;
+    margin: 25px 0;
+    color: #5db7d8
+}
+
+.popup-login__big-link--recovery {
+    margin-top: 0
+}
+
+.popup-login__big-link--sms {
+    margin-bottom: 0
+}
+
+.popup-login__check {
+    font-family: Gotham, Arial, sans-serif !important;
+    font-size: 22px;
+    display: block;
+    cursor: pointer;
+    color: #8d8d8d;
+    outline: 0 !important
+}
+
+.popup-login__check-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 50%
+}
+
+.popup-login__check--active .popup-login__check-icon {
+    background: url(../img/icon_heart.png) 50% 50% no-repeat;
+    background-size: 12px 10px
 }
