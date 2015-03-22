@@ -28577,6 +28577,11 @@ a
 /*
 Styles for filter block on consultations, clinics and docs pages
 */
+.filter__check-round-wrapper {
+    position: absolute;
+    z-index: 100;
+    left: 290px;
+}
 .filter__check-round
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -28611,12 +28616,19 @@ Styles for filter block on consultations, clinics and docs pages
     background: url('../img/icon_heart.png') 50% 50% no-repeat;
     background-size: 10px 8px;
 }
+
+.filter__search-wrapper {
+    position: absolute;
+    z-index: 100;
+}
 .filter__search
 {
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+
+    position: relative;
 
     display: block;
 
@@ -28693,6 +28705,8 @@ Styles for filter block on consultations, clinics and docs pages
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
     line-height: 55px;
+
+    margin-left: 450px;
 }
 .filter__subway:after
 {

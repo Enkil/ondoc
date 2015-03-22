@@ -22899,6 +22899,12 @@ a {
     background: url(../img//icon-checkmark-blue.png) 15% 50% no-repeat #fff
 }
 
+.filter__check-round-wrapper {
+    position: absolute;
+    z-index: 100;
+    left: 290px
+}
+
 .filter__check-round {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 15px;
@@ -22925,10 +22931,16 @@ a {
     background-size: 10px 8px
 }
 
+.filter__search-wrapper {
+    position: absolute;
+    z-index: 100
+}
+
 .filter__search {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 15px;
     line-height: 30px;
+    position: relative;
     display: block;
     width: 100%;
     height: 33px;
@@ -22991,9 +23003,9 @@ a {
 
 .filter__subway {
     font-family: Gotham-Medium, Arial, sans-serif !important;
-    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
-    line-height: 55px
+    line-height: 55px;
+    margin-left: 450px
 }
 
 .filter__subway:after {
