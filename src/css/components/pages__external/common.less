@@ -85,6 +85,7 @@
   Lead form on landings
 */
 .promo-form{
+  position: relative;
   width: 100%;
   max-width: 365px;
   height: 357px;
@@ -151,5 +152,35 @@
     margin-top: 90px;
     background-image: url("../img/promo-from-ok.png");
     background-repeat: no-repeat;
+  }
+}
+
+.promo-form-errors {
+  position: absolute;
+  right: 380px;
+  @media (max-width: 1090px) {
+    right: 340px;
+  }
+  top: 50px;
+  display: table;
+  width: 455px;
+  padding: 25px 25px 30px 25px;
+  background-color: @white-color;
+  border-radius: 10px;
+
+  &:after {
+    position: absolute;
+    top: calc(~'50% - 15px');
+    right: -26px;
+    content: '';
+    border: 15px solid transparent;
+    border-left: 12px solid @white-color;
+  }
+
+  &__item {
+    color: @red-color;
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
   }
 }

@@ -23360,6 +23360,7 @@ a {
 }
 
 .promo-form {
+    position: relative;
     width: 100%;
     max-width: 365px;
     height: 357px;
@@ -23477,6 +23478,39 @@ a {
     margin-bottom: 30px;
     background-image: url(../img/promo-from-ok.png);
     background-repeat: no-repeat
+}
+
+.promo-form-errors {
+    position: absolute;
+    top: 50px;
+    right: 380px;
+    display: table;
+    width: 455px;
+    padding: 25px 25px 30px;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+@media (max-width: 1090px) {
+    .promo-form-errors {
+        right: 340px
+    }
+}
+
+.promo-form-errors:after {
+    position: absolute;
+    top: calc(50% - 15px);
+    right: -26px;
+    content: '';
+    border: 15px solid transparent;
+    border-left: 12px solid #fff
+}
+
+.promo-form-errors__item {
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+    color: #dc4531
 }
 
 .about-promo-block {
