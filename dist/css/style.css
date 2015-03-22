@@ -15720,8 +15720,9 @@ External pages buttons
     bottom: 0;
     left: 0;
 
+    display: table;
+
     width: 490px;
-    height: 625px;
     margin: auto;
     padding: 20px 0 15px 0;
 
@@ -29748,7 +29749,6 @@ Styles for filter block on consultations, clinics and docs pages
 {
     color: #4272db;
 }
-
 /* Registration, login, password recovery, sms auth PopUps */
 .popup-scrolltop {
     overflow: hidden;

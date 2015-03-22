@@ -12873,8 +12873,8 @@ a:active, a:focus {
     right: 0;
     bottom: 0;
     left: 0;
+    display: table;
     width: 490px;
-    height: 625px;
     margin: auto;
     padding: 20px 0 15px;
     border-radius: 6px;
