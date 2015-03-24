@@ -3382,27 +3382,11 @@ th
 {
     content: '\e227';
 }
-.glyphicon-btc:before
-{
-    content: '\e227';
-}
-.glyphicon-xbt:before
-{
-    content: '\e227';
-}
 .glyphicon-yen:before
 {
     content: '\00a5';
 }
-.glyphicon-jpy:before
-{
-    content: '\00a5';
-}
 .glyphicon-ruble:before
-{
-    content: '\20bd';
-}
-.glyphicon-rub:before
 {
     content: '\20bd';
 }
@@ -3659,10 +3643,6 @@ hr
     width: auto;
     height: auto;
     margin: 0;
-}
-[role='button']
-{
-    cursor: pointer;
 }
 h1,
 h2,
@@ -7290,13 +7270,10 @@ output
 .form-control[readonly],
 fieldset[disabled] .form-control
 {
+    cursor: not-allowed;
+
     opacity: 1;
     background-color: #eee;
-}
-.form-control[disabled],
-fieldset[disabled] .form-control
-{
-    cursor: not-allowed;
 }
 textarea.form-control
 {
@@ -7383,8 +7360,6 @@ input[type='search']
 {
     font-weight: normal;
 
-    position: relative;
-
     display: inline-block;
 
     margin-bottom: 0;
@@ -7424,7 +7399,6 @@ fieldset[disabled] .checkbox label
 }
 .form-control-static
 {
-    min-height: 38px;
     margin-bottom: 0;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -7483,7 +7457,6 @@ select[multiple].form-group-sm .form-control
     line-height: 1.5;
 
     height: 33px;
-    min-height: 36px;
     padding: 5px 10px;
 }
 .input-lg
@@ -7534,7 +7507,6 @@ select[multiple].form-group-lg .form-control
     line-height: 1.3333333;
 
     height: 49px;
-    min-height: 42px;
     padding: 10px 16px;
 }
 .has-feedback
@@ -8275,10 +8247,12 @@ input[type='button'].btn-block
 .collapse
 {
     display: none;
+    visibility: hidden;
 }
 .collapse.in
 {
     display: block;
+    visibility: visible;
 }
 tr.collapse.in
 {
@@ -8313,7 +8287,7 @@ tbody.collapse.in
 
     vertical-align: middle;
 
-    border-top: 4px dashed;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
@@ -9151,10 +9125,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .tab-content > .tab-pane
 {
     display: none;
+    visibility: hidden;
 }
 .tab-content > .active
 {
     display: block;
+    visibility: visible;
 }
 .nav-tabs .dropdown-menu
 {
@@ -9214,6 +9190,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     .navbar-collapse.collapse
     {
         display: block !important;
+        visibility: visible !important;
         overflow: visible !important;
 
         height: auto !important;
@@ -10162,8 +10139,7 @@ a.label:focus
     position: relative;
     top: -1px;
 }
-.btn-xs .badge,
-.btn-group-xs > .btn .badge
+.btn-xs .badge
 {
     top: 0;
 
@@ -10439,7 +10415,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-         -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -11189,11 +11164,11 @@ a.list-group-item-danger.active:focus
 
     border: 0;
 }
-.embed-responsive-16by9
+.embed-responsive.embed-responsive-16by9
 {
     padding-bottom: 56.25%;
 }
-.embed-responsive-4by3
+.embed-responsive.embed-responsive-4by3
 {
     padding-bottom: 75%;
 }
@@ -11268,7 +11243,7 @@ button.close
 .modal
 {
     position: fixed;
-    z-index: 1050;
+    z-index: 1040;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11321,11 +11296,9 @@ button.close
 }
 .modal-backdrop
 {
-    position: fixed;
-    z-index: 1040;
+    position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
 
     background-color: #000;
@@ -11430,6 +11403,7 @@ button.close
     z-index: 1070;
 
     display: block;
+    visibility: visible;
 
     opacity: 0;
 
@@ -12111,6 +12085,7 @@ button.close
 .hidden
 {
     display: none !important;
+    visibility: hidden !important;
 }
 .affix
 {
@@ -15579,8 +15554,8 @@ External pages buttons
 
     -ms-overflow-style: none;
 }
-
-.medcard-spec__inner-wrapper::-webkit-scrollbar {
+.medcard-spec__inner-wrapper::-webkit-scrollbar
+{
     width: 0;
 }
 .medcard-spec__inner-wrapper:after
@@ -21022,7 +20997,7 @@ Widgets
     position: relative;
     /* будем позиционировать псевдочекбокс относительно label */
 
-    padding: 7px 20px 0 0;
+    padding: 7px 14px 0 0;
     /* оставляем справа от label место под псевдочекбокс */
 }
 .security-authorisation__input:not(checked) + label:before
@@ -28577,7 +28552,8 @@ a
 /*
 Styles for filter block on consultations, clinics and docs pages
 */
-.filter__check-round-wrapper {
+.filter__check-round-wrapper
+{
     position: absolute;
     z-index: 100;
     left: 290px;
@@ -28616,8 +28592,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: url('../img/icon_heart.png') 50% 50% no-repeat;
     background-size: 10px 8px;
 }
-
-.filter__search-wrapper {
+.filter__search-wrapper
+{
     position: absolute;
     z-index: 100;
 }
@@ -29132,13 +29108,13 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.page-text__h3 {
+.page-text__h3
+{
     font-size: 20px;
     font-weight: bold;
 }
-
-.page-text__place-date {
+.page-text__place-date
+{
     margin-bottom: 15px;
 }
 .list-sublevel
@@ -29323,8 +29299,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/promo-from-ok.png');
     background-repeat: no-repeat;
 }
-
-.promo-form-errors {
+.promo-form-errors
+{
     position: absolute;
     top: 50px;
     right: 380px;
@@ -29337,14 +29313,15 @@ Styles for filter block on consultations, clinics and docs pages
     border-radius: 10px;
     background-color: #fff;
 }
-
-@media (max-width: 1090px) {
-    .promo-form-errors {
+@media (max-width: 1090px)
+{
+    .promo-form-errors
+    {
         right: 340px;
     }
 }
-
-.promo-form-errors:after {
+.promo-form-errors:after
+{
     position: absolute;
     top: calc(50% - 15px);
     right: -26px;
@@ -29354,8 +29331,8 @@ Styles for filter block on consultations, clinics and docs pages
     border: 15px solid transparent;
     border-left: 12px solid #fff;
 }
-
-.promo-form-errors__item {
+.promo-form-errors__item
+{
     font-size: 18px;
     line-height: 30px;
 
@@ -29806,11 +29783,12 @@ Styles for filter block on consultations, clinics and docs pages
     color: #4272db;
 }
 /* Registration, login, password recovery, sms auth PopUps */
-.popup-scrolltop {
+.popup-scrolltop
+{
     overflow: hidden;
 }
-
-.popup-login {
+.popup-login
+{
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -29820,8 +29798,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: rgba(255, 255, 255, .95);
 }
-
-.popup-login__body {
+.popup-login__body
+{
     position: fixed;
     z-index: 1100;
     top: 0;
@@ -29834,22 +29812,22 @@ Styles for filter block on consultations, clinics and docs pages
     width: 500px;
     margin: auto;
 }
-
-.popup-login__header {
+.popup-login__header
+{
     position: relative;
 
     margin-bottom: 40px;
 
     text-align: center;
 }
-
-.popup-login__title {
+.popup-login__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 32px;
 }
-
-.popup-login__close {
+.popup-login__close
+{
     position: absolute;
     top: 10px;
     right: 0;
@@ -29863,16 +29841,16 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/icon-popup-login-close.png') no-repeat;
 }
-
-.popup-login__close:hover {
+.popup-login__close:hover
+{
     opacity: .6;
 }
-
-.popup-login__main {
+.popup-login__main
+{
     text-align: center;
 }
-
-.popup-login__input {
+.popup-login__input
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 24px;
@@ -29888,62 +29866,62 @@ Styles for filter block on consultations, clinics and docs pages
 
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 25px;
-    outline: none !important;
+    outline: none!important;
 }
-
-.popup-login__input::-webkit-input-placeholder {
+.popup-login__input::-webkit-input-placeholder
+{
     line-height: 50px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.popup-login__input::-moz-placeholder {
-    line-height: 50px;
-
-    transition: line-height .5s ease;
-}
-
-.popup-login__input:-ms-input-placeholder {
+.popup-login__input::-moz-placeholder
+{
     line-height: 50px;
 
     transition: line-height .5s ease;
 }
+.popup-login__input:-ms-input-placeholder
+{
+    line-height: 50px;
 
-.popup-login__input::placeholder {
+    transition: line-height .5s ease;
+}
+.popup-login__input::placeholder
+{
     line-height: 50px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.popup-login__input:focus::-webkit-input-placeholder {
+.popup-login__input:focus::-webkit-input-placeholder
+{
     line-height: 150px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.popup-login__input:focus::-moz-placeholder {
+.popup-login__input:focus::-moz-placeholder
+{
     line-height: 150px;
 
     transition: line-height .5s ease;
 }
-
-.popup-login__input:focus:-ms-input-placeholder {
+.popup-login__input:focus:-ms-input-placeholder
+{
     line-height: 150px;
 
     transition: line-height .5s ease;
 }
-
-.popup-login__input:focus::placeholder {
+.popup-login__input:focus::placeholder
+{
     line-height: 150px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.popup-login__btn-submit {
+.popup-login__btn-submit
+{
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 24px;
@@ -29955,7 +29933,7 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0 45px;
 
     -webkit-transition: .5s all ease;
-    transition: .5s all ease;
+            transition: .5s all ease;
 
     color: #fff;
     border: 1px solid #5db7d8;
@@ -29963,27 +29941,27 @@ Styles for filter block on consultations, clinics and docs pages
     outline: none;
     background-color: #5db7d8;
 }
-
-.popup-login__btn-submit--login {
+.popup-login__btn-submit--login
+{
     padding: 0 90px;
 }
-
-.popup-login__btn-submit:hover {
+.popup-login__btn-submit:hover
+{
     color: #5db7d8;
     background-color: #fff;
 }
-
-.popup-login__text {
+.popup-login__text
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 16px;
 
     margin: 0;
 
-    outline: none !important;
+    outline: none!important;
 }
-
-.popup-login__big-link {
+.popup-login__big-link
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 22px;
@@ -29994,16 +29972,16 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
 }
-
-.popup-login__big-link--recovery {
+.popup-login__big-link--recovery
+{
     margin-top: 0;
 }
-
-.popup-login__big-link--sms {
+.popup-login__big-link--sms
+{
     margin-bottom: 0;
 }
-
-.popup-login__check {
+.popup-login__check
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 22px;
@@ -30013,10 +29991,10 @@ Styles for filter block on consultations, clinics and docs pages
     cursor: pointer;
 
     color: #8d8d8d;
-    outline: none !important;
+    outline: none!important;
 }
-
-.popup-login__check-icon {
+.popup-login__check-icon
+{
     display: inline-block;
 
     width: 25px;
@@ -30028,8 +30006,8 @@ Styles for filter block on consultations, clinics and docs pages
     border: 2px solid rgba(0, 0, 0, .2);
     border-radius: 50%;
 }
-
-.popup-login__check--active .popup-login__check-icon {
+.popup-login__check--active .popup-login__check-icon
+{
     background: url('../img/icon_heart.png') 50% 50% no-repeat;
     background-size: 12px 10px;
 }
