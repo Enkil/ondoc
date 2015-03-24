@@ -27797,8 +27797,9 @@ a
     display: table;
 
     width: 680px;
+    height: 480px;
     margin: auto;
-    padding: 30px 20px 0;
+    padding: 30px 20px 10px 20px;
 
     text-align: center;
 
@@ -27819,6 +27820,10 @@ a
     cursor: pointer;
 
     background: url(../img/icon-modal-close.png) no-repeat;
+}
+.steps-modal__wrapper
+{
+    height: 351px;
 }
 .steps-modal__title
 {
@@ -27846,14 +27851,14 @@ a
 {
     width: 86px;
     height: 86px;
-    margin: 15px auto;
+    margin: 20px auto;
 
     background: url(../img/icon-person-blue.png) no-repeat;
 }
 .steps-modal .user-data
 {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 .steps-modal .user-data__sex
 {
@@ -28090,7 +28095,7 @@ a
 .steps-modal .user-data__weight:before
 {
     position: absolute;
-    top: 50%;
+    top: 59%;
     left: -30px;
 
     display: inline-block;
@@ -28283,7 +28288,7 @@ a
 {
     width: 89px;
     height: 111px;
-    margin: 0 auto 35px;
+    margin: 0 auto 50px;
 
     background: url(../img/icon-list-blue.png) no-repeat;
 }
@@ -28291,7 +28296,7 @@ a
 {
     width: 98px;
     height: 98px;
-    margin: 0 auto 35px;
+    margin: 0 auto 50px;
 
     background: url(../img/icon-plus-big.png) no-repeat;
 }
@@ -28310,10 +28315,6 @@ a
     margin: 0 auto 35px;
 
     background: url(../img/icon-success.png) no-repeat;
-}
-.steps-modal__step--third .steps-pagination
-{
-    margin-top: 25px;
 }
 .steps-modal__step--fourth .steps-modal__subtitle,
 .steps-modal__step--fifth .steps-modal__subtitle
