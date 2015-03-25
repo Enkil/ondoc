@@ -24418,6 +24418,7 @@ a {
     color: #fff;
     border: 1px solid #5db7d8;
     border-radius: 25px;
+    outline: 0;
     background-color: #5db7d8
 }
 

@@ -30463,6 +30463,7 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     border: 1px solid #5db7d8;
     border-radius: 25px;
+    outline: none;
     background-color: #5db7d8;
 }
 .charity-reg__btn-submit:hover
