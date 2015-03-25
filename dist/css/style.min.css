@@ -24464,17 +24464,16 @@ a {
 }
 
 .charity-patient__action {
-    padding: 30px;
+    padding: 15px;
     border-radius: 10px;
-    background: -webkit-linear-gradient(310deg, #31c4ca 0, #23adca 100%);
-    background: linear-gradient(140deg, #31c4ca 0, #23adca 100%)
+    background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
+    background: linear-gradient(140deg, #33cdcc, #0699d3)
 }
 
 .charity-patient__action-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 25px;
     display: block;
-    margin-bottom: 25px;
     text-align: center;
     color: #fff
 }
@@ -24489,7 +24488,6 @@ a {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 54px;
     display: block;
-    margin-bottom: 10px;
     text-align: center;
     color: #fff
 }

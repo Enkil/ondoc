@@ -30516,11 +30516,11 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-patient__action
 {
-    padding: 30px;
+    padding: 15px;
 
     border-radius: 10px;
-    background: -webkit-linear-gradient(310deg, #31c4ca 0, #23adca 100%);
-    background:         linear-gradient(140deg, #31c4ca 0, #23adca 100%);
+    background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
+    background: linear-gradient(140deg, #33cdcc, #0699d3);
 }
 .charity-patient__action-text
 {
@@ -30529,8 +30529,6 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 25px;
 
     display: block;
-
-    margin-bottom: 25px;
 
     text-align: center;
 
@@ -30550,8 +30548,6 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 54px;
 
     display: block;
-
-    margin-bottom: 10px;
 
     text-align: center;
 
