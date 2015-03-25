@@ -1580,7 +1580,14 @@ Widgets
 
   &__body{
     height: 385px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
     @media (max-width:1025px) {
       height: 350px;
     }

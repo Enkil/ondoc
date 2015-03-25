@@ -17602,9 +17602,16 @@ Widgets
 }
 .medcard-widget__body
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     height: 385px;
+
+    -ms-overflow-style: none;
+}
+
+.medcard-widget__body::-webkit-scrollbar {
+    width: 0;
 }
 @media (max-width: 1025px)
 {

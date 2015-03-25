@@ -14338,8 +14338,14 @@ a:active, a:focus {
 }
 
 .medcard-widget__body {
-    overflow-y: scroll;
-    height: 385px
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    height: 385px;
+    -ms-overflow-style: none
+}
+
+.medcard-widget__body::-webkit-scrollbar {
+    width: 0
 }
 
 @media (max-width: 1025px) {
