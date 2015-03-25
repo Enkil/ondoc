@@ -30381,11 +30381,12 @@ Styles for filter block on consultations, clinics and docs pages
 .charity-reg__input
 {
     font-size: 22px;
-    line-height: 45px;
+    line-height: 22px;
 
     display: inline-block;
 
     width: 385px;
+    height: 45px;
     margin-right: 12px;
     padding: 0 40px;
 
@@ -30396,26 +30397,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-reg__input::-webkit-input-placeholder
 {
-    line-height: 45px;
+    line-height: 22px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .charity-reg__input::-moz-placeholder
 {
-    line-height: 45px;
+    line-height: 22px;
 
     transition: line-height .5s ease;
 }
 .charity-reg__input:-ms-input-placeholder
 {
-    line-height: 45px;
+    line-height: 22px;
 
     transition: line-height .5s ease;
 }
 .charity-reg__input::placeholder
 {
-    line-height: 45px;
+    line-height: 22px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
