@@ -24464,7 +24464,7 @@ a {
 }
 
 .charity-patient__action {
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
     background: linear-gradient(140deg, #33cdcc, #0699d3)
@@ -24487,7 +24487,9 @@ a {
 .charity-patient__action-num {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 54px;
+    line-height: 40px;
     display: block;
+    margin-top: 30px;
     text-align: center;
     color: #fff
 }
