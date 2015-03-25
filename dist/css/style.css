@@ -30184,6 +30184,7 @@ Styles for filter block on consultations, clinics and docs pages
     text-align: center;
 
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 }
 .charity-lead
 {
