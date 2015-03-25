@@ -3382,27 +3382,11 @@ th
 {
     content: '\e227';
 }
-.glyphicon-btc:before
-{
-    content: '\e227';
-}
-.glyphicon-xbt:before
-{
-    content: '\e227';
-}
 .glyphicon-yen:before
 {
     content: '\00a5';
 }
-.glyphicon-jpy:before
-{
-    content: '\00a5';
-}
 .glyphicon-ruble:before
-{
-    content: '\20bd';
-}
-.glyphicon-rub:before
 {
     content: '\20bd';
 }
@@ -3659,10 +3643,6 @@ hr
     width: auto;
     height: auto;
     margin: 0;
-}
-[role='button']
-{
-    cursor: pointer;
 }
 h1,
 h2,
@@ -7290,13 +7270,10 @@ output
 .form-control[readonly],
 fieldset[disabled] .form-control
 {
+    cursor: not-allowed;
+
     opacity: 1;
     background-color: #eee;
-}
-.form-control[disabled],
-fieldset[disabled] .form-control
-{
-    cursor: not-allowed;
 }
 textarea.form-control
 {
@@ -7383,8 +7360,6 @@ input[type='search']
 {
     font-weight: normal;
 
-    position: relative;
-
     display: inline-block;
 
     margin-bottom: 0;
@@ -7424,7 +7399,6 @@ fieldset[disabled] .checkbox label
 }
 .form-control-static
 {
-    min-height: 38px;
     margin-bottom: 0;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -7483,7 +7457,6 @@ select[multiple].form-group-sm .form-control
     line-height: 1.5;
 
     height: 33px;
-    min-height: 36px;
     padding: 5px 10px;
 }
 .input-lg
@@ -7534,7 +7507,6 @@ select[multiple].form-group-lg .form-control
     line-height: 1.3333333;
 
     height: 49px;
-    min-height: 42px;
     padding: 10px 16px;
 }
 .has-feedback
@@ -8275,10 +8247,12 @@ input[type='button'].btn-block
 .collapse
 {
     display: none;
+    visibility: hidden;
 }
 .collapse.in
 {
     display: block;
+    visibility: visible;
 }
 tr.collapse.in
 {
@@ -8313,7 +8287,7 @@ tbody.collapse.in
 
     vertical-align: middle;
 
-    border-top: 4px dashed;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
@@ -9151,10 +9125,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .tab-content > .tab-pane
 {
     display: none;
+    visibility: hidden;
 }
 .tab-content > .active
 {
     display: block;
+    visibility: visible;
 }
 .nav-tabs .dropdown-menu
 {
@@ -9214,6 +9190,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     .navbar-collapse.collapse
     {
         display: block !important;
+        visibility: visible !important;
         overflow: visible !important;
 
         height: auto !important;
@@ -10162,8 +10139,7 @@ a.label:focus
     position: relative;
     top: -1px;
 }
-.btn-xs .badge,
-.btn-group-xs > .btn .badge
+.btn-xs .badge
 {
     top: 0;
 
@@ -10439,7 +10415,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-         -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -11189,11 +11164,11 @@ a.list-group-item-danger.active:focus
 
     border: 0;
 }
-.embed-responsive-16by9
+.embed-responsive.embed-responsive-16by9
 {
     padding-bottom: 56.25%;
 }
-.embed-responsive-4by3
+.embed-responsive.embed-responsive-4by3
 {
     padding-bottom: 75%;
 }
@@ -11268,7 +11243,7 @@ button.close
 .modal
 {
     position: fixed;
-    z-index: 1050;
+    z-index: 1040;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11321,11 +11296,9 @@ button.close
 }
 .modal-backdrop
 {
-    position: fixed;
-    z-index: 1040;
+    position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
 
     background-color: #000;
@@ -11430,6 +11403,7 @@ button.close
     z-index: 1070;
 
     display: block;
+    visibility: visible;
 
     opacity: 0;
 
@@ -12111,6 +12085,7 @@ button.close
 .hidden
 {
     display: none !important;
+    visibility: hidden !important;
 }
 .affix
 {
@@ -13296,18 +13271,18 @@ a:focus
 {
     width: 0;
 }
-
-.widget__textarea--error {
+.widget__textarea--error
+{
     position: relative;
 
     border: 1px solid #dc4531;
 }
-
-.widget__textarea-wrapper--asterisk {
+.widget__textarea-wrapper--asterisk
+{
     position: relative;
 }
-
-.widget__textarea-wrapper--asterisk:after {
+.widget__textarea-wrapper--asterisk:after
+{
     position: absolute;
     top: -3px;
     right: -10px;
@@ -14762,18 +14737,18 @@ a:focus
 {
     width: 0;
 }
-
-.widget-security__textarea--error {
+.widget-security__textarea--error
+{
     position: relative;
 
     border: 1px solid #dc4531;
 }
-
-.widget-security__textarea-wrapper--asterisk {
+.widget-security__textarea-wrapper--asterisk
+{
     position: relative;
 }
-
-.widget-security__textarea-wrapper--asterisk:after {
+.widget-security__textarea-wrapper--asterisk:after
+{
     position: absolute;
     top: -3px;
     right: -10px;
@@ -17653,8 +17628,8 @@ Widgets
 
     -ms-overflow-style: none;
 }
-
-.medcard-widget__body::-webkit-scrollbar {
+.medcard-widget__body::-webkit-scrollbar
+{
     width: 0;
 }
 @media (max-width: 1025px)
@@ -19468,18 +19443,18 @@ Widgets
 {
     width: 0;
 }
-
-.profile-widget__textarea--error {
+.profile-widget__textarea--error
+{
     position: relative;
 
     border: 1px solid #dc4531;
 }
-
-.profile-widget__textarea-wrapper--asterisk {
+.profile-widget__textarea-wrapper--asterisk
+{
     position: relative;
 }
-
-.profile-widget__textarea-wrapper--asterisk:after {
+.profile-widget__textarea-wrapper--asterisk:after
+{
     position: absolute;
     top: -3px;
     right: -10px;
@@ -22223,18 +22198,18 @@ input:after
 {
     width: 0;
 }
-
-.widget-notifications__textarea--error {
+.widget-notifications__textarea--error
+{
     position: relative;
 
     border: 1px solid #dc4531;
 }
-
-.widget-notifications__textarea-wrapper--asterisk {
+.widget-notifications__textarea-wrapper--asterisk
+{
     position: relative;
 }
-
-.widget-notifications__textarea-wrapper--asterisk:after {
+.widget-notifications__textarea-wrapper--asterisk:after
+{
     position: absolute;
     top: -3px;
     right: -10px;
@@ -27862,7 +27837,7 @@ a
 
     display: inline-block;
 
-    margin: 15px 2px;
+    margin: 15px 2px 10px 5px;
     padding: 7px 40px;
 
     -webkit-transition: .2s ease all;
@@ -27920,9 +27895,9 @@ a
     display: table;
 
     width: 680px;
-    height: 480px;
+    height: 465px;
     margin: auto;
-    padding: 30px 20px 10px 20px;
+    padding: 38px 20px 10px 20px;
 
     text-align: center;
 
@@ -27946,7 +27921,7 @@ a
 }
 .steps-modal__wrapper
 {
-    height: 351px;
+    height: 325px;
 }
 .steps-modal__title
 {
@@ -27981,7 +27956,7 @@ a
 .steps-modal .user-data
 {
     margin-top: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 9px;
 }
 .steps-modal .user-data__sex
 {
@@ -28326,7 +28301,7 @@ a
 
     display: inline-block;
 
-    margin: 15px 2px;
+    margin: 15px 2px 10px 5px;
     padding: 7px 40px;
 
     -webkit-transition: .2s ease all;
@@ -28386,13 +28361,13 @@ a
 {
     width: 125px;
     height: 130px;
-    margin: 0 auto 35px;
+    margin: 0 auto 32px;
 
     background: url(../img/icon-present-blue.png) no-repeat;
 }
 .steps-modal__step--second .steps-modal__subtitle
 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .steps-pagination__item
 {
@@ -28438,6 +28413,10 @@ a
     margin: 0 auto 35px;
 
     background: url(../img/icon-success.png) no-repeat;
+}
+.steps-modal__step--second .steps-modal__title
+{
+    padding-top: 4px;
 }
 .steps-modal__step--fourth .steps-modal__subtitle,
 .steps-modal__step--fifth .steps-modal__subtitle
@@ -30520,7 +30499,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     border-radius: 10px;
     background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
-    background: linear-gradient(140deg, #33cdcc, #0699d3);
+    background:         linear-gradient(140deg, #33cdcc, #0699d3);
 }
 .charity-patient__action-text
 {
@@ -30719,8 +30698,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     margin-bottom: 15px;
 }
-
-.charity-about__text a {
+.charity-about__text a
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 }
@@ -30733,20 +30712,20 @@ Styles for filter block on consultations, clinics and docs pages
     margin: 0;
     margin-bottom: 15px;
 }
-
-.medcard-errors__title {
+.medcard-errors__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
     color: #dc4531;
 }
-
-.medcard-errors__list {
+.medcard-errors__list
+{
     padding-left: 25px;
 }
-
-.medcard-errors__item {
+.medcard-errors__item
+{
     font-size: 14px;
 
     color: #dc4531;
