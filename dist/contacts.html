@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container-fluid header-external">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo -->
+                <div class="col-xs-8">
+                    <a class="header-external__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                        <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    </a>
+                </div>
+
+                <!-- Links to apps -->
+                <div class="col-xs-28 text-right">
+
+                    <a href="" class="header-external__link header-external__link--apps" onclick="ga('send', 'event', 'go_to_appstore', 'click');">
+                        <img src="img/appstore.png" alt="App Store" />
+                    </a>
+
+                    <a href="#" class="header-external__link header-external__link--apps header-external__link--gplay">
+                        <img src="img/googleplay.png" alt="Google Play" />
+                    </a>
+
+                    <a class="header-external__link js__find--login js__find--login" href="">Войти</a>
+                    <span class="header-external__link header-external__link--slash">/</span>
+                    <a class="header-external__link js__find--reg" href="">Регистрация</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / Header -->
+
+<section class="contact-info">
+	<div class="row non-margin-left-right">
+		<div class="col-xs-36 text-center">
+			<div class="contact-info__title">Будем рады ответить на ваши вопросы по телефону</div>
+			<div class="contact-info__telephone">8 (800) 775-73-96</div>
+			<div class="contact-info__address">Наш адрес<br />199106, г. Санкт-Петербург, Васильевский остров, 24-я линия, д.27А</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="contact-map">
+    <div class="row non-margin-left-right">
+        <div class="col-xs-36 non-padding-left-right">
+            <div id='ondoc-on-map'></div>
+            <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact-form">
+	<div class="row non-margin-left-right">
+		<div class="col-xs-offset-12 col-xs-14 text-center">
+			<p class="contact-form__title">Если у вас есть вопросы и пожелания, пожалуйста<br />заполните контактную форму</p>
+			<input type="text" placeholder="Имя" class="contact-form__input">
+            <input type="text" placeholder="Email" class="contact-form__input">
+            <input type="text" placeholder="Контактный телефон" class="contact-form__input">
+            <textarea name="" id="" cols="10" rows="5" placeholder="Текст сообщения" class="contact-form__textarea text-left"></textarea>
+            
+            <a href="" class="contact-form__btn--send-success">Отправлено</a>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- External pages footer -->
+<footer>
+   <div class="container-fluid footer-external">
+       <div class="container">
+
+           <div class="row footer-external__wrapper">
+
+               <div class="col-xs-6">
+                   <ul class="footer-external__links">
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="about_company.html">О Компании</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="for_docs_and_clinics.html">Врачам и клиникам</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Партнерам</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="contacts.html">Контакты</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-xs-7">
+                   <ul class="footer-external__links">
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="security_policy.html">Правовая информация</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Сервисы</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Тарифы</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-xs-8">
+                   <ul class="footer-external__links">
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Мобильные приложения</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Статьи</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-xs-offset-9 col-xs-6 text-right">
+                   <a class="social-btn social-btn--fb" href=""></a>
+                   <a class="social-btn social-btn--vk" href=""></a>
+                   <a class="social-btn social-btn--tw" href=""></a>
+                   <a class="social-btn social-btn--gp" href=""></a>
+               </div>
+
+           </div>
+
+           <!-- Copyright -->
+           <div class="row">
+
+               <div class="col-xs-24 non-padding-left">
+                   <a class="footer-external__link footer-external__link--logo" href="main.html">OnDoc — система персонального здравоохранения</a>
+               </div>
+
+               <div class="col-xs-12 footer-external__cards">
+                   <a class="footer-external__visa" href=""></a>
+                   <a class="footer-external__master" href=""></a>
+               </div>
+
+           </div>
+
+       </div>
+   </div>
+</footer>
+
+<!--  PopUps -->
+<!-- Registration PopUp -->
+<div class="popup-login display-none js__find--reg-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Регистрация</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="Введите Email или телефон"/>
+                <button class="popup-login__btn-submit">Зарегистрироваться</button>
+            </form>
+
+            <p class="popup-login__text">
+                Нажимая кнопку &laquo;Зарегистрироваться&raquo;, <br/>
+                вы принимаете условия <br/>
+                <a class="popup-login__link" href="">Пользовательского соглашения</a>
+            </p>
+
+            <a class="popup-login__big-link js__find--login" href="">Уже зарегистрированы? Войдите</a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Password recovery PopUp -->
+<div class="popup-login display-none js__find--recovery-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Восстановление <br/>пароля</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="Введите Email или телефон"/>
+
+                <p class="popup-login__text">
+                    На ваш Email или телефон придет новый пароль, <br/>
+                    который вы сможете поменять в личном кабинете.
+                </p>
+
+                <button class="popup-login__btn-submit js__find--sms">Отправить</button>
+                <a class="popup-login__big-link popup-login__big-link--recovery" href="">Отмена</a>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Login PopUp -->
+<div class="popup-login display-none js__find--login-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Вход</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="Введите Email или телефон"/>
+                <input class="popup-login__input" type="password" placeholder="Пароль"/>
+
+                <span class="popup-login__check">
+                    <i class="popup-login__check-icon"> </i>
+                    Запомнить меня
+                </span>
+
+                <button class="popup-login__btn-submit popup-login__btn-submit--login">Войти</button>
+
+                <a class="popup-login__big-link js__find--recovery" href="">Забыли пароль?</a>
+                <a class="popup-login__big-link js__find--reg" href="">Зарегистрироваться</a>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- SMS Login PopUp -->
+<div class="popup-login display-none js__find--sms-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Вход</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="СМС-Пароль"/>
+
+                <p class="popup-login__text">
+                    На ваш телефон был отправлен СМС-Пароль. Если пароль <br/>
+                    не пришел, вы можете запросить его повторно.
+                </p>
+
+                <a class="popup-login__big-link popup-login__big-link--sms js__find--recovery" href="">Запросить
+                    СМС-Пароль еще раз</a>
+
+                <button class="popup-login__btn-submit js__find--sms">Отправить</button>
+                <a class="popup-login__big-link popup-login__big-link--recovery" href="">Отмена</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- JavaScript-->
+<script src="js/main.min.js"></script>
+<!-- / JavaScript -->
+
+</body>
+</html>

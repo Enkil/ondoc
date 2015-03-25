@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+<!-- PAGE HEADER -->
+<header class="main-header container-fluid">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="index.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active" href="profile.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+
+    <!-- Общий блок -->
+    <div class="main-page">
+      <div class="container">
+        <div class="row">
+
+        <!-- Left Sidebar -->
+            <aside class="col-xs-8">
+                <div class="sidebar-profile">
+
+                    <!-- Menu -->
+                    <div class="sidebar-profile__menu">
+                        <ul class="sidebar-profile__menu-list">
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--profile sidebar-profile__menu-link--active" href="profile.html">Профиль</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--security" href="security.html">Безопасность</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--notifications" href="user-notifications.html">Уведомления</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--privacy" href="">Приватность</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--family" href="">Семейный доступ</a></li>
+                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--history" href="">История покупок</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                    
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+          <section class="col-xs-26 col-md-28 col-lg-28">
+
+            <div class="row widget-security">
+
+
+            	<form action="">
+
+            		<!-- email -->
+
+            		<div class="row security-email">
+            			<div class="col-xs-offset-1 col-xs-35 security-label">Email</div>
+            		</div>
+
+            		<div class="row">
+
+            			<div class="col-xs-offset-1 col-xs-15 col-md-13 col-lg-13 security-email__saved">
+            				<span class="security-email__text">mymail@informail.ru</span>
+            				<a class="security-email__delete"></a> 
+
+                            <!-- Попап емейл отключить  -->
+ 
+                            <div class="security-modal security-modal__email-disconnect display-none" id="security-modal__email-disconnect">
+                                <div class="widgets-block">
+                                    <form action="">
+
+                                        <div class="row">
+                                            <span class="security-modal__close"></span>
+                                            <div class="col-xs-36">
+                                                <p class="security-modal__title">Подтвердите отключение Email
+                                                    <br/>ivan.petrovich@yandex.ru
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-offset-7  col-xs-8">
+                                                <a href="" class="security-modal__btn--cancel">Отмена</a>
+                                            </div>
+                                            <div class="col-xs-offset-2  col-xs-10">
+                                                <a href="" class="security-modal__btn--disconnect">Отключить</a>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Попап емейл отключить  -->
+ 
+            			</div>
+            			<div class="col-xs-12 col-md-14 col-lg-15"><input type="text" class="security__input" placeholder="Новый email"></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save security-link__save--email">Сохранить</a></div>
+
+
+                        <!-- Попап подтвердить email  -->
+
+                        <div class="security-modal security-modal__email-proove display-none" id="security-modal__email-proove">
+                            <div class="widgets-block">
+                                <form action="">
+
+                                    <div class="row">
+                                        <span class="security-modal__close"></span>
+                                        <div class="col-xs-36">
+                                            <p class="security-modal__title">Подтверждение нового Email
+                                                <br/>tatien@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <input class="security-modal__input" placeholder="Введите код полученный по email">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <a class="security-modal__link-send">
+                                                Отправить код повторно
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <p class="security-modal__error-message">
+                                                Неверный код подтверждения
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <p class="security-modal__description">
+                                                Не получили смс? Повторно отправка<br/>может быть совершена через 54 сек.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-36">
+                                            <a href="" class="security-modal__btn--proove">Подтвердить</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Попап подтвердить email  -->
+
+
+                        <!-- Попап успешное подтверждение email  -->
+
+                        <div class="security-modal security-modal__email-success display-none" id="security-modal__email-success">
+                            <div class="widgets-block">
+                                <form action="">
+
+                                    <div class="row">
+                                        <span class="security-modal__close"></span>
+                                        <div class="security-modal__icon security-modal__icon--success"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-2  col-xs-32">
+                                            <p class="security-modal__text--success">
+                                                Email<br/>
+                                                успешно подтвержден
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Попап емейл подтверждение email  -->
+            			
+            		</div>
+
+            		<!-- email -->
+
+
+            		<div class="row">
+            			<div class="col-xs-36 security__line"></div>
+            		</div>
+
+
+            		<!-- telephone -->
+
+					<div class="row security-telephone">
+            			<div class="col-xs-offset-1 col-xs-35 security-label">Телефон</div>
+            		</div>
+
+            		<div class="row">
+
+            			<div class="col-xs-offset-1 col-xs-13 col-md-15 col-lg-13 security-telephone__saved">
+            				<span class="security-telephone__text">+7 911 230 64 64</span>
+                            <a href="" class="security-link__proove security-link__proove-telephone">Подтвердить</a>
+            			</div>
+            			<div class="col-xs-16 col-md-12 col-lg-15"><input type="text" class="security__input security__input--error" placeholder="Новый Телефон"></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save security-link__save--telephone">Сохранить</a></div>
+
+                        <!-- Попап отключить телефон  -->
+
+                        <div class="security-modal security-modal__telephone-disconnect display-none" id="security-modal__telephone-disconnect">
+                            <div class="widgets-block">
+                                <form action="">
+
+                                    <div class="row">
+                                        <span class="security-modal__close"></span>
+                                        <div class="col-xs-36">
+                                            <p class="security-modal__title">Подтвердите отключение номера телефона
+                                                <br/>+7 911 230 64 60
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-7  col-xs-8">
+                                            <a href="" class="security-modal__btn--cancel">Отмена</a>
+                                        </div>
+                                        <div class="col-xs-offset-2  col-xs-10">
+                                            <a href="" class="security-modal__btn--disconnect">Отключить</a>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Попап отключить телефон  -->
+
+
+
+                        <!-- Попап подтвердить телефон  -->
+
+                        <div class="security-modal security-modal__telephone-proove display-none" id="security-modal__telephone-proove">
+                            <div class="widgets-block">
+                                <form action="">
+
+                                    <div class="row">
+                                        <span class="security-modal__close"></span>
+                                        <div class="col-xs-36">
+                                            <p class="security-modal__title">Подтверждение нового номера телефона
+                                                <br/>+7 911 230 64 60
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <input class="security-modal__input" placeholder="Введите код полученный по СМС">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <a class="security-modal__link-send">
+                                                Отправить код повторно
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <p class="security-modal__error-message">
+                                                Неверный код подтверждения
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-4 col-xs-28">
+                                            <p class="security-modal__description">
+                                                Не получили смс? Повторно отправка<br/>может быть совершена через 54 сек.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-36">
+                                            <a href="" class="security-modal__btn--proove">Подтвердить</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Попап подтвердить телефон  -->
+
+
+                        <!-- Попап успешное подтверждение телефона  -->
+
+                        <div class="security-modal security-modal__telephone-success display-none" id="security-modal__telephone-success">
+                            <div class="widgets-block">
+                                <form action="">
+
+                                    <div class="row">
+                                        <span class="security-modal__close"></span>
+                                        <div class="security-modal__icon security-modal__icon--success"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-offset-2  col-xs-32">
+                                            <p class="security-modal__text--success">
+                                                Номер телефона<br/>
+                                                успешно подтвержден
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Попап емейл подтверждение телефона  -->
+
+
+
+            			
+            		</div>
+
+            		<!-- telephone -->
+
+
+            		<!-- двухэтапная авторизация -->
+
+            		<div class="row security-authorisation">
+            			<div class="col-xs-offset-1 col-xs-10 col-md-13 col-lg-11 security-authorisation__text">Двухэтапная авторизация</div>
+            			<div class="col-xs-24 col-md-21 col-lg-23">
+                            <input type="checkbox" class="security-authorisation__input" unchecked id="security-authorisation-double">
+                            <label for="security-authorisation-double"></label> <!-- нужен для позиционирования оформления чексокса -->
+                            <span class="security-authorisation__label--unchecked">Для подключения этой функции  необходимо подтвердить номер телефона</span>
+                            <span class="security-authorisation__label--checked">При авторизации будет запрашиваться одноразовый смс-пароль</span>
+                        </div>
+            		</div>
+
+            		<!-- двухэтапная авторизация -->
+
+
+            		<div class="row">
+            			<div class="col-xs-36 security__line"></div>
+            		</div>
+
+            		<!-- пароли -->
+
+            		<div class="row security-password">
+            			<div class="col-xs-offset-1 col-xs-35 security-label">Пароль</div>
+            		</div>
+
+            		<div class="row">
+
+            			<div class="col-xs-offset-1 col-xs-9 col-md-8 col-lg-9"><input type="password" class="security__input" placeholder="Текущий пароль"></div>
+            			<div class="col-xs-10 col-md-9"><input type="password" class="security__input" placeholder="Новый пароль"></div>
+            			<div class="col-xs-10 col-md-10"><input type="password" class="security__input" placeholder="Подтвердите новый пароль"></div>
+            			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
+            			
+            		</div>
+
+            		<!-- пароли -->
+
+            		<div class="row">
+            			<div class="col-xs-36 security__line"></div>
+            		</div>
+
+            		<!-- delete -->
+
+            		<div class="row">
+            			<div class="col-xs-offset-1 col-xs-35 security__delete">
+            				<a class="security-link__delete-profile">Удалить аккаунт</a>
+            			</div>
+            		</div>
+
+            		<!-- delete -->
+
+                     <!-- Попап удаление аккаунта  -->
+
+                    <div class="security-modal security-modal__account-delete display-none" id="security-modal__account-delete">
+                        <div class="widgets-block">
+                            <form action="">
+
+                                <div class="row">
+                                    <span class="security-modal__close"></span>
+                                    <div class="col-xs-36">
+                                        <p class="security-modal__title">Удаление профиля</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-offset-2  col-xs-32">
+                                        <p class="security-modal__account-text">Нам всегда очень жаль расставаться с нашими пользователями.</p>
+                                        <p class="security-modal__account-text">В течение 30 дней можно восстановить доступ через обращение в службу поддержки, сохранив все данные. </p>
+                                        <p class="security-modal__account-text">По истечении этого срока вся информация будет окончательно удалена.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-offset-1 col-xs-34">
+                                        <textarea class="security-modal__textarea"></textarea>
+                                    </div>
+                                </div>
+
+                                 <div class="row">
+                                    <div class="col-xs-offset-7  col-xs-8">
+                                        <a href="" class="security-modal__btn--cancel">Отмена</a>
+                                    </div>
+                                    <div class="col-xs-offset-2  col-xs-10">
+                                        <a href="" class="security-modal__btn--disconnect">Удалить</a>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Попап емейл удаление аккаунта  -->
+            		
+            	</form>
+
+
+
+            </div>
+           
+
+            
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+    
+</body>
+</html>

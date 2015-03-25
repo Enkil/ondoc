@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+
+<!-- PAGE HEADER -->
+<header class="main-header container-fluid">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="index.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active" href="profile.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+
+<!-- PAGE CONTENT-->
+<div class="main-page">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left Sidebar -->
+            <aside class="col-xs-10 col-sm-10 col-md-8 col-lg-7">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active" href="index.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="medkarta.html">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor" href="">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+            <!-- Right page block-->
+            <div class="col-xs-26 col-md-28 col-lg-29">
+
+                <!-- Docs Header -->
+<div class="row docs__header">
+
+    <div class="col-xs-14 text-left">
+        <a class="docs__head-link docs__head-link--docs docs__head-link--active" href="docs.html">Врачи</a>
+        <a class="docs__head-link docs__head-link--clinics" href="clinics.html">Клиники</a>
+    </div>
+
+    <div class="col-xs-7 text-center">
+        <a class="docs__head-link docs__head-link--filter arrow-down" href="#">Фильтр</a>
+    </div>
+
+    <div class="col-xs-15 text-right non-padding-right">
+        <a class="docs__search" href="#"></a>
+        <form action="" class="display-none js__search-form">
+            <input type="search" placeholder="Поиск" class="docs__search-input"/>
+        </form>
+    </div>
+
+    <!-- Filter block -->
+<div class="col-xs-36 medcard-filter display-none">
+
+    <!-- Specs -->
+    <div class="col-xs-24">
+        <a class="medcard-filter__link" href="">Специализации</a>
+
+        <!-- Choose specialisation Pop-UP -->
+<div class="medcard-spec__wrapper display-none">
+    <div class="row medcard-spec">
+
+        <span class="medcard-spec__close"></span>
+
+        <h2 class="col-xs-36 medcard-spec__title">Выберите специализации</h2>
+
+        <!-- Specialisations -->
+        <div class="col-xs-36 medcard-spec__inner-wrapper">
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+        </div>
+        <!-- / Specialisations -->
+
+        <div class="col-xs-36 text-center">
+            <input type="submit" class="medcard-spec__btn" value="ОК"/>
+        </div>
+
+    </div>
+</div>
+<!-- / Choose specialisation Pop-UP -->
+<!--TODO: rewrite css to independent style-->
+
+        <span class="medcard-filter__tag">Акушер <span class="medcard-filter__tag-close"></span> </span>
+        <span class="medcard-filter__tag">Акушер <span class="medcard-filter__tag-close"></span> </span>
+        <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Аллерголог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
+    </div>
+
+    <!-- Rank -->
+    <div class="col-xs-5">
+        <span class="filter__rank-text">Стаж</span>
+        <span class="filter__rank-num"><span id="filter__rank-from">1</span> - <span id="filter__rank-to">25</span></span>
+    </div>
+
+    <div class="col-xs-7">
+        <input type="text" id="filter__range" name="example_name" value="" />
+    </div>
+
+    <!-- Search -->
+    <div class="col-xs-36">
+
+        <div class="row">
+
+            <div class="col-xs-11 filter__search-wrapper">
+                <form action="">
+                    <input class="filter__search" type="text" placeholder="Город" value="Санкт-Петербург"/>
+                </form>
+            </div>
+
+            <div class="col-xs-7 col-lg-6 filter__check-round-wrapper">
+                <span class="filter__check-round filter__check-round--active"><i class="filter__check-round-icon"> </i> Ближайшие</span>
+            </div>
+
+            <div class="">
+                <a class="filter__subway" href="#">Метро</a>
+                <span class="medcard-filter__tag">Горьковсая <span class="medcard-filter__tag-close"></span> </span>
+                <span class="medcard-filter__tag">Петроградская <span class="medcard-filter__tag-close"></span> </span>
+                <span class="medcard-filter__tag">Петроградская <span class="medcard-filter__tag-close"></span> </span>
+                <span class="medcard-filter__tag">Петроградская <span class="medcard-filter__tag-close"></span> </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Support and Find/Clear btn -->
+    <div class="col-xs-36">
+
+        <div class="row">
+
+            <div class="col-xs-18">
+                <span class="filter__check-round filter__check-round--active"><i class="filter__check-round-icon"> </i> Поддержка мед. карты OnDoc</span>
+            </div>
+
+            <div class="col-xs-18">
+                <input type="submit" class="pull-right medcard-filter__find" value="Найти"/>
+                <a href="#" class="pull-right medcard-filter__tag medcard-filter__tag--clear"> <span class="medcard-filter__tag-close medcard-filter__tag-close--clear"></span> Очистить фильтры</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- / Filter block -->
+
+</div>
+<!-- / Docs Header -->
+
+
+                <!-- Content -->
+                <div class="row widget">
+
+
+                    <!-- Docs widget header -->
+<div class="row">
+    <div class="col-xs-36 text-center">
+        <div class="docs__widget-header">
+
+            <div class="col-xs-8 text-left">
+                <a class="docs__head-link docs__head-link--list" href="#"></a>
+                <a class="docs__head-link docs__head-link--onmap docs__head-link--active" href="#"></a>
+            </div>
+
+            <div class="col-xs-20">
+                <a class="docs__head-link docs__head-link--all docs__head-link--active" href="docs.html">Все</a>
+                <a class="docs__head-link docs__head-link--my" href="docs_cap--docs-my.html">Мои</a>
+                <a class="docs__head-link docs__head-link--fave" href="docs_cap--docs-fave.html">Избранные</a>
+            </div>
+
+            <div class="col-xs-8">
+                <a class="widgets-btn--plus pull-right" href="#"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- / Docs widget header -->
+
+                    <!-- Widget body -->
+                    <div class="row">
+
+
+                        <div class="col-xs-36 docs-cap">
+
+    <div class="docs-cap__wrapper">
+        <!--<span class="docs-cap__img docs-cap__img--docs"></span>-->
+        <span class="docs-cap__img docs-cap__img--docs-my"></span>
+        <!--<span class="docs-cap__img docs-cap__img--docs-fave"></span>-->
+    </div>
+
+    <div class="col-xs-36">
+        <div class="clinics-cap__text">
+            Здесь появятся врачи, которых вы посещали, а также специалисты, добавленные вами.
+        </div>
+    </div>
+
+</div>
+
+
+                    </div>
+                    <!-- / Widget body -->
+                </div>
+                <!-- / Content -->
+
+            </div>
+            <!-- / Right page block-->
+
+        </div>
+    </div>
+</div>
+<!-- / PAGE CONTENT-->
+
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+
+</body>
+</html>

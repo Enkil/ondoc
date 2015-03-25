@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container-fluid header-external">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo -->
+                <div class="col-xs-8">
+                    <a class="header-external__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                        <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    </a>
+                </div>
+
+                <!-- Links to apps -->
+                <div class="col-xs-28 text-right">
+
+                    <a href="" class="header-external__link header-external__link--apps" onclick="ga('send', 'event', 'go_to_appstore', 'click');">
+                        <img src="img/appstore.png" alt="App Store" />
+                    </a>
+
+                    <a href="#" class="header-external__link header-external__link--apps header-external__link--gplay">
+                        <img src="img/googleplay.png" alt="Google Play" />
+                    </a>
+
+                    <a class="header-external__link js__find--login js__find--login" href="">Войти</a>
+                    <span class="header-external__link header-external__link--slash">/</span>
+                    <a class="header-external__link js__find--reg" href="">Регистрация</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / Header -->
+
+<main>
+
+    <!-- Promo block -->
+<section class="charity-promo">
+    <h1 class="charity-promo__title">Благотворительность с ONDOC</h1>
+
+    <h2 class="charity-promo__subtitle">Новый формат благотворительности без сбора средств</h2>
+</section>
+
+    <!-- Lead block -->
+<section class="charity-lead">
+    <h2 class="charity-lead__title">
+        ONDOC — это бесплатный веб-сервис и мобильное <br/>
+        приложение для сохранения здоровья.
+    </h2>
+    <span class="charity-lead__text">
+        Наша цель - вовлечь в заботу о собственном здоровье как можно больше <br/>
+        людей и помочь тем, кто нуждается в срочной медицинской помощи.
+    </span>
+</section>
+
+    <!-- Registration block -->
+<section class="charity-reg">
+    <h2 class="charity-reg__title">Нужна только регистрация</h2>
+    <span class="charity-reg__subtitle">Присоединитесь к ONDOC</span>
+    <span class="charity-reg__subtitle">
+        За каждую регистрацию мы зачислим 10 рублей на счет человека, <br/>
+        срочно нуждающегося в лечении
+    </span>
+
+    <div class="charity-reg__process">
+
+        <div class="charity-reg__process-icons">
+            <div class="col-xs-12 charity-reg__step">
+                <span class="charity-reg__step-icon charity-reg__step-icon--man"></span>
+                <span class="charity-reg__step-arrow"></span>
+            </div>
+
+            <div class="col-xs-12 charity-reg__step">
+                <span class="charity-reg__step-icon charity-reg__step-icon--num">
+                    <span class="charity-reg__step-sum">10</span>
+                </span>
+                <span class="charity-reg__step-arrow"></span>
+            </div>
+
+            <div class="col-xs-12 charity-reg__step charity-reg__step--progress">
+                <span class="charity-reg__step-rub">уже 67880 рублей</span>
+
+                <div class="charity-reg__progress">
+                    <div class="charity-reg__progress-bar">
+                        <div class="charity-reg__progress-percents"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <span class="charity-reg__step-text">Вы <br/> регистрируетесь</span>
+        </div>
+
+        <div class="col-xs-12">
+            <span class="charity-reg__step-text">Мы зачисляем <br/> по 10 рублей</span>
+        </div>
+
+        <div class="col-xs-12">
+            <span class="charity-reg__step-text charity-reg__step-text--rub">Вместе мы собираем <br/> 100 000 рублей</span>
+        </div>
+
+    </div>
+
+    <div class="charity-reg__register">
+        <form action="">
+            <input class="charity-reg__input" type="text" placeholder="Телефон или Email"/>
+            <button type="submit" class="charity-reg__btn-submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div class="charity-reg__register-text">
+        Нажимая кнопку "зарегистрироваться", вы соглашаетесь <br/>
+        у условиями <a href="">пользовательского соглашения</a>
+    </div>
+
+</section>
+
+    <!-- Patient block -->
+<section class="charity-patient container">
+    <div class="row">
+
+        <div class="col-xs-7">
+            <img class="charity-patient__photo img-responsive img-circle" src="img/charity-patient__photo.png" alt=""/>
+        </div>
+
+        <div class="col-xs-20">
+
+            <h2 class="charity-patient__name">Игорь Холодов</h2>
+
+            <h3 class="charity-patient__city">Санкт-Петербург</h3>
+
+            <p class="charity-patient__story">
+                Игорю 34 года, он живет в Санкт-Петербурге, женат, есть дочь. Работал вагоновожатым на пригородных
+                поездах, бригадиром на металлургическом заводе "Петросталь", прошел путь от мастера до начальника
+                электроремонтного цеха. Сейчас работает в фирме по ремонту оборудования.
+            </p>
+
+            <p class="charity-patient__story">
+                Попал в больницу три месяца назад. Диагноз "острый лимфобластный лейкоз".
+            </p>
+
+            <p class="charity-patient__story">
+                После пересадки донорского костного мозга есть очень большой шанс победить болезнь. Большая часть
+                средств уже собрана, пересадка состоялась 11 марта.
+            </p>
+
+            <p class="charity-patient__story">
+                Осталось совсем немного — победить механизм реакции трансплантат против хозяина(РТПХ) и справиться с
+                болезнью окончательно.
+            </p>
+
+        </div>
+
+        <div class="col-xs-9">
+            <div class="charity-patient__action">
+                <span class="charity-patient__action-text">К акции уже присоединилось</span>
+                <span class="charity-patient__action-num">9 654</span>
+                <span class="charity-patient__action-subtext">человек</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Share block -->
+<section class="charity-share">
+
+    <h2 class="charity-share__title">Поделитесь с друзьями</h2>
+
+    <div class="charity-share__text">
+        <p>Привет! Я начал использовать ONDOC — бесплатный <br/>
+            сервис для контроля здоровья.</p>
+
+        <p>Присоединяйся, чтобы оставаться здоровым и помочь <br/>
+            другому человеку получить срочное лечение.</p>
+
+        <p>Подробнее <a href="https://ondoc.me/blago">ondoc.me/blago</a></p>
+    </div>
+
+    <a class="charity-share__copy-btn" href="#">Скопировать</a>
+
+    <div class="charity-share__share-icons">
+        <a class="charity-share__share-item charity-share__share-item--vk" href="#"></a>
+        <a class="charity-share__share-item charity-share__share-item--ok" href="#"></a>
+        <a class="charity-share__share-item charity-share__share-item--fb" href="#"></a>
+        <a class="charity-share__share-item charity-share__share-item--tw" href="#"></a>
+        <a class="charity-share__share-item charity-share__share-item--gp" href="#"></a>
+        <a class="charity-share__share-item charity-share__share-item--mail" href="#"></a>
+    </div>
+
+</section>
+
+    <!-- About Us -->
+<section class="charity-about container">
+    <div class="row">
+
+        <div class="col-xs-36">
+            <h2 class="charity-about__title">Кто мы?</h2>
+
+            <h3 class="charity-about__subtitle">ONDOC - это бесплатная медицинская карта и персональные рекомендации от
+                лучших врачей</h3>
+        </div>
+
+        <div class="col-xs-18">
+            <!--<span class="charity-about__img"></span>-->
+            <img class="img-responsive" src="img/charity__about--screen.png" alt=""/>
+        </div>
+
+        <div class="col-xs-18 charity-about__text">
+
+            <h4 class="charity-about__text-header">
+                Сервис создан, чтобы показать людям, что забота о здоровье
+                может быть простой, и поддерживать их на этом пути.
+            </h4>
+
+            <p>
+                Мы помогаем нашим пользователям спланировать необходимые обследования, хранить все результаты посещений
+                врачей в одном профиле, и даем им персональные рекомендации, как сохранить здоровье.
+            </p>
+
+            <p>
+                Уже несколько тысяч человек используют OnDoc как основной сервис для поддержания здоровья и хранения
+                своих медицинских данных.
+            </p>
+
+            <p>
+                Мы дорожим каждым нашим пользователям, и будем рады, если вы присоединитесь к нам.
+            </p>
+
+            <p>
+                <a href="">→ Подробнее</a>
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- External pages footer -->
+<footer>
+   <div class="container-fluid footer-external">
+       <div class="container">
+
+           <div class="row footer-external__wrapper">
+
+               <div class="col-xs-6">
+                   <ul class="footer-external__links">
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="about_company.html">О Компании</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="for_docs_and_clinics.html">Врачам и клиникам</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Партнерам</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="contacts.html">Контакты</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-xs-7">
+                   <ul class="footer-external__links">
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="security_policy.html">Правовая информация</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Сервисы</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Тарифы</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-xs-8">
+                   <ul class="footer-external__links">
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Мобильные приложения</a></li>
+                       <li class="footer-external__links-item"><a class="footer-external__link" href="">Статьи</a></li>
+                   </ul>
+               </div>
+
+               <div class="col-xs-offset-9 col-xs-6 text-right">
+                   <a class="social-btn social-btn--fb" href=""></a>
+                   <a class="social-btn social-btn--vk" href=""></a>
+                   <a class="social-btn social-btn--tw" href=""></a>
+                   <a class="social-btn social-btn--gp" href=""></a>
+               </div>
+
+           </div>
+
+           <!-- Copyright -->
+           <div class="row">
+
+               <div class="col-xs-24 non-padding-left">
+                   <a class="footer-external__link footer-external__link--logo" href="main.html">OnDoc — система персонального здравоохранения</a>
+               </div>
+
+               <div class="col-xs-12 footer-external__cards">
+                   <a class="footer-external__visa" href=""></a>
+                   <a class="footer-external__master" href=""></a>
+               </div>
+
+           </div>
+
+       </div>
+   </div>
+</footer>
+
+<!--  PopUps -->
+<!-- Registration PopUp -->
+<div class="popup-login display-none js__find--reg-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Регистрация</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="Введите Email или телефон"/>
+                <button class="popup-login__btn-submit">Зарегистрироваться</button>
+            </form>
+
+            <p class="popup-login__text">
+                Нажимая кнопку &laquo;Зарегистрироваться&raquo;, <br/>
+                вы принимаете условия <br/>
+                <a class="popup-login__link" href="">Пользовательского соглашения</a>
+            </p>
+
+            <a class="popup-login__big-link js__find--login" href="">Уже зарегистрированы? Войдите</a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Password recovery PopUp -->
+<div class="popup-login display-none js__find--recovery-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Восстановление <br/>пароля</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="Введите Email или телефон"/>
+
+                <p class="popup-login__text">
+                    На ваш Email или телефон придет новый пароль, <br/>
+                    который вы сможете поменять в личном кабинете.
+                </p>
+
+                <button class="popup-login__btn-submit js__find--sms">Отправить</button>
+                <a class="popup-login__big-link popup-login__big-link--recovery" href="">Отмена</a>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Login PopUp -->
+<div class="popup-login display-none js__find--login-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Вход</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="Введите Email или телефон"/>
+                <input class="popup-login__input" type="password" placeholder="Пароль"/>
+
+                <span class="popup-login__check">
+                    <i class="popup-login__check-icon"> </i>
+                    Запомнить меня
+                </span>
+
+                <button class="popup-login__btn-submit popup-login__btn-submit--login">Войти</button>
+
+                <a class="popup-login__big-link js__find--recovery" href="">Забыли пароль?</a>
+                <a class="popup-login__big-link js__find--reg" href="">Зарегистрироваться</a>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- SMS Login PopUp -->
+<div class="popup-login display-none js__find--sms-popup">
+    <div class="popup-login__body">
+
+        <div class="popup-login__header">
+            <h2 class="popup-login__title">Вход</h2>
+            <span class="popup-login__close"></span>
+        </div>
+
+        <div class="popup-login__main">
+
+            <form action="">
+                <input class="popup-login__input" type="text" placeholder="СМС-Пароль"/>
+
+                <p class="popup-login__text">
+                    На ваш телефон был отправлен СМС-Пароль. Если пароль <br/>
+                    не пришел, вы можете запросить его повторно.
+                </p>
+
+                <a class="popup-login__big-link popup-login__big-link--sms js__find--recovery" href="">Запросить
+                    СМС-Пароль еще раз</a>
+
+                <button class="popup-login__btn-submit js__find--sms">Отправить</button>
+                <a class="popup-login__big-link popup-login__big-link--recovery" href="">Отмена</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- JavaScript-->
+<script src="js/main.min.js"></script>
+<!-- / JavaScript -->
+
+</body>
+</html>
