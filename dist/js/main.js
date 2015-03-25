@@ -17007,6 +17007,90 @@ $(window).on('scroll', function(){
     }
 });
 
+if ($(".contact-map").length) {
+
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(59.9401434, 30.2600572),
+            zoom: 15,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: false,
+            panControl: true,
+            streetViewControl: true,
+            draggable: true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        }
+        var mapElement = document.getElementById('ondoc-on-map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+            ['OnDoc', 'undefined', '+7 800 775-73-96', 'undefined', 'https://ondoc.me', 59.9401434, 30.2600572, 'https://mapbuildr.com/assets/img/markers/default.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] == 'undefined') {
+                description = '';
+            } else {
+                description = locations[i][1];
+            }
+            if (locations[i][2] == 'undefined') {
+                telephone = '';
+            } else {
+                telephone = locations[i][2];
+            }
+            if (locations[i][3] == 'undefined') {
+                email = '';
+            } else {
+                email = locations[i][3];
+            }
+            if (locations[i][4] == 'undefined') {
+                web = '';
+            } else {
+                web = locations[i][4];
+            }
+            if (locations[i][7] == 'undefined') {
+                markericon = '';
+            } else {
+                markericon = locations[i][7];
+            }
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+            link = '';
+        }
+
+
+        var contentString = '<div id="ondoc-on-map__content">OnDoc - система персонального здравоохранения, включающая в себя сервисы для надежного хранения персональной медицинской информации, ее комплексного анализа, и выявления лучшего способа укрепить и сохранить здоровье.</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+
+}
 /* Registration, login, password recovery, sms auth PopUps */
 $(document).ready(function () {
 
@@ -17057,110 +17141,14 @@ $(document).ready(function () {
 
 });
 
-google.maps.event.addDomListener(window, 'load', init);
-var map;
-function init() {
-    var mapOptions = {
-        center: new google.maps.LatLng(59.9401434,30.2600572),
-        zoom: 15,
-        zoomControl: true,
-        zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.DEFAULT,
-        },
-        disableDoubleClickZoom: true,
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-        },
-        scaleControl: true,
-        scrollwheel: false,
-        panControl: true,
-        streetViewControl: true,
-        draggable : true,
-        overviewMapControl: true,
-        overviewMapControlOptions: {
-            opened: false,
-        },
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-    }
-    var mapElement = document.getElementById('ondoc-on-map');
-    var map = new google.maps.Map(mapElement, mapOptions);
-    var locations = [
-        ['OnDoc', 'undefined', '+7 800 775-73-96', 'undefined', 'https://ondoc.me', 59.9401434, 30.2600572, 'https://mapbuildr.com/assets/img/markers/default.png']
-    ];
-    for (i = 0; i < locations.length; i++) {
-        if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
-        if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
-        if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-        if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-        if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
-        marker = new google.maps.Marker({
-            icon: markericon,
-            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-            map: map,
-            title: locations[i][0],
-            desc: description,
-            tel: telephone,
-            email: email,
-            web: web
-        });
-        link = '';     }
+/* Show/Hide form errors */
 
-
-    var contentString = '<div id="ondoc-on-map__content">OnDoc - система персонального здравоохранения, включающая в себя сервисы для надежного хранения персональной медицинской информации, ее комплексного анализа, и выявления лучшего способа укрепить и сохранить здоровье.</div>';
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
-    });
-}
-/* Registration, login, password recovery, sms auth PopUps */
 $(document).ready(function () {
 
-    /* Show registration popup */
-    $('.js__find--reg').click(function (event) {
+    $('.widget-btn--submit-yes').click(function (event) {
         event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--reg-popup').removeClass('display-none');
+        $('.medcard-errors').toggleClass('display-none');
+        $('.widget__textarea').toggleClass('widget__textarea--error');
+        $('.widget__textarea-wrapper').toggleClass('widget__textarea-wrapper--asterisk');
     });
-
-    /* Show login popup */
-    $('.js__find--login').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--login-popup').removeClass('display-none');
-    });
-
-    /* Show recovery popup */
-    $('.js__find--recovery').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--recovery-popup').removeClass('display-none');
-    });
-
-    /* Show SMS popup */
-    $('.js__find--sms').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--sms-popup').removeClass('display-none');
-    });
-
-    /* Close popups */
-    $('.popup-login__close').click(function (event) {
-        event.preventDefault();
-        $('body').removeClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-    });
-
-    /* Toogle heart checkbox */
-    $('.popup-login__check').click(function (event) {
-        event.preventDefault();
-        $(this).toggleClass('popup-login__check--active');
-    });
-
 });

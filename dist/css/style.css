@@ -13208,7 +13208,7 @@ a:focus
 .widget__notes-img__notes-mb
 {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .widget__textarea
 {
@@ -13295,6 +13295,26 @@ a:focus
 .widget__textarea::-webkit-scrollbar
 {
     width: 0;
+}
+
+.widget__textarea--error {
+    position: relative;
+
+    border: 1px solid #dc4531;
+}
+
+.widget__textarea-wrapper--asterisk {
+    position: relative;
+}
+
+.widget__textarea-wrapper--asterisk:after {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+
+    content: '*';
+
+    color: #dc4531;
 }
 .widget__upload
 {
@@ -14654,7 +14674,7 @@ a:focus
 .widget-security__notes-img__notes-mb
 {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .widget-security__textarea
 {
@@ -14741,6 +14761,26 @@ a:focus
 .widget-security__textarea::-webkit-scrollbar
 {
     width: 0;
+}
+
+.widget-security__textarea--error {
+    position: relative;
+
+    border: 1px solid #dc4531;
+}
+
+.widget-security__textarea-wrapper--asterisk {
+    position: relative;
+}
+
+.widget-security__textarea-wrapper--asterisk:after {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+
+    content: '*';
+
+    color: #dc4531;
 }
 .widget-security__upload
 {
@@ -19340,7 +19380,7 @@ Widgets
 .profile-widget__notes-img__notes-mb
 {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .profile-widget__textarea
 {
@@ -19427,6 +19467,26 @@ Widgets
 .profile-widget__textarea::-webkit-scrollbar
 {
     width: 0;
+}
+
+.profile-widget__textarea--error {
+    position: relative;
+
+    border: 1px solid #dc4531;
+}
+
+.profile-widget__textarea-wrapper--asterisk {
+    position: relative;
+}
+
+.profile-widget__textarea-wrapper--asterisk:after {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+
+    content: '*';
+
+    color: #dc4531;
 }
 .profile-widget__upload
 {
@@ -22075,7 +22135,7 @@ input:after
 .widget-notifications__notes-img__notes-mb
 {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .widget-notifications__textarea
 {
@@ -22162,6 +22222,26 @@ input:after
 .widget-notifications__textarea::-webkit-scrollbar
 {
     width: 0;
+}
+
+.widget-notifications__textarea--error {
+    position: relative;
+
+    border: 1px solid #dc4531;
+}
+
+.widget-notifications__textarea-wrapper--asterisk {
+    position: relative;
+}
+
+.widget-notifications__textarea-wrapper--asterisk:after {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+
+    content: '*';
+
+    color: #dc4531;
 }
 .widget-notifications__upload
 {
@@ -26976,7 +27056,6 @@ a
 
     background: url('../img/icon-doc-exp.png');
 }
-
 @media (max-width: 1100px)
 {
     .docs__tab-info--exp:before
@@ -30644,4 +30723,22 @@ Styles for filter block on consultations, clinics and docs pages
 
     margin: 0;
     margin-bottom: 15px;
+}
+
+.medcard-errors__title {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+
+    color: #dc4531;
+}
+
+.medcard-errors__list {
+    padding-left: 25px;
+}
+
+.medcard-errors__item {
+    font-size: 14px;
+
+    color: #dc4531;
 }
