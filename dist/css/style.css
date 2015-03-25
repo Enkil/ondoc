@@ -30711,11 +30711,18 @@ Styles for filter block on consultations, clinics and docs pages
 {
     font-size: 18px;
 
+    margin-bottom: 60px;
+
     letter-spacing: -1px;
 }
 .charity-about__text > p
 {
     margin-bottom: 15px;
+}
+
+.charity-about__text a {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
 }
 .charity-about__text-header
 {
