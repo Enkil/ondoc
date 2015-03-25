@@ -16373,6 +16373,8 @@ External pages buttons
 }
 .lightbox-arrow:before
 {
+    position: absolute;
+    top: 50%;
     right: 0;
 
     display: inline-block;
