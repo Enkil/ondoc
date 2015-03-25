@@ -15957,6 +15957,7 @@ External pages buttons
 
     text-align: center;
 
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 50%;
 }
 .medcard-doctor__avatar-ondocked
@@ -17105,6 +17106,7 @@ External pages buttons
 
     text-align: center;
 
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 50%;
 }
 .medcard-clinic__avatar-ondocked

@@ -13069,6 +13069,7 @@ a:active, a:focus {
     width: 45px;
     height: 45px;
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 50%
 }
 
@@ -13954,6 +13955,7 @@ a:active, a:focus {
     width: 45px;
     height: 45px;
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 50%
 }
 
