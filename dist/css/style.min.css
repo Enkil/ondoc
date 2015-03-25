@@ -11312,7 +11312,7 @@ a:active, a:focus {
     display: block;
     padding-left: 15px;
     letter-spacing: -.2px;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
@@ -11336,13 +11336,13 @@ a:active, a:focus {
     padding-left: 15px;
     letter-spacing: -.2px;
     word-break: break-all;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
 .widget-tab__date--bigger {
     font-size: 14px;
-    color: #000
+    color: rgba(0, 0, 0, .5)
 }
 
 .widget-tab__date:before {
@@ -13123,7 +13123,7 @@ a:active, a:focus {
     margin-bottom: 10px;
     padding-left: 15px;
     word-break: break-all;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
@@ -14009,7 +14009,7 @@ a:active, a:focus {
     margin-bottom: 10px;
     padding-left: 15px;
     word-break: break-all;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
@@ -21087,7 +21087,7 @@ a {
     position: relative;
     display: block;
     padding-left: 15px;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
@@ -21124,7 +21124,7 @@ a {
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
@@ -21649,7 +21649,7 @@ a {
     display: block;
     padding-left: 15px;
     word-break: break-all;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
@@ -21866,7 +21866,7 @@ a {
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
     outline: 0 !important
 }
 
