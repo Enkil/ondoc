@@ -11318,6 +11318,7 @@ a:active, a:focus {
 
 .widget-tab__clinic:before {
     position: absolute;
+    top: -3px;
     left: 0;
     display: inline-block;
     width: 12px;
@@ -11347,6 +11348,7 @@ a:active, a:focus {
 
 .widget-tab__date:before {
     position: absolute;
+    top: -3px;
     left: 0;
     display: inline-block;
     width: 12px;
@@ -21070,10 +21072,12 @@ a {
 }
 
 .clinics__info--mappin:before {
+    top: 3px;
     background: url(../img/icon-map-pin.png) no-repeat
 }
 
 .clinics__info--worktime:before {
+    top: 3px;
     background: url(../img/icon-worktime.png) no-repeat
 }
 
@@ -21116,6 +21120,7 @@ a {
 }
 
 .clinics__tab-info--subway:before {
+    top: 2px;
     background: url(../img/icon-doc-subway.png) no-repeat
 }
 
@@ -21655,6 +21660,7 @@ a {
 
 .docs__tab-info:before {
     position: absolute;
+    top: -2px;
     left: 0;
     display: inline-block;
     width: 10px;
@@ -21672,13 +21678,13 @@ a {
 }
 
 .docs__tab-info--exp:before {
-    left: 30px;
+    left: 35px;
     background: url(../img/icon-doc-exp.png)
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1100px) {
     .docs__tab-info--exp:before {
-        left: 5px
+        left: 20px
     }
 }
 

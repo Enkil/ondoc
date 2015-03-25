@@ -13746,6 +13746,7 @@ a:focus
 .widget-tab__clinic:before
 {
     position: absolute;
+    top: -3px;
     left: 0;
 
     display: inline-block;
@@ -13786,6 +13787,7 @@ a:focus
 .widget-tab__date:before
 {
     position: absolute;
+    top: -3px;
     left: 0;
 
     display: inline-block;
@@ -26211,10 +26213,14 @@ a
 }
 .clinics__info--mappin:before
 {
+    top: 3px;
+
     background: url('../img/icon-map-pin.png') no-repeat;
 }
 .clinics__info--worktime:before
 {
+    top: 3px;
+
     background: url('../img/icon-worktime.png') no-repeat;
 }
 .clinics__info--subway:before
@@ -26267,6 +26273,8 @@ a
 }
 .clinics__tab-info--subway:before
 {
+    top: 2px;
+
     background: url('../img/icon-doc-subway.png') no-repeat;
 }
 .clinics__ondoc-support
@@ -26943,6 +26951,7 @@ a
 .docs__tab-info:before
 {
     position: absolute;
+    top: -2px;
     left: 0;
 
     display: inline-block;
@@ -26963,15 +26972,16 @@ a
 }
 .docs__tab-info--exp:before
 {
-    left: 30px;
+    left: 35px;
 
     background: url('../img/icon-doc-exp.png');
 }
-@media (max-width: 1025px)
+
+@media (max-width: 1100px)
 {
     .docs__tab-info--exp:before
     {
-        left: 5px;
+        left: 20px;
     }
 }
 .docs__enroll-link
