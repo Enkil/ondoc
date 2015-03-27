@@ -30665,14 +30665,20 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 18px;
 
     display: inline-block;
+    overflow: hidden;
 
+    width: 522px;
+    height: auto;
     margin-bottom: 20px;
-    padding: 20px 20px 0 20px;
+    padding: 20px;
 
+    resize: none;
     text-align: left;
+    white-space: pre-line;
 
     border: 1px solid #8d8d8d;
     border-radius: 20px;
+    outline: none;
     background-color: #fff;
 }
 .charity-share__text > p
