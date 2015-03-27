@@ -18174,10 +18174,12 @@ Widgets
 }
 .monitoring-widget__value-add--error
 {
-    margin-top: 10px;
-
     color: #dc4531;
     border: 1px solid #dc4531;
+}
+.monitoring-widget__values
+{
+    position: relative;
 }
 .monitoring-widget__value--error
 {
@@ -18185,8 +18187,13 @@ Widgets
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
+    position: absolute;
+
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 0;
+
+    text-align: center;
 
     color: #dc4531;
 }
@@ -18388,7 +18395,6 @@ Widgets
 .monitoring-widget__chol-shedule--add-value
 {
     margin-top: 30px;
-    margin-bottom: 30px;
     padding: 0;
 }
 .monitoring-widget__chol-shedule-cap
