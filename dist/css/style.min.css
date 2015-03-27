@@ -12437,7 +12437,7 @@ a:active, a:focus {
     touch-action: manipulation
 }
 
-.ext-btn:hover {
+.ext-btn:active, .ext-btn:focus, .ext-btn:hover {
     color: #5db7d8;
     background-color: #fff
 }

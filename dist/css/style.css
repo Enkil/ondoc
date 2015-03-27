@@ -7293,7 +7293,6 @@ fieldset[disabled] .form-control
     opacity: 1;
     background-color: #eee;
 }
-
 .form-control[disabled],
 fieldset[disabled] .form-control {
     cursor: not-allowed;
@@ -10162,7 +10161,6 @@ a.label:focus
     position: relative;
     top: -1px;
 }
-
 .btn-xs .badge,
 .btn-group-xs > .btn .badge
 {
@@ -11190,12 +11188,10 @@ a.list-group-item-danger.active:focus
 
     border: 0;
 }
-
 .embed-responsive-16by9
 {
     padding-bottom: 56.25%;
 }
-
 .embed-responsive-4by3
 {
     padding-bottom: 75%;
@@ -15176,6 +15172,16 @@ External pages buttons
 }
 .ext-btn:hover
 {
+    color: #5db7d8;
+    background-color: #fff;
+}
+
+.ext-btn:active {
+    color: #5db7d8;
+    background-color: #fff;
+}
+
+.ext-btn:focus {
     color: #5db7d8;
     background-color: #fff;
 }
@@ -30813,6 +30819,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     padding-left: 25px;
 }
+
 .medcard-errors__item {
     font-size: 14px;
 
@@ -30830,7 +30837,6 @@ Styles for filter block on consultations, clinics and docs pages
 .drugs-errors__list {
     padding-left: 25px;
 }
-
 .drugs-errors__item
 {
     font-size: 14px;
