@@ -13108,8 +13108,14 @@ a:active, a:focus {
 }
 
 .medcard-doctor__body {
-    overflow-y: scroll;
-    height: 470px
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    height: 470px;
+    -ms-overflow-style: none
+}
+
+.medcard-doctor__body::-webkit-scrollbar {
+    width: 0
 }
 
 .medcard-doctor__doc {
@@ -20344,6 +20350,10 @@ a {
     outline: 0 !important
 }
 
+.drugs__drug-day--error {
+    border: 1px solid #dc4531
+}
+
 .drugs__drug-day--clickable {
     cursor: pointer
 }
@@ -20508,6 +20518,10 @@ a {
     transition: line-height .5s ease
 }
 
+.drugs__drug-comment--error {
+    border: 1px solid #dc4531
+}
+
 .drugs__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 15px;
@@ -20519,6 +20533,10 @@ a {
 
 .drugs__link--item, .drugs__link--type {
     position: relative
+}
+
+.drugs__link--error {
+    color: #dc4531
 }
 
 .drugs__dosage {
@@ -20589,6 +20607,22 @@ a {
     margin: 10px 0;
     text-align: center;
     color: #000
+}
+
+.drugs__dosage--error {
+    border: 1px solid #dc4531
+}
+
+.drugs__dosage-wrapper--asterisk {
+    position: relative
+}
+
+.drugs__dosage-wrapper--asterisk:after {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    content: '*';
+    color: #dc4531
 }
 
 .drugs__dosage-popup {

@@ -426,7 +426,9 @@
     <div class="row">
         <div class="col-xs-36 non-padding-left non-padding-right">
             <form action="" >
-                <input type="text" class="drugs__drug-comment" placeholder="Название"/>
+                <div class="widget__textarea-wrapper">
+                    <input type="text" class="drugs__drug-comment" placeholder="Название"/>
+                </div>
             </form>
         </div>
     </div>
@@ -451,7 +453,7 @@
             </div>
 
             <div class="col-xs-12">
-                <div class="widget__textarea-wrapper">
+                <div class="drugs__dosage-wrapper">
                     <input type="text" class="drugs__dosage drugs__dosage--dosage" placeholder="Дозировка"/>
                 </div>
             </div>
@@ -827,7 +829,7 @@
     </div>
 
     <!-- Drugs errors -->
-    <section class="row drugs-errors">
+    <section class="row drugs-errors display-none">
     <div class="col-xs-36">
         <h3 class="drugs-errors__title">* Для создания обследования заполните недостающие данные</h3>
         <ul class="drugs-errors__list">

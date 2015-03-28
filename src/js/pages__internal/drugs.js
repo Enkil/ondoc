@@ -1,6 +1,4 @@
-/*
- Toggle doctor info pop-up
- */
+/* Toggle doctor info pop-up */
 $(document).ready(function() {
 
     $('.drugs__doctor-name').click(function(event){
@@ -15,9 +13,7 @@ $(document).ready(function() {
 
 });
 
-/*
-* Toggle reaction popup
-*/
+/* Toggle reaction popup */
 $(document).ready(function() {
 
     $('.js-drugs-popup-toogle').mouseover(function(event){
@@ -32,9 +28,7 @@ $(document).ready(function() {
 
 });
 
-/*
- * Toggle dosage types and items popups
- */
+/* Toggle dosage types and items popups */
 $(document).ready(function() {
 
     $('.drugs__link--type').click(function(event){
@@ -59,10 +53,7 @@ $(document).ready(function() {
 
 });
 
-
-/*
- * Toggle days state
- */
+/* Toggle days state */
 $(document).ready(function() {
 
     $('.js__drug-day').click(function(event){
@@ -71,13 +62,25 @@ $(document).ready(function() {
     });
 });
 
-/*
- * Toggle doc select display
- */
+/* Toggle doc select display */
 $(document).ready(function() {
 
     $('.js__drugs-doc-select').click(function(event){
         event.preventDefault();
         $('.medcard-doctor__wrapper').toggleClass('display-none');
+    });
+});
+
+/* Show/Hide form errors */
+$(document).ready(function () {
+
+    $('.widget-btn--submit-yes').click(function (event) {
+        event.preventDefault();
+        $('.drugs-errors').toggleClass('display-none');
+        $('.drugs__drug-comment').toggleClass('drugs__drug-comment--error');
+        $('.drugs__link').toggleClass('drugs__link--error');
+        $('.drugs__dosage-wrapper').toggleClass('drugs__dosage-wrapper--asterisk');
+        $('.drugs__dosage').toggleClass('drugs__dosage--error');
+        $('.js__drug-day').not('.drugs__drug-day--active').toggleClass('drugs__drug-day--error');
     });
 });
