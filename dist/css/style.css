@@ -30886,3 +30886,237 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #dc4531;
 }
+
+/*  Styles for Datepicker popup */
+.datepicker {
+    position: absolute;
+    z-index: 100;
+    top: 35px;
+    left: calc(50% - 125px);
+
+    width: 250px;
+    padding: 15px 0;
+
+    text-align: center;
+
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+}
+
+.datepicker:after {
+    position: absolute;
+    top: -26px;
+    right: calc(50% - 15px);
+
+    content: '';
+
+    border: 15px solid transparent;
+    border-bottom: 12px solid #fff;
+}
+
+.datepicker__input {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+
+    display: block;
+
+    width: 218px;
+    height: 35px;
+    margin: 0 auto;
+
+    resize: none;
+    text-align: center;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 8px;
+}
+
+.datepicker__hr {
+    margin: 17px 0;
+}
+
+.datepicker__hr--last {
+    margin-top: 0;
+}
+
+.datepicker__month {
+    display: block;
+
+    width: 218px;
+    margin: 0 auto 12px;
+}
+
+.datepicker__month-item {
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 15px;
+
+    display: inline-block;
+
+    outline: none !important;
+}
+
+.datepicker__arrow {
+    display: inline-block;
+
+    width: 8px;
+    height: 14px;
+
+    background-image: url('../img/icon-datapicker-back.png');
+    background-size: 8px 14px;
+}
+
+.datepicker__arrow:hover {
+    opacity: .6;
+}
+
+.datepicker__arrow--right {
+    background-image: url('../img/icon-datapicker-forward.png');
+}
+
+.datepicker__arrow--up {
+    position: absolute;
+    top: 13px;
+    right: calc(50% - 7px);
+
+    width: 14px;
+    height: 8px;
+
+    background-image: url('../img/icon-datapicker-up.png');
+    background-size: 14px 8px;
+}
+
+.datepicker__arrow--down {
+    position: absolute;
+    right: calc(50% - 7px);
+    bottom: 13px;
+
+    width: 14px;
+    height: 8px;
+
+    background-image: url('../img/icon-datapicker-down.png');
+    background-size: 14px 8px;
+}
+
+.datepicker__table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.datepicker__table-head {
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    outline: none !important;
+    background-color: #f7f7f7;
+}
+
+.datepicker__table-item {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: bottom;
+}
+
+.datepicker__table-item:hover {
+    opacity: .6;
+}
+
+.datepicker__table-item--current {
+    color: #5db7d8;
+}
+
+.datepicker__table-item--active {
+    display: inline-block;
+
+    width: 28px;
+    height: 28px;
+
+    color: #fff !important;
+    border-radius: 50%;
+    background-color: #5db7d8;
+}
+
+.datepicker__table-item--nextmonth {
+    color: rgba(0, 0, 0, .2);
+}
+
+.datepicker__table-row {
+    line-height: 33px;
+
+    height: 38px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.datepicker__time {
+    position: relative;
+
+    display: inline-block;
+}
+
+.datepicker__time-input {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+
+    display: inline-block;
+
+    width: 48px;
+    height: 35px;
+    margin: 30px 0;
+
+    resize: none;
+    text-align: center;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 8px;
+}
+
+.datepicker__time-char {
+    font-size: 15px;
+
+    margin: 30px 2px;
+
+    color: #8d8d8d;
+}
+
+.datepicker__buttons {
+    font-size: 0;
+
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.datepicker__btn {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    margin: 0 18px;
+
+    background-image: url('../img/exit-okey-sprite.png');
+    background-repeat: no-repeat;
+}
+
+.datepicker__btn:hover {
+    opacity: .6;
+}
+
+.datepicker__btn--exit {
+    background-position: 0 0;
+}
+
+.datepicker__btn--ok {
+    background-position: -88px 0;
+}
