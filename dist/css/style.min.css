@@ -10284,7 +10284,11 @@ button.close {
 
 html {
     position: relative;
-    min-height: 100%
+    min-height: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden
 }
 
 .container {
@@ -10452,6 +10456,10 @@ html {
 
 .color-grey {
     color: #8d8d8d
+}
+
+.pos-rel {
+    position: relative !important
 }
 
 @font-face {
@@ -14566,7 +14574,8 @@ a:active, a:focus {
 }
 
 .monitoring-widget__subheader {
-    overflow: hidden;
+    position: relative;
+    height: 22px;
     margin: 20px
 }
 
@@ -14765,7 +14774,6 @@ a:active, a:focus {
 }
 
 .monitoring-widget__value-body {
-    overflow: hidden;
     padding: 45px 25px 25px
 }
 
@@ -24793,6 +24801,7 @@ a {
     margin: 0 auto;
     resize: none;
     text-align: center;
+    color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 8px
 }
@@ -24820,10 +24829,11 @@ a {
 
 .datepicker__arrow {
     display: inline-block;
-    width: 8px;
-    height: 14px;
+    width: 10px;
+    height: 16px;
     background-image: url(../img/icon-datapicker-back.png);
-    background-size: 8px 14px
+    background-repeat: no-repeat;
+    background-size: 10px 16px
 }
 
 .datepicker__arrow:hover {

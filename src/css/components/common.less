@@ -1,6 +1,10 @@
 html {
   position: relative;
   min-height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .container{
@@ -227,5 +231,7 @@ html {
 
 .color-grey{  color:@grey-color;  }
 
-
-
+/* Position relative class */
+.pos-rel {
+  position: relative !important;
+}
