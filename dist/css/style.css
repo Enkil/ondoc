@@ -12621,7 +12621,6 @@ html
 {
     color: #8d8d8d;
 }
-
 /* Position relative class */
 .pos-rel {
     position: relative !important;
@@ -16796,8 +16795,6 @@ External pages buttons
 
     margin: 10px 20px 5px 15px;
 
-    word-break: break-all;
-
     color: #000;
 }
 .medcard-docinfo__clinic-subway
@@ -16807,8 +16804,6 @@ External pages buttons
     font-size: 13px;
 
     margin: 0 20px 0 15px;
-
-    word-break: break-all;
 
     color: #000;
     outline: none!important;

@@ -13711,7 +13711,6 @@ a:active, a:focus {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 13px;
     margin: 10px 20px 5px 15px;
-    word-break: break-all;
     color: #000
 }
 
@@ -13719,7 +13718,6 @@ a:active, a:focus {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 13px;
     margin: 0 20px 0 15px;
-    word-break: break-all;
     color: #000;
     outline: 0 !important
 }
