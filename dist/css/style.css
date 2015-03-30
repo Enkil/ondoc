@@ -13361,16 +13361,10 @@ a:focus
 
     display: inline-block;
 
-    margin-top: 9px;
-
     color: #5db7d8;
 }
 .widget__upload-icon:before
 {
-    position: absolute;
-    top: -9px;
-    left: -16px;
-
     display: inline-block;
 
     width: 41px;
@@ -14840,16 +14834,10 @@ a:focus
 
     display: inline-block;
 
-    margin-top: 9px;
-
     color: #5db7d8;
 }
 .widget-security__upload-icon:before
 {
-    position: absolute;
-    top: -9px;
-    left: -16px;
-
     display: inline-block;
 
     width: 41px;
@@ -19580,16 +19568,10 @@ Widgets
 
     display: inline-block;
 
-    margin-top: 9px;
-
     color: #5db7d8;
 }
 .profile-widget__upload-icon:before
 {
-    position: absolute;
-    top: -9px;
-    left: -16px;
-
     display: inline-block;
 
     width: 41px;
@@ -22348,16 +22330,10 @@ input:after
 
     display: inline-block;
 
-    margin-top: 9px;
-
     color: #5db7d8;
 }
 .widget-notifications__upload-icon:before
 {
-    position: absolute;
-    top: -9px;
-    left: -16px;
-
     display: inline-block;
 
     width: 41px;

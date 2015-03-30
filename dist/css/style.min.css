@@ -11022,14 +11022,10 @@ a:active, a:focus {
 .widget__upload-icon {
     position: relative;
     display: inline-block;
-    margin-top: 9px;
     color: #5db7d8
 }
 
 .widget__upload-icon:before {
-    position: absolute;
-    top: -9px;
-    left: -16px;
     display: inline-block;
     width: 41px;
     height: 31px;
@@ -12190,14 +12186,10 @@ a:active, a:focus {
 .widget-security__upload-icon {
     position: relative;
     display: inline-block;
-    margin-top: 9px;
     color: #5db7d8
 }
 
 .widget-security__upload-icon:before {
-    position: absolute;
-    top: -9px;
-    left: -16px;
     display: inline-block;
     width: 41px;
     height: 31px;
@@ -15913,14 +15905,10 @@ a:active, a:focus {
 .profile-widget__upload-icon {
     position: relative;
     display: inline-block;
-    margin-top: 9px;
     color: #5db7d8
 }
 
 .profile-widget__upload-icon:before {
-    position: absolute;
-    top: -9px;
-    left: -16px;
     display: inline-block;
     width: 41px;
     height: 31px;
@@ -17977,14 +17965,10 @@ input, input:after, input:before, input:focus, input:visited {
 .widget-notifications__upload-icon {
     position: relative;
     display: inline-block;
-    margin-top: 9px;
     color: #5db7d8
 }
 
 .widget-notifications__upload-icon:before {
-    position: absolute;
-    top: -9px;
-    left: -16px;
     display: inline-block;
     width: 41px;
     height: 31px;
