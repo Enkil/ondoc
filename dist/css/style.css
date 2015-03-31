@@ -3382,12 +3382,28 @@ th
 {
     content: '\e227';
 }
+
+.glyphicon-btc:before {
+    content: '\e227';
+}
+
+.glyphicon-xbt:before {
+    content: '\e227';
+}
 .glyphicon-yen:before
 {
     content: '\00a5';
 }
+
+.glyphicon-jpy:before {
+    content: '\00a5';
+}
 .glyphicon-ruble:before
 {
+    content: '\20bd';
+}
+
+.glyphicon-rub:before {
     content: '\20bd';
 }
 .glyphicon-scale:before
@@ -3643,6 +3659,10 @@ hr
     width: auto;
     height: auto;
     margin: 0;
+}
+
+[role='button'] {
+    cursor: pointer;
 }
 h1,
 h2,
@@ -7270,10 +7290,13 @@ output
 .form-control[readonly],
 fieldset[disabled] .form-control
 {
-    cursor: not-allowed;
-
     opacity: 1;
     background-color: #eee;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+    cursor: not-allowed;
 }
 textarea.form-control
 {
@@ -7360,6 +7383,8 @@ input[type='search']
 {
     font-weight: normal;
 
+    position: relative;
+
     display: inline-block;
 
     margin-bottom: 0;
@@ -7399,6 +7424,7 @@ fieldset[disabled] .checkbox label
 }
 .form-control-static
 {
+    min-height: 38px;
     margin-bottom: 0;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -7457,6 +7483,7 @@ select[multiple].form-group-sm .form-control
     line-height: 1.5;
 
     height: 33px;
+    min-height: 36px;
     padding: 5px 10px;
 }
 .input-lg
@@ -7507,6 +7534,7 @@ select[multiple].form-group-lg .form-control
     line-height: 1.3333333;
 
     height: 49px;
+    min-height: 42px;
     padding: 10px 16px;
 }
 .has-feedback
@@ -8247,12 +8275,10 @@ input[type='button'].btn-block
 .collapse
 {
     display: none;
-    visibility: hidden;
 }
 .collapse.in
 {
     display: block;
-    visibility: visible;
 }
 tr.collapse.in
 {
@@ -8287,7 +8313,7 @@ tbody.collapse.in
 
     vertical-align: middle;
 
-    border-top: 4px solid;
+    border-top: 4px dashed;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
@@ -9125,12 +9151,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .tab-content > .tab-pane
 {
     display: none;
-    visibility: hidden;
 }
 .tab-content > .active
 {
     display: block;
-    visibility: visible;
 }
 .nav-tabs .dropdown-menu
 {
@@ -9190,7 +9214,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     .navbar-collapse.collapse
     {
         display: block !important;
-        visibility: visible !important;
         overflow: visible !important;
 
         height: auto !important;
@@ -10139,7 +10162,9 @@ a.label:focus
     position: relative;
     top: -1px;
 }
-.btn-xs .badge
+
+.btn-xs .badge,
+.btn-group-xs > .btn .badge
 {
     top: 0;
 
@@ -10415,6 +10440,7 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -11164,11 +11190,13 @@ a.list-group-item-danger.active:focus
 
     border: 0;
 }
-.embed-responsive.embed-responsive-16by9
+
+.embed-responsive-16by9
 {
     padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3
+
+.embed-responsive-4by3
 {
     padding-bottom: 75%;
 }
@@ -11243,7 +11271,7 @@ button.close
 .modal
 {
     position: fixed;
-    z-index: 1040;
+    z-index: 1050;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11296,9 +11324,11 @@ button.close
 }
 .modal-backdrop
 {
-    position: absolute;
+    position: fixed;
+    z-index: 1040;
     top: 0;
     right: 0;
+    bottom: 0;
     left: 0;
 
     background-color: #000;
@@ -11403,7 +11433,6 @@ button.close
     z-index: 1070;
 
     display: block;
-    visibility: visible;
 
     opacity: 0;
 
@@ -12085,7 +12114,6 @@ button.close
 .hidden
 {
     display: none !important;
-    visibility: hidden !important;
 }
 .affix
 {
@@ -28764,6 +28792,9 @@ a
 /*
 Styles for filter block on consultations, clinics and docs pages
 */
+.filter__check-margin {
+    margin-top: 40px;
+}
 .filter__check-round-wrapper
 {
     position: absolute;
