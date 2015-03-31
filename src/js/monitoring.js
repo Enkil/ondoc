@@ -54,6 +54,30 @@ $(document).ready(function() {
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
     });
 
+    /*
+    Special styles for error for sugar  
+     */
+
+     $('.monitoring-widget__sugar .monitoring-widget__save').click(function(event){
+        event.preventDefault();
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special"); 
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
+        $(this).parents('.monitoring-widget__sugar').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
+        $(this).parents('.monitoring-widget__sugar').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
+    });
+
+     /*
+    Special styles for error for cholesterol  
+     */
+
+     $('.monitoring-widget__cholesterol .monitoring-widget__save').click(function(event){
+        event.preventDefault();
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special"); 
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
+    });
+
 });
 
 

@@ -9214,7 +9214,7 @@ return jQuery;
 }));
 
 /*!
- * Bootstrap v3.3.4 (http://getbootstrap.com)
+ * Bootstrap v3.3.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -9232,7 +9232,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: transition.js v3.3.4
+ * Bootstrap: transition.js v3.3.2
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -9292,7 +9292,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: alert.js v3.3.4
+ * Bootstrap: alert.js v3.3.2
  * http://getbootstrap.com/javascript/#alerts
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -9311,7 +9311,7 @@ if (typeof jQuery === 'undefined') {
     $(el).on('click', dismiss, this.close)
   }
 
-    Alert.VERSION = '3.3.4'
+  Alert.VERSION = '3.3.2'
 
   Alert.TRANSITION_DURATION = 150
 
@@ -9387,7 +9387,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: button.js v3.3.4
+ * Bootstrap: button.js v3.3.2
  * http://getbootstrap.com/javascript/#buttons
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -9407,7 +9407,7 @@ if (typeof jQuery === 'undefined') {
     this.isLoading = false
   }
 
-    Button.VERSION = '3.3.4'
+  Button.VERSION  = '3.3.2'
 
   Button.DEFAULTS = {
     loadingText: 'loading...'
@@ -9504,7 +9504,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: carousel.js v3.3.4
+ * Bootstrap: carousel.js v3.3.2
  * http://getbootstrap.com/javascript/#carousel
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -9522,10 +9522,10 @@ if (typeof jQuery === 'undefined') {
     this.$element    = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
     this.options     = options
-      this.paused = null
-      this.sliding = null
-      this.interval = null
-      this.$active = null
+    this.paused      =
+    this.sliding     =
+    this.interval    =
+    this.$active     =
     this.$items      = null
 
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
@@ -9535,7 +9535,7 @@ if (typeof jQuery === 'undefined') {
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
   }
 
-    Carousel.VERSION = '3.3.4'
+  Carousel.VERSION  = '3.3.2'
 
   Carousel.TRANSITION_DURATION = 600
 
@@ -9742,7 +9742,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: collapse.js v3.3.4
+ * Bootstrap: collapse.js v3.3.2
  * http://getbootstrap.com/javascript/#collapse
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -9759,8 +9759,7 @@ if (typeof jQuery === 'undefined') {
   var Collapse = function (element, options) {
     this.$element      = $(element)
     this.options       = $.extend({}, Collapse.DEFAULTS, options)
-      this.$trigger = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
-      '[data-toggle="collapse"][data-target="#' + element.id + '"]')
+    this.$trigger      = $(this.options.trigger).filter('[href="#' + element.id + '"], [data-target="#' + element.id + '"]')
     this.transitioning = null
 
     if (this.options.parent) {
@@ -9772,12 +9771,13 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle()
   }
 
-    Collapse.VERSION = '3.3.4'
+  Collapse.VERSION  = '3.3.2'
 
   Collapse.TRANSITION_DURATION = 350
 
   Collapse.DEFAULTS = {
-      toggle: true
+    toggle: true,
+    trigger: '[data-toggle="collapse"]'
   }
 
   Collapse.prototype.dimension = function () {
@@ -9915,7 +9915,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.collapse')
       var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
-        if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
+      if (!data && options.toggle && option == 'show') options.toggle = false
       if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -9946,7 +9946,7 @@ if (typeof jQuery === 'undefined') {
 
     var $target = getTargetFromTrigger($this)
     var data    = $target.data('bs.collapse')
-      var option = data ? 'toggle' : $this.data()
+    var option  = data ? 'toggle' : $.extend({}, $this.data(), { trigger: this })
 
     Plugin.call($target, option)
   })
@@ -9954,7 +9954,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: dropdown.js v3.3.4
+ * Bootstrap: dropdown.js v3.3.2
  * http://getbootstrap.com/javascript/#dropdowns
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -9974,7 +9974,7 @@ if (typeof jQuery === 'undefined') {
     $(element).on('click.bs.dropdown', this.toggle)
   }
 
-    Dropdown.VERSION = '3.3.4'
+  Dropdown.VERSION = '3.3.2'
 
   Dropdown.prototype.toggle = function (e) {
     var $this = $(this)
@@ -10027,7 +10027,7 @@ if (typeof jQuery === 'undefined') {
       return $this.trigger('click')
     }
 
-      var desc = ' li:not(.disabled):visible a'
+    var desc = ' li:not(.divider):visible a'
     var $items = $parent.find('[role="menu"]' + desc + ', [role="listbox"]' + desc)
 
     if (!$items.length) return
@@ -10116,7 +10116,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: modal.js v3.3.4
+ * Bootstrap: modal.js v3.3.2
  * http://getbootstrap.com/javascript/#modals
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -10131,15 +10131,12 @@ if (typeof jQuery === 'undefined') {
   // ======================
 
   var Modal = function (element, options) {
-      this.options = options
-      this.$body = $(document.body)
-      this.$element = $(element)
-      this.$dialog = this.$element.find('.modal-dialog')
-      this.$backdrop = null
-      this.isShown = null
-      this.originalBodyPad = null
-      this.scrollbarWidth = 0
-      this.ignoreBackdropClick = false
+    this.options        = options
+    this.$body          = $(document.body)
+    this.$element       = $(element)
+    this.$backdrop      =
+    this.isShown        = null
+    this.scrollbarWidth = 0
 
     if (this.options.remote) {
       this.$element
@@ -10150,7 +10147,7 @@ if (typeof jQuery === 'undefined') {
     }
   }
 
-    Modal.VERSION = '3.3.4'
+  Modal.VERSION  = '3.3.2'
 
   Modal.TRANSITION_DURATION = 300
   Modal.BACKDROP_TRANSITION_DURATION = 150
@@ -10184,12 +10181,6 @@ if (typeof jQuery === 'undefined') {
 
     this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
 
-      this.$dialog.on('mousedown.dismiss.bs.modal', function () {
-          that.$element.one('mouseup.dismiss.bs.modal', function (e) {
-              if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
-      })
-      })
-
     this.backdrop(function () {
       var transition = $.support.transition && that.$element.hasClass('fade')
 
@@ -10201,6 +10192,7 @@ if (typeof jQuery === 'undefined') {
         .show()
         .scrollTop(0)
 
+      if (that.options.backdrop) that.adjustBackdrop()
       that.adjustDialog()
 
       if (transition) {
@@ -10216,7 +10208,7 @@ if (typeof jQuery === 'undefined') {
       var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
 
       transition ?
-          that.$dialog // wait for modal to slide in
+        that.$element.find('.modal-dialog') // wait for modal to slide in
           .one('bsTransitionEnd', function () {
             that.$element.trigger('focus').trigger(e)
           })
@@ -10245,9 +10237,6 @@ if (typeof jQuery === 'undefined') {
       .removeClass('in')
       .attr('aria-hidden', true)
       .off('click.dismiss.bs.modal')
-        .off('mouseup.dismiss.bs.modal')
-
-      this.$dialog.off('mousedown.dismiss.bs.modal')
 
     $.support.transition && this.$element.hasClass('fade') ?
       this.$element
@@ -10308,17 +10297,12 @@ if (typeof jQuery === 'undefined') {
       var doAnimate = $.support.transition && animate
 
       this.$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
-          .appendTo(this.$body)
-
-        this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
-            if (this.ignoreBackdropClick) {
-                this.ignoreBackdropClick = false
-                return
-            }
-            if (e.target !== e.currentTarget) return
-            this.options.backdrop == 'static'
-                ? this.$element[0].focus()
-                : this.hide()
+        .prependTo(this.$element)
+        .on('click.dismiss.bs.modal', $.proxy(function (e) {
+          if (e.target !== e.currentTarget) return
+          this.options.backdrop == 'static'
+            ? this.$element[0].focus.call(this.$element[0])
+            : this.hide.call(this)
         }, this))
 
       if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
@@ -10354,7 +10338,14 @@ if (typeof jQuery === 'undefined') {
   // these following methods are used to handle overflowing modals
 
   Modal.prototype.handleUpdate = function () {
+    if (this.options.backdrop) this.adjustBackdrop()
     this.adjustDialog()
+  }
+
+  Modal.prototype.adjustBackdrop = function () {
+    this.$backdrop
+      .css('height', 0)
+      .css('height', this.$element[0].scrollHeight)
   }
 
   Modal.prototype.adjustDialog = function () {
@@ -10374,23 +10365,17 @@ if (typeof jQuery === 'undefined') {
   }
 
   Modal.prototype.checkScrollbar = function () {
-      var fullWindowWidth = window.innerWidth
-      if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
-          var documentElementRect = document.documentElement.getBoundingClientRect()
-          fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
-      }
-      this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
+    this.bodyIsOverflowing = document.body.scrollHeight > document.documentElement.clientHeight
     this.scrollbarWidth = this.measureScrollbar()
   }
 
   Modal.prototype.setScrollbar = function () {
     var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
-      this.originalBodyPad = document.body.style.paddingRight || ''
     if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
   }
 
   Modal.prototype.resetScrollbar = function () {
-      this.$body.css('padding-right', this.originalBodyPad)
+    this.$body.css('padding-right', '')
   }
 
   Modal.prototype.measureScrollbar = function () { // thx walsh
@@ -10456,7 +10441,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: tooltip.js v3.3.4
+ * Bootstrap: tooltip.js v3.3.2
  * http://getbootstrap.com/javascript/#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ========================================================================
@@ -10472,17 +10457,17 @@ if (typeof jQuery === 'undefined') {
   // ===============================
 
   var Tooltip = function (element, options) {
-      this.type = null
-      this.options = null
-      this.enabled = null
-      this.timeout = null
-      this.hoverState = null
+    this.type       =
+    this.options    =
+    this.enabled    =
+    this.timeout    =
+    this.hoverState =
     this.$element   = null
 
     this.init('tooltip', element, options)
   }
 
-    Tooltip.VERSION = '3.3.4'
+  Tooltip.VERSION  = '3.3.2'
 
   Tooltip.TRANSITION_DURATION = 150
 
@@ -10508,10 +10493,6 @@ if (typeof jQuery === 'undefined') {
     this.$element  = $(element)
     this.options   = this.getOptions(options)
     this.$viewport = this.options.viewport && $(this.options.viewport.selector || this.options.viewport)
-
-      if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-          throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
-      }
 
     var triggers = this.options.trigger.split(' ')
 
@@ -10733,10 +10714,10 @@ if (typeof jQuery === 'undefined') {
     this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
   }
 
-    Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
+  Tooltip.prototype.replaceArrow = function (delta, dimension, isHorizontal) {
     this.arrow()
-        .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
-        .css(isVertical ? 'top' : 'left', '')
+      .css(isHorizontal ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
+      .css(isHorizontal ? 'top' : 'left', '')
   }
 
   Tooltip.prototype.setContent = function () {
@@ -10749,7 +10730,7 @@ if (typeof jQuery === 'undefined') {
 
   Tooltip.prototype.hide = function (callback) {
     var that = this
-      var $tip = $(this.$tip)
+    var $tip = this.tip()
     var e    = $.Event('hide.bs.' + this.type)
 
     function complete() {
@@ -10766,7 +10747,7 @@ if (typeof jQuery === 'undefined') {
 
     $tip.removeClass('in')
 
-      $.support.transition && $tip.hasClass('fade') ?
+    $.support.transition && this.$tip.hasClass('fade') ?
       $tip
         .one('bsTransitionEnd', complete)
         .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
@@ -10910,7 +10891,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.tooltip')
       var options = typeof option == 'object' && option
 
-        if (!data && /destroy|hide/.test(option)) return
+      if (!data && option == 'destroy') return
       if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -10933,7 +10914,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: popover.js v3.3.4
+ * Bootstrap: popover.js v3.3.2
  * http://getbootstrap.com/javascript/#popovers
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -10953,7 +10934,7 @@ if (typeof jQuery === 'undefined') {
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
-    Popover.VERSION = '3.3.4'
+  Popover.VERSION  = '3.3.2'
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
@@ -11009,6 +10990,11 @@ if (typeof jQuery === 'undefined') {
     return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
   }
 
+  Popover.prototype.tip = function () {
+    if (!this.$tip) this.$tip = $(this.options.template)
+    return this.$tip
+  }
+
 
   // POPOVER PLUGIN DEFINITION
   // =========================
@@ -11019,7 +11005,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.popover')
       var options = typeof option == 'object' && option
 
-        if (!data && /destroy|hide/.test(option)) return
+      if (!data && option == 'destroy') return
       if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -11042,7 +11028,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: scrollspy.js v3.3.4
+ * Bootstrap: scrollspy.js v3.3.2
  * http://getbootstrap.com/javascript/#scrollspy
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -11057,8 +11043,10 @@ if (typeof jQuery === 'undefined') {
   // ==========================
 
   function ScrollSpy(element, options) {
-      this.$body = $(document.body)
-      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+    var process  = $.proxy(this.process, this)
+
+    this.$body          = $('body')
+    this.$scrollElement = $(element).is('body') ? $(window) : $(element)
     this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
     this.selector       = (this.options.target || '') + ' .nav li > a'
     this.offsets        = []
@@ -11066,12 +11054,12 @@ if (typeof jQuery === 'undefined') {
     this.activeTarget   = null
     this.scrollHeight   = 0
 
-      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+    this.$scrollElement.on('scroll.bs.scrollspy', process)
     this.refresh()
     this.process()
   }
 
-    ScrollSpy.VERSION = '3.3.4'
+  ScrollSpy.VERSION  = '3.3.2'
 
   ScrollSpy.DEFAULTS = {
     offset: 10
@@ -11082,18 +11070,19 @@ if (typeof jQuery === 'undefined') {
   }
 
   ScrollSpy.prototype.refresh = function () {
-      var that = this
-      var offsetMethod = 'offset'
-      var offsetBase = 0
-
-      this.offsets = []
-      this.targets = []
-      this.scrollHeight = this.getScrollHeight()
+    var offsetMethod = 'offset'
+    var offsetBase   = 0
 
     if (!$.isWindow(this.$scrollElement[0])) {
       offsetMethod = 'position'
       offsetBase   = this.$scrollElement.scrollTop()
     }
+
+    this.offsets = []
+    this.targets = []
+    this.scrollHeight = this.getScrollHeight()
+
+    var self     = this
 
     this.$body
       .find(this.selector)
@@ -11109,8 +11098,8 @@ if (typeof jQuery === 'undefined') {
       })
       .sort(function (a, b) { return a[0] - b[0] })
       .each(function () {
-            that.offsets.push(this[0])
-            that.targets.push(this[1])
+        self.offsets.push(this[0])
+        self.targets.push(this[1])
       })
   }
 
@@ -11139,7 +11128,7 @@ if (typeof jQuery === 'undefined') {
     for (i = offsets.length; i--;) {
       activeTarget != targets[i]
         && scrollTop >= offsets[i]
-      && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
+        && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
         && this.activate(targets[i])
     }
   }
@@ -11215,7 +11204,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: tab.js v3.3.4
+ * Bootstrap: tab.js v3.3.2
  * http://getbootstrap.com/javascript/#tabs
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -11233,7 +11222,7 @@ if (typeof jQuery === 'undefined') {
     this.element = $(element)
   }
 
-    Tab.VERSION = '3.3.4'
+  Tab.VERSION = '3.3.2'
 
   Tab.TRANSITION_DURATION = 150
 
@@ -11304,7 +11293,7 @@ if (typeof jQuery === 'undefined') {
         element.removeClass('fade')
       }
 
-        if (element.parent('.dropdown-menu').length) {
+      if (element.parent('.dropdown-menu')) {
         element
           .closest('li.dropdown')
             .addClass('active')
@@ -11369,7 +11358,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: affix.js v3.3.4
+ * Bootstrap: affix.js v3.3.2
  * http://getbootstrap.com/javascript/#affix
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -11391,14 +11380,14 @@ if (typeof jQuery === 'undefined') {
       .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
 
     this.$element     = $(element)
-      this.affixed = null
-      this.unpin = null
+    this.affixed      =
+    this.unpin        =
     this.pinnedOffset = null
 
     this.checkPosition()
   }
 
-    Affix.VERSION = '3.3.4'
+  Affix.VERSION  = '3.3.2'
 
   Affix.RESET    = 'affix affix-top affix-bottom'
 
@@ -11448,7 +11437,7 @@ if (typeof jQuery === 'undefined') {
     var offset       = this.options.offset
     var offsetTop    = offset.top
     var offsetBottom = offset.bottom
-      var scrollHeight = $(document.body).height()
+    var scrollHeight = $('body').height()
 
     if (typeof offset != 'object')         offsetBottom = offsetTop = offset
     if (typeof offsetTop == 'function')    offsetTop    = offset.top(this.$element)
@@ -15705,6 +15694,30 @@ $(document).ready(function() {
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
     });
 
+    /*
+    Special styles for error for sugar  
+     */
+
+     $('.monitoring-widget__sugar .monitoring-widget__save').click(function(event){
+        event.preventDefault();
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special"); 
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
+        $(this).parents('.monitoring-widget__sugar').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
+        $(this).parents('.monitoring-widget__sugar').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
+    });
+
+     /*
+    Special styles for error for cholesterol  
+     */
+
+     $('.monitoring-widget__cholesterol .monitoring-widget__save').click(function(event){
+        event.preventDefault();
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special"); 
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
+    });
+
 });
 
 
@@ -15768,6 +15781,7 @@ $(document).ready(function() {
         });
     }
 });
+
 // TODO Rewrite this and include only is needed
 
 
@@ -16163,49 +16177,46 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         }
       }
     },
-      navigateTo: function (index) {
-          var next, src;
-          if (index < 0 || index > this.gallery_items.length - 1) {
-              return this;
-          }
-          this.showLoading();
-          this.gallery_index = index;
-          this.options.onNavigate.call(this, this.gallery_index);
-          this.$element = $(this.gallery_items.get(this.gallery_index));
-          this.updateTitleAndFooter();
-          src = this.$element.attr('data-remote') || this.$element.attr('href');
-          this.detectRemoteType(src, this.$element.attr('data-type') || false);
-          if (this.gallery_index + 1 < this.gallery_items.length) {
-              next = $(this.gallery_items.get(this.gallery_index + 1), false);
-              src = next.attr('data-remote') || next.attr('href');
-              if (next.attr('data-type') === 'image' || this.isImage(src)) {
-                  return this.preloadImage(src, false);
-              }
-          }
-      },
     navigate_left: function() {
+      var src;
       if (this.gallery_items.length === 1) {
         return;
       }
+      this.showLoading();
       if (this.gallery_index === 0) {
         this.gallery_index = this.gallery_items.length - 1;
       } else {
         this.gallery_index--;
       }
       this.options.onNavigate.call(this, 'left', this.gallery_index);
-        return this.navigateTo(this.gallery_index);
+      this.$element = $(this.gallery_items.get(this.gallery_index));
+      this.updateTitleAndFooter();
+      src = this.$element.attr('data-remote') || this.$element.attr('href');
+      return this.detectRemoteType(src, this.$element.attr('data-type'));
     },
     navigate_right: function() {
+      var next, src;
       if (this.gallery_items.length === 1) {
         return;
       }
+      this.showLoading();
       if (this.gallery_index === this.gallery_items.length - 1) {
         this.gallery_index = 0;
       } else {
         this.gallery_index++;
       }
       this.options.onNavigate.call(this, 'right', this.gallery_index);
-        return this.navigateTo(this.gallery_index);
+      this.$element = $(this.gallery_items.get(this.gallery_index));
+      src = this.$element.attr('data-remote') || this.$element.attr('href');
+      this.updateTitleAndFooter();
+      this.detectRemoteType(src, this.$element.attr('data-type'));
+      if (this.gallery_index + 1 < this.gallery_items.length) {
+        next = $(this.gallery_items.get(this.gallery_index + 1), false);
+        src = next.attr('data-remote') || next.attr('href');
+        if (next.attr('data-type') === 'image' || this.isImage(src)) {
+          return this.preloadImage(src, false);
+        }
+      }
     },
     detectRemoteType: function(src, type) {
       var video_id;
@@ -16294,6 +16305,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       width = this.$element.data('width') || 560;
       this.resize(width);
       disableExternalCheck = this.$element.data('disableExternalCheck') || false;
+      console.log(disableExternalCheck, this.isExternal(url));
       if (!disableExternalCheck && !this.isExternal(url)) {
         this.lightbox_body.load(url, $.proxy(function() {
           return _this.$element.trigger('loaded.bs.modal');
@@ -16352,8 +16364,8 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       var width_total;
       width_total = width + this.border.left + this.padding.left + this.padding.right + this.border.right;
       this.modal_dialog.css('width', 'auto').css('max-width', width_total);
-        this.lightbox_container.find('a').css('line-height', function () {
-            return $(this).parent().height() + 'px';
+      this.lightbox_container.find('a').css('padding-top', function() {
+        return $(this).parent().height() / 2;
       });
       return this;
     },
@@ -16407,6 +16419,303 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
   };
 
 }).call(this);
+
+/* Toggle promo form */
+
+$(document).ready(function() {
+
+    $('.promo-form__submit').click(function(event){
+        event.preventDefault();
+        $('.promo-form.display-none').toggleClass('display-none');
+        $(this).parents('.promo-form').toggleClass('display-none');
+    });
+
+});
+
+/* Animation on scroll */
+
+$(window).on('scroll', function(){
+    if(!$('#js__animate-1').length) {
+        return true;
+    }
+
+    var scrollpos = $(this).scrollTop() + ($(window).height()/2+500);
+
+    if( scrollpos > $('#js__animate-1').offset().top ){
+        $('#js__animate-1').addClass('fdc-section__devices--active');
+    }
+    if( scrollpos > $('#js__animate-2').offset().top ){
+        $('#js__animate-2').addClass('fdc-section__devices--active');
+    }
+    if( scrollpos > $('#js__animate-3').offset().top ){
+        $('#js__animate-3').addClass('fdc-section__devices--active');
+    }
+    if( scrollpos > $('#js__animate-4').offset().top ){
+        $('#js__animate-4').addClass('fdc-section__devices--active');
+    }
+    if( scrollpos > $('#js__animate-5').offset().top ){
+        $('#js__animate-5').addClass('fdc-section__devices--active');
+    }
+    if( scrollpos > $('#js__animate-6').offset().top ){
+        $('#js__animate-6').addClass('fdc-section__devices--active');
+    }
+    if( scrollpos > $('#js__animate-7').offset().top ){
+        $('#js__animate-7').addClass('fdc-section__devices--active');
+    }
+});
+
+if ($(".contact-map").length) {
+
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(59.9401434, 30.2600572),
+            zoom: 15,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: false,
+            panControl: true,
+            streetViewControl: true,
+            draggable: true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        }
+        var mapElement = document.getElementById('ondoc-on-map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+            ['OnDoc', 'undefined', '+7 800 775-73-96', 'undefined', 'https://ondoc.me', 59.9401434, 30.2600572, 'https://mapbuildr.com/assets/img/markers/default.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] == 'undefined') {
+                description = '';
+            } else {
+                description = locations[i][1];
+            }
+            if (locations[i][2] == 'undefined') {
+                telephone = '';
+            } else {
+                telephone = locations[i][2];
+            }
+            if (locations[i][3] == 'undefined') {
+                email = '';
+            } else {
+                email = locations[i][3];
+            }
+            if (locations[i][4] == 'undefined') {
+                web = '';
+            } else {
+                web = locations[i][4];
+            }
+            if (locations[i][7] == 'undefined') {
+                markericon = '';
+            } else {
+                markericon = locations[i][7];
+            }
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+            link = '';
+        }
+
+
+        var contentString = '<div id="ondoc-on-map__content">OnDoc - система персонального здравоохранения, включающая в себя сервисы для надежного хранения персональной медицинской информации, ее комплексного анализа, и выявления лучшего способа укрепить и сохранить здоровье.</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+
+}
+/* Registration, login, password recovery, sms auth PopUps */
+$(document).ready(function () {
+
+    /* Show registration popup */
+    $('.js__find--reg').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--reg-popup').removeClass('display-none');
+    });
+
+    /* Show login popup */
+    $('.js__find--login').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--login-popup').removeClass('display-none');
+    });
+
+    /* Show recovery popup */
+    $('.js__find--recovery').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--recovery-popup').removeClass('display-none');
+    });
+
+    /* Show SMS popup */
+    $('.js__find--sms').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--sms-popup').removeClass('display-none');
+    });
+
+    /* Close popups */
+    $('.popup-login__close').click(function (event) {
+        event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+    });
+
+    /* Toogle heart checkbox */
+    $('.popup-login__check').click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass('popup-login__check--active');
+    });
+
+});
+
+/* Toggle doctor info pop-up */
+$(document).ready(function() {
+
+    $('.drugs__doctor-name').click(function(event){
+        event.preventDefault();
+        $('.medcard-docinfo').toggleClass('display-none');
+    });
+
+    $('.js-doc-find').click(function(event){
+        event.preventDefault();
+        $('.medcard-docinfo').toggleClass('display-none');
+    });
+
+});
+
+/* Toggle reaction popup */
+$(document).ready(function() {
+
+    $('.js-drugs-popup-toogle').mouseover(function(event){
+        event.preventDefault();
+        $('.drugs__drug-reaction-popup').toggleClass('display-none');
+    });
+
+    $('.js-drugs-popup-toogle').click(function(event){
+        event.preventDefault();
+        $('.drugs__drug-reaction-popup').toggleClass('display-none');
+    });
+
+});
+
+/* Toggle dosage types and items popups */
+$(document).ready(function() {
+
+    $('.drugs__link--type').click(function(event){
+        event.preventDefault();
+        $(this).next().toggleClass('display-none');
+    });
+
+    $('.drugs__link--item').click(function(event){
+        event.preventDefault();
+        $(this).next().toggleClass('display-none');
+    });
+
+    $('.js__find-add-drug').click(function(event){
+        event.preventDefault();
+        $('.drugs__modal-wrapper').removeClass('display-none')
+    });
+
+    $('.drugs__modal-close').click(function(event){
+        event.preventDefault();
+        $('.drugs__modal-wrapper').addClass('display-none')
+    });
+
+});
+
+/* Toggle days state */
+$(document).ready(function() {
+
+    $('.js__drug-day').click(function(event){
+        event.preventDefault();
+        $(this).toggleClass('drugs__drug-day--active');
+    });
+});
+
+/* Toggle doc select display */
+$(document).ready(function() {
+
+    $('.js__drugs-doc-select').click(function(event){
+        event.preventDefault();
+        $('.medcard-doctor__wrapper').toggleClass('display-none');
+    });
+});
+
+/* Show/Hide form errors */
+$(document).ready(function () {
+
+    $('.widget-btn--submit-yes').click(function (event) {
+        event.preventDefault();
+        $('.drugs-errors').toggleClass('display-none');
+        $('.drugs__drug-comment').toggleClass('drugs__drug-comment--error');
+        $('.drugs__link').toggleClass('drugs__link--error');
+        $('.drugs__dosage-wrapper').toggleClass('drugs__dosage-wrapper--asterisk');
+        $('.drugs__dosage').toggleClass('drugs__dosage--error');
+        $('.js__drug-day').not('.drugs__drug-day--active').toggleClass('drugs__drug-day--error');
+    });
+});
+/* Show/Hide form errors */
+
+$(document).ready(function () {
+
+    $('.widget-btn--submit-yes').click(function (event) {
+        event.preventDefault();
+        $('.medcard-errors').toggleClass('display-none');
+        $('.js__find--textarea-for-err').toggleClass('widget__textarea--error');
+        $('.widget__textarea-wrapper').toggleClass('widget__textarea-wrapper--asterisk');
+    });
+});
+$(document).ready(function () {
+
+    $('.operator-tasks-filer__value').click(function (event) {
+        event.preventDefault();
+        $(this).children('.operator-tasks-filer__dropdown').toggleClass('display-none')
+    });
+});
+/*  Scripts for Datepicker popup    */
+
+/*  Change date state   */
+$('.datepicker__table-item').click(function (event) {
+    event.preventDefault();
+    $(this).parents('.datepicker').find('.datepicker__table-item').removeClass('datepicker__table-item--active');
+    //$('.datepicker__table-item').removeClass('datepicker__table-item--active');
+    $(this).addClass('datepicker__table-item--active');
+});
+
+$('.datepicker__btn--ok, .datepicker__btn').click(function (event) {
+    event.preventDefault();
+    $(this).parents('.datepicker').addClass('display-none');
+});
 
 /*
  Highcharts JS v4.0.4 (2014-09-02)
@@ -16879,300 +17188,3 @@ this.valueCount.seriesBuilders[d],h.populateColumns(e)&&g.push(h);for(;e.length>
 e.series.length);d--;)i=b.series[d]||{},b.series[d]=g.merge(i,e.series[d]);else delete b.series;b=g.merge(e,b);a.call(f,b,c)}}),b):a.call(f,b,c)});l=function(){this.readers=[];this.pointIsArray=!0};l.prototype.populateColumns=function(a){var b=!0;j(this.readers,function(b){if(b.columnIndex===void 0)b.columnIndex=a.shift()});j(this.readers,function(a){a.columnIndex===void 0&&(b=!1)});return b};l.prototype.read=function(a,b){var c=this.pointIsArray,f=c?[]:{},e;j(this.readers,function(d){var e=a[d.columnIndex][b];
 c?f.push(e):f[d.configName]=e});if(this.name===void 0&&this.readers.length>=2&&(e=this.getReferencedColumnIndexes(),e.length>=2))e.shift(),e.sort(),this.name=a[e.shift()].name;return f};l.prototype.addColumnReader=function(a,b){this.readers.push({columnIndex:a,configName:b});if(!(b==="x"||b==="y"||b===void 0))this.pointIsArray=!1};l.prototype.getReferencedColumnIndexes=function(){var a,b=[],c;for(a=0;a<this.readers.length;a+=1)c=this.readers[a],c.columnIndex!==void 0&&b.push(c.columnIndex);return b};
 l.prototype.hasReader=function(a){var b,c;for(b=0;b<this.readers.length;b+=1)if(c=this.readers[b],c.configName===a)return!0}})(Highcharts);
-
-/* Toggle promo form */
-
-$(document).ready(function() {
-
-    $('.promo-form__submit').click(function(event){
-        event.preventDefault();
-        $('.promo-form.display-none').toggleClass('display-none');
-        $(this).parents('.promo-form').toggleClass('display-none');
-    });
-
-});
-
-/* Animation on scroll */
-
-$(window).on('scroll', function(){
-    if(!$('#js__animate-1').length) {
-        return true;
-    }
-
-    var scrollpos = $(this).scrollTop() + ($(window).height()/2+500);
-
-    if( scrollpos > $('#js__animate-1').offset().top ){
-        $('#js__animate-1').addClass('fdc-section__devices--active');
-    }
-    if( scrollpos > $('#js__animate-2').offset().top ){
-        $('#js__animate-2').addClass('fdc-section__devices--active');
-    }
-    if( scrollpos > $('#js__animate-3').offset().top ){
-        $('#js__animate-3').addClass('fdc-section__devices--active');
-    }
-    if( scrollpos > $('#js__animate-4').offset().top ){
-        $('#js__animate-4').addClass('fdc-section__devices--active');
-    }
-    if( scrollpos > $('#js__animate-5').offset().top ){
-        $('#js__animate-5').addClass('fdc-section__devices--active');
-    }
-    if( scrollpos > $('#js__animate-6').offset().top ){
-        $('#js__animate-6').addClass('fdc-section__devices--active');
-    }
-    if( scrollpos > $('#js__animate-7').offset().top ){
-        $('#js__animate-7').addClass('fdc-section__devices--active');
-    }
-});
-
-if ($(".contact-map").length) {
-
-    google.maps.event.addDomListener(window, 'load', init);
-    var map;
-
-    function init() {
-        var mapOptions = {
-            center: new google.maps.LatLng(59.9401434, 30.2600572),
-            zoom: 15,
-            zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.DEFAULT,
-            },
-            disableDoubleClickZoom: true,
-            mapTypeControl: true,
-            mapTypeControlOptions: {
-                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-            },
-            scaleControl: true,
-            scrollwheel: false,
-            panControl: true,
-            streetViewControl: true,
-            draggable: true,
-            overviewMapControl: true,
-            overviewMapControlOptions: {
-                opened: false,
-            },
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-        }
-        var mapElement = document.getElementById('ondoc-on-map');
-        var map = new google.maps.Map(mapElement, mapOptions);
-        var locations = [
-            ['OnDoc', 'undefined', '+7 800 775-73-96', 'undefined', 'https://ondoc.me', 59.9401434, 30.2600572, 'https://mapbuildr.com/assets/img/markers/default.png']
-        ];
-        for (i = 0; i < locations.length; i++) {
-            if (locations[i][1] == 'undefined') {
-                description = '';
-            } else {
-                description = locations[i][1];
-            }
-            if (locations[i][2] == 'undefined') {
-                telephone = '';
-            } else {
-                telephone = locations[i][2];
-            }
-            if (locations[i][3] == 'undefined') {
-                email = '';
-            } else {
-                email = locations[i][3];
-            }
-            if (locations[i][4] == 'undefined') {
-                web = '';
-            } else {
-                web = locations[i][4];
-            }
-            if (locations[i][7] == 'undefined') {
-                markericon = '';
-            } else {
-                markericon = locations[i][7];
-            }
-            marker = new google.maps.Marker({
-                icon: markericon,
-                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-                map: map,
-                title: locations[i][0],
-                desc: description,
-                tel: telephone,
-                email: email,
-                web: web
-            });
-            link = '';
-        }
-
-
-        var contentString = '<div id="ondoc-on-map__content">OnDoc - система персонального здравоохранения, включающая в себя сервисы для надежного хранения персональной медицинской информации, ее комплексного анализа, и выявления лучшего способа укрепить и сохранить здоровье.</div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-        google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker);
-        });
-    }
-
-}
-/* Registration, login, password recovery, sms auth PopUps */
-$(document).ready(function () {
-
-    /* Show registration popup */
-    $('.js__find--reg').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--reg-popup').removeClass('display-none');
-    });
-
-    /* Show login popup */
-    $('.js__find--login').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--login-popup').removeClass('display-none');
-    });
-
-    /* Show recovery popup */
-    $('.js__find--recovery').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--recovery-popup').removeClass('display-none');
-    });
-
-    /* Show SMS popup */
-    $('.js__find--sms').click(function (event) {
-        event.preventDefault();
-        $('body').addClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-        $('.js__find--sms-popup').removeClass('display-none');
-    });
-
-    /* Close popups */
-    $('.popup-login__close').click(function (event) {
-        event.preventDefault();
-        $('body').removeClass('popup-scrolltop');
-        $(this).parents('.popup-login').addClass('display-none');
-    });
-
-    /* Toogle heart checkbox */
-    $('.popup-login__check').click(function (event) {
-        event.preventDefault();
-        $(this).toggleClass('popup-login__check--active');
-    });
-
-});
-
-/* Toggle doctor info pop-up */
-$(document).ready(function () {
-
-    $('.drugs__doctor-name').click(function (event) {
-        event.preventDefault();
-        $('.medcard-docinfo').toggleClass('display-none');
-    });
-
-    $('.js-doc-find').click(function (event) {
-        event.preventDefault();
-        $('.medcard-docinfo').toggleClass('display-none');
-    });
-
-});
-
-/* Toggle reaction popup */
-$(document).ready(function () {
-
-    $('.js-drugs-popup-toogle').mouseover(function (event) {
-        event.preventDefault();
-        $('.drugs__drug-reaction-popup').toggleClass('display-none');
-    });
-
-    $('.js-drugs-popup-toogle').click(function (event) {
-        event.preventDefault();
-        $('.drugs__drug-reaction-popup').toggleClass('display-none');
-    });
-
-});
-
-/* Toggle dosage types and items popups */
-$(document).ready(function () {
-
-    $('.drugs__link--type').click(function (event) {
-        event.preventDefault();
-        $(this).next().toggleClass('display-none');
-    });
-
-    $('.drugs__link--item').click(function (event) {
-        event.preventDefault();
-        $(this).next().toggleClass('display-none');
-    });
-
-    $('.js__find-add-drug').click(function (event) {
-        event.preventDefault();
-        $('.drugs__modal-wrapper').removeClass('display-none')
-    });
-
-    $('.drugs__modal-close').click(function (event) {
-        event.preventDefault();
-        $('.drugs__modal-wrapper').addClass('display-none')
-    });
-
-});
-
-/* Toggle days state */
-$(document).ready(function () {
-
-    $('.js__drug-day').click(function (event) {
-        event.preventDefault();
-        $(this).toggleClass('drugs__drug-day--active');
-    });
-});
-
-/* Toggle doc select display */
-$(document).ready(function () {
-
-    $('.js__drugs-doc-select').click(function (event) {
-        event.preventDefault();
-        $('.medcard-doctor__wrapper').toggleClass('display-none');
-    });
-});
-
-/* Show/Hide form errors */
-$(document).ready(function () {
-
-    $('.widget-btn--submit-yes').click(function (event) {
-        event.preventDefault();
-        $('.drugs-errors').toggleClass('display-none');
-        $('.drugs__drug-comment').toggleClass('drugs__drug-comment--error');
-        $('.drugs__link').toggleClass('drugs__link--error');
-        $('.drugs__dosage-wrapper').toggleClass('drugs__dosage-wrapper--asterisk');
-        $('.drugs__dosage').toggleClass('drugs__dosage--error');
-        $('.js__drug-day').not('.drugs__drug-day--active').toggleClass('drugs__drug-day--error');
-    });
-});
-/* Show/Hide form errors */
-
-$(document).ready(function () {
-
-    $('.widget-btn--submit-yes').click(function (event) {
-        event.preventDefault();
-        $('.medcard-errors').toggleClass('display-none');
-        $('.js__find--textarea-for-err').toggleClass('widget__textarea--error');
-        $('.widget__textarea-wrapper').toggleClass('widget__textarea-wrapper--asterisk');
-    });
-});
-$(document).ready(function () {
-
-    $('.operator-tasks-filer__value').click(function (event) {
-        event.preventDefault();
-        $(this).children('.operator-tasks-filer__dropdown').toggleClass('display-none')
-    });
-});
-/*  Scripts for Datepicker popup    */
-
-/*  Change date state   */
-$('.datepicker__table-item').click(function (event) {
-    event.preventDefault();
-    $(this).parents('.datepicker').find('.datepicker__table-item').removeClass('datepicker__table-item--active');
-    //$('.datepicker__table-item').removeClass('datepicker__table-item--active');
-    $(this).addClass('datepicker__table-item--active');
-});
-
-$('.datepicker__btn--ok, .datepicker__btn').click(function (event) {
-    event.preventDefault();
-    $(this).parents('.datepicker').addClass('display-none');
-});

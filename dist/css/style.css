@@ -3382,28 +3382,12 @@ th
 {
     content: '\e227';
 }
-
-.glyphicon-btc:before {
-    content: '\e227';
-}
-
-.glyphicon-xbt:before {
-    content: '\e227';
-}
 .glyphicon-yen:before
 {
     content: '\00a5';
 }
-
-.glyphicon-jpy:before {
-    content: '\00a5';
-}
 .glyphicon-ruble:before
 {
-    content: '\20bd';
-}
-
-.glyphicon-rub:before {
     content: '\20bd';
 }
 .glyphicon-scale:before
@@ -3659,10 +3643,6 @@ hr
     width: auto;
     height: auto;
     margin: 0;
-}
-
-[role='button'] {
-    cursor: pointer;
 }
 h1,
 h2,
@@ -7290,12 +7270,10 @@ output
 .form-control[readonly],
 fieldset[disabled] .form-control
 {
+    cursor: not-allowed;
+
     opacity: 1;
     background-color: #eee;
-}
-.form-control[disabled],
-fieldset[disabled] .form-control {
-    cursor: not-allowed;
 }
 textarea.form-control
 {
@@ -7382,8 +7360,6 @@ input[type='search']
 {
     font-weight: normal;
 
-    position: relative;
-
     display: inline-block;
 
     margin-bottom: 0;
@@ -7423,7 +7399,6 @@ fieldset[disabled] .checkbox label
 }
 .form-control-static
 {
-    min-height: 38px;
     margin-bottom: 0;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -7482,7 +7457,6 @@ select[multiple].form-group-sm .form-control
     line-height: 1.5;
 
     height: 33px;
-    min-height: 36px;
     padding: 5px 10px;
 }
 .input-lg
@@ -7533,7 +7507,6 @@ select[multiple].form-group-lg .form-control
     line-height: 1.3333333;
 
     height: 49px;
-    min-height: 42px;
     padding: 10px 16px;
 }
 .has-feedback
@@ -8274,10 +8247,12 @@ input[type='button'].btn-block
 .collapse
 {
     display: none;
+    visibility: hidden;
 }
 .collapse.in
 {
     display: block;
+    visibility: visible;
 }
 tr.collapse.in
 {
@@ -8312,7 +8287,7 @@ tbody.collapse.in
 
     vertical-align: middle;
 
-    border-top: 4px dashed;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
@@ -9150,10 +9125,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .tab-content > .tab-pane
 {
     display: none;
+    visibility: hidden;
 }
 .tab-content > .active
 {
     display: block;
+    visibility: visible;
 }
 .nav-tabs .dropdown-menu
 {
@@ -9213,6 +9190,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     .navbar-collapse.collapse
     {
         display: block !important;
+        visibility: visible !important;
         overflow: visible !important;
 
         height: auto !important;
@@ -10161,8 +10139,7 @@ a.label:focus
     position: relative;
     top: -1px;
 }
-.btn-xs .badge,
-.btn-group-xs > .btn .badge
+.btn-xs .badge
 {
     top: 0;
 
@@ -10438,7 +10415,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -11188,11 +11164,11 @@ a.list-group-item-danger.active:focus
 
     border: 0;
 }
-.embed-responsive-16by9
+.embed-responsive.embed-responsive-16by9
 {
     padding-bottom: 56.25%;
 }
-.embed-responsive-4by3
+.embed-responsive.embed-responsive-4by3
 {
     padding-bottom: 75%;
 }
@@ -11267,7 +11243,7 @@ button.close
 .modal
 {
     position: fixed;
-    z-index: 1050;
+    z-index: 1040;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11320,11 +11296,9 @@ button.close
 }
 .modal-backdrop
 {
-    position: fixed;
-    z-index: 1040;
+    position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
 
     background-color: #000;
@@ -11429,6 +11403,7 @@ button.close
     z-index: 1070;
 
     display: block;
+    visibility: visible;
 
     opacity: 0;
 
@@ -12110,6 +12085,7 @@ button.close
 .hidden
 {
     display: none !important;
+    visibility: hidden !important;
 }
 .affix
 {
@@ -12405,8 +12381,8 @@ html
 
     -webkit-font-smoothing: subpixel-antialiased;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
 }
 .container
 {
@@ -12424,8 +12400,8 @@ html
 
     background: #eef9fb;
 }
-
-.inner-body--operator {
+.inner-body--operator
+{
     background: #fff;
 }
 .bottom-line-light
@@ -12626,7 +12602,8 @@ html
     color: #8d8d8d;
 }
 /* Position relative class */
-.pos-rel {
+.pos-rel
+{
     position: relative !important;
 }
 @font-face
@@ -13328,12 +13305,12 @@ a:focus
 
     color: #dc4531;
 }
-
-.widget__textarea-wrapper--asterisk-drugs {
+.widget__textarea-wrapper--asterisk-drugs
+{
     position: relative;
 }
-
-.widget__textarea-wrapper--asterisk-drugs:after {
+.widget__textarea-wrapper--asterisk-drugs:after
+{
     position: absolute;
     top: 5px;
 
@@ -14801,12 +14778,12 @@ a:focus
 
     color: #dc4531;
 }
-
-.widget-security__textarea-wrapper--asterisk-drugs {
+.widget-security__textarea-wrapper--asterisk-drugs
+{
     position: relative;
 }
-
-.widget-security__textarea-wrapper--asterisk-drugs:after {
+.widget-security__textarea-wrapper--asterisk-drugs:after
+{
     position: absolute;
     top: 5px;
 
@@ -15176,13 +15153,13 @@ External pages buttons
     color: #5db7d8;
     background-color: #fff;
 }
-
-.ext-btn:active {
+.ext-btn:active
+{
     color: #5db7d8;
     background-color: #fff;
 }
-
-.ext-btn:focus {
+.ext-btn:focus
+{
     color: #5db7d8;
     background-color: #fff;
 }
@@ -16017,8 +15994,8 @@ External pages buttons
 
     -ms-overflow-style: none;
 }
-
-.medcard-doctor__body::-webkit-scrollbar {
+.medcard-doctor__body::-webkit-scrollbar
+{
     width: 0;
 }
 .medcard-doctor__doc
@@ -17900,6 +17877,18 @@ Widgets
         margin: 20px 15px 20px 15px;
     }
 }
+.monitoring-widget__values--special
+{
+    margin-top: 30px;
+}
+.monitoring-widget__value-body--special
+{
+    padding: 15px 25px 25px 25px;
+}
+.monitoring-widget__value--error-special
+{
+    margin-top: -20px !important;
+}
 .monitoring-widget__title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -18140,6 +18129,10 @@ Widgets
 .monitoring-widget__value-body
 {
     padding: 45px 25px 25px 25px;
+}
+.monitoring-widget__value-body--special
+{
+    padding: 15px 25px 25px 25px;
 }
 @media (max-width: 1025px)
 {
@@ -19535,12 +19528,12 @@ Widgets
 
     color: #dc4531;
 }
-
-.profile-widget__textarea-wrapper--asterisk-drugs {
+.profile-widget__textarea-wrapper--asterisk-drugs
+{
     position: relative;
 }
-
-.profile-widget__textarea-wrapper--asterisk-drugs:after {
+.profile-widget__textarea-wrapper--asterisk-drugs:after
+{
     position: absolute;
     top: 5px;
 
@@ -22297,12 +22290,12 @@ input:after
 
     color: #dc4531;
 }
-
-.widget-notifications__textarea-wrapper--asterisk-drugs {
+.widget-notifications__textarea-wrapper--asterisk-drugs
+{
     position: relative;
 }
-
-.widget-notifications__textarea-wrapper--asterisk-drugs:after {
+.widget-notifications__textarea-wrapper--asterisk-drugs:after
+{
     position: absolute;
     top: 5px;
 
@@ -25289,8 +25282,8 @@ a
     border-radius: 100%;
     outline: none!important;
 }
-
-.drugs__drug-day--error {
+.drugs__drug-day--error
+{
     border: 1px solid #dc4531;
 }
 .drugs__drug-day--clickable
@@ -25493,8 +25486,8 @@ a
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
-
-.drugs__drug-comment--error {
+.drugs__drug-comment--error
+{
     border: 1px solid #dc4531;
 }
 .drugs__link
@@ -25517,8 +25510,8 @@ a
 {
     position: relative;
 }
-
-.drugs__link--error {
+.drugs__link--error
+{
     color: #dc4531;
 }
 .drugs__dosage
@@ -25606,16 +25599,16 @@ a
 
     color: #000;
 }
-
-.drugs__dosage--error {
+.drugs__dosage--error
+{
     border: 1px solid #dc4531;
 }
-
-.drugs__dosage-wrapper--asterisk {
+.drugs__dosage-wrapper--asterisk
+{
     position: relative;
 }
-
-.drugs__dosage-wrapper--asterisk:after {
+.drugs__dosage-wrapper--asterisk:after
+{
     position: absolute;
     top: 8px;
     right: 25px;
@@ -30846,22 +30839,22 @@ Styles for filter block on consultations, clinics and docs pages
 {
     padding-left: 25px;
 }
-
-.medcard-errors__item {
+.medcard-errors__item
+{
     font-size: 14px;
 
     color: #dc4531;
 }
-
-.drugs-errors__title {
+.drugs-errors__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
     color: #dc4531;
 }
-
-.drugs-errors__list {
+.drugs-errors__list
+{
     padding-left: 25px;
 }
 .drugs-errors__item
@@ -30870,28 +30863,28 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #dc4531;
 }
-
-.operator-header {
+.operator-header
+{
     position: relative;
     z-index: 100;
 
     background-color: #fff;
     box-shadow: 2px 0 2px rgba(0, 0, 0, .3);
 }
-
-.operator-header__logo {
+.operator-header__logo
+{
     line-height: 75px;
 }
-
-.operator-header__avatar {
+.operator-header__avatar
+{
     width: 46px;
     height: 46px;
 
     border: 1px solid #8d8d8d;
     border-radius: 50%;
 }
-
-.operator-header__name {
+.operator-header__name
+{
     font-size: 17px;
     line-height: 75px;
 
@@ -30899,8 +30892,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #000;
 }
-
-.operator-header__logout {
+.operator-header__logout
+{
     position: absolute;
     top: calc(50% - 11px);
 
@@ -30912,36 +30905,36 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/icon-operator-logout.png');
     background-repeat: no-repeat;
 }
-
-.operator-header__logout:hover {
+.operator-header__logout:hover
+{
     opacity: .6;
 }
-
-.operator-tasks-num {
+.operator-tasks-num
+{
     padding: 25px 0;
 
     text-align: center;
 
     background: -webkit-linear-gradient(top, #2cc1c6, #0799d2);
-    background: linear-gradient(to bottom, #2cc1c6, #0799d2);
+    background:         linear-gradient(to bottom, #2cc1c6, #0799d2);
 }
-
-.operator-tasks-num__table {
+.operator-tasks-num__table
+{
     width: 100%;
     height: 100px;
 
     text-align: center;
 }
-
-.operator-tasks-num__number {
+.operator-tasks-num__number
+{
     font-size: 30px;
 
     display: block;
 
     color: #fff;
 }
-
-.operator-tasks-num__status {
+.operator-tasks-num__status
+{
     font-size: 14px;
 
     display: block;
@@ -30949,38 +30942,38 @@ Styles for filter block on consultations, clinics and docs pages
     opacity: .5;
     color: #fff;
 }
-
-.operator-tasks-filer {
+.operator-tasks-filer
+{
     height: 140px;
     padding-top: 35px;
     padding-bottom: 90px;
 }
-
-.operator-tasks-filer__type {
+.operator-tasks-filer__type
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
     margin-right: 20px;
 }
-
-.operator-tasks-filer__value {
+.operator-tasks-filer__value
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
     position: relative;
 }
-
-.operator-tasks-filer__value:hover {
+.operator-tasks-filer__value:hover
+{
     color: #7ec6e0;
 }
-
-.operator-tasks-filer__value--left {
+.operator-tasks-filer__value--left
+{
     margin-right: 100px;
 }
-
-.operator-tasks-filer__dropdown {
+.operator-tasks-filer__dropdown
+{
     line-height: 22px;
 
     position: absolute;
@@ -30998,8 +30991,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
 }
-
-.operator-tasks-filer__dropdown:after {
+.operator-tasks-filer__dropdown:after
+{
     position: absolute;
     top: -26px;
     right: calc(50% - 15px);
@@ -31009,19 +31002,19 @@ Styles for filter block on consultations, clinics and docs pages
     border: 15px solid transparent;
     border-bottom: 12px solid #fff;
 }
-
-.operator-tasks-filer__dropdown--period {
+.operator-tasks-filer__dropdown--period
+{
     left: calc(50% - 50px);
 
     width: 100px;
 }
-
-.operator-tasks-filer__dropdown-list {
+.operator-tasks-filer__dropdown-list
+{
     margin: 0;
     padding: 0;
 }
-
-.operator-tasks-filer__dropdown-item {
+.operator-tasks-filer__dropdown-item
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -31032,18 +31025,18 @@ Styles for filter block on consultations, clinics and docs pages
 
     cursor: pointer;
 }
-
-.operator-tasks-filer__dropdown-item:hover {
+.operator-tasks-filer__dropdown-item:hover
+{
     color: #7ec6e0;
 }
-
-.operator-tasks-table {
+.operator-tasks-table
+{
     width: 100%;
 
     text-align: center;
 }
-
-.operator-tasks-table__title {
+.operator-tasks-table__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -31052,51 +31045,53 @@ Styles for filter block on consultations, clinics and docs pages
 
     border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
 }
-
-.operator-tasks-table__item {
+.operator-tasks-table__item
+{
     height: 50px;
     padding: 14px !important;
 
     border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
 }
-
-.operator-tasks-table__status {
+.operator-tasks-table__status
+{
     background-repeat: no-repeat;
     background-position: 35px 50%;
     background-size: 14px 14px;
 }
-
-@media (max-width: 1199px) {
-    .operator-tasks-table__status {
+@media (max-width: 1199px)
+{
+    .operator-tasks-table__status
+    {
         background-position: 20px 50%;
     }
 }
-
-.operator-tasks-table__status--wait {
+.operator-tasks-table__status--wait
+{
     background-image: url('../img/icon-task-status--wait.png');
 }
-
-.operator-tasks-table__status--progress {
+.operator-tasks-table__status--progress
+{
     background-image: url('../img/icon-task-status--progress.png');
 }
-
-.operator-tasks-table__status--done {
+.operator-tasks-table__status--done
+{
     background-image: url('../img/icon-task-status--done.png');
 }
-
-.operator-tasks-table__status--reject {
+.operator-tasks-table__status--reject
+{
     background-image: url('../img/icon-task-status--reject.png');
 }
-
-.operator-pagination {
+.operator-pagination
+{
     padding: 0;
 }
-
-.operator-pagination--fz {
+.operator-pagination--fz
+{
     font-size: 17px;
 }
 /*  Styles for Datepicker popup */
-.datepicker {
+.datepicker
+{
     position: absolute;
     z-index: 100;
     top: 35px;
@@ -31111,8 +31106,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
 }
-
-.datepicker:after {
+.datepicker:after
+{
     position: absolute;
     top: -26px;
     right: calc(50% - 15px);
@@ -31122,8 +31117,8 @@ Styles for filter block on consultations, clinics and docs pages
     border: 15px solid transparent;
     border-bottom: 12px solid #fff;
 }
-
-.datepicker__input {
+.datepicker__input
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
@@ -31141,33 +31136,33 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 8px;
 }
-
-.datepicker__hr {
+.datepicker__hr
+{
     margin: 17px 0;
 }
-
-.datepicker__hr--last {
+.datepicker__hr--last
+{
     margin-top: 0;
 }
-
-.datepicker__month {
+.datepicker__month
+{
     display: block;
 
     width: 218px;
     margin: 0 auto 12px;
 }
-
-.datepicker__month-item {
+.datepicker__month-item
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
 
     display: inline-block;
 
-    outline: none !important;
+    outline: none!important;
 }
-
-.datepicker__arrow {
+.datepicker__arrow
+{
     display: inline-block;
 
     width: 10px;
@@ -31177,16 +31172,16 @@ Styles for filter block on consultations, clinics and docs pages
     background-repeat: no-repeat;
     background-size: 10px 16px;
 }
-
-.datepicker__arrow:hover {
+.datepicker__arrow:hover
+{
     opacity: .6;
 }
-
-.datepicker__arrow--right {
+.datepicker__arrow--right
+{
     background-image: url('../img/icon-datapicker-forward.png');
 }
-
-.datepicker__arrow--up {
+.datepicker__arrow--up
+{
     position: absolute;
     top: 13px;
     right: calc(50% - 7px);
@@ -31197,8 +31192,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/icon-datapicker-up.png');
     background-size: 14px 8px;
 }
-
-.datepicker__arrow--down {
+.datepicker__arrow--down
+{
     position: absolute;
     right: calc(50% - 7px);
     bottom: 13px;
@@ -31209,43 +31204,43 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/icon-datapicker-down.png');
     background-size: 14px 8px;
 }
-
-.datepicker__table {
+.datepicker__table
+{
     width: 100%;
     margin: 0 auto;
 }
-
-.datepicker__table-head {
+.datepicker__table-head
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
     text-transform: uppercase;
 
-    outline: none !important;
+    outline: none!important;
     background-color: #f7f7f7;
 }
-
-.datepicker__table-item {
+.datepicker__table-item
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
     cursor: pointer;
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
     vertical-align: bottom;
 }
-
-.datepicker__table-item:hover {
+.datepicker__table-item:hover
+{
     opacity: .6;
 }
-
-.datepicker__table-item--current {
+.datepicker__table-item--current
+{
     color: #5db7d8;
 }
-
-.datepicker__table-item--active {
+.datepicker__table-item--active
+{
     display: inline-block;
 
     width: 28px;
@@ -31255,26 +31250,26 @@ Styles for filter block on consultations, clinics and docs pages
     border-radius: 50%;
     background-color: #5db7d8;
 }
-
-.datepicker__table-item--nextmonth {
+.datepicker__table-item--nextmonth
+{
     color: rgba(0, 0, 0, .2);
 }
-
-.datepicker__table-row {
+.datepicker__table-row
+{
     line-height: 33px;
 
     height: 38px;
 
     border-bottom: 1px solid #e5e5e5;
 }
-
-.datepicker__time {
+.datepicker__time
+{
     position: relative;
 
     display: inline-block;
 }
-
-.datepicker__time-input {
+.datepicker__time-input
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
@@ -31291,24 +31286,24 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 8px;
 }
-
-.datepicker__time-char {
+.datepicker__time-char
+{
     font-size: 15px;
 
     margin: 30px 2px;
 
     color: #8d8d8d;
 }
-
-.datepicker__buttons {
+.datepicker__buttons
+{
     font-size: 0;
 
     padding: 0 15px;
 
     text-align: center;
 }
-
-.datepicker__btn {
+.datepicker__btn
+{
     display: inline-block;
 
     width: 40px;
@@ -31318,15 +31313,15 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/exit-okey-sprite.png');
     background-repeat: no-repeat;
 }
-
-.datepicker__btn:hover {
+.datepicker__btn:hover
+{
     opacity: .6;
 }
-
-.datepicker__btn--exit {
+.datepicker__btn--exit
+{
     background-position: 0 0;
 }
-
-.datepicker__btn--ok {
+.datepicker__btn--ok
+{
     background-position: -88px 0;
 }

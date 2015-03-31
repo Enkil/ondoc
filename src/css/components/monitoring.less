@@ -27,6 +27,18 @@
     }
   }
 
+  &__values--special{
+    margin-top: 30px;
+  }
+
+  &__value-body--special {
+      padding: 15px 25px 25px 25px;
+  }
+
+  &__value--error-special {
+    margin-top: -20px !important;
+  } 
+
   // Element -> widget title
   &__title{
     .gotham-m;
@@ -223,6 +235,9 @@
   // Element -> widget add value state body
   &__value-body{
     padding: 45px 25px 25px 25px;
+    &--special {
+      padding: 15px 25px 25px 25px;
+    }
     //    overflow: hidden;
     @media (max-width:1025px) {
       padding: 25px 15px 25px 15px;
