@@ -24266,6 +24266,8 @@ a {
 
 .charity-promo {
     position: relative;
+    width: 100% !important;
+    min-width: 1000px;
     height: 500px;
     margin-top: 76px;
     background-image: url(../img/charity-promo__bg.png);
@@ -24300,6 +24302,8 @@ a {
 }
 
 .charity-lead {
+    width: 100% !important;
+    min-width: 1000px;
     padding: 40px 0
 }
 
@@ -24319,6 +24323,8 @@ a {
 }
 
 .charity-reg {
+    width: 100% !important;
+    min-width: 1000px;
     padding: 50px 0;
     background: -webkit-linear-gradient(top, #b1dde9, #e3f6f7);
     background: linear-gradient(to bottom, #b1dde9, #e3f6f7)
@@ -24534,6 +24540,8 @@ a {
 }
 
 .charity-patient {
+    width: 100% !important;
+    min-width: 1000px;
     margin-top: 60px;
     margin-bottom: 40px
 }
@@ -24601,6 +24609,8 @@ a {
 }
 
 .charity-share {
+    width: 100% !important;
+    min-width: 1000px;
     padding: 60px 0;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -24697,6 +24707,11 @@ a {
 
 .charity-share__share-item--mail {
     background-image: url(../img/charity__share-icon--mail.png)
+}
+
+.charity-about {
+    width: 100% !important;
+    min-width: 1000px
 }
 
 .charity-about__title {

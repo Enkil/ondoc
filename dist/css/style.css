@@ -7293,7 +7293,6 @@ fieldset[disabled] .form-control
     opacity: 1;
     background-color: #eee;
 }
-
 .form-control[disabled],
 fieldset[disabled] .form-control {
     cursor: not-allowed;
@@ -10162,7 +10161,6 @@ a.label:focus
     position: relative;
     top: -1px;
 }
-
 .btn-xs .badge,
 .btn-group-xs > .btn .badge
 {
@@ -11190,12 +11188,10 @@ a.list-group-item-danger.active:focus
 
     border: 0;
 }
-
 .embed-responsive-16by9
 {
     padding-bottom: 56.25%;
 }
-
 .embed-responsive-4by3
 {
     padding-bottom: 75%;
@@ -30260,6 +30256,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: relative;
 
+    width: 100% !important;
+    min-width: 1000px;
     height: 500px;
     margin-top: 76px;
 
@@ -30307,6 +30305,8 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-lead
 {
+    width: 100% !important;
+    min-width: 1000px;
     padding: 40px 0;
 }
 .charity-lead__title
@@ -30333,6 +30333,8 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-reg
 {
+    width: 100% !important;
+    min-width: 1000px;
     padding: 50px 0;
 
     background: -webkit-linear-gradient(top, #b1dde9, #e3f6f7);
@@ -30600,6 +30602,8 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-patient
 {
+    width: 100% !important;
+    min-width: 1000px;
     margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -30687,6 +30691,8 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-share
 {
+    width: 100% !important;
+    min-width: 1000px;
     padding: 60px 0;
 
     text-align: center;
@@ -30801,6 +30807,11 @@ Styles for filter block on consultations, clinics and docs pages
 .charity-share__share-item--mail
 {
     background-image: url('../img/charity__share-icon--mail.png');
+}
+
+.charity-about {
+    width: 100% !important;
+    min-width: 1000px;
 }
 .charity-about__title
 {
