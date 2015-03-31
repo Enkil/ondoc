@@ -1,0 +1,183 @@
+.operator-header {
+  background-color: @white-color;
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 100;
+
+  &__logo {
+    line-height: 75px;
+  }
+
+  &__avatar {
+    width: 46px;
+    height: 46px;
+    border: 1px solid @grey-color;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 17px;
+    line-height: 75px;
+    color: @black-color;
+    margin: 0 10px;
+  }
+
+  &__logout {
+    background-image: url('../img/icon-operator-logout.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 19px;
+    height: 17px;
+    position: absolute;
+    top: calc(~"50% - 11px");
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.operator-tasks-num {
+  background: linear-gradient(to bottom, #2cc1c6, #0799d2);
+  text-align: center;
+  padding: 25px 0;
+
+  &__table {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+  }
+
+  &__number {
+    font-size: 30px;
+    color: @white-color;
+    display: block;
+  }
+
+  &__status {
+    font-size: 14px;
+    color: @white-color;
+    display: block;
+    opacity: .5;
+  }
+}
+
+.operator-tasks-filer {
+  height: 140px;
+  padding-top: 35px;
+  padding-bottom: 90px;
+
+  &__type {
+    .gotham-m;
+    font-size: 17px;
+    margin-right: 20px;
+  }
+
+  &__value {
+    .gotham-m;
+    font-size: 17px;
+    position: relative;
+
+    &:hover {
+      color: lighten(@blue-color, 8);
+    }
+
+    &--left {
+      margin-right: 100px;
+    }
+  }
+
+  &__dropdown {
+    line-height: 22px;
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    left: calc(~"50% - 125px");
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background: @white-color;
+    box-shadow: 0 0 13px 2px @grey-color-2;
+    width: 250px;
+
+    &:after {
+      position: absolute;
+      top: -26px;
+      right: calc(~"50% - 15px");
+      content: '';
+      border: 15px solid transparent;
+      border-bottom: 12px solid @white-color;
+    }
+
+    &--period {
+      width: 100px;
+      left: calc(~"50% - 50px");
+    }
+  }
+
+  &__dropdown-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__dropdown-item {
+    .gotham-m;
+    font-size: 17px;
+    display: block;
+    list-style-type: none;
+    cursor: pointer;
+
+    &:hover {
+      color: lighten(@blue-color, 8);
+    }
+  }
+}
+
+.operator-tasks-table {
+  text-align: center;
+  width: 100%;
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid @grey-color-1 !important;
+  }
+
+  &__item {
+    height: 50px;
+    border-bottom: 1px solid @grey-color-1 !important;
+    padding: 14px !important;
+  }
+
+  &__status {
+    background-position: 35px 50%;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    @media (max-width: 1199px) {
+      background-position: 20px 50%;
+    }
+
+    &--wait {
+      background-image: url('../img/icon-task-status--wait.png');
+    }
+    &--progress {
+      background-image: url('../img/icon-task-status--progress.png');
+    }
+    &--done {
+      background-image: url('../img/icon-task-status--done.png');
+    }
+    &--reject {
+      background-image: url('../img/icon-task-status--reject.png');
+    }
+  }
+}
+
+.operator-pagination {
+  padding: 0;
+
+  &--fz {
+    font-size: 17px;
+  }
+}

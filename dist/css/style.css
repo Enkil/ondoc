@@ -12424,6 +12424,10 @@ html
 
     background: #eef9fb;
 }
+
+.inner-body--operator {
+    background: #fff;
+}
 .bottom-line-light
 {
     border-bottom: 1px solid rgba(255, 255, 255, .2);
@@ -30865,6 +30869,231 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 14px;
 
     color: #dc4531;
+}
+
+.operator-header {
+    position: relative;
+    z-index: 100;
+
+    background-color: #fff;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, .3);
+}
+
+.operator-header__logo {
+    line-height: 75px;
+}
+
+.operator-header__avatar {
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid #8d8d8d;
+    border-radius: 50%;
+}
+
+.operator-header__name {
+    font-size: 17px;
+    line-height: 75px;
+
+    margin: 0 10px;
+
+    color: #000;
+}
+
+.operator-header__logout {
+    position: absolute;
+    top: calc(50% - 11px);
+
+    display: inline-block;
+
+    width: 19px;
+    height: 17px;
+
+    background-image: url('../img/icon-operator-logout.png');
+    background-repeat: no-repeat;
+}
+
+.operator-header__logout:hover {
+    opacity: .6;
+}
+
+.operator-tasks-num {
+    padding: 25px 0;
+
+    text-align: center;
+
+    background: -webkit-linear-gradient(top, #2cc1c6, #0799d2);
+    background: linear-gradient(to bottom, #2cc1c6, #0799d2);
+}
+
+.operator-tasks-num__table {
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+}
+
+.operator-tasks-num__number {
+    font-size: 30px;
+
+    display: block;
+
+    color: #fff;
+}
+
+.operator-tasks-num__status {
+    font-size: 14px;
+
+    display: block;
+
+    opacity: .5;
+    color: #fff;
+}
+
+.operator-tasks-filer {
+    height: 140px;
+    padding-top: 35px;
+    padding-bottom: 90px;
+}
+
+.operator-tasks-filer__type {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    margin-right: 20px;
+}
+
+.operator-tasks-filer__value {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    position: relative;
+}
+
+.operator-tasks-filer__value:hover {
+    color: #7ec6e0;
+}
+
+.operator-tasks-filer__value--left {
+    margin-right: 100px;
+}
+
+.operator-tasks-filer__dropdown {
+    line-height: 22px;
+
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    left: calc(50% - 125px);
+
+    width: 250px;
+    padding: 15px;
+
+    text-align: left;
+
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+}
+
+.operator-tasks-filer__dropdown:after {
+    position: absolute;
+    top: -26px;
+    right: calc(50% - 15px);
+
+    content: '';
+
+    border: 15px solid transparent;
+    border-bottom: 12px solid #fff;
+}
+
+.operator-tasks-filer__dropdown--period {
+    left: calc(50% - 50px);
+
+    width: 100px;
+}
+
+.operator-tasks-filer__dropdown-list {
+    margin: 0;
+    padding: 0;
+}
+
+.operator-tasks-filer__dropdown-item {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    display: block;
+
+    list-style-type: none;
+
+    cursor: pointer;
+}
+
+.operator-tasks-filer__dropdown-item:hover {
+    color: #7ec6e0;
+}
+
+.operator-tasks-table {
+    width: 100%;
+
+    text-align: center;
+}
+
+.operator-tasks-table__title {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
+}
+
+.operator-tasks-table__item {
+    height: 50px;
+    padding: 14px !important;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
+}
+
+.operator-tasks-table__status {
+    background-repeat: no-repeat;
+    background-position: 35px 50%;
+    background-size: 14px 14px;
+}
+
+@media (max-width: 1199px) {
+    .operator-tasks-table__status {
+        background-position: 20px 50%;
+    }
+}
+
+.operator-tasks-table__status--wait {
+    background-image: url('../img/icon-task-status--wait.png');
+}
+
+.operator-tasks-table__status--progress {
+    background-image: url('../img/icon-task-status--progress.png');
+}
+
+.operator-tasks-table__status--done {
+    background-image: url('../img/icon-task-status--done.png');
+}
+
+.operator-tasks-table__status--reject {
+    background-image: url('../img/icon-task-status--reject.png');
+}
+
+.operator-pagination {
+    padding: 0;
+}
+
+.operator-pagination--fz {
+    font-size: 17px;
 }
 /*  Styles for Datepicker popup */
 .datepicker {

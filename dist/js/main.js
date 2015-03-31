@@ -17155,6 +17155,13 @@ $(document).ready(function () {
         $('.widget__textarea-wrapper').toggleClass('widget__textarea-wrapper--asterisk');
     });
 });
+$(document).ready(function () {
+
+    $('.operator-tasks-filer__value').click(function (event) {
+        event.preventDefault();
+        $(this).children('.operator-tasks-filer__dropdown').toggleClass('display-none')
+    });
+});
 /*  Scripts for Datepicker popup    */
 
 /*  Change date state   */
