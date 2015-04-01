@@ -1209,7 +1209,13 @@
 
   &__body{
     height: 470px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   &__item{

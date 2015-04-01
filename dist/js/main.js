@@ -15478,7 +15478,7 @@ $(document).ready(function() {
     // Change state to "Doctor searching" on click to cancel btn
     $('.medcard-doctor__add-btn-no').click(function(event){
         event.preventDefault();
-        $('body').removeClass('popup-scrolltop');
+        //$('body').removeClass('popup-scrolltop');
         $(".medcard-doctor__add-body").addClass('display-none');
         $(".medcard-doctor__head, .medcard-doctor__body").removeClass('display-none')
     })
@@ -15486,10 +15486,7 @@ $(document).ready(function() {
 });
 
 
-/*
-Start lightbox and set some options
- */
-
+/* Start lightbox and set some options */
 $(document).ready(function ($) {
 
     // delegate calls to data-toggle="lightbox"
@@ -15506,10 +15503,7 @@ $(document).ready(function ($) {
     });
 });
 
-/*
-Toogle doctor info pop-up
- */
-
+/* Toogle doctor info pop-up */
 $(document).ready(function() {
 
     $('.widget-doctor__name').click(function(event){
@@ -15525,21 +15519,20 @@ $(document).ready(function() {
 });
 
 
-/*
- Show-hide/Change state Select Clinic Pop-Up
- */
-
+/* Show-hide/Change state Select Clinic Pop-Up */
 $(document).ready(function() {
 
     // Show pop-up
     $('#js-find-clinic').click(function(event){
         event.preventDefault();
+        $('body').addClass('popup-scrolltop');
         $(".medcard-clinic__wrapper").toggleClass('display-none');
     });
 
     // Hide pop-up onclick to close btn (cross icon)
     $('.medcard-clinic__close').click(function(event){
         event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
         $(".medcard-clinic__wrapper").toggleClass('display-none');
     });
 

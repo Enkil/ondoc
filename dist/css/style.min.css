@@ -13999,8 +13999,14 @@ a:active, a:focus {
 }
 
 .medcard-clinic__body {
-    overflow-y: scroll;
-    height: 470px
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    height: 470px;
+    -ms-overflow-style: none
+}
+
+.medcard-clinic__body::-webkit-scrollbar {
+    width: 0
 }
 
 .medcard-clinic__item {

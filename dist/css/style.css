@@ -17167,9 +17167,16 @@ External pages buttons
 }
 .medcard-clinic__body
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     height: 470px;
+
+    -ms-overflow-style: none;
+}
+
+.medcard-clinic__body::-webkit-scrollbar {
+    width: 0;
 }
 .medcard-clinic__item
 {
