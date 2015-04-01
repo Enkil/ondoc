@@ -15082,11 +15082,15 @@ a:focus
 {
     color: #fff;
     outline: none;
+    background: #5db7d8;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 .user-btn__submit:focus
 {
     color: #fff;
+    outline: none;
+    background: #5db7d8;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 /* NEW BUTTONS */
 /* TODO: rework old needed. btns must be more independent*/
@@ -20072,6 +20076,8 @@ Widgets
 
     filter: alpha(opacity=80);
 }
+
+/* modal agreement */
 .agreement-modal__btn
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -20325,6 +20331,8 @@ Widgets
     border: 1px solid #5db7d8;
     background: #fff;
 }
+
+/* feedback modal */
 .feedback-modal
 {
     position: fixed;
