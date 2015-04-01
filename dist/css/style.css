@@ -31125,6 +31125,7 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-pagination
 {
+    margin-bottom: 50px;
     padding: 0;
 }
 .operator-pagination--fz
