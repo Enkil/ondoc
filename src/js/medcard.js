@@ -1,29 +1,27 @@
-/*
-Show-hide specialisations select pop-up
- */
+/* Show-hide specialisations select pop-up */
 $(document).ready(function() {
 
     $('.medcard-filter__link').click(function(event){
         event.preventDefault();
+        $('body').addClass('popup-scrolltop');
         $('.medcard-spec__wrapper').toggleClass('display-none');
     });
 
     $('.medcard-spec__close').click(function(event){
         event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
         $('.medcard-spec__wrapper').addClass('display-none');
     });
 
     $('.medcard-spec__btn').click(function(event){
         event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
         $('.medcard-spec__wrapper').addClass('display-none');
     });
 
 });
 
-/*
-Change status of specialisation items (non-checked/checked)
- */
-
+/* Change status of specialisation items (non-checked/checked) */
 $(document).ready(function() {
 
     $('.medcard-spec__item').click(function(event){
@@ -33,21 +31,20 @@ $(document).ready(function() {
 
 });
 
-/*
-Show-hide/Change state Select Doctor Pop-Up
- */
-
+/* Show-hide/Change state Select Doctor Pop-Up */
 $(document).ready(function() {
 
     // Show pop-up
     $('#js-find-doctor').click(function(event){
         event.preventDefault();
+        $('body').addClass('popup-scrolltop');
         $(".medcard-doctor__wrapper").toggleClass('display-none');
     });
 
     // Hide pop-up onclick to close btn (cross icon)
     $('.medcard-doctor__close').click(function(event){
         event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
         $(".medcard-doctor__wrapper").toggleClass('display-none');
     });
 
@@ -61,6 +58,7 @@ $(document).ready(function() {
     // Change state to "Doctor searching" on click to cancel btn
     $('.medcard-doctor__add-btn-no').click(function(event){
         event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
         $(".medcard-doctor__add-body").addClass('display-none');
         $(".medcard-doctor__head, .medcard-doctor__body").removeClass('display-none')
     })

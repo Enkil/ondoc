@@ -1,7 +1,4 @@
-/*
-Show-hide medcard filter block
- */
-
+/* Show-hide medcard filter block */
 $(document).ready(function() {
 
     $('.content-header__sort-link--filter').click(function(event){
@@ -12,10 +9,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Onclick hide tag in filter block
- */
-
+/* Onclick hide tag in filter block */
 $(document).ready(function() {
 
     $(".medcard-filter__tag-close").click(function () {
@@ -24,9 +18,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Hide all tags onclick to Clear filters
- */
+/* Hide all tags onclick to Clear filters */
 $(document).ready(function() {
 
     $(".medcard-filter__tag--clear").click(function () {

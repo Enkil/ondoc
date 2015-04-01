@@ -20076,7 +20076,6 @@ Widgets
 
     filter: alpha(opacity=80);
 }
-
 /* modal agreement */
 .agreement-modal__btn
 {
@@ -20331,7 +20330,6 @@ Widgets
     border: 1px solid #5db7d8;
     background: #fff;
 }
-
 /* feedback modal */
 .feedback-modal
 {
@@ -30034,6 +30032,8 @@ Styles for filter block on consultations, clinics and docs pages
 .popup-scrolltop
 {
     overflow: hidden;
+
+    height: 100%;
 }
 .popup-login
 {

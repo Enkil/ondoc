@@ -67,6 +67,7 @@ $(document).ready(function() {
 
     $('.js__drugs-doc-select').click(function(event){
         event.preventDefault();
+        $('body').toggleClass('popup-scrolltop');
         $('.medcard-doctor__wrapper').toggleClass('display-none');
     });
 });

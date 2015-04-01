@@ -24076,7 +24076,8 @@ a {
 }
 
 .popup-scrolltop {
-    overflow: hidden
+    overflow: hidden;
+    height: 100%
 }
 
 .popup-login {
