@@ -3382,28 +3382,28 @@ th
 {
     content: '\e227';
 }
-
-.glyphicon-btc:before {
+.glyphicon-btc:before
+{
     content: '\e227';
 }
-
-.glyphicon-xbt:before {
+.glyphicon-xbt:before
+{
     content: '\e227';
 }
 .glyphicon-yen:before
 {
     content: '\00a5';
 }
-
-.glyphicon-jpy:before {
+.glyphicon-jpy:before
+{
     content: '\00a5';
 }
 .glyphicon-ruble:before
 {
     content: '\20bd';
 }
-
-.glyphicon-rub:before {
+.glyphicon-rub:before
+{
     content: '\20bd';
 }
 .glyphicon-scale:before
@@ -3660,8 +3660,8 @@ hr
     height: auto;
     margin: 0;
 }
-
-[role='button'] {
+[role='button']
+{
     cursor: pointer;
 }
 h1,
@@ -7294,7 +7294,8 @@ fieldset[disabled] .form-control
     background-color: #eee;
 }
 .form-control[disabled],
-fieldset[disabled] .form-control {
+fieldset[disabled] .form-control
+{
     cursor: not-allowed;
 }
 textarea.form-control
@@ -10438,7 +10439,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -15200,8 +15200,8 @@ External pages buttons
 }
 .ext-btn--md
 {
-    font-family: 'Gotham-Bold', Arial, sans-serif !important;
-    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 22px;
     line-height: 56px;
 
@@ -17174,8 +17174,8 @@ External pages buttons
 
     -ms-overflow-style: none;
 }
-
-.medcard-clinic__body::-webkit-scrollbar {
+.medcard-clinic__body::-webkit-scrollbar
+{
     width: 0;
 }
 .medcard-clinic__item
@@ -28801,7 +28801,8 @@ a
 /*
 Styles for filter block on consultations, clinics and docs pages
 */
-.filter__check-margin {
+.filter__check-margin
+{
     margin-top: 40px;
 }
 .filter__check-round-wrapper
@@ -30823,8 +30824,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     background-image: url('../img/charity__share-icon--mail.png');
 }
-
-.charity-about {
+.charity-about
+{
     width: 100% !important;
     min-width: 1000px;
 }
