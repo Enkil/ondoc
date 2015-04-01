@@ -10178,7 +10178,7 @@ if (typeof jQuery === 'undefined') {
       this.$dialog.on('mousedown.dismiss.bs.modal', function () {
           that.$element.one('mouseup.dismiss.bs.modal', function (e) {
               if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
-          })
+      })
       })
 
     this.backdrop(function () {
