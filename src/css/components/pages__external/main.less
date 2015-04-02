@@ -1,0 +1,27 @@
+.main-charity {
+  background-image: url('../img/main-charity-bg.png');
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 175px;
+  padding: 15px;
+  position: absolute;
+  z-index: 5;
+  display: block;
+  right: 110px;
+
+  &__text {
+    .gotham-m;
+    font-size: 17px;
+    color: @white-color;
+    text-align: center;
+    text-shadow: 0 -1px 1px @black-color;
+    margin-top: 70px;
+    margin-bottom: 0;
+    line-height: 20px;
+    display: inline-block;
+
+    &:hover {
+      color: @white-color;
+    }
+  }
+}

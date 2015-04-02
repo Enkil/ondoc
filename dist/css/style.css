@@ -23411,6 +23411,8 @@ a
 /* slider */
 .slider-section
 {
+    position: relative;
+
     min-width: 1200px;
     min-height: 600px;
     margin-top: 75px;
@@ -30883,6 +30885,42 @@ Styles for filter block on consultations, clinics and docs pages
 
     margin: 0;
     margin-bottom: 15px;
+}
+
+.main-charity {
+    position: absolute;
+    z-index: 5;
+    right: 110px;
+
+    display: block;
+
+    width: 200px;
+    height: 175px;
+    padding: 15px;
+
+    background-image: url('../img/main-charity-bg.png');
+    background-repeat: no-repeat;
+}
+
+.main-charity__text {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+
+    display: inline-block;
+
+    margin-top: 70px;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    color: #fff;
+    text-shadow: 0 -1px 1px #000;
+}
+
+.main-charity__text:hover {
+    color: #fff;
 }
 .medcard-errors__title
 {
