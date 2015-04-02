@@ -10439,6 +10439,7 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -18087,7 +18088,6 @@ Widgets
 {
     position: absolute;
     z-index: 100;
-    top: 95px;
 
     padding: 15px 15px 20px 15px;
 
@@ -30041,6 +30041,8 @@ Styles for filter block on consultations, clinics and docs pages
 /* Registration, login, password recovery, sms auth PopUps */
 .popup-scrolltop
 {
+    top: 0;
+
     overflow: hidden;
 
     height: 100%;

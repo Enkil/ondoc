@@ -12451,7 +12451,7 @@ a:active, a:focus {
 }
 
 .ext-btn--md {
-    font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 22px;
     line-height: 56px;
     letter-spacing: -.019em;
@@ -14718,7 +14718,6 @@ a:active, a:focus {
 .monitoring-widget__dropdown {
     position: absolute;
     z-index: 100;
-    top: 95px;
     padding: 15px 15px 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -18768,6 +18767,7 @@ a {
 }
 
 .slider-section {
+    position: relative;
     min-width: 1200px;
     min-height: 600px;
     margin-top: 75px
@@ -24082,6 +24082,7 @@ a {
 }
 
 .popup-scrolltop {
+    top: 0;
     overflow: hidden;
     height: 100%
 }
@@ -24759,6 +24760,34 @@ a {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 18px;
     margin: 0 0 15px
+}
+
+.main-charity {
+    position: absolute;
+    z-index: 5;
+    right: 110px;
+    display: block;
+    width: 200px;
+    height: 175px;
+    padding: 15px;
+    background-image: url(../img/main-charity-bg.png);
+    background-repeat: no-repeat
+}
+
+.main-charity__text {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 -1px 1px #000
+}
+
+.main-charity__text:hover {
+    color: #fff
 }
 
 .medcard-errors__title {

@@ -9311,7 +9311,7 @@ if (typeof jQuery === 'undefined') {
     $(el).on('click', dismiss, this.close)
   }
 
-  Alert.VERSION = '3.3.4'
+    Alert.VERSION = '3.3.4'
 
   Alert.TRANSITION_DURATION = 150
 
@@ -9407,7 +9407,7 @@ if (typeof jQuery === 'undefined') {
     this.isLoading = false
   }
 
-  Button.VERSION  = '3.3.4'
+    Button.VERSION = '3.3.4'
 
   Button.DEFAULTS = {
     loadingText: 'loading...'
@@ -9522,10 +9522,10 @@ if (typeof jQuery === 'undefined') {
     this.$element    = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
     this.options     = options
-    this.paused      = null
-    this.sliding     = null
-    this.interval    = null
-    this.$active     = null
+      this.paused = null
+      this.sliding = null
+      this.interval = null
+      this.$active = null
     this.$items      = null
 
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
@@ -9535,7 +9535,7 @@ if (typeof jQuery === 'undefined') {
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
   }
 
-  Carousel.VERSION  = '3.3.4'
+    Carousel.VERSION = '3.3.4'
 
   Carousel.TRANSITION_DURATION = 600
 
@@ -9759,8 +9759,8 @@ if (typeof jQuery === 'undefined') {
   var Collapse = function (element, options) {
     this.$element      = $(element)
     this.options       = $.extend({}, Collapse.DEFAULTS, options)
-    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
-                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
+      this.$trigger = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
+      '[data-toggle="collapse"][data-target="#' + element.id + '"]')
     this.transitioning = null
 
     if (this.options.parent) {
@@ -9772,12 +9772,12 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle()
   }
 
-  Collapse.VERSION  = '3.3.4'
+    Collapse.VERSION = '3.3.4'
 
   Collapse.TRANSITION_DURATION = 350
 
   Collapse.DEFAULTS = {
-    toggle: true
+      toggle: true
   }
 
   Collapse.prototype.dimension = function () {
@@ -9915,7 +9915,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.collapse')
       var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
-      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
+        if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
       if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -9946,7 +9946,7 @@ if (typeof jQuery === 'undefined') {
 
     var $target = getTargetFromTrigger($this)
     var data    = $target.data('bs.collapse')
-    var option  = data ? 'toggle' : $this.data()
+      var option = data ? 'toggle' : $this.data()
 
     Plugin.call($target, option)
   })
@@ -9974,7 +9974,7 @@ if (typeof jQuery === 'undefined') {
     $(element).on('click.bs.dropdown', this.toggle)
   }
 
-  Dropdown.VERSION = '3.3.4'
+    Dropdown.VERSION = '3.3.4'
 
   Dropdown.prototype.toggle = function (e) {
     var $this = $(this)
@@ -10027,7 +10027,7 @@ if (typeof jQuery === 'undefined') {
       return $this.trigger('click')
     }
 
-    var desc = ' li:not(.disabled):visible a'
+      var desc = ' li:not(.disabled):visible a'
     var $items = $parent.find('[role="menu"]' + desc + ', [role="listbox"]' + desc)
 
     if (!$items.length) return
@@ -10131,15 +10131,15 @@ if (typeof jQuery === 'undefined') {
   // ======================
 
   var Modal = function (element, options) {
-    this.options             = options
-    this.$body               = $(document.body)
-    this.$element            = $(element)
-    this.$dialog             = this.$element.find('.modal-dialog')
-    this.$backdrop           = null
-    this.isShown             = null
-    this.originalBodyPad     = null
-    this.scrollbarWidth      = 0
-    this.ignoreBackdropClick = false
+      this.options = options
+      this.$body = $(document.body)
+      this.$element = $(element)
+      this.$dialog = this.$element.find('.modal-dialog')
+      this.$backdrop = null
+      this.isShown = null
+      this.originalBodyPad = null
+      this.scrollbarWidth = 0
+      this.ignoreBackdropClick = false
 
     if (this.options.remote) {
       this.$element
@@ -10150,7 +10150,7 @@ if (typeof jQuery === 'undefined') {
     }
   }
 
-  Modal.VERSION  = '3.3.4'
+    Modal.VERSION = '3.3.4'
 
   Modal.TRANSITION_DURATION = 300
   Modal.BACKDROP_TRANSITION_DURATION = 150
@@ -10184,11 +10184,11 @@ if (typeof jQuery === 'undefined') {
 
     this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
 
-    this.$dialog.on('mousedown.dismiss.bs.modal', function () {
-      that.$element.one('mouseup.dismiss.bs.modal', function (e) {
-        if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
+      this.$dialog.on('mousedown.dismiss.bs.modal', function () {
+          that.$element.one('mouseup.dismiss.bs.modal', function (e) {
+              if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
       })
-    })
+      })
 
     this.backdrop(function () {
       var transition = $.support.transition && that.$element.hasClass('fade')
@@ -10216,7 +10216,7 @@ if (typeof jQuery === 'undefined') {
       var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
 
       transition ?
-        that.$dialog // wait for modal to slide in
+          that.$dialog // wait for modal to slide in
           .one('bsTransitionEnd', function () {
             that.$element.trigger('focus').trigger(e)
           })
@@ -10245,9 +10245,9 @@ if (typeof jQuery === 'undefined') {
       .removeClass('in')
       .attr('aria-hidden', true)
       .off('click.dismiss.bs.modal')
-      .off('mouseup.dismiss.bs.modal')
+        .off('mouseup.dismiss.bs.modal')
 
-    this.$dialog.off('mousedown.dismiss.bs.modal')
+      this.$dialog.off('mousedown.dismiss.bs.modal')
 
     $.support.transition && this.$element.hasClass('fade') ?
       this.$element
@@ -10308,18 +10308,18 @@ if (typeof jQuery === 'undefined') {
       var doAnimate = $.support.transition && animate
 
       this.$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
-        .appendTo(this.$body)
+          .appendTo(this.$body)
 
-      this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
-        if (this.ignoreBackdropClick) {
-          this.ignoreBackdropClick = false
-          return
-        }
-        if (e.target !== e.currentTarget) return
-        this.options.backdrop == 'static'
-          ? this.$element[0].focus()
-          : this.hide()
-      }, this))
+        this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
+            if (this.ignoreBackdropClick) {
+                this.ignoreBackdropClick = false
+                return
+            }
+            if (e.target !== e.currentTarget) return
+            this.options.backdrop == 'static'
+                ? this.$element[0].focus()
+                : this.hide()
+        }, this))
 
       if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
 
@@ -10374,23 +10374,23 @@ if (typeof jQuery === 'undefined') {
   }
 
   Modal.prototype.checkScrollbar = function () {
-    var fullWindowWidth = window.innerWidth
-    if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
-      var documentElementRect = document.documentElement.getBoundingClientRect()
-      fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
-    }
-    this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
+      var fullWindowWidth = window.innerWidth
+      if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
+          var documentElementRect = document.documentElement.getBoundingClientRect()
+          fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
+      }
+      this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
     this.scrollbarWidth = this.measureScrollbar()
   }
 
   Modal.prototype.setScrollbar = function () {
     var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
-    this.originalBodyPad = document.body.style.paddingRight || ''
+      this.originalBodyPad = document.body.style.paddingRight || ''
     if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
   }
 
   Modal.prototype.resetScrollbar = function () {
-    this.$body.css('padding-right', this.originalBodyPad)
+      this.$body.css('padding-right', this.originalBodyPad)
   }
 
   Modal.prototype.measureScrollbar = function () { // thx walsh
@@ -10472,17 +10472,17 @@ if (typeof jQuery === 'undefined') {
   // ===============================
 
   var Tooltip = function (element, options) {
-    this.type       = null
-    this.options    = null
-    this.enabled    = null
-    this.timeout    = null
-    this.hoverState = null
+      this.type = null
+      this.options = null
+      this.enabled = null
+      this.timeout = null
+      this.hoverState = null
     this.$element   = null
 
     this.init('tooltip', element, options)
   }
 
-  Tooltip.VERSION  = '3.3.4'
+    Tooltip.VERSION = '3.3.4'
 
   Tooltip.TRANSITION_DURATION = 150
 
@@ -10509,9 +10509,9 @@ if (typeof jQuery === 'undefined') {
     this.options   = this.getOptions(options)
     this.$viewport = this.options.viewport && $(this.options.viewport.selector || this.options.viewport)
 
-    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
-    }
+      if (this.$element[0] instanceof document.constructor && !this.options.selector) {
+          throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
+      }
 
     var triggers = this.options.trigger.split(' ')
 
@@ -10733,10 +10733,10 @@ if (typeof jQuery === 'undefined') {
     this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
   }
 
-  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
+    Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
     this.arrow()
-      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
-      .css(isVertical ? 'top' : 'left', '')
+        .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
+        .css(isVertical ? 'top' : 'left', '')
   }
 
   Tooltip.prototype.setContent = function () {
@@ -10749,7 +10749,7 @@ if (typeof jQuery === 'undefined') {
 
   Tooltip.prototype.hide = function (callback) {
     var that = this
-    var $tip = $(this.$tip)
+      var $tip = $(this.$tip)
     var e    = $.Event('hide.bs.' + this.type)
 
     function complete() {
@@ -10766,7 +10766,7 @@ if (typeof jQuery === 'undefined') {
 
     $tip.removeClass('in')
 
-    $.support.transition && $tip.hasClass('fade') ?
+      $.support.transition && $tip.hasClass('fade') ?
       $tip
         .one('bsTransitionEnd', complete)
         .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
@@ -10910,7 +10910,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.tooltip')
       var options = typeof option == 'object' && option
 
-      if (!data && /destroy|hide/.test(option)) return
+        if (!data && /destroy|hide/.test(option)) return
       if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -10953,7 +10953,7 @@ if (typeof jQuery === 'undefined') {
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
-  Popover.VERSION  = '3.3.4'
+    Popover.VERSION = '3.3.4'
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
@@ -11019,7 +11019,7 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.popover')
       var options = typeof option == 'object' && option
 
-      if (!data && /destroy|hide/.test(option)) return
+        if (!data && /destroy|hide/.test(option)) return
       if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
       if (typeof option == 'string') data[option]()
     })
@@ -11057,8 +11057,8 @@ if (typeof jQuery === 'undefined') {
   // ==========================
 
   function ScrollSpy(element, options) {
-    this.$body          = $(document.body)
-    this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+      this.$body = $(document.body)
+      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
     this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
     this.selector       = (this.options.target || '') + ' .nav li > a'
     this.offsets        = []
@@ -11066,12 +11066,12 @@ if (typeof jQuery === 'undefined') {
     this.activeTarget   = null
     this.scrollHeight   = 0
 
-    this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
     this.refresh()
     this.process()
   }
 
-  ScrollSpy.VERSION  = '3.3.4'
+    ScrollSpy.VERSION = '3.3.4'
 
   ScrollSpy.DEFAULTS = {
     offset: 10
@@ -11082,13 +11082,13 @@ if (typeof jQuery === 'undefined') {
   }
 
   ScrollSpy.prototype.refresh = function () {
-    var that          = this
-    var offsetMethod  = 'offset'
-    var offsetBase    = 0
+      var that = this
+      var offsetMethod = 'offset'
+      var offsetBase = 0
 
-    this.offsets      = []
-    this.targets      = []
-    this.scrollHeight = this.getScrollHeight()
+      this.offsets = []
+      this.targets = []
+      this.scrollHeight = this.getScrollHeight()
 
     if (!$.isWindow(this.$scrollElement[0])) {
       offsetMethod = 'position'
@@ -11109,8 +11109,8 @@ if (typeof jQuery === 'undefined') {
       })
       .sort(function (a, b) { return a[0] - b[0] })
       .each(function () {
-        that.offsets.push(this[0])
-        that.targets.push(this[1])
+            that.offsets.push(this[0])
+            that.targets.push(this[1])
       })
   }
 
@@ -11139,7 +11139,7 @@ if (typeof jQuery === 'undefined') {
     for (i = offsets.length; i--;) {
       activeTarget != targets[i]
         && scrollTop >= offsets[i]
-        && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
+      && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
         && this.activate(targets[i])
     }
   }
@@ -11150,8 +11150,8 @@ if (typeof jQuery === 'undefined') {
     this.clear()
 
     var selector = this.selector +
-      '[data-target="' + target + '"],' +
-      this.selector + '[href="' + target + '"]'
+        '[data-target="' + target + '"],' +
+        this.selector + '[href="' + target + '"]'
 
     var active = $(selector)
       .parents('li')
@@ -11233,7 +11233,7 @@ if (typeof jQuery === 'undefined') {
     this.element = $(element)
   }
 
-  Tab.VERSION = '3.3.4'
+    Tab.VERSION = '3.3.4'
 
   Tab.TRANSITION_DURATION = 150
 
@@ -11304,7 +11304,7 @@ if (typeof jQuery === 'undefined') {
         element.removeClass('fade')
       }
 
-      if (element.parent('.dropdown-menu').length) {
+        if (element.parent('.dropdown-menu').length) {
         element
           .closest('li.dropdown')
             .addClass('active')
@@ -11391,14 +11391,14 @@ if (typeof jQuery === 'undefined') {
       .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
 
     this.$element     = $(element)
-    this.affixed      = null
-    this.unpin        = null
+      this.affixed = null
+      this.unpin = null
     this.pinnedOffset = null
 
     this.checkPosition()
   }
 
-  Affix.VERSION  = '3.3.4'
+    Affix.VERSION = '3.3.4'
 
   Affix.RESET    = 'affix affix-top affix-bottom'
 
@@ -11448,7 +11448,7 @@ if (typeof jQuery === 'undefined') {
     var offset       = this.options.offset
     var offsetTop    = offset.top
     var offsetBottom = offset.bottom
-    var scrollHeight = $(document.body).height()
+      var scrollHeight = $(document.body).height()
 
     if (typeof offset != 'object')         offsetBottom = offsetTop = offset
     if (typeof offsetTop == 'function')    offsetTop    = offset.top(this.$element)
@@ -16171,26 +16171,26 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         }
       }
     },
-    navigateTo: function(index) {
-      var next, src;
-      if (index < 0 || index > this.gallery_items.length - 1) {
-        return this;
-      }
-      this.showLoading();
-      this.gallery_index = index;
-      this.options.onNavigate.call(this, this.gallery_index);
-      this.$element = $(this.gallery_items.get(this.gallery_index));
-      this.updateTitleAndFooter();
-      src = this.$element.attr('data-remote') || this.$element.attr('href');
-      this.detectRemoteType(src, this.$element.attr('data-type') || false);
-      if (this.gallery_index + 1 < this.gallery_items.length) {
-        next = $(this.gallery_items.get(this.gallery_index + 1), false);
-        src = next.attr('data-remote') || next.attr('href');
-        if (next.attr('data-type') === 'image' || this.isImage(src)) {
-          return this.preloadImage(src, false);
-        }
-      }
-    },
+      navigateTo: function (index) {
+          var next, src;
+          if (index < 0 || index > this.gallery_items.length - 1) {
+              return this;
+          }
+          this.showLoading();
+          this.gallery_index = index;
+          this.options.onNavigate.call(this, this.gallery_index);
+          this.$element = $(this.gallery_items.get(this.gallery_index));
+          this.updateTitleAndFooter();
+          src = this.$element.attr('data-remote') || this.$element.attr('href');
+          this.detectRemoteType(src, this.$element.attr('data-type') || false);
+          if (this.gallery_index + 1 < this.gallery_items.length) {
+              next = $(this.gallery_items.get(this.gallery_index + 1), false);
+              src = next.attr('data-remote') || next.attr('href');
+              if (next.attr('data-type') === 'image' || this.isImage(src)) {
+                  return this.preloadImage(src, false);
+              }
+          }
+      },
     navigate_left: function() {
       if (this.gallery_items.length === 1) {
         return;
@@ -16201,7 +16201,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         this.gallery_index--;
       }
       this.options.onNavigate.call(this, 'left', this.gallery_index);
-      return this.navigateTo(this.gallery_index);
+        return this.navigateTo(this.gallery_index);
     },
     navigate_right: function() {
       if (this.gallery_items.length === 1) {
@@ -16213,7 +16213,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         this.gallery_index++;
       }
       this.options.onNavigate.call(this, 'right', this.gallery_index);
-      return this.navigateTo(this.gallery_index);
+        return this.navigateTo(this.gallery_index);
     },
     detectRemoteType: function(src, type) {
       var video_id;
@@ -16360,8 +16360,8 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       var width_total;
       width_total = width + this.border.left + this.padding.left + this.padding.right + this.border.right;
       this.modal_dialog.css('width', 'auto').css('max-width', width_total);
-      this.lightbox_container.find('a').css('line-height', function() {
-        return $(this).parent().height() + 'px';
+        this.lightbox_container.find('a').css('line-height', function () {
+            return $(this).parent().height() + 'px';
       });
       return this;
     },
@@ -16890,9 +16890,9 @@ l.prototype.hasReader=function(a){var b,c;for(b=0;b<this.readers.length;b+=1)if(
 
 /* Toggle promo form */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.promo-form__submit').click(function(event){
+    $('.promo-form__submit').click(function (event) {
         event.preventDefault();
         $('.promo-form.display-none').toggleClass('display-none');
         $(this).parents('.promo-form').toggleClass('display-none');
@@ -16902,32 +16902,32 @@ $(document).ready(function() {
 
 /* Animation on scroll */
 
-$(window).on('scroll', function(){
-    if(!$('#js__animate-1').length) {
+$(window).on('scroll', function () {
+    if (!$('#js__animate-1').length) {
         return true;
     }
 
-    var scrollpos = $(this).scrollTop() + ($(window).height()/2+500);
+    var scrollpos = $(this).scrollTop() + ($(window).height() / 2 + 500);
 
-    if( scrollpos > $('#js__animate-1').offset().top ){
+    if (scrollpos > $('#js__animate-1').offset().top) {
         $('#js__animate-1').addClass('fdc-section__devices--active');
     }
-    if( scrollpos > $('#js__animate-2').offset().top ){
+    if (scrollpos > $('#js__animate-2').offset().top) {
         $('#js__animate-2').addClass('fdc-section__devices--active');
     }
-    if( scrollpos > $('#js__animate-3').offset().top ){
+    if (scrollpos > $('#js__animate-3').offset().top) {
         $('#js__animate-3').addClass('fdc-section__devices--active');
     }
-    if( scrollpos > $('#js__animate-4').offset().top ){
+    if (scrollpos > $('#js__animate-4').offset().top) {
         $('#js__animate-4').addClass('fdc-section__devices--active');
     }
-    if( scrollpos > $('#js__animate-5').offset().top ){
+    if (scrollpos > $('#js__animate-5').offset().top) {
         $('#js__animate-5').addClass('fdc-section__devices--active');
     }
-    if( scrollpos > $('#js__animate-6').offset().top ){
+    if (scrollpos > $('#js__animate-6').offset().top) {
         $('#js__animate-6').addClass('fdc-section__devices--active');
     }
-    if( scrollpos > $('#js__animate-7').offset().top ){
+    if (scrollpos > $('#js__animate-7').offset().top) {
         $('#js__animate-7').addClass('fdc-section__devices--active');
     }
 });
@@ -17067,14 +17067,14 @@ $(document).ready(function () {
 });
 
 /* Toggle doctor info pop-up */
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.drugs__doctor-name').click(function(event){
+    $('.drugs__doctor-name').click(function (event) {
         event.preventDefault();
         $('.medcard-docinfo').toggleClass('display-none');
     });
 
-    $('.js-doc-find').click(function(event){
+    $('.js-doc-find').click(function (event) {
         event.preventDefault();
         $('.medcard-docinfo').toggleClass('display-none');
     });
@@ -17082,14 +17082,14 @@ $(document).ready(function() {
 });
 
 /* Toggle reaction popup */
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.js-drugs-popup-toogle').mouseover(function(event){
+    $('.js-drugs-popup-toogle').mouseover(function (event) {
         event.preventDefault();
         $('.drugs__drug-reaction-popup').toggleClass('display-none');
     });
 
-    $('.js-drugs-popup-toogle').click(function(event){
+    $('.js-drugs-popup-toogle').click(function (event) {
         event.preventDefault();
         $('.drugs__drug-reaction-popup').toggleClass('display-none');
     });
@@ -17097,24 +17097,24 @@ $(document).ready(function() {
 });
 
 /* Toggle dosage types and items popups */
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.drugs__link--type').click(function(event){
+    $('.drugs__link--type').click(function (event) {
         event.preventDefault();
         $(this).next().toggleClass('display-none');
     });
 
-    $('.drugs__link--item').click(function(event){
+    $('.drugs__link--item').click(function (event) {
         event.preventDefault();
         $(this).next().toggleClass('display-none');
     });
 
-    $('.js__find-add-drug').click(function(event){
+    $('.js__find-add-drug').click(function (event) {
         event.preventDefault();
         $('.drugs__modal-wrapper').removeClass('display-none')
     });
 
-    $('.drugs__modal-close').click(function(event){
+    $('.drugs__modal-close').click(function (event) {
         event.preventDefault();
         $('.drugs__modal-wrapper').addClass('display-none')
     });
@@ -17122,18 +17122,18 @@ $(document).ready(function() {
 });
 
 /* Toggle days state */
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.js__drug-day').click(function(event){
+    $('.js__drug-day').click(function (event) {
         event.preventDefault();
         $(this).toggleClass('drugs__drug-day--active');
     });
 });
 
 /* Toggle doc select display */
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.js__drugs-doc-select').click(function(event){
+    $('.js__drugs-doc-select').click(function (event) {
         event.preventDefault();
         $('body').toggleClass('popup-scrolltop');
         $('.medcard-doctor__wrapper').toggleClass('display-none');
