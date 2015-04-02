@@ -24093,7 +24093,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .95)
+    background: #f3f6f4
 }
 
 .popup-login__body {
@@ -24150,7 +24150,8 @@ a {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 25px;
-    outline: 0 !important
+    outline: 0 !important;
+    background: 0 0
 }
 
 .popup-login__input::-webkit-input-placeholder {
