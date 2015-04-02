@@ -152,26 +152,26 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         }
       }
     },
-      navigateTo: function (index) {
-          var next, src;
-          if (index < 0 || index > this.gallery_items.length - 1) {
-              return this;
-          }
-          this.showLoading();
-          this.gallery_index = index;
-          this.options.onNavigate.call(this, this.gallery_index);
-          this.$element = $(this.gallery_items.get(this.gallery_index));
-          this.updateTitleAndFooter();
-          src = this.$element.attr('data-remote') || this.$element.attr('href');
-          this.detectRemoteType(src, this.$element.attr('data-type') || false);
-          if (this.gallery_index + 1 < this.gallery_items.length) {
-              next = $(this.gallery_items.get(this.gallery_index + 1), false);
-              src = next.attr('data-remote') || next.attr('href');
-              if (next.attr('data-type') === 'image' || this.isImage(src)) {
-                  return this.preloadImage(src, false);
-              }
-          }
-      },
+    navigateTo: function(index) {
+      var next, src;
+      if (index < 0 || index > this.gallery_items.length - 1) {
+        return this;
+      }
+      this.showLoading();
+      this.gallery_index = index;
+      this.options.onNavigate.call(this, this.gallery_index);
+      this.$element = $(this.gallery_items.get(this.gallery_index));
+      this.updateTitleAndFooter();
+      src = this.$element.attr('data-remote') || this.$element.attr('href');
+      this.detectRemoteType(src, this.$element.attr('data-type') || false);
+      if (this.gallery_index + 1 < this.gallery_items.length) {
+        next = $(this.gallery_items.get(this.gallery_index + 1), false);
+        src = next.attr('data-remote') || next.attr('href');
+        if (next.attr('data-type') === 'image' || this.isImage(src)) {
+          return this.preloadImage(src, false);
+        }
+      }
+    },
     navigate_left: function() {
       if (this.gallery_items.length === 1) {
         return;
@@ -182,7 +182,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         this.gallery_index--;
       }
       this.options.onNavigate.call(this, 'left', this.gallery_index);
-        return this.navigateTo(this.gallery_index);
+      return this.navigateTo(this.gallery_index);
     },
     navigate_right: function() {
       if (this.gallery_items.length === 1) {
@@ -194,7 +194,7 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
         this.gallery_index++;
       }
       this.options.onNavigate.call(this, 'right', this.gallery_index);
-        return this.navigateTo(this.gallery_index);
+      return this.navigateTo(this.gallery_index);
     },
     detectRemoteType: function(src, type) {
       var video_id;
@@ -341,8 +341,8 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       var width_total;
       width_total = width + this.border.left + this.padding.left + this.padding.right + this.border.right;
       this.modal_dialog.css('width', 'auto').css('max-width', width_total);
-        this.lightbox_container.find('a').css('line-height', function () {
-            return $(this).parent().height() + 'px';
+      this.lightbox_container.find('a').css('line-height', function() {
+        return $(this).parent().height() + 'px';
       });
       return this;
     },
