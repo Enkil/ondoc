@@ -28573,6 +28573,7 @@ a
 }
 .contact-info
 {
+    width: 100%;
     margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -28795,6 +28796,10 @@ a
     border: 1px solid #5db7d8;
     background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
     background-position: 15% 50%;
+}
+
+.contact-map {
+    width: 100%;
 }
 /*
 Styles for filter block on consultations, clinics and docs pages

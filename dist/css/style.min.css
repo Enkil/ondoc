@@ -22930,6 +22930,7 @@ a {
 }
 
 .contact-info {
+    width: 100%;
     margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -23075,6 +23076,10 @@ a {
     color: #5db7d8;
     border: 1px solid #5db7d8;
     background: url(../img//icon-checkmark-blue.png) 15% 50% no-repeat #fff
+}
+
+.contact-map {
+    width: 100%
 }
 
 .filter__check-margin {
