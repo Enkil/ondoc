@@ -12403,11 +12403,6 @@ html
     position: relative;
 
     min-height: 100%;
-
-    -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
 }
 .container
 {
@@ -16958,8 +16953,9 @@ External pages buttons
     bottom: 0;
     left: 0;
 
+    display: table;
+
     width: 490px;
-    height: 625px;
     margin: auto;
     padding: 20px 0 15px 0;
 
