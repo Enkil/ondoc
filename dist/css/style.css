@@ -31369,6 +31369,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     display: inline-block;
 }
+
+.datepicker__time--left-m {
+    margin-left: 20px;
+}
 .datepicker__time-input
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;

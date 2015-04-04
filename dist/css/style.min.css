@@ -25164,6 +25164,10 @@ a {
     display: inline-block
 }
 
+.datepicker__time--left-m {
+    margin-left: 20px
+}
+
 .datepicker__time-input {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 15px;
