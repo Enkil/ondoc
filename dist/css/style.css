@@ -10439,7 +10439,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -28797,8 +28796,8 @@ a
     background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
     background-position: 15% 50%;
 }
-
-.contact-map {
+.contact-map
+{
     width: 100%;
 }
 /*
@@ -30891,8 +30890,8 @@ Styles for filter block on consultations, clinics and docs pages
     margin: 0;
     margin-bottom: 15px;
 }
-
-.main-charity {
+.main-charity
+{
     position: absolute;
     z-index: 5;
     right: 110px;
@@ -30906,8 +30905,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/main-charity-bg.png');
     background-repeat: no-repeat;
 }
-
-.main-charity__text {
+.main-charity__text
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -30923,8 +30922,8 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     text-shadow: 0 -1px 1px #000;
 }
-
-.main-charity__text:hover {
+.main-charity__text:hover
+{
     color: #fff;
 }
 .medcard-errors__title
@@ -31369,8 +31368,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     display: inline-block;
 }
-
-.datepicker__time--left-m {
+.datepicker__time--left-m
+{
     margin-left: 20px;
 }
 .datepicker__time-input
