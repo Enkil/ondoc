@@ -31601,3 +31601,7 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background: #4cb1ba;
 }
+.possibility-mock-up img
+{
+    width: 100%;
+}
