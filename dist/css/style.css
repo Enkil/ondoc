@@ -1115,16 +1115,16 @@ input[type='button']
 }
 .buttons-block .btn--check
 {
-    color: #2dd25f !important;
-    border-color: #2dd25f !important;
+    color: #4cb1ba !important;
+    border-color: #4cb1ba !important;
 }
 .buttons-block .btn--check:active
 {
-    color: #2dd25f !important;
+    color: #4cb1ba !important;
 }
 .buttons-block .btn--check:focus
 {
-    color: #2dd25f !important;
+    color: #4cb1ba !important;
 }
 .buttons-block .btn--check:before
 {
@@ -1135,7 +1135,7 @@ input[type='button']
 .buttons-block .btn--check:hover
 {
     color: #fff !important;
-    background-color: #2dd25f !important;
+    background-color: #4cb1ba !important;
 }
 .buttons-block .btn--check:hover:before
 {
@@ -31428,4 +31428,176 @@ Styles for filter block on consultations, clinics and docs pages
 .datepicker__btn--ok
 {
     background-position: -88px 0;
+}
+.possibility
+{
+    margin-top: 75px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.possibility-nav__tab
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    -webkit-transition: .4s ease all;
+            transition: .4s ease all;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #5db7d8;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.possibility-nav__tab--active
+{
+    border-color: #5db7d8;
+}
+.possibility-promo
+{
+    padding-bottom: 60px;
+}
+.possibility-promo__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+
+    text-align: center;
+    letter-spacing: -1px;
+}
+.possibility-promo__subtitle
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+.possibility-features__item
+{
+    text-align: center;
+}
+.possibility-features__item img
+{
+    width: 85px;
+    margin-bottom: 15px;
+}
+.possibility-about
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    padding: 55px 0 0 0;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.possibility-about__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+
+    position: relative;
+
+    margin-bottom: 55px;
+
+    text-align: center;
+}
+.possibility-about__subtitle
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 35px;
+
+    letter-spacing: -1px;
+}
+.possibility-about__text p
+{
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -.3px;
+}
+.possibility-about__link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: #5db7d8;
+}
+.possibility-about__link--arrowed
+{
+    position: relative;
+
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.possibility-about__link--arrowed:before
+{
+    position: absolute;
+    left: 0;
+
+    content: '→';
+}
+.possibility-registration
+{
+    padding: 39px 0;
+
+    text-align: center;
+}
+.possibility-registration__link
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    min-width: 300px;
+    padding: 15px 12px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #5db7d8;
+}
+.possibility-registration__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.possibility-registration__link:active
+{
+    color: #fff;
+    background: #4cb1ba;
 }
