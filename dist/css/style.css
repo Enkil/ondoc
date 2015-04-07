@@ -12649,6 +12649,12 @@ html
 
     src: url('fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/GothamPro-Bold.otf') format('opentype'), url('fonts/GothamPro-Bold.woff') format('woff'), url('fonts/GothamPro-Bold.ttf') format('truetype'), url('fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
 }
+@font-face
+{
+    font-family: 'GothamProLight';
+
+    src: url('fonts/GothamProLight/GothamProLight.eot'), url('fonts/GothamProLight/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight/GothamProLight.woff') format('woff');
+}
 .gotham
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -12660,6 +12666,10 @@ html
 .gotham-b
 {
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
+}
+.gotham-l
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
 }
 .link-base
 {
@@ -31604,4 +31614,314 @@ Styles for filter block on consultations, clinics and docs pages
 .possibility-mock-up img
 {
     width: 100%;
+}
+.digitizing-promo
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    min-height: 455px;
+    padding-top: 62px;
+
+    background: url(../img/bg-promo-digitizing.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.digitizing-promo__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+
+    margin-top: 0;
+    margin-bottom: 28px;
+
+    text-align: left;
+    letter-spacing: -1px;
+}
+.digitizing-promo p
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 24px;
+    padding-right: 45px;
+
+    letter-spacing: -.2px;
+}
+.digitizing-promo__mock-up-wrapper
+{
+    position: absolute;
+    z-index: 1;
+
+    width: 490px;
+}
+.digitizing-promo__mock-up
+{
+    position: relative;
+    bottom: -4px;
+
+    width: 288px;
+    height: 550px;
+    margin-left: 73px;
+    padding: 80px 20px 0 20px;
+
+    background: url(../img/iphone-mock-up-3.png) no-repeat;
+}
+.digitizing-promo__mock-up:before
+{
+    position: absolute;
+    z-index: -1;
+    bottom: 159px;
+    left: -66px;
+
+    width: 497px;
+    height: 297px;
+
+    content: '';
+
+    background: url(../img/hands.png) no-repeat;
+}
+.digitizing-promo__mock-up_image
+{
+    position: relative;
+    bottom: -2px;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #000;
+}
+.documents-processing
+{
+    min-width: 1200px;
+    padding: 50px 0 60px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.documents-processing__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 27px;
+
+    text-align: center;
+}
+.documents-processing__text
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 805px;
+    margin: 0 auto 27px;
+
+    text-align: center;
+}
+.documents-processing__subtitle
+{
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 43px;
+
+    text-align: center;
+}
+.documents-processing__price
+{
+    text-align: center;
+}
+.documents-processing__amount
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+.documents-processing__price--blue p
+{
+    color: #5db7d8;
+    border-color: #5db7d8;
+}
+.documents-processing__price--light-green p
+{
+    color: #4cb1ba;
+    border-color: #4cb1ba;
+}
+.documents-processing__price--dark-blue p
+{
+    color: #069;
+    border-color: #069;
+}
+.documents-processing__circle
+{
+    font-size: 34px;
+    line-height: 122px;
+
+    display: inline-block;
+
+    width: 122px;
+    height: 122px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    vertical-align: top;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+}
+.processing-card
+{
+    padding: 63px 0 42px;
+
+    border-bottom: 1px solid #ccc;
+}
+.processing-card__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 33px;
+
+    text-align: center;
+}
+.processing-card__text
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 22px;
+
+    letter-spacing: -.4px;
+}
+.processing-service__price
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 26px;
+    line-height: 19.5px;
+
+    margin-top: 40px;
+    margin-bottom: 8px;
+
+    text-align: center;
+
+    etter-spacing: -.4px;
+}
+.processing-service__text
+{
+    font-size: 18px;
+    line-height: 24px;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    color: #666;
+}
+.processing-service__subtext
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 19.5px;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+    letter-spacing: -.4px;
+}
+.processing-contact
+{
+    min-width: 1200px;
+    padding: 30px 0 35px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url(../img/bg-processing-contact.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.processing-contact__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 15px;
+
+    letter-spacing: normal;
+}
+.processing-contact__number
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 17px;
+
+    text-transform: uppercase;
+}
+.processing-contact__address
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 20px;
+}
+.processing-registration
+{
+    padding: 39px 0;
+
+    text-align: center;
+}
+.processing-registration__link
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    min-width: 300px;
+    padding: 15px 12px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #5db7d8;
+}
+.processing-registration__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.processing-registration__link:active
+{
+    color: #fff;
+    background: #4cb1ba;
 }
