@@ -1115,16 +1115,16 @@ input[type='button']
 }
 .buttons-block .btn--check
 {
-    color: #2dd25f !important;
-    border-color: #2dd25f !important;
+    color: #4cb1ba !important;
+    border-color: #4cb1ba !important;
 }
 .buttons-block .btn--check:active
 {
-    color: #2dd25f !important;
+    color: #4cb1ba !important;
 }
 .buttons-block .btn--check:focus
 {
-    color: #2dd25f !important;
+    color: #4cb1ba !important;
 }
 .buttons-block .btn--check:before
 {
@@ -1135,7 +1135,7 @@ input[type='button']
 .buttons-block .btn--check:hover
 {
     color: #fff !important;
-    background-color: #2dd25f !important;
+    background-color: #4cb1ba !important;
 }
 .buttons-block .btn--check:hover:before
 {
@@ -10439,7 +10439,7 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -o-animation: progress-bar-stripes 2s linear infinite;
+         -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -12650,6 +12650,12 @@ html
 
     src: url('fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/GothamPro-Bold.otf') format('opentype'), url('fonts/GothamPro-Bold.woff') format('woff'), url('fonts/GothamPro-Bold.ttf') format('truetype'), url('fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
 }
+@font-face
+{
+    font-family: 'GothamProLight';
+
+    src: url('fonts/GothamProLight/GothamProLight.eot'), url('fonts/GothamProLight/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight/GothamProLight.woff') format('woff');
+}
 .gotham
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -12661,6 +12667,10 @@ html
 .gotham-b
 {
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
+}
+.gotham-l
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
 }
 .link-base
 {
@@ -28797,8 +28807,8 @@ a
     background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
     background-position: 15% 50%;
 }
-
-.contact-map {
+.contact-map
+{
     width: 100%;
 }
 /*
@@ -30891,8 +30901,8 @@ Styles for filter block on consultations, clinics and docs pages
     margin: 0;
     margin-bottom: 15px;
 }
-
-.main-charity {
+.main-charity
+{
     position: absolute;
     z-index: 5;
     right: 110px;
@@ -30906,8 +30916,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url('../img/main-charity-bg.png');
     background-repeat: no-repeat;
 }
-
-.main-charity__text {
+.main-charity__text
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -30923,8 +30933,8 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     text-shadow: 0 -1px 1px #000;
 }
-
-.main-charity__text:hover {
+.main-charity__text:hover
+{
     color: #fff;
 }
 .medcard-errors__title
@@ -31190,25 +31200,25 @@ Styles for filter block on consultations, clinics and docs pages
 {
     font-size: 17px;
 }
-
-.operator-profile {
+.operator-profile
+{
     margin-top: 50px;
 }
-
-.operator-profile-avatar {
+.operator-profile-avatar
+{
     width: 165px;
     margin-right: 22px;
 }
-
-.operator-profile-avatar__img {
+.operator-profile-avatar__img
+{
     width: 165px;
     height: 165px;
 
     border: 2px solid rgba(0, 0, 0, .2);
     border-radius: 50%;
 }
-
-.operator-profile-avatar__select-img {
+.operator-profile-avatar__select-img
+{
     font-weight: normal;
 
     overflow: hidden;
@@ -31220,36 +31230,36 @@ Styles for filter block on consultations, clinics and docs pages
     text-align: center;
     vertical-align: middle;
 }
-
-.operator-profile-avatar__select-img-input {
+.operator-profile-avatar__select-img-input
+{
     display: none;
 
     opacity: 0;
 }
-
-.operator-profile-avatar__select-img-link {
+.operator-profile-avatar__select-img-link
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 18px;
 
     color: #5db7d8;
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-profile-data {
+.operator-profile-data
+{
     margin-bottom: 20px;
     margin-left: 15px;
 }
-
-.operator-profile-data--passwd {
+.operator-profile-data--passwd
+{
     margin-top: 50px;
 }
-
-.operator-profile-data--phone {
+.operator-profile-data--phone
+{
     margin-top: 70px;
 }
-
-.operator-profile-data__title {
+.operator-profile-data__title
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 16px;
@@ -31263,20 +31273,20 @@ Styles for filter block on consultations, clinics and docs pages
     vertical-align: middle;
 
     color: rgba(0, 0, 0, .2);
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-profile-data__title--forInput {
+.operator-profile-data__title--forInput
+{
     margin-right: 55px;
 }
-
-.operator-profile-data__title--2level {
+.operator-profile-data__title--2level
+{
     font-size: 14px;
 
     width: 100%;
 }
-
-.operator-profile-data__value {
+.operator-profile-data__value
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 20px;
@@ -31284,10 +31294,10 @@ Styles for filter block on consultations, clinics and docs pages
     display: inline-block;
 
     color: #000;
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-profile-data__input {
+.operator-profile-data__input
+{
     display: inline-block;
 
     width: 390px;
@@ -31297,8 +31307,8 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 25px;
 }
-
-.operator-profile-data__check-round {
+.operator-profile-data__check-round
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 18px;
@@ -31308,10 +31318,10 @@ Styles for filter block on consultations, clinics and docs pages
     cursor: pointer;
 
     color: #000;
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-profile-data__check-round-icon {
+.operator-profile-data__check-round-icon
+{
     line-height: 55px;
 
     display: inline-block;
@@ -31326,13 +31336,13 @@ Styles for filter block on consultations, clinics and docs pages
     border: 2px solid rgba(0, 0, 0, .2);
     border-radius: 50%;
 }
-
-.operator-profile-data__check-round--active .operator-profile-data__check-round-icon {
+.operator-profile-data__check-round--active .operator-profile-data__check-round-icon
+{
     background: url('../img/icon_heart.png') 50% 50% no-repeat;
     background-size: 12px 8px;
 }
-
-.operator-profile-data__btn {
+.operator-profile-data__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
@@ -31344,7 +31354,7 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0 15px;
 
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
     text-align: center;
 
     color: #fff;
@@ -31354,15 +31364,15 @@ Styles for filter block on consultations, clinics and docs pages
     background-color: #5db7d8;
 
     -ms-touch-action: manipulation;
-    touch-action: manipulation;
+        touch-action: manipulation;
 }
-
-.operator-profile-data__btn:hover {
+.operator-profile-data__btn:hover
+{
     color: #5db7d8;
     background-color: #fff;
 }
-
-.operator-profile-data__btn:active {
+.operator-profile-data__btn:active
+{
     color: #5db7d8;
     background-color: #fff;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -31546,8 +31556,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     display: inline-block;
 }
-
-.datepicker__time--left-m {
+.datepicker__time--left-m
+{
     margin-left: 20px;
 }
 .datepicker__time-input
@@ -31606,4 +31616,490 @@ Styles for filter block on consultations, clinics and docs pages
 .datepicker__btn--ok
 {
     background-position: -88px 0;
+}
+.possibility
+{
+    margin-top: 75px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.possibility-nav__tab
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    -webkit-transition: .4s ease all;
+            transition: .4s ease all;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #5db7d8;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.possibility-nav__tab--active
+{
+    border-color: #5db7d8;
+}
+.possibility-promo
+{
+    padding-bottom: 60px;
+}
+.possibility-promo__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+
+    text-align: center;
+    letter-spacing: -1px;
+}
+.possibility-promo__subtitle
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+.possibility-features__item
+{
+    text-align: center;
+}
+.possibility-features__item img
+{
+    width: 85px;
+    margin-bottom: 15px;
+}
+.possibility-about
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    padding: 55px 0 0 0;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.possibility-about__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+
+    position: relative;
+
+    margin-bottom: 55px;
+
+    text-align: center;
+}
+.possibility-about__subtitle
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 35px;
+
+    letter-spacing: -1px;
+}
+.possibility-about__text p
+{
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -.3px;
+}
+.possibility-about__link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: #5db7d8;
+}
+.possibility-about__link--arrowed
+{
+    position: relative;
+
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.possibility-about__link--arrowed:before
+{
+    position: absolute;
+    left: 0;
+
+    content: '→';
+}
+.possibility-registration
+{
+    padding: 39px 0;
+
+    text-align: center;
+}
+.possibility-registration__link
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    min-width: 300px;
+    padding: 15px 12px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #5db7d8;
+}
+.possibility-registration__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.possibility-registration__link:active
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.possibility-mock-up img
+{
+    width: 100%;
+}
+.digitizing-promo
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    min-height: 455px;
+    padding-top: 62px;
+
+    background: url(../img/bg-promo-digitizing.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.digitizing-promo__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+
+    margin-top: 0;
+    margin-bottom: 28px;
+
+    text-align: left;
+    letter-spacing: -1px;
+}
+.digitizing-promo p
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 24px;
+    padding-right: 45px;
+
+    letter-spacing: -.2px;
+}
+.digitizing-promo__mock-up-wrapper
+{
+    position: absolute;
+    z-index: 1;
+
+    width: 490px;
+}
+.digitizing-promo__mock-up
+{
+    position: relative;
+    bottom: -4px;
+
+    width: 288px;
+    height: 550px;
+    margin-left: 73px;
+    padding: 80px 20px 0 20px;
+
+    background: url(../img/iphone-mock-up-3.png) no-repeat;
+}
+.digitizing-promo__mock-up:before
+{
+    position: absolute;
+    z-index: -1;
+    bottom: 159px;
+    left: -66px;
+
+    width: 497px;
+    height: 297px;
+
+    content: '';
+
+    background: url(../img/hands.png) no-repeat;
+}
+.digitizing-promo__mock-up_image
+{
+    position: relative;
+    bottom: -2px;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #000;
+}
+.documents-processing
+{
+    min-width: 1200px;
+    padding: 50px 0 60px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.documents-processing__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 27px;
+
+    text-align: center;
+}
+.documents-processing__text
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 805px;
+    margin: 0 auto 27px;
+
+    text-align: center;
+}
+.documents-processing__subtitle
+{
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 43px;
+
+    text-align: center;
+}
+.documents-processing__price
+{
+    text-align: center;
+}
+.documents-processing__amount
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+.documents-processing__price--blue p
+{
+    color: #5db7d8;
+    border-color: #5db7d8;
+}
+.documents-processing__price--light-green p
+{
+    color: #4cb1ba;
+    border-color: #4cb1ba;
+}
+.documents-processing__price--dark-blue p
+{
+    color: #069;
+    border-color: #069;
+}
+.documents-processing__circle
+{
+    font-size: 34px;
+    line-height: 122px;
+
+    display: inline-block;
+
+    width: 122px;
+    height: 122px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    vertical-align: top;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+}
+.processing-card
+{
+    padding: 63px 0 42px;
+
+    border-bottom: 1px solid #ccc;
+}
+.processing-card__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 33px;
+
+    text-align: center;
+}
+.processing-card__text
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 22px;
+
+    letter-spacing: -.4px;
+}
+.processing-service__price
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 26px;
+    line-height: 19.5px;
+
+    margin-top: 40px;
+    margin-bottom: 8px;
+
+    text-align: center;
+
+    etter-spacing: -.4px;
+}
+.processing-service__text
+{
+    font-size: 18px;
+    line-height: 24px;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    color: #666;
+}
+.processing-service__subtext
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 19.5px;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+    letter-spacing: -.4px;
+}
+.processing-contact
+{
+    min-width: 1200px;
+    padding: 30px 0 35px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url(../img/bg-processing-contact.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.processing-contact__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 15px;
+
+    letter-spacing: normal;
+}
+.processing-contact__number
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 17px;
+
+    text-transform: uppercase;
+}
+.processing-contact__address
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 20px;
+}
+.processing-registration
+{
+    padding: 39px 0;
+
+    text-align: center;
+}
+.processing-registration__link
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    min-width: 300px;
+    padding: 15px 12px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #5db7d8;
+}
+.processing-registration__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.processing-registration__link:active
+{
+    color: #fff;
+    background: #4cb1ba;
 }
