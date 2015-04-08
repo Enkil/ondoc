@@ -18,6 +18,7 @@
     "bootstrap": "~3.3.2",
     "highcharts": "~4.0.4",
     "ekko-lightbox": "~3.2.2",
-    "ionrangeslider": "~2.0.6"
+    "ionrangeslider": "~2.0.6",
+    "bx-slider.js": "~4.2.3"
   }
 }
