@@ -321,3 +321,102 @@
     }
   }
 }
+
+.operator-task-head {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+
+  &__back {
+    .gotham-m;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 35px;
+    position: absolute;
+    left: 8px;
+
+    &:before {
+      display: inline-block;
+      width: 10px;
+      height: 17px;
+      margin-right: 6px;
+      margin-bottom: 2px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-back.png) no-repeat;
+    }
+  }
+
+  &__btn {
+    .gotham-m;
+    font-size: 18px;
+    color: @white-color;
+    padding: 0 30px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    margin: 0 7px;
+    line-height: 33px;
+    display: inline-block;
+
+    &:hover {
+      background-color: @white-color;
+    }
+
+    &:active {
+      background-color: @white-color;
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    }
+
+    &--reject {
+      background-color: @red-color;
+      border: 1px solid @red-color;
+
+      &:hover, &:active {
+        color: @red-color;
+      }
+    }
+
+    &--accept {
+      background-color: @green-color-2;
+      border: 1px solid @green-color-2;
+
+      &:hover, &:active {
+        color: @green-color-2;
+      }
+    }
+  }
+}
+
+.operator-scan {
+  width: 530px;
+  display: inline-block;
+
+  &__arrow-prew {
+    cursor: pointer;
+  }
+
+  &__arrow-next {
+    cursor: pointer;
+  }
+
+  &__num {
+    .gotham;
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__doc {
+    .gotham-m;
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__comment {
+    .gotham;
+    font-size: 15px;
+    margin-bottom: 120px;
+    text-align: left;
+  }
+}

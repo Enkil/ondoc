@@ -16,3 +16,13 @@ $(document).ready(function () {
     });
 
 });
+
+/* Call BX-Slider */
+$(document).ready(function () {
+    if ($('.bxslider').length) {
+        $('.bxslider').bxSlider({
+            pager: false,
+            mode: 'fade'
+        });
+    }
+});
