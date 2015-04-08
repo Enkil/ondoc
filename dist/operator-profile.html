@@ -1,10 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<head>
+    <title>LK-main</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9"/>
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image"
+          content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css"/>
+
+    <link rel="icon" type="image/png" href="favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
-<body>
+<body class="inner-body inner-body--operator">
+
+<main>
+    <!-- Not users internal header -->
+    <header class="operator-header container-fluid">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo -->
+                <div class="col-xs-18">
+                    <a class="operator-header__logo" href="operator-main.html"
+                       title="OnDoc - Персональное здравоохранение">
+                        <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                    </a>
+                </div>
+
+                <!-- Profile -->
+                <div class="col-xs-18 text-right">
+                    <img class="operator-header__avatar" src="img/operator-avatar.png"
+                         alt="Оператор OnDoc: Васильева В."
+                         title="Оператор OnDoc: Васильева В."/>
+                    <a class="operator-header__name" href="operator-profile.html">Васильева В.</a>
+                    <a class="operator-header__logout" href="#"></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Operator profile -->
+        <div class="row operator-profile">
+
+            <!-- Operator Avatar -->
+            <div class="col-xs-14">
+
+                <div class="operator-profile-avatar pull-right">
+                    <img class="operator-profile-avatar__img" src="img/operator-avagar-cap.png" alt=""/>
+                    <label class="operator-profile-avatar__select-img">
+                        <span class="operator-profile-avatar__select-img-link">Выбрать</span>
+                        <input type="file"
+                               onchange="this.previousSibling.previousSibling.innerHTML = this.value; this.val().replace(/^.*\\/, "
+                               class="operator-profile-avatar__select-img-input"/>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Operator individual data -->
+            <div class="col-xs-18">
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title">Фамилия</span>
+                    <span class="operator-profile-data__value">Васильева</span>
+                </div>
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title">Имя</span>
+                    <span class="operator-profile-data__value">Валентина</span>
+                </div>
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title">Отчество</span>
+                    <span class="operator-profile-data__value">Олеговна</span>
+                </div>
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title">Email</span>
+                    <span class="operator-profile-data__value">vasilevavo@mail.ru</span>
+                </div>
+
+                <div class="operator-profile-data operator-profile-data--phone">
+                    <span class="operator-profile-data__title">Телефон</span>
+                    <span class="operator-profile-data__value">+7 (920) 487-78-46</span>
+                </div>
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title operator-profile-data__title--forInput">Новый <br/> Телефон</span>
+                    <input class="operator-profile-data__input" type="text"/>
+                </div>
+
+                <div class="operator-profile-data">
+            <span class="operator-profile-data__check-round operator-profile-data__check-round--active">
+                <i class="operator-profile-data__check-round-icon"> </i>
+                Использовать двухэтапную авторизацию
+            </span>
+                    <span class="operator-profile-data__title operator-profile-data__title--2level">При входе у вас будет запрашиваться одноразовый смс-пароль</span>
+                </div>
+
+                <div class="operator-profile-data text-right">
+                    <button class="operator-profile-data__btn" type="submit">Сохранить</button>
+                </div>
+
+                <div class="operator-profile-data operator-profile-data--passwd">
+                    <span class="operator-profile-data__title operator-profile-data__title--forInput">Пароль</span>
+                    <input class="operator-profile-data__input" type="password"/>
+                </div>
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title operator-profile-data__title--forInput">Новый <br/>Пароль</span>
+                    <input class="operator-profile-data__input" type="password"/>
+                </div>
+
+                <div class="operator-profile-data">
+                    <span class="operator-profile-data__title operator-profile-data__title--forInput">Повторите <br/>Пароль</span>
+                    <input class="operator-profile-data__input" type="password"/>
+                </div>
+
+                <div class="operator-profile-data text-right">
+                    <button class="operator-profile-data__btn" type="submit">Сохранить</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального
+                    здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+</main>
 
 </body>
 </html>

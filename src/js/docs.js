@@ -1,7 +1,4 @@
-/*
- Toggle search input display none
- */
-
+/*  Toggle search input display none    */
 $(document).ready(function() {
 
     $('.docs__search').click(function(event){
@@ -17,23 +14,20 @@ $(document).ready(function() {
     });
 
     // lets open modal
-	
 	$(".docs__enroll-link").click(function(event){
 		event.preventDefault();
     	$(this).parent()
     	.find(".docs-modal").removeClass("display-none");
     });
 
-
     // lets close modal
-	
 	$(".docs-modal__close").click(function(event){
 		event.preventDefault();
     	$(this).parent().parent().parent().parent().parent().parent()
     	.find(".docs-modal").addClass("display-none");
     });
 
-    //// show-hide locations
+    // show-hide locations
     $('.docs__show-all').click(function(event){
         if($(this).hasClass("js__show-all--closed")){
             event.preventDefault();
@@ -59,9 +53,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Range slider
- */
+/*  Range slider    */
 
 $(document).ready(function() {
 

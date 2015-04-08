@@ -1,6 +1,4 @@
-/*
-Show-hide clinics branch offices
- */
+/*  Show-hide clinics branch offices    */
 $(document).ready(function() {
 
     $('.clinic-docs__link--addr').click(function(event){

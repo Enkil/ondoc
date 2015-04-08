@@ -12,9 +12,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Toogle heart checkbox
-*/
+/*  Toogle heart checkbox   */
 $(document).ready(function() {
 
     $('.filter__check-round').click(function(event){
@@ -24,9 +22,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Toogle filter
- */
+/*  Toogle filter   */
 $(document).ready(function() {
 
     $('.clinics__head-link--filter').click(function(event){
@@ -36,7 +32,6 @@ $(document).ready(function() {
     });
 
     // lets open modal
-
     $(".clinics__enroll-link").click(function(event){
         event.preventDefault();
         $(this).parent()
@@ -45,7 +40,6 @@ $(document).ready(function() {
 
 
     // lets close modal
-
     $(".clinics-modal__close").click(function(event){
         event.preventDefault();
         $(this).parent().parent().parent().parent().parent().parent()

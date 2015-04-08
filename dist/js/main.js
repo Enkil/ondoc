@@ -13453,9 +13453,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Show-hide clinics branch offices
- */
+/*  Show-hide clinics branch offices    */
 $(document).ready(function() {
 
     $('.clinic-docs__link--addr').click(function(event){
@@ -13479,9 +13477,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Toogle heart checkbox
-*/
+/*  Toogle heart checkbox   */
 $(document).ready(function() {
 
     $('.filter__check-round').click(function(event){
@@ -13491,9 +13487,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Toogle filter
- */
+/*  Toogle filter   */
 $(document).ready(function() {
 
     $('.clinics__head-link--filter').click(function(event){
@@ -13503,7 +13497,6 @@ $(document).ready(function() {
     });
 
     // lets open modal
-
     $(".clinics__enroll-link").click(function(event){
         event.preventDefault();
         $(this).parent()
@@ -13512,7 +13505,6 @@ $(document).ready(function() {
 
 
     // lets close modal
-
     $(".clinics-modal__close").click(function(event){
         event.preventDefault();
         $(this).parent().parent().parent().parent().parent().parent()
@@ -13548,10 +13540,7 @@ $(document).ready(function(){
 
 });
 
-/*
- Toggle search input display none
- */
-
+/*  Toggle search input display none    */
 $(document).ready(function() {
 
     $('.docs__search').click(function(event){
@@ -13567,23 +13556,20 @@ $(document).ready(function() {
     });
 
     // lets open modal
-	
 	$(".docs__enroll-link").click(function(event){
 		event.preventDefault();
     	$(this).parent()
     	.find(".docs-modal").removeClass("display-none");
     });
 
-
     // lets close modal
-	
 	$(".docs-modal__close").click(function(event){
 		event.preventDefault();
     	$(this).parent().parent().parent().parent().parent().parent()
     	.find(".docs-modal").addClass("display-none");
     });
 
-    //// show-hide locations
+    // show-hide locations
     $('.docs__show-all').click(function(event){
         if($(this).hasClass("js__show-all--closed")){
             event.preventDefault();
@@ -13609,9 +13595,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Range slider
- */
+/*  Range slider    */
 
 $(document).ready(function() {
 
@@ -17164,12 +17148,23 @@ $(document).ready(function () {
         $('.widget__textarea-wrapper').toggleClass('widget__textarea-wrapper--asterisk');
     });
 });
+/*  Show/hide tasks filter om main operator page*/
 $(document).ready(function () {
 
     $('.operator-tasks-filer__value').click(function (event) {
         event.preventDefault();
         $(this).children('.operator-tasks-filer__dropdown').toggleClass('display-none')
     });
+});
+
+/*  Toogle heart checkbox on operator profile page */
+$(document).ready(function () {
+
+    $('.operator-profile-data__check-round').click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass('operator-profile-data__check-round--active');
+    });
+
 });
 /*  Scripts for Datepicker popup    */
 
