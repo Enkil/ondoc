@@ -12654,7 +12654,7 @@ html
 {
     font-family: 'GothamProLight';
 
-    src: url('fonts/GothamProLight/GothamProLight.eot'), url('fonts/GothamProLight/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight/GothamProLight.woff') format('woff');
+    src: url('fonts/GothamProLight.eot'), url('fonts/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight.woff') format('woff');
 }
 .gotham
 {
@@ -30936,14 +30936,14 @@ Styles for filter block on consultations, clinics and docs pages
 {
     color: #fff;
 }
-
-.possibility {
+.possibility
+{
     margin-top: 75px;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
-
-.possibility-nav__tab {
+.possibility-nav__tab
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
@@ -30954,7 +30954,7 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 7px 12px;
 
     -webkit-transition: .4s ease all;
-    transition: .4s ease all;
+            transition: .4s ease all;
     text-align: center;
     white-space: nowrap;
 
@@ -30962,16 +30962,16 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid transparent;
     border-radius: 30px;
 }
-
-.possibility-nav__tab--active {
+.possibility-nav__tab--active
+{
     border-color: #5db7d8;
 }
-
-.possibility-promo {
+.possibility-promo
+{
     padding-bottom: 60px;
 }
-
-.possibility-promo__title {
+.possibility-promo__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 40px;
@@ -30980,8 +30980,8 @@ Styles for filter block on consultations, clinics and docs pages
     text-align: center;
     letter-spacing: -1px;
 }
-
-.possibility-promo__subtitle {
+.possibility-promo__subtitle
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
@@ -30991,17 +30991,17 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.possibility-features__item {
+.possibility-features__item
+{
     text-align: center;
 }
-
-.possibility-features__item img {
+.possibility-features__item img
+{
     width: 85px;
     margin-bottom: 15px;
 }
-
-.possibility-about {
+.possibility-about
+{
     position: relative;
 
     overflow: hidden;
@@ -31012,8 +31012,8 @@ Styles for filter block on consultations, clinics and docs pages
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
 }
-
-.possibility-about__title {
+.possibility-about__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 40px;
@@ -31025,8 +31025,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.possibility-about__subtitle {
+.possibility-about__subtitle
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 30px;
@@ -31036,8 +31036,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     letter-spacing: -1px;
 }
-
-.possibility-about__text p {
+.possibility-about__text p
+{
     font-size: 16px;
     line-height: 19.5px;
 
@@ -31045,8 +31045,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     letter-spacing: -.3px;
 }
-
-.possibility-about__link {
+.possibility-about__link
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
@@ -31058,28 +31058,28 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
 }
-
-.possibility-about__link--arrowed {
+.possibility-about__link--arrowed
+{
     position: relative;
 
     margin-bottom: 20px;
     padding-left: 20px;
 }
-
-.possibility-about__link--arrowed:before {
+.possibility-about__link--arrowed:before
+{
     position: absolute;
     left: 0;
 
     content: '→';
 }
-
-.possibility-registration {
+.possibility-registration
+{
     padding: 39px 0;
 
     text-align: center;
 }
-
-.possibility-registration__link {
+.possibility-registration__link
+{
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 22px;
@@ -31091,29 +31091,29 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 15px 12px;
 
     -webkit-transition: .5s ease background;
-    transition: .5s ease background;
+            transition: .5s ease background;
     text-align: center;
 
     color: #fff;
     border-radius: 30px;
     background: #5db7d8;
 }
-
-.possibility-registration__link:hover {
+.possibility-registration__link:hover
+{
     color: #fff;
     background: #4cb1ba;
 }
-
-.possibility-registration__link:active {
+.possibility-registration__link:active
+{
     color: #fff;
     background: #4cb1ba;
 }
-
-.possibility-mock-up img {
+.possibility-mock-up img
+{
     width: 100%;
 }
-
-.digitizing-promo {
+.digitizing-promo
+{
     position: relative;
 
     overflow: hidden;
@@ -31126,8 +31126,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-position: top center;
     background-size: cover;
 }
-
-.digitizing-promo__title {
+.digitizing-promo__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 40px;
@@ -31139,8 +31139,8 @@ Styles for filter block on consultations, clinics and docs pages
     text-align: left;
     letter-spacing: -1px;
 }
-
-.digitizing-promo p {
+.digitizing-promo p
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
@@ -31151,15 +31151,15 @@ Styles for filter block on consultations, clinics and docs pages
 
     letter-spacing: -.2px;
 }
-
-.digitizing-promo__mock-up-wrapper {
+.digitizing-promo__mock-up-wrapper
+{
     position: absolute;
     z-index: 1;
 
     width: 490px;
 }
-
-.digitizing-promo__mock-up {
+.digitizing-promo__mock-up
+{
     position: relative;
     bottom: -4px;
 
@@ -31170,8 +31170,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/iphone-mock-up-3.png) no-repeat;
 }
-
-.digitizing-promo__mock-up:before {
+.digitizing-promo__mock-up:before
+{
     position: absolute;
     z-index: -1;
     bottom: 159px;
@@ -31184,8 +31184,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/hands.png) no-repeat;
 }
-
-.digitizing-promo__mock-up_image {
+.digitizing-promo__mock-up_image
+{
     position: relative;
     bottom: -2px;
 
@@ -31196,8 +31196,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     border: 2px solid #000;
 }
-
-.documents-processing {
+.documents-processing
+{
     min-width: 1200px;
     padding: 50px 0 60px;
 
@@ -31206,8 +31206,8 @@ Styles for filter block on consultations, clinics and docs pages
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
 }
-
-.documents-processing__title {
+.documents-processing__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 30px;
@@ -31217,8 +31217,9 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.documents-processing__text {
+.documents-processing__text
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
     font-size: 16px;
     line-height: 20px;
 
@@ -31227,8 +31228,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.documents-processing__subtitle {
+.documents-processing__subtitle
+{
     font-size: 20px;
     line-height: 24px;
 
@@ -31236,34 +31237,36 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.documents-processing__price {
+.documents-processing__price
+{
     text-align: center;
 }
-
-.documents-processing__amount {
+.documents-processing__amount
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 }
-
-.documents-processing__price--blue p {
+.documents-processing__price--blue p
+{
     color: #5db7d8;
     border-color: #5db7d8;
 }
-
-.documents-processing__price--light-green p {
+.documents-processing__price--light-green p
+{
     color: #4cb1ba;
     border-color: #4cb1ba;
 }
-
-.documents-processing__price--dark-blue p {
+.documents-processing__price--dark-blue p
+{
     color: #069;
     border-color: #069;
 }
-
-.documents-processing__circle {
+.documents-processing__circle
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 34px;
     line-height: 122px;
 
@@ -31280,14 +31283,23 @@ Styles for filter block on consultations, clinics and docs pages
     border-style: solid;
     border-radius: 100%;
 }
-
-.processing-card {
+.documents-processing__circle .icon-ruble
+{
+    font-size: 29px;
+}
+.processing-service__price .icon-ruble
+{
+    position: relative;
+    top: -3px;
+}
+.processing-card
+{
     padding: 63px 0 42px;
 
     border-bottom: 1px solid #ccc;
 }
-
-.processing-card__title {
+.processing-card__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 30px;
@@ -31297,8 +31309,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.processing-card__text {
+.processing-card__text
+{
     font-family: 'GothamProLight', Arial, sans-serif !important;
     font-size: 16px;
     line-height: 19.5px;
@@ -31307,8 +31319,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     letter-spacing: -.4px;
 }
-
-.processing-service__price {
+.processing-service__price
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 26px;
@@ -31321,8 +31333,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     etter-spacing: -.4px;
 }
-
-.processing-service__text {
+.processing-service__text
+{
     font-size: 18px;
     line-height: 24px;
 
@@ -31334,8 +31346,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #666;
 }
-
-.processing-service__subtext {
+.processing-service__subtext
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
@@ -31346,8 +31358,8 @@ Styles for filter block on consultations, clinics and docs pages
     text-align: center;
     letter-spacing: -.4px;
 }
-
-.processing-contact {
+.processing-contact
+{
     min-width: 1200px;
     padding: 30px 0 35px;
 
@@ -31358,8 +31370,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-position: top center;
     background-size: cover;
 }
-
-.processing-contact__title {
+.processing-contact__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
@@ -31369,8 +31381,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     letter-spacing: normal;
 }
-
-.processing-contact__number {
+.processing-contact__number
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 30px;
@@ -31380,20 +31392,20 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-transform: uppercase;
 }
-
-.processing-contact__address {
+.processing-contact__address
+{
     font-family: 'GothamProLight', Arial, sans-serif !important;
     font-size: 16px;
     line-height: 20px;
 }
-
-.processing-registration {
+.processing-registration
+{
     padding: 39px 0;
 
     text-align: center;
 }
-
-.processing-registration__link {
+.processing-registration__link
+{
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 22px;
@@ -31405,20 +31417,20 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 15px 12px;
 
     -webkit-transition: .5s ease background;
-    transition: .5s ease background;
+            transition: .5s ease background;
     text-align: center;
 
     color: #fff;
     border-radius: 30px;
     background: #5db7d8;
 }
-
-.processing-registration__link:hover {
+.processing-registration__link:hover
+{
     color: #fff;
     background: #4cb1ba;
 }
-
-.processing-registration__link:active {
+.processing-registration__link:active
+{
     color: #fff;
     background: #4cb1ba;
 }
@@ -31862,16 +31874,16 @@ Styles for filter block on consultations, clinics and docs pages
     background-color: #fff;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
-
-.operator-task-head {
+.operator-task-head
+{
     position: relative;
 
     padding: 20px 0;
 
     text-align: center;
 }
-
-.operator-task-head__back {
+.operator-task-head__back
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -31882,8 +31894,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     display: inline-block;
 }
-
-.operator-task-head__back:before {
+.operator-task-head__back:before
+{
     display: inline-block;
 
     width: 10px;
@@ -31896,8 +31908,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/icon-back.png) no-repeat;
 }
-
-.operator-task-head__btn {
+.operator-task-head__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
@@ -31909,56 +31921,58 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0 30px;
 
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
 
     color: #fff;
     border-radius: 25px;
 }
-
-.operator-task-head__btn:hover {
+.operator-task-head__btn:hover
+{
     background-color: #fff;
 }
-
-.operator-task-head__btn:active {
+.operator-task-head__btn:active
+{
     background-color: #fff;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
-
-.operator-task-head__btn--reject {
+.operator-task-head__btn--reject
+{
     border: 1px solid #dc4531;
     background-color: #dc4531;
 }
 .operator-task-head__btn--reject:hover,
-.operator-task-head__btn--reject:active {
+.operator-task-head__btn--reject:active
+{
     color: #dc4531;
 }
-
-.operator-task-head__btn--accept {
+.operator-task-head__btn--accept
+{
     border: 1px solid #0c0;
     background-color: #0c0;
 }
 .operator-task-head__btn--accept:hover,
-.operator-task-head__btn--accept:active {
+.operator-task-head__btn--accept:active
+{
     color: #0c0;
 }
-
-.operator-scan {
+.operator-scan
+{
     position: relative;
 
     display: inline-block;
 
     width: 530px;
 }
-
-.operator-scan__arrow-prew {
+.operator-scan__arrow-prew
+{
     cursor: pointer;
 }
-
-.operator-scan__arrow-next {
+.operator-scan__arrow-next
+{
     cursor: pointer;
 }
-
-.operator-scan__num {
+.operator-scan__num
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
@@ -31966,10 +31980,10 @@ Styles for filter block on consultations, clinics and docs pages
     margin: 0;
     margin-bottom: 20px;
 
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-scan__doc {
+.operator-scan__doc
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -31977,8 +31991,8 @@ Styles for filter block on consultations, clinics and docs pages
     margin: 0;
     margin-bottom: 15px;
 }
-
-.operator-scan__comment {
+.operator-scan__comment
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
@@ -31987,10 +32001,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: left;
 
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-scan-panel {
+.operator-scan-panel
+{
     position: absolute;
     z-index: 100;
     top: 0;
@@ -32000,25 +32014,25 @@ Styles for filter block on consultations, clinics and docs pages
 
     background-color: rgba(0, 0, 0, .5);
 }
-
-.operator-scan-panel__icons {
+.operator-scan-panel__icons
+{
     width: 50%;
     height: 60px;
 }
-
-.operator-scan-panel__icons--left {
+.operator-scan-panel__icons--left
+{
     float: left;
 
     text-align: left;
 }
-
-.operator-scan-panel__icons--right {
+.operator-scan-panel__icons--right
+{
     float: right;
 
     text-align: right;
 }
-
-.operator-scan-panel__icon {
+.operator-scan-panel__icon
+{
     display: inline-block;
 
     width: 32px;
@@ -32029,28 +32043,28 @@ Styles for filter block on consultations, clinics and docs pages
     background-position: 0 50%;
     background-size: 32px 32px;
 }
-
-.operator-scan-panel__icon:hover {
+.operator-scan-panel__icon:hover
+{
     opacity: .6;
 }
-
-.operator-scan-panel__icon--hand {
+.operator-scan-panel__icon--hand
+{
     background-image: url(../img/operator-scan-panel--hand.png);
 }
-
-.operator-scan-panel__icon--zoom-plus {
+.operator-scan-panel__icon--zoom-plus
+{
     background-image: url(../img/operator-scan-panel--zoom-plus.png);
 }
-
-.operator-scan-panel__icon--zoom-minus {
+.operator-scan-panel__icon--zoom-minus
+{
     background-image: url(../img/operator-scan-panel--zoom-minus.png);
 }
-
-.operator-scan-panel__icon--rotate {
+.operator-scan-panel__icon--rotate
+{
     background-image: url(../img/operator-scan-panel--rotate.png);
 }
-
-.operator-scan-panel__icon--zoom-full {
+.operator-scan-panel__icon--zoom-full
+{
     background-image: url(../img/operator-scan-panel--zoom-full.png);
 }
 /***
@@ -32066,7 +32080,8 @@ Styles for filter block on consultations, clinics and docs pages
  ***/
 /** RESET AND LAYOUT
 ===================================*/
-.operator-scan .bx-wrapper {
+.operator-scan .bx-wrapper
+{
     position: relative;
 
     margin: 0 auto 20px;
@@ -32074,43 +32089,46 @@ Styles for filter block on consultations, clinics and docs pages
 
     *zoom: 1;
     -ms-touch-action: pan-y;
-    touch-action: pan-y;
+        touch-action: pan-y;
 }
-
-.operator-scan .bx-wrapper img {
+.operator-scan .bx-wrapper img
+{
     display: block;
 
     max-width: 100%;
 }
-
-.operator-scan .bxslider {
+.operator-scan .bxslider
+{
     margin: 0;
     padding: 0;
 }
-
-.operator-scan ul.bxslider {
+.operator-scan ul.bxslider
+{
     list-style: none;
 }
-
-.operator-scan .bx-viewport {
+.operator-scan .bx-viewport
+{
     /*fix other elements on the page moving (on Chrome)*/
     -webkit-transform: translatez(0);
 }
 /** THEME
 ===================================*/
-.operator-scan .bx-wrapper {
+.operator-scan .bx-wrapper
+{
     border: 1px solid #8d8d8d;
     background: #fff;
 }
 .operator-scan .bx-wrapper .bx-pager,
-.operator-scan .bx-wrapper .bx-controls-auto {
+.operator-scan .bx-wrapper .bx-controls-auto
+{
     position: absolute;
     bottom: -30px;
 
     width: 100%;
 }
 /* LOADER */
-.operator-scan .bx-wrapper .bx-loading {
+.operator-scan .bx-wrapper .bx-loading
+{
     position: absolute;
     z-index: 2000;
     top: 0;
@@ -32123,7 +32141,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: url(images/bx_loader.gif) center center no-repeat #fff;
 }
 /* PAGER */
-.operator-scan .bx-wrapper .bx-pager {
+.operator-scan .bx-wrapper .bx-pager
+{
     font-family: Arial;
     font-size: .85em;
     font-weight: bold;
@@ -32134,8 +32153,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #666;
 }
-
-.operator-scan .bx-wrapper .bx-pager.bx-default-pager a {
+.operator-scan .bx-wrapper .bx-pager.bx-default-pager a
+{
     display: block;
 
     width: 10px;
@@ -32150,43 +32169,48 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-scan .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .operator-scan .bx-wrapper .bx-pager.bx-default-pager a.active,
-.operator-scan .bx-wrapper .bx-pager.bx-default-pager a:focus {
+.operator-scan .bx-wrapper .bx-pager.bx-default-pager a:focus
+{
     background: #000;
 }
 .operator-scan .bx-wrapper .bx-pager-item,
-.operator-scan .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.operator-scan .bx-wrapper .bx-controls-auto .bx-controls-auto-item
+{
     display: inline-block;
 
     *zoom: 1;
     *display: inline;
 }
-
-.operator-scan .bx-wrapper .bx-pager-item {
+.operator-scan .bx-wrapper .bx-pager-item
+{
     font-size: 0;
     line-height: 0;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
-.operator-scan .bx-wrapper .bx-prev {
+.operator-scan .bx-wrapper .bx-prev
+{
     left: -95px;
 
     background: url(../img/operator-slider-prev-arrow.png) no-repeat;
 }
 .operator-scan .bx-wrapper .bx-prev:hover,
-.operator-scan .bx-wrapper .bx-prev:focus {
+.operator-scan .bx-wrapper .bx-prev:focus
+{
     background-position: 0 0;
 }
-
-.operator-scan .bx-wrapper .bx-next {
+.operator-scan .bx-wrapper .bx-next
+{
     right: -95px;
 
     background: url(../img/operator-slider-next-arrow.png) no-repeat;
 }
 .operator-scan .bx-wrapper .bx-next:hover,
-.operator-scan .bx-wrapper .bx-next:focus {
+.operator-scan .bx-wrapper .bx-next:focus
+{
     opacity: 1;
 }
-
-.operator-scan .bx-wrapper .bx-controls-direction a {
+.operator-scan .bx-wrapper .bx-controls-direction a
+{
     position: absolute;
     z-index: 9999;
     top: 50%;
@@ -32199,16 +32223,17 @@ Styles for filter block on consultations, clinics and docs pages
 
     outline: 0;
 }
-
-.operator-scan .bx-wrapper .bx-controls-direction a.disabled {
+.operator-scan .bx-wrapper .bx-controls-direction a.disabled
+{
     display: none;
 }
 /* AUTO CONTROLS (START / STOP) */
-.operator-scan .bx-wrapper .bx-controls-auto {
+.operator-scan .bx-wrapper .bx-controls-auto
+{
     text-align: center;
 }
-
-.operator-scan .bx-wrapper .bx-controls-auto .bx-start {
+.operator-scan .bx-wrapper .bx-controls-auto .bx-start
+{
     display: block;
 
     width: 10px;
@@ -32222,11 +32247,12 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-scan .bx-wrapper .bx-controls-auto .bx-start:hover,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-start.active,
-.operator-scan .bx-wrapper .bx-controls-auto .bx-start:focus {
+.operator-scan .bx-wrapper .bx-controls-auto .bx-start:focus
+{
     background-position: -86px 0;
 }
-
-.operator-scan .bx-wrapper .bx-controls-auto .bx-stop {
+.operator-scan .bx-wrapper .bx-controls-auto .bx-stop
+{
     display: block;
 
     width: 9px;
@@ -32240,23 +32266,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-scan .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-stop.active,
-.operator-scan .bx-wrapper .bx-controls-auto .bx-stop:focus {
+.operator-scan .bx-wrapper .bx-controls-auto .bx-stop:focus
+{
     background-position: -86px -33px;
 }
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-.operator-scan .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+.operator-scan .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager
+{
     width: 80%;
 
     text-align: left;
 }
-
-.operator-scan .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+.operator-scan .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+{
     right: 0;
 
     width: 35px;
 }
 /* IMAGE CAPTIONS */
-.operator-scan .bx-wrapper .bx-caption {
+.operator-scan .bx-wrapper .bx-caption
+{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -32266,8 +32295,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: #666;
     background: rgba(80, 80, 80, .75);
 }
-
-.operator-scan .bx-wrapper .bx-caption span {
+.operator-scan .bx-wrapper .bx-caption span
+{
     font-family: Arial;
     font-size: .85em;
 
