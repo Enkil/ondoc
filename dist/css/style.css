@@ -31928,7 +31928,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #dc4531;
     background-color: #dc4531;
 }
-
 .operator-task-head__btn--reject:hover,
 .operator-task-head__btn--reject:active {
     color: #dc4531;
@@ -31938,13 +31937,14 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #0c0;
     background-color: #0c0;
 }
-
 .operator-task-head__btn--accept:hover,
 .operator-task-head__btn--accept:active {
     color: #0c0;
 }
 
 .operator-scan {
+    position: relative;
+
     display: inline-block;
 
     width: 530px;
@@ -31990,6 +31990,69 @@ Styles for filter block on consultations, clinics and docs pages
     outline: none !important;
 }
 
+.operator-scan-panel {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.operator-scan-panel__icons {
+    width: 50%;
+    height: 60px;
+}
+
+.operator-scan-panel__icons--left {
+    float: left;
+
+    text-align: left;
+}
+
+.operator-scan-panel__icons--right {
+    float: right;
+
+    text-align: right;
+}
+
+.operator-scan-panel__icon {
+    display: inline-block;
+
+    width: 32px;
+    height: 60px;
+    margin: 0 10px;
+
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 32px 32px;
+}
+
+.operator-scan-panel__icon:hover {
+    opacity: .6;
+}
+
+.operator-scan-panel__icon--hand {
+    background-image: url(../img/operator-scan-panel--hand.png);
+}
+
+.operator-scan-panel__icon--zoom-plus {
+    background-image: url(../img/operator-scan-panel--zoom-plus.png);
+}
+
+.operator-scan-panel__icon--zoom-minus {
+    background-image: url(../img/operator-scan-panel--zoom-minus.png);
+}
+
+.operator-scan-panel__icon--rotate {
+    background-image: url(../img/operator-scan-panel--rotate.png);
+}
+
+.operator-scan-panel__icon--zoom-full {
+    background-image: url(../img/operator-scan-panel--zoom-full.png);
+}
 /***
  * BxSlider v4.2.3 - Fully loaded, responsive content slider
  * http://bxslider.com
@@ -32033,14 +32096,12 @@ Styles for filter block on consultations, clinics and docs pages
     /*fix other elements on the page moving (on Chrome)*/
     -webkit-transform: translatez(0);
 }
-
 /** THEME
 ===================================*/
 .operator-scan .bx-wrapper {
     border: 1px solid #8d8d8d;
     background: #fff;
 }
-
 .operator-scan .bx-wrapper .bx-pager,
 .operator-scan .bx-wrapper .bx-controls-auto {
     position: absolute;
@@ -32048,7 +32109,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 100%;
 }
-
 /* LOADER */
 .operator-scan .bx-wrapper .bx-loading {
     position: absolute;
@@ -32062,7 +32122,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(images/bx_loader.gif) center center no-repeat #fff;
 }
-
 /* PAGER */
 .operator-scan .bx-wrapper .bx-pager {
     font-family: Arial;
@@ -32089,13 +32148,11 @@ Styles for filter block on consultations, clinics and docs pages
     outline: 0;
     background: #666;
 }
-
 .operator-scan .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .operator-scan .bx-wrapper .bx-pager.bx-default-pager a.active,
 .operator-scan .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #000;
 }
-
 .operator-scan .bx-wrapper .bx-pager-item,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
     display: inline-block;
@@ -32108,14 +32165,12 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 0;
     line-height: 0;
 }
-
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .operator-scan .bx-wrapper .bx-prev {
     left: -95px;
 
     background: url(../img/operator-slider-prev-arrow.png) no-repeat;
 }
-
 .operator-scan .bx-wrapper .bx-prev:hover,
 .operator-scan .bx-wrapper .bx-prev:focus {
     background-position: 0 0;
@@ -32126,7 +32181,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/operator-slider-next-arrow.png) no-repeat;
 }
-
 .operator-scan .bx-wrapper .bx-next:hover,
 .operator-scan .bx-wrapper .bx-next:focus {
     opacity: 1;
@@ -32149,7 +32203,6 @@ Styles for filter block on consultations, clinics and docs pages
 .operator-scan .bx-wrapper .bx-controls-direction a.disabled {
     display: none;
 }
-
 /* AUTO CONTROLS (START / STOP) */
 .operator-scan .bx-wrapper .bx-controls-auto {
     text-align: center;
@@ -32167,7 +32220,6 @@ Styles for filter block on consultations, clinics and docs pages
     outline: 0;
     background: url(images/controls.png) -86px -11px no-repeat;
 }
-
 .operator-scan .bx-wrapper .bx-controls-auto .bx-start:hover,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-start.active,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-start:focus {
@@ -32186,13 +32238,11 @@ Styles for filter block on consultations, clinics and docs pages
     outline: 0;
     background: url(images/controls.png) -86px -44px no-repeat;
 }
-
 .operator-scan .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-stop.active,
 .operator-scan .bx-wrapper .bx-controls-auto .bx-stop:focus {
     background-position: -86px -33px;
 }
-
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 .operator-scan .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
     width: 80%;
@@ -32205,7 +32255,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 35px;
 }
-
 /* IMAGE CAPTIONS */
 .operator-scan .bx-wrapper .bx-caption {
     position: absolute;

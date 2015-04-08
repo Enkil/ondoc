@@ -25616,6 +25616,7 @@ a {
 }
 
 .operator-scan {
+    position: relative;
     display: inline-block;
     width: 530px
 }
@@ -25643,6 +25644,64 @@ a {
     margin-bottom: 120px;
     text-align: left;
     outline: 0 !important
+}
+
+.operator-scan-panel {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.operator-scan-panel__icons {
+    width: 50%;
+    height: 60px
+}
+
+.operator-scan-panel__icons--left {
+    float: left;
+    text-align: left
+}
+
+.operator-scan-panel__icons--right {
+    float: right;
+    text-align: right
+}
+
+.operator-scan-panel__icon {
+    display: inline-block;
+    width: 32px;
+    height: 60px;
+    margin: 0 10px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 32px 32px
+}
+
+.operator-scan-panel__icon:hover {
+    opacity: .6
+}
+
+.operator-scan-panel__icon--hand {
+    background-image: url(../img/operator-scan-panel--hand.png)
+}
+
+.operator-scan-panel__icon--zoom-plus {
+    background-image: url(../img/operator-scan-panel--zoom-plus.png)
+}
+
+.operator-scan-panel__icon--zoom-minus {
+    background-image: url(../img/operator-scan-panel--zoom-minus.png)
+}
+
+.operator-scan-panel__icon--rotate {
+    background-image: url(../img/operator-scan-panel--rotate.png)
+}
+
+.operator-scan-panel__icon--zoom-full {
+    background-image: url(../img/operator-scan-panel--zoom-full.png)
 }
 
 .operator-scan .bx-wrapper {
