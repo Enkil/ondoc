@@ -31642,6 +31642,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
+
+.operator-tasks-table__row {
+    cursor: pointer;
+}
 .operator-tasks-table__title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
