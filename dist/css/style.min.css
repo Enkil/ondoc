@@ -12575,12 +12575,14 @@ a:active, a:focus {
     margin-right: 10px;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 16px
 }
 
-.modal-consultation-delete__btn-no:hover {
+.modal-consultation-delete__btn-no:active, .modal-consultation-delete__btn-no:focus, .modal-consultation-delete__btn-no:hover {
     color: #fff;
     background-color: #5db7d8
 }
@@ -12593,12 +12595,14 @@ a:active, a:focus {
     margin-left: 10px;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
     color: #dc4531;
     border: 1px solid #dc4531;
     border-radius: 16px
 }
 
-.modal-consultation-delete__btn-yes:hover {
+.modal-consultation-delete__btn-yes:active, .modal-consultation-delete__btn-yes:focus, .modal-consultation-delete__btn-yes:hover {
     color: #fff;
     background-color: #dc4531
 }
