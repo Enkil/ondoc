@@ -466,6 +466,7 @@
   line-height: 33px;
   display: inline-block;
   outline: none;
+  text-align: center;
 
   &:hover {
     background-color: @white-color;
@@ -522,6 +523,12 @@
       background-color: @blue-color;
     }
   }
+
+  &--task-done {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .operator-task-title {
@@ -536,6 +543,7 @@
   font-size: 14px;
   text-align: left;
   margin-left: 165px;
+  width: 350px;
 
   &--rejected {
     margin: 0 auto;
@@ -545,6 +553,18 @@
     p {
       margin-top: 20px;
     }
+  }
+
+  &__ul {
+    color: @blue-color;
+    padding: 0;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+
+  &__li {
+    .gotham-m;
+    font-size: 20px;
   }
 }
 

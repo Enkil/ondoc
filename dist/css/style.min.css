@@ -25803,6 +25803,7 @@ a {
     padding: 0 30px;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    text-align: center;
     color: #fff;
     border-radius: 25px;
     outline: 0
@@ -25864,6 +25865,11 @@ a {
     background-color: #5db7d8
 }
 
+.operator-btn--task-done {
+    width: 100%;
+    margin: 0 0 20px
+}
+
 .operator-task-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 17px;
@@ -25874,6 +25880,7 @@ a {
 .operator-task-text {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 14px;
+    width: 350px;
     margin-left: 165px;
     text-align: left;
     outline: 0 !important
@@ -25887,6 +25894,19 @@ a {
 
 .operator-task-text--rejected p {
     margin-top: 20px
+}
+
+.operator-task-text__ul {
+    line-height: 35px;
+    margin-bottom: 40px;
+    padding: 0;
+    color: #5db7d8
+}
+
+.operator-task-text__li {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
+    font-size: 20px
 }
 
 .operator-task-textarea {
