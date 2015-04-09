@@ -13080,6 +13080,10 @@ a:focus
 
     background: #d7eaf0;
 }
+
+.main-footer--operator {
+    background: #f3f3f3;
+}
 .main-footer__copyright
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -32174,7 +32178,6 @@ Styles for filter block on consultations, clinics and docs pages
 .operator-btn:hover {
     background-color: #fff;
 }
-
 .operator-btn:active,
 .operator-btn:focus {
     background-color: #fff;
@@ -32185,7 +32188,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #dc4531;
     background-color: #dc4531;
 }
-
 .operator-btn--reject:hover,
 .operator-btn--reject:active,
 .operator-btn--reject:focus {
@@ -32196,7 +32198,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #0c0;
     background-color: #0c0;
 }
-
 .operator-btn--accept:hover,
 .operator-btn--accept:active,
 .operator-btn--accept:focus {
@@ -32207,7 +32208,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #ea900f;
     background-color: #ea900f;
 }
-
 .operator-btn--retrieve:hover,
 .operator-btn--retrieve:active,
 .operator-btn--retrieve:focus {
@@ -32220,7 +32220,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #5db7d8;
     background-color: #5db7d8;
 }
-
 .operator-btn--save:hover,
 .operator-btn--save:active,
 .operator-btn--save:focus {
@@ -32270,7 +32269,6 @@ Styles for filter block on consultations, clinics and docs pages
     /*fix other elements on the page moving (on Chrome)*/
     -webkit-transform: translatez(0);
 }
-
 /** THEME for view-page
 ===================================*/
 .operator-scan .bx-wrapper
@@ -32455,6 +32453,7 @@ Styles for filter block on consultations, clinics and docs pages
     background: #666;
     background: rgba(80, 80, 80, .75);
 }
+
 .operator-scan .bx-wrapper .bx-caption span {
     font-family: Arial;
     font-size: .85em;
@@ -32465,14 +32464,12 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
-
 /** THEME for all pages of operator task
 ===================================*/
 .operator-scan--left .bx-wrapper {
     border: 1px solid #8d8d8d;
     background: #fff;
 }
-
 .operator-scan--left .bx-wrapper .bx-pager,
 .operator-scan--left .bx-wrapper .bx-controls-auto {
     position: absolute;
@@ -32480,7 +32477,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 100%;
 }
-
 /* LOADER */
 .operator-scan--left .bx-wrapper .bx-loading {
     position: absolute;
@@ -32494,7 +32490,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(images/bx_loader.gif) center center no-repeat #fff;
 }
-
 /* PAGER */
 .operator-scan--left .bx-wrapper .bx-pager {
     font-family: Arial;
@@ -32521,13 +32516,11 @@ Styles for filter block on consultations, clinics and docs pages
     outline: 0;
     background: #666;
 }
-
 .operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a.active,
 .operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #000;
 }
-
 .operator-scan--left .bx-wrapper .bx-pager-item,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
     display: inline-block;
@@ -32540,7 +32533,6 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 0;
     line-height: 0;
 }
-
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .operator-scan--left .outside .bx-prev,
 .operator-scan--left .outside .bx-next {
@@ -32554,7 +32546,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     opacity: .9;
 }
-
 .operator-scan--left .outside .bx-prev:hover,
 .operator-scan--left .outside .bx-next:hover,
 .operator-scan--left .outside .bx-prev:focus,
@@ -32581,7 +32572,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     height: 40px;
 }
-
 /* AUTO CONTROLS (START / STOP) */
 .operator-scan--left .bx-wrapper .bx-controls-auto {
     text-align: center;
@@ -32599,7 +32589,6 @@ Styles for filter block on consultations, clinics and docs pages
     outline: 0;
     background: url(images/controls.png) -86px -11px no-repeat;
 }
-
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:hover,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-start.active,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:focus {
@@ -32618,13 +32607,11 @@ Styles for filter block on consultations, clinics and docs pages
     outline: 0;
     background: url(images/controls.png) -86px -44px no-repeat;
 }
-
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop.active,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:focus {
     background-position: -86px -33px;
 }
-
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 .operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
     width: 80%;
@@ -32637,7 +32624,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 35px;
 }
-
 /* IMAGE CAPTIONS */
 .operator-scan--left .bx-wrapper .bx-caption {
     position: absolute;
@@ -32649,7 +32635,6 @@ Styles for filter block on consultations, clinics and docs pages
     background: #666;
     background: rgba(80, 80, 80, .75);
 }
-
 .operator-scan--left .bx-wrapper .bx-caption span
 {
     font-family: Arial;

@@ -10798,6 +10798,10 @@ a:active, a:focus {
     background: #d7eaf0
 }
 
+.main-footer--operator {
+    background: #f3f3f3
+}
+
 .main-footer__copyright {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 15px;
