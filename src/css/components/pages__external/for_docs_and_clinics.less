@@ -147,6 +147,10 @@
     &--active{
       bottom: 0;
       opacity: 1;
+
+      @media (max-width: 1200px) {
+        bottom: -11px;
+      }
     }
 
     &--clients{
@@ -163,6 +167,12 @@
 
     &--results{
       height: 450px;
+
+      &.fdc-section__devices--active {
+        @media (max-width: 1200px) {
+          bottom: -30px;
+        }
+      }
     }
 
     &--loyalty{

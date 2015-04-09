@@ -29901,6 +29901,12 @@ Styles for filter block on consultations, clinics and docs pages
 
     opacity: 1;
 }
+
+@media (max-width: 1200px) {
+    .fdc-section__devices--active {
+        bottom: -11px;
+    }
+}
 .fdc-section__devices--clients
 {
     height: 452px;
@@ -29916,6 +29922,12 @@ Styles for filter block on consultations, clinics and docs pages
 .fdc-section__devices--results
 {
     height: 450px;
+}
+
+@media (max-width: 1200px) {
+    .fdc-section__devices--results.fdc-section__devices--active {
+        bottom: -30px;
+    }
 }
 .fdc-section__devices--loyalty
 {
