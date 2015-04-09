@@ -13851,7 +13851,14 @@ a:focus
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
-    line-height: 65px;
+
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.widget-right-head__title--operator {
+    padding-top: 0;
 }
 .widget-right-head__list
 {
@@ -25822,10 +25829,17 @@ a
 }
 .drugs__modal-body
 {
-    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
 
     height: 635px;
     padding: 0 38px 8px 30px;
+
+    -ms-overflow-style: none;
+}
+
+.drugs__modal-body::-webkit-scrollbar {
+    width: 0;
 }
 .clinics__header
 {
@@ -31989,7 +32003,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: relative;
 
-    padding: 20px 0;
+    margin: 20px 0 30px;
 
     text-align: center;
 }
@@ -32019,57 +32033,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/icon-back.png) no-repeat;
 }
-.operator-task-head__btn
-{
-    font-family: 'Gotham-Medium', Arial, sans-serif !important;
-    font-family: 'Gotham-Medium', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 33px;
-
-    display: inline-block;
-
-    margin: 0 7px;
-    padding: 0 30px;
-
-    -webkit-transition: all .5s ease;
-            transition: all .5s ease;
-
-    color: #fff;
-    border-radius: 25px;
-    outline: none;
-}
-.operator-task-head__btn:hover
-{
-    background-color: #fff;
-}
-.operator-task-head__btn:active,
-.operator-task-head__btn:focus
-{
-    background-color: #fff;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-}
-.operator-task-head__btn--reject
-{
-    border: 1px solid #dc4531;
-    background-color: #dc4531;
-}
-.operator-task-head__btn--reject:hover,
-.operator-task-head__btn--reject:active,
-.operator-task-head__btn--reject:focus
-{
-    color: #dc4531;
-}
-.operator-task-head__btn--accept
-{
-    border: 1px solid #0c0;
-    background-color: #0c0;
-}
-.operator-task-head__btn--accept:hover,
-.operator-task-head__btn--accept:active,
-.operator-task-head__btn--accept:focus
-{
-    color: #0c0;
-}
 .operator-scan
 {
     position: relative;
@@ -32092,8 +32055,10 @@ Styles for filter block on consultations, clinics and docs pages
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
 
-    margin: 0;
-    margin-bottom: 20px;
+    display: inline-block;
+
+    height: 40px;
+    margin: 0 20px 20px 20px;
 
     outline: none!important;
 }
@@ -32182,6 +32147,85 @@ Styles for filter block on consultations, clinics and docs pages
 {
     background-image: url(../img/operator-scan-panel--zoom-full.png);
 }
+
+.operator-task-wrapper {
+    margin-bottom: 150px;
+}
+
+.operator-btn {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+
+    display: inline-block;
+
+    margin: 0 7px;
+    padding: 0 30px;
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+
+    color: #fff;
+    border-radius: 25px;
+    outline: none;
+}
+
+.operator-btn:hover {
+    background-color: #fff;
+}
+
+.operator-btn:active,
+.operator-btn:focus {
+    background-color: #fff;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.operator-btn--reject {
+    border: 1px solid #dc4531;
+    background-color: #dc4531;
+}
+
+.operator-btn--reject:hover,
+.operator-btn--reject:active,
+.operator-btn--reject:focus {
+    color: #dc4531;
+}
+
+.operator-btn--accept {
+    border: 1px solid #0c0;
+    background-color: #0c0;
+}
+
+.operator-btn--accept:hover,
+.operator-btn--accept:active,
+.operator-btn--accept:focus {
+    color: #0c0;
+}
+
+.operator-btn--retrieve {
+    border: 1px solid #ea900f;
+    background-color: #ea900f;
+}
+
+.operator-btn--retrieve:hover,
+.operator-btn--retrieve:active,
+.operator-btn--retrieve:focus {
+    color: #ea900f;
+}
+
+.operator-btn--save {
+    margin-top: 50px;
+
+    border: 1px solid #5db7d8;
+    background-color: #5db7d8;
+}
+
+.operator-btn--save:hover,
+.operator-btn--save:active,
+.operator-btn--save:focus {
+    color: #5db7d8;
+}
 /***
  * BxSlider v4.2.3 - Fully loaded, responsive content slider
  * http://bxslider.com
@@ -32199,7 +32243,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: relative;
 
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     padding: 0;
 
     *zoom: 1;
@@ -32226,7 +32270,8 @@ Styles for filter block on consultations, clinics and docs pages
     /*fix other elements on the page moving (on Chrome)*/
     -webkit-transform: translatez(0);
 }
-/** THEME
+
+/** THEME for view-page
 ===================================*/
 .operator-scan .bx-wrapper
 {
@@ -32311,7 +32356,7 @@ Styles for filter block on consultations, clinics and docs pages
 .operator-scan .bx-wrapper .bx-prev:hover,
 .operator-scan .bx-wrapper .bx-prev:focus
 {
-    background-position: 0 0;
+    opacity: 1;
 }
 .operator-scan .bx-wrapper .bx-next
 {
@@ -32410,7 +32455,202 @@ Styles for filter block on consultations, clinics and docs pages
     background: #666;
     background: rgba(80, 80, 80, .75);
 }
-.operator-scan .bx-wrapper .bx-caption span
+.operator-scan .bx-wrapper .bx-caption span {
+    font-family: Arial;
+    font-size: .85em;
+
+    display: block;
+
+    padding: 10px;
+
+    color: #fff;
+}
+
+/** THEME for all pages of operator task
+===================================*/
+.operator-scan--left .bx-wrapper {
+    border: 1px solid #8d8d8d;
+    background: #fff;
+}
+
+.operator-scan--left .bx-wrapper .bx-pager,
+.operator-scan--left .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+
+    width: 100%;
+}
+
+/* LOADER */
+.operator-scan--left .bx-wrapper .bx-loading {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+
+    background: url(images/bx_loader.gif) center center no-repeat #fff;
+}
+
+/* PAGER */
+.operator-scan--left .bx-wrapper .bx-pager {
+    font-family: Arial;
+    font-size: .85em;
+    font-weight: bold;
+
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #666;
+}
+
+.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a {
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+
+    text-indent: -9999px;
+
+    border-radius: 5px;
+    outline: 0;
+    background: #666;
+}
+
+.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a.active,
+.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #000;
+}
+
+.operator-scan--left .bx-wrapper .bx-pager-item,
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+
+    *zoom: 1;
+    *display: inline;
+}
+
+.operator-scan--left .bx-wrapper .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.operator-scan--left .outside .bx-prev,
+.operator-scan--left .outside .bx-next {
+    position: relative;
+    top: 35%;
+
+    display: inline-block;
+
+    width: 14px;
+    height: 40px;
+
+    opacity: .9;
+}
+
+.operator-scan--left .outside .bx-prev:hover,
+.operator-scan--left .outside .bx-next:hover,
+.operator-scan--left .outside .bx-prev:focus,
+.operator-scan--left .outside .bx-next:focus {
+    opacity: 1;
+}
+
+.operator-scan--left .outside .bx-prev {
+    left: 0;
+
+    background: url(../img/operator-slider-prev-arrow.png) no-repeat;
+    background-size: 14px 40px;
+}
+
+.operator-scan--left .outside .bx-next {
+    right: 0;
+
+    background: url(../img/operator-slider-next-arrow.png) no-repeat;
+    background-size: 14px 40px;
+}
+
+.outside {
+    position: relative;
+
+    height: 40px;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.operator-scan--left .bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+
+    width: 10px;
+    height: 11px;
+    margin: 0 3px;
+
+    text-indent: -9999px;
+
+    outline: 0;
+    background: url(images/controls.png) -86px -11px no-repeat;
+}
+
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:hover,
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start.active,
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:focus {
+    background-position: -86px 0;
+}
+
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+
+    width: 9px;
+    height: 11px;
+    margin: 0 3px;
+
+    text-indent: -9999px;
+
+    outline: 0;
+    background: url(images/controls.png) -86px -44px no-repeat;
+}
+
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:hover,
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop.active,
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:focus {
+    background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    width: 80%;
+
+    text-align: left;
+}
+
+.operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+.operator-scan--left .bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: #666;
+    background: rgba(80, 80, 80, .75);
+}
+
+.operator-scan--left .bx-wrapper .bx-caption span
 {
     font-family: Arial;
     font-size: .85em;

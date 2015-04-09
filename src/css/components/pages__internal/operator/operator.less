@@ -328,7 +328,7 @@
 
 .operator-task-head {
   position: relative;
-  padding: 20px 0;
+  margin: 20px 0 30px;
   text-align: center;
 
   &__back {
@@ -350,52 +350,16 @@
       background: url(../img/icon-back.png) no-repeat;
     }
   }
-
-  &__btn {
-    .gotham-m;
-    font-size: 18px;
-    color: @white-color;
-    padding: 0 30px;
-    border-radius: 25px;
-    transition: all 0.5s ease;
-    margin: 0 7px;
-    line-height: 33px;
-    display: inline-block;
-    outline: none;
-
-    &:hover {
-      background-color: @white-color;
-    }
-
-    &:active, &:focus {
-      background-color: @white-color;
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    }
-
-    &--reject {
-      background-color: @red-color;
-      border: 1px solid @red-color;
-
-      &:hover, &:active, &:focus {
-        color: @red-color;
-      }
-    }
-
-    &--accept {
-      background-color: @green-color-2;
-      border: 1px solid @green-color-2;
-
-      &:hover, &:active, &:focus {
-        color: @green-color-2;
-      }
-    }
-  }
 }
 
 .operator-scan {
   width: 530px;
   display: inline-block;
   position: relative;
+
+  &--left {
+
+  }
 
   &__arrow-prew {
     cursor: pointer;
@@ -408,8 +372,9 @@
   &__num {
     .gotham;
     font-size: 17px;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
+    display: inline-block;
+    height: 40px;
   }
 
   &__doc {
@@ -476,6 +441,69 @@
     }
     &--zoom-full {
       background-image: url(../img/operator-scan-panel--zoom-full.png);
+    }
+  }
+}
+
+.operator-task-wrapper {
+  margin-bottom: 150px;
+}
+
+.operator-btn {
+  .gotham-m;
+  font-size: 18px;
+  color: @white-color;
+  padding: 0 30px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  margin: 0 7px;
+  line-height: 33px;
+  display: inline-block;
+  outline: none;
+
+  &:hover {
+    background-color: @white-color;
+  }
+
+  &:active, &:focus {
+    background-color: @white-color;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+
+  &--reject {
+    background-color: @red-color;
+    border: 1px solid @red-color;
+
+    &:hover, &:active, &:focus {
+      color: @red-color;
+    }
+  }
+
+  &--accept {
+    background-color: @green-color-2;
+    border: 1px solid @green-color-2;
+
+    &:hover, &:active, &:focus {
+      color: @green-color-2;
+    }
+  }
+
+  &--retrieve {
+    background-color: @orange-color;
+    border: 1px solid @orange-color;
+
+    &:hover, &:active, &:focus {
+      color: @orange-color;
+    }
+  }
+
+  &--save {
+    background-color: @blue-color;
+    border: 1px solid @blue-color;
+    margin-top: 50px;
+
+    &:hover, &:active, &:focus {
+      color: @blue-color;
     }
   }
 }

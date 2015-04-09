@@ -15801,12 +15801,26 @@ $(document).ready(function () {
 
 });
 
-/* Call BX-Slider */
+/* Call BX-Slider on view page */
 $(document).ready(function () {
     if ($('.bxslider').length) {
         $('.bxslider').bxSlider({
             pager: false,
             mode: 'fade'
+        });
+    }
+});
+
+/* Call BX-Slider on all pages*/
+$(document).ready(function () {
+    if ($('.bxslider-operator').length) {
+        $('.bxslider-operator').bxSlider({
+            pager: false,
+            mode: 'fade',
+            nextSelector: '#slider-next',
+            prevSelector: '#slider-prev',
+            nextText: '',
+            prevText: ''
         });
     }
 });

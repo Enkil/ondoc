@@ -15,7 +15,7 @@
 
 .operator-scan .bx-wrapper {
   position: relative;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -40,7 +40,7 @@
   -webkit-transform: translatez(0);
 }
 
-/** THEME
+/** THEME for view-page
 ===================================*/
 
 .operator-scan .bx-wrapper {
@@ -112,7 +112,7 @@
     background: url(../img/operator-slider-prev-arrow.png) no-repeat;
     &:hover,
     &:focus {
-      background-position: 0 0;
+      opacity: 1;
     }
   }
   .bx-next {
@@ -187,6 +187,168 @@
 
 /* IMAGE CAPTIONS */
 .operator-scan .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+  span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+  }
+}
+
+/** THEME for all pages of operator task
+===================================*/
+
+.operator-scan--left .bx-wrapper {
+  border: 1px solid @grey-color;
+  background: @white-color;
+  .bx-pager,
+  .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+  }
+}
+
+/* LOADER */
+.operator-scan--left .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(images/bx_loader.gif) center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* PAGER */
+.operator-scan--left .bx-wrapper {
+  .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    &.bx-default-pager a {
+      background: #666;
+      text-indent: -9999px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      outline: 0;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      &:hover,
+      &.active,
+      &:focus {
+        background: #000;
+      }
+    }
+  }
+  .bx-pager-item,
+  .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+  }
+  .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.operator-scan--left .outside {
+
+  .bx-prev, .bx-next {
+    position: relative;
+    top: 35%;
+    width: 14px;
+    height: 40px;
+    display: inline-block;
+    opacity: 0.9;
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .bx-prev {
+    left: 0;
+    background: url(../img/operator-slider-prev-arrow.png) no-repeat;
+    background-size: 14px 40px;
+  }
+  .bx-next {
+    right: 0;
+    background: url(../img/operator-slider-next-arrow.png) no-repeat;
+    background-size: 14px 40px;
+  }
+}
+
+.outside {
+  position: relative;
+  height: 40px;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.operator-scan--left .bx-wrapper .bx-controls-auto {
+  text-align: center;
+  .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -11px no-repeat;
+    margin: 0 3px;
+    &:hover,
+    &.active,
+    &:focus {
+      background-position: -86px 0;
+    }
+  }
+  .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -44px no-repeat;
+    margin: 0 3px;
+    &:hover,
+    &.active,
+    &:focus {
+      background-position: -86px -33px;
+    }
+  }
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.operator-scan--left .bx-wrapper {
+  .bx-controls.bx-has-controls-auto.bx-has-pager {
+    .bx-pager {
+      text-align: left;
+      width: 80%;
+    }
+    .bx-controls-auto {
+      right: 0;
+      width: 35px;
+    }
+  }
+}
+
+/* IMAGE CAPTIONS */
+.operator-scan--left .bx-wrapper .bx-caption {
   position: absolute;
   bottom: 0;
   left: 0;
