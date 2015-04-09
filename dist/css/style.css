@@ -175,26 +175,26 @@ input[type='button']
 }
 .field-comment:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .field-comment:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .field-comment:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .field-comment:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -13291,26 +13291,26 @@ a:focus
 }
 .widget__textarea:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .widget__textarea:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .widget__textarea:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .widget__textarea:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -13700,6 +13700,12 @@ a:focus
 
     color: #5db7d8;
     outline: none;
+}
+
+.widget-consultation__link--operator {
+    display: inline-block;
+
+    margin-bottom: 50px;
 }
 .widget-consultation__link--smaller
 {
@@ -14771,26 +14777,26 @@ a:focus
 }
 .widget-security__textarea:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .widget-security__textarea:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .widget-security__textarea:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .widget-security__textarea:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -15448,26 +15454,26 @@ External pages buttons
 }
 .medcard-filter__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-filter__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-filter__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-filter__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -16006,26 +16012,26 @@ External pages buttons
 }
 .medcard-doctor__search-input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-doctor__search-input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-doctor__search-input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-doctor__search-input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -16306,26 +16312,26 @@ External pages buttons
 }
 .medcard-doctor__add-input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-doctor__add-input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-doctor__add-input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-doctor__add-input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -17159,26 +17165,26 @@ External pages buttons
 }
 .medcard-clinic__search-input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-clinic__search-input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-clinic__search-input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-clinic__search-input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -17467,26 +17473,26 @@ External pages buttons
 }
 .medcard-clinic__add-input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .medcard-clinic__add-input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-clinic__add-input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .medcard-clinic__add-input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -19532,26 +19538,26 @@ Widgets
 }
 .profile-widget__textarea:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .profile-widget__textarea:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .profile-widget__textarea:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .profile-widget__textarea:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -19750,26 +19756,26 @@ Widgets
 }
 .user-info__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .user-info__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .user-info__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .user-info__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -20008,26 +20014,26 @@ Widgets
 }
 .policy__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .policy__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .policy__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .policy__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -20472,26 +20478,26 @@ Widgets
 }
 .feedback-modal__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .feedback-modal__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .feedback-modal__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .feedback-modal__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -20854,7 +20860,7 @@ Widgets
 .security__input:focus::-webkit-input-placeholder,
 .security-modal__textarea:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -20862,21 +20868,21 @@ Widgets
 .security__input:focus::-moz-placeholder,
 .security-modal__textarea:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .security__input:focus:-ms-input-placeholder,
 .security-modal__textarea:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .security__input:focus::placeholder,
 .security-modal__textarea:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -21618,26 +21624,26 @@ input:after
 }
 .security-modal__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .security-modal__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .security-modal__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .security-modal__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -22296,26 +22302,26 @@ input:after
 }
 .widget-notifications__textarea:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .widget-notifications__textarea:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .widget-notifications__textarea:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .widget-notifications__textarea:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -25517,26 +25523,26 @@ a
 }
 .drugs__drug-comment:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .drugs__drug-comment:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .drugs__drug-comment:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .drugs__drug-comment:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -25614,26 +25620,26 @@ a
 }
 .drugs__dosage:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .drugs__dosage:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .drugs__dosage:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .drugs__dosage:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -26123,26 +26129,26 @@ a
 }
 .clinics__search-input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .clinics__search-input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .clinics__search-input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .clinics__search-input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -27054,26 +27060,26 @@ a
 }
 .docs__search-input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .docs__search-input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .docs__search-input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .docs__search-input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -27974,26 +27980,26 @@ a
 }
 .steps-modal__input-small:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .steps-modal__input-small:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .steps-modal__input-small:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .steps-modal__input-small:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -28329,26 +28335,26 @@ a
 }
 .steps-modal .user-data__height input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .steps-modal .user-data__height input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .steps-modal .user-data__height input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .steps-modal .user-data__height input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -28434,26 +28440,26 @@ a
 }
 .steps-modal .user-data__weight input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .steps-modal .user-data__weight input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .steps-modal .user-data__weight input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .steps-modal .user-data__weight input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -28717,26 +28723,26 @@ a
 }
 .contact-form__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .contact-form__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .contact-form__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .contact-form__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -28934,26 +28940,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .filter__search:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .filter__search:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .filter__search:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .filter__search:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -29519,26 +29525,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .promo-form__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .promo-form__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .promo-form__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .promo-form__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -30185,26 +30191,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .popup-login__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .popup-login__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .popup-login__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .popup-login__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -30594,26 +30600,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .charity-reg__input:focus::-webkit-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
 .charity-reg__input:focus::-moz-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .charity-reg__input:focus:-ms-input-placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     transition: line-height .5s ease;
 }
 .charity-reg__input:focus::placeholder
 {
-    line-height: 150px;
+    line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
@@ -32037,13 +32043,20 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/icon-back.png) no-repeat;
 }
+
+.operator-task-head__free {
+    display: inline-block;
+
+    height: 28px;
+}
 .operator-scan
 {
     position: relative;
 
     display: inline-block;
 
-    width: 530px;
+    width: 100%;
+    max-width: 530px;
 }
 .operator-scan__arrow-prew
 {
@@ -32215,8 +32228,6 @@ Styles for filter block on consultations, clinics and docs pages
 }
 
 .operator-btn--save {
-    margin-top: 50px;
-
     border: 1px solid #5db7d8;
     background-color: #5db7d8;
 }
@@ -32224,6 +32235,138 @@ Styles for filter block on consultations, clinics and docs pages
 .operator-btn--save:active,
 .operator-btn--save:focus {
     color: #5db7d8;
+}
+
+.operator-btn--cancel {
+    color: #5db7d8;
+    border: 1px solid #5db7d8;
+    background-color: #fff;
+}
+
+.operator-btn--cancel:hover,
+.operator-btn--cancel:active,
+.operator-btn--cancel:focus {
+    color: #fff;
+    background-color: #5db7d8;
+}
+
+.operator-task-title {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.operator-task-text {
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 14px;
+
+    margin-left: 165px;
+
+    text-align: left;
+
+    outline: none !important;
+}
+
+.operator-task-text--rejected {
+    width: 350px;
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+.operator-task-text--rejected p {
+    margin-top: 20px;
+}
+
+.operator-task-textarea {
+    font-family: 'Gotham', Arial, sans-serif !important;
+    font-family: 'Gotham', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: block;
+    overflow: -moz-scrollbars-none;
+
+    width: 100%;
+    height: 120px;
+    max-height: 250px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 15px;
+
+    resize: none;
+    -webkit-transition: height .2s;
+    transition: height .2s;
+    text-align: left;
+    text-overflow: ellipsis;
+
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: none !important;
+    outline: none;
+
+    -ms-overflow-style: none;
+}
+
+.operator-task-textarea::-webkit-input-placeholder {
+    line-height: 20px;
+
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea::-moz-placeholder {
+    line-height: 20px;
+
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea:-ms-input-placeholder {
+    line-height: 20px;
+
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea::placeholder {
+    line-height: 20px;
+
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea:focus::-webkit-input-placeholder {
+    line-height: 350px;
+
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea:focus::-moz-placeholder {
+    line-height: 350px;
+
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea:focus:-ms-input-placeholder {
+    line-height: 350px;
+
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea:focus::placeholder {
+    line-height: 350px;
+
+    -webkit-transition: line-height .5s ease;
+    transition: line-height .5s ease;
+}
+
+.operator-task-textarea::-webkit-scrollbar {
+    width: 0;
 }
 /***
  * BxSlider v4.2.3 - Fully loaded, responsive content slider

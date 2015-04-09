@@ -350,10 +350,16 @@
       background: url(../img/icon-back.png) no-repeat;
     }
   }
+
+  &__free {
+    display: inline-block;
+    height: 28px;
+  }
 }
 
 .operator-scan {
-  width: 530px;
+  width: 100%;
+  max-width: 530px;
   display: inline-block;
   position: relative;
 
@@ -500,10 +506,73 @@
   &--save {
     background-color: @blue-color;
     border: 1px solid @blue-color;
-    margin-top: 50px;
 
     &:hover, &:active, &:focus {
       color: @blue-color;
     }
+  }
+
+  &--cancel {
+    background-color: @white-color;
+    border: 1px solid @blue-color;
+    color: @blue-color;
+
+    &:hover, &:active, &:focus {
+      color: @white-color;
+      background-color: @blue-color;
+    }
+  }
+}
+
+.operator-task-title {
+  .gotham-m;
+  font-size: 17px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.operator-task-text {
+  .gotham;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 165px;
+
+  &--rejected {
+    margin: 0 auto;
+    width: 350px;
+    text-align: left;
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}
+
+.operator-task-textarea {
+  .gotham;
+  .placeholder-effect(20px);
+  text-align: left;
+  height: 120px;
+  border-radius: 6px;
+  border: 1px solid @grey-color-2;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  font-size: 14px;
+  color: @black-color;
+  resize: none;
+  outline: none;
+  text-overflow: ellipsis;
+  transition: height 0.2s;
+  max-height: 250px;
+  line-height: 20px;
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+
+  &::-webkit-scrollbar {
+    width: 0;
   }
 }
