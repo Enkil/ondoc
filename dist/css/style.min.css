@@ -11222,6 +11222,10 @@ a:active, a:focus {
     margin-bottom: 15px
 }
 
+.widget-consultation--operator {
+    margin-bottom: 50px
+}
+
 .widget-consultation--wo-margin {
     margin-top: 0;
     margin-bottom: 0
