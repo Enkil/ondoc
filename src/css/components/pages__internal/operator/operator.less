@@ -361,12 +361,13 @@
     margin: 0 7px;
     line-height: 33px;
     display: inline-block;
+    outline: none;
 
     &:hover {
       background-color: @white-color;
     }
 
-    &:active {
+    &:active, &:focus {
       background-color: @white-color;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     }
@@ -375,7 +376,7 @@
       background-color: @red-color;
       border: 1px solid @red-color;
 
-      &:hover, &:active {
+      &:hover, &:active, &:focus {
         color: @red-color;
       }
     }
@@ -384,7 +385,7 @@
       background-color: @green-color-2;
       border: 1px solid @green-color-2;
 
-      &:hover, &:active {
+      &:hover, &:active, &:focus {
         color: @green-color-2;
       }
     }

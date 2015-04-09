@@ -31929,12 +31929,15 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
     border-radius: 25px;
+    outline: none;
 }
 .operator-task-head__btn:hover
 {
     background-color: #fff;
 }
-.operator-task-head__btn:active
+
+.operator-task-head__btn:active,
+.operator-task-head__btn:focus
 {
     background-color: #fff;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -31945,7 +31948,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-color: #dc4531;
 }
 .operator-task-head__btn--reject:hover,
-.operator-task-head__btn--reject:active
+.operator-task-head__btn--reject:active,
+.operator-task-head__btn--reject:focus
 {
     color: #dc4531;
 }
@@ -31955,7 +31959,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-color: #0c0;
 }
 .operator-task-head__btn--accept:hover,
-.operator-task-head__btn--accept:active
+.operator-task-head__btn--accept:active,
+.operator-task-head__btn--accept:focus
 {
     color: #0c0;
 }
