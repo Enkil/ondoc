@@ -25916,6 +25916,7 @@ a {
     line-height: 35px;
     margin-bottom: 40px;
     padding: 0;
+    list-style-position: inside;
     color: #5db7d8
 }
 

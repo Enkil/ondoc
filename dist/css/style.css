@@ -32321,6 +32321,8 @@ Styles for filter block on consultations, clinics and docs pages
     margin-bottom: 40px;
     padding: 0;
 
+    list-style-position: inside;
+
     color: #5db7d8;
 }
 
