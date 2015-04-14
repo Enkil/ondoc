@@ -31588,6 +31588,11 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background: #4cb1ba;
 }
+.digitizing-recommendation__link:focus
+{
+    color: #fff;
+    background: #4cb1ba;
+}
 .digitizing-recommendation__link:active
 {
     color: #fff;
