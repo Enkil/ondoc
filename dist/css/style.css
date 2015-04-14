@@ -31536,7 +31536,7 @@ Styles for filter block on consultations, clinics and docs pages
 .digitizing-recommendation__mock-up_image
 {
     position: relative;
-    bottom: -2px;
+    bottom: -15px;
 
     overflow: hidden;
 
@@ -31544,6 +31544,10 @@ Styles for filter block on consultations, clinics and docs pages
     height: 100%;
 
     border: 2px solid #000;
+}
+.digitizing-recommendation__mock-up_image img
+{
+    width: 100%;
 }
 .digitizing-recommendation__title
 {
