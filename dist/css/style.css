@@ -12404,9 +12404,14 @@ html
 
     min-height: 100%;
 }
+
+.container {
+    min-width: 1000px !important;
+}
 .container-fluid
 {
     width: 100%!important;
+    min-width: 1000px !important;
 }
 .inner-body
 {
