@@ -1,0 +1,246 @@
+.health-question {
+  background-color: @yellow-color;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 15px;
+
+  &__question {
+    .gotham-m;
+    line-height: 40px;
+    font-size: 16px;
+    color: @white-color;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &__btn {
+    .gotham-m;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 30px;
+    color: @yellow-color;
+    background-color: rgba(255, 255, 255, .8);
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: .2s ease all;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .9);
+      color: @yellow-color;
+    }
+
+    &--why {
+      .gotham;
+      font-size: 14px;
+      color: rgba(255, 255, 255, .8);
+      background-color: transparent;
+      margin-right: 45px;
+      padding: 0;
+      line-height: 40px;
+
+      @media (max-width: 990px) {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, .9);
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__close {
+    line-height: 40px;
+    background: url("../img/icon-question-close.png") no-repeat;
+    margin-right: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.health-info {
+  height: 330px;
+  border-radius: 10px;
+  background: @white-color;
+  box-shadow: 0 1px 1px 0 @grey-color-2;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 35px;
+
+  &__btn {
+    .gotham-m;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 25px;
+    padding: 0 20px;
+    margin: 0 5px;
+    color: @grey-color-2;
+    transition: 0.2s all ease;
+    border-radius: 12px;
+
+    &--active, &:hover, &:focus {
+      background-color: @grey-color-2;
+      color: @white-color;
+    }
+  }
+}
+
+.health-charts {
+  position: relative;
+
+  &__round {
+    position: absolute;
+    top: 14px;
+    left: 27px;
+    width: 233px;
+    height: 233px;
+    border: 40px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
+
+  &__round-chart {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 22px;
+  }
+
+  &__man {
+    z-index: 15;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+  }
+
+  &__percents {
+    .gotham-m;
+    color: #33cc00;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    font-size: 45px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 150px;
+    left: 115px;
+    font-size: 13px;
+    color: @grey-color;
+  }
+}
+
+.health-graphs {
+  position: relative;
+  margin-top: 20px;
+
+  &__chart {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  &__wrap {
+    display: inline-block;
+    width: 22px;
+    height: 170px;
+    border-radius: 8px;
+    background: #ccc;
+    overflow: hidden;
+  }
+
+  &__line {
+    height: 170px;
+    background: linear-gradient(20deg, #2dc429 0, #e59e0e 50%, #ff4700 90%);
+  }
+
+  &__bar {
+    display: inline-block;
+    width: 22px;
+    margin-right: 50px;
+    background: #ededed;
+    vertical-align: top;
+  }
+
+  &__lines {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__lines-item {
+    margin-top: 24px;
+    margin-bottom: 55px;
+    border: 0;
+    border-top: 1px solid #ededed;
+    width: 84%;
+    margin-left: 38px;
+  }
+}
+
+.health-labels {
+
+  &__label {
+    .gotham-m;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  &__subLabel {
+    font-size: 13px;
+    text-align: center;
+    color: @grey-color;
+  }
+}
+
+.health-analytics {
+  text-align: center;
+
+  &__icon {
+    display: inline-block;
+    background-image: url(../img/icon-health__analytics.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  &__text {
+    .gotham-m;
+    font-size: 17px;
+    color: @grey-color-2;
+    margin: 0;
+  }
+}
+
+.health-settings {
+  text-align: center;
+
+  &__link {
+    .gotham-m;
+    font-size: 16px;
+
+    &:before {
+      display: inline-block;
+      width: 19px;
+      height: 16px;
+      margin-right: 8px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-setting.png) no-repeat;
+    }
+  }
+}

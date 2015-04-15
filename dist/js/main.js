@@ -14397,24 +14397,14 @@ $(document).ready(function() {
 // TODO Rewrite this and include only is needed
 
 
-
-$(".dropdown-menu-link").click(function () {
-    $(".dropdown-menu").toggleClass('display');
-});
-
-$(".tabs a").click(function () {
-    $("a").toggleClass('current');
-});
-
-// toggle display:none for question block in index page of user cabinet
-$(".exit").click(function () {
-    $(".quiz").toggleClass('display-none');
-});
-
-$('ul.tabs').on('click', 'li:not(.current)', function() {
-    $(this).addClass('current').siblings().removeClass('current')
-        .parents('.tabs-section').find('div.graph').eq($(this).index()).fadeIn(150).siblings('div.graph').hide();
-});
+//
+//$(".dropdown-menu-link").click(function () {
+//    $(".dropdown-menu").toggleClass('display');
+//});
+//
+//$(".tabs a").click(function () {
+//    $("a").toggleClass('current');
+//});
 
 
 $(function(){
@@ -15770,6 +15760,45 @@ $(document).ready(function () {
         $('.drugs__dosage').toggleClass('drugs__dosage--error');
         $('.js__drug-day').not('.drugs__drug-day--active').toggleClass('drugs__drug-day--error');
     });
+});
+/*  Scripts for health page */
+
+$(document).ready(function () {
+
+    /*  Hide question block */
+    $('.health-question__close').click(function (event) {
+        event.preventDefault();
+        $('.js__find--health-question').addClass('display-none');
+    });
+
+    /*  Toggle links in charts block*/
+    $('.js__find--health-graphs-btn').click(function (event) {
+        event.preventDefault();
+        $('.health-info__btn').removeClass('health-info__btn--active');
+        $(this).addClass('health-info__btn--active');
+        $('.js__find--health-analytics-block').addClass('display-none');
+        $('.js__find--health-graphs-block').removeClass('display-none');
+    });
+
+    $('.js__find--health-analytics-btn').click(function (event) {
+        event.preventDefault();
+        $('.health-info__btn').removeClass('health-info__btn--active');
+        $(this).addClass('health-info__btn--active');
+        $('.js__find--health-graphs-block').addClass('display-none');
+        $('.js__find--health-analytics-block').removeClass('display-none');
+    });
+
+    /*  Open/close settings widget  */
+    $('.health-settings__link').click(function (event) {
+        event.preventDefault();
+        $('.settings').toggleClass('display-none');
+    });
+
+    $('.settings__close').click(function (event) {
+        event.preventDefault();
+        $('.settings').toggleClass('display-none');
+    });
+
 });
 /* Show/Hide form errors */
 

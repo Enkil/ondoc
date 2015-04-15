@@ -168,7 +168,7 @@
     .bottom-line-grey;
     position: relative;
     overflow: hidden;
-    padding: 20px 15px 15px 20px;
+    padding: 15px 15px 15px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     cursor: pointer;
 
@@ -176,6 +176,12 @@
       background-image: url(../img/list-arrow.png);
       background-repeat: no-repeat;
       background-position: 95% 50%;
+    }
+
+    &--health {
+      &:hover .drugs__time {
+        color: @red-color;
+      }
     }
 
     &:hover > .drugs__tab-title{  color: @red-color;  }
@@ -198,7 +204,10 @@
       color: @black-color;
       margin: 0;
       width: 80%;
-      word-break: break-all;
+
+      &--health {
+        width: 90%;
+      }
     }
   }
 
