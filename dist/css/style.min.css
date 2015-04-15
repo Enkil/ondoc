@@ -26520,15 +26520,13 @@ a {
 
 .health-graphs__line {
     height: 170px;
-    background: -webkit-linear-gradient(70deg, #2dc429 0, #e59e0e 50%, #ff4700 90%);
-    background: linear-gradient(20deg, #2dc429 0, #e59e0e 50%, #ff4700 90%)
+    background: -webkit-linear-gradient(90deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
+    background: linear-gradient(0deg, #33c919 0, #f2bc3c 50%, #ee1717 100%)
 }
 
 .health-graphs__bar {
     display: inline-block;
     width: 22px;
-    margin-right: 50px;
-    vertical-align: top;
     background: #ededed
 }
 
