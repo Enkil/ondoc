@@ -14326,13 +14326,14 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special"); 
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__chol-shedule--add-value').addClass('monitoring-widget__chol-shedule--add-value--special');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
     });
 
 });
 
-
+ 
 
 /*
 Show tooltips

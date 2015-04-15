@@ -9,19 +9,18 @@
     <meta name="description" content="Описание страницы">
     <meta name="keywords" content="Ключевые слова">
 
-    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9"/>
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
 
     <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
     <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
     <meta property="og:url" content="http://ondoc.me"/>
     <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
     <meta name="description" content="Крактое описание страницы в микроразметке"/>
-    <meta property="og:image"
-          content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
 
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
 
-    <link rel="icon" type="image/png" href="favicon.ico.png"/>
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,44 +31,42 @@
 
 <main>
     <!-- Not users internal header -->
-    <header class="operator-header container-fluid">
-        <div class="container">
-            <div class="row">
-
-                <!-- Logo -->
-                <div class="col-xs-18">
-                    <a class="operator-header__logo" href="operator-main.html"
-                       title="OnDoc - Персональное здравоохранение">
-                        <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
-                    </a>
-                </div>
-
-                <!-- Profile -->
-                <div class="col-xs-18 text-right">
-                    <img class="operator-header__avatar" src="img/operator-avatar.png"
-                         alt="Оператор OnDoc: Васильева В."
-                         title="Оператор OnDoc: Васильева В."/>
-                    <a class="operator-header__name" href="operator-profile.html">Васильева В.</a>
-                    <a class="operator-header__logout" href="#"></a>
-                </div>
-
-            </div>
-        </div>
-    </header>
-
-    <!-- Task header -->
+<header class="operator-header container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-xs-36 operator-task-head">
 
-                <a class="operator-task-head__back" href="operator-main.html">Все заявки</a>
-
-                <a class="operator-btn operator-btn--reject" href="operator__task--reject-form.html">Отклонить</a>
-                <a class="operator-btn operator-btn--retrieve" href="">Вернуть в ожидание</a>
-
+            <!-- Logo -->
+            <div class="col-xs-18">
+                <a class="operator-header__logo" href="operator-main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
             </div>
+
+            <!-- Profile -->
+            <div class="col-xs-18 text-right">
+                <img class="operator-header__avatar" src="img/operator-avatar.png" alt="Оператор OnDoc: Васильева В."
+                     title="Оператор OnDoc: Васильева В."/>
+                <a class="operator-header__name" href="operator-profile.html">Васильева В.</a>
+                <a class="operator-header__logout" href="#"></a>
+            </div>
+
         </div>
     </div>
+</header>
+
+    <!-- Task header -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-36 operator-task-head">
+
+            <a class="operator-task-head__back" href="operator-main.html">Все заявки</a>
+
+            <a class="operator-btn operator-btn--reject" href="operator__task--reject-form.html">Отклонить</a>
+            <a class="operator-btn operator-btn--retrieve" href="">Вернуть в ожидание</a>
+
+        </div>
+    </div>
+</div>
 
     <div class="container">
         <div class="row operator-task-wrapper">
@@ -77,398 +74,386 @@
             <div class="col-xs-18">
                 <div class="text-center">
 
-                    <div class="operator-scan operator-scan--left">
+    <div class="operator-scan operator-scan--left">
 
-                        <div class="operator-scan-panel">
+        <div class="operator-scan-panel">
 
-                            <div class="operator-scan-panel__icons operator-scan-panel__icons--left">
-                                <a class="operator-scan-panel__icon operator-scan-panel__icon--hand" href=""></a>
-                                <a class="operator-scan-panel__icon operator-scan-panel__icon--zoom-plus" href=""></a>
-                                <a class="operator-scan-panel__icon operator-scan-panel__icon--zoom-minus" href=""></a>
-                            </div>
+            <div class="operator-scan-panel__icons operator-scan-panel__icons--left">
+                <a class="operator-scan-panel__icon operator-scan-panel__icon--hand" href=""></a>
+                <a class="operator-scan-panel__icon operator-scan-panel__icon--zoom-plus" href=""></a>
+                <a class="operator-scan-panel__icon operator-scan-panel__icon--zoom-minus" href=""></a>
+            </div>
 
-                            <div class="operator-scan-panel__icons operator-scan-panel__icons--right">
-                                <a class="operator-scan-panel__icon operator-scan-panel__icon--rotate" href=""></a>
-                                <a class="operator-scan-panel__icon operator-scan-panel__icon--zoom-full" href=""></a>
-                            </div>
+            <div class="operator-scan-panel__icons operator-scan-panel__icons--right">
+                <a class="operator-scan-panel__icon operator-scan-panel__icon--rotate" href=""></a>
+                <a class="operator-scan-panel__icon operator-scan-panel__icon--zoom-full" href=""></a>
+            </div>
 
-                        </div>
+        </div>
 
 
-                        <div class="bxslider-operator">
+        <div class="bxslider-operator">
 
-                            <li><img src="img/operator-scan-1.png" alt=""/></li>
-                            <li><img src="img/operator-scan-2.png" alt=""/></li>
-                            <li><img src="img/operator-scan-3.png" alt=""/></li>
+            <li><img src="img/operator-scan-1.png" alt=""/></li>
+            <li><img src="img/operator-scan-2.png" alt=""/></li>
+            <li><img src="img/operator-scan-3.png" alt=""/></li>
 
-                        </div>
+        </div>
 
-                        <div class="outside">
-                            <span id="slider-prev"></span>
+        <div class="outside">
+            <span id="slider-prev"></span>
 
-                            <p class="operator-scan__num">
-                                <span>1</span> из <span>123</span>
-                            </p>
-                            <span id="slider-next"></span>
-                        </div>
+            <p class="operator-scan__num">
+                <span>1</span> из <span>123</span>
+            </p>
+            <span id="slider-next"></span>
+        </div>
 
-                    </div>
+    </div>
 
-                </div>
+</div>
             </div>
 
             <div class="col-xs-18">
 
                 <!-- Right column title -->
-                <div class="row">
-                    <div class="col-xs-36">
-                        <p class="text-center widget-right-head__title widget-right-head__title--operator">
-                            Гастроэнтеролог</p>
-                    </div>
-                </div>
+<div class="row">
+    <div class="col-xs-36">
+        <p class="text-center widget-right-head__title widget-right-head__title--operator">Гастроэнтеролог</p>
+    </div>
+</div>
 
-                <!-- Doctor -->
-                <div class="row widget-doctor">
+<!-- Doctor -->
+<div class="row widget-doctor">
 
-                    <!-- Doctor photo -->
-                    <div class="col-xs-4">
-                        <img class="widget-doctor__img" src="img/avatar-doctor.png" alt=""/>
-                    </div>
+    <!-- Doctor photo -->
+    <div class="col-xs-4">
+        <img class="widget-doctor__img" src="img/avatar-doctor.png" alt=""/>
+    </div>
 
 
-                    <div class="col-xs-32">
+    <div class="col-xs-32">
 
-                        <!-- Doctor name -->
-                        <div class="row">
-                            <div class="col-xs-36">
-                                <a class="widget-doctor__name" href="">Сергеев Владимир Иванович</a>
-                            </div>
+        <!-- Doctor name -->
+        <div class="row">
+            <div class="col-xs-36">
+                <a class="widget-doctor__name" href="">Сергеев Владимир Иванович</a>
+            </div>
 
-                            <!-- Doctor info Pop-Up -->
-                            <div class="medcard-docinfo display-none">
+            <!-- Doctor info Pop-Up -->
+<div class="medcard-docinfo display-none">
 
-                                <!-- Doctor info header -->
-                                <div class="medcard-docinfo__block">
+    <!-- Doctor info header -->
+    <div class="medcard-docinfo__block">
 
-                                    <span class="medcard-docinfo__star"></span>
+        <span class="medcard-docinfo__star"></span>
 
-                                    <div class="medcard-docinfo__doc-avatar">
-                                        <img class="medcard-docinfo__doc-avatar-img" src="img/doc-avatar.png" alt=""/>
-                                    </div>
+        <div class="medcard-docinfo__doc-avatar">
+            <img class="medcard-docinfo__doc-avatar-img" src="img/doc-avatar.png" alt=""/>
+        </div>
 
-                                    <h2 class="medcard-docinfo__doc-name">Сергеев Владимир Иванович</h2>
+        <h2 class="medcard-docinfo__doc-name">Сергеев Владимир Иванович</h2>
 
-                                    <h3 class="medcard-docinfo__doc-specs">Гастроэнтеролог, Физиотерапевт</h3>
+        <h3 class="medcard-docinfo__doc-specs">Гастроэнтеролог, Физиотерапевт</h3>
 
-                                </div>
-                                <!-- / Doctor info header -->
+    </div>
+    <!-- / Doctor info header -->
 
-                                <!-- Doctor info experience -->
-                                <div class="medcard-docinfo__block">
+    <!-- Doctor info experience -->
+    <div class="medcard-docinfo__block">
 
-                                    <div class="medcard-docinfo__title-line">
-                                        <span class="medcard-docinfo__title">Опыт</span>
-                                    </div>
+        <div class="medcard-docinfo__title-line">
+            <span class="medcard-docinfo__title">Опыт</span>
+        </div>
 
-                                    <p class="medcard-docinfo__exp-rank">Врач высшей категории</p>
+        <p class="medcard-docinfo__exp-rank">Врач высшей категории</p>
 
-                                    <p class="medcard-docinfo__exp-years">20 лет стаж</p>
+        <p class="medcard-docinfo__exp-years">20 лет стаж</p>
 
-                                </div>
-                                <!-- / Doctor info experience -->
+    </div>
+    <!-- / Doctor info experience -->
 
-                                <!-- Doctor info phone -->
-                                <div class="medcard-docinfo__block">
+    <!-- Doctor info phone -->
+    <div class="medcard-docinfo__block">
 
-                                    <div class="medcard-docinfo__title-line">
-                                        <span class="medcard-docinfo__title">Телефон</span>
-                                    </div>
+        <div class="medcard-docinfo__title-line">
+            <span class="medcard-docinfo__title">Телефон</span>
+        </div>
 
-                                    <a class="medcard-docinfo__phone" href="tel:+79206744334" title="Позвонить">+7 (920)
-                                        674-43-34</a>
+        <a class="medcard-docinfo__phone" href="tel:+79206744334" title="Позвонить">+7 (920) 674-43-34</a>
 
-                                </div>
-                                <!-- / Doctor info phone -->
+    </div>
+    <!-- / Doctor info phone -->
 
-                                <!-- Doctor info receiving locations -->
-                                <div class="medcard-docinfo__block">
+    <!-- Doctor info receiving locations -->
+    <div class="medcard-docinfo__block">
 
-                                    <div class="medcard-docinfo__title-line">
-                                        <span class="medcard-docinfo__title">Места приема</span>
-                                    </div>
+        <div class="medcard-docinfo__title-line">
+            <span class="medcard-docinfo__title">Места приема</span>
+        </div>
 
-                                    <!-- Receiving location item -->
-                                    <div class="medcard-docinfo__location">
+        <!-- Receiving location item -->
+        <div class="medcard-docinfo__location">
 
-                                        <div class="col-xs-8">
-                                            <img class="medcard-docinfo__clinic-logo" src="img/clinic-logo-2.png"
-                                                 alt=""/>
-                                        </div>
+            <div class="col-xs-8">
+                <img class="medcard-docinfo__clinic-logo" src="img/clinic-logo-2.png" alt=""/>
+            </div>
 
-                                        <div class="col-xs-28">
-                                            <h3 class="medcard-docinfo__clinic-name">Длинное название очень крутой
-                                                клиники в Санкт-Петербурге</h3>
+            <div class="col-xs-28">
+                <h3 class="medcard-docinfo__clinic-name">Длинное название очень крутой клиники в Санкт-Петербурге</h3>
 
-                                            <p class="medcard-docinfo__clinic-subway">Технологический институт</p>
-                                        </div>
+                <p class="medcard-docinfo__clinic-subway">Технологический институт</p>
+            </div>
 
-                                        <span class="medcard-docinfo__clinic-arrow"></span>
+            <span class="medcard-docinfo__clinic-arrow"></span>
 
-                                    </div>
-                                    <!-- / Receiving location item -->
+        </div>
+        <!-- / Receiving location item -->
 
-                                    <!-- Receiving location item -->
-                                    <div class="medcard-docinfo__location ">
+        <!-- Receiving location item -->
+        <div class="medcard-docinfo__location ">
 
-                                        <div class="col-xs-8">
-                                            <img class="medcard-docinfo__clinic-logo" src="img/medici-logo.jpg" alt=""/>
-                                        </div>
+            <div class="col-xs-8">
+                <img class="medcard-docinfo__clinic-logo" src="img/medici-logo.jpg" alt=""/>
+            </div>
 
-                                        <div class="col-xs-28">
-                                            <h3 class="medcard-docinfo__clinic-name">Клиника «MEDICI»</h3>
+            <div class="col-xs-28">
+                <h3 class="medcard-docinfo__clinic-name">Клиника «MEDICI»</h3>
 
-                                            <p class="medcard-docinfo__clinic-subway">Невский проспект</p>
-                                        </div>
+                <p class="medcard-docinfo__clinic-subway">Невский проспект</p>
+            </div>
 
-                                        <span class="medcard-docinfo__clinic-arrow"></span>
+            <span class="medcard-docinfo__clinic-arrow"></span>
 
-                                    </div>
-                                    <!-- / Receiving location item -->
+        </div>
+        <!-- / Receiving location item -->
 
-                                    <!-- Receiving location item -->
-                                    <div class="medcard-docinfo__location ">
+        <!-- Receiving location item -->
+        <div class="medcard-docinfo__location ">
 
-                                        <div class="col-xs-8">
-                                            <img class="medcard-docinfo__clinic-logo" src="img/clinic-logo-2.png"
-                                                 alt=""/>
-                                        </div>
+            <div class="col-xs-8">
+                <img class="medcard-docinfo__clinic-logo" src="img/clinic-logo-2.png" alt=""/>
+            </div>
 
-                                        <div class="col-xs-28">
-                                            <h3 class="medcard-docinfo__clinic-name">Будь здоров</h3>
+            <div class="col-xs-28">
+                <h3 class="medcard-docinfo__clinic-name">Будь здоров</h3>
 
-                                            <p class="medcard-docinfo__clinic-subway">Горьковская</p>
-                                        </div>
+                <p class="medcard-docinfo__clinic-subway">Горьковская</p>
+            </div>
 
-                                        <span class="medcard-docinfo__clinic-arrow"></span>
+            <span class="medcard-docinfo__clinic-arrow"></span>
 
-                                    </div>
-                                    <!-- / Receiving location item -->
+        </div>
+        <!-- / Receiving location item -->
 
-                                    <!-- Receiving location item -->
-                                    <div class="medcard-docinfo__location ">
+        <!-- Receiving location item -->
+        <div class="medcard-docinfo__location ">
 
-                                        <div class="col-xs-8">
-                                            <img class="medcard-docinfo__clinic-logo" src="img/medici-logo.jpg" alt=""/>
-                                        </div>
+            <div class="col-xs-8">
+                <img class="medcard-docinfo__clinic-logo" src="img/medici-logo.jpg" alt=""/>
+            </div>
 
-                                        <div class="col-xs-28">
-                                            <h3 class="medcard-docinfo__clinic-name">Клиника «MEDICI»</h3>
+            <div class="col-xs-28">
+                <h3 class="medcard-docinfo__clinic-name">Клиника «MEDICI»</h3>
 
-                                            <p class="medcard-docinfo__clinic-subway">Невский проспект</p>
-                                        </div>
+                <p class="medcard-docinfo__clinic-subway">Невский проспект</p>
+            </div>
 
-                                        <span class="medcard-docinfo__clinic-arrow"></span>
+            <span class="medcard-docinfo__clinic-arrow"></span>
 
-                                    </div>
-                                    <!-- / Receiving location item -->
+        </div>
+        <!-- / Receiving location item -->
 
-                                </div>
-                                <!-- / Doctor info receiving locations -->
+    </div>
+    <!-- / Doctor info receiving locations -->
 
-                                <!-- Doctor info - about specialist -->
-                                <div class="medcard-docinfo__block">
+    <!-- Doctor info - about specialist -->
+    <div class="medcard-docinfo__block">
 
-                                    <div class="medcard-docinfo__title-line">
-                                        <span class="medcard-docinfo__title">О специалисте</span>
-                                    </div>
+        <div class="medcard-docinfo__title-line">
+            <span class="medcard-docinfo__title">О специалисте</span>
+        </div>
 
-                                    <p class="medcard-docinfo__about">
-                                        Орден Правительства РФ за выдающиеся заслуги в области гинекологии (2010 г.)
-                                    </p>
+        <p class="medcard-docinfo__about">
+            Орден Правительства РФ за выдающиеся заслуги в области гинекологии (2010 г.)
+        </p>
 
-                                    <p class="medcard-docinfo__about">
-                                        Один из авторитетнейших специалистов России в области лечения миомы матки,
-                                        основоположник методики
-                                        Эмболизация миомы матки на территории СНГ
-                                        Участник международных конгрессов и конференций по обмену опытом с мировыми
-                                        специалистами в области
-                                        гинекологии
-                                    </p>
+        <p class="medcard-docinfo__about">
+            Один из авторитетнейших специалистов России в области лечения миомы матки, основоположник методики
+            Эмболизация миомы матки на территории СНГ
+            Участник международных конгрессов и конференций по обмену опытом с мировыми специалистами в области
+            гинекологии
+        </p>
 
-                                </div>
-                                <!-- Doctor info - about specialist -->
+    </div>
+    <!-- Doctor info - about specialist -->
 
-                                <!-- Allow to view profile -->
-                                <div class="medcard-docinfo__block">
-                                    <input class="medcard-docinfo__allow-check" type="checkbox"
-                                           id="allow-view-profile-checkbox"/>
-                                    <label for="allow-view-profile-checkbox">Разрешить просмотр моего профиля</label>
-                                </div>
-                                <!-- / Allow to view profile -->
+    <!-- Allow to view profile -->
+    <div class="medcard-docinfo__block">
+        <input class="medcard-docinfo__allow-check" type="checkbox" id="allow-view-profile-checkbox"/>
+        <label for="allow-view-profile-checkbox">Разрешить просмотр моего профиля</label>
+    </div>
+    <!-- / Allow to view profile -->
 
-                                <!-- OnDoc medcard support -->
-                                <div class="medcard-docinfo__block">
+    <!-- OnDoc medcard support -->
+    <div class="medcard-docinfo__block">
 
-                                    <p class="medcard-docinfo__support-status">Есть поддержка медкарты OnDoc</p>
+        <p class="medcard-docinfo__support-status">Есть поддержка медкарты OnDoc</p>
 
-                                </div>
-                                <!-- / OnDoc medcard support -->
+    </div>
+    <!-- / OnDoc medcard support -->
 
-                            </div>
-                            <!-- / Doctor info Pop-Up -->
+</div>
+<!-- / Doctor info Pop-Up -->
 
-                        </div>
+        </div>
 
-                        <!-- Clinic and date -->
-                        <div class="row">
-                            <div class="col-xs-24">
-                                <span class="widget-doctor__clinic pull-left">Военно-медицинская академия имени Мечникова</span>
-                            </div>
-                            <div class="col-xs-12">
-                                <time class="widget-doctor__date pull-right">19.05.2014</time>
-                            </div>
-                        </div>
+        <!-- Clinic and date -->
+        <div class="row">
+            <div class="col-xs-24">
+                <span class="widget-doctor__clinic pull-left">Военно-медицинская академия имени Мечникова</span>
+            </div>
+            <div class="col-xs-12">
+                <time class="widget-doctor__date pull-right">19.05.2014</time>
+            </div>
+        </div>
 
 
-                    </div>
-                </div>
+    </div>
+</div>
 
-                <!-- Symptoms -->
-                <div class="row widget-consultation">
+<!-- Symptoms -->
+<div class="row widget-consultation">
 
-                    <div class="col-xs-36 text-center widget-consultation__line">
-                        <span class="widget-consultation__title">Жалобы и симптомы</span>
-                    </div>
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Жалобы и симптомы</span>
+    </div>
 
-                    <div class="col-xs-36">
-                        <p class="widget-consultation__text">Боли в области желудка во время и после приема пищи.</p>
-                    </div>
+    <div class="col-xs-36">
+        <p class="widget-consultation__text">Боли в области желудка во время и после приема пищи.</p>
+    </div>
 
-                </div>
+</div>
 
-                <!-- Diagnosis -->
-                <div class="row widget-consultation">
+<!-- Diagnosis -->
+<div class="row widget-consultation">
 
-                    <div class="col-xs-36 text-center widget-consultation__line">
-                        <span class="widget-consultation__title">Диагноз</span>
-                    </div>
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Диагноз</span>
+    </div>
 
-                    <div class="col-xs-36">
-                        <p class="widget-consultation__text">Эритематрозная гастронатия. Эрозивный дуоденит. Деформация
-                            луковицы
-                            ДНК.</p>
-                    </div>
+    <div class="col-xs-36">
+        <p class="widget-consultation__text">Эритематрозная гастронатия. Эрозивный дуоденит. Деформация луковицы
+            ДНК.</p>
+    </div>
 
-                </div>
+</div>
 
-                <!-- Doctors result -->
-                <div class="row widget-consultation">
+<!-- Doctors result -->
+<div class="row widget-consultation">
 
-                    <div class="col-xs-36 text-center widget-consultation__line">
-                        <span class="widget-consultation__title">Заключение врача</span>
-                    </div>
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Заключение врача</span>
+    </div>
 
-                    <div class="col-xs-36">
-                        <p class="widget-consultation__text">Слизистая луковицы ДНК отечна, на всех стенах острая
-                            эррозия с красным
-                            дном, по наружной стенке умеренная деформация.</p>
-                    </div>
+    <div class="col-xs-36">
+        <p class="widget-consultation__text">Слизистая луковицы ДНК отечна, на всех стенах острая эррозия с красным
+            дном, по наружной стенке умеренная деформация.</p>
+    </div>
 
-                </div>
+</div>
 
-                <!-- Doctors recommendations -->
-                <div class="row widget-consultation">
+<!-- Doctors recommendations -->
+<div class="row widget-consultation">
 
-                    <div class="col-xs-36 text-center widget-consultation__line">
-                        <span class="widget-consultation__title">Рекомендации врача</span>
-                    </div>
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Рекомендации врача</span>
+    </div>
 
-                    <div class="col-xs-36">
-                        <p class="widget-consultation__text">Отказаться от жирной и острой пищи, употребления алкоголя
-                            на время
-                            лечения.</p>
-                    </div>
+    <div class="col-xs-36">
+        <p class="widget-consultation__text">Отказаться от жирной и острой пищи, употребления алкоголя на время
+            лечения.</p>
+    </div>
 
-                </div>
+</div>
 
-                <!-- Prescribed medications -->
-                <div class="row widget-consultation">
+<!-- Prescribed medications -->
+<div class="row widget-consultation">
 
-                    <!-- Prescribed medications -->
-                    <div class="col-xs-36 text-center widget-consultation__line">
-                        <span class="widget-consultation__title">Назначенные лекарства</span>
-                    </div>
+    <!-- Prescribed medications -->
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Назначенные лекарства</span>
+    </div>
 
-                    <!-- Drugs Item-->
-                    <div class="col-xs-36 widget-consultation__drugs">
-                        <a class="widget-consultation__link widget-consultation__link--smaller">Мезим</a>
+    <!-- Drugs Item-->
+    <div class="col-xs-36 widget-consultation__drugs">
+        <a class="widget-consultation__link widget-consultation__link--smaller">Мезим</a>
 
-                        <div class="row">
-                            <div class="col-xs-36">
-                                <span class="widget-consultation__subtext">10 мг</span>
-                                <span class="widget-consultation__subtext">3 р/д</span>
-                                <span class="widget-consultation__subtext">18 дн.</span>
-                                <span class="widget-consultation__subtext">ПН, СР, ПТ</span>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-xs-36">
+                <span class="widget-consultation__subtext">10 мг</span>
+                <span class="widget-consultation__subtext">3 р/д</span>
+                <span class="widget-consultation__subtext">18 дн.</span>
+                <span class="widget-consultation__subtext">ПН, СР, ПТ</span>
+            </div>
+        </div>
+    </div>
 
-                    <!-- Drugs Item-->
-                    <div class="col-xs-36 widget-consultation__drugs">
-                        <a class="widget-consultation__link widget-consultation__link--smaller">Мотилиум</a>
+    <!-- Drugs Item-->
+    <div class="col-xs-36 widget-consultation__drugs">
+        <a class="widget-consultation__link widget-consultation__link--smaller">Мотилиум</a>
 
-                        <div class="row">
-                            <div class="col-xs-36">
-                                <span class="widget-consultation__subtext">10 мг</span>
-                                <span class="widget-consultation__subtext">3 р/д</span>
-                                <span class="widget-consultation__subtext">18 дн.</span>
-                                <span class="widget-consultation__subtext">ПН - ВС</span>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-xs-36">
+                <span class="widget-consultation__subtext">10 мг</span>
+                <span class="widget-consultation__subtext">3 р/д</span>
+                <span class="widget-consultation__subtext">18 дн.</span>
+                <span class="widget-consultation__subtext">ПН - ВС</span>
+            </div>
+        </div>
+    </div>
 
-                </div>
+</div>
 
 
-                <!-- Return visit -->
-                <div class="row widget-consultation widget-consultation--operator">
+<!-- Return visit -->
+<div class="row widget-consultation widget-consultation--operator">
 
-                    <!-- Return visit -->
-                    <div class="col-xs-36 text-center widget-consultation__line">
-                        <span class="widget-consultation__title">Повторный визит</span>
-                    </div>
+    <!-- Return visit -->
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Повторный визит</span>
+    </div>
 
-                    <!-- Date -->
-                    <div class="col-xs-36 text-center">
-                        <time class="widget-doctor__date widget-doctor__date--bigger">19.05.2014</time>
-                    </div>
+    <!-- Date -->
+    <div class="col-xs-36 text-center">
+        <time class="widget-doctor__date widget-doctor__date--bigger">19.05.2014</time>
+    </div>
 
-                </div>
+</div>
 
-                <!-- Buttons -->
-                <div class="text-center">
-                    <a class="operator-btn operator-btn--cancel" href="">Редактировать</a>
-                    <a class="operator-btn operator-btn--save" href="">Отправить клиенту</a>
-                </div>
+<!-- Buttons -->
+<div class="text-center">
+    <a class="operator-btn operator-btn--cancel" href="">Редактировать</a>
+    <a class="operator-btn operator-btn--save" href="">Отправить клиенту</a>
+</div>
             </div>
 
         </div>
     </div>
 
     <!-- PAGE FOOTER-->
-    <footer class="main-footer main-footer--operator">
-        <div class="container">
-            <div class="row">
-                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального
-                    здравоохранения</p>
-            </div>
+<footer class="main-footer main-footer--operator">
+    <div class="container">
+        <div class="row">
+            <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
         </div>
-    </footer>
-    <!-- / PAGE FOOTER-->
+    </div>
+</footer>
+<!-- / PAGE FOOTER-->
 
-    <!-- JavaScript-->
-    <script src="js/main.min.js"></script>
-    <!-- / JavaScript -->
+<!-- JavaScript-->
+<script src="js/main.min.js"></script>
+<!-- / JavaScript -->
 
 </main>
 

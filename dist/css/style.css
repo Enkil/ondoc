@@ -12404,14 +12404,9 @@ html
 
     min-height: 100%;
 }
-.container
-{
-    min-width: 1000px!important;
-}
 .container-fluid
 {
     width: 100%!important;
-    min-width: 1000px!important;
 }
 .inner-body
 {
@@ -13080,8 +13075,8 @@ a:focus
 
     background: #d7eaf0;
 }
-
-.main-footer--operator {
+.main-footer--operator
+{
     background: #f3f3f3;
 }
 .main-footer__copyright
@@ -13607,8 +13602,8 @@ a:focus
 {
     margin-bottom: 15px;
 }
-
-.widget-consultation--operator {
+.widget-consultation--operator
+{
     margin-bottom: 50px;
 }
 .widget-consultation--wo-margin
@@ -13705,8 +13700,8 @@ a:focus
     color: #5db7d8;
     outline: none;
 }
-
-.widget-consultation__link--operator {
+.widget-consultation__link--operator
+{
     display: inline-block;
 
     margin-bottom: 50px;
@@ -13870,8 +13865,8 @@ a:focus
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
-.widget-right-head__title--operator {
+.widget-right-head__title--operator
+{
     padding-top: 0;
 }
 .widget-right-head__list
@@ -15356,7 +15351,7 @@ External pages buttons
     padding-left: 15px;
 
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
 
     color: #5db7d8;
     border: 1px solid #5db7d8;
@@ -15383,7 +15378,7 @@ External pages buttons
     padding-left: 15px;
 
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
 
     color: #dc4531;
     border: 1px solid #dc4531;
@@ -17736,8 +17731,8 @@ Widgets
 
     background: url(../img/icon-notes.png) no-repeat;
 }
-
-.medcard-widget__title--recomendations:before {
+.medcard-widget__title--recomendations:before
+{
     display: inline-block;
 
     width: 20px;
@@ -17749,8 +17744,8 @@ Widgets
 
     background: url(../img/icon-recomendations.png) no-repeat;
 }
-
-.medcard-widget__title--events:before {
+.medcard-widget__title--events:before
+{
     display: inline-block;
 
     width: 20px;
@@ -17986,7 +17981,7 @@ Widgets
 }
 .monitoring-widget__value--error-special
 {
-    margin-top: -20px !important;
+    margin-top: -33px !important;
 }
 .monitoring-widget__title
 {
@@ -18550,6 +18545,12 @@ Widgets
 .monitoring-widget__chol-shedule--add-value
 {
     margin-top: 30px;
+    padding: 0;
+}
+.monitoring-widget__chol-shedule--add-value--special
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: 0;
 }
 .monitoring-widget__chol-shedule-cap
@@ -25228,8 +25229,8 @@ a
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
-
-.drugs__tab--health:hover .drugs__time {
+.drugs__tab--health:hover .drugs__time
+{
     color: #dc4531;
 }
 .drugs__tab:hover > .drugs__tab-title
@@ -25260,8 +25261,8 @@ a
 
     color: #000;
 }
-
-.drugs__tab-title--health {
+.drugs__tab-title--health
+{
     width: 90%;
 }
 .drugs__drug-title
@@ -25893,8 +25894,8 @@ a
 
     -ms-overflow-style: none;
 }
-
-.drugs__modal-body::-webkit-scrollbar {
+.drugs__modal-body::-webkit-scrollbar
+{
     width: 0;
 }
 .clinics__header
@@ -29933,9 +29934,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     opacity: 1;
 }
-
-@media (max-width: 1200px) {
-    .fdc-section__devices--active {
+@media (max-width: 1200px)
+{
+    .fdc-section__devices--active
+    {
         bottom: -11px;
     }
 }
@@ -29955,9 +29957,10 @@ Styles for filter block on consultations, clinics and docs pages
 {
     height: 450px;
 }
-
-@media (max-width: 1200px) {
-    .fdc-section__devices--results.fdc-section__devices--active {
+@media (max-width: 1200px)
+{
+    .fdc-section__devices--results.fdc-section__devices--active
+    {
         bottom: -30px;
     }
 }
@@ -31185,6 +31188,11 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background: #4cb1ba;
 }
+.possibility-registration__link:focus
+{
+    color: #fff;
+    background: #4cb1ba;
+}
 .possibility-registration__link:active
 {
     color: #fff;
@@ -31269,7 +31277,7 @@ Styles for filter block on consultations, clinics and docs pages
 .digitizing-promo__mock-up_image
 {
     position: relative;
-    bottom: -2px;
+    bottom: -5px;
 
     overflow: hidden;
 
@@ -31561,7 +31569,7 @@ Styles for filter block on consultations, clinics and docs pages
 .digitizing-recommendation__mock-up_image
 {
     position: relative;
-    bottom: -2px;
+    bottom: -15px;
 
     overflow: hidden;
 
@@ -31569,6 +31577,10 @@ Styles for filter block on consultations, clinics and docs pages
     height: 100%;
 
     border: 2px solid #000;
+}
+.digitizing-recommendation__mock-up_image img
+{
+    width: 100%;
 }
 .digitizing-recommendation__title
 {
@@ -31614,6 +31626,11 @@ Styles for filter block on consultations, clinics and docs pages
     background: #5db7d8;
 }
 .digitizing-recommendation__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.digitizing-recommendation__link:focus
 {
     color: #fff;
     background: #4cb1ba;
@@ -32101,8 +32118,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/icon-back.png) no-repeat;
 }
-
-.operator-task-head__free {
+.operator-task-head__free
+{
     display: inline-block;
 
     height: 28px;
@@ -32222,12 +32239,12 @@ Styles for filter block on consultations, clinics and docs pages
 {
     background-image: url(../img/operator-scan-panel--zoom-full.png);
 }
-
-.operator-task-wrapper {
+.operator-task-wrapper
+{
     margin-bottom: 150px;
 }
-
-.operator-btn {
+.operator-btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
@@ -32239,82 +32256,88 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0 30px;
 
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
     text-align: center;
 
     color: #fff;
     border-radius: 25px;
     outline: none;
 }
-
-.operator-btn:hover {
+.operator-btn:hover
+{
     background-color: #fff;
 }
 .operator-btn:active,
-.operator-btn:focus {
+.operator-btn:focus
+{
     background-color: #fff;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
-
-.operator-btn--reject {
+.operator-btn--reject
+{
     border: 1px solid #dc4531;
     background-color: #dc4531;
 }
 .operator-btn--reject:hover,
 .operator-btn--reject:active,
-.operator-btn--reject:focus {
+.operator-btn--reject:focus
+{
     color: #dc4531;
 }
-
-.operator-btn--accept {
+.operator-btn--accept
+{
     border: 1px solid #0c0;
     background-color: #0c0;
 }
 .operator-btn--accept:hover,
 .operator-btn--accept:active,
-.operator-btn--accept:focus {
+.operator-btn--accept:focus
+{
     color: #0c0;
 }
-
-.operator-btn--retrieve {
+.operator-btn--retrieve
+{
     border: 1px solid #ea900f;
     background-color: #ea900f;
 }
 .operator-btn--retrieve:hover,
 .operator-btn--retrieve:active,
-.operator-btn--retrieve:focus {
+.operator-btn--retrieve:focus
+{
     color: #ea900f;
 }
-
-.operator-btn--save {
+.operator-btn--save
+{
     border: 1px solid #5db7d8;
     background-color: #5db7d8;
 }
 .operator-btn--save:hover,
 .operator-btn--save:active,
-.operator-btn--save:focus {
+.operator-btn--save:focus
+{
     color: #5db7d8;
 }
-
-.operator-btn--cancel {
+.operator-btn--cancel
+{
     color: #5db7d8;
     border: 1px solid #5db7d8;
     background-color: #fff;
 }
 .operator-btn--cancel:hover,
 .operator-btn--cancel:active,
-.operator-btn--cancel:focus {
+.operator-btn--cancel:focus
+{
     color: #fff;
     background-color: #5db7d8;
 }
-
-.operator-btn--task-done {
+.operator-btn--task-done
+{
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
 }
-
-.operator-task-title {
+.operator-task-title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -32322,8 +32345,8 @@ Styles for filter block on consultations, clinics and docs pages
     margin: 0;
     padding-bottom: 25px;
 }
-
-.operator-task-text {
+.operator-task-text
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
@@ -32333,21 +32356,21 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: left;
 
-    outline: none !important;
+    outline: none!important;
 }
-
-.operator-task-text--rejected {
+.operator-task-text--rejected
+{
     width: 350px;
     margin: 0 auto;
 
     text-align: left;
 }
-
-.operator-task-text--rejected p {
+.operator-task-text--rejected p
+{
     margin-top: 20px;
 }
-
-.operator-task-text__ul {
+.operator-task-text__ul
+{
     line-height: 35px;
 
     margin-bottom: 40px;
@@ -32357,14 +32380,14 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
 }
-
-.operator-task-text__li {
+.operator-task-text__li
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
 }
-
-.operator-task-textarea {
+.operator-task-textarea
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
@@ -32382,72 +32405,72 @@ Styles for filter block on consultations, clinics and docs pages
 
     resize: none;
     -webkit-transition: height .2s;
-    transition: height .2s;
+            transition: height .2s;
     text-align: left;
     text-overflow: ellipsis;
 
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: none !important;
+    outline: none!important;
     outline: none;
 
     -ms-overflow-style: none;
 }
-
-.operator-task-textarea::-webkit-input-placeholder {
+.operator-task-textarea::-webkit-input-placeholder
+{
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.operator-task-textarea::-moz-placeholder {
-    line-height: 20px;
-
-    transition: line-height .5s ease;
-}
-
-.operator-task-textarea:-ms-input-placeholder {
+.operator-task-textarea::-moz-placeholder
+{
     line-height: 20px;
 
     transition: line-height .5s ease;
 }
+.operator-task-textarea:-ms-input-placeholder
+{
+    line-height: 20px;
 
-.operator-task-textarea::placeholder {
+    transition: line-height .5s ease;
+}
+.operator-task-textarea::placeholder
+{
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.operator-task-textarea:focus::-webkit-input-placeholder {
+.operator-task-textarea:focus::-webkit-input-placeholder
+{
     line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.operator-task-textarea:focus::-moz-placeholder {
+.operator-task-textarea:focus::-moz-placeholder
+{
     line-height: 350px;
 
     transition: line-height .5s ease;
 }
-
-.operator-task-textarea:focus:-ms-input-placeholder {
+.operator-task-textarea:focus:-ms-input-placeholder
+{
     line-height: 350px;
 
     transition: line-height .5s ease;
 }
-
-.operator-task-textarea:focus::placeholder {
+.operator-task-textarea:focus::placeholder
+{
     line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.operator-task-textarea::-webkit-scrollbar {
+.operator-task-textarea::-webkit-scrollbar
+{
     width: 0;
 }
 /***
@@ -32678,8 +32701,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: #666;
     background: rgba(80, 80, 80, .75);
 }
-
-.operator-scan .bx-wrapper .bx-caption span {
+.operator-scan .bx-wrapper .bx-caption span
+{
     font-family: Arial;
     font-size: .85em;
 
@@ -32691,19 +32714,22 @@ Styles for filter block on consultations, clinics and docs pages
 }
 /** THEME for all pages of operator task
 ===================================*/
-.operator-scan--left .bx-wrapper {
+.operator-scan--left .bx-wrapper
+{
     border: 1px solid #8d8d8d;
     background: #fff;
 }
 .operator-scan--left .bx-wrapper .bx-pager,
-.operator-scan--left .bx-wrapper .bx-controls-auto {
+.operator-scan--left .bx-wrapper .bx-controls-auto
+{
     position: absolute;
     bottom: -30px;
 
     width: 100%;
 }
 /* LOADER */
-.operator-scan--left .bx-wrapper .bx-loading {
+.operator-scan--left .bx-wrapper .bx-loading
+{
     position: absolute;
     z-index: 2000;
     top: 0;
@@ -32716,7 +32742,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: url(images/bx_loader.gif) center center no-repeat #fff;
 }
 /* PAGER */
-.operator-scan--left .bx-wrapper .bx-pager {
+.operator-scan--left .bx-wrapper .bx-pager
+{
     font-family: Arial;
     font-size: .85em;
     font-weight: bold;
@@ -32727,8 +32754,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #666;
 }
-
-.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a {
+.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a
+{
     display: block;
 
     width: 10px;
@@ -32743,24 +32770,27 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a.active,
-.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:focus {
+.operator-scan--left .bx-wrapper .bx-pager.bx-default-pager a:focus
+{
     background: #000;
 }
 .operator-scan--left .bx-wrapper .bx-pager-item,
-.operator-scan--left .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-controls-auto-item
+{
     display: inline-block;
 
     *zoom: 1;
     *display: inline;
 }
-
-.operator-scan--left .bx-wrapper .bx-pager-item {
+.operator-scan--left .bx-wrapper .bx-pager-item
+{
     font-size: 0;
     line-height: 0;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .operator-scan--left .outside .bx-prev,
-.operator-scan--left .outside .bx-next {
+.operator-scan--left .outside .bx-next
+{
     position: relative;
     top: 35%;
 
@@ -32774,35 +32804,37 @@ Styles for filter block on consultations, clinics and docs pages
 .operator-scan--left .outside .bx-prev:hover,
 .operator-scan--left .outside .bx-next:hover,
 .operator-scan--left .outside .bx-prev:focus,
-.operator-scan--left .outside .bx-next:focus {
+.operator-scan--left .outside .bx-next:focus
+{
     opacity: 1;
 }
-
-.operator-scan--left .outside .bx-prev {
+.operator-scan--left .outside .bx-prev
+{
     left: 0;
 
     background: url(../img/operator-slider-prev-arrow.png) no-repeat;
     background-size: 14px 40px;
 }
-
-.operator-scan--left .outside .bx-next {
+.operator-scan--left .outside .bx-next
+{
     right: 0;
 
     background: url(../img/operator-slider-next-arrow.png) no-repeat;
     background-size: 14px 40px;
 }
-
-.outside {
+.outside
+{
     position: relative;
 
     height: 40px;
 }
 /* AUTO CONTROLS (START / STOP) */
-.operator-scan--left .bx-wrapper .bx-controls-auto {
+.operator-scan--left .bx-wrapper .bx-controls-auto
+{
     text-align: center;
 }
-
-.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start {
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start
+{
     display: block;
 
     width: 10px;
@@ -32816,11 +32848,12 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:hover,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-start.active,
-.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:focus {
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-start:focus
+{
     background-position: -86px 0;
 }
-
-.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop {
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop
+{
     display: block;
 
     width: 9px;
@@ -32834,23 +32867,26 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop.active,
-.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:focus {
+.operator-scan--left .bx-wrapper .bx-controls-auto .bx-stop:focus
+{
     background-position: -86px -33px;
 }
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-.operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+.operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager
+{
     width: 80%;
 
     text-align: left;
 }
-
-.operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+.operator-scan--left .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+{
     right: 0;
 
     width: 35px;
 }
 /* IMAGE CAPTIONS */
-.operator-scan--left .bx-wrapper .bx-caption {
+.operator-scan--left .bx-wrapper .bx-caption
+{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -32871,8 +32907,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
-
-.health-question {
+.health-question
+{
     height: 40px;
     margin-bottom: 15px;
     padding-right: 15px;
@@ -32881,8 +32917,8 @@ Styles for filter block on consultations, clinics and docs pages
     border-radius: 15px;
     background-color: #f5c55e;
 }
-
-.health-question__question {
+.health-question__question
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
@@ -32894,8 +32930,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
-
-.health-question__btn {
+.health-question__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
@@ -32909,20 +32945,20 @@ Styles for filter block on consultations, clinics and docs pages
     padding-left: 20px;
 
     -webkit-transition: .2s ease all;
-    transition: .2s ease all;
+            transition: .2s ease all;
     text-align: center;
 
     color: #f5c55e;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, .8);
 }
-
-.health-question__btn:hover {
+.health-question__btn:hover
+{
     color: #f5c55e;
     background-color: rgba(255, 255, 255, .9);
 }
-
-.health-question__btn--why {
+.health-question__btn--why
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
@@ -32932,22 +32968,23 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0;
 
     color: rgba(255, 255, 255, .8);
-    outline: none !important;
+    outline: none!important;
     background-color: transparent;
 }
-
-@media (max-width: 990px) {
-    .health-question__btn--why {
+@media (max-width: 990px)
+{
+    .health-question__btn--why
+    {
         margin-right: 5px;
     }
 }
-
-.health-question__btn--why:hover {
+.health-question__btn--why:hover
+{
     color: rgba(255, 255, 255, .9);
     background-color: transparent;
 }
-
-.health-question__close {
+.health-question__close
+{
     line-height: 40px;
 
     display: inline-block;
@@ -32961,8 +32998,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/icon-question-close.png') no-repeat;
 }
-
-.health-info {
+.health-info
+{
     height: 330px;
     margin-bottom: 15px;
     padding-top: 20px;
@@ -32973,8 +33010,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
 }
-
-.health-info__btn {
+.health-info__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
@@ -32986,24 +33023,24 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0 20px;
 
     -webkit-transition: .2s all ease;
-    transition: .2s all ease;
+            transition: .2s all ease;
 
     color: rgba(0, 0, 0, .2);
     border-radius: 12px;
 }
-
 .health-info__btn--active,
 .health-info__btn:hover,
-.health-info__btn:focus {
+.health-info__btn:focus
+{
     color: #fff;
     background-color: rgba(0, 0, 0, .2);
 }
-
-.health-charts {
+.health-charts
+{
     position: relative;
 }
-
-.health-charts__round {
+.health-charts__round
+{
     position: absolute;
     top: 14px;
     left: 27px;
@@ -33014,22 +33051,22 @@ Styles for filter block on consultations, clinics and docs pages
     border: 40px solid rgba(0, 0, 0, .05);
     border-radius: 50%;
 }
-
-.health-charts__round-chart {
+.health-charts__round-chart
+{
     position: absolute;
     z-index: 10;
     top: 10px;
     left: 22px;
 }
-
-.health-charts__man {
+.health-charts__man
+{
     position: absolute;
     z-index: 15;
     top: 45px;
     left: 15px;
 }
-
-.health-charts__percents {
+.health-charts__percents
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 45px;
@@ -33040,8 +33077,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #3c0;
 }
-
-.health-charts__text {
+.health-charts__text
+{
     font-size: 13px;
 
     position: absolute;
@@ -33050,24 +33087,24 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #8d8d8d;
 }
-
-.health-graphs {
+.health-graphs
+{
     position: relative;
 
     margin-top: 20px;
 }
-
-.health-graphs__chart {
+.health-graphs__chart
+{
     text-align: center;
 }
-
-.health-graphs__text {
+.health-graphs__text
+{
     font-size: 13px;
 
     margin-bottom: 5px;
 }
-
-.health-graphs__wrap {
+.health-graphs__wrap
+{
     display: inline-block;
     overflow: hidden;
 
@@ -33077,15 +33114,15 @@ Styles for filter block on consultations, clinics and docs pages
     border-radius: 8px;
     background: #ccc;
 }
-
-.health-graphs__line {
+.health-graphs__line
+{
     height: 170px;
 
     background: -webkit-linear-gradient(70deg, #2dc429 0, #e59e0e 50%, #ff4700 90%);
-    background: linear-gradient(20deg, #2dc429 0, #e59e0e 50%, #ff4700 90%);
+    background:         linear-gradient(20deg, #2dc429 0, #e59e0e 50%, #ff4700 90%);
 }
-
-.health-graphs__bar {
+.health-graphs__bar
+{
     display: inline-block;
 
     width: 22px;
@@ -33095,14 +33132,14 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: #ededed;
 }
-
-.health-graphs__lines {
+.health-graphs__lines
+{
     position: absolute;
 
     width: 100%;
 }
-
-.health-graphs__lines-item {
+.health-graphs__lines-item
+{
     width: 84%;
     margin-top: 24px;
     margin-bottom: 55px;
@@ -33111,28 +33148,28 @@ Styles for filter block on consultations, clinics and docs pages
     border: 0;
     border-top: 1px solid #ededed;
 }
-
-.health-labels__label {
+.health-labels__label
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
     text-align: center;
 }
-
-.health-labels__subLabel {
+.health-labels__subLabel
+{
     font-size: 13px;
 
     text-align: center;
 
     color: #8d8d8d;
 }
-
-.health-analytics {
+.health-analytics
+{
     text-align: center;
 }
-
-.health-analytics__icon {
+.health-analytics__icon
+{
     display: inline-block;
 
     width: 80px;
@@ -33143,8 +33180,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-image: url(../img/icon-health__analytics.png);
     background-repeat: no-repeat;
 }
-
-.health-analytics__text {
+.health-analytics__text
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -33153,18 +33190,18 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: rgba(0, 0, 0, .2);
 }
-
-.health-settings {
+.health-settings
+{
     text-align: center;
 }
-
-.health-settings__link {
+.health-settings__link
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
 }
-
-.health-settings__link:before {
+.health-settings__link:before
+{
     display: inline-block;
 
     width: 19px;
@@ -33416,8 +33453,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     background-position: -88px 0;
 }
-
-.settings {
+.settings
+{
     position: fixed;
     z-index: 1200;
     top: 0;
@@ -33426,8 +33463,8 @@ Styles for filter block on consultations, clinics and docs pages
     width: 100%;
     height: 100%;
 }
-
-.settings__bg {
+.settings__bg
+{
     position: fixed;
     z-index: 50;
     top: 0;
@@ -33438,8 +33475,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: rgba(0, 0, 0, .6);
 }
-
-.settings__modal {
+.settings__modal
+{
     position: fixed;
     z-index: 150;
     top: 0;
@@ -33459,20 +33496,20 @@ Styles for filter block on consultations, clinics and docs pages
     border-radius: 15px;
     background: #fff;
 }
-
-.settings__title {
+.settings__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
     margin-bottom: 24px;
 }
-
-.settings__body {
+.settings__body
+{
     margin-bottom: 30px;
 }
-
-.settings__item {
+.settings__item
+{
     display: inline-block;
 
     width: 98px;
@@ -33480,32 +33517,32 @@ Styles for filter block on consultations, clinics and docs pages
 
     vertical-align: top;
 }
-
-.settings__item--disabled .settings__label:before {
+.settings__item--disabled .settings__label:before
+{
     visibility: hidden;
 }
-
-.settings__item--disabled .settings__icon {
+.settings__item--disabled .settings__icon
+{
     opacity: .3;
 }
-
-.settings__input {
+.settings__input
+{
     display: none;
 }
-
-.settings__input + .settings__label {
+.settings__input + .settings__label
+{
     position: relative;
 
     display: inline-block;
 
     cursor: pointer;
     -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+            transition: .3s ease all;
 
     color: #000;
 }
-
-.settings__input + .settings__label:before {
+.settings__input + .settings__label:before
+{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -33519,16 +33556,16 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/checkbox-sprite-2.png) no-repeat;
 }
-
-.settings__input:checked + .settings__label {
+.settings__input:checked + .settings__label
+{
     border-color: #5db7d8;
 }
-
-.settings__input:checked + .settings__label:before {
+.settings__input:checked + .settings__label:before
+{
     background-position: -57px 0;
 }
-
-.settings__label {
+.settings__label
+{
     position: relative;
 
     width: 100%;
@@ -33536,22 +33573,22 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 5px;
 
     -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+            transition: .3s ease all;
     text-align: center;
 
     border: 1px solid #ccc;
     border-radius: 15px;
 }
-
-.settings__label:hover {
+.settings__label:hover
+{
     border-color: #5db7d8;
 }
-
-.settings__label:hover:before {
+.settings__label:hover:before
+{
     background-position: -28px 0;
 }
-
-.settings__icon {
+.settings__icon
+{
     display: inline-block;
 
     width: 31px;
@@ -33562,32 +33599,32 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/items-icon.png) no-repeat;
 }
-
-.settings__icon--pulse {
+.settings__icon--pulse
+{
     background-position: 0 0;
 }
-
-.settings__icon--pressure {
+.settings__icon--pressure
+{
     background-position: -65px 0;
 }
-
-.settings__icon--weight {
+.settings__icon--weight
+{
     background-position: -137px 0;
 }
-
-.settings__icon--temp {
+.settings__icon--temp
+{
     background-position: 0 -57px;
 }
-
-.settings__icon--sugar {
+.settings__icon--sugar
+{
     background-position: -65px -57px;
 }
-
-.settings__icon--cholesterol {
+.settings__icon--cholesterol
+{
     background-position: -137px -57px;
 }
-
-.settings__name {
+.settings__name
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 12px;
@@ -33598,14 +33635,14 @@ Styles for filter block on consultations, clinics and docs pages
     left: 50%;
 
     -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     letter-spacing: -.6px;
 
     color: rgba(0, 0, 0, .9);
 }
-
-.settings__close {
+.settings__close
+{
     position: absolute;
     top: 16px;
     right: 14px;
@@ -33619,7 +33656,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/icon-exit-11.png) no-repeat;
 }
-
-.settings__close:hover {
+.settings__close:hover
+{
     opacity: .6;
 }
