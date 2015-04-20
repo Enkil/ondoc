@@ -12404,14 +12404,23 @@ html
 
     min-height: 100%;
 }
-
-.container {
+.container
+{
     min-width: 1000px !important;
+}
+.container-huge
+{
+    width: 1200px!important;
+    margin: 0 auto;
 }
 .container-fluid
 {
     width: 100%!important;
     min-width: 1000px !important;
+}
+.container-fluid__huge
+{
+    min-width: 1200px !important;
 }
 .inner-body
 {
@@ -18842,6 +18851,12 @@ Widgets
     height: 72px;
 
     background: url('../img/icon-cap--period.png') no-repeat;
+}
+.monitoring-widget__shedule--add-value--special
+{
+    margin-top: 10px;
+    padding: 0;
+    padding-bottom: 20px;
 }
 .sidebar-profile
 {
@@ -29244,6 +29259,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/master.png') no-repeat;
 }
+.container-fluid.footer-external
+{
+    min-width: 1221px !important;
+}
 .ml-title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -31032,7 +31051,11 @@ Styles for filter block on consultations, clinics and docs pages
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.possibility-nav__tab
+.possibility.container
+{
+    min-width: 1200px !important;
+}
+.possibility-nav__tab a
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -31052,9 +31075,19 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid transparent;
     border-radius: 30px;
 }
-.possibility-nav__tab--active
+.possibility-nav__tab a:hover
+{
+    color: #fff;
+    background: #10abd2;
+}
+.possibility-nav__tab--active a
 {
     border-color: #5db7d8;
+}
+.possibility-nav__tab--active a:hover
+{
+    color: #10abd2;
+    background: transparent;
 }
 .possibility-promo
 {
@@ -31207,13 +31240,35 @@ Styles for filter block on consultations, clinics and docs pages
 {
     width: 100%;
 }
+.possibility-about .container
+{
+    font-size: 0;
+}
+.possibility-about__text,
+.possibility-mock-up,
+.digitizing-recommendation__column,
+.digitizing-recommendation__section
+{
+    display: inline-block;
+    float: none;
+}
+.possibility-mock-up,
+.digitizing-recommendation__column
+{
+    vertical-align: bottom;
+}
+.possibility-about__text,
+.digitizing-recommendation__section
+{
+    vertical-align: top;
+}
 .digitizing-promo
 {
     position: relative;
 
     overflow: hidden;
 
-    min-width: 1200px;
+    min-width: 1221px;
     min-height: 455px;
     padding-top: 62px;
 
@@ -31293,7 +31348,7 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .documents-processing
 {
-    min-width: 1200px;
+    min-width: 1221px;
     padding: 50px 0 60px;
 
     text-align: center;
@@ -31455,7 +31510,7 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .processing-contact
 {
-    min-width: 1200px;
+    min-width: 1221px;
     padding: 30px 0 35px;
 
     text-align: center;
@@ -31529,13 +31584,18 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background: #4cb1ba;
 }
+.processing-registration__link:focus
+{
+    color: #fff;
+    background: #4cb1ba;
+}
 .digitizing-recommendation
 {
     position: relative;
 
     overflow: hidden;
 
-    min-width: 1200px;
+    min-width: 1221px;
     min-height: 600px;
     padding: 55px 0 61px;
     padding-bottom: 0;
@@ -31641,6 +31701,149 @@ Styles for filter block on consultations, clinics and docs pages
     background: #4cb1ba;
 }
 .digitizing-recommendation__link:active
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.profile-section
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    padding: 55px 0 61px;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.profile-section__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+
+    position: relative;
+
+    margin-bottom: 66px;
+
+    text-align: center;
+    letter-spacing: -1px;
+}
+.profile-section__title--label
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 18px;
+
+    position: absolute;
+    top: -5px;
+
+    padding-left: 5px;
+
+    text-transform: uppercase;
+
+    color: #0b9bd1;
+}
+.profile-section__mock-up-wrapper
+{
+    position: absolute;
+    z-index: 1;
+
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+.profile-section__mock-up
+{
+    position: relative;
+
+    width: 325px;
+    height: 550px;
+    margin-left: 73px;
+    padding: 80px 20px 0 20px;
+
+    background: url(../img/iphone-mock-up6.png) no-repeat top center;
+}
+.profile-section__mock-up_image
+{
+    position: relative;
+    bottom: -2px;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #000;
+}
+.profile-section__mock-up_image img
+{
+    width: 100%;
+}
+.profile-section__notification
+{
+    padding-top: 70px;
+}
+.profile-save__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 30px;
+    padding-top: 35px;
+
+    letter-spacing: -1px;
+}
+.profile-save__text
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -.3px;
+}
+.profile-registration
+{
+    padding: 39px 0;
+
+    text-align: center;
+}
+.profile-registration__link
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    min-width: 300px;
+    padding: 15px 12px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #5db7d8;
+}
+.profile-registration__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.profile-registration__link:focus
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.profile-registration__link:active
 {
     color: #fff;
     background: #4cb1ba;
@@ -32180,14 +32383,14 @@ Styles for filter block on consultations, clinics and docs pages
 
     outline: none!important;
 }
-
-.operator-scan__img-block {
+.operator-scan__img-block
+{
     position: relative;
 
     margin-bottom: 25px;
 }
-
-.operator-scan__control {
+.operator-scan__control
+{
     font-size: 0;
 
     position: absolute;
@@ -32200,25 +32403,25 @@ Styles for filter block on consultations, clinics and docs pages
 
     opacity: .5;
 }
-
 .operator-scan__control:hover,
-.operator-scan__control:focus {
+.operator-scan__control:focus
+{
     opacity: 1;
 }
-
-.operator-scan__control--prev {
+.operator-scan__control--prev
+{
     left: -95px;
 
     background: url(../img/operator-slider-prev-arrow.png) no-repeat;
 }
-
-.operator-scan__control--next {
+.operator-scan__control--next
+{
     right: -95px;
 
     background: url(../img/operator-slider-next-arrow.png) no-repeat;
 }
-
-.operator-scan--left .operator-scan__control {
+.operator-scan--left .operator-scan__control
+{
     position: relative;
     top: 35%;
 
@@ -32229,27 +32432,27 @@ Styles for filter block on consultations, clinics and docs pages
 
     opacity: .9;
 }
-
 .operator-scan--left .operator-scan__control:hover,
-.operator-scan--left .operator-scan__control:focus {
+.operator-scan--left .operator-scan__control:focus
+{
     opacity: 1;
 }
-
-.operator-scan--left .operator-scan__control--prev {
+.operator-scan--left .operator-scan__control--prev
+{
     left: 0;
 
     background: url(../img/operator-slider-prev-arrow.png) no-repeat;
     background-size: 14px 40px;
 }
-
-.operator-scan--left .operator-scan__control--next {
+.operator-scan--left .operator-scan__control--next
+{
     right: 0;
 
     background: url(../img/operator-slider-next-arrow.png) no-repeat;
     background-size: 14px 40px;
 }
-
-.operator-scan__img {
+.operator-scan__img
+{
     font-size: 0;
 }
 .operator-scan-panel
@@ -33196,7 +33399,7 @@ Styles for filter block on consultations, clinics and docs pages
     height: 170px;
 
     background: -webkit-linear-gradient(90deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
-    background: linear-gradient(0deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
+    background:         linear-gradient(0deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
 }
 .health-graphs__bar
 {
