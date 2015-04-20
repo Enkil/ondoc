@@ -30176,7 +30176,7 @@ Styles for filter block on consultations, clinics and docs pages
     width: 100%;
     height: 100%;
 
-    background: #f3f6f4;
+    background: rgba(243, 246, 244, .95);
 }
 .popup-login__body
 {
