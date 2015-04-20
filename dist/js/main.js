@@ -14332,11 +14332,11 @@ $(document).ready(function() {
     });
 
 
-     $('.monitoring-widget__special .monitoring-widget__save').click(function(event){
+    $('.monitoring-widget__special .monitoring-widget__save').click(function (event) {
         event.preventDefault();
-        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special"); 
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special");
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
-         $(this).parents('.monitoring-widget').find('.monitoring-widget__shedule--add-value').addClass('monitoring-widget__shedule--add-value--special'); 
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__shedule--add-value').addClass('monitoring-widget__shedule--add-value--special');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
     });

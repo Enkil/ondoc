@@ -12410,7 +12410,7 @@ html
 }
 .container-huge
 {
-    width: 1200px!important;
+    width: 1200px !important;
     margin: 0 auto;
 }
 .container-fluid
@@ -27509,13 +27509,14 @@ a
 {
     display: inline-block;
 
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 11px;
     margin-right: 5px;
 
     content: '';
+    vertical-align: middle;
 
-    background: url(../img/icon-doc-subway.png);
+    background: url(../img/icon-doc-subway.png) no-repeat;
 }
 .docs__ondoc-support
 {
@@ -33476,6 +33477,10 @@ Styles for filter block on consultations, clinics and docs pages
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
+
+    display: inline-block;
+
+    margin-bottom: 150px;
 }
 .health-settings__link:before
 {
