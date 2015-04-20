@@ -18842,6 +18842,12 @@ Widgets
 
     background: url('../img/icon-cap--period.png') no-repeat;
 }
+.monitoring-widget__shedule--add-value--special
+{
+    margin-top: 10px;
+    padding: 0;
+    padding-bottom: 20px;
+}
 .sidebar-profile
 {
     padding: 0 0 18px;
