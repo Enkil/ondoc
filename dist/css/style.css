@@ -23320,11 +23320,18 @@ a
 }
 .btn--blue
 {
+    outline: none;
     background: #10abd2;
 }
 .btn--blue:hover
 {
     color: #fff !important;
+    outline: none;
+}
+
+.btn--blue:focus {
+    color: #fff !important;
+    outline: none !important;
 }
 .btn:hover
 {

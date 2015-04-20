@@ -18704,11 +18704,18 @@ a {
 }
 
 .btn--blue {
+    outline: 0;
     background: #10abd2
 }
 
 .btn--blue:hover {
-    color: #fff !important
+    color: #fff !important;
+    outline: 0
+}
+
+.btn--blue:focus {
+    color: #fff !important;
+    outline: 0 !important
 }
 
 .btn:hover {
