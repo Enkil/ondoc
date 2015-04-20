@@ -32180,6 +32180,78 @@ Styles for filter block on consultations, clinics and docs pages
 
     outline: none!important;
 }
+
+.operator-scan__img-block {
+    position: relative;
+
+    margin-bottom: 25px;
+}
+
+.operator-scan__control {
+    font-size: 0;
+
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+
+    width: 41px;
+    height: 122px;
+    margin-top: -16px;
+
+    opacity: .5;
+}
+
+.operator-scan__control:hover,
+.operator-scan__control:focus {
+    opacity: 1;
+}
+
+.operator-scan__control--prev {
+    left: -95px;
+
+    background: url(../img/operator-slider-prev-arrow.png) no-repeat;
+}
+
+.operator-scan__control--next {
+    right: -95px;
+
+    background: url(../img/operator-slider-next-arrow.png) no-repeat;
+}
+
+.operator-scan--left .operator-scan__control {
+    position: relative;
+    top: 35%;
+
+    display: inline-block;
+
+    width: 14px;
+    height: 40px;
+
+    opacity: .9;
+}
+
+.operator-scan--left .operator-scan__control:hover,
+.operator-scan--left .operator-scan__control:focus {
+    opacity: 1;
+}
+
+.operator-scan--left .operator-scan__control--prev {
+    left: 0;
+
+    background: url(../img/operator-slider-prev-arrow.png) no-repeat;
+    background-size: 14px 40px;
+}
+
+.operator-scan--left .operator-scan__control--next {
+    right: 0;
+
+    background: url(../img/operator-slider-next-arrow.png) no-repeat;
+    background-size: 14px 40px;
+}
+
+.operator-scan__img {
+    font-size: 0;
+}
 .operator-scan-panel
 {
     position: absolute;
