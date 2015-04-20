@@ -27477,16 +27477,9 @@ a
 {
     width: 45px;
     height: 45px;
-    padding: 8px;
+    padding: 1px;
 
     border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 50%;
-}
-.docs__clinic-logo img
-{
-    width: 28px;
-    height: 28px;
-
     border-radius: 50%;
 }
 .docs__clinic-name
