@@ -10439,7 +10439,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-         -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -12404,8 +12403,8 @@ html
 
     min-height: 100%;
 }
-
-.container {
+.container
+{
     min-width: 1000px !important;
 }
 .container-fluid
@@ -31207,6 +31206,24 @@ Styles for filter block on consultations, clinics and docs pages
 {
     width: 100%;
 }
+.possibility-about .container
+{
+    font-size: 0;
+}
+.possibility-about__text,
+.possibility-mock-up
+{
+    display: inline-block;
+    float: none;
+}
+.possibility-mock-up
+{
+    vertical-align: bottom;
+}
+.possibility-about__text
+{
+    vertical-align: top;
+}
 .digitizing-promo
 {
     position: relative;
@@ -33124,7 +33141,7 @@ Styles for filter block on consultations, clinics and docs pages
     height: 170px;
 
     background: -webkit-linear-gradient(90deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
-    background: linear-gradient(0deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
+    background:         linear-gradient(0deg, #33c919 0, #f2bc3c 50%, #ee1717 100%);
 }
 .health-graphs__bar
 {
