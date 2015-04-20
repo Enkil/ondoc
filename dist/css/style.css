@@ -12407,10 +12407,19 @@ html
 {
     min-width: 1000px !important;
 }
+.container-huge
+{
+    width: 1200px!important;
+    margin: 0 auto;
+}
 .container-fluid
 {
     width: 100%!important;
     min-width: 1000px !important;
+}
+.container-fluid__huge
+{
+    min-width: 1200px !important;
 }
 .inner-body
 {
@@ -29251,7 +29260,7 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .container-fluid.footer-external
 {
-    min-width: 1200px !important;
+    min-width: 1221px !important;
 }
 .ml-title
 {
@@ -31235,16 +31244,20 @@ Styles for filter block on consultations, clinics and docs pages
     font-size: 0;
 }
 .possibility-about__text,
-.possibility-mock-up
+.possibility-mock-up,
+.digitizing-recommendation__column,
+.digitizing-recommendation__section
 {
     display: inline-block;
     float: none;
 }
-.possibility-mock-up
+.possibility-mock-up,
+.digitizing-recommendation__column
 {
     vertical-align: bottom;
 }
-.possibility-about__text
+.possibility-about__text,
+.digitizing-recommendation__section
 {
     vertical-align: top;
 }
@@ -31254,7 +31267,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1200px;
+    min-width: 1221px;
     min-height: 455px;
     padding-top: 62px;
 
@@ -31334,7 +31347,7 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .documents-processing
 {
-    min-width: 1200px;
+    min-width: 1221px;
     padding: 50px 0 60px;
 
     text-align: center;
@@ -31496,7 +31509,7 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .processing-contact
 {
-    min-width: 1200px;
+    min-width: 1221px;
     padding: 30px 0 35px;
 
     text-align: center;
@@ -31581,7 +31594,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1200px;
+    min-width: 1221px;
     min-height: 600px;
     padding: 55px 0 61px;
     padding-bottom: 0;
