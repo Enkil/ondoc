@@ -26001,6 +26001,10 @@ a {
     font-size: 0
 }
 
+.operator-scan__img img {
+    width: 100%
+}
+
 .operator-scan-panel {
     position: absolute;
     z-index: 100;

@@ -32463,6 +32463,10 @@ Styles for filter block on consultations, clinics and docs pages
 {
     font-size: 0;
 }
+
+.operator-scan__img img {
+    width: 100%;
+}
 .operator-scan-panel
 {
     position: absolute;
