@@ -4,8 +4,12 @@
   padding-bottom: 30px;
 }
 
+.possibility.container {
+  min-width: 1200px !important;
+}
+
 .possibility-nav {
-  &__tab {
+  &__tab a {
     .gotham-m;
     display: inline-block;
     font-size: 18px;
@@ -17,10 +21,18 @@
     border: 1px solid transparent;
     transition: 0.4s ease all;
     text-align: center;
+    &:hover {
+      color: #fff;
+      background: #10abd2;
+    }
   }
 
-  &__tab--active {
+  &__tab--active a {
     border-color: @blue-color;
+    &:hover {
+      color: #10abd2;
+      background: transparent;
+    }
   }
 }
 

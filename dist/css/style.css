@@ -29243,6 +29243,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/master.png') no-repeat;
 }
+.container-fluid.footer-external
+{
+    min-width: 1200px !important;
+}
 .ml-title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -31031,7 +31035,11 @@ Styles for filter block on consultations, clinics and docs pages
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.possibility-nav__tab
+.possibility.container
+{
+    min-width: 1200px !important;
+}
+.possibility-nav__tab a
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -31051,9 +31059,19 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid transparent;
     border-radius: 30px;
 }
-.possibility-nav__tab--active
+.possibility-nav__tab a:hover
+{
+    color: #fff;
+    background: #10abd2;
+}
+.possibility-nav__tab--active a
 {
     border-color: #5db7d8;
+}
+.possibility-nav__tab--active a:hover
+{
+    color: #10abd2;
+    background: transparent;
 }
 .possibility-promo
 {
