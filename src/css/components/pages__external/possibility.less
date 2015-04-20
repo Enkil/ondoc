@@ -505,10 +505,111 @@
   }
 }
 
+.profile-section {
+  min-width: 1200px;
+  overflow: hidden;
+  padding: 55px 0 61px;
+  position: relative;
+  background: url(../img/background-section.jpg) repeat-x;
+  border-bottom: 1px solid #ccc;
 
+  &__title {
+    .gotham-m;
+      margin-bottom: 66px;
+      font-size: 40px;
+      line-height: 49px;
+    position: relative;
+    letter-spacing: -1px;
+    text-align: center;
+  }
 
+  &__title--label {
+    .gotham-l;
+    top: -5px;
+    color: #0b9bd1;
+    font-size: 18px;
+    position: absolute;
+    padding-left: 5px;
+    text-transform: uppercase;
+  }
 
+  &__mock-up-wrapper {
+      display: inline-block;
+  vertical-align: bottom;
+  position: absolute;
+  z-index: 1;
+  }
 
+  &__mock-up {
+      width: 325px;
+      height: 550px;
+      margin-left: 73px;
+      position: relative;
+      background: url(../img/iphone-mock-up6.png) no-repeat top center;
+      padding: 80px 20px 0 20px;
+  }
 
+  &__mock-up_image {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      bottom: -2px;
+      border: 2px solid #000;
+      img { width: 100%; }
+  }
 
+  &__notification {
+      padding-top: 70px;
+  }
+}
+
+.profile-save {
+  &__title {
+      .gotham-m;
+      padding-top: 35px;
+        margin-bottom: 30px;
+        font-size: 30px;
+      line-height: 34px;
+      letter-spacing: -1px;
+  }
+  &__text {
+    .gotham-l;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.profile-registration {
+  text-align: center;
+  padding: 39px 0;
+  &__link {
+    .gotham-b;
+    color: @white-color;
+    font-size: 22px;
+    min-width: 300px;
+    text-align: center;
+    line-height: 24px;
+    padding: 15px 12px;
+    border-radius: 30px;
+    display: inline-block;
+    background: @blue-color;
+    transition: 0.5s ease background;
+    &:hover {
+      background: @green-color;
+      color: @white-color;
+    }
+    &:focus {
+      background: @green-color;
+      color: @white-color;
+    }
+    &:active {
+      background: @green-color;
+      color: @white-color;
+    }
+  }
+
+}
 
