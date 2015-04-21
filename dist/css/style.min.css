@@ -26924,13 +26924,21 @@ a {
     background-color: #f7f7f7
 }
 
+.datepicker__table-head td {
+    padding-top: 3px
+}
+
 .datepicker__table-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
+    display: inline-block;
+    width: 14%;
+    height: 28px;
     cursor: pointer;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    text-align: center;
     vertical-align: bottom
 }
 
@@ -26943,9 +26951,7 @@ a {
 }
 
 .datepicker__table-item--active {
-    display: inline-block;
     width: 28px;
-    height: 28px;
     color: #fff !important;
     border-radius: 50%;
     background-color: #5db7d8
@@ -26956,8 +26962,8 @@ a {
 }
 
 .datepicker__table-row {
-    line-height: 33px;
-    height: 38px;
+    line-height: 30px;
+    height: 35px;
     border-bottom: 1px solid #e5e5e5
 }
 
