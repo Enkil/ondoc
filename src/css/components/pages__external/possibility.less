@@ -154,21 +154,27 @@
   font-size: 0;
 }
 
+// styles for aligned to bottom sections
+
 .possibility-about__text,
 .possibility-mock-up,
 .digitizing-recommendation__column,
-.digitizing-recommendation__section {
+.digitizing-recommendation__section,
+.reminders-section__column,
+.reminders-section__text-block {
   display: inline-block;
   float: none;
 }
 
 .possibility-mock-up,
-.digitizing-recommendation__column {
+.digitizing-recommendation__column,
+.reminders-section__column {
   vertical-align: bottom;
 }
 
 .possibility-about__text,
-.digitizing-recommendation__section {
+.digitizing-recommendation__section,
+.reminders-section__text-block {
   vertical-align: top;
 }
 
@@ -618,4 +624,108 @@
   }
 
 }
+
+.reminders-section {
+    min-width: 1221px;
+    min-height: 530px;
+    padding-top: 73px;
+    padding-bottom: 46px;
+    overflow: hidden;
+    position: relative;
+    background: url(../img/background-section.jpg) repeat-x;
+    border-bottom: 1px solid #ccc;
+    &__title {
+        .gotham-m;
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: -1px;
+    }
+
+    &__text {
+      .gotham-l;
+      font-size: 16px;
+      line-height: 19.5px;
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+    }
+    &__mock-up-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1;
+    position: absolute;
+    top: -381px;
+    }
+
+    &__mock-up {
+      width: 325px;
+      height: 550px;
+      margin-left: 73px;
+      position: relative;
+      background: url(../img/iphone-mock-up6.png) no-repeat top center;
+      padding: 80px 20px 0 20px;
+    }
+
+    &__mock-up_image {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      bottom: -2px;
+      border: 2px solid #000;
+      img {
+        width: 100%;
+      }
+    } 
+
+    &__text-block--special {
+      padding-top: 98px;
+    }
+
+    &__link {
+    .gotham-b;
+    color: @white-color;
+    font-size: 22px;
+    min-width: 300px;
+    text-align: center;
+    line-height: 24px;
+    padding: 15px 12px;
+    border-radius: 30px;
+    display: inline-block;
+    background: @blue-color;
+    transition: 0.5s ease background;
+    &:hover {
+      background: @green-color;
+      color: @white-color;
+    }
+    &:focus {
+      background: @green-color;
+      color: @white-color;
+    }
+    &:active {
+      background: @green-color;
+      color: @white-color;
+    }
+  }
+
+  &__p-access {
+    margin-top: 58px;
+  }
+
+}
+
+.reminders {
+  &__title {
+      .gotham-m;
+      text-align: center;
+      margin-bottom: 88px;
+      font-size: 40px;
+      line-height: 49px;
+      margin-bottom: 55px;
+      position: relative;
+      letter-spacing: -1px;
+  }
+}
+
+
 

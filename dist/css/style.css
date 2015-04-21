@@ -31242,18 +31242,22 @@ Styles for filter block on consultations, clinics and docs pages
 .possibility-about__text,
 .possibility-mock-up,
 .digitizing-recommendation__column,
-.digitizing-recommendation__section
+.digitizing-recommendation__section,
+.reminders-section__column,
+.reminders-section__text-block
 {
     display: inline-block;
     float: none;
 }
 .possibility-mock-up,
-.digitizing-recommendation__column
+.digitizing-recommendation__column,
+.reminders-section__column
 {
     vertical-align: bottom;
 }
 .possibility-about__text,
-.digitizing-recommendation__section
+.digitizing-recommendation__section,
+.reminders-section__text-block
 {
     vertical-align: top;
 }
@@ -31842,6 +31846,136 @@ Styles for filter block on consultations, clinics and docs pages
 {
     color: #fff;
     background: #4cb1ba;
+}
+.reminders-section
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1221px;
+    min-height: 530px;
+    padding-top: 73px;
+    padding-bottom: 46px;
+
+    border-bottom: 1px solid #ccc;
+    background: url(../img/background-section.jpg) repeat-x;
+}
+.reminders-section__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: -1px;
+}
+.reminders-section__text
+{
+    font-family: 'GothamProLight', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -.3px;
+}
+.reminders-section__mock-up-wrapper
+{
+    position: absolute;
+    z-index: 1;
+    top: -381px;
+
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+.reminders-section__mock-up
+{
+    position: relative;
+
+    width: 325px;
+    height: 550px;
+    margin-left: 73px;
+    padding: 80px 20px 0 20px;
+
+    background: url(../img/iphone-mock-up6.png) no-repeat top center;
+}
+.reminders-section__mock-up_image
+{
+    position: relative;
+    bottom: -2px;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #000;
+}
+.reminders-section__mock-up_image img
+{
+    width: 100%;
+}
+.reminders-section__text-block--special
+{
+    padding-top: 98px;
+}
+.reminders-section__link
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+
+    display: inline-block;
+
+    min-width: 300px;
+    padding: 15px 12px;
+
+    -webkit-transition: .5s ease background;
+            transition: .5s ease background;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background: #5db7d8;
+}
+.reminders-section__link:hover
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.reminders-section__link:focus
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.reminders-section__link:active
+{
+    color: #fff;
+    background: #4cb1ba;
+}
+.reminders-section__p-access
+{
+    margin-top: 58px;
+}
+.reminders__title
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+
+    position: relative;
+
+    margin-bottom: 88px;
+    margin-bottom: 55px;
+
+    text-align: center;
+    letter-spacing: -1px;
 }
 .medcard-errors__title
 {
