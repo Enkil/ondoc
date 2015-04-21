@@ -26760,7 +26760,7 @@ a
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
-    margin-bottom: 0;
+    margin-bottom: 5px;
 
     letter-spacing: -.013em;
     text-transform: uppercase;
@@ -26772,7 +26772,7 @@ a
     font-size: 22px;
     line-height: 25px;
 
-    margin: 11px 0 5px 0;
+    margin: 15px 0 20px 0;
 
     letter-spacing: -.019em;
 }
@@ -26851,7 +26851,7 @@ a
 }
 .clinics-modal__place-info
 {
-    padding-bottom: 20px;
+    padding-bottom: 28px;
 
     letter-spacing: -.013em;
 }
