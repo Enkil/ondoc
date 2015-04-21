@@ -10439,7 +10439,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -28685,6 +28684,7 @@ a
 .contact-info
 {
     width: 100%;
+    min-width: 1221px !important;
     margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -28732,6 +28732,7 @@ a
 }
 .contact-form
 {
+    min-width: 1221px;
     padding: 30px 0;
 
     background-color: #fff;
@@ -28910,7 +28911,7 @@ a
 }
 .contact-map
 {
-    width: 100%;
+    min-width: 1221px;
 }
 /*
 Styles for filter block on consultations, clinics and docs pages
@@ -33405,7 +33406,6 @@ Styles for filter block on consultations, clinics and docs pages
         margin-right: 5px;
     }
 }
-
 .health-question__btn--why:hover,
 .health-question__btn--why:focus,
 .health-question__btn--why:active
