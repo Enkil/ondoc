@@ -10439,7 +10439,6 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
-         -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -15766,14 +15765,13 @@ External pages buttons
 
     cursor: pointer;
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
 
     color: #8d8d8d;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 20px;
     outline: none!important;
 }
-
 .medcard-spec__item:hover,
 .medcard-spec__item:focus,
 .medcard-spec__item:active,
@@ -17989,8 +17987,8 @@ Widgets
 {
     margin-top: -33px !important;
 }
-
-.monitoring-widget__value--error-special2 {
+.monitoring-widget__value--error-special2
+{
     margin-top: -20px !important;
 }
 .monitoring-widget__title
@@ -23324,8 +23322,8 @@ a
     color: #fff !important;
     outline: none;
 }
-
-.btn--blue:focus {
+.btn--blue:focus
+{
     color: #fff !important;
     outline: none !important;
 }
@@ -31126,7 +31124,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1200px;
+    min-width: 1221px;
     padding: 55px 0 0 0;
 
     border-bottom: 1px solid #ccc;
@@ -31708,7 +31706,7 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1200px;
+    min-width: 1221px;
     padding: 55px 0 61px;
 
     border-bottom: 1px solid #ccc;
@@ -32452,8 +32450,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     font-size: 0;
 }
-
-.operator-scan__img img {
+.operator-scan__img img
+{
     width: 100%;
 }
 .operator-scan-panel
@@ -33628,8 +33626,8 @@ Styles for filter block on consultations, clinics and docs pages
     outline: none!important;
     background-color: #f7f7f7;
 }
-
-.datepicker__table-head td {
+.datepicker__table-head td
+{
     padding-top: 3px;
 }
 .datepicker__table-item
