@@ -27683,6 +27683,7 @@ a
 .docs-modal__close
 {
     position: absolute;
+    z-index: 10;
     top: 10px;
     right: 8px;
 
