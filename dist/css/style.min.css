@@ -26601,7 +26601,7 @@ a {
     background-color: rgba(255, 255, 255, .8)
 }
 
-.health-question__btn:hover {
+.health-question__btn:active, .health-question__btn:focus, .health-question__btn:hover {
     color: #f5c55e;
     background-color: rgba(255, 255, 255, .9)
 }
