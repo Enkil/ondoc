@@ -12407,17 +12407,31 @@ html
 {
     min-width: 1000px !important;
 }
-.container-huge
-{
-    width: 1200px !important;
-    margin: 0 auto;
-}
 .container-fluid
 {
     width: 100%!important;
     min-width: 1000px !important;
 }
-.container-fluid__huge
+@media (min-width: 768px)
+{
+    .container-huge
+    {
+        width: 736px !important;
+    }
+}
+@media (min-width: 992px)
+{
+    .container-huge
+    {
+        width: 956px !important;
+    }
+}
+.container-huge
+{
+    width: 1200px !important;
+    margin: 0 auto;
+}
+.container-fluid--huge
 {
     min-width: 1200px !important;
 }
