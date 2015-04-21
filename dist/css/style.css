@@ -12832,6 +12832,7 @@ a:focus
     top: 55px;
     right: 0;
 
+    width: 150px;
     padding: 15px 10px 20px 10px;
 
     border-radius: 10px;
@@ -12842,7 +12843,7 @@ a:focus
 {
     position: absolute;
     top: -14px;
-    left: 23px;
+    right: 16px;
 
     content: '';
 
@@ -33405,7 +33406,6 @@ Styles for filter block on consultations, clinics and docs pages
         margin-right: 5px;
     }
 }
-
 .health-question__btn--why:hover,
 .health-question__btn--why:focus,
 .health-question__btn--why:active
