@@ -10439,6 +10439,7 @@ a.thumbnail.active
 .progress-bar.active
 {
     -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
             animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success
@@ -33404,7 +33405,10 @@ Styles for filter block on consultations, clinics and docs pages
         margin-right: 5px;
     }
 }
-.health-question__btn--why:hover
+
+.health-question__btn--why:hover,
+.health-question__btn--why:focus,
+.health-question__btn--why:active
 {
     color: rgba(255, 255, 255, .9);
     background-color: transparent;
