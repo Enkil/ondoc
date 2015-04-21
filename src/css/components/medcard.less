@@ -159,7 +159,7 @@
 
 // BLOCK -> Select specialisation Pop-Up
 .medcard-spec{
-  width: 870px;
+  width: 1015px;
   height: 435px;
   background-color: @white-color;
   border-radius: 17px;
@@ -242,30 +242,20 @@
   &__item{
     .gotham;
     display: inline-block;
-    color: @grey-color-2;
+    color: @grey-color;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px;
     padding: 7px 18px 6px 20px;
-    border: 1px solid @grey-color-3;
+    border: 1px solid @grey-color-2;
     border-radius: 20px;
     margin-top: 3px;
     margin-bottom: 3px;
+    transition: all .5s ease;
 
-    &:hover{
-      background-color: lighten(@grey-color-3, 2);
+    &:hover, &:focus, &:active, &--checked {
+      background-color: #cfeef6;
       color: @black-color;
-    }
-    &:active{
-      background-color: @grey-color-3;
-      color: @black-color;
-    }
-    &:focus{
-      background-color: @grey-color-3;
-      color: @black-color;
-    }
-    &--checked{
-      background-color: @grey-color-3;
-      color: @black-color;
+      border: 1px solid #cfeef6;
     }
   }
 

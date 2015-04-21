@@ -12830,7 +12830,7 @@ a:active, a:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 870px;
+    width: 1015px;
     height: 435px;
     margin: auto;
     padding: 22px 15px 15px 40px;
@@ -12898,26 +12898,24 @@ a:active, a:focus {
 
 .medcard-spec__item {
     font-family: Gotham, Arial, sans-serif !important;
-    font-size: 14px;
+    font-size: 18px;
     display: inline-block;
     margin-top: 3px;
     margin-bottom: 3px;
     padding: 7px 18px 6px 20px;
     cursor: pointer;
-    color: rgba(0, 0, 0, .2);
-    border: 1px solid #f2f2f2;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    color: #8d8d8d;
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 20px;
     outline: 0 !important
 }
 
-.medcard-spec__item:hover {
+.medcard-spec__item--checked, .medcard-spec__item:active, .medcard-spec__item:focus, .medcard-spec__item:hover {
     color: #000;
-    background-color: #f7f7f7
-}
-
-.medcard-spec__item--checked, .medcard-spec__item:active, .medcard-spec__item:focus {
-    color: #000;
-    background-color: #f2f2f2
+    border: 1px solid #cfeef6;
+    background-color: #cfeef6
 }
 
 .medcard-spec__btn {
