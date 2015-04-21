@@ -17997,6 +17997,10 @@ Widgets
 {
     margin-top: -33px !important;
 }
+
+.monitoring-widget__value--error-special2 {
+    margin-top: -20px !important;
+}
 .monitoring-widget__title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;

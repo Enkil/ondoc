@@ -1,10 +1,6 @@
-/*
-JS for monitoring page
- */
+/*  JS for monitoring page  */
 
-/*
-Toggle display: none; for period dropdown
- */
+/*  Toggle display: none; for period dropdown   */
 
 $(document).ready(function() {
 
@@ -16,9 +12,7 @@ $(document).ready(function() {
 });
 
 
-/*
- Change state to Add value and return to graph
- */
+/*  Change state to Add value and return to graph   */
 
 $(document).ready(function() {
 
@@ -54,9 +48,7 @@ $(document).ready(function() {
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
     });
 
-    /*
-    Special styles for error for sugar  
-     */
+    /*  Special styles for error for sugar  */
 
      $('.monitoring-widget__sugar .monitoring-widget__save').click(function(event){
         event.preventDefault();
@@ -66,9 +58,7 @@ $(document).ready(function() {
         $(this).parents('.monitoring-widget__sugar').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
     });
 
-     /*
-    Special styles for error for cholesterol  
-     */
+    /* Special styles for error for cholesterol    */
 
      $('.monitoring-widget__cholesterol .monitoring-widget__save').click(function(event){
         event.preventDefault();
@@ -80,11 +70,21 @@ $(document).ready(function() {
     });
 
 
+    //$('.monitoring-widget__special .monitoring-widget__save').click(function (event) {
+    //    event.preventDefault();
+    //    $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special");
+    //    $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
+    //    $(this).parents('.monitoring-widget').find('.monitoring-widget__shedule--add-value').addClass('monitoring-widget__shedule--add-value--special');
+    //    $(this).parents('.monitoring-widget').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
+    //    $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
+    //});
+
+    /* Special styles for errors    */
+
     $('.monitoring-widget__special .monitoring-widget__save').click(function (event) {
         event.preventDefault();
-        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special");
-        $(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');
-        $(this).parents('.monitoring-widget').find('.monitoring-widget__shedule--add-value').addClass('monitoring-widget__shedule--add-value--special');
+        $(this).parents('.monitoring-widget').find('.monitoring-widget__value--error').removeClass('display-none').addClass("monitoring-widget__value--error-special2");
+        //$(this).parents('.monitoring-widget').find('.monitoring-widget__value-add').addClass('monitoring-widget__value-add--error');$(this).parents('.monitoring-widget').find('.monitoring-widget__chol-shedule--add-value').addClass('monitoring-widget__chol-shedule--add-value--special');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__values').addClass('monitoring-widget__values--special');
         $(this).parents('.monitoring-widget').find('.monitoring-widget__value-body').addClass('monitoring-widget__value-body--special');
     });
@@ -92,9 +92,7 @@ $(document).ready(function() {
 });
 
 
-/*
-Show tooltips
- */
+/*  Show tooltips   */
 
 $(document).ready(function() {
 
@@ -116,9 +114,7 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip('show')
 });
 
-/*
-Hide tooltips onclick to cross
- */
+/*  Hide tooltips onclick to cross  */
 
 $(document).ready(function() {
 
@@ -129,9 +125,7 @@ $(document).ready(function() {
 
 });
 
-/*
-Toogle state of sugar shedule block items
- */
+/*  Toogle state of sugar shedule block items   */
 $(document).ready(function() {
     $('.monitoring-widget__sugar-shedule-block').click(function(){
         $('.monitoring-widget__sugar-shedule-block--active').removeClass('monitoring-widget__sugar-shedule-block--active');
@@ -139,9 +133,7 @@ $(document).ready(function() {
     });
 });
 
-/*
-Toogle state of cholesterol block items
- */
+/*  Toogle state of cholesterol block items */
 $(document).ready(function() {
     if($('.js-chol-find').length){
         $('.js-chol-find').click(function(event){
