@@ -28205,13 +28205,13 @@ a
 {
     width: 86px;
     height: 86px;
-    margin: 20px auto;
+    margin: 20px auto 15px;
 
     background: url(../img/icon-person-blue.png) no-repeat;
 }
 .steps-modal .user-data
 {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 9px;
 }
 .steps-modal .user-data__sex
@@ -28295,7 +28295,7 @@ a
     display: inline-block;
 
     margin-bottom: 4px;
-    padding: 9px 30px 8px 36px;
+    padding: 7px 30px 8px 36px;
 
     text-decoration: none;
 
@@ -28642,7 +28642,7 @@ a
 {
     width: 89px;
     height: 111px;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
 
     background: url(../img/icon-list-blue.png) no-repeat;
 }
@@ -28650,7 +28650,7 @@ a
 {
     width: 98px;
     height: 98px;
-    margin: 0 auto 50px;
+    margin: 0 auto 45px;
 
     background: url(../img/icon-plus-big.png) no-repeat;
 }
@@ -28658,7 +28658,7 @@ a
 {
     width: 109px;
     height: 109px;
-    margin: 0 auto 35px;
+    margin: 0 auto 25px;
 
     background: url(../img/icon-person-private-blue.png) no-repeat;
 }
@@ -28672,7 +28672,24 @@ a
 }
 .steps-modal__step--second .steps-modal__title
 {
+    margin-bottom: 40px;
     padding-top: 4px;
+}
+.steps-modal__step--third .steps-modal__title
+{
+    margin-bottom: 40px;
+}
+.steps-modal__step--fourth .steps-modal__title
+{
+    margin-bottom: 47px;
+}
+.steps-modal__step--fifth .steps-modal__title
+{
+    margin-bottom: 26px;
+}
+.steps-modal__step--sixth .steps-modal__title
+{
+    margin-bottom: 40px;
 }
 .steps-modal__step--fourth .steps-modal__subtitle,
 .steps-modal__step--fifth .steps-modal__subtitle
