@@ -28675,20 +28675,20 @@ a
     margin-bottom: 40px;
     padding-top: 4px;
 }
-.steps-modal__step--third .steps-modal__title
-{
+
+.steps-modal__step--third .steps-modal__title {
     margin-bottom: 40px;
 }
-.steps-modal__step--fourth .steps-modal__title
-{
+
+.steps-modal__step--fourth .steps-modal__title {
     margin-bottom: 47px;
 }
-.steps-modal__step--fifth .steps-modal__title
-{
+
+.steps-modal__step--fifth .steps-modal__title {
     margin-bottom: 26px;
 }
-.steps-modal__step--sixth .steps-modal__title
-{
+
+.steps-modal__step--sixth .steps-modal__title {
     margin-bottom: 40px;
 }
 .steps-modal__step--fourth .steps-modal__subtitle,
@@ -32111,7 +32111,6 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     border-radius: 25px;
 }
-
 .ml-docs-promo__link--active,
 .ml-docs-promo__link:hover,
 .ml-docs-promo__link:focus {
