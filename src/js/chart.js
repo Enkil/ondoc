@@ -1,6 +1,4 @@
-/*
-Dataset for Highchart.js
- */
+/*  Dataset for Highchart.js    */
 $(document).ready(function() {
 
     if($('#chart').length){

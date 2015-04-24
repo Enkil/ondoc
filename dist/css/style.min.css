@@ -27591,3 +27591,116 @@ a {
 .settings__close:hover {
     opacity: .6
 }
+
+.clinic-directions {
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 870px;
+    height: 435px;
+    margin: auto;
+    padding: 22px 15px 15px 40px;
+    border-radius: 17px;
+    background-color: #fff
+}
+
+.clinic-directions__wrapper {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+.clinic-directions__inner-wrapper {
+    position: relative;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    height: 290px;
+    padding-right: 30px;
+    padding-left: 0;
+    border-bottom: 1px solid #f2f2f2;
+    -ms-overflow-style: none
+}
+
+.clinic-directions__inner-wrapper::-webkit-scrollbar {
+    width: 0
+}
+
+.clinic-directions__inner-wrapper:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    content: ''
+}
+
+.clinic-directions__title {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-size: 17px;
+    z-index: -1;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center
+}
+
+.clinic-directions__item {
+    font-family: Gotham, Arial, sans-serif !important;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 17px;
+    color: #000;
+    outline: 0 !important
+}
+
+.clinic-directions__btn {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-size: 14px;
+    display: inline-block;
+    height: 30px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    padding-right: 28px;
+    padding-left: 28px;
+    color: #5db7d8;
+    border: 1px solid #5db7d8;
+    border-radius: 15px;
+    outline: 0;
+    background-color: #fff
+}
+
+.clinic-directions__btn:hover {
+    color: #fff;
+    background: #5db7d8
+}
+
+.clinic-directions__btn:active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.clinic-directions__close {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat
+}
+
+.clinic-directions__close:hover {
+    opacity: .7
+}
