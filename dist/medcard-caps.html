@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LK-main</title>
+    <title>ONDOC</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="css/style.min.css" />
 
-    <link rel="icon" type="image/png" href="favicon.ico.png" />
+    <link rel="icon" type="image/png" href="img/favicon.ico.png" />
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -337,89 +337,97 @@
 
                 </div>
 
-                <!-- Widgets settings -->
-                <div class="row">
-                    <div class="col-xs-36">
+                <!-- Settings -->
+<div class="col-xs-36 health-settings">
+    <a class="health-settings__link" href="#">Настроить виджеты</a>
 
-                        <div class="settings">
-                            <a href="#" class="icon-setting">Настроить виджеты</a>
+    <div class="settings display-none">
+
+    <div class="settings__bg"></div>
+
+    <div class="settings__modal">
 
 
-                            <!-- Widgets settings -->
-                            <div class="settings-block display-none">
-                                <div class="background"></div>
-                                <div class="widgets-block">
-                                    <form action="">
-                                        <p class="head">Настройка виджетов</p>
+        <form action="">
 
-                                        <div class="items-block">
+            <p class="settings__title">Настройка виджетов</p>
 
-                                            <div class="item">
-                                                <input type="checkbox" id="check1" checked/>
-                                                <label for="check1">
-                                                    <i class="icon icon-pulse"></i>
-                                                    <span>Пульс</span>
-                                                </label>
-                                            </div>
+            <div class="settings__body">
 
-                                            <div class="item">
-                                                <input type="checkbox" id="check2" checked/>
-                                                <label for="check2">
-                                                    <i class="icon icon-pressure"></i>
-                                                    <span>Давление</span>
-                                                </label>
-                                            </div>
-
-                                            <div class="item">
-                                                <input type="checkbox" id="check3"/>
-                                                <label for="check3">
-                                                    <i class="icon icon-weight"></i>
-                                                    <span>Вес</span>
-                                                </label>
-                                            </div>
-
-                                            <div class="item">
-                                                <input type="checkbox" id="check4" checked/>
-                                                <label for="check4">
-                                                    <i class="icon icon-temp"></i>
-                                                    <span>Температура</span>
-                                                </label>
-                                            </div>
-
-                                            <div class="item item-disabled">
-                                                <input type="checkbox" id="check5" disabled/>
-                                                <label for="check5">
-                                                    <i class="icon icon-sugar"></i>
-                                                    <span>Сахар</span>
-                                                </label>
-                                            </div>
-
-                                            <div class="item">
-                                                <input type="checkbox" id="check6"/>
-                                                <label for="check6">
-                                                    <i class="icon icon-cholesterol"></i>
-                                                    <span>Холестерин</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <!-- Submit form -->
-                                        <div class="row">
-                                            <div class="col-xs-36 text-center">
-                                                <input type="submit" class="widget-btn widget-btn--submit-no" value="Отмена"/>
-                                                <input type="submit" class="widget-btn widget-btn--submit-yes" value="OK"/>
-                                            </div>
-                                        </div>
-
-                                        <span class="icon-exit"></span>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-1" class="settings__input" checked/>
+                    <label for="check-1" class="settings__label">
+                        <i class="settings__icon settings__icon--pulse"></i>
+                        <span class="settings__name">Пульс</span>
+                    </label>
                 </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-2" class="settings__input" checked/>
+                    <label for="check-2" class="settings__label">
+                        <i class="settings__icon settings__icon--pressure"></i>
+                        <span class="settings__name">Давление</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-3" class="settings__input"/>
+                    <label for="check-3" class="settings__label">
+                        <i class="settings__icon settings__icon--weight"></i>
+                        <span class="settings__name">Вес</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-4" class="settings__input" checked/>
+                    <label for="check-4" class="settings__label">
+                        <i class="settings__icon settings__icon--temp"></i>
+                        <span class="settings__name">Температура</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item settings__item--disabled">
+                    <input type="checkbox" id="check-5" class="settings__input" disabled/>
+                    <label for="check-5" class="settings__label">
+                        <i class="settings__icon settings__icon--sugar"></i>
+                        <span class="settings__name">Сахар</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-6" class="settings__input"/>
+                    <label for="check-6" class="settings__label">
+                        <i class="settings__icon settings__icon--cholesterol"></i>
+                        <span class="settings__name">Холестерин</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="row">
+                <div class="col-xs-36 text-center">
+                    <input type="submit" class="widget-btn widget-btn--submit-no" value="Отмена">
+                    <input type="submit" class="widget-btn widget-btn--submit-yes" value="OK">
+                </div>
+            </div>
+
+            <span class="settings__close"></span>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+</div>
 
             </div>
             <!-- / Right page block with mini widgets -->
