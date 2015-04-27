@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="css/style.min.css" />
 
-    <link rel="icon" type="image/png" href="img/favicon.ico.png" />
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,8 +57,9 @@
                     <!-- Dropdown menu-->
                     <div class="main-header__dropdown display-none">
                         <ul>
-                            <li><a class="main-header__dropdown-link" href="index.html">Личный кабинет</a></li>
-                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active" href="profile.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
                             <li><a class="main-header__dropdown-link" href="">Выход</a></li>
                         </ul>
                     </div>
@@ -75,7 +76,6 @@
     <!-- Общий блок -->
     <div class="main-page">
       <div class="container">
-        <!--<div class="row main-row-customize">-->
         <div class="row">
 
         <!-- Left Sidebar -->
@@ -85,16 +85,30 @@
                     <!-- Menu -->
                     <div class="sidebar-profile__menu">
                         <ul class="sidebar-profile__menu-list">
-                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--profile sidebar-profile__menu-link--active" href="profile.html">Профиль</a></li>
-                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--security" href="security.html">Безопасность</a></li>
-                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--notifications" href="user-notifications.html">Уведомления</a></li>
-                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--privacy" href="">Приватность</a></li>
-                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--family" href="">Семейный доступ</a></li>
-                            <li class="sidebar-profile__menu-item"><a class="sidebar-profile__menu-link sidebar-profile__menu-link--history" href="">История покупок</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--profile sidebar-profile__menu-link--active"
+                                    href="profile__main.html">Профиль</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--security"
+                                    href="profile__security.html">Безопасность</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--notifications"
+                                    href="profile__notifications.html">Уведомления</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--privacy" href="">Приватность</a>
+                            </li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--family" href="">Семейный
+                                доступ</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--history" href="">История
+                                покупок</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--balance"
+                                    href="profile__balance.html">Баланс</a></li>
                         </ul>
                     </div>
-                    <!-- / Menu -->
-                    
+
                 </div>
             </aside>
             <!-- / Left Sidebar -->
@@ -190,7 +204,6 @@
             				<a href="" class="notifications-delivery__umt">GMT -12  Europe/Moscow</a>
 
                             <!-- modal time zone -->
-
                             <div class="notifications-modal notifications-modal__time-zone display-none" id="security-modal__time-zone">
                                 <div class="widgets-block">
                                     <form action="">
@@ -256,7 +269,6 @@
           		
 
           	</div>
-
 
           </section>
         </div>

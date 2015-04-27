@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html>
-<!-- build:include html/components/head.html -->
-This will be replaced by the content of head.html
-<!-- /build -->
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
 <body class="inner-body">
 
-<!-- build:include html/components/header.html -->
-This will be replaced by the content of header.html
-<!-- /build -->
+<!-- PAGE HEADER -->
+<header class="main-header container-fluid">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
 
 
     <!-- Общий блок -->
@@ -15,9 +78,40 @@ This will be replaced by the content of header.html
       <div class="container">
         <div class="row">
 
-        <!-- build:include html/components/profile-left-sidebar.html -->
-        This will be replaced by the content of profile-left-sidebar.html
-        <!-- /build -->
+        <!-- Left Sidebar -->
+            <aside class="col-xs-8">
+                <div class="sidebar-profile">
+
+                    <!-- Menu -->
+                    <div class="sidebar-profile__menu">
+                        <ul class="sidebar-profile__menu-list">
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--profile sidebar-profile__menu-link--active"
+                                    href="profile__main.html">Профиль</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--security"
+                                    href="profile__security.html">Безопасность</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--notifications"
+                                    href="profile__notifications.html">Уведомления</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--privacy" href="">Приватность</a>
+                            </li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--family" href="">Семейный
+                                доступ</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--history" href="">История
+                                покупок</a></li>
+                            <li class="sidebar-profile__menu-item"><a
+                                    class="sidebar-profile__menu-link sidebar-profile__menu-link--balance"
+                                    href="profile__balance.html">Баланс</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
 
           <section class="col-xs-26 col-md-28 col-lg-28">
 
@@ -39,7 +133,6 @@ This will be replaced by the content of header.html
             				<a class="security-email__delete"></a> 
 
                             <!-- Попап емейл отключить  -->
- 
                             <div class="security-modal security-modal__email-disconnect display-none" id="security-modal__email-disconnect">
                                 <div class="widgets-block">
                                     <form action="">
@@ -65,7 +158,6 @@ This will be replaced by the content of header.html
                                     </form>
                                 </div>
                             </div>
-
                             <!-- Попап емейл отключить  -->
  
             			</div>
@@ -74,7 +166,6 @@ This will be replaced by the content of header.html
 
 
                         <!-- Попап подтвердить email  -->
-
                         <div class="security-modal security-modal__email-proove display-none" id="security-modal__email-proove">
                             <div class="widgets-block">
                                 <form action="">
@@ -128,12 +219,10 @@ This will be replaced by the content of header.html
                                 </form>
                             </div>
                         </div>
-
                         <!-- Попап подтвердить email  -->
 
 
                         <!-- Попап успешное подтверждение email  -->
-
                         <div class="security-modal security-modal__email-success display-none" id="security-modal__email-success">
                             <div class="widgets-block">
                                 <form action="">
@@ -156,11 +245,9 @@ This will be replaced by the content of header.html
                                 </form>
                             </div>
                         </div>
-
                         <!-- Попап емейл подтверждение email  -->
             			
             		</div>
-
             		<!-- email -->
 
 
@@ -170,7 +257,6 @@ This will be replaced by the content of header.html
 
 
             		<!-- telephone -->
-
 					<div class="row security-telephone">
             			<div class="col-xs-offset-1 col-xs-35 security-label">Телефон</div>
             		</div>
@@ -185,7 +271,6 @@ This will be replaced by the content of header.html
             			<div class="col-xs-6"><a href="" class="security-link__save security-link__save--telephone">Сохранить</a></div>
 
                         <!-- Попап отключить телефон  -->
-
                         <div class="security-modal security-modal__telephone-disconnect display-none" id="security-modal__telephone-disconnect">
                             <div class="widgets-block">
                                 <form action="">
@@ -211,13 +296,11 @@ This will be replaced by the content of header.html
                                 </form>
                             </div>
                         </div>
-
                         <!-- Попап отключить телефон  -->
 
 
 
                         <!-- Попап подтвердить телефон  -->
-
                         <div class="security-modal security-modal__telephone-proove display-none" id="security-modal__telephone-proove">
                             <div class="widgets-block">
                                 <form action="">
@@ -271,12 +354,10 @@ This will be replaced by the content of header.html
                                 </form>
                             </div>
                         </div>
-
                         <!-- Попап подтвердить телефон  -->
 
 
                         <!-- Попап успешное подтверждение телефона  -->
-
                         <div class="security-modal security-modal__telephone-success display-none" id="security-modal__telephone-success">
                             <div class="widgets-block">
                                 <form action="">
@@ -299,7 +380,6 @@ This will be replaced by the content of header.html
                                 </form>
                             </div>
                         </div>
-
                         <!-- Попап емейл подтверждение телефона  -->
 
 
@@ -323,7 +403,6 @@ This will be replaced by the content of header.html
                             <span class="security-authorisation__label--checked">При авторизации будет запрашиваться одноразовый смс-пароль</span>
                         </div>
             		</div>
-
             		<!-- двухэтапная авторизация -->
 
 
@@ -332,7 +411,6 @@ This will be replaced by the content of header.html
             		</div>
 
             		<!-- пароли -->
-
             		<div class="row security-password">
             			<div class="col-xs-offset-1 col-xs-35 security-label">Пароль</div>
             		</div>
@@ -345,7 +423,6 @@ This will be replaced by the content of header.html
             			<div class="col-xs-6"><a href="" class="security-link__save">Сохранить</a></div>
             			
             		</div>
-
             		<!-- пароли -->
 
             		<div class="row">
@@ -353,17 +430,14 @@ This will be replaced by the content of header.html
             		</div>
 
             		<!-- delete -->
-
             		<div class="row">
             			<div class="col-xs-offset-1 col-xs-35 security__delete">
             				<a class="security-link__delete-profile">Удалить аккаунт</a>
             			</div>
             		</div>
-
             		<!-- delete -->
 
                      <!-- Попап удаление аккаунта  -->
-
                     <div class="security-modal security-modal__account-delete display-none" id="security-modal__account-delete">
                         <div class="widgets-block">
                             <form action="">
@@ -401,7 +475,6 @@ This will be replaced by the content of header.html
                             </form>
                         </div>
                     </div>
-
                     <!-- Попап емейл удаление аккаунта  -->
             		
             	</form>
@@ -419,9 +492,20 @@ This will be replaced by the content of header.html
 
 
 
-<!-- build:include html/components/footer.html -->
-This will be replaced by the content of footer.html
-<!-- /build -->
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
     
 </body>
 </html>

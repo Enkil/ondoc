@@ -66,19 +66,18 @@
 .link-base{
   color: @blue-color;
   transition: 0.2s ease all;
+  outline: none;
   &:hover{
     text-decoration: none;
     color: lighten(@blue-color, 8);
   }
-  &:active{
-    text-decoration: none;
-    outline: none;
-    color: @blue-color;
-  }
   &:focus{
-    text-decoration: none;
-    outline: none;
     color: @blue-color;
+    outline: none;
+    text-decoration: none;
+  }
+  &:focus:hover {
+    color: lighten(@blue-color, 8);
   }
 }
 
