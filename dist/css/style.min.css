@@ -22662,6 +22662,7 @@ a {
 
 .charity-reg--new {
     min-width: 500px;
+    padding-bottom: 58px;
     background: -webkit-linear-gradient(top, #e5f1f6, #fafafb);
     background: linear-gradient(to bottom, #e5f1f6, #fafafb)
 }
