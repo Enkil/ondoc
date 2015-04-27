@@ -18084,6 +18084,8 @@ External pages buttons
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
+
+    padding: 10px 0 0 0;
 }
 
 .profile-balance__btn {
