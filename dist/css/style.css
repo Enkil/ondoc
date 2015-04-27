@@ -12709,7 +12709,6 @@ html
 
     color: #7ec6e0;
 }
-
 .link-base:focus
 {
     text-decoration: none;
@@ -12717,7 +12716,6 @@ html
     color: #5db7d8;
     outline: none;
 }
-
 .link-base:focus:hover
 {
     color: #7ec6e0;
@@ -12736,7 +12734,6 @@ a:hover
 
     color: #7ec6e0;
 }
-
 a:focus
 {
     text-decoration: none;
@@ -12744,7 +12741,6 @@ a:focus
     color: #5db7d8;
     outline: none;
 }
-
 a:focus:hover
 {
     color: #7ec6e0;
@@ -12766,7 +12762,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .link-medium:focus
 {
     text-decoration: none;
@@ -12774,7 +12769,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .link-medium:focus:hover
 {
     color: #7ec6e0;
@@ -13019,7 +13013,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .sidebar__menu-link:focus
 {
     text-decoration: none;
@@ -13027,7 +13020,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .sidebar__menu-link:focus:hover
 {
     color: #7ec6e0;
@@ -13173,7 +13165,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .content-header__sort-link:focus
 {
     text-decoration: none;
@@ -13181,7 +13172,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .content-header__sort-link:focus:hover
 {
     color: #7ec6e0;
@@ -13614,7 +13604,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-header__dropdown-item:focus
 {
     text-decoration: none;
@@ -13622,7 +13611,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-header__dropdown-item:focus:hover
 {
     color: #7ec6e0;
@@ -13716,7 +13704,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-consultation__link:focus
 {
     text-decoration: none;
@@ -13724,7 +13711,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-consultation__link:focus:hover
 {
     color: #7ec6e0;
@@ -13953,7 +13939,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-right-head__link:focus
 {
     text-decoration: none;
@@ -13961,7 +13946,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-right-head__link:focus:hover
 {
     color: #7ec6e0;
@@ -14063,7 +14047,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-pagination__show-by:focus
 {
     text-decoration: none;
@@ -14071,7 +14054,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-pagination__show-by:focus:hover
 {
     color: #7ec6e0;
@@ -14150,7 +14132,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-pagination__dropdown-item:focus
 {
     text-decoration: none;
@@ -14158,7 +14139,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-pagination__dropdown-item:focus:hover
 {
     color: #7ec6e0;
@@ -14191,7 +14171,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-pagination__numeration-link:focus
 {
     text-decoration: none;
@@ -14199,7 +14178,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-pagination__numeration-link:focus:hover
 {
     color: #7ec6e0;
@@ -14923,7 +14901,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widget-btn:focus
 {
     text-decoration: none;
@@ -14931,7 +14908,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widget-btn:focus:hover
 {
     color: #7ec6e0;
@@ -15172,7 +15148,6 @@ a:focus:hover
 
     color: #7ec6e0;
 }
-
 .widgets-btn:focus
 {
     text-decoration: none;
@@ -15180,7 +15155,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-
 .widgets-btn:focus:hover
 {
     color: #7ec6e0;
@@ -16396,7 +16370,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .sidebar-profile__menu-link:focus
 {
     text-decoration: none;
@@ -16404,7 +16377,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .sidebar-profile__menu-link:focus:hover
 {
     color: #7ec6e0;
@@ -16501,7 +16473,6 @@ External pages buttons
 .sidebar-profile__menu-link--balance {
     background-image: url('../img/icon-balance.png');
 }
-
 .sidebar-profile__menu-link--balance:hover,
 .sidebar-profile__menu-link--balance.sidebar-profile__menu-link--active {
     background-image: url('../img/icon-balance-hover.png');
@@ -17245,7 +17216,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .profile-img__logo-choose:focus
 {
     text-decoration: none;
@@ -17253,7 +17223,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .profile-img__logo-choose:focus:hover
 {
     color: #7ec6e0;
@@ -17382,7 +17351,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .user-data__sex:focus
 {
     text-decoration: none;
@@ -17390,7 +17358,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .user-data__sex:focus:hover
 {
     color: #7ec6e0;
@@ -17773,7 +17740,6 @@ External pages buttons
     outline: none!important;
     outline: none;
 }
-
 .agreement-modal__btn
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -17797,14 +17763,12 @@ External pages buttons
     border-radius: 30px;
     outline: none;
 }
-
 .agreement-modal__btn:hover
 {
     text-decoration: none;
 
     color: #7ec6e0;
 }
-
 .agreement-modal__btn:focus
 {
     text-decoration: none;
@@ -17812,7 +17776,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .agreement-modal__btn:focus:hover
 {
     color: #7ec6e0;
@@ -18126,7 +18089,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .feedback-modal__btn--send:focus
 {
     text-decoration: none;
@@ -18134,7 +18096,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .feedback-modal__btn--send:focus:hover
 {
     color: #7ec6e0;
@@ -18388,7 +18349,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .security-link:focus
 {
     text-decoration: none;
@@ -18396,7 +18356,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .security-link:focus:hover
 {
     color: #7ec6e0;
@@ -18646,7 +18605,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .security-link__save:focus
 {
     text-decoration: none;
@@ -18654,7 +18612,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .security-link__save:focus:hover
 {
     color: #7ec6e0;
@@ -18715,7 +18672,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .security-link__proove:focus
 {
     text-decoration: none;
@@ -18723,7 +18679,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .security-link__proove:focus:hover
 {
     color: #7ec6e0;
@@ -18789,7 +18744,6 @@ External pages buttons
 
     color: #7ec6e0;
 }
-
 .security-link__delete-profile:focus
 {
     text-decoration: none;
@@ -18797,7 +18751,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-
 .security-link__delete-profile:focus:hover
 {
     color: #7ec6e0;
@@ -19073,7 +19026,6 @@ input:after
 
     color: #7ec6e0;
 }
-
 .security-modal__btn--cancel:focus
 {
     text-decoration: none;
@@ -19081,7 +19033,6 @@ input:after
     color: #5db7d8;
     outline: none;
 }
-
 .security-modal__btn--cancel:focus:hover
 {
     color: #7ec6e0;
@@ -19143,7 +19094,6 @@ input:after
 
     color: #7ec6e0;
 }
-
 .security-modal__btn--disconnect:focus
 {
     text-decoration: none;
@@ -19151,7 +19101,6 @@ input:after
     color: #5db7d8;
     outline: none;
 }
-
 .security-modal__btn--disconnect:focus:hover
 {
     color: #7ec6e0;
@@ -19212,7 +19161,6 @@ input:after
 
     color: #7ec6e0;
 }
-
 .security-modal__btn--proove:focus
 {
     text-decoration: none;
@@ -19220,7 +19168,6 @@ input:after
     color: #5db7d8;
     outline: none;
 }
-
 .security-modal__btn--proove:focus:hover
 {
     color: #7ec6e0;
@@ -23438,7 +23385,6 @@ a
 
     color: #7ec6e0;
 }
-
 .drugs__dosage-popup-item:focus
 {
     text-decoration: none;
@@ -23446,7 +23392,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .drugs__dosage-popup-item:focus:hover
 {
     color: #7ec6e0;
@@ -24079,7 +24024,6 @@ a
 
     color: #7ec6e0;
 }
-
 .clinics__show-all:focus
 {
     text-decoration: none;
@@ -24087,7 +24031,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .clinics__show-all:focus:hover
 {
     color: #7ec6e0;
@@ -25077,7 +25020,6 @@ a
 
     color: #7ec6e0;
 }
-
 .docs__show-all:focus
 {
     text-decoration: none;
@@ -25085,7 +25027,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .docs__show-all:focus:hover
 {
     color: #7ec6e0;
@@ -25723,7 +25664,6 @@ a
 
     color: #7ec6e0;
 }
-
 .steps-modal__btn:focus
 {
     text-decoration: none;
@@ -25731,7 +25671,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .steps-modal__btn:focus:hover
 {
     color: #7ec6e0;
@@ -25854,7 +25793,6 @@ a
 
     color: #7ec6e0;
 }
-
 .steps-modal .user-data__sex:focus
 {
     text-decoration: none;
@@ -25862,7 +25800,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .steps-modal .user-data__sex:focus:hover
 {
     color: #7ec6e0;
@@ -26189,7 +26126,6 @@ a
 
     color: #7ec6e0;
 }
-
 .steps-modal__btn--next:focus
 {
     text-decoration: none;
@@ -26197,7 +26133,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .steps-modal__btn--next:focus:hover
 {
     color: #7ec6e0;
@@ -26499,7 +26434,6 @@ a
 
     color: #7ec6e0;
 }
-
 .contact-form__btn--send-success:focus
 {
     text-decoration: none;
@@ -26507,7 +26441,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-
 .contact-form__btn--send-success:focus:hover
 {
     color: #7ec6e0;
@@ -28066,6 +27999,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
 }
+
+.charity-promo__title--new {
+    right: 45px;
+}
 .charity-promo__subtitle
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -28122,6 +28059,19 @@ Styles for filter block on consultations, clinics and docs pages
     background: -webkit-linear-gradient(top, #b1dde9, #e3f6f7);
     background:         linear-gradient(to bottom, #b1dde9, #e3f6f7);
 }
+
+.charity-reg--new {
+    min-width: 500px;
+
+    background: -webkit-linear-gradient(top, #e5f1f6, #fafafb);
+    background: linear-gradient(to bottom, #e5f1f6, #fafafb);
+}
+
+@media (max-width: 1199px) {
+    .charity-reg--new {
+        height: 856px;
+    }
+}
 .charity-reg__title
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -28131,6 +28081,10 @@ Styles for filter block on consultations, clinics and docs pages
     margin-bottom: 35px;
 
     text-align: center;
+}
+
+.charity-reg__title--new {
+    margin-top: 0;
 }
 .charity-reg__subtitle
 {
@@ -28151,11 +28105,23 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
+
+.charity-reg__process-new {
+    overflow: hidden;
+
+    margin: 30px auto 40px auto;
+
+    text-align: center;
+}
 .charity-reg__process-icons
 {
     overflow: hidden;
 
     margin-bottom: 25px;
+}
+
+.charity-reg__process-icons--new {
+    margin-bottom: 0;
 }
 .charity-reg__step
 {
@@ -28166,6 +28132,10 @@ Styles for filter block on consultations, clinics and docs pages
 .charity-reg__step--progress
 {
     padding-left: 50px;
+}
+
+.charity-reg__step--progress-new {
+    padding-left: 30px;
 }
 .charity-reg__step-icon
 {
@@ -28193,6 +28163,20 @@ Styles for filter block on consultations, clinics and docs pages
 
     background-image: url('../img/charity__step-circle.png');
 }
+
+.charity-reg__step-icon--man-new {
+    margin-right: 20px;
+
+    background-image: url('../img/charity__step-icon--man-new.png');
+    background-size: 66px 64px;
+}
+
+.charity-reg__step-icon--num-new {
+    position: relative;
+
+    background-image: url('../img/charity__step-circle-new.png');
+    background-size: 74px 74px;
+}
 .charity-reg__step-text
 {
     font-size: 23px;
@@ -28207,6 +28191,12 @@ Styles for filter block on consultations, clinics and docs pages
 {
     padding-left: 50px;
 }
+
+.charity-reg__step-text--new {
+    font-size: 17px;
+
+    color: #3cc;
+}
 .charity-reg__step-rub
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -28218,6 +28208,12 @@ Styles for filter block on consultations, clinics and docs pages
     margin-top: 10px;
 
     color: #5db7d8;
+}
+
+.charity-reg__step-rub--new {
+    font-size: 17px;
+
+    color: #3cc;
 }
 .charity-reg__step-arrow
 {
@@ -28232,6 +28228,12 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/charity__step-arrow.png') no-repeat;
 }
+
+.charity-reg__step-arrow--new {
+    right: -45px;
+
+    background: url('../img/charity__step-arrow--new.png') no-repeat;
+}
 .charity-reg__step-sum
 {
     font-size: 60px;
@@ -28242,6 +28244,10 @@ Styles for filter block on consultations, clinics and docs pages
     left: 0;
 
     color: #fff;
+}
+
+.charity-reg__step-sum--new {
+    font-size: 44px;
 }
 .charity-reg__progress
 {
@@ -28265,6 +28271,10 @@ Styles for filter block on consultations, clinics and docs pages
     background: #a1d8e7;
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
 }
+
+.charity-reg__progress-bar--new {
+    height: 25px;
+}
 .charity-reg__progress-percents
 {
     width: 60%;
@@ -28273,6 +28283,10 @@ Styles for filter block on consultations, clinics and docs pages
     border-radius: 15px 0 0 15px;
     background: -webkit-linear-gradient(top, #31c4ca 0, #23adca 100%);
     background:         linear-gradient(to bottom, #31c4ca 0, #23adca 100%);
+}
+
+.charity-reg__progress-percents--new {
+    background: #3cc;
 }
 .charity-reg__register
 {
@@ -28293,6 +28307,8 @@ Styles for filter block on consultations, clinics and docs pages
     height: 45px;
     margin-right: 12px;
     padding: 0 40px;
+
+    text-align: center;
 
     color: #8d8d8d;
     border: 1px solid #8d8d8d;
@@ -28362,8 +28378,9 @@ Styles for filter block on consultations, clinics and docs pages
 
     padding: 0 25px;
 
-    -webkit-transition: all .5s ease;
-            transition: all .5s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    text-align: center;
 
     color: #fff;
     border: 1px solid #5db7d8;
@@ -28376,11 +28393,46 @@ Styles for filter block on consultations, clinics and docs pages
     color: #5db7d8;
     background-color: #fff;
 }
+
+.charity-reg__btn-submit--new {
+    width: 385px;
+    margin-top: 10px;
+
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+
+    background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
+    background: linear-gradient(140deg, #33cdcc, #0699d3);
+}
+
+.charity-reg__btn-submit--new:hover {
+    color: #fff !important;
+}
 .charity-reg__register-text
 {
     font-size: 18px;
 
     text-align: center;
+}
+
+.charity-reg__register-text--new {
+    font-size: 16px;
+
+    text-align: left;
+
+    color: #999;
+}
+
+.charity-reg__register-text-wrapper {
+    width: 475px;
+    margin: 0 auto;
+}
+
+.charity-reg__text {
+    font-size: 18px;
+
+    text-align: center;
+    letter-spacing: -.54px;
 }
 .charity-patient
 {
@@ -28389,6 +28441,11 @@ Styles for filter block on consultations, clinics and docs pages
     margin-top: 60px;
     margin-bottom: 40px;
 }
+
+.charity-patient--new {
+    min-width: 500px;
+    margin-bottom: 0;
+}
 .charity-patient__photo
 {
     display: block;
@@ -28396,6 +28453,16 @@ Styles for filter block on consultations, clinics and docs pages
     width: 215px;
     height: 215px;
     margin: 0 auto;
+}
+
+.charity-patient__photo--new {
+    display: inline-block;
+    float: left;
+
+    width: 190px;
+    height: 190px;
+    margin-right: 28px;
+    margin-bottom: 30px;
 }
 .charity-patient__name
 {
@@ -28413,19 +28480,37 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #8d8d8d;
 }
+
+.charity-patient__city--new {
+    margin-bottom: 15px;
+}
 .charity-patient__story
 {
     font-size: 18px;
 
     margin: 0 0 30px 0;
 }
+
+.charity-patient__story--new {
+    margin-bottom: 40px;
+}
+
+.charity-patient__story--new-no-mb {
+    margin-bottom: 0;
+}
 .charity-patient__action
 {
     padding: 20px;
 
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
     background:         linear-gradient(140deg, #33cdcc, #0699d3);
+}
+
+.charity-patient__action--new {
+    float: right;
+
+    width: 190px;
 }
 .charity-patient__action-text
 {
@@ -28446,6 +28531,10 @@ Styles for filter block on consultations, clinics and docs pages
         font-size: 20px;
     }
 }
+
+.charity-patient__action-text--new {
+    font-size: 17px;
+}
 .charity-patient__action-num
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -28461,6 +28550,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
+
+.charity-patient__action-num--new {
+    font-size: 38px;
+}
 .charity-patient__action-subtext
 {
     font-size: 20px;
@@ -28471,6 +28564,23 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
+
+.charity-patient__action-subtext--new {
+    font-size: 14px;
+}
+
+.charity-patient__vk {
+    font-size: 20px;
+    line-height: 37px;
+
+    display: inline-block;
+
+    margin-bottom: 30px;
+    padding-left: 46px;
+
+    color: #069;
+    background: url('../img/icon-vk-charity.png') no-repeat left;
+}
 .charity-share
 {
     width: 100% !important;
@@ -28480,8 +28590,14 @@ Styles for filter block on consultations, clinics and docs pages
     text-align: center;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    background: -webkit-linear-gradient(top, #e2f1f6, #fefefe);
-    background:         linear-gradient(to bottom, #e2f1f6, #fefefe);
+    background: -webkit-linear-gradient(top, #26a7c6, #fefefe);
+    background: linear-gradient(to bottom, #26a7c6, #fefefe);
+}
+
+.charity-share--new {
+    border-bottom: none;
+    background: -webkit-linear-gradient(top, #26a7c6, #7fdadf);
+    background: linear-gradient(to bottom, #26a7c6, #7fdadf);
 }
 .charity-share__title
 {
@@ -28492,6 +28608,10 @@ Styles for filter block on consultations, clinics and docs pages
     margin-bottom: 30px;
 
     text-align: center;
+}
+
+.charity-share__title--new {
+    color: #fff;
 }
 .charity-share__text
 {
@@ -28544,6 +28664,12 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background-color: #5db7d8;
 }
+
+.charity-share__copy-btn--new {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
 .charity-share__share-icons
 {
     display: block;
@@ -28594,6 +28720,11 @@ Styles for filter block on consultations, clinics and docs pages
 {
     width: 100% !important;
     min-width: 1000px;
+}
+
+.charity-about--new {
+    background: -webkit-linear-gradient(top, #e2f0f6, #fff);
+    background: linear-gradient(to bottom, #e2f0f6, #fff);
 }
 .charity-about__title
 {
@@ -30666,7 +30797,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #7ec6e0;
 }
-
 .medcard-doctor__doc-name:focus
 {
     text-decoration: none;
@@ -30674,7 +30804,6 @@ Styles for filter block on consultations, clinics and docs pages
     color: #5db7d8;
     outline: none;
 }
-
 .medcard-doctor__doc-name:focus:hover
 {
     color: #7ec6e0;
@@ -31819,7 +31948,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #7ec6e0;
 }
-
 .medcard-clinic__clinic-name:focus
 {
     text-decoration: none;
@@ -31827,7 +31955,6 @@ Styles for filter block on consultations, clinics and docs pages
     color: #5db7d8;
     outline: none;
 }
-
 .medcard-clinic__clinic-name:focus:hover
 {
     color: #7ec6e0;
