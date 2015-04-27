@@ -12716,10 +12716,6 @@ html
     color: #5db7d8;
     outline: none;
 }
-.link-base:focus:hover
-{
-    color: #7ec6e0;
-}
 a
 {
     -webkit-transition: .2s ease all;
@@ -12740,10 +12736,6 @@ a:focus
 
     color: #5db7d8;
     outline: none;
-}
-a:focus:hover
-{
-    color: #7ec6e0;
 }
 .link-medium
 {
@@ -12768,10 +12760,6 @@ a:focus:hover
 
     color: #5db7d8;
     outline: none;
-}
-.link-medium:focus:hover
-{
-    color: #7ec6e0;
 }
 .main-header
 {
@@ -13020,10 +13008,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-.sidebar__menu-link:focus:hover
-{
-    color: #7ec6e0;
-}
 .sidebar__menu-link:hover
 {
     text-decoration: none;
@@ -13171,10 +13155,6 @@ a:focus:hover
 
     color: #5db7d8;
     outline: none;
-}
-.content-header__sort-link:focus:hover
-{
-    color: #7ec6e0;
 }
 .content-header__sort-link:hover
 {
@@ -13611,10 +13591,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-.widget-header__dropdown-item:focus:hover
-{
-    color: #7ec6e0;
-}
 .widget-consultation
 {
     margin-bottom: 15px;
@@ -13710,10 +13686,6 @@ a:focus:hover
 
     color: #5db7d8;
     outline: none;
-}
-.widget-consultation__link:focus:hover
-{
-    color: #7ec6e0;
 }
 .widget-consultation__link--operator
 {
@@ -13946,10 +13918,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-.widget-right-head__link:focus:hover
-{
-    color: #7ec6e0;
-}
 .widget-right-head__link:hover
 {
     text-decoration: none;
@@ -14054,10 +14022,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-.widget-pagination__show-by:focus:hover
-{
-    color: #7ec6e0;
-}
 .widget-pagination__show-by--dropdown
 {
     cursor: pointer;
@@ -14139,10 +14103,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-.widget-pagination__dropdown-item:focus:hover
-{
-    color: #7ec6e0;
-}
 .widget-pagination__numeration-list
 {
     text-align: right;
@@ -14177,10 +14137,6 @@ a:focus:hover
 
     color: #5db7d8;
     outline: none;
-}
-.widget-pagination__numeration-link:focus:hover
-{
-    color: #7ec6e0;
 }
 .widget-pagination__numeration-link--active
 {
@@ -14908,10 +14864,6 @@ a:focus:hover
     color: #5db7d8;
     outline: none;
 }
-.widget-btn:focus:hover
-{
-    color: #7ec6e0;
-}
 .widget-btn--edit
 {
     font-size: 14px;
@@ -15154,10 +15106,6 @@ a:focus:hover
 
     color: #5db7d8;
     outline: none;
-}
-.widgets-btn:focus:hover
-{
-    color: #7ec6e0;
 }
 .widgets-btn--plus:hover
 {
@@ -16377,10 +16325,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-.sidebar-profile__menu-link:focus:hover
-{
-    color: #7ec6e0;
-}
 .sidebar-profile__menu-link:hover
 {
     text-decoration: none;
@@ -17223,10 +17167,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-.profile-img__logo-choose:focus:hover
-{
-    color: #7ec6e0;
-}
 .user-info
 {
     margin-top: 25px;
@@ -17357,10 +17297,6 @@ External pages buttons
 
     color: #5db7d8;
     outline: none;
-}
-.user-data__sex:focus:hover
-{
-    color: #7ec6e0;
 }
 .user-data__sex-female
 {
@@ -17776,10 +17712,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-.agreement-modal__btn:focus:hover
-{
-    color: #7ec6e0;
-}
 .agreement-modal__btn--reject:hover,
 .agreement-modal__btn--reject:focus
 {
@@ -18096,10 +18028,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-.feedback-modal__btn--send:focus:hover
-{
-    color: #7ec6e0;
-}
 .feedback-modal__btn--send:hover,
 .feedback-modal__btn--send:focus
 {
@@ -18219,10 +18147,6 @@ External pages buttons
 
     color: #5db7d8;
     outline: none;
-}
-
-.profile-balance__link:focus:hover {
-    color: #7ec6e0;
 }
 
 .profile-balance__link-symbol {
@@ -18355,10 +18279,6 @@ External pages buttons
 
     color: #5db7d8;
     outline: none;
-}
-.security-link:focus:hover
-{
-    color: #7ec6e0;
 }
 .security-link:hover
 {
@@ -18612,10 +18532,6 @@ External pages buttons
     color: #5db7d8;
     outline: none;
 }
-.security-link__save:focus:hover
-{
-    color: #7ec6e0;
-}
 .security-link__save:hover
 {
     text-decoration: none;
@@ -18678,10 +18594,6 @@ External pages buttons
 
     color: #5db7d8;
     outline: none;
-}
-.security-link__proove:focus:hover
-{
-    color: #7ec6e0;
 }
 .security-link__proove:hover
 {
@@ -18750,10 +18662,6 @@ External pages buttons
 
     color: #5db7d8;
     outline: none;
-}
-.security-link__delete-profile:focus:hover
-{
-    color: #7ec6e0;
 }
 .security-link__delete-profile:hover
 {
@@ -19033,10 +18941,6 @@ input:after
     color: #5db7d8;
     outline: none;
 }
-.security-modal__btn--cancel:focus:hover
-{
-    color: #7ec6e0;
-}
 .security-modal__btn--cancel:hover
 {
     text-decoration: none;
@@ -19101,10 +19005,6 @@ input:after
     color: #5db7d8;
     outline: none;
 }
-.security-modal__btn--disconnect:focus:hover
-{
-    color: #7ec6e0;
-}
 .security-modal__btn--disconnect:hover
 {
     text-decoration: none;
@@ -19167,10 +19067,6 @@ input:after
 
     color: #5db7d8;
     outline: none;
-}
-.security-modal__btn--proove:focus:hover
-{
-    color: #7ec6e0;
 }
 .security-modal__btn--proove:hover
 {
@@ -23392,10 +23288,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-.drugs__dosage-popup-item:focus:hover
-{
-    color: #7ec6e0;
-}
 .drugs__time-plus
 {
     display: inline-block;
@@ -24030,10 +23922,6 @@ a
 
     color: #5db7d8;
     outline: none;
-}
-.clinics__show-all:focus:hover
-{
-    color: #7ec6e0;
 }
 .clinics__show-all:hover
 {
@@ -25027,10 +24915,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-.docs__show-all:focus:hover
-{
-    color: #7ec6e0;
-}
 .docs__show-all:hover
 {
     color: #7ec6e0;
@@ -25671,10 +25555,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-.steps-modal__btn:focus:hover
-{
-    color: #7ec6e0;
-}
 .steps-modal
 {
     position: fixed;
@@ -25799,10 +25679,6 @@ a
 
     color: #5db7d8;
     outline: none;
-}
-.steps-modal .user-data__sex:focus:hover
-{
-    color: #7ec6e0;
 }
 .steps-modal .user-data__sex-female
 {
@@ -26133,10 +26009,6 @@ a
     color: #5db7d8;
     outline: none;
 }
-.steps-modal__btn--next:focus:hover
-{
-    color: #7ec6e0;
-}
 .steps-modal__btn--next:hover,
 .steps-modal__btn--next:focus
 {
@@ -26440,10 +26312,6 @@ a
 
     color: #5db7d8;
     outline: none;
-}
-.contact-form__btn--send-success:focus:hover
-{
-    color: #7ec6e0;
 }
 .contact-form__btn--send-success:hover
 {
@@ -28670,6 +28538,10 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #fff;
     background-color: transparent;
 }
+
+.charity-share__copy-btn--new:focus {
+    color: #fff;
+}
 .charity-share__share-icons
 {
     display: block;
@@ -30804,10 +30676,6 @@ Styles for filter block on consultations, clinics and docs pages
     color: #5db7d8;
     outline: none;
 }
-.medcard-doctor__doc-name:focus:hover
-{
-    color: #7ec6e0;
-}
 .medcard-doctor__doc-specs
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -31954,10 +31822,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
     outline: none;
-}
-.medcard-clinic__clinic-name:focus:hover
-{
-    color: #7ec6e0;
 }
 .medcard-clinic__clinic-specs
 {

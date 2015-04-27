@@ -10543,10 +10543,6 @@ html {
     outline: 0
 }
 
-.link-base:focus:hover {
-    color: #7ec6e0
-}
-
 a {
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -10563,10 +10559,6 @@ a:focus {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-a:focus:hover {
-    color: #7ec6e0
 }
 
 .link-medium {
@@ -10586,10 +10578,6 @@ a:focus:hover {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.link-medium:focus:hover {
-    color: #7ec6e0
 }
 
 .main-header {
@@ -10777,10 +10765,6 @@ a:focus:hover {
     outline: 0
 }
 
-.sidebar__menu-link:focus:hover {
-    color: #7ec6e0
-}
-
 .sidebar__menu-link:hover {
     text-decoration: none;
     color: #fff !important;
@@ -10901,7 +10885,7 @@ a:focus:hover {
     outline: 0
 }
 
-.content-header__sort-link:focus:hover, .content-header__sort-link:hover {
+.content-header__sort-link:hover {
     color: #7ec6e0
 }
 
@@ -11262,10 +11246,6 @@ a:focus:hover {
     outline: 0
 }
 
-.widget-header__dropdown-item:focus:hover {
-    color: #7ec6e0
-}
-
 .widget-consultation {
     margin-bottom: 15px
 }
@@ -11341,10 +11321,6 @@ a:focus:hover {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.widget-consultation__link:focus:hover {
-    color: #7ec6e0
 }
 
 .widget-consultation__link--operator {
@@ -11525,10 +11501,6 @@ a:focus:hover {
     outline: 0
 }
 
-.widget-right-head__link:focus:hover {
-    color: #7ec6e0
-}
-
 .widget-right-head__link:hover {
     text-decoration: none;
     color: #7ec6e0
@@ -11617,10 +11589,6 @@ a:focus:hover {
     outline: 0
 }
 
-.widget-pagination__show-by:focus:hover {
-    color: #7ec6e0
-}
-
 .widget-pagination__show-by--dropdown {
     cursor: pointer
 }
@@ -11685,10 +11653,6 @@ a:focus:hover {
     outline: 0
 }
 
-.widget-pagination__dropdown-item:focus:hover {
-    color: #7ec6e0
-}
-
 .widget-pagination__numeration-list {
     text-align: right
 }
@@ -11716,10 +11680,6 @@ a:focus:hover {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.widget-pagination__numeration-link:focus:hover {
-    color: #7ec6e0
 }
 
 .widget-pagination__numeration-link--active {
@@ -12318,10 +12278,6 @@ a:focus:hover {
     outline: 0
 }
 
-.widget-btn:focus:hover {
-    color: #7ec6e0
-}
-
 .widget-btn--edit {
     font-size: 14px;
     line-height: 28px;
@@ -12507,10 +12463,6 @@ a:focus:hover {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.widgets-btn:focus:hover {
-    color: #7ec6e0
 }
 
 .widgets-btn--plus:hover {
@@ -13469,10 +13421,6 @@ a:focus:hover {
     outline: 0
 }
 
-.sidebar-profile__menu-link:focus:hover {
-    color: #7ec6e0
-}
-
 .sidebar-profile__menu-link:hover {
     text-decoration: none;
     color: #fff;
@@ -14157,10 +14105,6 @@ a:focus:hover {
     outline: 0
 }
 
-.profile-img__logo-choose:focus:hover {
-    color: #7ec6e0
-}
-
 .user-info {
     margin-top: 25px
 }
@@ -14269,10 +14213,6 @@ a:focus:hover {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.user-data__sex:focus:hover {
-    color: #7ec6e0
 }
 
 .user-data__sex-female {
@@ -14610,10 +14550,6 @@ a:focus:hover {
     outline: 0
 }
 
-.agreement-modal__btn:focus:hover {
-    color: #7ec6e0
-}
-
 .agreement-modal__btn--reject:focus, .agreement-modal__btn--reject:hover {
     text-decoration: none;
     color: #fff !important;
@@ -14863,10 +14799,6 @@ a:focus:hover {
     outline: 0
 }
 
-.feedback-modal__btn--send:focus:hover {
-    color: #7ec6e0
-}
-
 .feedback-modal__btn--send:focus, .feedback-modal__btn--send:hover {
     text-decoration: none;
     color: #5db7d8 !important;
@@ -14968,10 +14900,6 @@ a:focus:hover {
     outline: 0
 }
 
-.profile-balance__link:focus:hover {
-    color: #7ec6e0
-}
-
 .profile-balance__link-symbol {
     font-size: 13px;
     color: #8d8d8d
@@ -15069,10 +14997,6 @@ a:focus:hover {
 .security-link:focus {
     text-decoration: none;
     outline: 0
-}
-
-.security-link:focus:hover {
-    color: #7ec6e0
 }
 
 .security-link:hover {
@@ -15261,10 +15185,6 @@ a:focus:hover {
     outline: 0
 }
 
-.security-link__save:focus:hover {
-    color: #7ec6e0
-}
-
 .security-link__save:hover {
     text-decoration: none;
     color: #fff
@@ -15305,10 +15225,6 @@ a:focus:hover {
 .security-link__proove:focus {
     text-decoration: none;
     outline: 0
-}
-
-.security-link__proove:focus:hover {
-    color: #7ec6e0
 }
 
 .security-link__proove:hover {
@@ -15355,10 +15271,6 @@ a:focus:hover {
 .security-link__delete-profile:focus {
     text-decoration: none;
     outline: 0
-}
-
-.security-link__delete-profile:focus:hover {
-    color: #7ec6e0
 }
 
 .security-link__delete-profile:hover {
@@ -15561,10 +15473,6 @@ input, input:after, input:before, input:focus, input:visited {
     outline: 0
 }
 
-.security-modal__btn--cancel:focus:hover {
-    color: #7ec6e0
-}
-
 .security-modal__btn--cancel:hover {
     text-decoration: none;
     color: #fff
@@ -15607,10 +15515,6 @@ input, input:after, input:before, input:focus, input:visited {
     outline: 0
 }
 
-.security-modal__btn--disconnect:focus:hover {
-    color: #7ec6e0
-}
-
 .security-modal__btn--disconnect:hover {
     text-decoration: none;
     color: #fff
@@ -15651,10 +15555,6 @@ input, input:after, input:before, input:focus, input:visited {
 .security-modal__btn--proove:focus {
     text-decoration: none;
     outline: 0
-}
-
-.security-modal__btn--proove:focus:hover {
-    color: #7ec6e0
 }
 
 .security-modal__btn--proove:hover {
@@ -19065,10 +18965,6 @@ a {
     outline: 0
 }
 
-.drugs__dosage-popup-item:focus:hover {
-    color: #7ec6e0
-}
-
 .drugs__time-plus {
     display: inline-block;
     width: 22px;
@@ -19581,7 +19477,7 @@ a {
     outline: 0
 }
 
-.clinics__show-all:focus:hover, .clinics__show-all:hover {
+.clinics__show-all:hover {
     color: #7ec6e0
 }
 
@@ -20369,7 +20265,7 @@ a {
     outline: 0
 }
 
-.docs__show-all:focus:hover, .docs__show-all:hover {
+.docs__show-all:hover {
     color: #7ec6e0
 }
 
@@ -20867,10 +20763,6 @@ a {
     outline: 0
 }
 
-.steps-modal__btn:focus:hover {
-    color: #7ec6e0
-}
-
 .steps-modal {
     position: fixed;
     z-index: 100;
@@ -20970,10 +20862,6 @@ a {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.steps-modal .user-data__sex:focus:hover {
-    color: #7ec6e0
 }
 
 .steps-modal .user-data__sex-female {
@@ -21244,10 +21132,6 @@ a {
     outline: 0
 }
 
-.steps-modal__btn--next:focus:hover {
-    color: #7ec6e0
-}
-
 .steps-modal__btn--next:focus, .steps-modal__btn--next:hover {
     text-decoration: none;
     color: #fff !important;
@@ -21488,10 +21372,6 @@ a {
 
 .contact-form__btn--send-success:focus {
     outline: 0
-}
-
-.contact-form__btn--send-success:focus:hover {
-    color: #7ec6e0
 }
 
 .contact-form__btn--send-success:active, .contact-form__btn--send-success:focus, .contact-form__btn--send-success:hover {
@@ -23287,6 +23167,10 @@ a {
     background-color: transparent
 }
 
+.charity-share__copy-btn--new:focus {
+    color: #fff
+}
+
 .charity-share__share-icons {
     display: block;
     margin-top: 45px;
@@ -24954,10 +24838,6 @@ a {
     outline: 0
 }
 
-.medcard-doctor__doc-name:focus:hover {
-    color: #7ec6e0
-}
-
 .medcard-doctor__doc-specs {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 13px;
@@ -25847,10 +25727,6 @@ a {
     text-decoration: none;
     color: #5db7d8;
     outline: 0
-}
-
-.medcard-clinic__clinic-name:focus:hover {
-    color: #7ec6e0
 }
 
 .medcard-clinic__clinic-specs {
