@@ -10291,6 +10291,10 @@ html {
     min-width: 1000px !important
 }
 
+.container--charity {
+    width: calc(100% - 100% / 16)
+}
+
 .container-fluid {
     width: 100% !important;
     min-width: 1000px !important
@@ -22663,8 +22667,8 @@ a {
 .charity-reg--new {
     min-width: 500px;
     padding-bottom: 58px;
-    background: -webkit-linear-gradient(top, #e5f1f6, #fafafb);
-    background: linear-gradient(to bottom, #e5f1f6, #fafafb)
+    background: #fafafb;
+    box-shadow: 60rem 0 0 #fafafb
 }
 
 @media (max-width: 1199px) {
