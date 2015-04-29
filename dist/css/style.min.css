@@ -21673,8 +21673,8 @@ a {
     background: url(../img/master.png) no-repeat
 }
 
-.container-fluid.footer-external {
-    min-width: 1221px !important
+.footer-external--charity {
+    min-width: 1000px !important
 }
 
 .ml-title {

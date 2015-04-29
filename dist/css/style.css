@@ -26708,9 +26708,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/master.png') no-repeat;
 }
-.container-fluid.footer-external
+
+.footer-external--charity
 {
-    min-width: 1221px !important;
+    min-width: 1000px !important;
 }
 .ml-title
 {
