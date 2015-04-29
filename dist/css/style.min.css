@@ -22882,7 +22882,6 @@ a {
 }
 
 .charity-reg__input::-moz-placeholder {
-    line-height: 22px;
     transition: line-height .5s ease
 }
 
@@ -22917,6 +22916,10 @@ a {
     line-height: 350px;
     -webkit-transition: line-height .5s ease;
     transition: line-height .5s ease
+}
+
+.charity-reg__input::-moz-placeholder {
+    line-height: 45px
 }
 
 .charity-reg__btn-submit {

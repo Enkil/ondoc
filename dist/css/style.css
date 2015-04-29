@@ -26708,7 +26708,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/master.png') no-repeat;
 }
-
 .footer-external--charity
 {
     min-width: 1000px !important;
@@ -28242,6 +28241,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
+}
+
+.charity-reg__input::-moz-placeholder {
+    line-height: 45px;
 }
 .charity-reg__btn-submit
 {
