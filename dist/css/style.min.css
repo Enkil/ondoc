@@ -22686,6 +22686,12 @@ a {
     box-shadow: 40rem 0 0 #fafafb
 }
 
+@media (min-width: 1200px) {
+    .charity-reg--new {
+        height: 706px
+    }
+}
+
 @media (max-width: 1199px) {
     .charity-reg--new {
         height: 856px

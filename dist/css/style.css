@@ -26882,7 +26882,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid transparent;
     border-radius: 25px;
 }
-
 @media (max-width: 1199px)
 {
     .page-title__link {
@@ -26895,7 +26894,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid #5db7d8;
     background-color: #5db7d8;
 }
-
 .page-title__link--active
 {
     border: 1px solid #5db7d8;
@@ -27942,6 +27940,12 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: #fafafb;
     box-shadow: 40rem 0 0 #fafafb;
+}
+
+@media (min-width: 1200px) {
+    .charity-reg--new {
+        height: 706px;
+    }
 }
 
 @media (max-width: 1199px) {
