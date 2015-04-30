@@ -4197,7 +4197,7 @@ pre code
 {
     .container
     {
-        width: 1200px;
+        width: 1184px;
     }
 }
 .container-fluid
@@ -16342,14 +16342,6 @@ External pages buttons
 {
     color: #fff;
 }
-.sidebar-profile__menu-link:focus
-{
-    color: #fff;
-}
-.sidebar-profile__menu-link:active
-{
-    color: #fff;
-}
 .sidebar-profile__menu-link--active
 {
     text-decoration: none;
@@ -18055,6 +18047,12 @@ External pages buttons
     padding: 80px 0;
 }
 
+.profile-balance__line {
+    margin-bottom: 20px;
+
+    border-color: rgba(0, 0, 0, .2);
+}
+
 .profile-balance__title {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
@@ -18197,6 +18195,10 @@ External pages buttons
     border: 1px solid #5db7d8;
     border-radius: 25px;
     background: #5db7d8;
+}
+
+.profile-balance__filter-btn--active:focus {
+    color: #fff;
 }
 
 .profile-balance__filter-btn:hover {
@@ -26127,7 +26129,6 @@ a
 .contact-info
 {
     width: 100%;
-    min-width: 1221px !important;
     margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -26175,7 +26176,6 @@ a
 }
 .contact-form
 {
-    min-width: 1221px;
     padding: 30px 0;
 
     background-color: #fff;
@@ -26345,10 +26345,6 @@ a
     border: 1px solid #5db7d8;
     background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
     background-position: 15% 50%;
-}
-.contact-map
-{
-    min-width: 1221px;
 }
 /*
 Styles for filter block on consultations, clinics and docs pages
@@ -26580,6 +26576,8 @@ Styles for filter block on consultations, clinics and docs pages
     position: fixed;
     z-index: 250;
     top: 0;
+    right: 0;
+    left: 0;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background-color: #fff;
@@ -26685,8 +26683,6 @@ Styles for filter block on consultations, clinics and docs pages
 .footer-external__cards
 {
     line-height: 85px;
-
-    padding-right: 0;
 
     text-align: right;
 }
@@ -28707,18 +28703,22 @@ Styles for filter block on consultations, clinics and docs pages
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.possibility.container
+
+.possibility-nav
 {
-    min-width: 1200px !important;
+    display: table;
+
+    width: 100%;
 }
-.possibility-nav__tab a
+
+.possibility-nav__tab
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
 
-    display: inline-block;
+    display: table-cell;
 
     padding: 7px 12px;
 
@@ -28731,16 +28731,37 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid transparent;
     border-radius: 30px;
 }
-.possibility-nav__tab a:hover
+
+@media (max-width: 1199px)
 {
+    .possibility-nav__tab {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .possibility-nav__tab {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .possibility-nav__tab {
+        font-size: 15px;
+    }
+}
+
+.possibility-nav__tab:hover {
     color: #fff;
     background: #10abd2;
 }
-.possibility-nav__tab--active a
+
+.possibility-nav__tab--active
 {
     border-color: #5db7d8;
 }
-.possibility-nav__tab--active a:hover
+
+.possibility-nav__tab--active:hover
 {
     color: #10abd2;
     background: transparent;
@@ -28785,7 +28806,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1221px;
     padding: 55px 0 0 0;
 
     border-bottom: 1px solid #ccc;
@@ -28928,7 +28948,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1221px;
     min-height: 455px;
     padding-top: 62px;
 
@@ -29010,7 +29029,6 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .documents-processing
 {
-    min-width: 1221px;
     padding: 50px 0 60px;
 
     text-align: center;
@@ -29049,8 +29067,20 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
+
+.documents-processing__prices {
+    display: table;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
 .documents-processing__price
 {
+    display: table-cell;
+
+    width: 230px;
+
     text-align: center;
 }
 .documents-processing__amount
@@ -29142,8 +29172,7 @@ Styles for filter block on consultations, clinics and docs pages
     margin-bottom: 8px;
 
     text-align: center;
-
-    etter-spacing: -.4px;
+    letter-spacing: -.4px;
 }
 .processing-service__text
 {
@@ -29172,7 +29201,6 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .processing-contact
 {
-    min-width: 1221px;
     padding: 30px 0 35px;
 
     text-align: center;
@@ -29257,7 +29285,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1221px;
     min-height: 600px;
     padding: 55px 0 61px;
     padding-bottom: 0;
@@ -29287,7 +29314,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 325px;
     height: 550px;
-    margin-left: 50px;
     margin-left: 73px;
     padding: 80px 20px 0 20px;
 
@@ -29371,7 +29397,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1221px;
     padding: 55px 0 61px;
 
     border-bottom: 1px solid #ccc;
@@ -29512,7 +29537,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    min-width: 1221px;
     min-height: 530px;
     padding-top: 73px;
     padding-bottom: 46px;
@@ -29628,7 +29652,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     position: relative;
 
-    margin-bottom: 88px;
     margin-bottom: 55px;
 
     text-align: center;
@@ -32178,7 +32201,11 @@ Widgets
 }
 .medcard-widget__header--stoma
 {
-    padding: 14px 40px 11px;
+    padding: 14px 10px 11px;
+}
+
+.medcard-widget__header--processing {
+    padding: 14px 40px 11px 5px;
 }
 .medcard-widget__subheader
 {

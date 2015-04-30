@@ -4,14 +4,13 @@
   padding-bottom: 30px;
 }
 
-.possibility.container {
-  min-width: 1200px !important;
-}
-
 .possibility-nav {
-  &__tab a {
+  display: table;
+  width: 100%;
+
+  &__tab {
     .gotham-m;
-    display: inline-block;
+    display: table-cell;
     font-size: 18px;
     line-height: 24px;
     color: @blue-color;
@@ -21,13 +20,24 @@
     border: 1px solid transparent;
     transition: 0.4s ease all;
     text-align: center;
+
+    @media (max-width: 1199px) {
+      font-size: 17px;
+    }
+    @media (max-width: 1130px) {
+      font-size: 16px;
+    }
+    @media (max-width: 1030px) {
+      font-size: 15px;
+    }
+
     &:hover {
       color: #fff;
       background: #10abd2;
     }
   }
 
-  &__tab--active a {
+  &__tab--active {
     border-color: @blue-color;
     &:hover {
       color: #10abd2;
@@ -66,7 +76,7 @@
 }
 
 .possibility-about {
-  min-width: 1221px;
+  //  min-width: 1221px;
   overflow: hidden;
   padding: 55px 0 0 0;
   position: relative;
@@ -181,7 +191,7 @@
 // digitizing-promo
 
 .digitizing-promo {
-  min-width: 1221px;
+  //  min-width: 1221px;
   min-height: 455px;
   padding-top: 62px;
   position: relative;
@@ -244,7 +254,7 @@
 // documents-processing
 
 .documents-processing {
-  min-width: 1221px;
+  //  min-width: 1221px;
   padding: 50px 0 60px;
   border-bottom: 1px solid #ccc;
   background: url(../img/background-section.jpg) repeat-x;
@@ -271,8 +281,17 @@
     margin-bottom: 43px;
     text-align: center;
   }
-  &__price {
+
+  &__prices {
+    display: table;
     text-align: center;
+    margin: 0 auto;
+  }
+
+  &__price {
+    display: table-cell;
+    text-align: center;
+    width: 230px;
   }
   &__amount {
     .gotham-m;
@@ -347,7 +366,7 @@
     font-size: 26px;
     margin-bottom: 8px;
     line-height: 19.5px;
-    etter-spacing: -0.4px;
+    letter-spacing: -0.4px;
     text-align: center;
     margin-top: 40px;
   }
@@ -372,7 +391,7 @@
 .processing-contact {
   color: @white-color;
   padding: 30px 0 35px;
-  min-width: 1221px;
+  //  min-width: 1221px;
   text-align: center;
   background: url(../img/bg-processing-contact.jpg) no-repeat;
   background-size: cover;
@@ -430,7 +449,7 @@
 
 .digitizing-recommendation {
   min-height: 600px;
-  min-width: 1221px;
+  //  min-width: 1221px;
   overflow: hidden;
   padding: 55px 0 61px;
   position: relative;
@@ -451,7 +470,7 @@
     z-index: 1;
   }
   &__mock-up {
-    margin-left: 50px;
+    //    margin-left: 50px;
     width: 325px;
     height: 550px;
     margin-left: 73px;
@@ -513,7 +532,7 @@
 }
 
 .profile-section {
-  min-width: 1221px;
+  //  min-width: 1221px;
   overflow: hidden;
   padding: 55px 0 61px;
   position: relative;
@@ -622,7 +641,7 @@
 }
 
 .reminders-section {
-    min-width: 1221px;
+  //    min-width: 1221px;
     min-height: 530px;
     padding-top: 73px;
     padding-bottom: 46px;
@@ -713,7 +732,7 @@
   &__title {
       .gotham-m;
       text-align: center;
-      margin-bottom: 88px;
+    //      margin-bottom: 88px;
       font-size: 40px;
       line-height: 49px;
       margin-bottom: 55px;
