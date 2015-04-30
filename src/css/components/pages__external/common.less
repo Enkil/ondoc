@@ -11,25 +11,26 @@
   }
 
   &__link{
-    display: table-cell;
-  }
-
-  &__link-item{
     .gotham-m;
+    display: table-cell;
+    text-align: center;
     font-size: 18px;
-    display: inline-block;
     line-height: 35px;
     padding: 0 20px;
     border-radius: 25px;
     border: 1px solid transparent;
 
-    &:hover{
+    @media (max-width: 1199px) {
+      font-size: 16px;
+    }
+
+    &:hover {
       color: @white-color;
       background-color: @blue-color;
       border: 1px solid @blue-color;
     }
 
-    &--active{
+    &--active {
       border: 1px solid @blue-color;
     }
   }

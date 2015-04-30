@@ -26868,29 +26868,35 @@ Styles for filter block on consultations, clinics and docs pages
 }
 .page-title__link
 {
-    display: table-cell;
-}
-.page-title__link-item
-{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 18px;
     line-height: 35px;
 
-    display: inline-block;
+    display: table-cell;
 
     padding: 0 20px;
+
+    text-align: center;
 
     border: 1px solid transparent;
     border-radius: 25px;
 }
-.page-title__link-item:hover
+
+@media (max-width: 1199px)
 {
+    .page-title__link {
+        font-size: 16px;
+    }
+}
+
+.page-title__link:hover {
     color: #fff;
     border: 1px solid #5db7d8;
     background-color: #5db7d8;
 }
-.page-title__link-item--active
+
+.page-title__link--active
 {
     border: 1px solid #5db7d8;
 }
@@ -28703,14 +28709,12 @@ Styles for filter block on consultations, clinics and docs pages
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 .possibility-nav
 {
     display: table;
 
     width: 100%;
 }
-
 .possibility-nav__tab
 {
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
@@ -28731,7 +28735,6 @@ Styles for filter block on consultations, clinics and docs pages
     border: 1px solid transparent;
     border-radius: 30px;
 }
-
 @media (max-width: 1199px)
 {
     .possibility-nav__tab {
@@ -28755,12 +28758,10 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background: #10abd2;
 }
-
 .possibility-nav__tab--active
 {
     border-color: #5db7d8;
 }
-
 .possibility-nav__tab--active:hover
 {
     color: #10abd2;
