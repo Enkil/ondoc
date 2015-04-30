@@ -27482,6 +27482,12 @@ Styles for filter block on consultations, clinics and docs pages
     z-index: 10;
     right: 50px;
 }
+
+@media (max-width: 1199px) {
+    .fdc-section__iphone--5 {
+        right: 0;
+    }
+}
 @media (max-width: 1025px)
 {
     .fdc-section__iphone--5
@@ -27492,6 +27498,12 @@ Styles for filter block on consultations, clinics and docs pages
 .fdc-section__iphone--6
 {
     right: 260px;
+}
+
+@media (max-width: 1199px) {
+    .fdc-section__iphone--6 {
+        right: 210px;
+    }
 }
 @media (max-width: 1025px)
 {
