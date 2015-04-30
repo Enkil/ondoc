@@ -29402,10 +29402,16 @@ Styles for filter block on consultations, clinics and docs pages
 
     overflow: hidden;
 
-    padding: 55px 0 61px;
+    padding: 55px 0 60px;
 
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
+}
+
+@media (max-width: 1199px) {
+    .profile-section {
+        padding-bottom: 41px;
+    }
 }
 .profile-section__title
 {
@@ -29441,8 +29447,6 @@ Styles for filter block on consultations, clinics and docs pages
     z-index: 1;
 
     display: inline-block;
-
-    vertical-align: bottom;
 }
 .profile-section__mock-up
 {
@@ -29458,7 +29462,6 @@ Styles for filter block on consultations, clinics and docs pages
 .profile-section__mock-up_image
 {
     position: relative;
-    bottom: -2px;
 
     overflow: hidden;
 
