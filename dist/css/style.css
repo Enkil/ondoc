@@ -11325,6 +11325,12 @@ a:focus
     background-color: #fff;
     box-shadow: 2px 0 2px rgba(0, 0, 0, .3);
 }
+
+@media (max-width: 1001px) {
+    .main-header {
+        width: 1000px;
+    }
+}
 .main-header__avatar
 {
     width: 43px;
