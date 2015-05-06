@@ -1,0 +1,119 @@
+.stoma {
+
+  &__tab-doc {
+    margin-bottom: 12px;
+  }
+
+  &__tab-doc-title {
+    margin-top: 10px;
+  }
+
+  &__nav-link {
+    .gotham-m;
+    font-size: 14px;
+    color: @blue-color;
+    line-height: 25px;
+    padding: 1px 15px 0;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &--active, &:hover, &:focus {
+      background-color: @blue-color;
+      color: @white-color;
+    }
+  }
+
+  &__status {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__status-item {
+    display: table-cell;
+    font-size: 14px;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    &--healthy:before {
+      border: 1px solid @grey-color-2;
+    }
+    &--disinfected:before {
+      background-color: @green-color-2;
+    }
+    &--requires-treatment:before {
+      background-color: #ed7524;
+    }
+    &--implant:before {
+      background-color: #89d1e0;
+    }
+    &--deleted:before {
+      background-color: @grey-color-2;
+    }
+
+    &--thirst {
+      text-align: left;
+    }
+
+    &--last {
+      text-align: right;
+    }
+  }
+}
+
+.stoma-table {
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  &__row {
+    border-bottom: 1px solid @grey-color-1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__tooth {
+    width: 50px;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+
+  &__tooth-img {
+    margin-right: 20px;
+    margin-top: 8px;
+  }
+
+  &__treatment {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+    vertical-align: top;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+
+  &__treatment-title {
+    .gotham-m;
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  &__treatment-text {
+    font-size: 13px;
+  }
+}

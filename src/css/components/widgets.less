@@ -134,11 +134,16 @@
 .widget-doctor{
   margin-bottom: 15px;
 
+  &--stoma {
+    margin-top: 20px;
+  }
+
   // Element -> Avatar
   &__img{
     width: 46px;
     height: 46px;
     border-radius: 50%;
+    border: 1px solid @grey-color-2;
   }
 
   // Element -> Name
@@ -217,6 +222,17 @@
       display: inline-block;
       vertical-align: middle;
       background: url(../img/icon-consultation.png) no-repeat;
+    }
+
+    &--stoma:before {
+      content: "";
+      width: 17px;
+      height: 22px;
+      padding-right: 22px;
+      padding-bottom: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-stoma-header.png) no-repeat;
     }
   }
 
