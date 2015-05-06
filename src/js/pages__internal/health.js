@@ -8,7 +8,7 @@ $(document).ready(function () {
         $('.js__find--health-question').addClass('display-none');
     });
 
-    /*  Toggle links in charts block*/
+    /*  Toggle links in charts block */
     $('.js__find--health-graphs-btn').click(function (event) {
         event.preventDefault();
         $('.health-info__btn').removeClass('health-info__btn--active');

@@ -178,3 +178,82 @@
     display: inline-block;
   }
 }
+
+.stoma-popup {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: @grey-color-5;
+
+  &__body {
+    position: absolute;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 495px;
+    display: table;
+    margin: auto;
+    padding: 20px;
+    border-radius: 17px;
+    background-color: @white-color;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    .gotham-m;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__btn {
+    .gotham-m;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 35px;
+    color: @blue-color;
+    text-align: center;
+    width: 130px;
+    border: 1px solid @blue-color;
+    border-radius: 25px;
+    transition: 0.3s ease all;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: @blue-color;
+      color: @white-color;
+    }
+  }
+}

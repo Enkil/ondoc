@@ -15771,7 +15771,7 @@ $(document).ready(function () {
         $('.js__find--health-question').addClass('display-none');
     });
 
-    /*  Toggle links in charts block*/
+    /*  Toggle links in charts block */
     $('.js__find--health-graphs-btn').click(function (event) {
         event.preventDefault();
         $('.health-info__btn').removeClass('health-info__btn--active');
@@ -15826,7 +15826,34 @@ $(document).ready(function () {
 
     });
 
+});
 
+/* Stoma popups */
+$(document).ready(function () {
+
+    $('.js__find--stoma-extra-btn').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $('.js__find--stoma-extra-popup').removeClass('display-none');
+    });
+
+    $('.js__find--stoma-planned-btn').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $('.js__find--stoma-planned-popup').removeClass('display-none');
+    });
+
+    $('.stoma-popup__close').click(function (event) {
+        event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
+        $('.stoma-popup').addClass('display-none');
+    });
+
+    $('.stoma-popup__btn').click(function (event) {
+        event.preventDefault();
+        $('body').removeClass('popup-scrolltop');
+        $('.stoma-popup').addClass('display-none');
+    });
 });
 /*  Show/hide tasks filter om main operator page*/
 $(document).ready(function () {

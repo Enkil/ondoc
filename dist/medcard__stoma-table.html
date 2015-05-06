@@ -88,7 +88,6 @@
                     <div class="sidebar__profile bottom-line-light text-center">
                         <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван"
                              title="Смирнов Иван"/>
-
                         <p class="sidebar__name">Смирнов Иван</p>
                     </div>
                     <!-- / Profile -->
@@ -624,14 +623,46 @@
                             <!-- Buttons -->
                             <div class="row">
                                 <div class="col-xs-36 text-center">
-                                    <a class="widget-btn widget-btn--stoma" href="#">Запланированное лечение</a>
-                                    <a class="widget-btn widget-btn--stoma" href="#">Дополнительно</a>
+                                    <a class="widget-btn widget-btn--stoma js__find--stoma-planned-btn" href="#">Запланированное
+                                        лечение</a>
+                                    <a class="widget-btn widget-btn--stoma js__find--stoma-extra-btn" href="#">Дополнительно</a>
                                 </div>
                             </div>
 
                         </div>
                         <!-- / Right form block -->
 
+                        <div class="stoma-popup js__find--stoma-extra-popup display-none">
+                            <div class="stoma-popup__body">
+                                <span class="stoma-popup__close"></span>
+
+                                <h2 class="stoma-popup__title">Дополнительно</h2>
+
+                                <h3 class="stoma-popup__subtitle">Наличие зубных отложений</h3>
+
+                                <p class="stoma-popup__text">На всех зубах. Требуется чистка УЗ</p>
+
+                                <h3 class="stoma-popup__subtitle">Состояние слизистой оболочки</h3>
+
+                                <p class="stoma-popup__text">Нормальное</p>
+
+                                <h3 class="stoma-popup__subtitle">Прикус</h3>
+
+                                <p class="stoma-popup__text">В норме</p>
+                                <a class="stoma-popup__btn" href="#">ОК</a>
+                            </div>
+                        </div>
+
+                        <!DOCTYPE html>
+                        <html>
+                        <head lang="en">
+                            <meta charset="UTF-8">
+                            <title></title>
+                        </head>
+                        <body>
+
+                        </body>
+                        </html>
 
                     </div>
                     <!-- / Widget body -->
@@ -653,7 +684,7 @@
         <div class="row">
             <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
         </div>
-    </div>
+        </div>
 </footer>
 <!-- / PAGE FOOTER-->
 
