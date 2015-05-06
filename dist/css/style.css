@@ -31363,7 +31363,6 @@ Widgets
     color: #5db7d8;
     border-radius: 25px;
 }
-
 .stoma__nav-link--active,
 .stoma__nav-link:hover,
 .stoma__nav-link:focus {
@@ -31429,8 +31428,6 @@ Widgets
 
 .stoma-table {
     width: 100%;
-    margin-right: -10px;
-    margin-left: -10px;
 }
 
 .stoma-table__row {
@@ -31475,6 +31472,70 @@ Widgets
 
 .stoma-table__treatment-text {
     font-size: 13px;
+}
+
+.stoma-scheme {
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.stoma-scheme__tooth {
+    position: relative;
+
+    cursor: pointer;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+    text-align: center;
+}
+
+.stoma-scheme__num {
+    font-size: 12px;
+
+    text-align: center;
+}
+
+.stoma-scheme__popup-body {
+    line-height: 1;
+
+    position: absolute;
+    z-index: 100;
+
+    width: 160px;
+    padding: 15px;
+
+    text-align: left;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+}
+
+.stoma-scheme__popup-body:before {
+    position: absolute;
+    top: -14px;
+
+    content: '';
+
+    border: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+}
+
+.stoma-scheme__popup-title {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 13px;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.stoma-scheme__popup-text {
+    font-size: 13px;
+
+    display: inline-block;
+
+    margin-bottom: 10px;
 }
 /*  Styles for Datepicker popup */
 .datepicker

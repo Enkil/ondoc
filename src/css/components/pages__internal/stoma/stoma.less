@@ -74,8 +74,6 @@
 
 .stoma-table {
   width: 100%;
-  margin-left: -10px;
-  margin-right: -10px;
 
   &__row {
     border-bottom: 1px solid @grey-color-1;
@@ -115,5 +113,68 @@
 
   &__treatment-text {
     font-size: 13px;
+  }
+}
+
+.stoma-scheme {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 50px;
+
+  &__row {
+  }
+
+  &__tooth {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    position: relative;
+
+    //    &:hover{
+    //      opacity: 0.5;
+    //    }
+  }
+
+  &__img {
+
+  }
+
+  &__num {
+    text-align: center;
+    font-size: 12px;
+
+  }
+
+  &__popup-body {
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: @white-color;
+    box-shadow: 0 0 13px 2px @grey-color-2;
+    text-align: left;
+    line-height: 1;
+
+    &:before {
+      position: absolute;
+      top: -14px;
+      content: '';
+      border: 7px solid transparent;
+      border-bottom: 7px solid @white-color;
+    }
+  }
+
+  &__popup-title {
+    .gotham-m;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &__popup-text {
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: inline-block;
   }
 }
