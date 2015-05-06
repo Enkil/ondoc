@@ -19938,68 +19938,40 @@ a
     margin: 0;
     margin-bottom: 20px;
 }
-.drugs__drug-value
+
+.drugs__value
 {
-    font-family: 'Gotham', Arial, sans-serif !important;
-    font-family: 'Gotham', Arial, sans-serif;
+    width: 100%;
+}
+
+.drugs__value-time {
     font-size: 15px;
 
-    display: inline-block;
-
     color: #8d8d8d;
-    outline: none!important;
 }
-.drugs__drug-value--edit
+
+.drugs__value-time--edit
 {
     cursor: pointer;
 
     color: #5db7d8;
 }
-.drugs__drug-value--edit:hover
+
+.drugs__value-time--edit:hover
 {
     color: #7ec6e0;
 }
-.drugs__drug-value--input
-{
-    width: 66px;
-    margin: 0 0 0 10px;
-}
-@media (max-width: 1025px)
-{
-    .drugs__drug-value--input
-    {
-        margin: 0;
-    }
-}
-.drugs__drug-value-line
-{
-    position: relative;
 
+.drugs__value-line
+{
     display: inline-block;
 
     width: 20px;
-    height: 21px;
-    margin-left: 10px;
+    margin: 0 10px;
 
     vertical-align: middle;
-}
-.drugs__drug-value-line:before
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 
-    display: block;
-
-    width: 20px;
-    height: 1px;
-    margin: auto;
-
-    content: '';
-
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    color: #8d8d8d;
 }
 .drugs__drug-day
 {

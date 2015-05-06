@@ -240,11 +240,13 @@
     }
   }
 
-  &__drug-value{
-    .gotham;
+  &__value {
+    width: 100%;
+  }
+
+  &__value-time {
     font-size: 15px;
     color: @grey-color;
-    display: inline-block;
 
     &--edit{
       color: @blue-color;
@@ -254,37 +256,14 @@
         color: lighten(@blue-color, 8);
       }
     }
+  }
 
-    &--input{
-      width: 66px;
-      margin: 0 0 0 10px;
-      @media (max-width:1025px) {
-        margin: 0;
-      }
-    }
-
-    &-line{
-      vertical-align: middle;
-      width: 20px;
-      margin-left: 10px;
-      height: 21px;
-      display: inline-block;
-      position: relative;
-
-      &:before{
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 20px;
-        display: block;
-        height: 1px;
-        margin: auto;
-        border-bottom: 1px solid @grey-color-2;
-      }
-    }
+  &__value-line {
+    width: 20px;
+    margin: 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+    color: @grey-color;
   }
 
   &__drug-day{
