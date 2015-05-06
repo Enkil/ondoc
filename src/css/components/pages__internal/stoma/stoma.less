@@ -81,6 +81,10 @@
     &:last-child {
       border-bottom: none;
     }
+
+    &--popup-planned:last-child {
+      border-bottom: 1px solid @grey-color-1;
+    }
   }
 
   &__tooth {
@@ -92,7 +96,6 @@
 
   &__tooth-img {
     margin-right: 20px;
-    margin-top: 8px;
   }
 
   &__treatment {
@@ -102,6 +105,12 @@
     vertical-align: top;
     padding-bottom: 5px;
     padding-top: 20px;
+
+    &--popup-planned {
+      width: 100%;
+      padding-right: 0;
+      vertical-align: middle;
+    }
   }
 
   &__treatment-title {
@@ -113,6 +122,10 @@
 
   &__treatment-text {
     font-size: 13px;
+
+    &--popup-planned {
+      font-size: 14px;
+    }
   }
 }
 
@@ -129,10 +142,6 @@
     cursor: pointer;
     transition: 0.3s all ease;
     position: relative;
-
-    //    &:hover{
-    //      opacity: 0.5;
-    //    }
   }
 
   &__img {

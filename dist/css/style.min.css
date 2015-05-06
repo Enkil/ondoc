@@ -25387,6 +25387,10 @@ a {
     border-bottom: none
 }
 
+.stoma-table__row--popup-planned:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
 .stoma-table__tooth {
     width: 50px;
     padding-top: 20px;
@@ -25395,7 +25399,6 @@ a {
 }
 
 .stoma-table__tooth-img {
-    margin-top: 8px;
     margin-right: 20px
 }
 
@@ -25408,6 +25411,12 @@ a {
     vertical-align: top
 }
 
+.stoma-table__treatment--popup-planned {
+    width: 100%;
+    padding-right: 0;
+    vertical-align: middle
+}
+
 .stoma-table__treatment-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
     font-size: 13px;
@@ -25417,6 +25426,10 @@ a {
 
 .stoma-table__treatment-text {
     font-size: 13px
+}
+
+.stoma-table__treatment-text--popup-planned {
+    font-size: 14px
 }
 
 .stoma-scheme {
