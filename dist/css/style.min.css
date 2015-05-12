@@ -19405,14 +19405,28 @@ a {
     bottom: 0;
     left: 0;
     display: table;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
     width: 500px;
-    margin: auto
+    margin: auto;
+    -ms-overflow-style: none
+}
+
+.popup-login__body::-webkit-scrollbar {
+    width: 0
 }
 
 .popup-login__header {
     position: relative;
     margin-bottom: 40px;
     text-align: center
+}
+
+.popup-login__ondoc {
+    font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px
 }
 
 .popup-login__title {

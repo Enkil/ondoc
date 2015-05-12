@@ -46,4 +46,29 @@ $(document).ready(function () {
         $(this).toggleClass('popup-login__check--active');
     });
 
+
+    /* Show partner login popup */
+    $('.js__find--partner-login').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--partner-login-popup').removeClass('display-none');
+    });
+
+    /* Show recovery popup */
+    $('.js__find--recovery').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--recovery-popup').removeClass('display-none');
+    });
+
+    /* Show SMS popup */
+    $('.js__find--sms').click(function (event) {
+        event.preventDefault();
+        $('body').addClass('popup-scrolltop');
+        $(this).parents('.popup-login').addClass('display-none');
+        $('.js__find--sms-popup').removeClass('display-none');
+    });
+
 });
