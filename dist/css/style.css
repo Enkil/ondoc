@@ -15226,10 +15226,10 @@ External pages buttons
 {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
 
@@ -15237,6 +15237,9 @@ External pages buttons
     margin: auto;
     padding: 20px 0 20px;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -15390,10 +15393,10 @@ External pages buttons
 {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
 
@@ -15401,6 +15404,9 @@ External pages buttons
     margin: auto;
     padding: 20px 20px 0;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -16500,10 +16506,10 @@ input:after
 {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
 
@@ -16511,6 +16517,9 @@ input:after
     margin: auto;
     padding: 40px 0 20px;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -17482,10 +17491,10 @@ input:after
 {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
 
@@ -17493,6 +17502,9 @@ input:after
     margin: auto;
     padding: 17px 0 0;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -21743,7 +21755,6 @@ a
 
     width: 100%;
 }
-
 .gm-style-iw h4,
 .gm-style-iw p {
     margin: 0;
@@ -21883,10 +21894,10 @@ a
 {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
 
@@ -21895,6 +21906,9 @@ a
     margin: auto;
     padding: 38px 20px 10px 20px;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -23944,10 +23958,10 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: fixed;
     z-index: 1100;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
     overflow: -moz-scrollbars-none;
@@ -23955,6 +23969,10 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 500px;
     margin: auto;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
     -ms-overflow-style: none;
 }
@@ -31947,10 +31965,10 @@ Widgets
 {
     position: fixed;
     z-index: 150;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: table;
 
@@ -31959,6 +31977,9 @@ Widgets
     padding-top: 24px;
     padding-bottom: 24px;
 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 15px;

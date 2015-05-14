@@ -19,10 +19,8 @@
   &__modal {
     position: fixed;
     z-index: 150;
-    top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
     display: table;
     width: 425px;
     margin: auto;
@@ -31,6 +29,11 @@
     text-align: center;
     border-radius: 15px;
     background: @white-color;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
   }
 
   &__title {

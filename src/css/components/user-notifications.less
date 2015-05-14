@@ -192,16 +192,21 @@
     position: fixed;
     text-align: center;
     z-index: 500;
-    top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
     width: 480px;
     display: table;
     margin: auto;
     padding: 17px 0 0;
     border-radius: 6px;
     background-color: #fff;
+
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
   }
 
   &__close {
