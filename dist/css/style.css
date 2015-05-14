@@ -11234,6 +11234,17 @@ html
 }
 @font-face
 {
+    font-family: 'Ruble';
+
+    src: url('fonts/rouble-webfont.eot');
+    src: local('ALS Rubl'), local('Ruble'), url('fonts/rouble-webfont.woff') format('woff'), url('fonts/rouble-webfont.svg') format('svg'), url('fonts/rouble-webfont.otf') format('opentype');
+}
+
+span.ruble {
+    font-family: 'Ruble';
+}
+
+@font-face {
     font-family: 'GothamProLight';
 
     src: url('fonts/GothamProLight.eot'), url('fonts/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight.woff') format('woff');
@@ -21720,6 +21731,27 @@ a
     text-align: center;
 
     color: rgba(0, 0, 0, .2);
+}
+
+#docs-on-map {
+    width: 100%;
+    height: 780px;
+}
+
+.gm-style-iw * {
+    display: block;
+
+    width: 100%;
+}
+
+.gm-style-iw h4,
+.gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+
+.gm-style-iw a {
+    color: #4272db;
 }
 .steps-modal__input-small
 {
