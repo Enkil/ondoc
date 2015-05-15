@@ -11287,7 +11287,7 @@ a:focus {
     background: url(../img/arrow-down.png) no-repeat
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
     .monitoring-widget__period {
         font-size: 11px
     }
@@ -11334,7 +11334,7 @@ a:focus {
     text-align: right
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
     .monitoring-widget__date {
         font-size: 11px
     }
@@ -11615,7 +11615,7 @@ a:focus {
     background-color: #5db7d8
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
     .monitoring-widget__chol-shedule-link {
         font-size: 13px
     }

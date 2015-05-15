@@ -13687,7 +13687,8 @@ External pages buttons
 
     background: url(../img/arrow-down.png) no-repeat;
 }
-@media (max-width: 1025px)
+
+@media (max-width: 1200px)
 {
     .monitoring-widget__period
     {
@@ -13747,7 +13748,8 @@ External pages buttons
 
     text-align: right;
 }
-@media (max-width: 1025px)
+
+@media (max-width: 1200px)
 {
     .monitoring-widget__date
     {
@@ -14080,7 +14082,8 @@ External pages buttons
     color: #fff !important;
     background-color: #5db7d8;
 }
-@media (max-width: 1025px)
+
+@media (max-width: 1200px)
 {
     .monitoring-widget__chol-shedule-link
     {
