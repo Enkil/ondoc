@@ -18086,7 +18086,7 @@ a
 .container--medium
 {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -18270,6 +18270,8 @@ a
 .promo_block
 {
     position: relative;
+
+    padding: 0 80px;
 }
 .promo_logotype
 {
@@ -18477,6 +18479,11 @@ a
 {
     box-sizing: border-box;
     padding-right: 80px;
+}
+
+.about__text--left {
+    box-sizing: border-box;
+    padding-left: 80px;
 }
 .about__text__label
 {
