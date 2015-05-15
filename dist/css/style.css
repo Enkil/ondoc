@@ -15229,7 +15229,7 @@ External pages buttons
     top: 50%;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
 
     display: table;
 
@@ -15237,9 +15237,9 @@ External pages buttons
     margin: auto;
     padding: 20px 0 20px;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -15396,7 +15396,7 @@ External pages buttons
     top: 50%;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
 
     display: table;
 
@@ -15404,9 +15404,9 @@ External pages buttons
     margin: auto;
     padding: 20px 20px 0;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -16509,7 +16509,7 @@ input:after
     top: 50%;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
 
     display: table;
 
@@ -16517,9 +16517,9 @@ input:after
     margin: auto;
     padding: 40px 0 20px;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -16756,7 +16756,6 @@ input:after
 
     width: 100%;
     max-height: 250px;
-    margin-bottom: 10px;
     margin-bottom: 15px;
     padding: 7px 14px;
 
@@ -17494,7 +17493,7 @@ input:after
     top: 50%;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
 
     display: table;
 
@@ -17502,9 +17501,9 @@ input:after
     margin: auto;
     padding: 17px 0 0;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -23901,33 +23900,28 @@ Styles for filter block on consultations, clinics and docs pages
 {
     margin-bottom: 40px;
 }
-
 /* Contacts page */
 #ondoc-on-map
 {
     width: 100%;
     height: 510px;
 }
-
 #ondoc-on-map .gm-style-iw *
 {
     display: block;
 
     width: 100%;
 }
-
 #ondoc-on-map .gm-style-iw h4,
 #ondoc-on-map .gm-style-iw p
 {
     margin: 0;
     padding: 0;
 }
-
 #ondoc-on-map .gm-style-iw a
 {
     color: #4272db;
 }
-
 /* Docs on map page */
 #docs-on-map {
     width: 100%;
@@ -23943,7 +23937,6 @@ Styles for filter block on consultations, clinics and docs pages
 #docs-on-map .gm-style-iw > div > div {
     overflow: visible !important;
 }
-
 /* Clinics on map page */
 #clinics-on-map {
     width: 100%;
@@ -23986,7 +23979,7 @@ Styles for filter block on consultations, clinics and docs pages
     top: 50%;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
 
     display: table;
     overflow: -moz-scrollbars-none;
@@ -23995,9 +23988,9 @@ Styles for filter block on consultations, clinics and docs pages
     width: 500px;
     margin: auto;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 
     -ms-overflow-style: none;
 }
@@ -26795,7 +26788,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: absolute;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -26805,6 +26798,10 @@ Styles for filter block on consultations, clinics and docs pages
     width: 490px;
     margin: auto;
     padding: 20px 0 15px 0;
+
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 
     border-radius: 6px;
     background-color: #fff;
@@ -27942,7 +27939,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: absolute;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -27952,6 +27949,10 @@ Styles for filter block on consultations, clinics and docs pages
     width: 490px;
     margin: auto;
     padding: 20px 0 15px 0;
+
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 
     border-radius: 6px;
     background-color: #fff;
@@ -31993,7 +31994,7 @@ Widgets
     top: 50%;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
 
     display: table;
 
@@ -32002,9 +32003,9 @@ Widgets
     padding-top: 24px;
     padding-bottom: 24px;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 15px;
