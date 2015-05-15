@@ -88,6 +88,7 @@
                     <div class="sidebar__profile bottom-line-light text-center">
                         <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван"
                              title="Смирнов Иван"/>
+
                         <p class="sidebar__name">Смирнов Иван</p>
                     </div>
                     <!-- / Profile -->
@@ -117,32 +118,32 @@
             <!-- Right page block-->
             <div class="col-xs-26 col-md-28 col-lg-29">
 
-                <!-- Docs Header -->
-                <div class="row docs__header">
+                <!-- Clinics Header -->
+                <div class="row clinics__header">
 
                     <div class="col-xs-14 text-left">
-                        <a class="docs__head-link docs__head-link--docs docs__head-link--active"
-                           href="docs.html">Врачи</a>
-                        <a class="docs__head-link docs__head-link--clinics" href="clinics.html">Клиники</a>
+                        <a class="clinics__head-link clinics__head-link--docs" href="docs.html">Врачи</a>
+                        <a class="clinics__head-link clinics__head-link--clinics clinics__head-link--active"
+                           href="clinics.html">Клиники</a>
                     </div>
 
                     <div class="col-xs-7 text-center">
-                        <a class="docs__head-link docs__head-link--filter arrow-down" href="#">Фильтр</a>
+                        <a class="clinics__head-link clinics__head-link--filter arrow-down" href="#">Фильтр</a>
                     </div>
 
                     <div class="col-xs-15 text-right non-padding-right">
-                        <a class="docs__search" href="#"></a>
+                        <a class="clinics__search" href="#"></a>
 
                         <form action="" class="display-none js__search-form">
-                            <input type="search" placeholder="Поиск" class="docs__search-input"/>
+                            <input type="search" placeholder="Поиск" class="clinics__search-input"/>
                         </form>
                     </div>
 
                     <!-- Filter block -->
-                    <div class="col-xs-36 medcard-filter display-none">
+                    <div class="col-xs-36  display-none medcard-filter">
 
                         <!-- Specs -->
-                        <div class="col-xs-24">
+                        <div class="col-xs-36">
                             <a class="medcard-filter__link" href="">Специализации</a>
 
                             <!-- Choose specialisation Pop-UP -->
@@ -296,17 +297,6 @@
                             <span class="medcard-filter__tag">Гинеколог <span class="medcard-filter__tag-close"></span></span>
                         </div>
 
-                        <!-- Rank -->
-                        <div class="col-xs-5">
-                            <span class="filter__rank-text">Стаж</span>
-                            <span class="filter__rank-num"><span id="filter__rank-from">1</span> - <span
-                                    id="filter__rank-to">25</span></span>
-                        </div>
-
-                        <div class="col-xs-7">
-                            <input type="text" id="filter__range" name="example_name" value=""/>
-                        </div>
-
                         <!-- Search -->
                         <div class="col-xs-36">
 
@@ -365,29 +355,31 @@
                     <!-- / Filter block -->
 
                 </div>
-                <!-- / Docs Header -->
+                <!-- / Clinics Header -->
 
 
                 <!-- Content -->
                 <div class="row widget">
 
 
-                    <!-- Docs widget header -->
+                    <!-- Clinics widget header -->
                     <div class="row">
                         <div class="col-xs-36 text-center">
-                            <div class="docs__widget-header">
+                            <div class="clinics__widget-header">
 
                                 <div class="col-xs-8 text-left">
-                                    <a class="docs__head-link docs__head-link--list" href="docs.html"></a>
-                                    <a class="docs__head-link docs__head-link--onmap docs__head-link--active"
-                                       href="docs--on-map.html"></a>
+                                    <a class="clinics__head-link clinics__head-link--list" href="clinics.html"></a>
+                                    <a class="clinics__head-link clinics__head-link--onmap clinics__head-link--active"
+                                       href="clinics--on-map.html"></a>
                                 </div>
 
                                 <div class="col-xs-20">
-                                    <a class="docs__head-link docs__head-link--all docs__head-link--active"
-                                       href="docs.html">Все</a>
-                                    <a class="docs__head-link docs__head-link--my" href="docs_cap--docs-my.html">Мои</a>
-                                    <a class="docs__head-link docs__head-link--fave" href="docs_cap--docs-fave.html">Избранные</a>
+                                    <a class="clinics__head-link clinics__head-link--all clinics__head-link--active"
+                                       href="clinics.html">Все</a>
+                                    <a class="clinics__head-link clinics__head-link--my"
+                                       href="clinics_cap--clinics-my.html">Мои</a>
+                                    <a class="clinics__head-link clinics__head-link--fave"
+                                       href="clinics_cap--clinics-fave.html">Избранные</a>
                                 </div>
 
                                 <div class="col-xs-8">
@@ -397,14 +389,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- / Docs widget header -->
+                    <!-- / Clinics widget header -->
 
                     <!-- Widget body -->
                     <div class="row">
 
 
                         <div class="col-xs-36">
-                            <div id='docs-on-map'></div>
+                            <div id='clinics-on-map'></div>
                             <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
                         </div>
 
@@ -429,7 +421,7 @@
         <div class="row">
             <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
         </div>
-        </div>
+    </div>
 </footer>
 <!-- / PAGE FOOTER-->
 

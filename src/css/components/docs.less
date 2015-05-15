@@ -254,6 +254,7 @@
       display: inline-block;
       width: 17px;
       height: 17px;
+      left: 8px;
       padding: 0;
       border: none;
       border-radius: 50%;
@@ -330,6 +331,14 @@
         }
       }
     }
+
+    &--exp-map {
+      &:before {
+        background: url("../img/icon-doc-exp.png");
+        left: 0;
+      }
+    }
+
   }
 
   &__enroll-link{
@@ -806,23 +815,4 @@
     color: @grey-color-2;
     text-align: center;
   }
-}
-
-#docs-on-map {
-  height: 780px;
-  width: 100%;
-}
-
-.gm-style-iw * {
-  display: block;
-  width: 100%;
-}
-
-.gm-style-iw h4, .gm-style-iw p {
-  margin: 0;
-  padding: 0;
-}
-
-.gm-style-iw a {
-  color: #4272db;
 }

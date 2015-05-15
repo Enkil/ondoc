@@ -20013,6 +20013,7 @@ a
 {
     position: absolute;
     top: 30px;
+    left: 8px;
 
     display: inline-block;
 
@@ -20938,6 +20939,7 @@ a
 {
     position: absolute;
     top: 30px;
+    left: 8px;
 
     display: inline-block;
 
@@ -21041,6 +21043,12 @@ a
     {
         left: 20px;
     }
+}
+
+.docs__tab-info--exp-map:before {
+    left: 0;
+
+    background: url('../img/icon-doc-exp.png');
 }
 .docs__enroll-link
 {
@@ -21743,26 +21751,6 @@ a
     text-align: center;
 
     color: rgba(0, 0, 0, .2);
-}
-
-#docs-on-map {
-    width: 100%;
-    height: 780px;
-}
-
-.gm-style-iw * {
-    display: block;
-
-    width: 100%;
-}
-.gm-style-iw h4,
-.gm-style-iw p {
-    margin: 0;
-    padding: 0;
-}
-
-.gm-style-iw a {
-    color: #4272db;
 }
 .steps-modal__input-small
 {
@@ -23913,26 +23901,63 @@ Styles for filter block on consultations, clinics and docs pages
 {
     margin-bottom: 40px;
 }
+
+/* Contacts page */
 #ondoc-on-map
 {
     width: 100%;
     height: 510px;
 }
-.gm-style-iw *
+
+#ondoc-on-map .gm-style-iw *
 {
     display: block;
 
     width: 100%;
 }
-.gm-style-iw h4,
-.gm-style-iw p
+
+#ondoc-on-map .gm-style-iw h4,
+#ondoc-on-map .gm-style-iw p
 {
     margin: 0;
     padding: 0;
 }
-.gm-style-iw a
+
+#ondoc-on-map .gm-style-iw a
 {
     color: #4272db;
+}
+
+/* Docs on map page */
+#docs-on-map {
+    width: 100%;
+    height: 780px;
+}
+
+#docs-on-map .gm-style-iw > div {
+    overflow: visible !important;
+
+    width: 315px !important;
+}
+
+#docs-on-map .gm-style-iw > div > div {
+    overflow: visible !important;
+}
+
+/* Clinics on map page */
+#clinics-on-map {
+    width: 100%;
+    height: 780px;
+}
+
+#clinics-on-map .gm-style-iw > div {
+    overflow: visible !important;
+
+    width: 315px !important;
+}
+
+#clinics-on-map .gm-style-iw > div > div {
+    overflow: visible !important;
 }
 /* Registration, login, password recovery, sms auth PopUps */
 .popup-scrolltop
