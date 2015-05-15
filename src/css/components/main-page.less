@@ -163,11 +163,6 @@ i.milk-icon-heart, .features-item__ico, .ico {
   text-indent: -9999px;
 }
 
-/* basic typography */
-//body {
-//  font-size: 14px;
-//  font-family: 'Gotham';
-//}
 
 .container--medium h2, .about__text__header h2 {
   font-size: 40px;
@@ -215,56 +210,6 @@ a {
   color: #10abd2;
 }
 
-/* form style input and other */
-//.main-modal-mains form input[type='text'], form textarea, form select, form input[type='password'] {
-//  box-sizing: border-box;
-//  outline: none;
-//  border: 0;
-//  font-size: 32px;
-//  line-height: 36px;
-//  width: 80%;
-//  display: block;
-//  margin: 0 auto;
-//  padding: 25px 0 8px;
-//  border-bottom: 1px solid #c4c6c2;
-//  margin-bottom: 25px;
-//  background: none;
-//  text-align: center;
-//}
-//.main-modal-mains form label {
-//  cursor: pointer;
-//}
-//.main-modal-mains form button {
-//  cursor: pointer;
-//  outline: none;
-//  margin: 0;
-//}
-//.main-modal-mains form input[type="checkbox"] {
-//  display: none;
-//  margin: 20px;
-//}
-//.main-modal-mains form input[type="checkbox"] + label {
-//  line-height: 24px;
-//  display: inline-block;
-//  font-size: 22px;
-//  color: rgba(0, 0, 0, 0.9);
-//  vertical-align: middle;
-//}
-//.main-modal-mains form input[type="checkbox"] + label::before {
-//  content: "";
-//  display: inline-block;
-//  width: 26px;
-//  height: 26px;
-//  background: url(../img/ico-checkbox.png) no-repeat;
-//  background-size: 100%;
-//  margin: 0 10px 0 0;
-//  position: relative;
-//  vertical-align: middle;
-//}
-//.main-modal-mains form input[type="checkbox"]:checked + label::before {
-//  background: url(../img/ico-checkbox-active.png) no-repeat;
-//  background-size: 100%;
-//}
 
 .android-popup .form-control:focus{
     outline: none!important;
@@ -392,25 +337,36 @@ a {
 .container-main{
   width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
 }
 .container-medium{
   width: 1030px;
   margin: 0 auto;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
 }
 .container--medium {
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
 }
 .container--big {
   width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
 }
 
 /* header */
 .main-header2 {
   width: 100%;
   padding: 13px 0;
-//  min-width: 1200px;
   background: #fff;
   position: fixed;
   z-index: 10;
@@ -446,14 +402,21 @@ a {
 /* slider */
 .slider-section {
   min-height: 600px;
-  min-width: 1200px;
+  width: 100%;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   margin-top: 75px;
   position: relative;
 }
 
 /* features-section */
 .features-section {
-  min-width: 1200px;
+  //  min-width: 1200px;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
+  width: 100%;
   background: url(../img/background-first.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
@@ -510,7 +473,10 @@ a {
 /* promo */
 .promo {
   background: url(../img/background-second.jpg) no-repeat center;
-  min-width: 1200px;
+  //  min-width: 1200px;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   background-size: cover;
   padding: 60px 0;
 }
@@ -542,7 +508,10 @@ a {
 .promo--next {
   padding: 60px 0;
   min-height: 600px;
-  min-width: 1200px;
+  //  min-width: 1200px;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   box-sizing: border-box;
   background: url(../img/background-third.jpg) no-repeat center;
   background-size: cover;
@@ -567,7 +536,10 @@ a {
 
 .about {
   min-height: 536px;
-  min-width: 1200px;
+  //  min-width: 1200px;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   background: url(../img/background-section.jpg) repeat-x;
   padding: 60px 0 0;
   position: relative;
@@ -633,6 +605,9 @@ a {
   vertical-align: top;
   margin-top: 120px;
   width: 553px;
+  @media (max-width: 1101px) {
+    width: 500px;
+  }
 }
 .about__text--small p {
   width: 80%;
@@ -735,7 +710,11 @@ a {
 }
 
 .register {
-  min-width: 1200px;
+  //  min-width: 1200px;
+  width: 100%;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   background: url(../img/background-six.png) no-repeat center;
   background-size: cover;
   padding: 60px 0;
@@ -826,7 +805,10 @@ a {
   position: relative;
   height: 600px;
   width: 100%;
-  min-width: 1200px;
+  //  min-width: 1200px;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
 }
 .slide .text {
   position: absolute;
@@ -1070,7 +1052,11 @@ a {
 }
 
 .top-navigation {
-  min-width: 1200px;
+  //  min-width: 1200px;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
+  width: 100%;
   margin-top: 75px;
   padding: 28px 0;
 }
@@ -1128,7 +1114,11 @@ a {
 }
 .about-block {
   min-height: 600px;
-  min-width: 1200px;
+  //  min-width: 1200px;
+  width: 100%;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   overflow: hidden;
   padding: 55px 0 61px;
   position: relative;
@@ -1195,8 +1185,12 @@ a {
 }
 
 .promo-block {
-  min-width: 1200px;
+  //  min-width: 1200px;
   padding: 15px 0 60px;
+  width: 100%;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
 }
 
 .promo-block h1 {
@@ -1262,7 +1256,11 @@ a {
 }
 
 .registration-btn {
-  min-width: 1200px;
+  //  min-width: 1200px;
+  width: 100%;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
   text-align: center;
   padding: 39px 0;
 }

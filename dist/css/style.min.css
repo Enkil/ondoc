@@ -2535,7 +2535,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
-        width: 1184px
+        width: 1200px
     }
 }
 
@@ -14680,19 +14680,43 @@ a {
     margin: 0 auto
 }
 
+@media (max-width: 1001px) {
+    .container-main {
+        width: 1000px
+    }
+}
+
 .container-medium {
     width: 1030px;
     margin: 0 auto
 }
 
+@media (max-width: 1001px) {
+    .container-medium {
+        width: 1000px
+    }
+}
+
 .container--medium {
-    width: 1100px;
+    width: 100%;
     margin: 0 auto
+}
+
+@media (max-width: 1001px) {
+    .container--medium {
+        width: 1000px
+    }
 }
 
 .container--big {
     width: 1200px;
     margin: 0 auto
+}
+
+@media (max-width: 1001px) {
+    .container--big {
+        width: 1000px
+    }
 }
 
 .main-header2 {
@@ -14737,17 +14761,29 @@ a {
 
 .slider-section {
     position: relative;
-    min-width: 1200px;
+    width: 100%;
     min-height: 600px;
     margin-top: 75px
 }
 
+@media (max-width: 1001px) {
+    .slider-section {
+        width: 1000px
+    }
+}
+
 .features-section {
-    min-width: 1200px;
+    width: 100%;
     padding: 70px 0;
     text-align: center;
     background: url(../img/background-first.jpg) center no-repeat;
     background-size: cover
+}
+
+@media (max-width: 1001px) {
+    .features-section {
+        width: 1000px
+    }
 }
 
 .features-section h2 {
@@ -14807,10 +14843,15 @@ a {
 }
 
 .promo {
-    min-width: 1200px;
     padding: 60px 0;
     background: url(../img/background-second.jpg) center no-repeat;
     background-size: cover
+}
+
+@media (max-width: 1001px) {
+    .promo {
+        width: 1000px
+    }
 }
 
 .promo__text {
@@ -14842,12 +14883,17 @@ a {
 
 .promo--next {
     box-sizing: border-box;
-    min-width: 1200px;
     min-height: 600px;
     padding: 60px 0;
     text-align: center;
     background: url(../img/background-third.jpg) center no-repeat;
     background-size: cover
+}
+
+@media (max-width: 1001px) {
+    .promo--next {
+        width: 1000px
+    }
 }
 
 .promo--next .p--big, .promo--next h2 {
@@ -14869,11 +14915,16 @@ a {
 
 .about {
     position: relative;
-    min-width: 1200px;
     min-height: 536px;
     padding: 60px 0 0;
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x
+}
+
+@media (max-width: 1001px) {
+    .about {
+        width: 1000px
+    }
 }
 
 .about .mock-up {
@@ -14949,6 +15000,12 @@ a {
     margin-top: 120px;
     padding-bottom: 20px;
     vertical-align: top
+}
+
+@media (max-width: 1101px) {
+    .about__text {
+        width: 500px
+    }
 }
 
 .about__text--small p {
@@ -15063,12 +15120,18 @@ a {
 }
 
 .register {
-    min-width: 1200px;
+    width: 100%;
     padding: 60px 0;
     text-align: center;
     border-bottom: 1px solid #ccc;
     background: url(../img/background-six.png) center no-repeat;
     background-size: cover
+}
+
+@media (max-width: 1001px) {
+    .register {
+        width: 1000px
+    }
 }
 
 .register .p--big, .register h2 {
@@ -15167,8 +15230,13 @@ a {
 .slide {
     position: relative;
     width: 100%;
-    min-width: 1200px;
     height: 600px
+}
+
+@media (max-width: 1001px) {
+    .slide {
+        width: 1000px
+    }
 }
 
 .slide .text {
@@ -15436,9 +15504,15 @@ a {
 }
 
 .top-navigation {
-    min-width: 1200px;
+    width: 100%;
     margin-top: 75px;
     padding: 28px 0
+}
+
+@media (max-width: 1001px) {
+    .top-navigation {
+        width: 1000px
+    }
 }
 
 .sub-nav {
@@ -15509,11 +15583,17 @@ a {
 .about-block {
     position: relative;
     overflow: hidden;
-    min-width: 1200px;
+    width: 100%;
     min-height: 600px;
     padding: 55px 0 61px;
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x
+}
+
+@media (max-width: 1001px) {
+    .about-block {
+        width: 1000px
+    }
 }
 
 .about-block h3 {
@@ -15582,8 +15662,14 @@ a {
 }
 
 .promo-block {
-    min-width: 1200px;
+    width: 100%;
     padding: 15px 0 60px
+}
+
+@media (max-width: 1001px) {
+    .promo-block {
+        width: 1000px
+    }
 }
 
 .promo-block h1 {
@@ -15649,9 +15735,15 @@ a {
 }
 
 .registration-btn {
-    min-width: 1200px;
+    width: 100%;
     padding: 39px 0;
     text-align: center
+}
+
+@media (max-width: 1001px) {
+    .registration-btn {
+        width: 1000px
+    }
 }
 
 @font-face {
@@ -16627,7 +16719,7 @@ a {
 .clinics-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -16635,6 +16727,9 @@ a {
     width: 490px;
     margin: auto;
     padding: 16px 0 13px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -17417,7 +17512,7 @@ a {
 .docs-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -17425,6 +17520,9 @@ a {
     width: 490px;
     margin: auto;
     padding: 16px 15px 13px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -18571,6 +18669,12 @@ a {
     background-color: #fff
 }
 
+@media (max-width: 1001px) {
+    .header-external {
+        width: 1000px
+    }
+}
+
 .header-external--nonfixed {
     position: static
 }
@@ -18608,6 +18712,12 @@ a {
 
 .footer-external {
     background-color: #f3f3f3
+}
+
+@media (max-width: 1001px) {
+    .footer-external {
+        width: 1000px
+    }
 }
 
 .footer-external__wrapper {
