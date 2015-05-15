@@ -203,9 +203,9 @@ docs.init = function (selector, latLng, zoom, filename) { // Init map function
                     marker.setIcon(markerImageHover);
                 });
 
-                //google.maps.event.addListener(marker, 'mouseout', function() {
-                //    marker.setIcon(markerImage);
-                //});
+                google.maps.event.addListener(marker, 'mouseout', function () {
+                    marker.setIcon(markerImage);
+                });
 
             });
         }
@@ -325,9 +325,9 @@ clinics.init = function (selector, latLng, zoom, filename) { // Init map functio
                     marker.setIcon(markerImageHover);
                 });
 
-                //google.maps.event.addListener(marker, 'mouseout', function() {
-                //    marker.setIcon(markerImage);
-                //});
+                google.maps.event.addListener(marker, 'mouseout', function () {
+                    marker.setIcon(markerImage);
+                });
 
             });
         }
