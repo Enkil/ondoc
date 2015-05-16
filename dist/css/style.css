@@ -12248,14 +12248,41 @@ a:focus
 }
 .widget-consultation__text
 {
-    font-family: 'Gotham', Arial, sans-serif !important;
-    font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
 
+    position: relative;
+
     margin: 0;
+    padding-right: 25px;
 
     color: #000;
-    outline: none!important;
+}
+
+.widget-consultation__edit-comment {
+    font-size: 14px;
+
+    position: relative;
+
+    margin: 0;
+    padding-right: 25px;
+
+    color: #000;
+}
+
+.widget-consultation__edit-comment-input {
+    line-height: 30px;
+
+    display: block;
+
+    width: calc(100% - 40px);
+    margin-bottom: 15px;
+    margin-left: 30px;
+    padding: 0 10px;
+
+    resize: none;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
 }
 .widget-consultation__link
 {
@@ -13105,6 +13132,47 @@ a:focus
     border-radius: 50%;
     background: url('../img/icon-btn-delete-circle.png') no-repeat;
 }
+
+.widget-btn--delete-comment {
+    position: absolute;
+    top: calc(50% - 8px);
+    bottom: 0;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+    background: url('../img/icon-btn-delete-circle.png') no-repeat;
+}
+
+.widget-btn--edit-drugs {
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 96%;
+
+    width: 12px;
+    height: 12px;
+    padding: 0;
+
+    border: none;
+    background: url('../img/icon-btn-edit.png') no-repeat;
+}
+
+.widget-btn--save-comment {
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 96%;
+
+    width: 17px;
+    height: 12px;
+    padding: 0;
+
+    border: none;
+    background: url('../img/icon-checkmark--green.png') no-repeat;
+}
 .widget-btn--submit-no
 {
     font-family: 'Gotham', Arial, sans-serif !important;
@@ -13687,7 +13755,6 @@ External pages buttons
 
     background: url(../img/arrow-down.png) no-repeat;
 }
-
 @media (max-width: 1200px)
 {
     .monitoring-widget__period
@@ -13748,7 +13815,6 @@ External pages buttons
 
     text-align: right;
 }
-
 @media (max-width: 1200px)
 {
     .monitoring-widget__date
@@ -14082,7 +14148,6 @@ External pages buttons
     color: #fff !important;
     background-color: #5db7d8;
 }
-
 @media (max-width: 1200px)
 {
     .monitoring-widget__chol-shedule-link

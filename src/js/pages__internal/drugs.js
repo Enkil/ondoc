@@ -85,3 +85,33 @@ $(document).ready(function () {
         $('.js__drug-day').not('.drugs__drug-day--active').toggleClass('drugs__drug-day--error');
     });
 });
+
+/* Set Comment to Edit comment state */
+$(document).ready(function () {
+
+    $('.widget-btn--edit-drugs').on('click', function (event) {
+        event.preventDefault();
+
+        var text = $(this).parent(".widget-consultation__text").text();
+
+        $(this).parent(".widget-consultation__text").replaceWith(
+            '<form class="widget-consultation__edit-comment" action="#">' +
+            '<a class="widget-btn widget-btn--delete-comment" href="#" title="Delete"></a>' +
+            '<input class="widget-consultation__edit-comment-input" type="text" value="' + text + '"/>' +
+            '<a class="widget-btn widget-btn--save-comment" href=""></a>' +
+            '</form>'
+        );
+    });
+
+    $('.widget-btn--save-comment').on('click', function (event) {
+        event.preventDefault();
+
+        var text = $(this).parent(".widget-consultation__edit-comment").children(".widget-consultation__edit-comment-input").val();
+
+        $(this).parent(".widget-consultation__edit-comment").replaceWith(
+            '<p class="widget-consultation__text">' + text +
+            '<a class="widget-btn widget-btn--edit-drugs" href="#" title="Edit"></a>' +
+            '</p>'
+        );
+    });
+});

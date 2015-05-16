@@ -351,10 +351,31 @@
 
   // Element -> Consultation text
   &__text{
-    .gotham;
     font-size: 14px;
     color: @black-color;
     margin: 0;
+    position: relative;
+    padding-right: 25px;
+  }
+
+  &__edit-comment {
+    font-size: 14px;
+    color: @black-color;
+    margin: 0;
+    position: relative;
+    padding-right: 25px;
+  }
+
+  &__edit-comment-input {
+    margin-left: 30px;
+    padding: 0 10px;
+    width: calc(~"100% - 40px");
+    line-height: 30px;
+    border: 1px solid @grey-color-2;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    resize: none;
   }
 
   // Element -> link in widget right column at consultation block
