@@ -15294,7 +15294,7 @@ External pages buttons
 {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -15305,9 +15305,6 @@ External pages buttons
     margin: auto;
     padding: 20px 0 20px;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -15461,7 +15458,7 @@ External pages buttons
 {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -15472,9 +15469,6 @@ External pages buttons
     margin: auto;
     padding: 20px 20px 0;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -16574,7 +16568,7 @@ input:after
 {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -16585,9 +16579,6 @@ input:after
     margin: auto;
     padding: 40px 0 20px;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -17558,7 +17549,7 @@ input:after
 {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -17569,9 +17560,6 @@ input:after
     margin: auto;
     padding: 17px 0 0;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -20584,7 +20572,7 @@ a
 {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -20595,9 +20583,6 @@ a
     margin: auto;
     padding: 16px 0 13px 0;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -21593,7 +21578,7 @@ a
 {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -21604,9 +21589,6 @@ a
     margin: auto;
     padding: 16px 15px 13px 15px;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -24160,7 +24142,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: fixed;
     z-index: 1100;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -24171,10 +24153,6 @@ Styles for filter block on consultations, clinics and docs pages
 
     width: 500px;
     margin: auto;
-
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
 
     -ms-overflow-style: none;
 }
@@ -26972,7 +26950,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: absolute;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -26982,10 +26960,6 @@ Styles for filter block on consultations, clinics and docs pages
     width: 490px;
     margin: auto;
     padding: 20px 0 15px 0;
-
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
 
     border-radius: 6px;
     background-color: #fff;
@@ -28123,7 +28097,7 @@ Styles for filter block on consultations, clinics and docs pages
 {
     position: absolute;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -28133,10 +28107,6 @@ Styles for filter block on consultations, clinics and docs pages
     width: 490px;
     margin: auto;
     padding: 20px 0 15px 0;
-
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
 
     border-radius: 6px;
     background-color: #fff;
@@ -32175,7 +32145,7 @@ Widgets
 {
     position: fixed;
     z-index: 150;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -32187,9 +32157,6 @@ Widgets
     padding-top: 24px;
     padding-bottom: 24px;
 
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
     text-align: center;
 
     border-radius: 15px;

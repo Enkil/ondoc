@@ -12575,7 +12575,7 @@ a:focus {
 .agreement-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -12583,9 +12583,6 @@ a:focus {
     width: 730px;
     margin: auto;
     padding: 20px 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -12707,7 +12704,7 @@ a:focus {
 .feedback-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -12715,9 +12712,6 @@ a:focus {
     width: 590px;
     margin: auto;
     padding: 20px 20px 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -13552,7 +13546,7 @@ input, input:after, input:before, input:focus, input:visited {
 .security-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -13560,9 +13554,6 @@ input, input:after, input:before, input:focus, input:visited {
     width: 480px;
     margin: auto;
     padding: 40px 0 20px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -14306,7 +14297,7 @@ input, input:after, input:before, input:focus, input:visited {
 .notifications-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -14314,9 +14305,6 @@ input, input:after, input:before, input:focus, input:visited {
     width: 480px;
     margin: auto;
     padding: 17px 0 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -16773,7 +16761,7 @@ a {
 .clinics-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -16781,9 +16769,6 @@ a {
     width: 490px;
     margin: auto;
     padding: 16px 0 13px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -17566,7 +17551,7 @@ a {
 .docs-modal .widgets-block {
     position: fixed;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -17574,9 +17559,6 @@ a {
     width: 490px;
     margin: auto;
     padding: 16px 15px 13px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -19624,7 +19606,7 @@ a {
 .popup-login__body {
     position: fixed;
     z-index: 1100;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -19633,9 +19615,6 @@ a {
     overflow-y: auto;
     width: 500px;
     margin: auto;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     -ms-overflow-style: none
 }
 
@@ -21849,7 +21828,7 @@ a {
 .medcard-doctor {
     position: absolute;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -21857,9 +21836,6 @@ a {
     width: 490px;
     margin: auto;
     padding: 20px 0 15px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     border-radius: 6px;
     background-color: #fff
 }
@@ -22743,7 +22719,7 @@ a {
 .medcard-clinic {
     position: absolute;
     z-index: 500;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -22751,9 +22727,6 @@ a {
     width: 490px;
     margin: auto;
     padding: 20px 0 15px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     border-radius: 6px;
     background-color: #fff
 }
@@ -26020,7 +25993,7 @@ a {
 .settings__modal {
     position: fixed;
     z-index: 150;
-    top: 50%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -26029,9 +26002,6 @@ a {
     margin: auto;
     padding-top: 24px;
     padding-bottom: 24px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
     text-align: center;
     border-radius: 15px;
     background: #fff
