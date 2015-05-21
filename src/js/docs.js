@@ -54,7 +54,6 @@ $(document).ready(function() {
 });
 
 /*  Range slider    */
-
 $(document).ready(function() {
 
     var $range = $("#filter__range");
@@ -78,4 +77,11 @@ $(document).ready(function() {
         $('#filter__rank-to').html(to);
     });
 
+});
+
+
+/* Set Subway modal */
+$(".filter__subway").click(function (event) {
+    event.preventDefault();
+    $(".notifications-modal").removeClass("display-none");
 });

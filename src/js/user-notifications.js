@@ -16,17 +16,21 @@ $(document).ready(function(){
 
 
 	// lets close modal
-	
-	$(".notifications-modal__close").click(function(event){
+
+    $(".notifications-modal__close, .notifications-modal__btn").click(function (event) {
 		event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().parent().find(".notifications-modal").addClass("display-none");
+        $(this).parents().find(".notifications-modal").addClass("display-none");
     });
 
 
-    // lets close modal after choosing time
+    // Set check on GMT modal
 
     $(".notifications-modal__zone-item").click(function(event){
     	event.preventDefault();
-    	$(this).parent().parent().parent().parent().parent().parent().parent().find(".notifications-modal").addClass("display-none");
+
+        $(".notifications-modal__check").addClass("display-none");
+        $(this).children(".notifications-modal__check").removeClass("display-none");
+
     });
+
 }); 

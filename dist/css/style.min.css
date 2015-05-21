@@ -14301,6 +14301,30 @@ input, input:after, input:before, input:focus, input:visited {
     background: rgba(0, 0, 0, .6)
 }
 
+.notifications-modal__btn {
+    font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-size: 14px;
+    display: inline-block;
+    height: 30px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    padding-right: 28px;
+    padding-left: 28px;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    color: #5db7d8;
+    border: 1px solid #5db7d8;
+    border-radius: 15px;
+    outline: 0;
+    background-color: #fff
+}
+
+.notifications-modal__btn:hover {
+    color: #fff;
+    background-color: #5db7d8
+}
+
 .notifications-modal .widgets-block {
     position: fixed;
     z-index: 500;
@@ -14355,15 +14379,27 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-modal__zone-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 55px;
+    position: relative;
     display: block;
-    padding: 9px 0;
     color: #000;
     border-top: 1px solid rgba(0, 0, 0, .1)
 }
 
-.notifications-modal__zone-item:hover {
+.notifications-modal__zone-item:focus, .notifications-modal__zone-item:hover {
     color: #000;
     background-color: #eef9fb
+}
+
+.notifications-modal__check {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/watch-check.png)
 }
 
 .zone-block {
