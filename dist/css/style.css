@@ -10986,10 +10986,10 @@ html
         width: 956px !important;
     }
 }
-.container-huge
+
+.container--huge
 {
     width: 1200px !important;
-    margin: 0 auto;
 }
 .container-fluid--huge
 {
@@ -11337,6 +11337,10 @@ a:focus
     box-shadow: 2px 0 2px rgba(0, 0, 0, .3);
 }
 
+.main-header--health {
+    min-width: 1200px;
+}
+
 @media (max-width: 1001px) {
     .main-header {
         width: 1000px;
@@ -11655,6 +11659,10 @@ a:focus
     height: 65px;
 
     background: #d7eaf0;
+}
+
+.main-footer--health {
+    min-width: 1200px;
 }
 .main-footer--operator
 {
