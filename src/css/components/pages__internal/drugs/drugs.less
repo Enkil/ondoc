@@ -231,7 +231,7 @@
     .text-center;
     font-size: 17px;
     color: @black-color;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     position: relative;
 
     &--config {
@@ -243,11 +243,13 @@
 
   &__value {
     width: 100%;
+    text-align: center;
   }
 
   &__value-time {
     font-size: 15px;
     color: @grey-color;
+    display: inline-block;
 
     &--edit {
       color: @blue-color;
@@ -259,12 +261,19 @@
     }
   }
 
+  &__value-time-td {
+    width: 45%;
+  }
+
   &__value-line {
     width: 20px;
-    margin: 0 10px;
-    vertical-align: middle;
+    vertical-align: text-bottom;
     display: inline-block;
     color: @grey-color;
+  }
+
+  &__value-line-td {
+    width: 10%;
   }
 
   &__drug-day {

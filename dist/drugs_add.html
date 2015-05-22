@@ -442,8 +442,8 @@
     <div class="row">
         <div class="text-center">
 
-            <div class="col-xs-12 text-right">
-                <a class="drugs__link drugs__link--type" href="">Тип</a>
+            <div class="col-xs-18 text-center">
+                <a class="drugs__link drugs__link--type arrow-down" href="">Выберите тип лекарства</a>
 
                 <!-- Dosage type Pop-Up -->
                 <div class="drugs__dosage-popup drugs__dosage-popup--types display-none">
@@ -457,14 +457,14 @@
                 <!-- / Dosage type Pop-Up -->
             </div>
 
-            <div class="col-xs-12">
-                <div class="drugs__dosage-wrapper">
-                    <input type="text" class="drugs__dosage drugs__dosage--dosage" placeholder="Дозировка"/>
-                </div>
-            </div>
+            <!--<div class="col-xs-12">-->
+            <!--<div class="drugs__dosage-wrapper">-->
+            <!--<input type="text" class="drugs__dosage drugs__dosage--dosage" placeholder="Дозировка"/>-->
+            <!--</div>-->
+            <!--</div>-->
 
-            <div class="col-xs-12 text-left">
-                <a class="drugs__link drugs__link--item" href="">Ед.</a>
+            <div class="col-xs-18 text-center">
+                <a class="drugs__link drugs__link--item arrow-down" href="">Выбирите единицы измерения</a>
 
                 <!-- Dosage items Pop-Up -->
                 <div class="drugs__dosage-popup drugs__dosage-popup--items display-none">
@@ -497,23 +497,47 @@
 
         <table class="drugs__value">
             <tr>
-                <td class="text-left">
+                <td class="text-right drugs__value-time-td">
                     <span class="drugs__value-time drugs__value-time--edit">9:00</span>
+                </td>
+
+                <td class="text-center drugs__value-line-td">
                     <hr class="drugs__value-line"/>
+                </td>
+
+                <td class="text-left drugs__value-time-td">
                     <span class="drugs__value-time">
                         <input type="text" pattern="^[ 0-9]+$" class="drugs__dosage drugs__dosage--time" value="10"> мг
                     </span>
                 </td>
-                <td class="text-center">
-                    <span class="drugs__value-time drugs__value-time--edit">9:00</span>
+            </tr>
+
+            <tr>
+                <td class="text-right drugs__value-time-td">
+                    <span class="drugs__value-time drugs__value-time--edit">15:00</span>
+                </td>
+
+                <td class="text-center drugs__value-line-td">
                     <hr class="drugs__value-line"/>
+                </td>
+
+                <td class="text-left drugs__value-time-td">
                     <span class="drugs__value-time">
                         <input type="text" pattern="^[ 0-9]+$" class="drugs__dosage drugs__dosage--time" value="10"> мг
                     </span>
                 </td>
-                <td class="text-right">
-                    <span class="drugs__value-time drugs__value-time--edit">9:00</span>
+            </tr>
+
+            <tr>
+                <td class="text-right drugs__value-time-td">
+                    <span class="drugs__value-time drugs__value-time--edit">20:00</span>
+                </td>
+
+                <td class="text-center drugs__value-line-td">
                     <hr class="drugs__value-line"/>
+                </td>
+
+                <td class="text-left drugs__value-time-td">
                     <span class="drugs__value-time">
                         <input type="text" pattern="^[ 0-9]+$" class="drugs__dosage drugs__dosage--time" value="10"> мг
                     </span>

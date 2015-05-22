@@ -115,3 +115,12 @@ $(document).ready(function () {
         );
     });
 });
+
+/* Toggle arrow */
+$(document).ready(function () {
+
+    $('.arrow-down').click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass('arrow-up');
+    });
+});

@@ -16004,6 +16004,15 @@ $(document).ready(function () {
         );
     });
 });
+
+/* Toggle arrow */
+$(document).ready(function () {
+
+    $('.arrow-down').click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass('arrow-up');
+    });
+});
 /*  Scripts for health page */
 
 $(document).ready(function () {

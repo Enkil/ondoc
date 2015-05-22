@@ -23827,7 +23827,7 @@ a {
     font-family: Gotham, Arial, sans-serif !important;
     font-size: 17px;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     text-align: center;
     color: #000;
     outline: 0 !important
@@ -23839,11 +23839,13 @@ a {
 }
 
 .drugs__value {
-    width: 100%
+    width: 100%;
+    text-align: center
 }
 
 .drugs__value-time {
     font-size: 15px;
+    display: inline-block;
     color: #8d8d8d
 }
 
@@ -23856,12 +23858,19 @@ a {
     color: #7ec6e0
 }
 
+.drugs__value-time-td {
+    width: 45%
+}
+
 .drugs__value-line {
     display: inline-block;
     width: 20px;
-    margin: 0 10px;
-    vertical-align: middle;
+    vertical-align: text-bottom;
     color: #8d8d8d
+}
+
+.drugs__value-line-td {
+    width: 10%
 }
 
 .drugs__drug-day {

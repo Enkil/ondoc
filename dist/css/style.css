@@ -26644,7 +26644,6 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     border-bottom: 1px solid;
 }
-
 .mobile-cap__gotosite:hover,
 .mobile-cap__gotosite:focus {
     text-decoration: none;
@@ -29474,7 +29473,7 @@ Widgets
 
     position: relative;
 
-    margin-bottom: 25px;
+    margin-bottom: 0;
 
     text-align: center;
 
@@ -29491,10 +29490,14 @@ Widgets
 
 .drugs__value {
     width: 100%;
+
+    text-align: center;
 }
 
 .drugs__value-time {
     font-size: 15px;
+
+    display: inline-block;
 
     color: #8d8d8d;
 }
@@ -29509,15 +29512,22 @@ Widgets
     color: #7ec6e0;
 }
 
+.drugs__value-time-td {
+    width: 45%;
+}
+
 .drugs__value-line {
     display: inline-block;
 
     width: 20px;
-    margin: 0 10px;
 
-    vertical-align: middle;
+    vertical-align: text-bottom;
 
     color: #8d8d8d;
+}
+
+.drugs__value-line-td {
+    width: 10%;
 }
 
 .drugs__drug-day {
