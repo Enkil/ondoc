@@ -9618,6 +9618,12 @@ a:focus {
     outline: 0
 }
 
+@media (max-width: 1200px) {
+    .sidebar__menu-link {
+        font-size: 15px
+    }
+}
+
 .sidebar__menu-link:hover {
     text-decoration: none;
     color: #fff !important;

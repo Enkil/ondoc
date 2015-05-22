@@ -11587,6 +11587,12 @@ a:focus
     color: #5db7d8;
     outline: none;
 }
+
+@media (max-width: 1200px) {
+    .sidebar__menu-link {
+        font-size: 15px;
+    }
+}
 .sidebar__menu-link:hover
 {
     text-decoration: none;
