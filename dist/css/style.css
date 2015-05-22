@@ -17661,7 +17661,6 @@ input:after
     color: #000;
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
-
 .notifications-modal__zone-item:hover,
 .notifications-modal__zone-item:focus
 {
@@ -26585,6 +26584,73 @@ Styles for filter block on consultations, clinics and docs pages
     background: url('../img/ml-weight-promo__phone-bg.png') no-repeat;
     background-position: bottom;
     background-size: 303px 550px;
+}
+
+.mobile-cap {
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+    padding-top: 75px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url('../img/mobile-cap__bg.png');
+}
+
+.mobile-cap__logo {
+    display: block;
+
+    margin: 0 auto;
+}
+
+.mobile-cap__title {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 37px;
+
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.mobile-cap__subtitle {
+    font-size: 30px;
+
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.mobile-cap__apstore-link {
+    display: block;
+
+    width: 218px;
+    height: 74px;
+    margin: 35px auto 0 auto;
+
+    background: url(../img/mobile-cap__appstore.png);
+}
+
+.mobile-cap__gotosite {
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 32px;
+
+    display: inline-block;
+
+    margin-top: 55px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-bottom: 1px solid;
+}
+
+.mobile-cap__gotosite:hover,
+.mobile-cap__gotosite:focus {
+    text-decoration: none;
+
+    color: #fff;
+    border-bottom: 1px solid;
 }
 .medcard-filter
 {
