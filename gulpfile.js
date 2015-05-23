@@ -38,18 +38,16 @@ gulp.task('fonts', function(){
 var path = require('path');
 gulp.task('less', function() {
     return gulp.src('src/css/style.less')
-        //.pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
-        //.pipe(uncss({ html: ['dist/*.html'] }))
         .pipe(autoprefixer('> 2%'))
         .pipe(csscomb())
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
-        //.pipe(csso())
-        //.pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('dist/css'))
         .pipe(livereload())
 });

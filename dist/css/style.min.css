@@ -199,7 +199,7 @@
     width: 102%;
     height: 100%;
     cursor: default;
-    background: 0 0;
+    background: transparent;
     z-index: 2
 }
 
@@ -237,6 +237,7 @@ input[type=button] {
 
 .customize-select select {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     min-width: 60px;
@@ -277,6 +278,7 @@ input[type=button] {
 
 .select-list {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     position: relative;
     display: inline-block;
@@ -289,7 +291,8 @@ input[type=button] {
     padding-right: 15px;
     cursor: pointer;
     vertical-align: top;
-    background: url(../img/select-arrow.png) 100% 50% no-repeat
+    background: url(../img/select-arrow.png) no-repeat;
+    background-position: 100% 50%
 }
 
 .select-list .list-drop {
@@ -391,13 +394,15 @@ input[type=button] {
 .buttons-block .btn.btn-edit {
     color: #5db7d8;
     border-color: #5db7d8;
-    background: url(../img/icon-pencel.png) 9% 50% no-repeat
+    background: url(../img/icon-pencel.png) no-repeat;
+    background-position: 9% 50%
 }
 
 .buttons-block .btn.btn-delete {
     color: #dc4531;
     border-color: #dc4531;
-    background: url(../img/icon-trash.png) 12% 50% no-repeat
+    background: url(../img/icon-trash.png) no-repeat;
+    background-position: 12% 50%
 }
 
 .tar {
@@ -444,7 +449,7 @@ input[type=button] {
 }
 
 .sidebar_menu {
-    padding: 18px 10px 0
+    padding: 18px 10px 0 10px
 }
 
 .sidebar_menu .menu-link {
@@ -478,7 +483,8 @@ input[type=button] {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: url(../img/sidebar-icons.png) no-repeat
+    background: url(../img/sidebar-icons.png) no-repeat;
+    background-position: 0 0
 }
 
 .sidebar_menu .icon-monitor:before {
@@ -707,6 +713,7 @@ input[type=button] {
 
 .pagination .customize-select {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     color: #5db7d8
 }
@@ -760,6 +767,7 @@ input[type=button] {
 
 .breadcrumbs .back {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     padding-left: 5px
 }
@@ -5130,8 +5138,8 @@ select[multiple], select[size] {
 }
 
 input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
-    outline: dotted thin;
-    outline: -webkit-focus-ring-color auto 5px;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
 
@@ -5584,8 +5592,8 @@ select[multiple].form-group-lg .form-control, textarea.form-group-lg .form-contr
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-    outline: dotted thin;
-    outline: -webkit-focus-ring-color auto 5px;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
 
@@ -6108,7 +6116,8 @@ tbody.collapse.in {
 }
 
 .btn-lg .caret {
-    border-width: 5px 5px 0
+    border-width: 5px 5px 0;
+    border-bottom-width: 0
 }
 
 .dropup .btn-lg .caret {
@@ -6768,7 +6777,10 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-form {
-    margin: 7px -8px;
+    margin-top: 7px;
+    margin-right: -8px;
+    margin-bottom: 7px;
+    margin-left: -8px;
     padding: 10px 8px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
@@ -6861,7 +6873,10 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
     margin-bottom: 0;
-    border-radius: 4px 4px 0 0
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
 }
 
 .navbar-btn {
@@ -9211,7 +9226,7 @@ html {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
@@ -9292,6 +9307,7 @@ html {
 
 .checkbox-blue + label {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
     margin-right: 15px;
@@ -9406,6 +9422,7 @@ a:focus {
 
 .link-medium {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
     color: #5db7d8;
@@ -9476,7 +9493,7 @@ a:focus {
     top: 55px;
     right: 0;
     width: 150px;
-    padding: 15px 10px 20px;
+    padding: 15px 10px 20px 10px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2)
@@ -9509,6 +9526,7 @@ a:focus {
 
 .main-header__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 63px;
     -webkit-transition: .2s ease all;
@@ -9523,6 +9541,7 @@ a:focus {
 
 .main-header__link--logotext {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     font-weight: 700;
     -webkit-transition: none;
@@ -9574,6 +9593,7 @@ a:focus {
 
 .sidebar__name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 29px;
     margin: 0 auto;
@@ -9583,7 +9603,7 @@ a:focus {
 }
 
 .sidebar__menu-list {
-    padding: 18px 10px 0
+    padding: 18px 10px 0 10px
 }
 
 .sidebar__menu-item {
@@ -9593,6 +9613,7 @@ a:focus {
 
 .sidebar__menu-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
@@ -9603,6 +9624,7 @@ a:focus {
     transition: .2s ease all;
     transition: .5s ease background;
     text-decoration: none;
+    color: #5db7d8;
     color: #fff;
     border-radius: 30px;
     outline: 0
@@ -9651,7 +9673,8 @@ a:focus {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: url(../img/sidebar-icons.png) no-repeat
+    background: url(../img/sidebar-icons.png) no-repeat;
+    background-position: 0 0
 }
 
 .sidebar__menu-link--monitor:before {
@@ -9693,6 +9716,7 @@ a:focus {
 
 .main-footer__copyright {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     line-height: 65px;
     margin: 0;
@@ -9729,6 +9753,7 @@ a:focus {
 
 .content-header__sort-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 35px;
     display: inline-block;
@@ -9790,7 +9815,8 @@ a:focus {
 .widget__notes-img {
     position: relative;
     display: inline-block;
-    margin: 0 6px 5px;
+    margin: 0 6px;
+    margin-bottom: 5px;
     vertical-align: middle
 }
 
@@ -9810,6 +9836,7 @@ a:focus {
 
 .widget__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -9828,6 +9855,7 @@ a:focus {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     outline: 0 !important;
+    outline: 0;
     -ms-overflow-style: none
 }
 
@@ -9963,6 +9991,7 @@ a:focus {
 
 .widget-doctor__clinic {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
     letter-spacing: -.2px;
@@ -9984,6 +10013,7 @@ a:focus {
 
 .widget-doctor__date {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
     letter-spacing: -.2px;
@@ -10009,6 +10039,7 @@ a:focus {
 
 .widget-header__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 60px;
     display: inline-block;
@@ -10086,6 +10117,7 @@ a:focus {
     border: 1px solid #f0f0f0;
     border-radius: 10px;
     background: #fff;
+    background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2)
 }
 
@@ -10105,6 +10137,7 @@ a:focus {
 
 .widget-header__dropdown-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     display: block;
     list-style-type: none;
@@ -10140,11 +10173,12 @@ a:focus {
 
 .widget-consultation__title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     z-index: 10;
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     color: rgba(0, 0, 0, .2);
     outline: 0 !important;
     background-color: #fff
@@ -10196,6 +10230,7 @@ a:focus {
 
 .widget-consultation__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -10229,6 +10264,7 @@ a:focus {
 
 .widget-consultation__subtext {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 13px;
     margin: auto 0 auto 20px;
@@ -10263,14 +10299,16 @@ a:focus {
 
 .widget-tab__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 21px;
-    margin: 0 0 5px;
+    margin: 0 0 5px 0;
     letter-spacing: -.2px
 }
 
 .widget-tab__description {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 8px;
@@ -10280,6 +10318,7 @@ a:focus {
 
 .widget-tab__clinic {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
     position: relative;
@@ -10304,6 +10343,7 @@ a:focus {
 
 .widget-tab__date {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
     position: relative;
@@ -10334,6 +10374,7 @@ a:focus {
 
 .widget-right-head__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin: 0;
     padding-top: 25px;
@@ -10378,6 +10419,7 @@ a:focus {
 
 .widget-right-head__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -10456,11 +10498,12 @@ a:focus {
 
 .widget-pagination {
     margin-bottom: 12px;
-    padding: 0 20px
+    padding: 0 20px 0
 }
 
 .widget-pagination__show-by {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     position: relative;
     -webkit-transition: .2s ease all;
@@ -10505,6 +10548,7 @@ a:focus {
     border: 1px solid #f0f0f0;
     border-radius: 10px;
     background: #fff;
+    background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2)
 }
 
@@ -10524,6 +10568,7 @@ a:focus {
 
 .widget-pagination__dropdown-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     display: block;
     list-style-type: none;
@@ -10555,6 +10600,7 @@ a:focus {
 
 .widget-pagination__numeration-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -10605,7 +10651,8 @@ a:focus {
 .widget-security__notes-img {
     position: relative;
     display: inline-block;
-    margin: 0 6px 5px;
+    margin: 0 6px;
+    margin-bottom: 5px;
     vertical-align: middle
 }
 
@@ -10625,6 +10672,7 @@ a:focus {
 
 .widget-security__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -10643,6 +10691,7 @@ a:focus {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     outline: 0 !important;
+    outline: 0;
     -ms-overflow-style: none
 }
 
@@ -10753,6 +10802,7 @@ a:focus {
 
 .widget-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 0;
     display: inline-block;
     -webkit-transition: .2s ease all;
@@ -10900,11 +10950,15 @@ a:focus {
 
 .widget-btn--submit-no {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     width: 110px;
     height: 35px;
-    margin: 10px 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
     border: 1px solid #5db7d8;
     border-radius: 15px;
     outline: 0 !important;
@@ -10923,11 +10977,15 @@ a:focus {
 
 .widget-btn--submit-yes {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     width: 110px;
     height: 35px;
-    margin: 10px 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
     border: 1px solid #5db7d8;
     border-radius: 15px;
     background-color: #fff
@@ -10945,6 +11003,7 @@ a:focus {
 
 .user-btn__submit {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     margin-bottom: 26px;
@@ -10969,6 +11028,7 @@ a:focus {
 
 .widgets-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 0;
     display: inline-block;
     cursor: pointer;
@@ -11039,6 +11099,7 @@ a:focus {
 
 .ext-btn--md {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     line-height: 56px;
     letter-spacing: -.019em;
@@ -11127,9 +11188,10 @@ a:focus {
 
 .modal-consultation-delete__text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     line-height: 22px;
-    margin: 45px 100px 35px;
+    margin: 45px 100px 35px 100px;
     letter-spacing: -1.8px;
     color: #000;
     outline: 0 !important
@@ -11137,6 +11199,7 @@ a:focus {
 
 .modal-consultation-delete__btn-no {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
     display: inline-block;
@@ -11157,6 +11220,7 @@ a:focus {
 
 .modal-consultation-delete__btn-yes {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
     display: inline-block;
@@ -11182,7 +11246,7 @@ a:focus {
 }
 
 .bg-blur--none {
-    background: 0 0;
+    background: transparent;
     -webkit-filter: blur(-5px) grayscale(0);
     filter: blur(-5px) grayscale(0)
 }
@@ -11207,12 +11271,12 @@ a:focus {
 .monitoring-widget__subheader {
     position: relative;
     height: 22px;
-    margin: 20px
+    margin: 20px 20px 20px 20px
 }
 
 @media (max-width: 1025px) {
     .monitoring-widget__subheader {
-        margin: 20px 15px
+        margin: 20px 15px 20px 15px
     }
 }
 
@@ -11356,7 +11420,7 @@ a:focus {
 .monitoring-widget__dropdown {
     position: absolute;
     z-index: 100;
-    padding: 15px 15px 20px;
+    padding: 15px 15px 20px 15px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2)
@@ -11402,7 +11466,7 @@ a:focus {
 
 .monitoring-widget__body {
     overflow: hidden;
-    margin: 0 20px
+    margin: 0 20px 0 20px
 }
 
 .monitoring-widget__chart {
@@ -11416,27 +11480,28 @@ a:focus {
 }
 
 .monitoring-widget__value-body {
-    padding: 45px 25px 25px
+    padding: 45px 25px 25px 25px
 }
 
 .monitoring-widget__value-body--special {
-    padding: 15px 25px 25px
+    padding: 15px 25px 25px 25px
 }
 
 @media (max-width: 1025px) {
     .monitoring-widget__value-body {
-        padding: 25px 15px
+        padding: 25px 15px 25px 15px
     }
 }
 
 @media (max-width: 1025px) {
     .monitoring-widget__value-body--sugar {
-        padding: 10px 15px 25px
+        padding: 10px 15px 25px 15px
     }
 }
 
 .monitoring-widget__value-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 10px;
     color: #000
@@ -11480,6 +11545,7 @@ a:focus {
 
 .monitoring-widget__value-add {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     line-height: 49px;
     width: 60px;
@@ -11507,6 +11573,7 @@ a:focus {
 
 .monitoring-widget__value--error {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     position: absolute;
     width: 100%;
@@ -11536,7 +11603,8 @@ a:focus {
     display: block;
     width: 40px;
     height: 40px;
-    background: url(../img/exit-okey-sprite.png) -88px 0 no-repeat
+    background: url(../img/exit-okey-sprite.png) no-repeat;
+    background-position: -88px 0
 }
 
 .monitoring-widget__save:hover {
@@ -11661,6 +11729,7 @@ a:focus {
 
 .monitoring-widget__chol-shedule-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 35px;
     display: table-cell;
@@ -11734,6 +11803,7 @@ a:focus {
 
 .monitoring-widget__chol-shedule-cap-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 35px;
     display: inline-block;
@@ -11756,11 +11826,12 @@ a:focus {
 
 .tooltip-custom + .tooltip > .tooltip-inner {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     width: auto;
     min-width: auto;
     max-width: 100%;
-    padding: 15px 20px;
+    padding: 15px 20px 15px 20px;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -11845,6 +11916,7 @@ a:focus {
 
 .monitoring-cap__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     margin-top: 35px;
     color: rgba(0, 0, 0, .2)
@@ -11909,7 +11981,8 @@ a:focus {
 
 .monitoring-widget__shedule--add-value--special {
     margin-top: 10px;
-    padding: 0 0 20px
+    padding: 0;
+    padding-bottom: 20px
 }
 
 .sidebar-profile {
@@ -11917,7 +11990,7 @@ a:focus {
 }
 
 .sidebar-profile__menu-list {
-    padding: 0 10px
+    padding: 0 10px 0 10px
 }
 
 .sidebar-profile__menu-item {
@@ -11928,6 +12001,7 @@ a:focus {
 
 .sidebar-profile__menu-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 38px;
     position: relative;
@@ -11954,7 +12028,9 @@ a:focus {
 .sidebar-profile__menu-link:hover {
     text-decoration: none;
     color: #fff;
-    background: 15px 50% no-repeat #5db7d8
+    background: #5db7d8;
+    background-repeat: no-repeat;
+    background-position: 15px 50%
 }
 
 .sidebar-profile__menu-link--current {
@@ -11964,7 +12040,9 @@ a:focus {
 .sidebar-profile__menu-link--active {
     text-decoration: none;
     color: #fff;
-    background: 15px 50% no-repeat #5db7d8
+    background: #5db7d8;
+    background-repeat: no-repeat;
+    background-position: 15px 50%
 }
 
 .sidebar-profile__menu-link--profile {
@@ -12050,7 +12128,8 @@ a:focus {
 .profile-widget__notes-img {
     position: relative;
     display: inline-block;
-    margin: 0 6px 5px;
+    margin: 0 6px;
+    margin-bottom: 5px;
     vertical-align: middle
 }
 
@@ -12070,6 +12149,7 @@ a:focus {
 
 .profile-widget__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -12088,6 +12168,7 @@ a:focus {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     outline: 0 !important;
+    outline: 0;
     -ms-overflow-style: none
 }
 
@@ -12208,7 +12289,8 @@ a:focus {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url(../img/profile__img-delete.png) no-repeat
+    background: url(../img/profile__img-delete.png) no-repeat;
+    background-position: 0 0
 }
 
 .profile-img__logo img {
@@ -12218,6 +12300,7 @@ a:focus {
 
 .profile-img__logo-choose {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     margin-top: 15px;
@@ -12248,6 +12331,7 @@ a:focus {
 
 .user-info__input {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -12322,6 +12406,7 @@ a:focus {
 
 .user-data__sex {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 16.5px;
     position: relative;
@@ -12430,18 +12515,19 @@ a:focus {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
 
 .info-insurance__title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     z-index: 10;
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     color: rgba(0, 0, 0, .5);
     outline: 0 !important;
     background-color: #fff
@@ -12459,6 +12545,7 @@ a:focus {
 
 .policy__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -12471,7 +12558,8 @@ a:focus {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .policy__input::-webkit-input-placeholder {
@@ -12539,6 +12627,7 @@ a:focus {
 
 .profile-popup__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     display: inline-block;
@@ -12595,7 +12684,7 @@ a:focus {
     display: table;
     width: 730px;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px 0 20px;
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -12621,6 +12710,7 @@ a:focus {
 
 .agreement-modal__subtitle {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 16px;
     margin-bottom: 4px
 }
@@ -12637,12 +12727,14 @@ a:focus {
 
 .agreement-modal__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     line-height: 15px;
     display: block;
     width: 100%;
     min-height: 400px;
     max-height: 400px;
+    margin-bottom: 10px;
     margin-bottom: 15px;
     padding: 7px 14px;
     resize: none;
@@ -12652,11 +12744,13 @@ a:focus {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .agreement-modal__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     position: relative;
     display: inline-block;
@@ -12750,12 +12844,14 @@ a:focus {
 
 .feedback-modal__subtitle {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 16px;
     margin-bottom: 4px
 }
 
 .feedback-modal__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -12769,7 +12865,8 @@ a:focus {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .feedback-modal__input::-webkit-input-placeholder {
@@ -12822,6 +12919,7 @@ a:focus {
 
 .feedback-modal__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     line-height: 15px;
     display: block;
@@ -12837,11 +12935,13 @@ a:focus {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .feedback-modal__textarea::-webkit-input-placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12850,6 +12950,7 @@ a:focus {
 
 .feedback-modal__textarea::-moz-placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12858,6 +12959,7 @@ a:focus {
 
 .feedback-modal__textarea:-ms-input-placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12866,6 +12968,7 @@ a:focus {
 
 .feedback-modal__textarea::placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12874,6 +12977,7 @@ a:focus {
 
 .feedback-modal__textarea:focus::-webkit-input-placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12882,6 +12986,7 @@ a:focus {
 
 .feedback-modal__textarea:focus::-moz-placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12890,6 +12995,7 @@ a:focus {
 
 .feedback-modal__textarea:focus:-ms-input-placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12898,6 +13004,7 @@ a:focus {
 
 .feedback-modal__textarea:focus::placeholder {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: rgba(0, 0, 0, .5);
@@ -12906,6 +13013,7 @@ a:focus {
 
 .feedback-modal__btn--send {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     position: relative;
     display: inline-block;
@@ -12916,6 +13024,7 @@ a:focus {
     transition: .2s ease all;
     transition: .5s ease background;
     text-decoration: none;
+    color: #5db7d8;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 30px;
@@ -12942,7 +13051,8 @@ a:focus {
 .feedback-modal__img-success {
     width: 80px;
     height: 80px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     background-image: url(../img/icon-success.png)
 }
 
@@ -12957,6 +13067,7 @@ a:focus {
 
 .profile-balance__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 75px;
     padding: 0;
@@ -12981,12 +13092,14 @@ a:focus {
 
 .profile-balance__text--bold {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
-    padding: 10px 0 0
+    padding: 10px 0 0 0
 }
 
 .profile-balance__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
     display: inline-block;
@@ -13020,6 +13133,7 @@ a:focus {
 
 .profile-balance__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -13055,6 +13169,7 @@ a:focus {
 
 .profile-balance__filter-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     line-height: 30px;
     display: inline-block;
@@ -13127,11 +13242,12 @@ a:focus {
 
 .security-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
-    padding: 10px 20px 8px;
+    padding: 10px 20px 8px 20px;
     -webkit-transition: .2s ease all;
     -webkit-transition: .5s ease background;
     transition: .2s ease all;
@@ -13160,6 +13276,7 @@ a:focus {
 
 .security-label {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: -.013em;
@@ -13173,6 +13290,7 @@ a:focus {
 
 .security-email__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 19px;
     display: inline-block;
@@ -13209,6 +13327,7 @@ a:focus {
 
 .security-modal__textarea, .security__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -13222,7 +13341,8 @@ a:focus {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .security-modal__textarea::-webkit-input-placeholder, .security__input::-webkit-input-placeholder {
@@ -13293,7 +13413,7 @@ a:focus {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
@@ -13304,6 +13424,7 @@ a:focus {
 
 .security-telephone__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 19px;
     margin-top: 10px;
@@ -13312,11 +13433,12 @@ a:focus {
 
 .security-link__save {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
-    padding: 10px 20px 8px;
+    padding: 10px 20px 8px 20px;
     -webkit-transition: .2s ease all;
     -webkit-transition: .5s ease background;
     transition: .2s ease all;
@@ -13354,16 +13476,18 @@ a:focus {
 
 .security-link__proove {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
-    padding: 10px 20px 8px;
+    padding: 10px 20px 8px 20px;
     -webkit-transition: .2s ease all;
     -webkit-transition: .5s ease background;
     transition: .2s ease all;
     transition: .5s ease background;
     text-decoration: none;
+    color: #5db7d8;
     color: #ea900f;
     border: 1px solid #ea900f;
     border-radius: 30px;
@@ -13396,11 +13520,13 @@ a:focus {
 
 .security-link__delete-profile {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     font-size: 14px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
+    padding: 10px 20px 8px 20px;
     padding: 6px 20px 4px 31px;
     cursor: pointer;
     -webkit-transition: .2s ease all;
@@ -13408,6 +13534,7 @@ a:focus {
     transition: .2s ease all;
     transition: .5s ease background;
     text-decoration: none;
+    color: #5db7d8;
     color: #dc4531;
     border: 1px solid #dc4531;
     border-radius: 30px;
@@ -13433,7 +13560,10 @@ a:focus {
 
 .security-link__delete-profile:hover {
     color: #fff !important;
-    background: url(../img/icon-trash-white.png) 13px 50% no-repeat #dc4531
+    background: #dc4531;
+    background-image: url(../img/icon-trash-white.png);
+    background-repeat: no-repeat;
+    background-position: 13px 50%
 }
 
 .security-link__delete-profile:focus {
@@ -13447,6 +13577,7 @@ a:focus {
 
 .security-authorisation__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin-top: 5px
 }
@@ -13507,6 +13638,7 @@ a:focus {
 
 .security-authorisation__input + label {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
     margin-right: 15px;
@@ -13539,6 +13671,7 @@ a:focus {
 }
 
 input, input:after, input:before, input:focus, input:visited {
+    outline: 0;
     outline: 0;
     -moz-outline: none;
     -webkit-tap-highlight-color: transparent
@@ -13600,10 +13733,12 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__btn--cancel {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
+    padding: 10px 20px 8px 20px;
     padding: 10px 25px 8px;
     -webkit-transition: .2s ease all;
     -webkit-transition: .5s ease background;
@@ -13642,16 +13777,19 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__btn--disconnect {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
+    padding: 10px 20px 8px 20px;
     padding: 10px 25px 8px;
     -webkit-transition: .2s ease all;
     -webkit-transition: .5s ease background;
     transition: .2s ease all;
     transition: .5s ease background;
     text-decoration: none;
+    color: #5db7d8;
     color: #dc4531;
     border: 1px solid #dc4531;
     border-radius: 30px;
@@ -13684,10 +13822,12 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__btn--proove {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
     display: inline-block;
+    padding: 10px 20px 8px 20px;
     padding: 10px 25px 8px;
     -webkit-transition: .2s ease all;
     -webkit-transition: .5s ease background;
@@ -13726,6 +13866,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -13739,7 +13880,8 @@ input, input:after, input:before, input:focus, input:visited {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .security-modal__input::-webkit-input-placeholder {
@@ -13788,6 +13930,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__description {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 15px;
@@ -13796,6 +13939,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__error-message {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: #dc4531;
@@ -13804,6 +13948,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__link-send {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     margin-top: 5px;
@@ -13815,6 +13960,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .security-modal__text--success {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 22px;
     margin-top: 25px;
@@ -13858,7 +14004,8 @@ input, input:after, input:before, input:focus, input:visited {
 .widget-notifications__notes-img {
     position: relative;
     display: inline-block;
-    margin: 0 6px 5px;
+    margin: 0 6px;
+    margin-bottom: 5px;
     vertical-align: middle
 }
 
@@ -13878,6 +14025,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .widget-notifications__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -13896,6 +14044,7 @@ input, input:after, input:before, input:focus, input:visited {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     outline: 0 !important;
+    outline: 0;
     -ms-overflow-style: none
 }
 
@@ -14006,6 +14155,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-head__icon {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 12px;
     line-height: 23px;
     display: inline-block;
@@ -14020,6 +14170,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-info__icon {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     display: inline-block;
     width: 35px;
     height: 23px;
@@ -14035,6 +14186,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-head__email {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 12px;
     line-height: 23px;
     display: inline-block;
@@ -14050,6 +14202,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-head__sms {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 12px;
     line-height: 23px;
     display: inline-block;
@@ -14065,6 +14218,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-head__push {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 12px;
     line-height: 23px;
     display: inline-block;
@@ -14093,7 +14247,7 @@ input, input:after, input:before, input:focus, input:visited {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
@@ -14104,6 +14258,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-info__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     margin-top: 3px;
     padding: 0;
@@ -14112,6 +14267,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-info__email {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     display: inline-block;
     width: 35px;
     height: 23px;
@@ -14127,6 +14283,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-info__sms {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     display: inline-block;
     width: 35px;
     height: 23px;
@@ -14142,6 +14299,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-info__push {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     display: inline-block;
     width: 35px;
     height: 23px;
@@ -14192,10 +14350,11 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-delivery__title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     z-index: 10;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     letter-spacing: -.013em;
     color: #8d8d8d;
     outline: 0 !important;
@@ -14284,6 +14443,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-delivery__umt {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     color: #5db7d8
 }
@@ -14309,6 +14469,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-modal__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     height: 30px;
@@ -14360,6 +14521,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-modal__line {
     position: relative;
+    margin-bottom: 20px;
     margin-bottom: 0
 }
 
@@ -14372,7 +14534,7 @@ input, input:after, input:before, input:focus, input:visited {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
@@ -14385,6 +14547,7 @@ input, input:after, input:before, input:focus, input:visited {
 
 .notifications-modal__zone-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 55px;
     position: relative;
@@ -14751,6 +14914,7 @@ a {
     border: 2px solid #fff;
     border-radius: 50px;
     outline: 0;
+    background: #e4e4e4;
     background: 0 0
 }
 
@@ -14861,7 +15025,7 @@ a {
     width: 100%;
     padding: 70px 0;
     text-align: center;
-    background: url(../img/background-first.jpg) center no-repeat;
+    background: url(../img/background-first.jpg) no-repeat center;
     background-size: cover
 }
 
@@ -14890,23 +15054,23 @@ a {
 }
 
 .features-item__ico--first {
-    background: url(../img/ico-plus-first.png) center no-repeat #fff
+    background: #fff url(../img/ico-plus-first.png) no-repeat center
 }
 
 .features-item__ico--second {
-    background: url(../img/ico-plus-second.png) center no-repeat #fff
+    background: #fff url(../img/ico-plus-second.png) no-repeat center
 }
 
 .features-item__ico--third {
-    background: url(../img/ico-plus-third.png) center no-repeat #fff
+    background: #fff url(../img/ico-plus-third.png) no-repeat center
 }
 
 .features-item__ico--four {
-    background: url(../img/ico-plus-four.png) center no-repeat #fff
+    background: #fff url(../img/ico-plus-four.png) no-repeat center
 }
 
 .features-item__ico--five {
-    background: url(../img/ico-plus-five.png) center no-repeat #fff
+    background: #fff url(../img/ico-plus-five.png) no-repeat center
 }
 
 .features-item__list {
@@ -14929,7 +15093,7 @@ a {
 
 .promo {
     padding: 60px 0;
-    background: url(../img/background-second.jpg) center no-repeat;
+    background: url(../img/background-second.jpg) no-repeat center;
     background-size: cover
 }
 
@@ -14960,7 +15124,7 @@ a {
     padding-left: 15px;
     text-decoration: none;
     color: #10abd2;
-    background: url(../img/ico-arrow-right.png) left center no-repeat
+    background: url(../img/ico-arrow-right.png) no-repeat left center
 }
 
 .arrow-main-right--big-margin {
@@ -14972,7 +15136,7 @@ a {
     min-height: 600px;
     padding: 60px 0;
     text-align: center;
-    background: url(../img/background-third.jpg) center no-repeat;
+    background: url(../img/background-third.jpg) no-repeat center;
     background-size: cover
 }
 
@@ -15150,8 +15314,8 @@ a {
 .mock-up {
     width: 356px;
     height: 537px;
-    padding: 80px 20px 0;
-    background: url(../img/iphone-mock-up.png) top center no-repeat
+    padding: 80px 20px 0 20px;
+    background: url(../img/iphone-mock-up.png) no-repeat top center
 }
 
 .mock-up__image {
@@ -15215,7 +15379,7 @@ a {
     padding: 60px 0;
     text-align: center;
     border-bottom: 1px solid #ccc;
-    background: url(../img/background-six.png) center no-repeat;
+    background: url(../img/background-six.png) no-repeat center;
     background-size: cover
 }
 
@@ -15237,7 +15401,7 @@ a {
     width: 108px;
     height: 107px;
     margin: 0 auto 30px;
-    background: url(../img/ico-register.png) center no-repeat
+    background: url(../img/ico-register.png) no-repeat center
 }
 
 .footer {
@@ -15275,7 +15439,7 @@ a {
     line-height: 35px;
     padding-left: 45px;
     color: #000;
-    background: url(../img/ico-logo-min.png) left center no-repeat
+    background: url(../img/ico-logo-min.png) no-repeat left center
 }
 
 .socio {
@@ -15355,22 +15519,23 @@ a {
 }
 
 .slide--first {
-    background: url(../img/slide-1.jpg) 50% 40% no-repeat;
+    background: url(../img/slide-1.jpg) no-repeat;
+    background-position: 50% 40%;
     background-size: cover
 }
 
 .slide--second {
-    background: url(../img/slide-2.jpg) center no-repeat;
+    background: url(../img/slide-2.jpg) no-repeat center;
     background-size: cover
 }
 
 .slide--third {
-    background: url(../img/slide-3.jpg) center no-repeat;
+    background: url(../img/slide-3.jpg) no-repeat center;
     background-size: cover
 }
 
 .slide--four {
-    background: url(../img/slide-4.jpg) center no-repeat;
+    background: url(../img/slide-4.jpg) no-repeat center;
     background-size: cover
 }
 
@@ -15390,12 +15555,12 @@ a {
 
 .bx-prev {
     left: 40px;
-    background: url(../img/ico-prev.png) center no-repeat
+    background: url(../img/ico-prev.png) no-repeat center
 }
 
 .bx-next {
     right: 40px;
-    background: url(../img/ico-next.png) center no-repeat
+    background: url(../img/ico-next.png) no-repeat center
 }
 
 .overflow {
@@ -15479,12 +15644,12 @@ a {
     display: block;
     width: 23px;
     height: 23px;
-    background: url(../img/ico-modal-main-close.png) center no-repeat;
+    background: url(../img/ico-modal-main-close.png) no-repeat center;
     background-size: 100%
 }
 
 .close-modal-main.white {
-    background: url(../img/ico-close-white.png) center no-repeat
+    background: url(../img/ico-close-white.png) no-repeat center
 }
 
 .close-modal-main:hover {
@@ -15534,7 +15699,8 @@ a {
     position: relative;
     top: 50%;
     width: 600px;
-    margin: -150px auto 0;
+    margin: 0 auto;
+    margin-top: -150px;
     padding: 20px;
     border-radius: 20px;
     background: #fff
@@ -15577,7 +15743,7 @@ a {
     right: 0;
     width: 30px;
     height: 37px;
-    background: url(../img/cancel.png) bottom left no-repeat
+    background: url(../img/cancel.png) no-repeat bottom left
 }
 
 .btn-social {
@@ -15977,6 +16143,7 @@ a {
     width: 100%;
     height: 100%;
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(57, 212, 203, .9)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(-45deg, rgba(57, 212, 203, .9) 0, rgba(255, 255, 255, 0) 100%);
     background: -webkit-linear-gradient(315deg, rgba(57, 212, 203, .9) 0, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(135deg, rgba(57, 212, 203, .9) 0, rgba(255, 255, 255, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e639d4cb', endColorstr='#00ffffff', GradientType=1)
@@ -16052,7 +16219,7 @@ a {
     left: auto;
     width: 23px;
     height: 23px;
-    background: url(../img/milk_close_blue.png) no-repeat
+    background: url(../img/milk_close_blue.png) 0 0 no-repeat
 }
 
 .milk-container form .title {
@@ -16077,7 +16244,7 @@ a {
     padding: 0;
     text-align: center;
     border: 0;
-    background: 0 0 !important
+    background: transparent !important
 }
 
 .milk-container form .input input:focus {
@@ -16156,7 +16323,7 @@ a {
     margin-top: -64px;
     margin-left: -64px;
     opacity: 0;
-    background: url(../img//loader.gif) no-repeat
+    background: url(../img//loader.gif) 0 0 no-repeat
 }
 
 .milk-container .hint {
@@ -16221,6 +16388,7 @@ a {
 
 .clinics__head-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 35px;
     display: inline-block;
@@ -16250,7 +16418,8 @@ a {
 }
 
 .clinics__head-link--list {
-    padding: 0 0 0 12px;
+    padding: 0;
+    padding-left: 12px;
     background-color: transparent !important
 }
 
@@ -16408,6 +16577,7 @@ a {
 
 .clinics__search-input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     height: 33px;
@@ -16503,8 +16673,10 @@ a {
 
 .clinics__tab-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
-    margin: 0 0 2px
+    margin: 0;
+    margin-bottom: 2px
 }
 
 .clinics__tab-img {
@@ -16520,10 +16692,11 @@ a {
 
 .clinics__enroll-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
     display: inline-block;
-    margin: 15px 0 4px;
+    margin: 15px 0 4px 0;
     padding-right: 15px;
     padding-left: 15px;
     border: 1px solid #5db7d8;
@@ -16565,6 +16738,7 @@ a {
 
 .clinics__name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     position: relative;
     margin-top: 45px;
@@ -16588,6 +16762,7 @@ a {
 
 .clinics__specs-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     margin-top: 10px;
@@ -16610,6 +16785,7 @@ a {
 
 .clinics__docs-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     margin-top: 10px;
@@ -16637,6 +16813,7 @@ a {
 
 .clinics__show-all {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -16660,6 +16837,7 @@ a {
 
 .clinics__info {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     display: block;
@@ -16671,6 +16849,7 @@ a {
 
 .clinics__info--checked {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     color: #000
 }
 
@@ -16702,6 +16881,7 @@ a {
 
 .clinics__tab-info {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     position: relative;
     display: block;
@@ -16712,6 +16892,7 @@ a {
 
 .clinics__tab-info--checked {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     color: #000
 }
 
@@ -16741,6 +16922,7 @@ a {
 
 .clinics__ondoc-support {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -16788,6 +16970,7 @@ a {
 
 .clinics-cap__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     width: 180px;
     margin: 0 auto;
@@ -16817,7 +17000,7 @@ a {
     display: table;
     width: 490px;
     margin: auto;
-    padding: 16px 0 13px;
+    padding: 16px 0 13px 0;
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -16836,6 +17019,7 @@ a {
 
 .clinics-modal__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 22px;
     margin-bottom: 20px;
@@ -16844,11 +17028,12 @@ a {
 
 .clinics-modal__subtitle {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     z-index: 10;
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     letter-spacing: -.013em;
     color: rgba(0, 0, 0, .5);
     outline: 0 !important;
@@ -16869,13 +17054,14 @@ a {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
 
 .clinics-modal__cmt {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-bottom: 5px;
     letter-spacing: -.013em;
@@ -16884,17 +17070,19 @@ a {
 
 .clinics-modal__telephone--main {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     line-height: 25px;
-    margin: 15px 0 20px;
+    margin: 15px 0 20px 0;
     letter-spacing: -.019em
 }
 
 .clinics-modal__telephone--another {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
-    margin: 15px 0 10px
+    margin: 15px 0 10px 0
 }
 
 .clinics-modal__address {
@@ -16939,6 +17127,7 @@ a {
 
 .clinics-modal__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-bottom: 0;
     letter-spacing: -.013em
@@ -16955,6 +17144,7 @@ a {
 
 .docs__head-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 35px;
     display: inline-block;
@@ -16984,7 +17174,8 @@ a {
 }
 
 .docs__head-link--list {
-    padding: 0 0 0 12px;
+    padding: 0;
+    padding-left: 12px;
     background-color: transparent !important
 }
 
@@ -17142,6 +17333,7 @@ a {
 
 .docs__search-input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     width: 100%;
@@ -17238,8 +17430,10 @@ a {
 
 .docs__tab-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
-    margin: 0 0 5px
+    margin: 0;
+    margin-bottom: 5px
 }
 
 .docs__tab-title--stoma {
@@ -17248,6 +17442,7 @@ a {
 
 .docs__tab-specs {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     line-height: 14px;
     margin-bottom: 5px;
@@ -17268,6 +17463,7 @@ a {
 
 .docs__tab-info {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 10px;
     position: relative;
@@ -17315,10 +17511,11 @@ a {
 
 .docs__enroll-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
     display: inline-block;
-    margin: 15px 0 4px;
+    margin: 15px 0 4px 0;
     padding-right: 15px;
     padding-left: 15px;
     border: 1px solid #5db7d8;
@@ -17360,6 +17557,7 @@ a {
 
 .docs__name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     position: relative;
     margin-top: 25px;
@@ -17383,6 +17581,7 @@ a {
 
 .docs__specs {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 25px;
     word-break: normal;
@@ -17392,6 +17591,7 @@ a {
 
 .docs__info {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     word-break: break-all;
@@ -17431,6 +17631,7 @@ a {
 
 .docs__show-all {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -17462,6 +17663,7 @@ a {
 
 .docs__clinic-name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-left: 7px
 }
@@ -17472,6 +17674,7 @@ a {
 
 .docs__clinic-subway {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin-left: 7px;
     color: #8d8d8d;
@@ -17490,6 +17693,7 @@ a {
 
 .docs__ondoc-support {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -17563,6 +17767,7 @@ a {
 
 .docs-allow__input + label {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
     margin-right: 15px;
@@ -17607,7 +17812,7 @@ a {
     display: table;
     width: 490px;
     margin: auto;
-    padding: 16px 15px 13px;
+    padding: 16px 15px 13px 15px;
     text-align: center;
     border-radius: 6px;
     background-color: #fff
@@ -17627,6 +17832,7 @@ a {
 
 .docs-modal__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 22px;
     margin-bottom: 20px;
@@ -17635,11 +17841,12 @@ a {
 
 .docs-modal__subtitle {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     z-index: 10;
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     letter-spacing: -.013em;
     color: rgba(0, 0, 0, .5);
     outline: 0 !important;
@@ -17660,13 +17867,14 @@ a {
     left: 0;
     display: block;
     height: 1px;
-    margin: auto 8px;
+    margin: auto 8px auto 8px;
     content: '';
     border-bottom: 1px solid rgba(0, 0, 0, .2)
 }
 
 .docs-modal__cmt {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-bottom: 0;
     letter-spacing: -.013em;
@@ -17675,17 +17883,19 @@ a {
 
 .docs-modal__telephone--main {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     line-height: 25px;
-    margin: 11px 0 5px;
+    margin: 11px 0 5px 0;
     letter-spacing: -.019em
 }
 
 .docs-modal__telephone--another {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
-    margin: 15px 0 10px
+    margin: 15px 0 10px 0
 }
 
 .docs-modal__address {
@@ -17730,6 +17940,7 @@ a {
 
 .docs-modal__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-bottom: 0;
     letter-spacing: -.013em
@@ -17742,6 +17953,7 @@ a {
 
 .drugs__period {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     display: inline-block;
@@ -17757,6 +17969,7 @@ a {
 
 .clinic-docs__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     padding-top: 8px
@@ -17764,6 +17977,7 @@ a {
 
 .clinic-docs__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     position: relative;
@@ -17780,7 +17994,7 @@ a {
 }
 
 .clinic-docs__widget-header {
-    padding: 12px 20px;
+    padding: 12px 20px 12px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
@@ -17788,7 +18002,7 @@ a {
     position: absolute;
     z-index: 100;
     top: 55px;
-    padding: 15px 15px 20px;
+    padding: 15px 15px 20px 15px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2)
@@ -17849,6 +18063,7 @@ a {
 
 .docs-cap__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     width: 180px;
     margin: 0 auto;
@@ -17858,6 +18073,7 @@ a {
 
 .steps-modal__input-small {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -17871,7 +18087,8 @@ a {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .steps-modal__input-small::-webkit-input-placeholder {
@@ -17920,6 +18137,7 @@ a {
 
 .steps-modal__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     position: relative;
     display: inline-block;
@@ -17969,7 +18187,7 @@ a {
     width: 680px;
     height: 465px;
     margin: auto;
-    padding: 38px 20px 10px;
+    padding: 38px 20px 10px 20px;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -18003,6 +18221,7 @@ a {
 
 .steps-modal__subtitle {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     line-height: 22px;
     margin-bottom: 4px;
@@ -18024,6 +18243,7 @@ a {
 
 .steps-modal .user-data__sex {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 16.5px;
     position: relative;
@@ -18140,6 +18360,7 @@ a {
 
 .steps-modal .user-data__height input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -18154,7 +18375,8 @@ a {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .steps-modal .user-data__height input::-webkit-input-placeholder {
@@ -18204,7 +18426,8 @@ a {
 .steps-modal .user-data__weight {
     position: relative;
     width: 93px;
-    margin: 0 auto 13px
+    margin: 0 auto;
+    margin-bottom: 13px
 }
 
 .steps-modal .user-data__weight:before {
@@ -18225,6 +18448,7 @@ a {
 
 .steps-modal .user-data__weight input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -18239,7 +18463,8 @@ a {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .steps-modal .user-data__weight input::-webkit-input-placeholder {
@@ -18292,6 +18517,7 @@ a {
 
 .steps-modal__btn--next {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     position: relative;
     display: inline-block;
@@ -18328,7 +18554,8 @@ a {
 .steps-modal__img-success {
     width: 80px;
     height: 80px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     background-image: url(../img/icon-success.png)
 }
 
@@ -18420,12 +18647,13 @@ a {
     margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 25px;
-    background: url(../img/bg-contacts.jpg) no-repeat #5db7d8;
+    background: #5db7d8 url(../img/bg-contacts.jpg) no-repeat;
     background-size: cover
 }
 
 .contact-info__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 15px;
@@ -18435,6 +18663,7 @@ a {
 
 .contact-info__telephone {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 33px;
     margin-bottom: 15px;
@@ -18444,6 +18673,7 @@ a {
 
 .contact-info__address {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -.015em;
@@ -18458,6 +18688,7 @@ a {
 
 .contact-form__title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     line-height: 21px;
     letter-spacing: -.019em;
@@ -18467,6 +18698,7 @@ a {
 
 .contact-form__input, .contact-form__textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -18480,7 +18712,8 @@ a {
     color: #000;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .contact-form__input::-webkit-input-placeholder {
@@ -18537,6 +18770,7 @@ a {
 
 .contact-form__btn--send-success {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 16.5px;
     position: relative;
@@ -18547,11 +18781,15 @@ a {
     transition: .2s ease all;
     transition: .2s ease background;
     text-decoration: none;
+    color: #5db7d8;
     color: #fff;
     border: 1px solid #5db7d8;
     border-radius: 30px;
     outline: 0;
-    background: url(../img//icon-checkmark-white.png) 15% 50% no-repeat #5db7d8
+    background: #5db7d8;
+    background: #5db7d8 url(../img//icon-checkmark-white.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 15% 50%
 }
 
 .contact-form__btn--send-success:focus {
@@ -18562,7 +18800,8 @@ a {
     text-decoration: none;
     color: #5db7d8;
     border: 1px solid #5db7d8;
-    background: url(../img//icon-checkmark-blue.png) 15% 50% no-repeat #fff
+    background: #fff url(../img//icon-checkmark-blue.png) no-repeat;
+    background-position: 15% 50%
 }
 
 .filter__check-margin {
@@ -18577,6 +18816,7 @@ a {
 
 .filter__check-round {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     line-height: 55px;
     display: inline-block;
@@ -18608,6 +18848,7 @@ a {
 
 .filter__search {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     position: relative;
@@ -18673,6 +18914,7 @@ a {
 
 .filter__subway {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 55px;
     margin-left: 450px
@@ -18698,6 +18940,7 @@ a {
 
 .filter__rank-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     display: inline-block;
@@ -18707,6 +18950,7 @@ a {
 
 .filter__rank-num {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     display: inline-block;
@@ -18787,6 +19031,7 @@ a {
 
 .header-external__link--logotext {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 20px;
     color: #000
 }
@@ -18823,6 +19068,7 @@ a {
 
 .footer-external__link {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     color: #000;
@@ -18868,6 +19114,7 @@ a {
 
 .ml-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin-top: 60px;
     margin-bottom: 80px;
@@ -18885,6 +19132,7 @@ a {
 
 .ml-features__item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 22px;
     position: relative;
@@ -18950,6 +19198,7 @@ a {
 
 .ml-btn {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
@@ -18985,6 +19234,7 @@ a {
 
 .page-title__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 35px;
     display: table-cell;
@@ -19012,12 +19262,14 @@ a {
 
 .page-text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 16px;
     outline: 0 !important
 }
 
 .page-text__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 50px;
@@ -19041,6 +19293,7 @@ a {
 
 .list-sublevel__header {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     display: inline-block;
     margin-top: 35px
@@ -19081,9 +19334,11 @@ a {
 
 .promo-form__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 auto 15px;
+    margin: 0 auto;
+    margin-bottom: 15px;
     text-align: center;
     color: #fff
 }
@@ -19094,6 +19349,7 @@ a {
 
 .promo-form__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 18px;
     width: 100%;
     height: 42px;
@@ -19155,6 +19411,7 @@ a {
 
 .promo-form__submit {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 40px;
     width: 100%;
@@ -19189,7 +19446,7 @@ a {
     right: 380px;
     display: table;
     width: 455px;
-    padding: 25px 25px 30px;
+    padding: 25px 25px 30px 25px;
     border-radius: 10px;
     background-color: #fff
 }
@@ -19228,6 +19485,7 @@ a {
 
 .about-promo-block__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 44px;
     position: absolute;
     right: 0;
@@ -19241,6 +19499,7 @@ a {
 
 .about-lead {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 26px;
     margin-top: 55px;
     margin-bottom: 60px;
@@ -19250,6 +19509,7 @@ a {
 
 .about-headers {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 26px;
     margin: 0;
     text-align: left;
@@ -19272,6 +19532,7 @@ a {
 
 .fdc-promo__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 38px;
     margin: 35px;
     text-align: center;
@@ -19287,6 +19548,7 @@ a {
 
 .fdc-promo__tel {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 36px;
     display: block;
     text-align: center;
@@ -19334,6 +19596,7 @@ a {
 
 .fdc-promo__concept-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     display: inline-block;
     width: 160px;
@@ -19343,6 +19606,7 @@ a {
 
 .fdc-numbers__num {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 40px;
     line-height: 30px;
     display: block;
@@ -19353,6 +19617,7 @@ a {
 
 .fdc-numbers__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     display: block;
     margin-bottom: 44px;
@@ -19394,6 +19659,7 @@ a {
 
 .fdc-section__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin-top: 90px;
     margin-bottom: 45px
@@ -19543,6 +19809,7 @@ a {
 
 .fdc-section__future {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 28px;
     display: inline-block;
@@ -19566,6 +19833,7 @@ a {
 
 .fdc-private-info__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 40px
@@ -19581,6 +19849,7 @@ a {
 
 .fdc-simple-connect__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 40px
@@ -19679,6 +19948,7 @@ a {
 
 .popup-login__ondoc {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 50px
@@ -19711,6 +19981,7 @@ a {
 
 .popup-login__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 24px;
     line-height: 50px;
     display: block;
@@ -19770,6 +20041,7 @@ a {
 
 .popup-login__btn-submit {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 24px;
     line-height: 53px;
     display: inline-block;
@@ -19795,6 +20067,7 @@ a {
 
 .popup-login__text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     outline: 0 !important
@@ -19802,6 +20075,7 @@ a {
 
 .popup-login__big-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     display: block;
     margin: 25px 0;
@@ -19818,6 +20092,7 @@ a {
 
 .popup-login__check {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 22px;
     display: block;
     cursor: pointer;
@@ -19854,6 +20129,7 @@ a {
 
 .charity-promo__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 42px;
     position: absolute;
     top: 35px;
@@ -19870,6 +20146,7 @@ a {
 
 .charity-promo__subtitle {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 42px;
     position: absolute;
     bottom: 45px;
@@ -19889,6 +20166,7 @@ a {
 
 .charity-lead__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 34px;
     margin-bottom: 30px;
     text-align: center
@@ -19896,6 +20174,7 @@ a {
 
 .charity-lead__text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 23px;
     display: block;
     text-align: center;
@@ -19931,6 +20210,7 @@ a {
 
 .charity-reg__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 34px;
     margin-bottom: 35px;
     text-align: center
@@ -19950,13 +20230,13 @@ a {
 .charity-reg__process {
     overflow: hidden;
     width: 860px;
-    margin: 30px auto 60px;
+    margin: 30px auto 60px auto;
     text-align: center
 }
 
 .charity-reg__process-new {
     overflow: hidden;
-    margin: 30px auto 40px;
+    margin: 30px auto 40px auto;
     text-align: center
 }
 
@@ -20033,6 +20313,7 @@ a {
 
 .charity-reg__step-rub {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 23px;
     display: block;
     margin-top: 10px;
@@ -20176,6 +20457,7 @@ a {
 
 .charity-reg__btn-submit {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     line-height: 45px;
     display: inline-block;
@@ -20260,13 +20542,14 @@ a {
 
 .charity-patient__name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 34px;
-    margin: 0 0 10px
+    margin: 0 0 10px 0
 }
 
 .charity-patient__city {
     font-size: 20px;
-    margin: 0 0 30px;
+    margin: 0 0 30px 0;
     color: #8d8d8d
 }
 
@@ -20276,7 +20559,7 @@ a {
 
 .charity-patient__story {
     font-size: 18px;
-    margin: 0 0 30px
+    margin: 0 0 30px 0
 }
 
 .charity-patient__story--new {
@@ -20301,6 +20584,7 @@ a {
 
 .charity-patient__action-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 25px;
     display: block;
     text-align: center;
@@ -20319,6 +20603,7 @@ a {
 
 .charity-patient__action-num {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 54px;
     line-height: 40px;
     display: block;
@@ -20349,7 +20634,7 @@ a {
     margin-bottom: 30px;
     padding-left: 46px;
     color: #069;
-    background: url(../img/icon-vk-charity.png) left no-repeat
+    background: url(../img/icon-vk-charity.png) no-repeat left
 }
 
 .charity-share {
@@ -20370,6 +20655,7 @@ a {
 
 .charity-share__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 34px;
     margin-bottom: 30px;
     text-align: center
@@ -20402,6 +20688,7 @@ a {
 
 .charity-share__copy-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
     line-height: 45px;
     display: block;
@@ -20485,15 +20772,17 @@ a {
 
 .charity-about__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 34px;
-    margin: 60px 0 25px;
+    margin: 60px 0 25px 0;
     text-align: center
 }
 
 .charity-about__subtitle {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 22px;
-    margin: 0 0 60px;
+    margin: 0 0 60px 0;
     text-align: center
 }
 
@@ -20522,8 +20811,10 @@ a {
 
 .charity-about__text-header {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
-    margin: 0 0 15px
+    margin: 0;
+    margin-bottom: 15px
 }
 
 .main-charity {
@@ -20540,6 +20831,7 @@ a {
 
 .main-charity__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 20px;
     display: inline-block;
@@ -20567,6 +20859,7 @@ a {
 
 .possibility-nav__tab {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     display: table-cell;
@@ -20627,6 +20920,7 @@ a {
 
 .possibility-promo__subtitle {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 50px;
@@ -20645,13 +20939,14 @@ a {
 .possibility-about {
     position: relative;
     overflow: hidden;
-    padding: 55px 0 0;
+    padding: 55px 0 0 0;
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x
 }
 
 .possibility-about__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 40px;
     line-height: 49px;
     position: relative;
@@ -20661,6 +20956,7 @@ a {
 
 .possibility-about__subtitle {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 35px;
@@ -20676,6 +20972,7 @@ a {
 
 .possibility-about__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 19px;
     display: inline-block;
@@ -20702,6 +20999,7 @@ a {
 
 .possibility-registration__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 24px;
     display: inline-block;
@@ -20746,12 +21044,14 @@ a {
     overflow: hidden;
     min-height: 455px;
     padding-top: 62px;
-    background: url(../img/bg-promo-digitizing.jpg) top center no-repeat;
+    background: url(../img/bg-promo-digitizing.jpg) no-repeat;
+    background-position: top center;
     background-size: cover
 }
 
 .digitizing-promo__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 40px;
     line-height: 48px;
     margin-top: 0;
@@ -20762,6 +21062,7 @@ a {
 
 .digitizing-promo p {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 24px;
@@ -20781,7 +21082,7 @@ a {
     width: 288px;
     height: 550px;
     margin-left: 73px;
-    padding: 80px 20px 0;
+    padding: 80px 20px 0 20px;
     background: url(../img/iphone-mock-up-3.png) no-repeat
 }
 
@@ -20817,6 +21118,7 @@ a {
 
 .documents-processing__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 27px;
@@ -20875,6 +21177,7 @@ a {
 
 .documents-processing__circle {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 34px;
     line-height: 122px;
     display: inline-block;
@@ -20904,6 +21207,7 @@ a {
 
 .processing-card__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 33px;
@@ -20920,6 +21224,7 @@ a {
 
 .processing-service__price {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 26px;
     line-height: 19.5px;
     margin-top: 40px;
@@ -20939,6 +21244,7 @@ a {
 
 .processing-service__subtext {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 19.5px;
     margin-bottom: 8px;
@@ -20950,12 +21256,14 @@ a {
     padding: 30px 0 35px;
     text-align: center;
     color: #fff;
-    background: url(../img/bg-processing-contact.jpg) top center no-repeat;
+    background: url(../img/bg-processing-contact.jpg) no-repeat;
+    background-position: top center;
     background-size: cover
 }
 
 .processing-contact__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 15px;
@@ -20964,6 +21272,7 @@ a {
 
 .processing-contact__number {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 17px;
@@ -20983,6 +21292,7 @@ a {
 
 .processing-registration__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 24px;
     display: inline-block;
@@ -21005,7 +21315,8 @@ a {
     position: relative;
     overflow: hidden;
     min-height: 600px;
-    padding: 55px 0 0;
+    padding: 55px 0 61px;
+    padding-bottom: 0;
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x
 }
@@ -21028,8 +21339,8 @@ a {
     width: 325px;
     height: 550px;
     margin-left: 73px;
-    padding: 80px 20px 0;
-    background: url(../img/iphone-mock-up2.png) top center no-repeat
+    padding: 80px 20px 0 20px;
+    background: url(../img/iphone-mock-up2.png) no-repeat top center
 }
 
 .digitizing-recommendation__mock-up_image {
@@ -21046,6 +21357,7 @@ a {
 
 .digitizing-recommendation__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 30px;
@@ -21063,6 +21375,7 @@ a {
 
 .digitizing-recommendation__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 24px;
     display: inline-block;
@@ -21098,6 +21411,7 @@ a {
 
 .profile-section__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 40px;
     line-height: 49px;
     position: relative;
@@ -21127,8 +21441,8 @@ a {
     width: 325px;
     height: 550px;
     margin-left: 73px;
-    padding: 80px 20px 0;
-    background: url(../img/iphone-mock-up6.png) top center no-repeat
+    padding: 80px 20px 0 20px;
+    background: url(../img/iphone-mock-up6.png) no-repeat top center
 }
 
 .profile-section__mock-up_image {
@@ -21148,6 +21462,7 @@ a {
 
 .profile-save__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 30px;
@@ -21170,6 +21485,7 @@ a {
 
 .profile-registration__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 24px;
     display: inline-block;
@@ -21200,6 +21516,7 @@ a {
 
 .reminders-section__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 30px;
@@ -21227,8 +21544,8 @@ a {
     width: 325px;
     height: 550px;
     margin-left: 73px;
-    padding: 80px 20px 0;
-    background: url(../img/iphone-mock-up6.png) top center no-repeat
+    padding: 80px 20px 0 20px;
+    background: url(../img/iphone-mock-up6.png) no-repeat top center
 }
 
 .reminders-section__mock-up_image {
@@ -21249,6 +21566,7 @@ a {
 
 .reminders-section__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 24px;
     display: inline-block;
@@ -21273,6 +21591,7 @@ a {
 
 .reminders__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 40px;
     line-height: 49px;
     position: relative;
@@ -21293,6 +21612,7 @@ a {
 
 .ml-docs-promo__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin: 35px;
     text-align: center;
@@ -21309,7 +21629,8 @@ a {
 .ml-docs-promo__concept {
     display: table;
     width: 790px;
-    margin: 180px auto 0
+    margin: 0 auto;
+    margin-top: 180px
 }
 
 .ml-docs-promo__concept-group {
@@ -21340,6 +21661,7 @@ a {
 
 .ml-docs-promo__concept-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     text-align: center;
@@ -21347,17 +21669,18 @@ a {
 }
 
 .ml-docs-promo__link-block {
-    margin: 70px auto 0
+    margin: 70px auto 0 auto
 }
 
 .ml-docs-promo__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 55px;
     display: block;
     width: 300px;
     height: 55px;
-    margin: 0 auto 10px;
+    margin: 0 auto 10px auto;
     text-align: center;
     color: #fff;
     border-radius: 25px
@@ -21380,6 +21703,7 @@ a {
 
 .ml-medcard-promo__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin: 45px;
     text-align: center;
@@ -21395,7 +21719,8 @@ a {
 .ml-medcard-promo__concept {
     display: table;
     width: 1025px;
-    margin: 270px auto 0
+    margin: 0 auto;
+    margin-top: 270px
 }
 
 .ml-medcard-promo__concept-group {
@@ -21428,6 +21753,7 @@ a {
 
 .ml-medcard-promo__concept-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: table-cell;
     padding-left: 20px;
@@ -21437,17 +21763,18 @@ a {
 }
 
 .ml-medcard-promo__link-block {
-    margin: 50px auto 0
+    margin: 50px auto 0 auto
 }
 
 .ml-medcard-promo__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 55px;
     display: block;
     width: 300px;
     height: 55px;
-    margin: 0 auto 10px;
+    margin: 0 auto 10px auto;
     text-align: center;
     color: #fff;
     border-radius: 25px
@@ -21470,6 +21797,7 @@ a {
 
 .ml-weight-promo__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 30px;
     margin: 40px 0;
     text-align: center;
@@ -21479,7 +21807,8 @@ a {
 
 .ml-weight-promo__concept {
     display: table;
-    margin: 220px auto 0
+    margin: 0 auto;
+    margin-top: 220px
 }
 
 .ml-weight-promo__concept-group {
@@ -21510,6 +21839,7 @@ a {
 
 .ml-weight-promo__concept-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     text-align: center;
@@ -21517,17 +21847,18 @@ a {
 }
 
 .ml-weight-promo__link-block {
-    margin: 30px auto 0
+    margin: 30px auto 0 auto
 }
 
 .ml-weight-promo__link {
     font-family: Gotham-Bold, Arial, sans-serif !important;
+    font-family: Gotham-Bold, Arial, sans-serif;
     font-size: 22px;
     line-height: 55px;
     display: block;
     width: 300px;
     height: 55px;
-    margin: 0 auto 10px;
+    margin: 0 auto 10px auto;
     text-align: center;
     color: #fff;
     border-radius: 25px
@@ -21542,7 +21873,8 @@ a {
     position: relative;
     bottom: 0;
     height: 575px;
-    background: url(../img/ml-weight-promo__phone-bg.png) bottom no-repeat;
+    background: url(../img/ml-weight-promo__phone-bg.png) no-repeat;
+    background-position: bottom;
     background-size: 303px 550px
 }
 
@@ -21563,6 +21895,7 @@ a {
 
 .mobile-cap__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 37px;
     margin-top: 20px;
     margin-bottom: 0
@@ -21578,12 +21911,13 @@ a {
     display: block;
     width: 218px;
     height: 74px;
-    margin: 35px auto 0;
+    margin: 35px auto 0 auto;
     background: url(../img/mobile-cap__appstore.png)
 }
 
 .mobile-cap__gotosite {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 32px;
     display: inline-block;
     margin-top: 55px;
@@ -21600,7 +21934,7 @@ a {
 
 .medcard-filter {
     margin-top: 8px;
-    padding: 20px 12px 15px;
+    padding: 20px 12px 15px 12px;
     border-radius: 13px;
     background-color: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2)
@@ -21608,6 +21942,7 @@ a {
 
 .medcard-filter__input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: block;
     width: 100%;
@@ -21617,6 +21952,7 @@ a {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
     outline: 0 !important;
+    outline: 0;
     background-image: url(../img/icon-search.png);
     background-repeat: no-repeat;
     background-position: 10px 50%
@@ -21668,6 +22004,7 @@ a {
 
 .medcard-filter__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     margin-right: 10px
@@ -21690,6 +22027,7 @@ a {
 
 .medcard-filter__tag {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     position: relative;
@@ -21706,6 +22044,7 @@ a {
 
 .medcard-filter__tag--clear {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     margin-top: 10px;
     margin-right: 20px;
     margin-bottom: 15px;
@@ -21740,6 +22079,7 @@ a {
 
 .medcard-filter__date-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
     display: inline-block;
@@ -21764,6 +22104,7 @@ a {
 
 .medcard-filter__find {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     height: 30px;
@@ -21821,6 +22162,7 @@ a {
     overflow: -moz-scrollbars-none;
     overflow-y: auto;
     height: 290px;
+    padding-right: 0;
     padding-right: 30px;
     padding-left: 0;
     border-bottom: 1px solid #f2f2f2;
@@ -21842,6 +22184,7 @@ a {
 
 .medcard-spec__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     z-index: -1;
     margin-top: 0;
@@ -21858,12 +22201,14 @@ a {
 
 .medcard-spec__letter {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
-    margin: 10px 0
+    margin: 10px 0 10px 0
 }
 
 .medcard-spec__item {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 18px;
     display: inline-block;
     margin-top: 3px;
@@ -21886,6 +22231,7 @@ a {
 
 .medcard-spec__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     height: 30px;
@@ -21936,7 +22282,7 @@ a {
     display: table;
     width: 490px;
     margin: auto;
-    padding: 20px 0 15px;
+    padding: 20px 0 15px 0;
     border-radius: 6px;
     background-color: #fff
 }
@@ -21974,8 +22320,10 @@ a {
 
 .medcard-doctor__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
-    margin: 0 0 12px;
+    margin: 0;
+    margin-bottom: 12px;
     text-align: center
 }
 
@@ -21991,7 +22339,8 @@ a {
     display: inline-block;
     width: 26px;
     height: 26px;
-    margin: 2px 8px 0;
+    margin: 0 8px;
+    margin-top: 2px;
     color: transparent;
     background-size: 26px 26px !important
 }
@@ -22054,6 +22403,7 @@ a {
 
 .medcard-doctor__search-input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -22061,7 +22411,8 @@ a {
     padding-left: 10px;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .medcard-doctor__search-input::-webkit-input-placeholder {
@@ -22120,7 +22471,7 @@ a {
 }
 
 .medcard-doctor__doc {
-    padding: 15px 12px 5px;
+    padding: 15px 12px 5px 12px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
     border-bottom: 1px solid #f2f2f2
@@ -22154,6 +22505,7 @@ a {
 
 .medcard-doctor__doc-name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 7px;
@@ -22176,6 +22528,7 @@ a {
 
 .medcard-doctor__doc-specs {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin-top: 0;
     margin-bottom: 5px;
@@ -22185,6 +22538,7 @@ a {
 
 .medcard-doctor__info {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     position: relative;
     display: block;
@@ -22234,6 +22588,7 @@ a {
 
 .medcard-doctor__notfind-text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 55px;
     text-align: center;
@@ -22243,6 +22598,7 @@ a {
 
 .medcard-doctor__notfind-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
     display: inline-block;
@@ -22270,6 +22626,7 @@ a {
 
 .medcard-doctor__add-text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     margin-top: 28px;
     margin-right: 8px;
@@ -22285,6 +22642,7 @@ a {
 
 .medcard-doctor__add-input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
     display: block;
@@ -22294,7 +22652,8 @@ a {
     padding-left: 10px;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .medcard-doctor__add-input::-webkit-input-placeholder {
@@ -22373,6 +22732,7 @@ a {
 
 .medcard-doctor__add-btn-no {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     display: inline-block;
@@ -22386,6 +22746,7 @@ a {
     border: 1px solid #5db7d8;
     border-radius: 15px;
     outline: 0 !important;
+    outline: 0;
     background-color: #fff
 }
 
@@ -22396,6 +22757,7 @@ a {
 
 .medcard-doctor__add-btn-save {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     display: inline-block;
@@ -22403,7 +22765,10 @@ a {
     margin-top: 15px;
     margin-bottom: 20px;
     margin-left: 10px;
-    padding: 0 24px;
+    padding-top: 0;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px;
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 15px;
@@ -22418,6 +22783,7 @@ a {
 
 .ekko-lightbox .modal-title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px !important;
     outline: 0 !important
 }
@@ -22498,7 +22864,7 @@ a {
     top: -100px;
     left: 195px;
     width: 300px;
-    padding: 25px 0 0;
+    padding: 25px 0 0 0;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2)
@@ -22556,16 +22922,23 @@ a {
 
 .medcard-docinfo__doc-name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
-    margin: 15px 15px 10px 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     text-align: center;
     color: #000
 }
 
 .medcard-docinfo__doc-specs {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
-    margin: 0 15px 0 20px;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 20px;
     text-align: center;
     color: #000;
     outline: 0 !important
@@ -22597,6 +22970,7 @@ a {
 
 .medcard-docinfo__title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     position: relative;
     z-index: 110;
@@ -22610,8 +22984,11 @@ a {
 
 .medcard-docinfo__exp-rank {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
-    margin: 0 15px 0 20px;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 20px;
     color: #000;
     outline: 0 !important
 }
@@ -22627,8 +23004,11 @@ a {
 
 .medcard-docinfo__exp-years {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
-    margin: 5px 15px 0 20px;
+    margin: 5px 0 0 0;
+    margin-right: 15px;
+    margin-left: 20px;
     color: #000;
     outline: 0 !important
 }
@@ -22644,6 +23024,7 @@ a {
 
 .medcard-docinfo__phone {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: block;
     margin-right: 15px;
@@ -22703,6 +23084,7 @@ a {
 
 .medcard-docinfo__clinic-name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin: 10px 20px 5px 15px;
     color: #000
@@ -22710,6 +23092,7 @@ a {
 
 .medcard-docinfo__clinic-subway {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin: 0 20px 0 15px;
     color: #000;
@@ -22727,6 +23110,7 @@ a {
 
 .medcard-docinfo__about {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 12px;
     line-height: 14px;
     margin-right: 15px;
@@ -22736,6 +23120,7 @@ a {
 
 .medcard-docinfo__support-status {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin-right: 15px;
     margin-bottom: 0;
@@ -22810,6 +23195,7 @@ a {
 
 .medcard-docinfo__allow-check + label {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
     margin-right: 15px;
@@ -22827,7 +23213,7 @@ a {
     display: table;
     width: 490px;
     margin: auto;
-    padding: 20px 0 15px;
+    padding: 20px 0 15px 0;
     border-radius: 6px;
     background-color: #fff
 }
@@ -22865,8 +23251,10 @@ a {
 
 .medcard-clinic__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
-    margin: 0 0 12px;
+    margin: 0;
+    margin-bottom: 12px;
     text-align: center
 }
 
@@ -22882,7 +23270,8 @@ a {
     display: inline-block;
     width: 26px;
     height: 26px;
-    margin: 2px 8px 0;
+    margin: 0 8px;
+    margin-top: 2px;
     color: transparent;
     background-size: 26px 26px !important
 }
@@ -22945,6 +23334,7 @@ a {
 
 .medcard-clinic__search-input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     width: 100%;
@@ -22952,7 +23342,8 @@ a {
     padding-left: 10px;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .medcard-clinic__search-input::-webkit-input-placeholder {
@@ -23011,7 +23402,7 @@ a {
 }
 
 .medcard-clinic__item {
-    padding: 15px 12px 5px;
+    padding: 15px 12px 5px 12px;
     -webkit-transition: .2s ease all;
     transition: .2s ease all;
     border-bottom: 1px solid #f2f2f2
@@ -23045,6 +23436,7 @@ a {
 
 .medcard-clinic__clinic-name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 7px;
@@ -23067,6 +23459,7 @@ a {
 
 .medcard-clinic__clinic-specs {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 13px;
     margin-top: 0;
     margin-bottom: 5px;
@@ -23076,6 +23469,7 @@ a {
 
 .medcard-clinic__info {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     position: relative;
     display: block;
@@ -23130,6 +23524,7 @@ a {
 
 .medcard-clinic__notfind-text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 55px;
     text-align: center;
@@ -23139,6 +23534,7 @@ a {
 
 .medcard-clinic__notfind-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
     display: inline-block;
@@ -23166,6 +23562,7 @@ a {
 
 .medcard-clinic__add-text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     margin-top: 28px;
     margin-right: 8px;
@@ -23181,6 +23578,7 @@ a {
 
 .medcard-clinic__add-input {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
     display: block;
@@ -23190,7 +23588,8 @@ a {
     padding-left: 10px;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 12px;
-    outline: 0 !important
+    outline: 0 !important;
+    outline: 0
 }
 
 .medcard-clinic__add-input::-webkit-input-placeholder {
@@ -23269,6 +23668,7 @@ a {
 
 .medcard-clinic__add-btn-no {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     display: inline-block;
@@ -23282,6 +23682,7 @@ a {
     border: 1px solid #5db7d8;
     border-radius: 15px;
     outline: 0 !important;
+    outline: 0;
     background-color: #fff
 }
 
@@ -23292,6 +23693,7 @@ a {
 
 .medcard-clinic__add-btn-save {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 33px;
     display: inline-block;
@@ -23299,7 +23701,10 @@ a {
     margin-top: 15px;
     margin-bottom: 20px;
     margin-left: 10px;
-    padding: 0 24px;
+    padding-top: 0;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px;
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 15px;
@@ -23493,17 +23898,18 @@ a {
 }
 
 .medcard-widget__body--cap {
-    padding: 120px 25px 20px;
+    padding: 120px 25px 20px 25px;
     text-align: center
 }
 
 .medcard-widget__body--cap-smaller {
-    padding: 80px 25px 20px;
+    padding: 80px 25px 20px 25px;
     text-align: center
 }
 
 .medcard-widget__ticket {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     line-height: 14px;
     letter-spacing: -.2px;
@@ -23587,6 +23993,7 @@ a {
 
 .medcard-widget__cap-text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     letter-spacing: -1px;
     color: rgba(0, 0, 0, .2)
@@ -23598,6 +24005,7 @@ a {
 
 .medcard-errors__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     color: #dc4531
 }
@@ -23640,6 +24048,7 @@ a {
 
 .drugs__header-links {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 35px;
     display: inline-block;
@@ -23708,6 +24117,7 @@ a {
 
 .drugs__days {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 16px;
     line-height: 60px;
     display: inline-block;
@@ -23763,6 +24173,7 @@ a {
 
 .drugs__time {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     color: #8d8d8d;
     outline: 0 !important
@@ -23804,6 +24215,7 @@ a {
 
 .drugs__tab-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     width: 80%;
     margin: 0;
@@ -23816,6 +24228,7 @@ a {
 
 .drugs__drug-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 20px;
     line-height: 65px;
     margin: 0;
@@ -23824,6 +24237,7 @@ a {
 
 .drugs__drug-title--type {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     color: #8d8d8d;
     outline: 0 !important
@@ -23831,6 +24245,7 @@ a {
 
 .drugs__drug-time {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     position: relative;
     margin-bottom: 0;
@@ -23841,7 +24256,8 @@ a {
 
 .drugs__drug-time--config {
     display: inline-block;
-    margin: 0 0 20px
+    margin: 0;
+    margin-bottom: 20px
 }
 
 .drugs__value {
@@ -23881,6 +24297,7 @@ a {
 
 .drugs__drug-day {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 35px;
     display: inline-block;
@@ -23925,6 +24342,7 @@ a {
 
 .drugs__doctor-prof {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 12px;
     margin: 0;
     color: #8d8d8d;
@@ -23978,7 +24396,8 @@ a {
     z-index: 100;
     top: 50%;
     right: 50px;
-    padding: 15px 15px 0;
+    padding: 15px;
+    padding-bottom: 0;
     cursor: default;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -24000,6 +24419,7 @@ a {
 
 .drugs__drug-date {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     display: block;
     margin-bottom: 15px;
@@ -24068,6 +24488,7 @@ a {
 
 .drugs__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     display: inline-block;
@@ -24085,6 +24506,7 @@ a {
 
 .drugs__dosage {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     height: 30px;
@@ -24143,6 +24565,7 @@ a {
 .drugs__dosage--time {
     width: 43px;
     margin: 0;
+    margin-right: 15px;
     color: #000
 }
 
@@ -24174,7 +24597,8 @@ a {
     z-index: 100;
     top: 120px;
     left: 140px;
-    padding: 15px 15px 0;
+    padding: 15px;
+    padding-bottom: 0;
     cursor: default;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -24212,6 +24636,7 @@ a {
 
 .drugs__dosage-popup-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     line-height: 12px;
     cursor: pointer;
@@ -24308,6 +24733,7 @@ a {
 
 .drugs-errors__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     color: #dc4531
 }
@@ -24394,6 +24820,7 @@ a {
 
 .operator-tasks-filer__type {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin-right: 20px
 }
@@ -24449,6 +24876,7 @@ a {
 
 .operator-tasks-filer__dropdown-item {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     display: block;
     list-style-type: none;
@@ -24470,6 +24898,7 @@ a {
 
 .operator-tasks-table__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, .1) !important
@@ -24551,6 +24980,7 @@ a {
 
 .operator-profile-avatar__select-img-link {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 18px;
     color: #5db7d8;
     outline: 0 !important
@@ -24571,6 +25001,7 @@ a {
 
 .operator-profile-data__title {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     display: inline-block;
@@ -24592,6 +25023,7 @@ a {
 
 .operator-profile-data__value {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 20px;
     display: inline-block;
     color: #000;
@@ -24609,6 +25041,7 @@ a {
 
 .operator-profile-data__check-round {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 18px;
     display: block;
     cursor: pointer;
@@ -24635,6 +25068,7 @@ a {
 
 .operator-profile-data__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 35px;
     display: inline-block;
@@ -24708,21 +25142,25 @@ a {
 
 .operator-scan__num {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 17px;
     display: inline-block;
     height: 40px;
-    margin: 0 20px 20px;
+    margin: 0 20px 20px 20px;
     outline: 0 !important
 }
 
 .operator-scan__doc {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
-    margin: 0 0 15px
+    margin: 0;
+    margin-bottom: 15px
 }
 
 .operator-scan__comment {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     margin-bottom: 120px;
     text-align: left;
@@ -24856,6 +25294,7 @@ a {
 
 .operator-btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 18px;
     line-height: 33px;
     display: inline-block;
@@ -24927,11 +25366,13 @@ a {
 
 .operator-btn--task-done {
     width: 100%;
-    margin: 0 0 20px
+    margin: 0;
+    margin-bottom: 20px
 }
 
 .operator-task-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin: 0;
     padding-bottom: 25px
@@ -24939,6 +25380,7 @@ a {
 
 .operator-task-text {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     width: 350px;
     margin-left: 165px;
@@ -24972,6 +25414,7 @@ a {
 
 .operator-task-textarea {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -24991,6 +25434,7 @@ a {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     outline: 0 !important;
+    outline: 0;
     -ms-overflow-style: none
 }
 
@@ -25370,6 +25814,7 @@ a {
 
 .health-question__question {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
     display: inline-block;
@@ -25379,6 +25824,7 @@ a {
 
 .health-question__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     line-height: 30px;
     display: inline-block;
@@ -25401,6 +25847,7 @@ a {
 
 .health-question__btn--why {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
     margin-right: 45px;
@@ -25445,6 +25892,7 @@ a {
 
 .health-info__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     line-height: 25px;
     display: inline-block;
@@ -25491,6 +25939,7 @@ a {
 
 .health-charts__percents {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 45px;
     position: absolute;
     top: 95px;
@@ -25584,6 +26033,7 @@ a {
 
 .health-analytics__text {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin: 0;
     color: rgba(0, 0, 0, .2)
@@ -25595,6 +26045,7 @@ a {
 
 .health-settings__link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 16px;
     display: inline-block;
     margin-bottom: 150px
@@ -25620,6 +26071,7 @@ a {
 
 .stoma__nav-link {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     line-height: 25px;
     display: inline-block;
@@ -25731,6 +26183,7 @@ a {
 
 .stoma-table__treatment-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-top: 0;
     margin-bottom: 5px
@@ -25785,6 +26238,7 @@ a {
 
 .stoma-scheme__popup-title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 13px;
     margin-top: 0;
     margin-bottom: 5px
@@ -25841,6 +26295,7 @@ a {
 
 .stoma-popup__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin-top: 0;
     margin-bottom: 30px
@@ -25848,6 +26303,7 @@ a {
 
 .stoma-popup__subtitle {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 0
 }
@@ -25858,6 +26314,7 @@ a {
 
 .stoma-popup__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     line-height: 35px;
     display: inline-block;
@@ -25900,6 +26357,7 @@ a {
 
 .datepicker__input {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: block;
     width: 218px;
@@ -25928,6 +26386,7 @@ a {
 
 .datepicker__month-item {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     outline: 0 !important
@@ -25977,6 +26436,7 @@ a {
 
 .datepicker__table-head {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     outline: 0 !important;
@@ -26037,6 +26497,7 @@ a {
 
 .datepicker__time-input {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 15px;
     display: inline-block;
     width: 48px;
@@ -26119,6 +26580,7 @@ a {
 
 .settings__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     margin-bottom: 24px
 }
@@ -26229,6 +26691,7 @@ a {
 
 .settings__name {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 12px;
     line-height: 16px;
     position: absolute;
@@ -26288,6 +26751,7 @@ a {
     overflow: -moz-scrollbars-none;
     overflow-y: auto;
     height: 290px;
+    padding-right: 0;
     padding-right: 30px;
     padding-left: 0;
     border-bottom: 1px solid #f2f2f2;
@@ -26309,6 +26773,7 @@ a {
 
 .clinic-directions__title {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 17px;
     z-index: -1;
     margin-top: 0;
@@ -26320,6 +26785,7 @@ a {
 
 .clinic-directions__item {
     font-family: Gotham, Arial, sans-serif !important;
+    font-family: Gotham, Arial, sans-serif;
     font-size: 15px;
     display: block;
     margin-bottom: 17px;
@@ -26329,6 +26795,7 @@ a {
 
 .clinic-directions__btn {
     font-family: Gotham-Medium, Arial, sans-serif !important;
+    font-family: Gotham-Medium, Arial, sans-serif;
     font-size: 14px;
     display: inline-block;
     height: 30px;
@@ -26368,3 +26835,5 @@ a {
 .clinic-directions__close:hover {
     opacity: .7
 }
+
+/*# sourceMappingURL=style.min.css.map */

@@ -29860,6 +29860,7 @@ Widgets
 .drugs__dosage--time {
     width: 43px;
     margin: 0;
+    margin-right: 15px;
 
     color: #000;
 }
