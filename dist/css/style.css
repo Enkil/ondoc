@@ -13217,8 +13217,8 @@ a:focus
     outline: none;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
-
-.widget-btn--vita-pp {
+.widget-btn--vita-pp
+{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
@@ -29386,7 +29386,8 @@ Widgets
 {
     background-image: url('../img/icon-course--catalog.png');
 }
-.drugs__header-links--active:hover
+.drugs__header-links--active:hover,
+.drugs__header-links--active:focus
 {
     color: #fff;
     background-color: #5db7d8;
@@ -32319,8 +32320,8 @@ Widgets
     margin: 0;
     margin-bottom: 5px;
 }
-
-.vita-popup {
+.vita-popup
+{
     position: fixed;
     z-index: 1200;
     top: 0;
@@ -32329,8 +32330,8 @@ Widgets
     width: 100%;
     height: 100%;
 }
-
-.vita-popup__bg {
+.vita-popup__bg
+{
     position: fixed;
     z-index: 50;
     top: 0;
@@ -32341,8 +32342,8 @@ Widgets
 
     background: rgba(0, 0, 0, .6);
 }
-
-.vita-popup__body {
+.vita-popup__body
+{
     position: fixed;
     z-index: 150;
     top: 0;
@@ -32364,8 +32365,8 @@ Widgets
     border-radius: 15px;
     background: #fff;
 }
-
-.vita-popup__title {
+.vita-popup__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -32373,8 +32374,8 @@ Widgets
     margin-top: 0;
     margin-bottom: 25px;
 }
-
-.vita-popup__time {
+.vita-popup__time
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 
@@ -32382,14 +32383,14 @@ Widgets
 
     margin-top: 15px;
 }
-
-.vita-popup__date {
+.vita-popup__date
+{
     display: inline-block;
 
     margin-bottom: 30px;
 }
-
-.vita-popup__close {
+.vita-popup__close
+{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -32403,26 +32404,26 @@ Widgets
 
     background: url(../img/icon-exit-11.png) no-repeat;
 }
-
-.vita-cap__text {
+.vita-cap__text
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
     opacity: .4;
 }
-
-.vita-cap__text--cupons {
+.vita-cap__text--cupons
+{
     margin-bottom: 400px;
 }
-
-.vita-cap__img {
+.vita-cap__img
+{
     display: block;
 
     margin: 0 auto;
 }
-
-.vita-cap__img--partners {
+.vita-cap__img--partners
+{
     width: 73px;
     height: 92px;
     margin-top: 125px;
@@ -32432,8 +32433,8 @@ Widgets
     background-repeat: no-repeat;
     background-size: 73px 92px;
 }
-
-.vita-cap__img--cupons {
+.vita-cap__img--cupons
+{
     width: 84px;
     height: 73px;
     margin-top: 85px;
