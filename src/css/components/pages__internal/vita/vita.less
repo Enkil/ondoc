@@ -176,3 +176,107 @@
     font-size: 17px;
   }
 }
+
+.vita-popup {
+  position: fixed;
+  z-index: 1200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__bg {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);;
+  }
+
+  &__body {
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 535px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    border-radius: 15px;
+    background: @white-color;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  &__time {
+    .gotham-m;
+    display: block;
+    margin-top: 15px;
+  }
+
+  &__date {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    background: url(../img/icon-exit-11.png) no-repeat;
+  }
+}
+
+.vita-cap {
+
+  &__text {
+    .gotham-m;
+    font-size: 17px;
+    opacity: .4;
+
+    &--cupons {
+      margin-bottom: 400px;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+
+    &--partners {
+      height: 92px;
+      width: 73px;
+      background-size: 73px 92px;
+      background-repeat: no-repeat;
+      background-image: url('../img/vita-cap-partners.png');
+      margin-top: 125px;
+      margin-bottom: 10px;
+    }
+    &--cupons {
+      width: 84px;
+      height: 73px;
+      background-size: 84px 73px;
+      background-repeat: no-repeat;
+      background-image: url('../img/vita-cap-cupons.png');
+      margin-top: 85px;
+      margin-bottom: 10px;
+    }
+  }
+}
