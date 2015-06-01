@@ -1,0 +1,178 @@
+.vita{
+
+  &__widget-header{
+    line-height: 60px;
+    margin: 0;
+
+    & > span{
+      .gotham-m;
+      font-size: 26px;
+    }
+  }
+
+  &__enroll-link {
+    .gotham-m;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 1px solid @blue-color;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 15px 0 4px 0;
+
+    &--my{
+      .gotham-b;
+      font-size: 20px;
+      color: @white-color;
+      display: inline-block;
+      padding: 7px 15px 7px 15px;
+      background-color: @blue-color;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__avatar{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border: 1px solid @grey-color-2;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-bottom: 25px;
+  }
+
+  &__name{
+    .gotham-m;
+    font-size: 17px;
+    margin-top: 25px;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  &__info{
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 15px;
+    border: 1px solid @grey-color-2;
+  }
+
+  &__phone{
+    .gotham-m;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__contacts{
+    display: table;
+    width: 100%;
+  }
+
+  &__addr{
+    .gotham-m;
+    position: relative;
+    display: table-cell;
+    padding-left: 15px;
+    &:before{
+      position: absolute;
+      top: 3px;
+      left: 0;
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 5px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-map-pin.png) no-repeat;
+    }
+  }
+
+  &__subway{
+    padding-left: 15px;
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    &:before{
+      position: absolute;
+      top: 5px;
+      left: 0;
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 3px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-doc-subway.png) no-repeat;
+    }
+  }
+
+  &__worktime{
+    padding-left: 15px;
+    position: relative;
+    display: table-cell;
+    text-align: right;
+    &:before{
+      position: absolute;
+      top: 3px;
+      left: 0;
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 3px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-worktime.png) no-repeat;
+    }
+  }
+}
+
+.vita-tab{
+  .bottom-line-grey;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 15px 8px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  cursor: pointer;
+  display: table;
+  width: 100%;
+  min-height: 75px;
+
+  &:hover .vita-tab__name{  color: @red-color;  }
+
+  &--active{
+    background-color: @lightblue-bg;
+  }
+
+  &__avatar{
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__partner{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+
+  &__cost{
+    display: table-cell;
+    font-size: 15px;
+    color: @blue-color;
+    vertical-align: middle;
+    width: 26%;
+  }
+
+  &__name{
+    .gotham-m;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+}

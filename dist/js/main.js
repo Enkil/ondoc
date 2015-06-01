@@ -15507,9 +15507,9 @@ l.prototype.hasReader=function(a){var b,c;for(b=0;b<this.readers.length;b+=1)if(
 
 /* Toggle promo form */
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.promo-form__submit').click(function (event) {
+    $('.promo-form__submit').click(function(event){
         event.preventDefault();
         $('.promo-form.display-none').toggleClass('display-none');
         $(this).parents('.promo-form').toggleClass('display-none');
@@ -15519,32 +15519,32 @@ $(document).ready(function () {
 
 /* Animation on scroll */
 
-$(window).on('scroll', function () {
-    if (!$('#js__animate-1').length) {
+$(window).on('scroll', function(){
+    if(!$('#js__animate-1').length) {
         return true;
     }
 
-    var scrollpos = $(this).scrollTop() + ($(window).height() / 2 + 500);
+    var scrollpos = $(this).scrollTop() + ($(window).height()/2+500);
 
-    if (scrollpos > $('#js__animate-1').offset().top) {
+    if( scrollpos > $('#js__animate-1').offset().top ){
         $('#js__animate-1').addClass('fdc-section__devices--active');
     }
-    if (scrollpos > $('#js__animate-2').offset().top) {
+    if( scrollpos > $('#js__animate-2').offset().top ){
         $('#js__animate-2').addClass('fdc-section__devices--active');
     }
-    if (scrollpos > $('#js__animate-3').offset().top) {
+    if( scrollpos > $('#js__animate-3').offset().top ){
         $('#js__animate-3').addClass('fdc-section__devices--active');
     }
-    if (scrollpos > $('#js__animate-4').offset().top) {
+    if( scrollpos > $('#js__animate-4').offset().top ){
         $('#js__animate-4').addClass('fdc-section__devices--active');
     }
-    if (scrollpos > $('#js__animate-5').offset().top) {
+    if( scrollpos > $('#js__animate-5').offset().top ){
         $('#js__animate-5').addClass('fdc-section__devices--active');
     }
-    if (scrollpos > $('#js__animate-6').offset().top) {
+    if( scrollpos > $('#js__animate-6').offset().top ){
         $('#js__animate-6').addClass('fdc-section__devices--active');
     }
-    if (scrollpos > $('#js__animate-7').offset().top) {
+    if( scrollpos > $('#js__animate-7').offset().top ){
         $('#js__animate-7').addClass('fdc-section__devices--active');
     }
 });
@@ -15888,14 +15888,14 @@ clinics.init = function (selector, latLng, zoom, filename) { // Init map functio
         })
 };
 /* Toggle doctor info pop-up */
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.drugs__doctor-name').click(function (event) {
+    $('.drugs__doctor-name').click(function(event){
         event.preventDefault();
         $('.medcard-docinfo').toggleClass('display-none');
     });
 
-    $('.js-doc-find').click(function (event) {
+    $('.js-doc-find').click(function(event){
         event.preventDefault();
         $('.medcard-docinfo').toggleClass('display-none');
     });
@@ -15903,14 +15903,14 @@ $(document).ready(function () {
 });
 
 /* Toggle reaction popup */
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.js-drugs-popup-toogle').mouseover(function (event) {
+    $('.js-drugs-popup-toogle').mouseover(function(event){
         event.preventDefault();
         $('.drugs__drug-reaction-popup').toggleClass('display-none');
     });
 
-    $('.js-drugs-popup-toogle').click(function (event) {
+    $('.js-drugs-popup-toogle').click(function(event){
         event.preventDefault();
         $('.drugs__drug-reaction-popup').toggleClass('display-none');
     });
@@ -15918,24 +15918,24 @@ $(document).ready(function () {
 });
 
 /* Toggle dosage types and items popups */
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.drugs__link--type').click(function (event) {
+    $('.drugs__link--type').click(function(event){
         event.preventDefault();
         $(this).next().toggleClass('display-none');
     });
 
-    $('.drugs__link--item').click(function (event) {
+    $('.drugs__link--item').click(function(event){
         event.preventDefault();
         $(this).next().toggleClass('display-none');
     });
 
-    $('.js__find-add-drug').click(function (event) {
+    $('.js__find-add-drug').click(function(event){
         event.preventDefault();
         $('.drugs__modal-wrapper').removeClass('display-none')
     });
 
-    $('.drugs__modal-close').click(function (event) {
+    $('.drugs__modal-close').click(function(event){
         event.preventDefault();
         $('.drugs__modal-wrapper').addClass('display-none')
     });
@@ -15943,18 +15943,18 @@ $(document).ready(function () {
 });
 
 /* Toggle days state */
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.js__drug-day').click(function (event) {
+    $('.js__drug-day').click(function(event){
         event.preventDefault();
         $(this).toggleClass('drugs__drug-day--active');
     });
 });
 
 /* Toggle doc select display */
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.js__drugs-doc-select').click(function (event) {
+    $('.js__drugs-doc-select').click(function(event){
         event.preventDefault();
         $('body').toggleClass('popup-scrolltop');
         $('.medcard-doctor__wrapper').toggleClass('display-none');
@@ -16149,6 +16149,7 @@ $(document).ready(function () {
         });
     }
 });
+
 $(document).ready(function () {
     if ($('.js__find--clinic-directions').length) {
 

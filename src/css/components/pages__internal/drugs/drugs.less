@@ -50,6 +50,30 @@
         }
       }
 
+      &--cupon{
+        &:before {
+          content: "";
+          width: 23px;
+          height: 21px;
+          margin-right: 8px;
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url("../img/icon-cupon--blue.png");
+        }
+      }
+
+      &--proposal{
+        &:before {
+          content: "";
+          width: 15px;
+          height: 19px;
+          margin-right: 8px;
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url("../img/icon-proposal--blue.png");
+        }
+      }
+
       &--history {
         &:before {
           content: "";
@@ -82,6 +106,14 @@
 
         &.drugs__header-links--current:before {
           background-image: url("../img/icon-course--current.png");
+        }
+
+        &.drugs__header-links--cupon:before {
+          background-image: url("../img/icon-cupon.png");
+        }
+
+        &.drugs__header-links--proposal:before {
+          background-image: url("../img/icon-proposal--white.png");
         }
 
         &.drugs__header-links--history:before {

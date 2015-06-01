@@ -10963,9 +10963,9 @@ html
 {
     min-width: 1000px !important;
 }
-
-.container--charity {
-    width: calc(100% - 100% / 16);
+.container--charity
+{
+    width: calc(100% - 100%/16);
 }
 .container-fluid
 {
@@ -11238,12 +11238,12 @@ html
     src: url('fonts/rouble-webfont.eot');
     src: local('ALS Rubl'), local('Ruble'), url('fonts/rouble-webfont.woff') format('woff'), url('fonts/rouble-webfont.svg') format('svg'), url('fonts/rouble-webfont.otf') format('opentype');
 }
-
-span.ruble {
+span.ruble
+{
     font-family: 'Ruble';
 }
-
-@font-face {
+@font-face
+{
     font-family: 'GothamProLight';
 
     src: url('fonts/GothamProLight.eot'), url('fonts/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight.woff') format('woff');
@@ -11335,13 +11335,14 @@ a:focus
     background-color: #fff;
     box-shadow: 2px 0 2px rgba(0, 0, 0, .3);
 }
-
-.main-header--health {
+.main-header--health
+{
     min-width: 1200px;
 }
-
-@media (max-width: 1001px) {
-    .main-header {
+@media (max-width: 1001px)
+{
+    .main-header
+    {
         width: 1000px;
     }
 }
@@ -11587,9 +11588,10 @@ a:focus
     color: #5db7d8;
     outline: none;
 }
-
-@media (max-width: 1200px) {
-    .sidebar__menu-link {
+@media (max-width: 1200px)
+{
+    .sidebar__menu-link
+    {
         font-size: 15px;
     }
 }
@@ -11665,8 +11667,8 @@ a:focus
 
     background: #d7eaf0;
 }
-
-.main-footer--health {
+.main-footer--health
+{
     min-width: 1200px;
 }
 .main-footer--operator
@@ -11976,8 +11978,8 @@ a:focus
 {
     margin-bottom: 15px;
 }
-
-.widget-doctor--stoma {
+.widget-doctor--stoma
+{
     margin-top: 20px;
 }
 .widget-doctor__img
@@ -12081,8 +12083,8 @@ a:focus
 
     background: url(../img/icon-consultation.png) no-repeat;
 }
-
-.widget-header__text--stoma:before {
+.widget-header__text--stoma:before
+{
     display: inline-block;
 
     width: 17px;
@@ -12270,8 +12272,8 @@ a:focus
 
     color: #000;
 }
-
-.widget-consultation__edit-comment {
+.widget-consultation__edit-comment
+{
     font-size: 14px;
 
     position: relative;
@@ -12281,8 +12283,8 @@ a:focus
 
     color: #000;
 }
-
-.widget-consultation__edit-comment-input {
+.widget-consultation__edit-comment-input
+{
     line-height: 30px;
 
     display: block;
@@ -13015,8 +13017,8 @@ a:focus
     color: #5db7d8;
     outline: none;
 }
-
-.widget-btn--stoma {
+.widget-btn--stoma
+{
     font-size: 14px;
     line-height: 28px;
 
@@ -13145,8 +13147,8 @@ a:focus
     border-radius: 50%;
     background: url('../img/icon-btn-delete-circle.png') no-repeat;
 }
-
-.widget-btn--delete-comment {
+.widget-btn--delete-comment
+{
     position: absolute;
     top: calc(50% - 8px);
     bottom: 0;
@@ -13160,8 +13162,8 @@ a:focus
     border-radius: 50%;
     background: url('../img/icon-btn-delete-circle.png') no-repeat;
 }
-
-.widget-btn--edit-drugs {
+.widget-btn--edit-drugs
+{
     position: absolute;
     top: calc(50% - 6px);
     left: 96%;
@@ -13173,8 +13175,8 @@ a:focus
     border: none;
     background: url('../img/icon-btn-edit.png') no-repeat;
 }
-
-.widget-btn--save-comment {
+.widget-btn--save-comment
+{
     position: absolute;
     top: calc(50% - 6px);
     left: 96%;
@@ -14611,12 +14613,13 @@ External pages buttons
 {
     background-image: url('../img/icon-history-hover.png');
 }
-
-.sidebar-profile__menu-link--balance {
+.sidebar-profile__menu-link--balance
+{
     background-image: url('../img/icon-balance.png');
 }
 .sidebar-profile__menu-link--balance:hover,
-.sidebar-profile__menu-link--balance.sidebar-profile__menu-link--active {
+.sidebar-profile__menu-link--balance.sidebar-profile__menu-link--active
+{
     background-image: url('../img/icon-balance-hover.png');
 }
 .profile-widget
@@ -14964,8 +14967,8 @@ External pages buttons
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
-
-.user-info__input--center {
+.user-info__input--center
+{
     text-align: center;
 }
 .user-info__input--error
@@ -15764,14 +15767,14 @@ External pages buttons
 {
     padding: 80px 0;
 }
-
-.profile-balance__line {
+.profile-balance__line
+{
     margin-bottom: 20px;
 
     border-color: rgba(0, 0, 0, .2);
 }
-
-.profile-balance__title {
+.profile-balance__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -15781,34 +15784,35 @@ External pages buttons
 
     text-align: center;
 }
-
-.profile-balance__subtitle {
+.profile-balance__subtitle
+{
     font-size: 14px;
 
     text-align: left;
 
     color: #8d8d8d;
 }
-
-.profile-balance__text {
+.profile-balance__text
+{
     font-size: 14px;
 }
-
-@media (max-width: 1199px) {
-    .profile-balance__text {
+@media (max-width: 1199px)
+{
+    .profile-balance__text
+    {
         font-size: 13px;
     }
 }
-
-.profile-balance__text--bold {
+.profile-balance__text--bold
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
 
     padding: 10px 0 0 0;
 }
-
-.profile-balance__btn {
+.profile-balance__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -15819,77 +15823,78 @@ External pages buttons
     padding: 0 15px;
 
     -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+            transition: all .2s ease;
 
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 25px;
 }
-
-@media (max-width: 1199px) {
-    .profile-balance__btn {
+@media (max-width: 1199px)
+{
+    .profile-balance__btn
+    {
         font-size: 14px;
     }
 }
-
-.profile-balance__btn:hover {
+.profile-balance__btn:hover
+{
     color: #fff;
     background: #5db7d8;
 }
-
-.profile-balance__btn:focus:hover {
+.profile-balance__btn:focus:hover
+{
     color: #fff;
 }
-
-.profile-balance__money-add {
+.profile-balance__money-add
+{
     margin-top: 20px;
     margin-bottom: 40px;
 }
-
-.profile-balance__link {
+.profile-balance__link
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
 
     -webkit-transition: .2s ease all;
-    transition: .2s ease all;
+            transition: .2s ease all;
 
     color: #5db7d8;
     outline: none;
 }
-
-.profile-balance__link:hover {
+.profile-balance__link:hover
+{
     text-decoration: none;
 
     color: #7ec6e0;
 }
-
-.profile-balance__link:focus {
+.profile-balance__link:focus
+{
     text-decoration: none;
 
     color: #5db7d8;
     outline: none;
 }
-
-.profile-balance__link-symbol {
+.profile-balance__link-symbol
+{
     font-size: 13px;
 
     color: #8d8d8d;
 }
-
-.profile-balance__filter {
+.profile-balance__filter
+{
     line-height: 70px;
 }
-
-.profile-balance__filter-btns {
+.profile-balance__filter-btns
+{
     display: table;
 
     width: 100%;
 
     text-align: center;
 }
-
-.profile-balance__filter-btn {
+.profile-balance__filter-btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
@@ -15900,72 +15905,72 @@ External pages buttons
     padding: 0 15px;
 
     -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+            transition: all .2s ease;
     text-align: center;
 
     color: #5db7d8;
     border: 1px solid transparent;
     border-radius: 25px;
 }
-
-.profile-balance__filter-btn--active {
+.profile-balance__filter-btn--active
+{
     color: #fff;
     border: 1px solid #5db7d8;
     border-radius: 25px;
     background: #5db7d8;
 }
-
-.profile-balance__filter-btn--active:focus {
+.profile-balance__filter-btn--active:focus
+{
     color: #fff;
 }
-
-.profile-balance__filter-btn:hover {
+.profile-balance__filter-btn:hover
+{
     color: #fff;
     border: 1px solid #5db7d8;
     border-radius: 25px;
     background: #5db7d8;
 }
-
-.profile-balance__filter-btn:focus:hover {
+.profile-balance__filter-btn:focus:hover
+{
     color: #fff;
 }
-
-.transactions__table {
+.transactions__table
+{
     width: 100%;
     margin-bottom: 20px;
 }
-
-.transactions__tr {
+.transactions__tr
+{
     height: 50px;
 
     vertical-align: middle;
 
     border-top: 1px solid rgba(0, 0, 0, .2);
 }
-
-.transactions__tr:last-child {
+.transactions__tr:last-child
+{
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
-
-.transactions__td {
+.transactions__td
+{
     font-size: 14px;
 
     vertical-align: middle !important;
 }
-
-.transactions__td--date {
+.transactions__td--date
+{
     width: 20%;
 }
-
-.transactions__sum {
+.transactions__sum
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
 
     text-align: right;
 }
-
-.transactions__pagination {
+.transactions__pagination
+{
     margin-bottom: 20px;
     padding: 0;
 }
@@ -17558,8 +17563,8 @@ input:after
 
     background: rgba(0, 0, 0, .6);
 }
-
-.notifications-modal__btn {
+.notifications-modal__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
@@ -17574,7 +17579,7 @@ input:after
     padding-left: 28px;
 
     -webkit-transition: all ease .3s;
-    transition: all ease .3s;
+            transition: all ease .3s;
 
     color: #5db7d8;
     border: 1px solid #5db7d8;
@@ -17582,8 +17587,8 @@ input:after
     outline: 0;
     background-color: #fff;
 }
-
-.notifications-modal__btn:hover {
+.notifications-modal__btn:hover
+{
     color: #fff;
     background-color: #5db7d8;
 }
@@ -17673,8 +17678,8 @@ input:after
     color: #000;
     background-color: #eef9fb;
 }
-
-.notifications-modal__check {
+.notifications-modal__check
+{
     position: absolute;
     top: 20px;
     right: 15px;
@@ -18180,9 +18185,10 @@ a
     width: 1200px;
     margin: 0 auto;
 }
-
-@media (max-width: 1001px) {
-    .container-main {
+@media (max-width: 1001px)
+{
+    .container-main
+    {
         width: 1000px;
     }
 }
@@ -18191,9 +18197,10 @@ a
     width: 1030px;
     margin: 0 auto;
 }
-
-@media (max-width: 1001px) {
-    .container-medium {
+@media (max-width: 1001px)
+{
+    .container-medium
+    {
         width: 1000px;
     }
 }
@@ -18203,9 +18210,10 @@ a
     max-width: 1200px;
     margin: 0 auto;
 }
-
-@media (max-width: 1001px) {
-    .container--medium {
+@media (max-width: 1001px)
+{
+    .container--medium
+    {
         width: 1000px;
     }
 }
@@ -18214,9 +18222,10 @@ a
     width: 1200px;
     margin: 0 auto;
 }
-
-@media (max-width: 1001px) {
-    .container--big {
+@media (max-width: 1001px)
+{
+    .container--big
+    {
         width: 1000px;
     }
 }
@@ -18277,9 +18286,10 @@ a
     min-height: 600px;
     margin-top: 75px;
 }
-
-@media (max-width: 1001px) {
-    .slider-section {
+@media (max-width: 1001px)
+{
+    .slider-section
+    {
         width: 1000px;
     }
 }
@@ -18294,9 +18304,10 @@ a
     background: url(../img/background-first.jpg) no-repeat center;
     background-size: cover;
 }
-
-@media (max-width: 1001px) {
-    .features-section {
+@media (max-width: 1001px)
+{
+    .features-section
+    {
         width: 1000px;
     }
 }
@@ -18370,9 +18381,10 @@ a
     background: url(../img/background-second.jpg) no-repeat center;
     background-size: cover;
 }
-
-@media (max-width: 1001px) {
-    .promo {
+@media (max-width: 1001px)
+{
+    .promo
+    {
         width: 1000px;
     }
 }
@@ -18420,9 +18432,10 @@ a
     background: url(../img/background-third.jpg) no-repeat center;
     background-size: cover;
 }
-
-@media (max-width: 1001px) {
-    .promo--next {
+@media (max-width: 1001px)
+{
+    .promo--next
+    {
         width: 1000px;
     }
 }
@@ -18458,9 +18471,10 @@ a
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
 }
-
-@media (max-width: 1001px) {
-    .about {
+@media (max-width: 1001px)
+{
+    .about
+    {
         width: 1000px;
     }
 }
@@ -18552,9 +18566,10 @@ a
 
     vertical-align: top;
 }
-
-@media (max-width: 1101px) {
-    .about__text {
+@media (max-width: 1101px)
+{
+    .about__text
+    {
         width: 500px;
     }
 }
@@ -18594,8 +18609,8 @@ a
     box-sizing: border-box;
     padding-right: 80px;
 }
-
-.about__text--left {
+.about__text--left
+{
     box-sizing: border-box;
     padding-left: 80px;
 }
@@ -18702,9 +18717,10 @@ a
     background: url(../img/background-six.png) no-repeat center;
     background-size: cover;
 }
-
-@media (max-width: 1001px) {
-    .register {
+@media (max-width: 1001px)
+{
+    .register
+    {
         width: 1000px;
     }
 }
@@ -18820,9 +18836,10 @@ a
     width: 100%;
     height: 600px;
 }
-
-@media (max-width: 1001px) {
-    .slide {
+@media (max-width: 1001px)
+{
+    .slide
+    {
         width: 1000px;
     }
 }
@@ -19151,9 +19168,10 @@ a
     margin-top: 75px;
     padding: 28px 0;
 }
-
-@media (max-width: 1001px) {
-    .top-navigation {
+@media (max-width: 1001px)
+{
+    .top-navigation
+    {
         width: 1000px;
     }
 }
@@ -19241,9 +19259,10 @@ a
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
 }
-
-@media (max-width: 1001px) {
-    .about-block {
+@media (max-width: 1001px)
+{
+    .about-block
+    {
         width: 1000px;
     }
 }
@@ -19333,9 +19352,10 @@ a
     width: 100%;
     padding: 15px 0 60px;
 }
-
-@media (max-width: 1001px) {
-    .promo-block {
+@media (max-width: 1001px)
+{
+    .promo-block
+    {
         width: 1000px;
     }
 }
@@ -19420,9 +19440,10 @@ a
 
     text-align: center;
 }
-
-@media (max-width: 1001px) {
-    .registration-btn {
+@media (max-width: 1001px)
+{
+    .registration-btn
+    {
         width: 1000px;
     }
 }
@@ -21255,8 +21276,8 @@ a
         left: 20px;
     }
 }
-
-.docs__tab-info--exp-map:before {
+.docs__tab-info--exp-map:before
+{
     left: 0;
 
     background: url('../img/icon-doc-exp.png');
@@ -22106,8 +22127,8 @@ a
     padding: 38px 20px 10px 20px;
 
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
 
     border-radius: 6px;
@@ -23097,9 +23118,10 @@ Styles for filter block on consultations, clinics and docs pages
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background-color: #fff;
 }
-
-@media (max-width: 1001px) {
-    .header-external {
+@media (max-width: 1001px)
+{
+    .header-external
+    {
         width: 1000px;
     }
 }
@@ -23154,9 +23176,10 @@ Styles for filter block on consultations, clinics and docs pages
 {
     background-color: #f3f3f3;
 }
-
-@media (max-width: 1001px) {
-    .footer-external {
+@media (max-width: 1001px)
+{
+    .footer-external
+    {
         width: 1000px;
     }
 }
@@ -23411,12 +23434,13 @@ Styles for filter block on consultations, clinics and docs pages
 }
 @media (max-width: 1199px)
 {
-    .page-title__link {
+    .page-title__link
+    {
         font-size: 16px;
     }
 }
-
-.page-title__link:hover {
+.page-title__link:hover
+{
     color: #fff;
     border: 1px solid #5db7d8;
     background-color: #5db7d8;
@@ -24009,9 +24033,10 @@ Styles for filter block on consultations, clinics and docs pages
     z-index: 10;
     right: 50px;
 }
-
-@media (max-width: 1199px) {
-    .fdc-section__iphone--5 {
+@media (max-width: 1199px)
+{
+    .fdc-section__iphone--5
+    {
         right: 0;
     }
 }
@@ -24026,9 +24051,10 @@ Styles for filter block on consultations, clinics and docs pages
 {
     right: 260px;
 }
-
-@media (max-width: 1199px) {
-    .fdc-section__iphone--6 {
+@media (max-width: 1199px)
+{
+    .fdc-section__iphone--6
+    {
         right: 210px;
     }
 }
@@ -24147,33 +24173,35 @@ Styles for filter block on consultations, clinics and docs pages
     color: #4272db;
 }
 /* Docs on map page */
-#docs-on-map {
+#docs-on-map
+{
     width: 100%;
     height: 780px;
 }
-
-#docs-on-map .gm-style-iw > div {
+#docs-on-map .gm-style-iw > div
+{
     overflow: visible !important;
 
     width: 315px !important;
 }
-
-#docs-on-map .gm-style-iw > div > div {
+#docs-on-map .gm-style-iw > div > div
+{
     overflow: visible !important;
 }
 /* Clinics on map page */
-#clinics-on-map {
+#clinics-on-map
+{
     width: 100%;
     height: 780px;
 }
-
-#clinics-on-map .gm-style-iw > div {
+#clinics-on-map .gm-style-iw > div
+{
     overflow: visible !important;
 
     width: 315px !important;
 }
-
-#clinics-on-map .gm-style-iw > div > div {
+#clinics-on-map .gm-style-iw > div > div
+{
     overflow: visible !important;
 }
 /* Registration, login, password recovery, sms auth PopUps */
@@ -24214,8 +24242,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     -ms-overflow-style: none;
 }
-
-.popup-login__body::-webkit-scrollbar {
+.popup-login__body::-webkit-scrollbar
+{
     width: 0;
 }
 .popup-login__header
@@ -24226,8 +24254,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.popup-login__ondoc {
+.popup-login__ondoc
+{
     font-family: 'Gotham-Bold', Arial, sans-serif !important;
     font-family: 'Gotham-Bold', Arial, sans-serif;
     font-size: 20px;
@@ -24460,8 +24488,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
 }
-
-.charity-promo__title--new {
+.charity-promo__title--new
+{
     right: 45px;
 }
 .charity-promo__subtitle
@@ -24520,23 +24548,25 @@ Styles for filter block on consultations, clinics and docs pages
     background: -webkit-linear-gradient(top, #b1dde9, #e3f6f7);
     background:         linear-gradient(to bottom, #b1dde9, #e3f6f7);
 }
-
-.charity-reg--new {
+.charity-reg--new
+{
     min-width: 500px;
     padding-bottom: 58px;
 
     background: #fafafb;
     box-shadow: 40rem 0 0 #fafafb;
 }
-
-@media (min-width: 1200px) {
-    .charity-reg--new {
+@media (min-width: 1200px)
+{
+    .charity-reg--new
+    {
         height: 706px;
     }
 }
-
-@media (max-width: 1199px) {
-    .charity-reg--new {
+@media (max-width: 1199px)
+{
+    .charity-reg--new
+    {
         height: 856px;
     }
 }
@@ -24550,8 +24580,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.charity-reg__title--new {
+.charity-reg__title--new
+{
     margin-top: 0;
 }
 .charity-reg__subtitle
@@ -24573,8 +24603,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.charity-reg__process-new {
+.charity-reg__process-new
+{
     overflow: hidden;
 
     margin: 30px auto 40px auto;
@@ -24587,8 +24617,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     margin-bottom: 25px;
 }
-
-.charity-reg__process-icons--new {
+.charity-reg__process-icons--new
+{
     margin-bottom: 0;
 }
 .charity-reg__step
@@ -24601,8 +24631,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     padding-left: 50px;
 }
-
-.charity-reg__step--progress-new {
+.charity-reg__step--progress-new
+{
     padding-left: 30px;
 }
 .charity-reg__step-icon
@@ -24631,15 +24661,15 @@ Styles for filter block on consultations, clinics and docs pages
 
     background-image: url('../img/charity__step-circle.png');
 }
-
-.charity-reg__step-icon--man-new {
+.charity-reg__step-icon--man-new
+{
     margin-right: 20px;
 
     background-image: url('../img/charity__step-icon--man-new.png');
     background-size: 66px 64px;
 }
-
-.charity-reg__step-icon--num-new {
+.charity-reg__step-icon--num-new
+{
     position: relative;
 
     background-image: url('../img/charity__step-circle-new.png');
@@ -24659,8 +24689,8 @@ Styles for filter block on consultations, clinics and docs pages
 {
     padding-left: 50px;
 }
-
-.charity-reg__step-text--new {
+.charity-reg__step-text--new
+{
     font-size: 17px;
 
     color: #3cc;
@@ -24677,8 +24707,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #5db7d8;
 }
-
-.charity-reg__step-rub--new {
+.charity-reg__step-rub--new
+{
     font-size: 17px;
 
     color: #3cc;
@@ -24696,8 +24726,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url('../img/charity__step-arrow.png') no-repeat;
 }
-
-.charity-reg__step-arrow--new {
+.charity-reg__step-arrow--new
+{
     right: -45px;
 
     background: url('../img/charity__step-arrow--new.png') no-repeat;
@@ -24713,8 +24743,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
-
-.charity-reg__step-sum--new {
+.charity-reg__step-sum--new
+{
     font-size: 44px;
 }
 .charity-reg__progress
@@ -24739,8 +24769,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: #a1d8e7;
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
 }
-
-.charity-reg__progress-bar--new {
+.charity-reg__progress-bar--new
+{
     height: 25px;
 }
 .charity-reg__progress-percents
@@ -24752,8 +24782,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: -webkit-linear-gradient(top, #31c4ca 0, #23adca 100%);
     background:         linear-gradient(to bottom, #31c4ca 0, #23adca 100%);
 }
-
-.charity-reg__progress-percents--new {
+.charity-reg__progress-percents--new
+{
     background: #3cc;
 }
 .charity-reg__register
@@ -24835,8 +24865,8 @@ Styles for filter block on consultations, clinics and docs pages
     -webkit-transition: line-height .5s ease;
             transition: line-height .5s ease;
 }
-
-.charity-reg__input::-moz-placeholder {
+.charity-reg__input::-moz-placeholder
+{
     line-height: 45px;
 }
 .charity-reg__btn-submit
@@ -24851,7 +24881,7 @@ Styles for filter block on consultations, clinics and docs pages
     padding: 0 25px;
 
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+            transition: all 1s ease;
     text-align: center;
 
     color: #fff;
@@ -24865,19 +24895,19 @@ Styles for filter block on consultations, clinics and docs pages
     color: #5db7d8;
     background-color: #fff;
 }
-
-.charity-reg__btn-submit--new {
+.charity-reg__btn-submit--new
+{
     width: 385px;
     margin-top: 10px;
 
     -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+            transition: all 1s ease;
 
     background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
-    background: linear-gradient(140deg, #33cdcc, #0699d3);
+    background:         linear-gradient(140deg, #33cdcc, #0699d3);
 }
-
-.charity-reg__btn-submit--new:hover {
+.charity-reg__btn-submit--new:hover
+{
     color: #fff !important;
 }
 .charity-reg__register-text
@@ -24886,21 +24916,21 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.charity-reg__register-text--new {
+.charity-reg__register-text--new
+{
     font-size: 16px;
 
     text-align: left;
 
     color: #999;
 }
-
-.charity-reg__register-text-wrapper {
+.charity-reg__register-text-wrapper
+{
     width: 475px;
     margin: 0 auto;
 }
-
-.charity-reg__text {
+.charity-reg__text
+{
     font-size: 18px;
 
     text-align: center;
@@ -24913,8 +24943,8 @@ Styles for filter block on consultations, clinics and docs pages
     margin-top: 60px;
     margin-bottom: 40px;
 }
-
-.charity-patient--new {
+.charity-patient--new
+{
     min-width: 500px;
     margin-bottom: 0;
 }
@@ -24926,8 +24956,8 @@ Styles for filter block on consultations, clinics and docs pages
     height: 215px;
     margin: 0 auto;
 }
-
-.charity-patient__photo--new {
+.charity-patient__photo--new
+{
     display: inline-block;
     float: left;
 
@@ -24952,8 +24982,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #8d8d8d;
 }
-
-.charity-patient__city--new {
+.charity-patient__city--new
+{
     margin-bottom: 15px;
 }
 .charity-patient__story
@@ -24962,12 +24992,12 @@ Styles for filter block on consultations, clinics and docs pages
 
     margin: 0 0 30px 0;
 }
-
-.charity-patient__story--new {
+.charity-patient__story--new
+{
     margin-bottom: 40px;
 }
-
-.charity-patient__story--new-no-mb {
+.charity-patient__story--new-no-mb
+{
     margin-bottom: 0;
 }
 .charity-patient__action
@@ -24978,8 +25008,8 @@ Styles for filter block on consultations, clinics and docs pages
     background: -webkit-linear-gradient(310deg, #33cdcc, #0699d3);
     background:         linear-gradient(140deg, #33cdcc, #0699d3);
 }
-
-.charity-patient__action--new {
+.charity-patient__action--new
+{
     float: right;
 
     width: 190px;
@@ -25003,8 +25033,8 @@ Styles for filter block on consultations, clinics and docs pages
         font-size: 20px;
     }
 }
-
-.charity-patient__action-text--new {
+.charity-patient__action-text--new
+{
     font-size: 17px;
 }
 .charity-patient__action-num
@@ -25022,8 +25052,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
-
-.charity-patient__action-num--new {
+.charity-patient__action-num--new
+{
     font-size: 38px;
 }
 .charity-patient__action-subtext
@@ -25036,12 +25066,12 @@ Styles for filter block on consultations, clinics and docs pages
 
     color: #fff;
 }
-
-.charity-patient__action-subtext--new {
+.charity-patient__action-subtext--new
+{
     font-size: 14px;
 }
-
-.charity-patient__vk {
+.charity-patient__vk
+{
     font-size: 20px;
     line-height: 37px;
 
@@ -25063,13 +25093,13 @@ Styles for filter block on consultations, clinics and docs pages
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background: -webkit-linear-gradient(top, #26a7c6, #fefefe);
-    background: linear-gradient(to bottom, #26a7c6, #fefefe);
+    background:         linear-gradient(to bottom, #26a7c6, #fefefe);
 }
-
-.charity-share--new {
+.charity-share--new
+{
     border-bottom: none;
     background: -webkit-linear-gradient(top, #26a7c6, #7fdadf);
-    background: linear-gradient(to bottom, #26a7c6, #7fdadf);
+    background:         linear-gradient(to bottom, #26a7c6, #7fdadf);
 }
 .charity-share__title
 {
@@ -25081,8 +25111,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.charity-share__title--new {
+.charity-share__title--new
+{
     color: #fff;
 }
 .charity-share__text
@@ -25136,14 +25166,14 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background-color: #5db7d8;
 }
-
-.charity-share__copy-btn--new {
+.charity-share__copy-btn--new
+{
     color: #fff;
     border: 1px solid #fff;
     background-color: transparent;
 }
-
-.charity-share__copy-btn--new:focus {
+.charity-share__copy-btn--new:focus
+{
     color: #fff;
 }
 .charity-share__share-icons
@@ -25197,10 +25227,10 @@ Styles for filter block on consultations, clinics and docs pages
     width: 100% !important;
     min-width: 1000px;
 }
-
-.charity-about--new {
+.charity-about--new
+{
     background: -webkit-linear-gradient(top, #e2f0f6, #fff);
-    background: linear-gradient(to bottom, #e2f0f6, #fff);
+    background:         linear-gradient(to bottom, #e2f0f6, #fff);
 }
 .charity-about__title
 {
@@ -25328,24 +25358,27 @@ Styles for filter block on consultations, clinics and docs pages
 }
 @media (max-width: 1199px)
 {
-    .possibility-nav__tab {
+    .possibility-nav__tab
+    {
         font-size: 17px;
     }
 }
-
-@media (max-width: 1130px) {
-    .possibility-nav__tab {
+@media (max-width: 1130px)
+{
+    .possibility-nav__tab
+    {
         font-size: 16px;
     }
 }
-
-@media (max-width: 1030px) {
-    .possibility-nav__tab {
+@media (max-width: 1030px)
+{
+    .possibility-nav__tab
+    {
         font-size: 15px;
     }
 }
-
-.possibility-nav__tab:hover {
+.possibility-nav__tab:hover
+{
     color: #fff;
     background: #10abd2;
 }
@@ -25659,8 +25692,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     text-align: center;
 }
-
-.documents-processing__prices {
+.documents-processing__prices
+{
     display: table;
 
     margin: 0 auto;
@@ -25994,9 +26027,10 @@ Styles for filter block on consultations, clinics and docs pages
     border-bottom: 1px solid #ccc;
     background: url(../img/background-section.jpg) repeat-x;
 }
-
-@media (max-width: 1199px) {
-    .profile-section {
+@media (max-width: 1199px)
+{
+    .profile-section
+    {
         padding-bottom: 41px;
     }
 }
@@ -26591,8 +26625,8 @@ Styles for filter block on consultations, clinics and docs pages
     background-position: bottom;
     background-size: 303px 550px;
 }
-
-.mobile-cap {
+.mobile-cap
+{
     width: 640px;
     height: 1136px;
     margin: 0 auto;
@@ -26603,14 +26637,14 @@ Styles for filter block on consultations, clinics and docs pages
     color: #fff;
     background: url('../img/mobile-cap__bg.png');
 }
-
-.mobile-cap__logo {
+.mobile-cap__logo
+{
     display: block;
 
     margin: 0 auto;
 }
-
-.mobile-cap__title {
+.mobile-cap__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 37px;
@@ -26618,15 +26652,15 @@ Styles for filter block on consultations, clinics and docs pages
     margin-top: 20px;
     margin-bottom: 0;
 }
-
-.mobile-cap__subtitle {
+.mobile-cap__subtitle
+{
     font-size: 30px;
 
     margin-top: 35px;
     margin-bottom: 0;
 }
-
-.mobile-cap__apstore-link {
+.mobile-cap__apstore-link
+{
     display: block;
 
     width: 218px;
@@ -26635,8 +26669,8 @@ Styles for filter block on consultations, clinics and docs pages
 
     background: url(../img/mobile-cap__appstore.png);
 }
-
-.mobile-cap__gotosite {
+.mobile-cap__gotosite
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 32px;
@@ -26651,7 +26685,8 @@ Styles for filter block on consultations, clinics and docs pages
     border-bottom: 1px solid;
 }
 .mobile-cap__gotosite:hover,
-.mobile-cap__gotosite:focus {
+.mobile-cap__gotosite:focus
+{
     text-decoration: none;
 
     color: #fff;
@@ -28864,8 +28899,8 @@ Widgets
 {
     padding: 14px 10px 11px;
 }
-
-.medcard-widget__header--processing {
+.medcard-widget__header--processing
+{
     padding: 14px 40px 11px 5px;
 }
 .medcard-widget__subheader
@@ -29206,12 +29241,12 @@ Widgets
 
     color: #dc4531;
 }
-
-.drugs__header {
+.drugs__header
+{
     margin-bottom: 15px;
 }
-
-.drugs__header-back {
+.drugs__header-back
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
@@ -29219,12 +29254,12 @@ Widgets
 
     display: inline-block;
 }
-
-.drugs__header-back:hover {
+.drugs__header-back:hover
+{
     color: #7ec6e0;
 }
-
-.drugs__header-back:before {
+.drugs__header-back:before
+{
     display: inline-block;
 
     width: 10px;
@@ -29237,8 +29272,8 @@ Widgets
 
     background: url(../img/icon-back.png) no-repeat;
 }
-
-.drugs__header-links {
+.drugs__header-links
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
@@ -29249,13 +29284,13 @@ Widgets
     padding-right: 18px;
     padding-left: 18px;
 }
-
-.drugs__header-links:hover {
+.drugs__header-links:hover
+{
     border-radius: 25px;
     background-color: #caedf5;
 }
-
-.drugs__header-links--current:before {
+.drugs__header-links--current:before
+{
     display: inline-block;
 
     width: 15px;
@@ -29267,8 +29302,34 @@ Widgets
 
     background-image: url('../img/icon-course--current--blue.png');
 }
+.drugs__header-links--cupon:before
+{
+    display: inline-block;
 
-.drugs__header-links--history:before {
+    width: 23px;
+    height: 21px;
+    margin-right: 8px;
+
+    content: '';
+    vertical-align: middle;
+
+    background-image: url('../img/icon-cupon--blue.png');
+}
+.drugs__header-links--proposal:before
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 19px;
+    margin-right: 8px;
+
+    content: '';
+    vertical-align: middle;
+
+    background-image: url('../img/icon-proposal--blue.png');
+}
+.drugs__header-links--history:before
+{
     display: inline-block;
 
     width: 23px;
@@ -29280,8 +29341,8 @@ Widgets
 
     background-image: url('../img/icon-course--history--blue.png');
 }
-
-.drugs__header-links--catalog:before {
+.drugs__header-links--catalog:before
+{
     display: inline-block;
 
     width: 16px;
@@ -29293,32 +29354,40 @@ Widgets
 
     background-image: url('../img/icon-course--catalog--blue.png');
 }
-
-.drugs__header-links--active {
+.drugs__header-links--active
+{
     color: #fff;
     border: 1px solid #5db7d8;
     border-radius: 25px;
     background-color: #5db7d8;
 }
-
-.drugs__header-links--active.drugs__header-links--current:before {
+.drugs__header-links--active.drugs__header-links--current:before
+{
     background-image: url('../img/icon-course--current.png');
 }
-
-.drugs__header-links--active.drugs__header-links--history:before {
+.drugs__header-links--active.drugs__header-links--cupon:before
+{
+    background-image: url('../img/icon-cupon.png');
+}
+.drugs__header-links--active.drugs__header-links--proposal:before
+{
+    background-image: url('../img/icon-proposal--white.png');
+}
+.drugs__header-links--active.drugs__header-links--history:before
+{
     background-image: url('../img/icon-course--history.png');
 }
-
-.drugs__header-links--active.drugs__header-links--catalog:before {
+.drugs__header-links--active.drugs__header-links--catalog:before
+{
     background-image: url('../img/icon-course--catalog.png');
 }
-
-.drugs__header-links--active:hover {
+.drugs__header-links--active:hover
+{
     color: #fff;
     background-color: #5db7d8;
 }
-
-.drugs__days {
+.drugs__days
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 16px;
@@ -29331,18 +29400,18 @@ Widgets
     vertical-align: middle;
 
     color: #000;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__days--smaller {
+.drugs__days--smaller
+{
     color: #8d8d8d;
 }
-
-.drugs__days--medcard-widget {
+.drugs__days--medcard-widget
+{
     line-height: 45px;
 }
-
-.drugs__progress {
+.drugs__progress
+{
     display: inline-block;
 
     width: 290px;
@@ -29350,15 +29419,15 @@ Widgets
 
     vertical-align: middle;
 }
-
-.drugs__progress--medcard-widget {
+.drugs__progress--medcard-widget
+{
     line-height: 15px;
 
     width: 100%;
     padding: 0;
 }
-
-.drugs__progress-bar {
+.drugs__progress-bar
+{
     overflow: hidden;
 
     width: 84%;
@@ -29369,36 +29438,36 @@ Widgets
     background: #e5e5e5;
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
 }
-
-.drugs__progress-bar--medcard-widget {
+.drugs__progress-bar--medcard-widget
+{
     display: inline-block;
 
     width: 100%;
 }
-
-.drugs__progress-percents {
+.drugs__progress-percents
+{
     width: 80%;
     height: 100%;
 
     border-radius: 10px 0 0 10px;
     background: -webkit-linear-gradient(top, #31c4ca 0%, #23adca 100%);
-    background: linear-gradient(to bottom, #31c4ca 0%, #23adca 100%);
+    background:         linear-gradient(to bottom, #31c4ca 0%, #23adca 100%);
 }
-
-.drugs__time {
+.drugs__time
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
 
     color: #8d8d8d;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__time--active {
+.drugs__time--active
+{
     color: #5db7d8;
 }
-
-.drugs__tab {
+.drugs__tab
+{
     position: relative;
 
     overflow: hidden;
@@ -29409,22 +29478,22 @@ Widgets
 
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
-
-.drugs__tab--medcard-widget {
+.drugs__tab--medcard-widget
+{
     background-image: url(../img/list-arrow.png);
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
-
-.drugs__tab--health:hover .drugs__time {
+.drugs__tab--health:hover .drugs__time
+{
     color: #dc4531;
 }
-
-.drugs__tab:hover > .drugs__tab-title {
+.drugs__tab:hover > .drugs__tab-title
+{
     color: #dc4531;
 }
-
-.drugs__tab-img {
+.drugs__tab-img
+{
     position: absolute;
     top: calc(50% - 12px);
     right: 15%;
@@ -29432,12 +29501,12 @@ Widgets
     width: 24px;
     height: 24px;
 }
-
-.drugs__tab--active {
+.drugs__tab--active
+{
     background-color: #eef9fb;
 }
-
-.drugs__tab-title {
+.drugs__tab-title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 16px;
@@ -29447,12 +29516,12 @@ Widgets
 
     color: #000;
 }
-
-.drugs__tab-title--health {
+.drugs__tab-title--health
+{
     width: 90%;
 }
-
-.drugs__drug-title {
+.drugs__drug-title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 20px;
@@ -29462,17 +29531,17 @@ Widgets
 
     text-align: center;
 }
-
-.drugs__drug-title--type {
+.drugs__drug-title--type
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
 
     color: #8d8d8d;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__drug-time {
+.drugs__drug-time
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 17px;
@@ -29484,45 +29553,45 @@ Widgets
     text-align: center;
 
     color: #000;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__drug-time--config {
+.drugs__drug-time--config
+{
     display: inline-block;
 
     margin: 0;
     margin-bottom: 20px;
 }
-
-.drugs__value {
+.drugs__value
+{
     width: 100%;
 
     text-align: center;
 }
-
-.drugs__value-time {
+.drugs__value-time
+{
     font-size: 15px;
 
     display: inline-block;
 
     color: #8d8d8d;
 }
-
-.drugs__value-time--edit {
+.drugs__value-time--edit
+{
     cursor: pointer;
 
     color: #5db7d8;
 }
-
-.drugs__value-time--edit:hover {
+.drugs__value-time--edit:hover
+{
     color: #7ec6e0;
 }
-
-.drugs__value-time-td {
+.drugs__value-time-td
+{
     width: 45%;
 }
-
-.drugs__value-line {
+.drugs__value-line
+{
     display: inline-block;
 
     width: 20px;
@@ -29531,12 +29600,12 @@ Widgets
 
     color: #8d8d8d;
 }
-
-.drugs__value-line-td {
+.drugs__value-line-td
+{
     width: 10%;
 }
-
-.drugs__drug-day {
+.drugs__drug-day
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 14px;
@@ -29553,31 +29622,31 @@ Widgets
     color: #8d8d8d;
     border: 1px solid #ccc;
     border-radius: 100%;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__drug-day--error {
+.drugs__drug-day--error
+{
     border: 1px solid #dc4531;
 }
-
-.drugs__drug-day--clickable {
+.drugs__drug-day--clickable
+{
     cursor: pointer;
 }
-
-.drugs__drug-day--active {
+.drugs__drug-day--active
+{
     color: #fff;
     border-color: #5db7d8;
     background-color: #5db7d8;
 }
-
-.drugs__doctor-img {
+.drugs__doctor-img
+{
     width: 45px;
     height: 45px;
 
     border-radius: 50%;
 }
-
-.drugs__doctor-name {
+.drugs__doctor-name
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
@@ -29588,8 +29657,8 @@ Widgets
 
     word-break: break-all;
 }
-
-.drugs__doctor-prof {
+.drugs__doctor-prof
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 12px;
@@ -29597,10 +29666,10 @@ Widgets
     margin: 0;
 
     color: #8d8d8d;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__drug-reaction {
+.drugs__drug-reaction
+{
     line-height: 38px;
 
     position: relative !important;
@@ -29612,13 +29681,13 @@ Widgets
 
     color: #000;
 }
-
-.drugs__drug-reaction--active {
+.drugs__drug-reaction--active
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
 }
-
-.drugs__drug-reaction:before {
+.drugs__drug-reaction:before
+{
     position: absolute;
     top: 50%;
     left: 0;
@@ -29628,27 +29697,27 @@ Widgets
 
     content: '';
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
-
-.drugs__drug-reaction--ok:before {
+.drugs__drug-reaction--ok:before
+{
     background: url(../img/reaction-okey.png) no-repeat;
 }
-
-.drugs__drug-reaction--side:before {
+.drugs__drug-reaction--side:before
+{
     background: url(../img/reaction-side.png) no-repeat;
 }
-
-.drugs__drug-reaction--know:before {
+.drugs__drug-reaction--know:before
+{
     background: url(../img/reaction-know.png) no-repeat;
 }
-
-.drugs__drug-reaction--prohibited:before {
+.drugs__drug-reaction--prohibited:before
+{
     background: url(../img/reaction-prohibited.png) no-repeat;
 }
-
-.drugs__drug-reaction-popup {
+.drugs__drug-reaction-popup
+{
     position: absolute;
     z-index: 100;
     top: 50%;
@@ -29659,16 +29728,16 @@ Widgets
 
     cursor: default;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: left;
 
     border-radius: 15px;
     background: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
 }
-
-.drugs__drug-reaction-popup:before {
+.drugs__drug-reaction-popup:before
+{
     position: absolute;
     top: 115px;
     left: -20px;
@@ -29680,8 +29749,8 @@ Widgets
     border-right: 10px solid #fff;
     /* Добавляем треугольник */
 }
-
-.drugs__drug-date {
+.drugs__drug-date
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 11px;
@@ -29691,10 +29760,10 @@ Widgets
     margin-bottom: 15px;
 
     color: #8d8d8d;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__drug-comment {
+.drugs__drug-comment
+{
     font-size: 14px;
 
     display: block;
@@ -29707,64 +29776,64 @@ Widgets
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
 }
-
-.drugs__drug-comment::-webkit-input-placeholder {
+.drugs__drug-comment::-webkit-input-placeholder
+{
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__drug-comment::-moz-placeholder {
-    line-height: 20px;
-
-    transition: line-height .5s ease;
-}
-
-.drugs__drug-comment:-ms-input-placeholder {
+.drugs__drug-comment::-moz-placeholder
+{
     line-height: 20px;
 
     transition: line-height .5s ease;
 }
+.drugs__drug-comment:-ms-input-placeholder
+{
+    line-height: 20px;
 
-.drugs__drug-comment::placeholder {
+    transition: line-height .5s ease;
+}
+.drugs__drug-comment::placeholder
+{
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__drug-comment:focus::-webkit-input-placeholder {
+.drugs__drug-comment:focus::-webkit-input-placeholder
+{
     line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__drug-comment:focus::-moz-placeholder {
+.drugs__drug-comment:focus::-moz-placeholder
+{
     line-height: 350px;
 
     transition: line-height .5s ease;
 }
-
-.drugs__drug-comment:focus:-ms-input-placeholder {
+.drugs__drug-comment:focus:-ms-input-placeholder
+{
     line-height: 350px;
 
     transition: line-height .5s ease;
 }
-
-.drugs__drug-comment:focus::placeholder {
+.drugs__drug-comment:focus::placeholder
+{
     line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__drug-comment--error {
+.drugs__drug-comment--error
+{
     border: 1px solid #dc4531;
 }
-
-.drugs__link {
+.drugs__link
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 15px;
@@ -29775,20 +29844,20 @@ Widgets
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.drugs__link--type {
+.drugs__link--type
+{
     position: relative;
 }
-
-.drugs__link--item {
+.drugs__link--item
+{
     position: relative;
 }
-
-.drugs__link--error {
+.drugs__link--error
+{
     color: #dc4531;
 }
-
-.drugs__dosage {
+.drugs__dosage
+{
     font-family: 'Gotham', Arial, sans-serif !important;
     font-family: 'Gotham', Arial, sans-serif;
     font-size: 15px;
@@ -29802,70 +29871,70 @@ Widgets
     color: #8d8d8d;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 4px;
-    outline: none !important;
+    outline: none!important;
 }
-
-.drugs__dosage::-webkit-input-placeholder {
+.drugs__dosage::-webkit-input-placeholder
+{
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__dosage::-moz-placeholder {
-    line-height: 20px;
-
-    transition: line-height .5s ease;
-}
-
-.drugs__dosage:-ms-input-placeholder {
+.drugs__dosage::-moz-placeholder
+{
     line-height: 20px;
 
     transition: line-height .5s ease;
 }
+.drugs__dosage:-ms-input-placeholder
+{
+    line-height: 20px;
 
-.drugs__dosage::placeholder {
+    transition: line-height .5s ease;
+}
+.drugs__dosage::placeholder
+{
     line-height: 20px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__dosage:focus::-webkit-input-placeholder {
+.drugs__dosage:focus::-webkit-input-placeholder
+{
     line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__dosage:focus::-moz-placeholder {
+.drugs__dosage:focus::-moz-placeholder
+{
     line-height: 350px;
 
     transition: line-height .5s ease;
 }
-
-.drugs__dosage:focus:-ms-input-placeholder {
+.drugs__dosage:focus:-ms-input-placeholder
+{
     line-height: 350px;
 
     transition: line-height .5s ease;
 }
-
-.drugs__dosage:focus::placeholder {
+.drugs__dosage:focus::placeholder
+{
     line-height: 350px;
 
     -webkit-transition: line-height .5s ease;
-    transition: line-height .5s ease;
+            transition: line-height .5s ease;
 }
-
-.drugs__dosage--time {
+.drugs__dosage--time
+{
     width: 43px;
     margin: 0;
     margin-right: 15px;
 
     color: #000;
 }
-
-.drugs__dosage--dosage {
+.drugs__dosage--dosage
+{
     width: 120px;
     margin: 10px 0;
 
@@ -29873,16 +29942,16 @@ Widgets
 
     color: #000;
 }
-
-.drugs__dosage--error {
+.drugs__dosage--error
+{
     border: 1px solid #dc4531;
 }
-
-.drugs__dosage-wrapper--asterisk {
+.drugs__dosage-wrapper--asterisk
+{
     position: relative;
 }
-
-.drugs__dosage-wrapper--asterisk:after {
+.drugs__dosage-wrapper--asterisk:after
+{
     position: absolute;
     top: 8px;
     right: 25px;
@@ -29891,8 +29960,8 @@ Widgets
 
     color: #dc4531;
 }
-
-.drugs__dosage-popup {
+.drugs__dosage-popup
+{
     position: absolute;
     z-index: 100;
     top: 120px;
@@ -29903,32 +29972,32 @@ Widgets
 
     cursor: default;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: left;
 
     border-radius: 15px;
     background: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
 }
-
-.drugs__dosage-popup--modal-types {
+.drugs__dosage-popup--modal-types
+{
     left: 100px;
 }
-
-.drugs__dosage-popup--modal-items {
+.drugs__dosage-popup--modal-items
+{
     top: 132px;
     right: 105px;
     left: auto;
 }
-
-.drugs__dosage-popup--items {
+.drugs__dosage-popup--items
+{
     top: 132px;
     right: 145px;
     left: auto;
 }
-
-.drugs__dosage-popup:before {
+.drugs__dosage-popup:before
+{
     position: absolute;
     top: -19px;
     left: 38px;
@@ -29940,8 +30009,8 @@ Widgets
     border-bottom: 10px solid #fff;
     /* Добавляем треугольник */
 }
-
-.drugs__dosage-popup-item {
+.drugs__dosage-popup-item
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
@@ -29949,26 +30018,26 @@ Widgets
 
     cursor: pointer;
     -webkit-transition: .2s ease all;
-    transition: .2s ease all;
+            transition: .2s ease all;
 
     color: #5db7d8;
     outline: none;
 }
-
-.drugs__dosage-popup-item:hover {
+.drugs__dosage-popup-item:hover
+{
     text-decoration: none;
 
     color: #7ec6e0;
 }
-
-.drugs__dosage-popup-item:focus {
+.drugs__dosage-popup-item:focus
+{
     text-decoration: none;
 
     color: #5db7d8;
     outline: none;
 }
-
-.drugs__time-plus {
+.drugs__time-plus
+{
     display: inline-block;
 
     width: 22px;
@@ -29980,8 +30049,8 @@ Widgets
 
     background: url('../img/icon-drugs-time-config--plus.png') no-repeat;
 }
-
-.drugs__time-minus {
+.drugs__time-minus
+{
     display: inline-block;
 
     width: 22px;
@@ -29993,8 +30062,8 @@ Widgets
 
     background: url('../img/icon-drugs-time-config.png') no-repeat;
 }
-
-.drugs__modal-wrapper {
+.drugs__modal-wrapper
+{
     position: fixed;
     z-index: 100;
     top: 0;
@@ -30007,8 +30076,8 @@ Widgets
 
     background: rgba(0, 0, 0, .6);
 }
-
-.drugs__modal-content {
+.drugs__modal-content
+{
     position: absolute;
     z-index: 500;
     top: 0;
@@ -30025,8 +30094,8 @@ Widgets
     border-radius: 6px;
     background-color: #fff;
 }
-
-.drugs__modal-close {
+.drugs__modal-close
+{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -30040,12 +30109,12 @@ Widgets
 
     background: url(../img/icon-modal-close.png) no-repeat;
 }
-
-.drugs__modal-close:hover {
+.drugs__modal-close:hover
+{
     opacity: .7;
 }
-
-.drugs__modal-body {
+.drugs__modal-body
+{
     overflow: -moz-scrollbars-none;
     overflow-y: auto;
 
@@ -30054,8 +30123,8 @@ Widgets
 
     -ms-overflow-style: none;
 }
-
-.drugs__modal-body::-webkit-scrollbar {
+.drugs__modal-body::-webkit-scrollbar
+{
     width: 0;
 }
 .drugs-errors__title
@@ -31694,16 +31763,16 @@ Widgets
 
     background: url(../img/icon-setting.png) no-repeat;
 }
-
-.stoma__tab-doc {
+.stoma__tab-doc
+{
     margin-bottom: 12px;
 }
-
-.stoma__tab-doc-title {
+.stoma__tab-doc-title
+{
     margin-top: 10px;
 }
-
-.stoma__nav-link {
+.stoma__nav-link
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
@@ -31715,19 +31784,20 @@ Widgets
     padding: 1px 15px 0;
 
     -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+            transition: all .3s ease;
 
     color: #5db7d8;
     border-radius: 25px;
 }
 .stoma__nav-link--active,
 .stoma__nav-link:hover,
-.stoma__nav-link:focus {
+.stoma__nav-link:focus
+{
     color: #fff;
     background-color: #5db7d8;
 }
-
-.stoma__status {
+.stoma__status
+{
     display: table;
 
     width: 100%;
@@ -31735,14 +31805,14 @@ Widgets
 
     text-align: center;
 }
-
-.stoma__status-item {
+.stoma__status-item
+{
     font-size: 14px;
 
     display: table-cell;
 }
-
-.stoma__status-item:before {
+.stoma__status-item:before
+{
     display: inline-block;
 
     width: 13px;
@@ -31754,52 +31824,52 @@ Widgets
 
     border-radius: 50%;
 }
-
-.stoma__status-item--healthy:before {
+.stoma__status-item--healthy:before
+{
     border: 1px solid rgba(0, 0, 0, .2);
 }
-
-.stoma__status-item--disinfected:before {
+.stoma__status-item--disinfected:before
+{
     background-color: #0c0;
 }
-
-.stoma__status-item--requires-treatment:before {
+.stoma__status-item--requires-treatment:before
+{
     background-color: #ed7524;
 }
-
-.stoma__status-item--implant:before {
+.stoma__status-item--implant:before
+{
     background-color: #89d1e0;
 }
-
-.stoma__status-item--deleted:before {
+.stoma__status-item--deleted:before
+{
     background-color: rgba(0, 0, 0, .2);
 }
-
-.stoma__status-item--thirst {
+.stoma__status-item--thirst
+{
     text-align: left;
 }
-
-.stoma__status-item--last {
+.stoma__status-item--last
+{
     text-align: right;
 }
-
-.stoma-table {
+.stoma-table
+{
     width: 100%;
 }
-
-.stoma-table__row {
+.stoma-table__row
+{
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
-
-.stoma-table__row:last-child {
+.stoma-table__row:last-child
+{
     border-bottom: none;
 }
-
-.stoma-table__row--popup-planned:last-child {
+.stoma-table__row--popup-planned:last-child
+{
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
-
-.stoma-table__tooth {
+.stoma-table__tooth
+{
     width: 50px;
     padding-top: 20px;
     padding-bottom: 5px;
@@ -31807,12 +31877,12 @@ Widgets
     text-align: left;
     vertical-align: top;
 }
-
-.stoma-table__tooth-img {
+.stoma-table__tooth-img
+{
     margin-right: 20px;
 }
-
-.stoma-table__treatment {
+.stoma-table__treatment
+{
     width: 50%;
     padding-top: 20px;
     padding-right: 20px;
@@ -31821,15 +31891,15 @@ Widgets
     text-align: left;
     vertical-align: top;
 }
-
-.stoma-table__treatment--popup-planned {
+.stoma-table__treatment--popup-planned
+{
     width: 100%;
     padding-right: 0;
 
     vertical-align: middle;
 }
-
-.stoma-table__treatment-title {
+.stoma-table__treatment-title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
@@ -31837,37 +31907,37 @@ Widgets
     margin-top: 0;
     margin-bottom: 5px;
 }
-
-.stoma-table__treatment-text {
+.stoma-table__treatment-text
+{
     font-size: 13px;
 }
-
-.stoma-table__treatment-text--popup-planned {
+.stoma-table__treatment-text--popup-planned
+{
     font-size: 14px;
 }
-
-.stoma-scheme {
+.stoma-scheme
+{
     width: 100%;
     margin-top: 35px;
     margin-bottom: 50px;
 }
-
-.stoma-scheme__tooth {
+.stoma-scheme__tooth
+{
     position: relative;
 
     cursor: pointer;
     -webkit-transition: .3s all ease;
-    transition: .3s all ease;
+            transition: .3s all ease;
     text-align: center;
 }
-
-.stoma-scheme__num {
+.stoma-scheme__num
+{
     font-size: 12px;
 
     text-align: center;
 }
-
-.stoma-scheme__popup-body {
+.stoma-scheme__popup-body
+{
     line-height: 1;
 
     position: absolute;
@@ -31882,8 +31952,8 @@ Widgets
     background-color: #fff;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
 }
-
-.stoma-scheme__popup-body:before {
+.stoma-scheme__popup-body:before
+{
     position: absolute;
     top: -14px;
 
@@ -31892,8 +31962,8 @@ Widgets
     border: 7px solid transparent;
     border-bottom: 7px solid #fff;
 }
-
-.stoma-scheme__popup-title {
+.stoma-scheme__popup-title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 13px;
@@ -31901,16 +31971,16 @@ Widgets
     margin-top: 0;
     margin-bottom: 5px;
 }
-
-.stoma-scheme__popup-text {
+.stoma-scheme__popup-text
+{
     font-size: 13px;
 
     display: inline-block;
 
     margin-bottom: 10px;
 }
-
-.stoma-popup {
+.stoma-popup
+{
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -31923,8 +31993,8 @@ Widgets
 
     background: rgba(0, 0, 0, .5);
 }
-
-.stoma-popup__body {
+.stoma-popup__body
+{
     position: absolute;
     z-index: 500;
     top: 0;
@@ -31943,8 +32013,8 @@ Widgets
     border-radius: 17px;
     background-color: #fff;
 }
-
-.stoma-popup__close {
+.stoma-popup__close
+{
     position: absolute;
     top: 10px;
     right: 12px;
@@ -31958,12 +32028,12 @@ Widgets
 
     background: url(../img/icon-modal-close.png) no-repeat;
 }
-
-.stoma-popup__close:hover {
+.stoma-popup__close:hover
+{
     opacity: .7;
 }
-
-.stoma-popup__title {
+.stoma-popup__title
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -31971,20 +32041,20 @@ Widgets
     margin-top: 0;
     margin-bottom: 30px;
 }
-
-.stoma-popup__subtitle {
+.stoma-popup__subtitle
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 14px;
 
     margin-bottom: 0;
 }
-
-.stoma-popup__text {
+.stoma-popup__text
+{
     font-size: 14px;
 }
-
-.stoma-popup__btn {
+.stoma-popup__btn
+{
     font-family: 'Gotham-Medium', Arial, sans-serif !important;
     font-family: 'Gotham-Medium', Arial, sans-serif;
     font-size: 17px;
@@ -31996,17 +32066,253 @@ Widgets
     margin-top: 20px;
 
     -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+            transition: .3s ease all;
     text-align: center;
 
     color: #5db7d8;
     border: 1px solid #5db7d8;
     border-radius: 25px;
 }
-
-.stoma-popup__btn:hover {
+.stoma-popup__btn:hover
+{
     color: #fff;
     background-color: #5db7d8;
+}
+.vita__widget-header
+{
+    line-height: 60px;
+
+    margin: 0;
+}
+.vita__widget-header > span
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 26px;
+}
+.vita__enroll-link
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    margin: 15px 0 4px 0;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    border: 1px solid #5db7d8;
+    border-radius: 25px;
+}
+.vita__enroll-link--my
+{
+    font-family: 'Gotham-Bold', Arial, sans-serif !important;
+    font-family: 'Gotham-Bold', Arial, sans-serif;
+    font-size: 20px;
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+    padding: 7px 15px 7px 15px;
+
+    color: #fff;
+    border-radius: 5px;
+    background-color: #5db7d8;
+}
+.vita__avatar
+{
+    position: relative;
+
+    width: 65px;
+    height: 65px;
+    margin-top: 9px;
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+.vita__name
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    position: relative;
+
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+.vita__info
+{
+    font-size: 14px;
+
+    margin: 0;
+}
+.vita__img
+{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 15px;
+
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+.vita__phone
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 15px;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+.vita__contacts
+{
+    display: table;
+
+    width: 100%;
+}
+.vita__addr
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+
+    position: relative;
+
+    display: table-cell;
+
+    padding-left: 15px;
+}
+.vita__addr:before
+{
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 12px;
+    height: 11px;
+    margin-right: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-map-pin.png) no-repeat;
+}
+.vita__subway
+{
+    position: relative;
+
+    display: table-cell;
+
+    padding-left: 15px;
+
+    text-align: center;
+}
+.vita__subway:before
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 12px;
+    height: 11px;
+    margin-right: 3px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-doc-subway.png) no-repeat;
+}
+.vita__worktime
+{
+    position: relative;
+
+    display: table-cell;
+
+    padding-left: 15px;
+
+    text-align: right;
+}
+.vita__worktime:before
+{
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 12px;
+    height: 11px;
+    margin-right: 3px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: url(../img/icon-worktime.png) no-repeat;
+}
+.vita-tab
+{
+    position: relative;
+
+    display: table;
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 75px;
+    padding: 10px 15px 8px 15px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.vita-tab:hover .vita-tab__name
+{
+    color: #dc4531;
+}
+.vita-tab--active
+{
+    background-color: #eef9fb;
+}
+.vita-tab__avatar
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+.vita-tab__partner
+{
+    display: table-cell;
+
+    padding-left: 10px;
+
+    vertical-align: middle;
+}
+.vita-tab__cost
+{
+    font-size: 15px;
+
+    display: table-cell;
+
+    width: 26%;
+
+    vertical-align: middle;
+
+    color: #5db7d8;
+}
+.vita-tab__name
+{
+    font-family: 'Gotham-Medium', Arial, sans-serif !important;
+    font-family: 'Gotham-Medium', Arial, sans-serif;
+    font-size: 17px;
+
+    margin: 0;
+    margin-bottom: 5px;
 }
 /*  Styles for Datepicker popup */
 .datepicker
