@@ -1,0 +1,109 @@
+// FONTS
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/GothamPro-Medium.otf') format('opentype'),
+  url('fonts/GothamPro-Medium.woff') format('woff'),
+  url('fonts/GothamPro-Medium.ttf') format('truetype'),
+  url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('fonts/GothamPro.otf') format('opentype'),
+  url('fonts/GothamPro.woff') format('woff'),
+  url('fonts/GothamPro.ttf') format('truetype'),
+  url('fonts/GothamPro.svg#fonts/GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/GothamPro-Bold.otf') format('opentype'),
+  url('fonts/GothamPro-Bold.woff') format('woff'),
+  url('fonts/GothamPro-Bold.ttf') format('truetype'), url('fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruble';
+  src: url('fonts/rouble-webfont.eot');
+  src: local('ALS Rubl'),
+  local('Ruble'),
+  url('fonts/rouble-webfont.woff') format('woff'),
+  url('fonts/rouble-webfont.svg') format('svg'),
+  url('fonts/rouble-webfont.otf') format('opentype');
+}
+
+span.ruble {
+  font-family: "Ruble"
+}
+
+// @font-face {
+//   font-family: 'GothamProLight';
+//   src: url('fonts/GothamProLight.eot?#iefix') format('embedded-opentype'),
+//   url('fonts/GothamProLight.otf') format('opentype'),
+//   url('fonts/GothamProLight.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'GothamProLight';
+  src: url('fonts/GothamProLight.eot'), url('fonts/GothamProLight.ttf') format('ttf'), url('fonts/GothamProLight.woff') format('woff');
+}
+
+.gotham{
+  font-family: 'Gotham', Arial, sans-serif!important;
+}
+
+.gotham-m{
+  font-family: 'Gotham-Medium', Arial, sans-serif!important;
+}
+
+.gotham-b{
+  font-family: 'Gotham-Bold', Arial, sans-serif!important;
+}
+
+.gotham-l {
+  font-family: 'GothamProLight', Arial, sans-serif !important;
+}
+
+
+// Base styles of all links. Uses like mixin
+.link-base{
+  color: @blue-color;
+  transition: 0.2s ease all;
+  outline: none;
+  &:hover{
+    text-decoration: none;
+    color: lighten(@blue-color, 8);
+  }
+  &:focus{
+    color: @blue-color;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+a{
+  .link-base;
+}
+
+// Medium link
+.link-medium{
+  .gotham-m;
+  .link-base;
+}
+
+
+
+
+
+

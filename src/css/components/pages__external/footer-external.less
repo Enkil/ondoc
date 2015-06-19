@@ -1,0 +1,65 @@
+.footer-external{
+  background-color: @ext-footer-bg;
+  @media (max-width: 1001px) {
+    width: 1000px;
+  }
+
+  &__wrapper{
+    display: block;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid @grey-color-2;
+  }
+
+  &__links{
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__links-item{
+    margin-bottom: 10px;
+  }
+
+  &__link{
+    .gotham;
+    font-size: 15px;
+    color: @black-color;
+    display: inline-block;
+
+    &--logo{
+      line-height: 85px;
+      &:before{
+        content: "";
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/ico-logo-min.png) no-repeat;
+      }
+    }
+  }
+
+  &__cards{
+    .text-right;
+    line-height: 85px;
+  }
+
+  &__visa{
+    display: inline-block;
+    width: 56px;
+    height: 17px;
+    background: url("../img/visa.png") no-repeat;
+  }
+
+  &__master{
+    display: inline-block;
+    width: 34px;
+    height: 21px;
+    background: url("../img/master.png") no-repeat;
+  }
+
+  &--charity {
+    min-width: 1000px !important;
+  }
+}

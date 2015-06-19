@@ -1,0 +1,264 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.container {
+  min-width: 1000px !important;
+
+  &--charity {
+    width: calc(~"100% - 100%/16");
+  }
+}
+
+.container-fluid{
+  min-width: 1000px !important;
+  width: 100%!important;
+}
+
+@media (min-width: 768px) {
+.container-huge {
+  width: 736px !important;
+}
+}
+
+@media (min-width: 992px) {
+.container-huge {
+  width: 956px !important;
+}
+}
+
+.container--huge {
+  width: 1200px !important;
+  //  margin: 0 auto;
+}
+
+.container-fluid--huge {
+  min-width: 1200px !important;
+}
+
+.inner-body {
+  margin: 0 0 65px; /* bottom = footer height */
+  background: #eef9fb;
+
+  &--operator {
+    background: @white-color;
+  }
+}
+
+.bottom-line-light{
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.bottom-line-grey{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.right-line-grey{
+  border-right: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.left-line-grey{
+  border-left: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.non-padding-right{
+  padding-right: 0;
+}
+
+.non-padding-left{
+  padding-left: 0;
+}
+
+.non-padding-left-right{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.non-margin-left-right{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+// Display types
+.display-none{
+  display: none!important;
+}
+
+// Mix-in -> Soft slide-down placeholder effect
+.placeholder-effect(@lh){
+  &::-webkit-input-placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &::-moz-placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &:-ms-input-placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &::placeholder{
+    line-height: @lh;  transition: line-height 0.5s ease;
+  }
+  &:focus::-webkit-input-placeholder{
+    line-height: 350px;
+    transition: line-height 0.5s ease;
+  }
+  &:focus::-moz-placeholder{
+    line-height: 350px;
+    transition: line-height 0.5s ease;
+  }
+  &:focus:-ms-input-placeholder{
+    line-height: 350px;
+    transition: line-height 0.5s ease;
+  }
+  &:focus::placeholder{
+    line-height: 350px;
+    transition: line-height 0.5s ease;
+  }
+}
+
+.line-full-width {
+  position: relative;
+  margin-bottom: 20px;
+  //  margin: 0 -8px 20px -8px;
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 8px auto 8px;
+      z-index: 5;
+  }
+}
+
+/* Add arrow down to element */
+.arrow-down{
+  &:after{
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+    content: '';
+    vertical-align: middle;
+    background: url(../img/arrow-down.png) no-repeat;
+  }
+}
+
+.arrow-up{
+  &:after{
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+    content: '';
+    vertical-align: middle;
+    background: url(../img/arrow-up.png) no-repeat;
+  }
+}
+
+/* Style common input checkbox */
+.checkbox-blue{
+  /* Cначала обозначаем стили для IE8 и более старых версий
+      т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 25px;
+  height: 25px;
+
+  /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+      селекторы с плюсом. Показываем, что label кликабелен. */
+  & + label{  cursor: pointer }
+
+  /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+      Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+      в них все нижеследующие стили не сработают. */
+
+  /* Прячем оригинальный чекбокс. */
+  &:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 70px 0 0; /* оставляем справа от label место под псевдочекбокс */
+  }
+
+  /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+  &:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 44px;
+    height: 27px;
+    border-radius: 13px;
+    background: @grey-color-2;
+  }
+
+  /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+  &:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 18px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: @white-color;
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+  }
+
+  /* Меняем фон чекбокса, когда он включен. */
+  //    &:checked + label:before {
+  //      background: #9FD468;
+  //    }
+
+  /* Сдвигаем переключатель чекбокса, когда он включен. */
+  &:checked + label:after {
+    right: 2px;
+  }
+
+  /* Меняем фон для включенного состояния */
+  &:checked + label:before {
+    background: @blue-color;
+  }
+
+  /* Показываем получение фокуса. */
+  //    &:focus + label:before {
+  //      box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+  //    }
+
+  & + label{
+    .gotham;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 15px;
+    margin-left: 20px;
+  }
+}
+
+// фон для виджетов
+.background-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+}
+
+.color-grey{  color:@grey-color;  }
+
+/* Position relative class */
+.pos-rel {
+  position: relative !important;
+}

@@ -1,0 +1,469 @@
+<!-- Right block -->
+<div class="col-xs-25 widget__right-column">
+
+    <!-- Right column title -->
+    <div class="row">
+        <div class="col-xs-36">
+            <p class="drugs__drug-title">Добавление лекарства</p>
+        </div>
+    </div>
+
+    <!-- Search input -->
+    <div class="row">
+        <div class="col-xs-36 non-padding-left non-padding-right">
+            <form action="" >
+                <div class="widget__textarea-wrapper">
+                    <input type="text" class="drugs__drug-comment" placeholder="Название"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dosage -->
+    <div class="row">
+        <div class="text-center">
+
+            <div class="col-xs-18 text-center">
+                <a class="drugs__link drugs__link--type arrow-down" href="">Выберите тип лекарства</a>
+
+                <!-- Dosage type Pop-Up -->
+                <div class="drugs__dosage-popup drugs__dosage-popup--types display-none">
+                    <p class="drugs__dosage-popup-item">Таблетки</p>
+                    <p class="drugs__dosage-popup-item">Спрей</p>
+                    <p class="drugs__dosage-popup-item">Уколы</p>
+                    <p class="drugs__dosage-popup-item">Сироп</p>
+                    <p class="drugs__dosage-popup-item">Капли</p>
+                    <p class="drugs__dosage-popup-item">Порошок</p>
+                </div>
+                <!-- / Dosage type Pop-Up -->
+            </div>
+
+            <!--<div class="col-xs-12">-->
+            <!--<div class="drugs__dosage-wrapper">-->
+            <!--<input type="text" class="drugs__dosage drugs__dosage--dosage" placeholder="Дозировка"/>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="col-xs-18 text-center">
+                <a class="drugs__link drugs__link--item arrow-down" href="">Выберите единицы измерения</a>
+
+                <!-- Dosage items Pop-Up -->
+                <div class="drugs__dosage-popup drugs__dosage-popup--items display-none">
+                    <p class="drugs__dosage-popup-item">мг</p>
+                    <p class="drugs__dosage-popup-item">мгк</p>
+                    <p class="drugs__dosage-popup-item">грамм</p>
+                    <p class="drugs__dosage-popup-item">таблетки</p>
+                    <p class="drugs__dosage-popup-item">капли</p>
+                    <p class="drugs__dosage-popup-item">мл</p>
+                    <p class="drugs__dosage-popup-item">ч. ложка</p>
+                </div>
+                <!-- / Dosage type Pop-Up -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Time to take it config -->
+    <div class="row widget-consultation">
+
+        <div class="col-xs-36 widget-consultation__line">
+            <span class="widget-consultation__title">Время приема</span>
+        </div>
+
+        <div class="text-center">
+            <span class="drugs__time-minus"></span>
+            <p class="drugs__drug-time drugs__drug-time--config">3 раза</p>
+            <span class="drugs__time-plus"></span>
+        </div>
+
+        <table class="drugs__value">
+            <tr>
+                <td class="text-right drugs__value-time-td">
+                    <span class="drugs__value-time drugs__value-time--edit">9:00</span>
+                </td>
+
+                <td class="text-center drugs__value-line-td">
+                    <hr class="drugs__value-line"/>
+                </td>
+
+                <td class="text-left drugs__value-time-td">
+                    <span class="drugs__value-time">
+                        <input type="text" pattern="^[ 0-9]+$" class="drugs__dosage drugs__dosage--time" value="10">таблетки
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="text-right drugs__value-time-td">
+                    <span class="drugs__value-time drugs__value-time--edit">15:00</span>
+                </td>
+
+                <td class="text-center drugs__value-line-td">
+                    <hr class="drugs__value-line"/>
+                </td>
+
+                <td class="text-left drugs__value-time-td">
+                    <span class="drugs__value-time">
+                        <input type="text" pattern="^[ 0-9]+$" class="drugs__dosage drugs__dosage--time" value="10">уколы
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="text-right drugs__value-time-td">
+                    <span class="drugs__value-time drugs__value-time--edit">20:00</span>
+                </td>
+
+                <td class="text-center drugs__value-line-td">
+                    <hr class="drugs__value-line"/>
+                </td>
+
+                <td class="text-left drugs__value-time-td">
+                    <span class="drugs__value-time">
+                        <input type="text" pattern="^[ 0-9]+$" class="drugs__dosage drugs__dosage--time" value="10">мг
+                    </span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Days to take it -->
+    <div class="row widget-consultation">
+
+        <div class="col-xs-36 text-center widget-consultation__line">
+            <span class="widget-consultation__title">Дни приема</span>
+        </div>
+
+        <div class="col-xs-36 text-center">
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable drugs__drug-day--active">пн</p>
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable drugs__drug-day--active">вт</p>
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable drugs__drug-day--active">ср</p>
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable drugs__drug-day--active">чт</p>
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable drugs__drug-day--active">пт</p>
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable">сб</p>
+            <p class="js__drug-day drugs__drug-day drugs__drug-day--clickable">вс</p>
+        </div>
+
+    </div>
+
+    <!-- Course time -->
+    <div class="row widget-consultation">
+
+        <div class="col-xs-36 text-center widget-consultation__line">
+            <span class="widget-consultation__title">Длительность курса</span>
+        </div>
+
+        <div class="col-xs-36 text-center">
+            <a class="drugs__link" href="">Выберите срок</a>
+        </div>
+
+    </div>
+
+    <!-- Course start date -->
+    <div class="row widget-consultation">
+
+        <div class="col-xs-36 text-center widget-consultation__line">
+            <span class="widget-consultation__title">Дата начала курса</span>
+        </div>
+
+        <div class="col-xs-36 text-center">
+            <a class="drugs__link" href="">19 августа 2014</a>
+        </div>
+
+    </div>
+
+    <!-- Doctor -->
+    <div class="row widget-consultation">
+
+        <div class="col-xs-36 text-center widget-consultation__line">
+            <span class="widget-consultation__title">Назначен врачом</span>
+        </div>
+
+        <div class="col-xs-36 text-center">
+            <a class="drugs__link js__drugs-doc-select" href="">Выберите врача</a>
+
+            <!-- Doctor select Pop-Up -->
+            <div class="medcard-doctor__wrapper display-none">
+                <div class="row medcard-doctor text-left">
+
+                    <span class="medcard-doctor__close"></span>
+
+                    <!-- Pop-Up Header -->
+                    <div class="col-xs-36 medcard-doctor__head">
+
+                        <h2 class="medcard-doctor__title">Выберите врача</h2>
+
+                        <div class="medcard-doctor__icon-line">
+                            <a class="medcard-doctor__icon medcard-doctor__icon--doc" href="#"></a>
+                            <a class="medcard-doctor__icon medcard-doctor__icon--doc-liked" href="#"></a>
+                            <a class="medcard-doctor__icon medcard-doctor__icon--doc-fave" href="#"></a>
+                            <a class="medcard-doctor__icon-plus" href="#"></a>
+                        </div>
+
+                        <div class="medcard-doctor__search">
+                            <input class="medcard-doctor__search-input" type="text" placeholder="Поиск по ФИО"/>
+                        </div>
+
+                    </div>
+                    <!-- / Pop-Up Header -->
+
+                    <!-- Pop-Up Doctor search Body -->
+                    <div class="col-xs-36 medcard-doctor__body">
+
+                        <!-- Content of Doctor find state -->
+                        <div class="medcard-doctor__doc-find-wrapper">
+
+                            <!-- Doctor item -->
+                            <div class="row medcard-doctor__doc">
+
+                                <div class="col-xs-4 text-left">
+                                    <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                                </div>
+
+                                <div class="col-xs-32">
+                                    <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                                    <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                                    <div class="row">
+                                        <div class="col-xs-18">
+                                            <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                                        </div>
+                                        <div class="col-xs-18 non-padding-left">
+                                            <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- / Doctor item -->
+
+                            <!-- Doctor item -->
+                            <div class="row medcard-doctor__doc">
+
+                                <div class="col-xs-4 text-left">
+                                    <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                                    <span class="medcard-doctor__avatar-ondocked"></span>
+                                </div>
+
+                                <div class="col-xs-32">
+                                    <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                                    <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                                    <div class="row">
+                                        <div class="col-xs-18">
+                                            <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                                        </div>
+                                        <div class="col-xs-18 non-padding-left">
+                                            <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- / Doctor item -->
+
+                            <!-- Doctor item -->
+                            <div class="row medcard-doctor__doc">
+
+                                <div class="col-xs-4 text-left">
+                                    <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                                </div>
+
+                                <div class="col-xs-32">
+                                    <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                                    <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                                    <div class="row">
+                                        <div class="col-xs-18">
+                                            <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                                        </div>
+                                        <div class="col-xs-18 non-padding-left">
+                                            <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- / Doctor item -->
+
+                            <!-- Doctor item -->
+                            <div class="row medcard-doctor__doc">
+
+                                <div class="col-xs-4 text-left">
+                                    <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                                    <span class="medcard-doctor__avatar-ondocked"></span>
+                                </div>
+
+                                <div class="col-xs-32">
+                                    <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                                    <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                                    <div class="row">
+                                        <div class="col-xs-18">
+                                            <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                                        </div>
+                                        <div class="col-xs-18 non-padding-left">
+                                            <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- / Doctor item -->
+
+                            <!-- Doctor item -->
+                            <div class="row medcard-doctor__doc">
+
+                                <div class="col-xs-4 text-left">
+                                    <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                                </div>
+
+                                <div class="col-xs-32">
+                                    <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                                    <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                                    <div class="row">
+                                        <div class="col-xs-18">
+                                            <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                                        </div>
+                                        <div class="col-xs-18 non-padding-left">
+                                            <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- / Doctor item -->
+
+                            <!-- Doctor item -->
+                            <div class="row medcard-doctor__doc">
+
+                                <div class="col-xs-4 text-left">
+                                    <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                                    <span class="medcard-doctor__avatar-ondocked"></span>
+                                </div>
+
+                                <div class="col-xs-32">
+                                    <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                                    <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                                    <div class="row">
+                                        <div class="col-xs-18">
+                                            <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                                        </div>
+                                        <div class="col-xs-18 non-padding-left">
+                                            <span class="medcard-doctor__info medcard-doctor__info--exp">10 лет</span>
+                                            <span class="medcard-doctor__info medcard-doctor__info--subway">Невский проспект, Горьковская</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- / Doctor item -->
+                        </div>
+                        <!-- / Content of Doctor find state -->
+
+                        <!-- Content of Doctor add state -->
+                        <div class="medcard-doctor__notfind-wrapper display-none">
+
+                            <div class="col-xs-36 text-center">
+                                <img class="medcard-doctor__notfind-img" src="img/doc-add.png" alt="Добавить врача"/>
+                            </div>
+
+                            <div class="col-xs-36 text-center">
+                                <p class="medcard-doctor__notfind-text">
+                                    Такой врач не найден. <br/>
+                                    Хотите добавить?
+                                </p>
+                            </div>
+
+                            <div class="col-xs-36 text-center">
+                                <a class="medcard-doctor__notfind-btn" href="#">Добавить врача</a>
+                            </div>
+
+                        </div>
+                        <!-- / Content of Doctor add state -->
+
+                    </div>
+                    <!-- / Pop-UP Body -->
+
+                    <!-- Pop-Up Doctor Add Body-->
+                    <div class="col-xs-36 medcard-doctor__add-body display-none">
+
+                        <h2 class="medcard-doctor__title">Добавление врача</h2>
+
+                        <p class="medcard-doctor__add-text">
+                            Отправьте запрос на добавление нового врача. Мы проверим данные, заполним профиль и добавим его в общий список.
+                        </p>
+
+                        <form class="medcard-doctor__add-form" action="#">
+                            <input class="medcard-doctor__add-input" type="text" placeholder="Фамилия"/>
+                            <input class="medcard-doctor__add-input" type="text" placeholder="Имя"/>
+                            <input class="medcard-doctor__add-input" type="text" placeholder="Отчество"/>
+                            <input class="medcard-doctor__add-input" type="text" placeholder="Специализация"/>
+                            <div class="medcard-doctor__up-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Город" value="Москва"/></div>
+                            <div class="medcard-doctor__down-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Контактный телефон"/></div>
+                        </form>
+
+                        <div class="text-center col-xs-36">
+                            <a class="medcard-doctor__add-btn-no" href="#">Отмена</a>
+                            <input class="medcard-doctor__add-btn-save" type="button" value="Сохранить"/>
+                        </div>
+
+                    </div>
+                    <!-- Pop-Up Doctor Add -->
+
+                </div>
+            </div>
+            <!-- / Doctor select Pop-Up -->
+
+        </div>
+
+    </div>
+
+    <!-- Recommendations -->
+    <div class="row widget-consultation">
+
+        <div class="col-xs-36 text-center widget-consultation__line">
+            <span class="widget-consultation__title">Рекомендации</span>
+        </div>
+
+        <div class="col-xs-36 text-center non-padding-left non-padding-right">
+            <textarea class="widget__textarea" form="form" placeholder="Текст рекомендации"></textarea>
+        </div>
+
+    </div>
+
+    <!-- build:include ../pages__internal/drugs/drugs-errors.html -->
+    This will be replaced by the content of drugs-errors.html
+    <!-- /build -->
+
+    <!-- Horizontal line -->
+    <div class="row widget-consultation widget-consultation--wo-margin">
+        <div class="col-xs-36 text-center widget-consultation__line widget-consultation__line--wo-margin">
+            <span class="widget-consultation__title"></span>
+        </div>
+    </div>
+
+    <!-- Submit form -->
+    <div class="row">
+        <div class="col-xs-36 text-center">
+            <input type="submit" form="form" class="widget-btn widget-btn--submit-no" value="Отмена"/>
+            <input type="submit" form="form" class="widget-btn widget-btn--submit-yes" value="OK"/>
+        </div>
+    </div>
+
+</div>
+<!-- / Right block -->

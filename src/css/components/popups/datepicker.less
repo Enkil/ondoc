@@ -1,0 +1,201 @@
+/*  Styles for Datepicker popup */
+.datepicker {
+  width: 250px;
+  background-color: @white-color;
+  box-shadow: 0 0 13px 2px @grey-color-2;
+  position: absolute;
+  z-index: 100;
+  border-radius: 15px;
+  padding: 15px 0;
+  text-align: center;
+  top: 35px;
+  left: calc(~"50% - 125px");
+  &:after {
+    position: absolute;
+    top: -26px;
+    right: calc(~"50% - 15px");
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 12px solid @white-color;
+  }
+
+  &__input {
+    .gotham-m;
+    color: @black-color;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    height: 35px;
+    resize: none;
+    border: 1px solid @grey-color-2;
+    border-radius: 8px;
+    width: 218px;
+    margin: 0 auto;
+  }
+
+  &__hr {
+    margin: 17px 0;
+
+    &--last {
+      margin-top: 0;
+    }
+  }
+
+  &__month {
+    display: block;
+    width: 218px;
+    margin: 0 auto 12px;
+  }
+
+  &__month-item {
+    .gotham;
+    font-size: 15px;
+    display: inline-block;
+  }
+
+  &__arrow {
+    display: inline-block;
+    background-size: 10px 16px;
+    background-image: url('../img/icon-datapicker-back.png');
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 16px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--right {
+      background-image: url('../img/icon-datapicker-forward.png');
+    }
+
+    &--up {
+      width: 14px;
+      height: 8px;
+      background-size: 14px 8px;
+      background-image: url('../img/icon-datapicker-up.png');
+      position: absolute;
+      top: 13px;
+      right: calc(~"50% - 7px");
+    }
+
+    &--down {
+      width: 14px;
+      height: 8px;
+      background-size: 14px 8px;
+      background-image: url('../img/icon-datapicker-down.png');
+      position: absolute;
+      bottom: 13px;
+      right: calc(~"50% - 7px");
+    }
+  }
+
+  &__table {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__table-head {
+    .gotham;
+    font-size: 11px;
+    background-color: #f7f7f7;
+    text-transform: uppercase;
+
+    td {
+      padding-top: 3px;
+    }
+
+  }
+
+  &__table-item {
+    .gotham-m;
+    font-size: 15px;
+    cursor: pointer;
+    vertical-align: bottom;
+    transition: all 0.5s ease;
+    text-align: center;
+    display: inline-block;
+    height: 28px;
+    //    width: 28px;
+    width: 14%;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--current {
+      color: @blue-color;
+    }
+
+    &--active {
+      color: @white-color !important;
+      background-color: @blue-color;
+      border-radius: 50%;
+      width: 28px;
+      //      display: inline-block;
+    }
+
+    &--nextmonth {
+      color: @grey-color-2;
+    }
+  }
+
+  &__table-row {
+    height: 35px;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__time {
+    position: relative;
+    display: inline-block;
+    &--left-m {
+      margin-left: 20px;
+    }
+  }
+
+  &__time-input {
+    .gotham-m;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    height: 35px;
+    resize: none;
+    border: 1px solid @grey-color-2;
+    border-radius: 8px;
+    width: 48px;
+    margin: 30px 0;
+  }
+
+  &__time-char {
+    font-size: 15px;
+    color: @grey-color;
+    margin: 30px 2px;
+  }
+
+  &__buttons {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 0;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 18px;
+    background-image: url('../img/exit-okey-sprite.png');
+    background-repeat: no-repeat;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--exit {
+      background-position: 0 0;
+    }
+
+    &--ok {
+      background-position: -88px 0;
+    }
+  }
+}

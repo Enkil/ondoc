@@ -1,0 +1,707 @@
+// BLOCK -> Widget
+.widget{
+  border-radius: 12px;
+  background: @white-color;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+  // Element -> Left widget column with tabs list
+  &__left-column{
+    .non-padding-right;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  // Element -> Right widget column with widget data
+  &__right-column{
+    .left-line-grey;
+    padding: 0 38px 8px 30px;
+  }
+
+
+  &__notes-img{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 6px;
+    margin-bottom: 5px;
+
+    &-item{
+      width: 45px;
+      height: 45px;
+      border-top: 1px solid @grey-color-2;
+      border-bottom: 1px solid @grey-color-2;
+      border-left: 2px solid @grey-color-2;
+      border-right: 1px solid @grey-color-2;
+    }
+
+    &__notes-mb{
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+  }
+
+
+  &__textarea{
+    .gotham;
+    .placeholder-effect(20px);
+    text-align: left;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid @grey-color-2;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+    line-height: 20px;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &--error {
+      border: 1px solid @red-color;
+      position: relative;
+    }
+
+    &-wrapper--asterisk {
+      position: relative;
+      &:after {
+        content: '*';
+        color: @red-color;
+        position: absolute;
+        top: -3px;
+        right: -10px;
+      }
+    }
+    &-wrapper--asterisk-drugs {
+      position: relative;
+      &:after {
+        content: '*';
+        color: @red-color;
+        position: absolute;
+        top: 5px;
+      }
+    }
+  }
+
+  // Upload icon
+  &__upload{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 45px;
+    height: 31px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  &__upload-input{
+    opacity: 0;
+    display: none !important;
+  }
+
+  &__upload-icon{
+    color: @blue-color;
+    position: relative;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 41px;
+      height: 31px;
+      display: inline-block;
+      background: url(../img/icon-photo.png) no-repeat;
+    }
+  }
+}
+
+// BLOCK -> Doctor
+.widget-doctor{
+  margin-bottom: 15px;
+
+  &--stoma {
+    margin-top: 20px;
+  }
+
+  // Element -> Avatar
+  &__img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid @grey-color-2;
+  }
+
+  // Element -> Name
+  &__name{
+    font-size: 14px;
+    .gotham-m;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  // Element -> Clinic
+  &__clinic{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: @grey-color-5;
+    word-break: break-all;
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      padding-right: 18px;
+      padding-bottom: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-clinic.png) no-repeat;
+    }
+  }
+
+  // Element -> Date
+  &__date{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: @grey-color-5;
+    word-break: break-all;
+
+    // modificator -> bigger date
+    &--bigger{
+      font-size: 14px;
+    }
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      padding-right: 18px;
+      padding-bottom: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-date.png) no-repeat;
+    }
+  }
+}
+
+// BLOCK -> Widget header
+.widget-header{
+
+  &__text{
+    .gotham-m;
+    font-size: 15px;
+    line-height: 60px;
+    display: inline-block;
+    margin-bottom: 0;
+
+    &:before{
+      content: "";
+      width: 14px;
+      height: 22px;
+      padding-right: 22px;
+      padding-bottom: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-consultation.png) no-repeat;
+    }
+
+    &--stoma:before {
+      content: "";
+      width: 17px;
+      height: 22px;
+      padding-right: 22px;
+      padding-bottom: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../img/icon-stoma-header.png) no-repeat;
+    }
+  }
+
+  // Element -> widget headers icons
+  &__icon{
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    // Modificators -> icons
+    &--pulse {  &:before{ background: url(../img/icon-pulse.png) no-repeat;}  }
+    &--weight {  &:before{ background: url(../img/icon-weight.png) no-repeat;}  }
+    &--sugar {  &:before{ background: url(../img/icon-sugar.png) no-repeat;}  }
+    &--pressure {  &:before{ background: url(../img/icon-pressure.png) no-repeat;}  }
+    &--cholesterol {  &:before{ background: url(../img/icon-cholesterol.png) no-repeat;}  }
+    &--temperature {  &:before{ background: url(../img/icon-temperature.png) no-repeat;}  }
+    &--height {  &:before{ background: url(../img/icon-height.png) no-repeat;}  }
+  }
+
+  // Element -> Month dropdown list
+  &__dropdown{
+    .text-left;
+    line-height: 22px;
+    background: @white-color;
+    border: 1px solid #f0f0f0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+
+    &:before{
+      position: absolute;
+      top: -14px;
+      left: 23px;
+      content: '';
+      border: 7px solid transparent;
+      border-bottom: 7px solid @white-color;
+    }
+
+    &-list{
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item{
+      .link-medium;
+      list-style-type: none;
+      display: block;
+      font-size: 13px;
+    }
+  }
+
+}
+
+// BLOCK -> Widget consultation
+.widget-consultation{
+  margin-bottom: 15px;
+
+  &--operator {
+    margin-bottom: 50px;
+  }
+
+  // modificator -> with out margin
+  &--wo-margin{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // Element -> Consultation title
+  &__title{
+    .gotham;
+    display: inline-block;
+    font-size: 14px;
+    color: @grey-color-2;
+    background-color: @white-color;
+    padding: 0 15px 0 15px;
+    z-index: 10;
+    position: relative;
+  }
+
+  // Element -> Line over consultation title
+  &__line{
+    .text-center;
+    position: relative;
+    margin-bottom: 15px;
+
+    // modificator -> with out margin
+    &--wo-margin{
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 5;
+    }
+  }
+
+  // Element -> Consultation text
+  &__text{
+    font-size: 14px;
+    color: @black-color;
+    margin: 0;
+    position: relative;
+    padding-right: 25px;
+  }
+
+  &__edit-comment {
+    font-size: 14px;
+    color: @black-color;
+    margin: 0;
+    position: relative;
+    padding-right: 25px;
+  }
+
+  &__edit-comment-input {
+    margin-left: 30px;
+    padding: 0 10px;
+    width: calc(~"100% - 40px");
+    line-height: 30px;
+    border: 1px solid @grey-color-2;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    resize: none;
+  }
+
+  // Element -> link in widget right column at consultation block
+  &__link{
+    .link-medium;
+    font-size: 15px;
+
+    &--operator {
+      margin-bottom: 50px;
+      display: inline-block;
+    }
+
+    // modificator -> smaller size
+    &--smaller{
+      font-size: 14px;
+    }
+  }
+
+  // Element -> margin bottom for drugs
+  &__drugs{
+    margin-bottom: 3px;
+  }
+
+  // Element -> small text under drug name
+  &__subtext{
+    .gotham;
+    color: @grey-color-2;
+    font-size: 11px;
+    line-height: 13px;
+    margin: auto 0px auto 20px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+// BLOCK -> One tab in left tabs list
+.widget-tab{
+  .bottom-line-grey;
+  padding: 18px 15px 12px 20px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover{
+    color: @red-color;
+    text-decoration: none;
+  }
+
+  // modificator -> current active tab
+  &--active{
+    background-color: @lightblue-bg;
+    &:hover{
+      color: @black-color;
+      text-decoration: none;}
+  }
+
+  // Element -> tab title
+  &__title{
+    .gotham-m;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.2px;
+    margin: 0 0 5px 0;
+  }
+
+  // Element -> tab text
+  &__description{
+    .gotham;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    margin-bottom: 8px;
+  }
+
+  // Element -> Clinic
+  &__clinic{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: @grey-color-5;
+
+    display: block;
+    position: relative;
+    padding-left: 15px;
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      top: -3px;
+      background: url(../img/icon-clinic.png) no-repeat;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  // Element -> Date
+  &__date{
+    .gotham;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+    color: @grey-color-5;
+
+    display: block;
+    position: relative;
+    padding-left: 15px;
+
+    word-break: break-all;
+
+    // modificator -> bigger date
+    &--bigger{
+      font-size: 14px;
+      color: @grey-color-5;
+    }
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      top: -3px;
+      background: url(../img/icon-date.png) no-repeat;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+// BLOCK -> Right column head links
+.widget-right-head{
+
+  // Element -> Right column title
+  &__title{
+    .gotham-m;
+    font-size: 17px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &--operator {
+      padding-top: 0;
+    }
+  }
+
+  // Element -> list of head links of right column in wodget
+  &__list{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+  }
+
+  // Element -> list item
+  &__list-item{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+//    word-break: break-all;
+  }
+
+  // Element -> list item link
+  &__link{
+    .link-medium;
+    font-size: 15px;
+    text-align: center;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+      text-decoration: none;
+    }
+  }
+}
+
+// BLOCK -> Chart
+.widget-chart{
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+// BLOCK -> Widget data progress table
+.widget-data-table{
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  // Element -> title
+  &__title{
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  // Element -> table tag
+  &__table{
+    width: 84%;
+    margin: 0 auto;
+
+    tr{ border-bottom: 2px solid rgba(0, 0, 0, 0.03); &:last-child{ border-bottom: none; }   }
+
+    td{
+      padding: 11px 0px 10px 7px;
+    }
+  }
+
+  // Element -> date in table
+  &__date{
+    width: 18%;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  // Element -> time in table
+  &__time{
+    width: 20%;
+    padding-left: 0!important;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  // Element -> number in table
+  &__number{
+    width: 60%;
+    text-align: right;
+    padding-right: 20px!important;
+    font-size: 12px;
+  }
+}
+
+// BLOCK -> Pagination
+.widget-pagination{
+  margin-bottom: 12px;
+  padding: 0 20px 0;
+
+  // Element -> "Show by" link
+  &__show-by{
+    .link-medium;
+    font-size: 13px;
+    position: relative;
+    
+    &--dropdown{
+      cursor: pointer;
+
+      &:after{
+        content: "";
+        width: 10px;
+        height: 6px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/arrow-down.png) no-repeat;
+      }
+    }
+  }
+
+  // Element -> down block
+  &__dropdown{
+    .text-left;
+    line-height: 22px;
+    background: @white-color;
+    border: 1px solid #f0f0f0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, .2);
+
+    &:before{
+      position: absolute;
+      top: -14px;
+      left: 16px;
+      content: '';
+      border: 7px solid transparent;
+      border-bottom: 7px solid @white-color;
+    }
+  }
+
+  // Element -> dropdown list
+  &__dropdown-list{
+    padding: 0;
+    margin: 0;
+  }
+
+  // Element -> dropdown item
+  &__dropdown-item{
+    .link-medium;
+    list-style-type: none;
+    display: block;
+    font-size: 13px;
+  }
+
+  &__numeration-list{
+    text-align: right;
+  }
+
+  &__numeration-item{
+    display: inline-block;
+    margin: 0 2px;
+  }
+
+  &__numeration-link{
+    .link-medium;
+    font-size: 13px;
+
+    &--active{
+      color: @black-color
+    }
+  }
+}
+
+.widget-security {
+  .widget();
+  min-height: 100px;
+  padding-bottom: 26px;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+<!-- Общий сблок -->
+<div class="main-page">
+    <div class="container">
+        <!--<div class="row main-row-customize">-->
+        <div class="row">
+
+            <!-- Left Sidebar -->
+<aside class="col-xs-7">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active"
+                                                              href="health.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="medkarta.html">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor"
+                                                              href="docs.html">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+
+            <!-- Right page block with mini widgets -->
+            <div class="col-xs-29">
+                <div class="row">
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--consultations" href="medkarta_konsultacii.html">Консультации</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новую консультацию"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--cap">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--consultation"></span>
+            <p class="medcard-widget__cap-text">Сохраните рекомендации и информацию, полученную от врача</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--survey" href="">Обследования</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новое обследование"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--cap">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--survey"></span>
+            <p class="medcard-widget__cap-text">Возможность сохранять и получать обследования скоро будет доступна</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--survey" href="">Обследования</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новое обследование"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--cap">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--survey"></span>
+            <p class="medcard-widget__cap-text">Сохраните результаты обследований</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget medcard-widget--smaller">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--immun" href="">Прививки</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новую прививку"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--smaller medcard-widget__body--cap-smaller">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--immun"></span>
+            <p class="medcard-widget__cap-text">Дневник прививок скоро будет доступен</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget medcard-widget--smaller">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--immun" href="">Прививки</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новую прививку"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--smaller medcard-widget__body--cap-smaller">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--immun"></span>
+            <p class="medcard-widget__cap-text">Добавьте информацию о сделанных прививках</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget medcard-widget--smaller">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--notes" href="">Заметки</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новую заметку"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--smaller medcard-widget__body--cap-smaller">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--notes"></span>
+            <p class="medcard-widget__cap-text">Заметки скоро будут доступны</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget medcard-widget--smaller">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header">
+
+            <a class="medcard-widget__title medcard-widget__title--notes" href="">Заметки</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новую заметку"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--smaller medcard-widget__body--cap-smaller">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--notes"></span>
+            <p class="medcard-widget__cap-text">Создавайте заметки о вашем здоровье</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                    <!-- Mini widget - Consultation -->
+<div class="col-xs-12">
+
+    <div class="medcard-widget medcard-widget--smaller">
+
+        <!-- Mini widget header -->
+        <div class="medcard-widget__header medcard-widget__header--processing">
+
+            <a class="medcard-widget__title medcard-widget__title--processing" href="">Обработка документов</a>
+            <a class="medcard-widget__add-btn" href="#" title="Добавить новый документ"></a>
+
+        </div>
+        <!-- / Mini widget header -->
+
+        <!-- Mini widget body -->
+        <div class="medcard-widget__body medcard-widget__body--smaller medcard-widget__body--cap-smaller">
+
+            <span class="medcard-widget__cap-img medcard-widget__cap-img--process"></span>
+            <p class="medcard-widget__cap-text">Какой то текст</p>
+
+        </div>
+        <!-- Mini widget body -->
+
+    </div>
+
+</div>
+<!-- / Mini widget -->
+
+                </div>
+
+                <!-- Settings -->
+<div class="col-xs-36 health-settings">
+    <a class="health-settings__link" href="#">Настроить виджеты</a>
+
+    <div class="settings display-none">
+
+    <div class="settings__bg"></div>
+
+    <div class="settings__modal">
+
+
+        <form action="">
+
+            <p class="settings__title">Настройка виджетов</p>
+
+            <div class="settings__body">
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-1" class="settings__input" checked/>
+                    <label for="check-1" class="settings__label">
+                        <i class="settings__icon settings__icon--pulse"></i>
+                        <span class="settings__name">Пульс</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-2" class="settings__input" checked/>
+                    <label for="check-2" class="settings__label">
+                        <i class="settings__icon settings__icon--pressure"></i>
+                        <span class="settings__name">Давление</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-3" class="settings__input"/>
+                    <label for="check-3" class="settings__label">
+                        <i class="settings__icon settings__icon--weight"></i>
+                        <span class="settings__name">Вес</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-4" class="settings__input" checked/>
+                    <label for="check-4" class="settings__label">
+                        <i class="settings__icon settings__icon--temp"></i>
+                        <span class="settings__name">Температура</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item settings__item--disabled">
+                    <input type="checkbox" id="check-5" class="settings__input" disabled/>
+                    <label for="check-5" class="settings__label">
+                        <i class="settings__icon settings__icon--sugar"></i>
+                        <span class="settings__name">Сахар</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-6" class="settings__input"/>
+                    <label for="check-6" class="settings__label">
+                        <i class="settings__icon settings__icon--cholesterol"></i>
+                        <span class="settings__name">Холестерин</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="row">
+                <div class="col-xs-36 text-center">
+                    <input type="submit" class="widget-btn widget-btn--submit-no" value="Отмена">
+                    <input type="submit" class="widget-btn widget-btn--submit-yes" value="OK">
+                </div>
+            </div>
+
+            <span class="settings__close"></span>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+</div>
+
+            </div>
+            <!-- / Right page block with mini widgets -->
+
+        </div>
+    </div>
+</div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+
+</body>
+</html>

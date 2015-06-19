@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+
+<!-- main -->
+<div class="main-page">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Sidebar -->
+<aside class="col-xs-8">
+    <div class="sidebar-profile">
+
+        <!-- Menu -->
+        <div class="sidebar-profile__menu">
+            <ul class="sidebar-profile__menu-list">
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--profile sidebar-profile__menu-link--active"
+                        href="profile__main.html">Профиль</a></li>
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--security"
+                        href="profile__security.html">Безопасность</a></li>
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--notifications"
+                        href="profile__notifications.html">Уведомления</a></li>
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--privacy" href="">Приватность</a>
+                </li>
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--family" href="">Семейный
+                    доступ</a></li>
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--history" href="">История
+                    покупок</a></li>
+                <li class="sidebar-profile__menu-item"><a
+                        class="sidebar-profile__menu-link sidebar-profile__menu-link--balance"
+                        href="profile__balance.html">Баланс</a></li>
+            </ul>
+        </div>
+
+    </div>
+</aside>
+<!-- / Left Sidebar -->
+
+            <section class="col-xs-28">
+                <div class="row profile-widget">
+
+                    <!-- Current balance -->
+                    <div class="col-xs-36">
+                        <div class="profile-balance__title">
+                            Текущий баланс: <span>0</span> <span class="ruble">a&#8203;</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-36 non-padding-left-right">
+                        <hr class="profile-balance__line"/>
+                    </div>
+
+                    <!-- Add money -->
+                    <div class="col-xs-36 profile-balance__subtitle">Пополнение</div>
+
+                    <div class="col-xs-36 profile-balance__money-add">
+                        <div class="row">
+                            <div class="col-xs-5 col-lg-7 profile-balance__text profile-balance__text--first">Стоимость
+                                обработки<br/>1 документа
+                            </div>
+                            <div class="col-xs-3 profile-balance__text profile-balance__text--bold">
+                                <span>59</span>
+                                <span class="ruble">a&#8203;</span>
+                            </div>
+                            <div class="col-xs-5 col-lg-4 profile-balance__text">Количество <br/> документов</div>
+                            <div class="col-xs-3 non-padding-left-right"><input
+                                    class="user-info__input user-info__input--center" type="text" placeholder="10"/>
+                            </div>
+                            <div class="col-xs-4 profile-balance__text">Итоговая стоимость</div>
+                            <div class="col-xs-3 profile-balance__text profile-balance__text--bold">
+                                <span>590</span>
+                                <span class="ruble">a&#8203;</span>
+                            </div>
+                            <div class="col-xs-4 profile-balance__text">Стоимость обработки</div>
+                            <div class="col-xs-8 non-padding-left-right"><a class="profile-balance__btn" href="#">Пополнить
+                                баланс</a></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-36 non-padding-left-right">
+                        <hr class="profile-balance__line"/>
+                    </div>
+
+                    <!-- Transactions filter -->
+                    <div class="profile-balance__filter">
+                        <div class="col-xs-8 col-lg-7 profile-balance__subtitle">История транзакций</div>
+                        <div class="col-xs-17 col-lg-20">
+                            <div class="profile-balance__filter-btns">
+                                <a class="profile-balance__filter-btn profile-balance__filter-btn--active"
+                                   href="#">Все</a>
+                                <a class="profile-balance__filter-btn" href="#">Оплата</a>
+                                <a class="profile-balance__filter-btn" href="#">Возврат</a>
+                                <a class="profile-balance__filter-btn" href="#">Пополнение</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-11 col-lg-8 pull-right"><a href="#" class="profile-balance__link">15 мая
+                            2014</a> <span class="profile-balance__link-symbol">-</span> <a href="#"
+                                                                                            class="profile-balance__link">20
+                            июня 2014</a></div>
+                    </div>
+
+                    <!-- Transactions -->
+                    <div class="col-xs-36 transactions">
+                        <table class="transactions__table table table-hover">
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="col-xs-36">
+
+                        <div class="widget-pagination transactions__pagination">
+                            <div class="row">
+
+                                <!-- Show by -->
+                                <div class="col-xs-12">
+                                             <span class="widget-pagination__show-by widget-pagination__show-by--dropdown">Показывать по 30
+
+                                                <!-- Month dropdown -->
+                                                <div class="widget-pagination__dropdown display-none">
+                                                    <ul class="widget-pagination__dropdown-list">
+                                                        <li class="widget-pagination__dropdown-item" data-value="10">
+                                                            10
+                                                        </li>
+                                                        <li class="widget-pagination__dropdown-item" data-value="20">
+                                                            20
+                                                        </li>
+                                                        <li class="widget-pagination__dropdown-item" data-value="30">
+                                                            30
+                                                        </li>
+                                                        <li class="widget-pagination__dropdown-item" data-value="50">
+                                                            50
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                             </span>
+                                </div>
+
+                                <!-- Numeration -->
+                                <div class="col-xs-18  pull-right">
+                                    <ul class="widget-pagination__numeration-list">
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link widget-pagination__numeration-link--active"
+                                                href="#">1</a></li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">2</a>
+                                        </li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">3</a>
+                                        </li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">4</a>
+                                        </li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">5</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+
+</body>
+</html>

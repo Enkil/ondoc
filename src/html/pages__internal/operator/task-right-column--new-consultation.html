@@ -1,0 +1,114 @@
+<!-- Right column title -->
+<div class="row">
+    <div class="col-xs-36">
+        <p class="text-center widget-right-head__title widget-right-head__title--operator">Новая консультация</p>
+    </div>
+</div>
+
+<!-- Right column order links -->
+<div class="row">
+
+    <div class="widget-right-head__list">
+
+        <div class="col-xs-12 right-line-grey widget-right-head__list-item">
+            <a class="widget-right-head__link" href="#" id="js-find-clinic">Выберите клинику</a>
+        </div>
+
+        <!-- build:include ../../components/popups/medcard-clinic-select-popup.html -->
+        This will be replaced by the content of medcard-clinic-select-popup.html
+        <!-- /build -->
+
+        <div class="col-xs-12 right-line-grey widget-right-head__list-item">
+            <a class="widget-right-head__link " href="#">Выберите специализацию</a>
+        </div>
+
+        <div class="col-xs-12 widget-right-head__list-item">
+            <a class="widget-right-head__link" id="js-find-doctor" href="#">Выберите врача</a>
+        </div>
+
+        <!-- build:include ../../components/popups/medcard__doctor-select-popup.html -->
+        This will be replaced by the content of medcard__doctor-select-popup.html
+        <!-- /build -->
+
+    </div>
+
+</div>
+
+<!-- Description -->
+<div class="row widget-consultation widget-consultation--wo-margin">
+
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Описание</span>
+    </div>
+
+    <div class="col-xs-36 non-padding-left non-padding-right">
+        <form class="widget__form" action="" id="form">
+
+            <div class="widget__textarea-wrapper">
+                                                <textarea class="widget__textarea js__find--textarea-for-err"
+                                                          placeholder="Жалобы и симптомы"></textarea>
+            </div>
+
+            <div class="widget__textarea-wrapper">
+                                                <textarea class="widget__textarea js__find--textarea-for-err"
+                                                          placeholder="Диагноз"></textarea>
+            </div>
+
+            <div class="">
+                                                <textarea class="widget__textarea"
+                                                          placeholder="Заключение врача"></textarea>
+            </div>
+
+            <div class="widget__textarea-wrapper">
+                                                <textarea class="widget__textarea js__find--textarea-for-err"
+                                                          placeholder="Рекомендации врача"></textarea>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- Prescribed medications -->
+<div class="row widget-consultation widget-consultation">
+
+    <!-- Prescribed medications -->
+    <div class="col-xs-36 text-center widget-consultation__line">
+        <span class="widget-consultation__title">Назначенные лекарства</span>
+    </div>
+
+    <div class="col-xs-36 text-center">
+        <a class="widget-consultation__link js__find-add-drug" href="">Добавить препарат</a>
+
+        <!-- build:include ../../components/drugs__add-drug-popup.html -->
+        This will be replaced by the content of drugs__add-drug-popup.html
+        <!-- /build -->
+
+    </div>
+
+</div>
+
+<!-- Dates of examination and return visit -->
+<div class="row widget-consultation">
+    <div class="col-xs-18 text-center non-padding-right widget-consultation__line widget-consultation__line--wo-margin2">
+        <span class="widget-consultation__title">Дата обследования</span>
+    </div>
+    <div class="col-xs-18 text-center non-padding-left widget-consultation__line widget-consultation__line--wo-margin2">
+        <span class="widget-consultation__title">Дата повторного визита</span>
+    </div>
+</div>
+
+<!-- Date links -->
+<div class="row">
+    <div class="col-xs-18 text-center">
+        <a class="widget-consultation__link widget-consultation__link--operator" href="#">19 сентября 2014</a>
+    </div>
+    <div class="col-xs-18 text-center">
+        <a class="widget-consultation__link widget-consultation__link--operator" href="#">Выбрать</a>
+    </div>
+</div>
+
+<!-- Button -->
+<div class="text-center">
+    <a class="operator-btn operator-btn--save" href="">Сохранить</a>
+</div>

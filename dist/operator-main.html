@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body inner-body--operator">
+
+<main>
+    <!-- Not users internal header -->
+<header class="operator-header container-fluid">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-18">
+                <a class="operator-header__logo" href="operator-main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-18 text-right">
+                <img class="operator-header__avatar" src="img/operator-avatar.png" alt="Оператор OnDoc: Васильева В."
+                     title="Оператор OnDoc: Васильева В."/>
+                <a class="operator-header__name" href="operator-profile.html">Васильева В.</a>
+                <a class="operator-header__logout" href="#"></a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+    <!-- Tasks number -->
+<section class="operator-tasks-num">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-7">
+                <div class="operator-tasks-num__number">120</div>
+                <div class="operator-tasks-num__status">Ожидает</div>
+            </div>
+
+            <div class="col-xs-7">
+                <div class="operator-tasks-num__number">34</div>
+                <div class="operator-tasks-num__status">В работе</div>
+            </div>
+
+            <div class="col-xs-7">
+                <div class="operator-tasks-num__number">1342</div>
+                <div class="operator-tasks-num__status">Выполнено</div>
+            </div>
+
+            <div class="col-xs-7">
+                <div class="operator-tasks-num__number">15</div>
+                <div class="operator-tasks-num__status">Отклонено</div>
+            </div>
+
+            <div class="col-xs-8">
+                <div class="operator-tasks-num__number">15321</div>
+                <div class="operator-tasks-num__status">Обработано мной</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Filter block -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-36 text-center operator-tasks-filer">
+
+            <span class="operator-tasks-filer__type">Статус</span>
+            <a class="operator-tasks-filer__value operator-tasks-filer__value--left arrow-down" href="#">Ожидают
+                обработки
+
+                <div class="operator-tasks-filer__dropdown display-none">
+                    <ul class="operator-tasks-filer__dropdown-list">
+                        <li class="operator-tasks-filer__dropdown-item">Ожидает обработки</li>
+                        <li class="operator-tasks-filer__dropdown-item">В работе</li>
+                        <li class="operator-tasks-filer__dropdown-item">Выполнена</li>
+                        <li class="operator-tasks-filer__dropdown-item">Отклонена</li>
+                    </ul>
+                </div>
+
+            </a>
+
+            <span class="operator-tasks-filer__type">Период</span>
+            <a class="operator-tasks-filer__value arrow-down" href="#">Месяц
+
+                <div class="operator-tasks-filer__dropdown operator-tasks-filer__dropdown--period display-none">
+                    <ul class="operator-tasks-filer__dropdown-list">
+                        <li class="operator-tasks-filer__dropdown-item">День</li>
+                        <li class="operator-tasks-filer__dropdown-item">Неделя</li>
+                        <li class="operator-tasks-filer__dropdown-item">Месяц</li>
+                        <li class="operator-tasks-filer__dropdown-item">Год</li>
+                    </ul>
+                </div>
+
+            </a>
+
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-36">
+            <table class="table table-hover operator-tasks-table">
+
+                <thead>
+                <tr>
+                    <th class="operator-tasks-table__title"># Заявки
+                    </td>
+                    <th class="operator-tasks-table__title">Дата/Время
+                    </td>
+                    <th class="operator-tasks-table__title">ID
+                    </td>
+                    <th class="operator-tasks-table__title">Вложений
+                    </td>
+                    <th class="operator-tasks-table__title">Статус
+                    </td>
+                    <th class="operator-tasks-table__title">Ожидание
+                    </td>
+                </tr>
+                </thead>
+
+                <tr class="operator-tasks-table__row" onclick="location.href='operator__task--view-static.html'">
+                    <td class="operator-tasks-table__item">232</td>
+                    <td class="operator-tasks-table__item">28.10.2014 15:56</td>
+                    <td class="operator-tasks-table__item">62768721</td>
+                    <td class="operator-tasks-table__item">1</td>
+                    <td class="operator-tasks-table__item operator-tasks-table__status operator-tasks-table__status--wait">
+                        Ожидает
+                    </td>
+                    <td class="operator-tasks-table__item">10 мин</td>
+                </tr>
+
+                <tr class="operator-tasks-table__row " onclick="location.href='operator__task--inwork.html'">
+                    <td class="operator-tasks-table__item">232</td>
+                    <td class="operator-tasks-table__item">28.10.2014 15:56</td>
+                    <td class="operator-tasks-table__item">62768721</td>
+                    <td class="operator-tasks-table__item">1</td>
+                    <td class="operator-tasks-table__item operator-tasks-table__status operator-tasks-table__status--progress">
+                        В работе
+                    </td>
+                    <td class="operator-tasks-table__item">10 мин</td>
+                </tr>
+
+                <tr class="operator-tasks-table__row" onclick="location.href='operator__task--done.html'">
+                    <td class="operator-tasks-table__item">232</td>
+                    <td class="operator-tasks-table__item">28.10.2014 15:56</td>
+                    <td class="operator-tasks-table__item">62768721</td>
+                    <td class="operator-tasks-table__item">1</td>
+                    <td class="operator-tasks-table__item operator-tasks-table__status operator-tasks-table__status--done">
+                        Выполнена
+                    </td>
+                    <td class="operator-tasks-table__item">10 мин</td>
+                </tr>
+
+                <tr class="operator-tasks-table__row" onclick="location.href='operator__task--rejected.html'">
+                    <td class="operator-tasks-table__item">232</td>
+                    <td class="operator-tasks-table__item">28.10.2014 15:56</td>
+                    <td class="operator-tasks-table__item">62768721</td>
+                    <td class="operator-tasks-table__item">1</td>
+                    <td class="operator-tasks-table__item operator-tasks-table__status operator-tasks-table__status--reject">
+                        Отклонена
+                    </td>
+                    <td class="operator-tasks-table__item">10 мин</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-36">
+
+            <div class="widget-pagination operator-pagination">
+                <div class="row">
+
+                    <!-- Show by -->
+                    <div class="col-xs-12">
+                         <span class="widget-pagination__show-by widget-pagination__show-by--dropdown operator-pagination--fz">Показывать по 30
+
+                            <!-- Month dropdown -->
+                            <div class="widget-pagination__dropdown display-none">
+                                <ul class="widget-pagination__dropdown-list">
+                                    <li class="widget-pagination__dropdown-item operator-pagination--fz"
+                                        data-value="10">10
+                                    </li>
+                                    <li class="widget-pagination__dropdown-item operator-pagination--fz"
+                                        data-value="20">20
+                                    </li>
+                                    <li class="widget-pagination__dropdown-item operator-pagination--fz"
+                                        data-value="30">30
+                                    </li>
+                                    <li class="widget-pagination__dropdown-item operator-pagination--fz"
+                                        data-value="50">50
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </span>
+                    </div>
+
+                    <!-- Numeration -->
+                    <div class="col-xs-18  pull-right">
+                        <ul class="widget-pagination__numeration-list">
+                            <li class="widget-pagination__numeration-item"><a
+                                    class="widget-pagination__numeration-link operator-pagination--fz widget-pagination__numeration-link--active"
+                                    href="#">1</a></li>
+                            <li class="widget-pagination__numeration-item"><a
+                                    class="widget-pagination__numeration-link operator-pagination--fz" href="#">2</a>
+                            </li>
+                            <li class="widget-pagination__numeration-item"><a
+                                    class="widget-pagination__numeration-link operator-pagination--fz" href="#">3</a>
+                            </li>
+                            <li class="widget-pagination__numeration-item"><a
+                                    class="widget-pagination__numeration-link operator-pagination--fz" href="#">4</a>
+                            </li>
+                            <li class="widget-pagination__numeration-item"><a
+                                    class="widget-pagination__numeration-link operator-pagination--fz" href="#">5</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- PAGE FOOTER-->
+<footer class="main-footer main-footer--operator">
+    <div class="container">
+        <div class="row">
+            <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+        </div>
+    </div>
+</footer>
+<!-- / PAGE FOOTER-->
+
+<!-- JavaScript-->
+<script src="js/main.min.js"></script>
+<!-- / JavaScript -->
+
+</main>
+
+</body>
+</html>

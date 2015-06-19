@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+
+<!-- PAGE CONTENT-->
+<div class="main-page">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left Sidebar -->
+<aside class="col-xs-7">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active"
+                                                              href="health.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="medkarta.html">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor"
+                                                              href="docs.html">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+
+            <!-- Right page block-->
+            <div class="col-xs-29">
+
+                <!-- Content Header - Filter -->
+                <div class="row content-header">
+
+                    <div class="col-xs-4">
+                        <a class="content-header__back" href="#">Назад</a>
+                    </div>
+
+                    <div class="col-xs-26 text-center">
+                        <a class="content-header__sort-link content-header__sort-link--filter arrow-down" href="#">Фильтр</a>
+                    </div>
+
+                    <!-- Medcard filter block -->
+<div class="col-xs-36 display-none medcard-filter">
+
+    <div class="col-xs-36">
+        <input class="medcard-filter__input" type="text" placeholder="Введите ключевое слово"/>
+    </div>
+
+    <div class="col-xs-36">
+        <a class="medcard-filter__link" href="">Специализации</a>
+
+        <!-- Choose specialisation Pop-UP -->
+        <div class="medcard-spec__wrapper display-none">
+            <div class="row medcard-spec">
+
+                <span class="medcard-spec__close"></span>
+
+                <h2 class="col-xs-36 non-padding-left non-padding-right medcard-spec__title">Выберите специализации</h2>
+
+                <!-- Choose specialisation Pop-UP -->
+<div class="medcard-spec__wrapper display-none">
+    <div class="row medcard-spec">
+
+        <span class="medcard-spec__close"></span>
+
+        <h2 class="col-xs-36 medcard-spec__title">Выберите специализации</h2>
+
+        <!-- Specialisations -->
+        <div class="col-xs-36 medcard-spec__inner-wrapper">
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+            <!-- One letter section -->
+            <div class="col-xs-36 medcard-spec__letter-section">
+
+                <div class="non-padding-left-right col-xs-36">
+                    <h2 class="medcard-spec__letter">Д</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-36">
+
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item">Дерматовенерология</span>
+                        <span class="medcard-spec__item">Андрология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Детская стоматология</span>
+                        <span class="medcard-spec__item medcard-spec__item--checked">Анестезиология и реаниматология</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- / One letter section -->
+
+        </div>
+        <!-- / Specialisations -->
+
+        <div class="col-xs-36 text-center">
+            <input type="submit" class="medcard-spec__btn" value="ОК"/>
+        </div>
+
+    </div>
+</div>
+<!-- / Choose specialisation Pop-UP -->
+<!--TODO: rewrite css to independent style-->
+
+                <div class="col-xs-36 text-center">
+                    <input type="submit" class="medcard-spec__btn" value="ОК"/>
+                </div>
+
+            </div>
+        </div>
+        <!-- / Choose specialisation Pop-UP -->
+
+        <span class="medcard-filter__tag">Акушерство <span class="medcard-filter__tag-close"></span> </span>
+        <span class="medcard-filter__tag">Аллергология <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Вертебрология <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Восстановительная медицина <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Вертебрология <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Вертебрология <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Вертебрология <span class="medcard-filter__tag-close"></span></span>
+        <span class="medcard-filter__tag">Вертебрология <span class="medcard-filter__tag-close"></span></span>
+    </div>
+
+    <div class="col-xs-36">
+
+        <div class="row">
+
+            <div class="col-xs-18">
+                <a class="medcard-filter__date-link" href="#">21/05/2014 - 21/06/2014</a>
+            </div>
+
+            <div class="col-xs-18">
+                <input type="submit" class="pull-right medcard-filter__find" value="Найти"/>
+                <a href="#" class="pull-right medcard-filter__tag medcard-filter__tag--clear"> <span class="medcard-filter__tag-close medcard-filter__tag-close--clear"></span> Очистить фильтры</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- / Medcard filter block -->
+
+                </div>
+                <!-- / Content Header - Filter -->
+
+
+                <!-- Content -->
+                <div class="widget row">
+
+                    <!-- Widget header -->
+                    <div class="row">
+                        <div class="col-xs-36 widget-header text-center">
+                            <div class="bottom-line-grey">
+                                <p class="widget-header__text">Консультации</p>
+                                <a class="widget-btn widget-btn--plus pull-right" href="medkarta_konsultacii_add.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Widget header -->
+
+
+                    <!-- Widget body -->
+                    <div class="row">
+
+                        <!-- Left tabs block -->
+<div class="col-xs-11 widget__left-column non-padding-right">
+
+    <!-- Tab -->
+    <div class="widget-tab widget-tab--active bottom-line-grey">
+        <h3 class="widget-tab__title">Новая консультация</h3>
+        <p class="widget-tab__description">Без описания</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">ЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОРЛОР</h3>
+        <p class="widget-tab__description">Острый ринит и аллергический отекОстрый ринит и аллергический отекОстрый ринит и аллергический отек</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Невролог</h3>
+        <p class="widget-tab__description">Воспаление узла коленцы</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Терапевт</h3>
+        <p class="widget-tab__description">Остарая респираторная инфекция</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Гастроэнтеролог</h3>
+        <p class="widget-tab__description">Дискенезия желчевыводящих путей</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Терапевт</h3>
+        <p class="widget-tab__description">Остарая респираторная инфекция</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">ЛОР</h3>
+        <p class="widget-tab__description">Острый ринит и аллергический отек</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Невролог</h3>
+        <p class="widget-tab__description">Воспаление узла коленца</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Терапевт</h3>
+        <p class="widget-tab__description">Остарая респираторная инфекция</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+    <!-- Tab -->
+    <div class="widget-tab bottom-line-grey">
+        <h3 class="widget-tab__title">Терапевт</h3>
+        <p class="widget-tab__description">Остарая респираторная инфекцияинфекцияинфекцияинфекцияинфекцияинфекция</p>
+        <div class="row">
+            <div class="col-xs-20">
+                <span class="widget-tab__clinic pull-left">Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника Клиника</span>
+            </div>
+            <div class="col-xs-16">
+                <time class="widget-tab__date pull-right">19.05.2014</time>
+            </div>
+        </div>
+    </div>
+    <!-- / Tab -->
+
+</div>
+<!-- / Left tabs block -->
+
+                        <!-- Right column block -->
+                        <div class="col-xs-25 widget__right-column">
+
+                            <!-- Right column title -->
+                            <div class="row">
+                                <div class="col-xs-36">
+                                    <p class="text-center widget-right-head__title">Редактирование записи</p>
+                                </div>
+                            </div>
+
+                            <!-- Right column order links -->
+                            <div class="row">
+
+                                <div class="widget-right-head__list">
+
+                                    <div class="col-xs-12 right-line-grey widget-right-head__list-item">
+                                        <a class="widget-right-head__link" href="#" id="js-find-clinic">Военно-медицинская академия имени Мечникова</a>
+                                    </div>
+
+                                    <!-- clinic select Pop-Up -->
+<div class="medcard-clinic__wrapper display-none">
+    <div class="row medcard-clinic">
+
+        <span class="medcard-clinic__close"></span>
+
+        <!-- Pop-Up Header -->
+        <div class="col-xs-36 medcard-clinic__head">
+
+            <h2 class="medcard-clinic__title">Выберите клинику</h2>
+
+            <div class="medcard-clinic__icon-line">
+                <a class="medcard-clinic__link medcard-clinic__link--clinic medcard-clinic__link--active" href="#"></a>
+                <a class="medcard-clinic__link medcard-clinic__link--clinic-liked" href="#"></a>
+                <a class="medcard-clinic__link medcard-clinic__link--clinic-fave" href="#"></a>
+                <a class="medcard-clinic__icon-plus" href="#"></a>
+            </div>
+
+            <div class="medcard-clinic__search">
+                <input class="medcard-clinic__search-input" type="text" placeholder="Поиск по названию"/>
+            </div>
+
+        </div>
+        <!-- / Pop-Up Header -->
+
+        <!-- Pop-Up clinic search Body -->
+        <div class="col-xs-36 medcard-clinic__body">
+
+            <!-- Content of clinic find state -->
+            <div class="">
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/clinic-logo-2.png" alt="Clinic logo"/>
+                        <span class="medcard-clinic__avatar-ondocked"></span>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">СМТ</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">ГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковскаяГорьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+                <!-- clinic item -->
+                <div class="row medcard-clinic__item">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-clinic__avatar" src="img/medici-logo.jpg" alt="Clinic logo"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-clinic__clinic-name">MEDICI</h3>
+
+                        <div class="row">
+                            <div class="col-xs-36">
+                                <span class="medcard-clinic__info medcard-clinic__info--mappin">Наб. канала Грибоедова, 60</span>
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--subway">Горьковская</span>-->
+                            </div>
+                            <div class="col-xs-36">
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--exp"></span>-->
+                                <!--<span class="medcard-clinic__info medcard-clinic__info--worktime">ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00ПН- ВС 8:00-21:00</span>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / clinic item -->
+
+
+            </div>
+            <!-- / Content of clinic find state -->
+
+            <!-- Content of clinic add state -->
+            <div class="display-none">
+
+                <div class="col-xs-36 text-center">
+                    <span class="medcard-clinic__notfind-img"></span>
+                </div>
+
+                <div class="col-xs-36 text-center">
+                    <p class="medcard-clinic__notfind-text">
+                        Такая клиника не найдена. <br/>
+                        Хотите добавить?
+                    </p>
+                </div>
+
+                <div class="col-xs-36 text-center">
+                    <a class="medcard-clinic__notfind-btn" href="#">Добавить клинику</a>
+                </div>
+
+            </div>
+            <!-- / Content of clinic add state -->
+
+        </div>
+        <!-- / Pop-UP Body -->
+
+        <!-- Pop-Up clinic Add Body-->
+        <div class="col-xs-36 medcard-clinic__add-body display-none">
+
+            <h2 class="medcard-clinic__title">Добавление клиники</h2>
+
+            <p class="medcard-clinic__add-text">
+                Отправьте запрос на добавление новой клиники. Мы проверим данные, заполним профиль и добавим ее в общий список.
+            </p>
+
+            <form class="medcard-clinic__add-form" action="#">
+                <input class="medcard-clinic__add-input" type="text" placeholder="Название клиники"/>
+                <div class="medcard-clinic__up-lined"><input class="medcard-clinic__add-input" type="text" placeholder="Город" value="Москва"/></div>
+                <div class=""><input class="medcard-clinic__add-input" type="text" placeholder="Адрес"/></div>
+                <div class="medcard-clinic__down-lined"><input class="medcard-clinic__add-input" type="text" placeholder="Телефон (необязательно)"/></div>
+            </form>
+
+            <div class="text-center col-xs-36">
+                <a class="medcard-clinic__add-btn-no" href="#">Отмена</a>
+                <input class="medcard-clinic__add-btn-save" type="submit" value="Сохранить"/>
+            </div>
+
+        </div>
+        <!-- Pop-Up clinic Add -->
+
+    </div>
+</div>
+<!-- / clinic select Pop-Up -->
+
+                                    <div class="col-xs-12 right-line-grey widget-right-head__list-item">
+                                        <a class="widget-right-head__link" href="#">Гастроэнтерология</a>
+                                    </div>
+
+                                    <div class="col-xs-12 widget-right-head__list-item">
+                                        <a class="widget-right-head__link" id="js-find-doctor" href="#">Николаев В.В.</a>
+                                    </div>
+
+                                    <!-- Doctor select Pop-Up -->
+<div class="medcard-doctor__wrapper display-none">
+    <div class="row medcard-doctor text-left">
+
+        <span class="medcard-doctor__close"></span>
+
+        <!-- Pop-Up Header -->
+        <div class="col-xs-36 medcard-doctor__head">
+
+            <h2 class="medcard-doctor__title">Выберите врача</h2>
+
+            <div class="medcard-doctor__icon-line">
+                <a class="medcard-doctor__link medcard-doctor__link--doc medcard-doctor__link--active" href="#"></a>
+                <a class="medcard-doctor__link medcard-doctor__link--doc-liked" href="#"></a>
+                <a class="medcard-doctor__link medcard-doctor__link--doc-fave" href="#"></a>
+                <a class="medcard-doctor__icon-plus" href="#"></a>
+            </div>
+
+            <div class="medcard-doctor__search">
+                <input class="medcard-doctor__search-input" type="text" placeholder="Поиск по ФИО"/>
+            </div>
+
+        </div>
+        <!-- / Pop-Up Header -->
+
+        <!-- Pop-Up Doctor search Body -->
+        <div class="col-xs-36 medcard-doctor__body">
+
+            <!-- Content of Doctor find state -->
+            <div class="medcard-doctor__doc-find-wrapper">
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+
+                <!-- Doctor item -->
+                <div class="row medcard-doctor__doc">
+
+                    <div class="col-xs-4 text-left">
+                        <img class="medcard-doctor__avatar" src="img/avatar-doc.png" alt="Doctor avatar"/>
+                    </div>
+
+                    <div class="col-xs-32">
+                        <h3 class="medcard-doctor__doc-name">Сергеев Владимир Иванович</h3>
+                        <p class="medcard-doctor__doc-specs">Гастроэнтеролог, Физиотерапевт, Диетолог</p>
+
+                        <div class="row">
+                            <div class="col-xs-18">
+                                <span class="medcard-doctor__info medcard-doctor__info--rank">Врач высшей категории</span>
+                            </div>
+                            <div class="col-xs-18 non-padding-left">
+                                <span class="medcard-doctor__info medcard-doctor__info--clinic">СПБ медлайн, Добромед</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Doctor item -->
+            </div>
+            <!-- / Content of Doctor find state -->
+
+            <!-- Content of Doctor add state -->
+            <div class="medcard-doctor__notfind-wrapper display-none">
+
+                <div class="col-xs-36 text-center">
+                    <span class="medcard-doctor__notfind-img"></span>
+                </div>
+
+                <div class="col-xs-36 text-center">
+                    <p class="medcard-doctor__notfind-text">
+                        Такой врач не найден. <br/>
+                        Хотите добавить?
+                    </p>
+                </div>
+                
+                <div class="col-xs-36 text-center">
+                    <a class="medcard-doctor__notfind-btn" href="#">Добавить врача</a>
+                </div>
+
+            </div>
+            <!-- / Content of Doctor add state -->
+
+        </div>
+        <!-- / Pop-UP Body -->
+
+        <!-- Pop-Up Doctor Add Body-->
+        <div class="col-xs-36 medcard-doctor__add-body display-none">
+
+            <h2 class="medcard-doctor__title">Добавление врача</h2>
+
+            <p class="medcard-doctor__add-text">
+                Отправьте запрос на добавление нового врача. Мы проверим данные, заполним профиль и добавим его в общий список.
+            </p>
+
+            <form class="medcard-doctor__add-form" action="#">
+                <input class="medcard-doctor__add-input" type="text" placeholder="Фамилия"/>
+                <input class="medcard-doctor__add-input" type="text" placeholder="Имя"/>
+                <input class="medcard-doctor__add-input" type="text" placeholder="Отчество"/>
+                <input class="medcard-doctor__add-input" type="text" placeholder="Специализация"/>
+                <div class="medcard-doctor__up-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Город" value="Москва"/></div>
+                <div class="medcard-doctor__down-lined"><input class="medcard-doctor__add-input" type="text" placeholder="Контактный телефон"/></div>
+            </form>
+
+            <div class="text-center col-xs-36">
+                <a class="medcard-doctor__add-btn-no" href="#">Отмена</a>
+                <input class="medcard-doctor__add-btn-save" type="button" value="Сохранить"/>
+            </div>
+
+        </div>
+        <!-- Pop-Up Doctor Add -->
+
+    </div>
+</div>
+<!-- / Doctor select Pop-Up -->
+
+                                </div>
+
+                            </div>
+
+                            <!-- Description -->
+                            <div class="row widget-consultation widget-consultation--wo-margin">
+
+                                <div class="col-xs-36 text-center widget-consultation__line">
+                                    <span class="widget-consultation__title">Описание</span>
+                                </div>
+
+                                <div class="col-xs-36 non-padding-left non-padding-right">
+                                    <form class="widget__form" action="" id="form">
+
+                                        <div class="widget__textarea-wrapper">
+                                            <textarea class="widget__textarea js__find--textarea-for-err">Болит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит живот</textarea>
+                                        </div>
+
+                                        <div class="widget__textarea-wrapper">
+                                            <textarea class="widget__textarea js__find--textarea-for-err">Болит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит животБолит живот</textarea>
+                                        </div>
+
+                                        <div class="widget__textarea-wrapper">
+                                            <textarea class="widget__textarea js__find--textarea-for-err"
+                                                      placeholder="Диагноз">Гастрит</textarea>
+                                        </div>
+
+                                        <div class="">
+                                            <textarea class="widget__textarea" placeholder="Заключение врача">Гастрит, панкреатит</textarea>
+                                        </div>
+
+                                        <div class="widget__textarea-wrapper">
+                                            <textarea class="widget__textarea js__find--textarea-for-err"
+                                                      placeholder="Рекомендации врача">Мезим 3 раза в день, исключить острое</textarea>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <!-- Prescribed medications -->
+                            <div class="row widget-consultation widget-consultation">
+
+                                <!-- Prescribed medications -->
+                                <div class="col-xs-36 text-center widget-consultation__line">
+                                    <span class="widget-consultation__title">Назначенные лекарства</span>
+                                </div>
+
+                                <!-- Drugs Item-->
+                                <div class="col-xs-36 widget-consultation__drugs">
+                                    <a class="widget-consultation__link widget-consultation__link--smaller" href="">Мезим</a>
+                                    <a class="widget-btn widget-btn--delete-circle-drugs" href="#" title="Delete"></a>
+                                    <div class="row">
+                                        <div class="col-xs-36">
+                                            <span class="widget-consultation__subtext">10 мг</span>
+                                            <span class="widget-consultation__subtext">3 р/д</span>
+                                            <span class="widget-consultation__subtext">18 дн.</span>
+                                            <span class="widget-consultation__subtext">ПН, СР, ПТ</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Drugs Item-->
+                                <div class="col-xs-36 widget-consultation__drugs">
+                                    <a class="widget-consultation__link widget-consultation__link--smaller" href="">Мотилиум</a>
+                                    <a class="widget-btn widget-btn--delete-circle-drugs" href="#" title="Delete"></a>
+                                    <div class="row">
+                                        <div class="col-xs-36">
+                                            <span class="widget-consultation__subtext">10 мг</span>
+                                            <span class="widget-consultation__subtext">3 р/д</span>
+                                            <span class="widget-consultation__subtext">18 дн.</span>
+                                            <span class="widget-consultation__subtext">ПН - ВС</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Dates of examination and return visit -->
+                            <div class="row widget-consultation">
+                                <div class="col-xs-18 text-center widget-consultation__line widget-consultation__line--wo-margin">
+                                    <span class="widget-consultation__title">Дата обследования</span>
+                                </div>
+                                <div class="col-xs-18 text-center widget-consultation__line widget-consultation__line--wo-margin">
+                                    <span class="widget-consultation__title">Дата повторного визита</span>
+                                </div>
+                            </div>
+
+                            <!-- Date links -->
+                            <div class="row">
+                                <div class="col-xs-18 text-center">
+                                    <a class="widget-consultation__link" href="#">19 сентября 2014</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+                                <div class="col-xs-18 text-center">
+                                    <a class="widget-consultation__link" href="#">Выбрать</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+                            </div>
+
+                            <!-- Horizontal line -->
+                            <div class="row widget-consultation widget-consultation--wo-margin">
+                                <div class="col-xs-36 text-center widget-consultation__line widget-consultation__line--wo-margin">
+                                    <span class="widget-consultation__title"></span>
+                                </div>
+                            </div>
+
+                            <!-- Form input "My Notes"-->
+                            <div class="row">
+                                <div class="col-xs-36 non-padding-left non-padding-right">
+                                    <textarea class="widget__textarea" form="form" placeholder="Мои заметки"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Upload photo -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center widget__notes-img__notes-mb js-uploaded-docs">
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/avatar-doc.png" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/avatar-doc.png" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Uploaded image -->
+                                    <div class="widget__notes-img">
+                                        <a class="widget-btn widget-btn--delete-circle" href="#"></a>
+                                        <a class="lightbox-custom" href="img/doc-scan.jpg" data-toggle="lightbox" data-gallery="uploaded-docs" data-parent=".js-uploaded-docs" data-title="Заголовок">
+                                            <img class="widget__notes-img-item" src="img/doc-scan.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Upload -->
+                                    <label class="widget__upload">
+                                        <span class="widget__upload-icon"></span>
+                                        <input type="file" onchange="this.previousSibling.previousSibling.innerHTML = this.value; this.val().replace(/^.*\\/, ""); " class="widget__upload-input" size="1"/>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <!-- Consultation errors -->
+<section class="row medcard-errors display-none">
+    <div class="col-xs-36">
+        <h3 class="medcard-errors__title">* Для создания обследования заполните недостающие данные</h3>
+        <ul class="medcard-errors__list">
+            <li class="medcard-errors__item">Выберите клинику</li>
+            <li class="medcard-errors__item">Выберите специализацию</li>
+            <li class="medcard-errors__item">Выберите врача</li>
+            <li class="medcard-errors__item">Необходимо указать диагноз</li>
+            <li class="medcard-errors__item">Необходимо указать дату обследования</li>
+        </ul>
+    </div>
+</section>
+
+                            <!-- Horizontal line -->
+                            <div class="row widget-consultation widget-consultation--wo-margin">
+                                <div class="col-xs-36 text-center widget-consultation__line widget-consultation__line--wo-margin">
+                                    <span class="widget-consultation__title"></span>
+                                </div>
+                            </div>
+
+                            <!-- Submit form -->
+                            <div class="row">
+                                <div class="col-xs-36 text-center">
+                                    <input type="submit" form="form" class="widget-btn widget-btn--submit-no" value="Отмена"/>
+                                    <input type="submit" form="form" class="widget-btn widget-btn--submit-yes" value="OK"/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- / Right form block -->
+
+
+                    </div>
+                    <!-- / Widget body -->
+                </div>
+                <!-- / Content -->
+
+            </div>
+            <!-- / Right page block-->
+
+        </div>
+    </div>
+</div>
+<!-- / PAGE CONTENT-->
+
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+
+</body>
+</html>

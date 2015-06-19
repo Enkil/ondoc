@@ -1,0 +1,269 @@
+.stoma {
+
+  &__tab-doc {
+    margin-bottom: 12px;
+  }
+
+  &__tab-doc-title {
+    margin-top: 10px;
+  }
+
+  &__nav-link {
+    .gotham-m;
+    font-size: 14px;
+    color: @blue-color;
+    line-height: 25px;
+    padding: 1px 15px 0;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &--active, &:hover, &:focus {
+      background-color: @blue-color;
+      color: @white-color;
+    }
+  }
+
+  &__status {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__status-item {
+    display: table-cell;
+    font-size: 14px;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    &--healthy:before {
+      border: 1px solid @grey-color-2;
+    }
+    &--disinfected:before {
+      background-color: @green-color-2;
+    }
+    &--requires-treatment:before {
+      background-color: #ed7524;
+    }
+    &--implant:before {
+      background-color: #89d1e0;
+    }
+    &--deleted:before {
+      background-color: @grey-color-2;
+    }
+
+    &--thirst {
+      text-align: left;
+    }
+
+    &--last {
+      text-align: right;
+    }
+  }
+}
+
+.stoma-table {
+  width: 100%;
+
+  &__row {
+    border-bottom: 1px solid @grey-color-1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--popup-planned:last-child {
+      border-bottom: 1px solid @grey-color-1;
+    }
+  }
+
+  &__tooth {
+    width: 50px;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    vertical-align: top;
+  }
+
+  &__tooth-img {
+    margin-right: 20px;
+  }
+
+  &__treatment {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+    vertical-align: top;
+    padding-bottom: 5px;
+    padding-top: 20px;
+
+    &--popup-planned {
+      width: 100%;
+      padding-right: 0;
+      vertical-align: middle;
+    }
+  }
+
+  &__treatment-title {
+    .gotham-m;
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  &__treatment-text {
+    font-size: 13px;
+
+    &--popup-planned {
+      font-size: 14px;
+    }
+  }
+}
+
+.stoma-scheme {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 50px;
+
+  &__row {
+  }
+
+  &__tooth {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    position: relative;
+  }
+
+  &__img {
+
+  }
+
+  &__num {
+    text-align: center;
+    font-size: 12px;
+
+  }
+
+  &__popup-body {
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: @white-color;
+    box-shadow: 0 0 13px 2px @grey-color-2;
+    text-align: left;
+    line-height: 1;
+
+    &:before {
+      position: absolute;
+      top: -14px;
+      content: '';
+      border: 7px solid transparent;
+      border-bottom: 7px solid @white-color;
+    }
+  }
+
+  &__popup-title {
+    .gotham-m;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &__popup-text {
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+.stoma-popup {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: @grey-color-5;
+
+  &__body {
+    position: absolute;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 495px;
+    display: table;
+    margin: auto;
+    padding: 20px;
+    border-radius: 17px;
+    background-color: @white-color;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    .gotham-m;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__btn {
+    .gotham-m;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 35px;
+    color: @blue-color;
+    text-align: center;
+    width: 130px;
+    border: 1px solid @blue-color;
+    border-radius: 25px;
+    transition: 0.3s ease all;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: @blue-color;
+      color: @white-color;
+    }
+  }
+}

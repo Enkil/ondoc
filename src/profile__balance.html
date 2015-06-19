@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<!-- build:include html/components/head.html -->
+This will be replaced by the content of head.html
+<!-- /build -->
+<body class="inner-body">
+
+<!-- build:include html/components/header.html -->
+This will be replaced by the content of header.html
+<!-- /build -->
+
+
+<!-- main -->
+<div class="main-page">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- build:include html/components/profile-left-sidebar.html -->
+            This will be replaced by the content of profile-left-sidebar.html
+            <!-- /build -->
+
+            <section class="col-xs-28">
+                <div class="row profile-widget">
+
+                    <!-- Current balance -->
+                    <div class="col-xs-36">
+                        <div class="profile-balance__title">
+                            Текущий баланс: <span>0</span> <span class="ruble">a&#8203;</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-36 non-padding-left-right">
+                        <hr class="profile-balance__line"/>
+                    </div>
+
+                    <!-- Add money -->
+                    <div class="col-xs-36 profile-balance__subtitle">Пополнение</div>
+
+                    <div class="col-xs-36 profile-balance__money-add">
+                        <div class="row">
+                            <div class="col-xs-5 col-lg-7 profile-balance__text profile-balance__text--first">Стоимость
+                                обработки<br/>1 документа
+                            </div>
+                            <div class="col-xs-3 profile-balance__text profile-balance__text--bold">
+                                <span>59</span>
+                                <span class="ruble">a&#8203;</span>
+                            </div>
+                            <div class="col-xs-5 col-lg-4 profile-balance__text">Количество <br/> документов</div>
+                            <div class="col-xs-3 non-padding-left-right"><input
+                                    class="user-info__input user-info__input--center" type="text" placeholder="10"/>
+                            </div>
+                            <div class="col-xs-4 profile-balance__text">Итоговая стоимость</div>
+                            <div class="col-xs-3 profile-balance__text profile-balance__text--bold">
+                                <span>590</span>
+                                <span class="ruble">a&#8203;</span>
+                            </div>
+                            <div class="col-xs-4 profile-balance__text">Стоимость обработки</div>
+                            <div class="col-xs-8 non-padding-left-right"><a class="profile-balance__btn" href="#">Пополнить
+                                баланс</a></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-36 non-padding-left-right">
+                        <hr class="profile-balance__line"/>
+                    </div>
+
+                    <!-- Transactions filter -->
+                    <div class="profile-balance__filter">
+                        <div class="col-xs-8 col-lg-7 profile-balance__subtitle">История транзакций</div>
+                        <div class="col-xs-17 col-lg-20">
+                            <div class="profile-balance__filter-btns">
+                                <a class="profile-balance__filter-btn profile-balance__filter-btn--active"
+                                   href="#">Все</a>
+                                <a class="profile-balance__filter-btn" href="#">Оплата</a>
+                                <a class="profile-balance__filter-btn" href="#">Возврат</a>
+                                <a class="profile-balance__filter-btn" href="#">Пополнение</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-11 col-lg-8 pull-right"><a href="#" class="profile-balance__link">15 мая
+                            2014</a> <span class="profile-balance__link-symbol">-</span> <a href="#"
+                                                                                            class="profile-balance__link">20
+                            июня 2014</a></div>
+                    </div>
+
+                    <!-- Transactions -->
+                    <div class="col-xs-36 transactions">
+                        <table class="transactions__table table table-hover">
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                            <tr class="transactions__tr">
+                                <td class="transactions__td transactions__td--date">21 / 02 / 2014</td>
+                                <td class="transactions__td">Оплата оцифровки</td>
+                                <td class="transactions__sum"><span>59</span> <span class="ruble">a&#8203;</span></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="col-xs-36">
+
+                        <div class="widget-pagination transactions__pagination">
+                            <div class="row">
+
+                                <!-- Show by -->
+                                <div class="col-xs-12">
+                                             <span class="widget-pagination__show-by widget-pagination__show-by--dropdown">Показывать по 30
+
+                                                <!-- Month dropdown -->
+                                                <div class="widget-pagination__dropdown display-none">
+                                                    <ul class="widget-pagination__dropdown-list">
+                                                        <li class="widget-pagination__dropdown-item" data-value="10">
+                                                            10
+                                                        </li>
+                                                        <li class="widget-pagination__dropdown-item" data-value="20">
+                                                            20
+                                                        </li>
+                                                        <li class="widget-pagination__dropdown-item" data-value="30">
+                                                            30
+                                                        </li>
+                                                        <li class="widget-pagination__dropdown-item" data-value="50">
+                                                            50
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                             </span>
+                                </div>
+
+                                <!-- Numeration -->
+                                <div class="col-xs-18  pull-right">
+                                    <ul class="widget-pagination__numeration-list">
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link widget-pagination__numeration-link--active"
+                                                href="#">1</a></li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">2</a>
+                                        </li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">3</a>
+                                        </li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">4</a>
+                                        </li>
+                                        <li class="widget-pagination__numeration-item"><a
+                                                class="widget-pagination__numeration-link" href="#">5</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- build:include html/components/footer.html -->
+This will be replaced by the content of footer.html
+<!-- /build -->
+
+</body>
+</html>

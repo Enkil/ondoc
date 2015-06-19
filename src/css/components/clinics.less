@@ -1,0 +1,719 @@
+.clinics{
+
+  &__header{
+    margin-bottom: 15px;
+  }
+
+  &__head-link{
+    .gotham-m;
+    font-size: 15px;
+    line-height: 35px;
+    display: inline-block;
+    border-radius: 25px;
+    padding-right: 15px;
+    padding-left: 20px;
+
+    &--docs{
+      &:before{
+        content: "";
+        width: 18px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-docs--blue.png") no-repeat;
+      }
+    }
+
+    &--clinics {
+      &:before {
+        content: "";
+        width: 19px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics--blue.png") no-repeat;
+      }
+    }
+
+    &--list{
+      padding: 0;
+      padding-left: 12px;
+      background-color: transparent!important;
+
+      &:hover{
+        background-color: transparent!important;
+      }
+
+      &:before {
+        content: "";
+        width: 19px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-list.png") no-repeat;
+      }
+    }
+
+    &--onmap{
+      padding: 0;
+      background-color: transparent!important;
+
+      &:hover{
+        background-color: transparent!important;
+      }
+
+      &:before {
+        content: "";
+        width: 19px;
+        height: 21px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-onmap--grey.png") no-repeat;
+      }
+    }
+
+    &--all{
+      &:before {
+        content: "";
+        width: 23px;
+        height: 22px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics-all--blue.png") no-repeat;
+      }
+    }
+
+    &--my{
+      &:before {
+        content: "";
+        width: 24px;
+        height: 22px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics-my--blue.png") no-repeat;
+      }
+    }
+
+    &--fave{
+      &:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/icon-clinics-fave--blue.png") no-repeat;
+      }
+    }
+
+    &--active{
+      color: @white-color;
+      background-color: @blue-color;
+
+      &:active, &:focus{
+        color: @white-color;
+        background-color: @blue-color;
+      }
+
+      &.clinics__head-link--docs:before{
+        background-image: url("../img/icon-docs--white.png");
+      }
+
+      &.clinics__head-link--clinics:before{
+        background-image: url("../img/icon-clinics--white.png");
+      }
+
+      &.clinics__head-link--list:before{
+        background-image: url("../img/icon-list--blue.png");
+      }
+
+      &.clinics__head-link--onmap:before{
+        background-image: url("../img/icon-onmap--blue.png");
+      }
+
+      &.clinics__head-link--all:before{
+        background-image: url("../img/icon-clinics-all--white.png");
+      }
+
+      &.clinics__head-link--my:before{
+        background-image: url("../img/icon-clinics-my--white.png");
+      }
+
+      &.clinics__head-link--fave:before{
+        background-image: url("../img/icon-clinics-fave--white.png");
+      }
+    }
+
+    &:hover {
+      color: @white-color;
+      background-color: @blue-color;
+
+      &.clinics__head-link--docs:before{
+        background-image: url("../img/icon-docs--white.png");
+      }
+
+      &.clinics__head-link--clinics:before{
+        background-image: url("../img/icon-clinics--white.png");
+      }
+
+      &.clinics__head-link--list:before{
+        background-image: url("../img/icon-list--blue.png");
+      }
+
+      &.clinics__head-link--onmap:before{
+        background-image: url("../img/icon-onmap--blue.png");
+      }
+
+      &.clinics__head-link--all:before{
+        background-image: url("../img/icon-clinics-all--white.png");
+      }
+
+      &.clinics__head-link--my:before{
+        background-image: url("../img/icon-clinics-my--white.png");
+      }
+
+      &.clinics__head-link--fave:before{
+        background-image: url("../img/icon-clinics-fave--white.png");
+      }
+    }
+
+    &--filter{
+
+      &:before{
+        content: "";
+        width: 10px;
+        height: 12px;
+        padding-right: 16px;
+        display: inline-block;
+        background: url("../img/icon-filter.png") no-repeat;
+      }
+
+      &:hover{
+        color: lighten(@blue-color, 8);
+        background-color: transparent!important;
+      }
+    }
+  }
+
+  &__search{
+    display: inline-block;
+    width: 17px;
+    height: 28px;
+
+    background-image: url("../img/icon-search--blue.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__search-input{
+    .gotham;
+    .placeholder-effect(23px);
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 15px;
+    display: inline-block;
+    background-color: @white-color;
+    height: 33px;
+    border: 1px solid @grey-color-2;
+    border-radius: 14px;
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat;
+    background-position: 8px 50%;
+  }
+
+  &__widget-header{
+    .bottom-line-grey;
+    height: 60px;
+    padding-top: 12px;
+  }
+
+  &__tab {
+    .bottom-line-grey;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 15px 8px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+
+    &:hover .clinics__tab-title{  color: @red-color;  }
+
+    &--active{
+      background-color: @lightblue-bg;
+    }
+
+    &-ondocked{
+      position: absolute;
+      top: 30px;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      padding: 0;
+      left: 8px;
+      border: none;
+      border-radius: 50%;
+      background: url('../img/icon-doc--ondocked.png') no-repeat;
+    }
+  }
+
+  &__tab-title{
+    .gotham-m;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  &__tab-img{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid @grey-color-2;
+    border-radius: 50%;
+    background-color: @white-color;
+
+    padding: 1px;
+
+    position: relative;
+
+  }
+
+  &__enroll-link{
+    .gotham-m;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid @blue-color;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 15px 0 4px 0;
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 14px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icon-doc-enroll.png") no-repeat;
+    }
+  }
+
+  &__avatar{
+    width: 100px;
+    height: 100px;
+    border: 1px solid @grey-color-2;
+    border-radius: 50%;
+    margin-top: 9px;
+    padding: 1px;
+    position: relative;
+
+    &--ondocked{
+      position: absolute;
+      bottom: 15px;
+      left: 5px;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: url('../img/icon-doc--ondocked.png') no-repeat;
+    }
+  }
+
+  &__name{
+    .gotham-m;
+    font-size: 20px;
+    color: @black-color;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  &__star{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('../img/icon-star--unchecked.png') no-repeat;
+
+    &:hover{
+      background: url('../img/icon-star.png') no-repeat;
+    }
+
+    &--checked{
+      background: url('../img/icon-star.png') no-repeat;
+    }
+  }
+
+  &__specs-link{
+    .gotham-m;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icon-clinic-specs.png") no-repeat;
+    }
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__docs-link{
+    .gotham-m;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:before{
+      content: "";
+      width: 12px;
+      height: 14px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icon-doc-enroll.png") no-repeat;
+    }
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__info-block{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__show-all{
+    .link-medium;
+    font-size: 13px;
+
+    &:hover{
+      color: lighten(@blue-color, 8);
+    }
+  }
+
+  &__info{
+    .gotham;
+    font-size: 14px;
+    color: @grey-color;
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+
+    &--checked{
+      .gotham-m;
+      color: @black-color;
+    }
+
+    &:before{
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 5px;
+      content: '';
+      vertical-align: middle;
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+
+    &--mappin{
+      &:before{
+        background: url('../img/icon-map-pin.png') no-repeat;
+        top: 3px;
+      }
+    }
+
+    &--worktime{
+      &:before{
+        background: url('../img/icon-worktime.png') no-repeat;
+        top: 3px;
+      }
+    }
+
+    &--subway{
+      &:before{
+        background: url('../img/icon-doc-subway.png') no-repeat;
+      }
+    }
+  }
+
+  &__tab-info{
+    .gotham;
+    font-size: 11px;
+    color: @grey-color-5;
+    display: block;
+    position: relative;
+    padding-left: 15px;
+
+    &--checked{
+      .gotham-m;
+      color: @black-color;
+    }
+
+    &:before{
+      display: inline-block;
+      width: 12px;
+      height: 11px;
+      margin-right: 4px;
+      content: '';
+      vertical-align: middle;
+      position: absolute;
+      left: 0;
+    }
+
+    &--mappin{
+      &:before{
+        background: url('../img/icon-map-pin.png') no-repeat;
+      }
+    }
+
+    &--worktime{
+      &:before{
+        background: url('../img/icon-worktime.png') no-repeat;
+      }
+    }
+
+    &--subway{
+      &:before{
+        background: url('../img/icon-doc-subway.png') no-repeat;
+        top: 2px;
+      }
+    }
+  }
+
+  &__ondoc-support{
+    .gotham;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: @grey-color-5;
+
+    &:before{
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      content: '';
+      vertical-align: middle;
+      background: url(../img/icon-doc--ondocked.png);
+    }
+  }
+}
+
+.clinics-cap{
+  height: 760px;
+
+  &__wrapper{
+    .text-center;
+    margin-top: 115px;
+  }
+
+  &__img{
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    margin-bottom: 10px;
+
+    &--clinics{
+      background: url("../img/icon-clinics-big-grey.png") no-repeat;
+    }
+    &--clinics-my{
+      background: url("../img/icon-clinics-my-big-grey.png") no-repeat;
+    }
+    &--clinics-fave{
+      background: url("../img/icon-clinics-fave-big-grey.png") no-repeat;
+    }
+  }
+
+  &__text{
+    .gotham-m;
+    font-size: 14px;
+    width: 180px;
+    margin: 0 auto;
+    color: @grey-color-2;
+    text-align: center;
+  }
+}
+
+
+//  modal
+.clinics-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+
+  .widgets-block {
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 490px;
+    display: table;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 16px 0 13px 0;
+    //
+    //    top: 50%;
+    //    transform: translate(0%, -50%);
+
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    letter-spacing: -0.019em;
+  }
+
+  &__subtitle {
+    .gotham;
+    font-size: 14px;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    color: rgba(0, 0, 0, .5);
+    outline: none!important;
+    background-color: #fff;
+    letter-spacing: -0.013em;
+  }
+
+  &__line{
+    position: relative;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 8px auto 8px;
+      z-index: 5;
+    }
+
+  }
+
+  &__cmt {
+    .gotham-m;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: -0.013em;
+    margin-bottom: 5px;
+  }
+
+  &__telephone--main {
+      .gotham-m;
+      font-size: 22px;
+      line-height: 25px;
+    margin: 15px 0 20px 0;
+      letter-spacing: -0.019em;
+  }
+
+  &__telephone--another {
+      .gotham-m;
+      font-size: 18px;
+      line-height: 21px;
+      margin: 15px 0 10px 0;
+  }
+
+  &__address {
+    font-size: 11px;
+    margin-right: 15px;
+    display: inline-block;
+    color: @grey-color-6;
+    letter-spacing: -0.013em;
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url(../img/icon-map.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__time {
+    font-size: 11px;
+    margin-right: 15px;
+    display: inline-block;
+    color: @grey-color-6;
+    letter-spacing: -.013em;
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url(../img/icon-worktime.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__text {
+    .gotham-m;
+    font-size: 13px;
+    letter-spacing: -0.013em;
+    margin-bottom: 0;
+  }
+
+  &__place-info {
+    padding-bottom: 28px;
+    letter-spacing: -0.013em;
+  }
+
+}

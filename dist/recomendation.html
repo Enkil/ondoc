@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+    <!-- Общий сблок -->
+    <div class="main-page">
+      <div class="container">
+        <div class="row">
+
+          <!-- Left Sidebar -->
+<aside class="col-xs-7">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active"
+                                                              href="health.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="medkarta.html">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor"
+                                                              href="docs.html">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+            <section class="col-xs-29">
+
+            <div class="main-head row">
+              <div class="breadcrumbs lnh col-xs-9">
+                <a href="index.html" class="back icon-back">Назад</a>
+              </div>
+              <!-- Блок сортировки -->
+              <div class="sorting col-xs-25">
+                <a href="#" class="icon icon-recom current">Рекомендации</a>
+                <a href="#" class="icon icon-checked">Выполненные</a>
+                <a href="#" class="icon icon-cancel">Отмененные</a>
+              </div>
+            </div>
+
+            <div class="widget recomendations-widget">
+              <!-- Верхняя плашка -->
+              <div class="widget-head bottom-line-grey">
+                <p class="complete">15 из 20 выполнено</p>
+                <div class="progress-block">
+                  <div class="progress">
+                    <div class="percent"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Сайдбар с табами -->
+                <div class="col-xs-12 sidebar-list non-padding-right">
+                  <div class="widget-list">
+                    <ul>
+                      <li class="list-item bottom-line-grey">
+                        <p class="name">Пройти флюорографию</p>
+                        <p class="data">до 20 августа 2014</p>
+                      </li>
+                      <li class="list-item bottom-line-grey active">
+                        <p class="name">Сделать УЗИ органов брюшной полости</p>
+                        <p class="data">до 31 сентября 2014</p>
+                      </li>
+                      <li class="list-item bottom-line-grey">
+                        <p class="name">Пройти вакцинацию против Гриппа</p>
+                        <p class="data">до 1 октября 2014</p>
+                      </li>
+                      <li class="list-item bottom-line-grey">
+                        <p class="name">Сдать анализ крови</p>
+                        <p class="data">до 1 ноября 2014</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Блок описания -->
+                <div class="col-xs-23 description-block">
+                  <div class="buttons-block bottom-line-grey">
+                    <div class="row">
+                      <div class="col-xs-12 tal">
+                        <a href="#" class="btn btn-icon btn--check">Выполнено</a>
+                      </div>
+                      <div class="col-xs-12">
+                        <a href="#" class="btn btn-icon btn--record">Записаться на прием</a>
+                      </div>
+                      <div class="col-xs-12 tar">
+                        <a href="#" class="btn btn-icon btn--cancel">Отменить</a>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="header-list">Сделать УЗИ органов брюшной полости</p>
+                  
+                  <section class="time">
+                    <div class="head-line"><span>Выполнить до</span></div>
+                    <a href="#" class="date icon-date">19.05.2014</a>
+                  </section>
+
+                  <section class="clinic">
+                    <div class="head-line"><span>Клиника</span></div>
+                    <a href="#" class="clinic-title">
+                      <p>Современные Mедицинские Tехнологии</p>
+                      <span>Невский пр-т, 120</span>
+                    </a>
+                  </section>
+
+                  <section class="important">
+                    <div class="head-line"><span>Почему важно пройти</span></div>
+                    <ul class="important-list">
+                      <li>Последняя дата прохождения флюорографии  неизвестна</li>
+                      <li>Вы находитесь в группе риска заболеваний легких. Причина: курение</li>
+                    </ul>
+                  </section>
+
+                  <section class="risk">
+                    <div class="head-line"><span>Риск заболевания</span></div>
+                    <p>Отстутствие контроля может привести к следующим последствиям:</p>
+                    <ul class="risk-list">
+                      <li class="col-xs-12">Патология крупных сосудов, диафрагмы</li>
+                      <li class="col-xs-12">Туберкулез</li>
+                      <li class="col-xs-12">Онкозаболевания</li>
+                    </ul>
+                  </section>
+
+                  <section class="diagnosis">
+                    <div class="head-line"><span>О диагностике</span></div>
+                    <p>Применяется для скрининга туберкулеза и злокачественных новообразований лёгких (флюорография органов грудной клетки) , а также для исследования других органов. Также метод флюорографического исследования грудной клетки позволяет выявить патологию костного скелета, сердца, крупных сосудов, диафрагмы.</p>
+                    <p>Для профилактики развития туберкулеза необходима флюорография. Чем раньше будет обнаружена болезнь, тем меньше горя и забот она принесет и заболевшему, и его близким. Без снимка догадаться о наличии начальных форм туберкулеза невозможно, также нереально обнаружить ранние стадии рака легких, своевременное лечение которого весьма эффективно. Так что ФЛГ — это и профилактика запущенного рака легких.</p>
+                  </section>
+
+                  <section class="training">
+                    <div class="head-line"><span>Подготовка</span></div>
+                    <p>Не требуется</p>
+                  </section>
+
+                  <section class="">
+                    <div class="head-line head-line--three">
+
+                      <div class="col-xs-12 tal to-left">
+                        <span>Периодичность</span>
+                      </div>
+                      <div class="col-xs-12">
+                        <span>Длительность</span>
+                      </div>
+                      <div class="col-xs-12 tar to-right">
+                        <span>Стоимость</span>
+                      </div>
+                    </div>
+                    <ul class="list row">
+                      <li class="col-xs-12 tal">1 раз в год</li>
+                      <li class="col-xs-12">5 минут</li>
+                      <li class="col-xs-12 tar">500 - 1500 Р</li>
+                    </ul>
+                  </section>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+    
+</body>
+</html>

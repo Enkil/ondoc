@@ -1,0 +1,476 @@
+// Страница Безопасность
+
+.security-link {
+
+    .link-medium;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 20px 8px 20px;
+    line-height: 16.5px;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s ease background;
+    background-repeat: no-repeat;
+
+     &:hover {
+      background: @blue-color;
+      color: @white-color;
+      text-decoration: none;
+    }
+
+    &:focus{
+      color: @white-color;
+    }
+    &:active{
+      color: @white-color;
+    }
+
+}
+
+.security-label {
+  .gotham;
+    font-size: 14px;
+    color: @grey-color;
+    line-height: 14px;
+    letter-spacing: -0.013em;
+}
+
+.security-email {
+  padding-top: 30px;
+  &__text {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 19px;
+    color: @black-color;
+    margin-top: 9px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+
+  &__delete {
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icon-delete.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+    cursor: pointer;
+  }
+
+}
+
+.security-telephone {
+  &__delete {
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icon-delete.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+  }
+  &__text {
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 9px;
+  }
+}
+
+  
+.security {
+  &__input, &-modal__textarea {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    padding: 7px 14px;
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+
+    // Soft slide-down placeholder
+    .placeholder-effect(20px);
+
+  }
+
+  &__input--error {
+      border: 1px solid @red-color;
+    }
+
+  &-modal__textarea {
+    height: 100px;
+    text-align: left!important;
+  }
+
+  &__line {
+      .line-full-width();
+      margin-top: 25px;
+    }
+
+    &-telephone {
+    padding-top: 10px;
+      &__text {
+        .gotham-m;
+        font-size: 16px;
+        line-height: 19px;
+        color: @black-color;
+        margin-top: 10px;
+      }
+  }
+
+  &-link {
+   &__save {
+      .security-link();
+      border: 1px solid @blue-color;
+      color: @blue-color;
+      &:hover {
+      background: @blue-color;
+      }
+      &:focus{
+        color: @blue-color;
+        background: @white-color;
+      } 
+    }
+
+    &__proove {
+      .security-link();
+      border: 1px solid @orange-color;
+      color: @orange-color;
+      &:hover {
+      background: @orange-color;
+      }
+      &:focus{
+        background: @white-color;
+        color: @orange-color;
+      } 
+
+    }
+
+    &__delete-profile {
+      .security-link();
+      border: 1px solid @red-color;
+      color: @red-color;
+      padding: 6px 20px 4px 31px;
+      background-image: url(../img/icon-trash.png);
+      background-repeat: no-repeat;
+      background-position: 13px 50%;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+      background: @red-color;
+      background-image: url(../img/icon-trash-white.png);
+      background-repeat: no-repeat;
+      background-position: 13px 50%;
+      color: @white-color!important;
+      }
+      &:focus{
+        background: @white-color;
+        color: @red-color;
+      } 
+      
+    }
+  } 
+
+  
+}
+
+.security-authorisation {
+    margin-top: 15px;
+    &__text {
+      margin-top: 5px;
+      .gotham-m;
+      font-size: 17px;
+    }
+
+    &__input{
+	    /* Cначала обозначаем стили для IE8 и более старых версий
+	        т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+	    vertical-align: top;
+	    margin: 0 3px 0 0;
+	    width: 25px;
+	    height: 25px;
+
+	    /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+	        селекторы с плюсом. Показываем, что label кликабелен. */
+	    & + label{  cursor: pointer }
+
+	    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+	        Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+	        в них все нижеследующие стили не сработают. */
+
+	    /* Прячем оригинальный чекбокс. */
+	    &:not(checked) {
+	      position: absolute;
+	      opacity: 0;
+	    }
+
+	    &:not(checked) + label {
+	      position: relative; /* будем позиционировать псевдочекбокс относительно label */
+          padding: 7px 14px 0 0; /* оставляем справа от label место под псевдочекбокс */
+	    }
+
+	    /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+	    &:not(checked) + label:before {
+	      content: '';
+	      position: absolute;
+	      top: 0;
+	      bottom: 0;
+	      right: 0;
+	      width: 44px;
+	      height: 27px;
+	      border-radius: 13px;
+	      background: @grey-color-2;
+	    }
+
+      /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+	    &:not(checked) + label:after {
+	      content: '';
+	      position: absolute;
+	      top: 1px;
+	      right: 18px;
+	      width: 24px;
+	      height: 24px;
+	      border-radius: 50%;
+	      background: @white-color;
+	      transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+	    }
+
+	    /* Меняем фон чекбокса, когда он включен. */
+	//    &:checked + label:before {
+	//      background: #9FD468;
+	//    }
+
+	    /* Сдвигаем переключатель чекбокса, когда он включен. */
+	    &:checked + label:after {
+	      right: 2px;
+	    }
+
+	    /* Меняем фон для включенного состояния */
+	    &:checked + label:before {
+	      background: @blue-color;
+	    }
+
+	    & + label{
+	      .gotham;
+	      font-size: 14px;
+	      line-height: 14px;
+	      margin-right: 15px;
+	      margin-left: 20px;
+	    }
+
+      // & + label.security-authorisation__label--unchecked {
+      //   display: none;
+      // }
+	  }
+
+	 &__label--unchecked {
+	 	color: @red-color;
+	  font: 12.5px/20px sans-serif;
+	  letter-spacing: 1px;
+	  outline: none;
+	  position: relative;
+	  top: 6px;
+	 }
+
+	 &__label--checked {
+	  display: none;
+	  color: @black-color;
+	  font: 12.5px/20px sans-serif;
+	  letter-spacing: 1px;
+	  outline: none;
+	  position: relative;
+	  top: 6px;
+	 }
+
+
+  }
+
+.security-password {
+    margin-bottom: 17px;
+    margin-top: 10px;
+  }
+
+
+
+
+input, input:visited, input:focus, input:before, input:after {
+	  outline:0;
+	  outline: none;
+	 -moz-outline: none;
+	 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+// modal window
+
+.security-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+
+  .widgets-block {
+    position: fixed;
+    text-align: center;
+    z-index: 500;
+    right: 0;
+    bottom: 0;
+    width: 480px;
+    display: table;
+    margin: auto;
+    padding: 40px 0 20px;
+    border-radius: 6px;
+    background-color: #fff;
+
+    left: 0;
+    top: 0;
+    //    top: 50%;
+    //    transform: translate(0%, -50%);
+
+    form {
+      height: 100%;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url(../img/icon-modal-close.png) no-repeat;
+  }
+
+  &__title {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  // прописываем правила для отступов заголовков отключения
+
+  &__email-disconnect .security-modal__title, &__telephone-disconnect.security-modal__title {
+    margin-bottom: 35px;
+  }
+
+  &__btn--cancel {
+      .security-link();
+      padding: 10px 25px 8px;
+      border: 1px solid @blue-color;
+      color: @blue-color;
+      &:hover {
+      background: @blue-color;
+      }
+      &:focus {
+        background: @blue-color;
+        color: @white-color;
+      }
+  }
+  &__btn--disconnect {
+      .security-link();
+      padding: 10px 25px 8px;
+      border: 1px solid @red-color;
+      color: @red-color;
+      &:hover {
+      background: @red-color;
+      }
+      &:focus {
+        color: @white-color;
+        background: @red-color;
+      }
+  }
+
+  &__btn--proove {
+      .security-link();
+      padding: 10px 25px 8px;
+      border: 1px solid @blue-color;
+      color: @blue-color;
+      &:hover {
+      background: @blue-color;
+      }
+      &:focus {
+        background: @blue-color;
+        color: @white-color;
+      }
+  }
+
+  &__input {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: block;
+    padding: 7px 14px;
+    .gotham;
+    font-size: 14px;
+    color: @black-color;
+    resize: none;
+    outline: none;
+    text-overflow: ellipsis;
+    transition: height 0.2s;
+    max-height: 250px;
+    margin-bottom: 15px;
+
+    .placeholder-effect(22px);
+  }
+
+  &__description {
+    .gotham;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+  &__error-message {
+    .gotham;
+    font-size: 14px;
+    line-height: 17px;
+    color: @red-color;
+  }
+
+  &__link-send {
+    .gotham;
+    font-size: 15px;
+    color: @blue-color;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__text--success {
+    .gotham-m;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  &__icon{
+    margin: 0 auto;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+    &--success{
+      background: url("../img/icon-success.png") no-repeat;
+    }
+  }
+}
+
+
+

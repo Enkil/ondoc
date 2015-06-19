@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONDOC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова">
+
+    <meta viewport="width=device-width, initial-scale=.9, minimum-scale=.9" />
+
+    <meta property="og:title" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:site_name" content="OnDoc - Персональное здравоохранение"/>
+    <meta property="og:url" content="http://ondoc.me"/>
+    <meta property="og:description" content="Крактое описание страницы в микроразметке"/>
+    <meta name="description" content="Крактое описание страницы в микроразметке"/>
+    <meta property="og:image" content="путь к изображению, которое должно быьт определено через микроразметку (шаринг в соцсети, сниппит в поисковых системах и т.д."/>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico.png"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="inner-body">
+
+<!-- PAGE HEADER -->
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col-xs-7">
+                <a class="main-header__link" href="main.html" title="OnDoc - Персональное здравоохранение">
+                    <img src="img/ondoc-logo.png" alt="OnDoc - Персональное здравоохранение"/>
+                </a>
+            </div>
+
+            <!-- Question -->
+            <div class="col-xs-16">
+                <a href="#" class="main-header__link main-header__question">Поддержка пользователей</a>
+            </div>
+
+            <!-- Profile -->
+            <div class="col-xs-13 pull-right">
+                <div class="dropdown pull-right">
+
+                    <img class="main-header__avatar" src="img/avatar.png" alt="Смирнов Иван"/>
+
+                    <a class="main-header__link main-header__dropdown-toggle">Смирнов Иван</a>
+
+                    <!-- Dropdown menu-->
+                    <div class="main-header__dropdown display-none">
+                        <ul>
+                            <li><a class="main-header__dropdown-link" href="health.html">Личный кабинет</a></li>
+                            <li><a class="main-header__dropdown-link main-header__dropdown-link--active"
+                                   href="profile__main.html">Настройки</a></li>
+                            <li><a class="main-header__dropdown-link" href="">Выход</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Dropdown menu-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- / PAGE HEADER -->
+
+    <!-- Общий сблок -->
+    <div class="main-page">
+      <div class="container">
+        <!--<div class="row main-row-customize">-->
+        <div class="row">
+
+          <!-- Left Sidebar -->
+<aside class="col-xs-7">
+                <div class="sidebar">
+
+                    <!-- Profile -->
+                    <div class="sidebar__profile bottom-line-light text-center">
+                        <img class="sidebar__avatar img-responsive" src="img/me.jpg" alt="Смирнов Иван" title="Смирнов Иван"/>
+                        <p class="sidebar__name">Смирнов Иван</p>
+                    </div>
+                    <!-- / Profile -->
+
+                    <!-- Menu -->
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active"
+                                                              href="health.html">Состояние здоровья</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--monitor" href="monitoring.html">Монитор показателей</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--cart" href="medkarta.html">Медицинская карта</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--data" href="">Медицинские данные</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--doctor"
+                                                              href="docs.html">Врачи и клиники</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--bonus" href="">ВитаБонус</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Menu -->
+                </div>
+            </aside>
+            <!-- / Left Sidebar -->
+
+
+            <!-- Right page block with mini widgets -->
+            <div class="col-xs-29">
+                <div class="row">
+
+                    <!-- Mini widget - Pulse -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__special">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--pulse tooltip-custom" href="monitoring-in--pulse.html" data-toggle="tooltip" data-placement="top" title="Пульс">Пульс</a>
+                                <a class="monitoring-widget__add-btn tooltip-custom" href="#" data-toggle="tooltip" data-placement="bottom" title="Добавить новое показание"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period tooltip-custom" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart">
+                                    <img src="img/mini-graph.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center pos-rel">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="115"/>
+                                        <p class="monitoring-widget__value-description">уд/мин</p>
+                                    </div>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Pressure -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__special">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--pressure " href="monitoring-in--pressure.html">Давление</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart">
+                                    <img src="img/mini-graph.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="130"/>
+                                        <p class="monitoring-widget__value-description">Систола</p>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-slash">/</span>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="100"/>
+                                        <p class="monitoring-widget__value-description">Диастола</p>
+                                    </div>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Weight -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__special">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--weight " href="monitoring-in--weight.html">Вес</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart">
+                                    <img src="img/mini-graph.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="80"/>
+                                        <p class="monitoring-widget__value-description">кг</p>
+                                    </div>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Sugar -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__sugar">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--sugar" href="monitoring-in--sugar.html">Сахар</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right pos-rel">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Sugar shedule -->
+                            <div class="monitoring-widget__sugar-shedule">
+                                <div class="row">
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--sun"></p>
+                                        <p>Утром</p>
+                                    </div>
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--eat"></p>
+                                        <p>До еды</p>
+                                    </div>
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--food"></p>
+                                        <p>После еды</p>
+                                    </div>
+                                    <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                        <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--moon"></p>
+                                        <p>Вечером</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Sugar shedule -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart monitoring-widget__chart--less">
+                                    <img src="img/mini-graph-2.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center pos-rel">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+
+                                <!-- Sugar shedule -->
+                                <div class="monitoring-widget__sugar-shedule monitoring-widget__sugar-shedule--add-value">
+                                    <div class="row">
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--sun"></p>
+                                            <p>Утром</p>
+                                        </div>
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--eat"></p>
+                                            <p>До еды</p>
+                                        </div>
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--food"></p>
+                                            <p>После еды</p>
+                                        </div>
+                                        <div class="monitoring-widget__sugar-shedule-block col-xs-9">
+                                            <p class="monitoring-widget__sugar-shedule-icon monitoring-widget__sugar-shedule-icon--moon"></p>
+                                            <p>Вечером</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / Sugar shedule -->
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--sugar" type="text" value="4"/>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-comma">,</span>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--sugar" type="text" value="6"/>
+                                    </div>
+
+                                    <p class="monitoring-widget__value-description">ммоль/л</p>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Temperature -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__special">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--temperature " href="monitoring-in--temperature.html">Температура</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart">
+                                    <img src="img/mini-graph.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="36"/>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-comma">,</span>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="6"/>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-degree"></span>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Cholesterol -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__cholesterol">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--cholesterol" href="monitoring-in--cholesterol.html">Холестерин</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- cholesterol shedule -->
+                            <div class="row">
+                                <div class="monitoring-widget__chol-shedule col-xs-36">
+
+                                    <a href="#" class="js-chol-find monitoring-widget__chol-shedule-link monitoring-widget__chol-shedule--active">Общий</a>
+
+
+                                    <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ЛПНП</a>
+
+
+                                    <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ЛПВП</a>
+
+                                    <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ТГ</a>
+
+                                </div>
+                            </div>
+                            <!-- / cholesterol shedule -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart monitoring-widget__chart--less">
+                                    <img src="img/mini-graph-2.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- cholesterol shedule -->
+                                <div class="row">
+                                    <div class="monitoring-widget__chol-shedule monitoring-widget__chol-shedule--add-value col-xs-36">
+
+                                                <a href="#" class="js-chol-find monitoring-widget__chol-shedule-link monitoring-widget__chol-shedule--active">Общий</a>
+
+                                                <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ЛПНП</a>
+
+                                                <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ЛПВП</a>
+
+                                                <a class="js-chol-find monitoring-widget__chol-shedule-link" href="#">ТГ</a>
+
+                                    </div>
+                                </div>
+                                <!-- / cholesterol shedule -->
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--chol" type="text" value="3"/>
+                                    </div>
+
+                                    <span class="monitoring-widget__values-comma">,</span>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add monitoring-widget__value-add--chol" type="text" value="4"/>
+                                    </div>
+
+                                    <p class="monitoring-widget__value-description">ммоль/л</p>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                    <!-- Mini widget - Height -->
+                    <div class="col-xs-12">
+
+                        <div class="monitoring-widget monitoring-widget__special">
+
+                            <!-- Mini widget header -->
+                            <div class="monitoring-widget__header">
+
+                                <a class="monitoring-widget__title monitoring-widget__title--height" href="monitoring-in--height.html">Рост</a>
+                                <a class="monitoring-widget__add-btn" href="#"></a>
+
+                            </div>
+                            <!-- / Mini widget header -->
+
+                            <!-- Mini widget subheader -->
+                            <div class="monitoring-widget__subheader">
+
+                                <!-- Period type -->
+                                <div class="pull-left">
+                                    <a class="monitoring-widget__period" href="#">Месяц</a>
+
+                                    <!-- Select period dropdown -->
+                                    <div class="monitoring-widget__dropdown display-none">
+                                        <ul>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">День</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link monitoring-widget__dropdown-link--active" href="">Месяц</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Год</a></li>
+                                            <li><a class="monitoring-widget__dropdown-link" href="">Период</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- / Select period dropdown -->
+
+                                </div>
+                                <!-- / Period type-->
+
+                                <!-- Period -->
+                                <div class="pull-right">
+                                    <a class="monitoring-widget__date" href="#">21/05/2014 - 21/06/2014</a>
+
+                                    <!-- Datepicker -->
+<section class="datepicker">
+    <input class="datepicker__input" type="text" value="11.05.2015"/>
+    <hr class="datepicker__hr"/>
+
+    <div class="datepicker__month">
+        <a href="#" class="datepicker__arrow pull-left"></a>
+        <span class="datepicker__month-item">Январь, 2015</span>
+        <a href="#" class="datepicker__arrow datepicker__arrow--right pull-right"></a>
+    </div>
+
+    <!-- Week days-->
+    <table border="0" class="datepicker__table">
+        <tr class="datepicker__table-head">
+            <td>пн</td>
+            <td>вт</td>
+            <td>ср</td>
+            <td>чт</td>
+            <td>пт</td>
+            <td>сб</td>
+            <td>вс</td>
+        </tr>
+    </table>
+
+    <!-- Month days -->
+    <table border="0" class="datepicker__table">
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">3</td>
+            <td class="datepicker__table-item">4</td>
+            <td class="datepicker__table-item">5</td>
+            <td class="datepicker__table-item">6</td>
+            <td class="datepicker__table-item">7</td>
+            <td class="datepicker__table-item">8</td>
+            <td class="datepicker__table-item">9</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">10</td>
+            <td class="datepicker__table-item datepicker__table-item--active">11</td>
+            <td class="datepicker__table-item">12</td>
+            <td class="datepicker__table-item">13</td>
+            <td class="datepicker__table-item">14</td>
+            <td class="datepicker__table-item">15</td>
+            <td class="datepicker__table-item">16</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">17</td>
+            <td class="datepicker__table-item">18</td>
+            <td class="datepicker__table-item">19</td>
+            <td class="datepicker__table-item datepicker__table-item--current">20</td>
+            <td class="datepicker__table-item">21</td>
+            <td class="datepicker__table-item">22</td>
+            <td class="datepicker__table-item">23</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">24</td>
+            <td class="datepicker__table-item">25</td>
+            <td class="datepicker__table-item">26</td>
+            <td class="datepicker__table-item">27</td>
+            <td class="datepicker__table-item">28</td>
+            <td class="datepicker__table-item">29</td>
+            <td class="datepicker__table-item">30</td>
+        </tr>
+
+        <tr class="datepicker__table-row">
+            <td class="datepicker__table-item">31</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">1</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">2</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">3</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">4</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">5</td>
+            <td class="datepicker__table-item datepicker__table-item--nextmonth">6</td>
+        </tr>
+
+    </table>
+
+    <div class="datepicker__time datepicker__time--left-m">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="11"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">ч</span>
+
+    <div class="datepicker__time">
+        <a href="#" class="datepicker__arrow datepicker__arrow--up"></a>
+        <input class="datepicker__time-input" type="text" value="05"/>
+        <a href="#" class="datepicker__arrow datepicker__arrow--down"></a>
+    </div>
+
+    <span class="datepicker__time-char">м</span>
+
+    <hr class="datepicker__hr datepicker__hr--last"/>
+
+    <div class="datepicker__buttons">
+        <a class="datepicker__btn datepicker__btn--exit" href=""></a>
+        <a class="datepicker__btn datepicker__btn--ok" href=""></a>
+    </div>
+
+</section>
+
+                                </div>
+                                <!-- / Period -->
+
+                            </div>
+                            <!-- / Mini widget subheader -->
+
+                            <!-- Mini widget body -->
+                            <div class="monitoring-widget__body">
+                                <div class="monitoring-widget__chart">
+                                    <img src="img/mini-graph.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Mini widget body -->
+
+                            <!-- Mini-widget Add value state -->
+                            <div class="monitoring-widget__value-body display-none">
+
+                                <div class="text-center">
+                                    <p class="monitoring-widget__value-title">Добавить показание</p>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="monitoring-widget__date arrow-down" href="#">21/05/2014</a>
+                                </div>
+
+                                <!-- Add values block -->
+                                <div class="text-center monitoring-widget__values">
+
+                                    <p class="monitoring-widget__value--error display-none">Недопустимое значение
+                                        Недопустимое значение</p>
+
+                                    <div class="text-center monitoring-widget__values-inline">
+                                        <input class="monitoring-widget__value-add" type="text" value="165"/>
+                                        <p class="monitoring-widget__value-description">см</p>
+                                    </div>
+
+                                    <p class="monitoring-widget__value-description"></p>
+
+                                </div>
+                                <!-- / Add values block -->
+
+                                <div class="text-center monitoring-widget__buttons">
+                                    <a class="monitoring-widget__close pull-left" href=""></a>
+                                    <a class="monitoring-widget__save pull-right" href=""></a>
+                                </div>
+
+                            </div>
+                            <!-- / Mini-widget Add value state -->
+
+                        </div>
+
+                    </div>
+                    <!-- / Mini widget -->
+
+                </div>
+
+                <!-- Settings -->
+<div class="col-xs-36 health-settings">
+    <a class="health-settings__link" href="#">Настроить блоки</a>
+
+    <div class="settings display-none">
+
+    <div class="settings__bg"></div>
+
+    <div class="settings__modal">
+
+
+        <form action="">
+
+            <p class="settings__title">Настройка виджетов</p>
+
+            <div class="settings__body">
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-1" class="settings__input" checked/>
+                    <label for="check-1" class="settings__label">
+                        <i class="settings__icon settings__icon--pulse"></i>
+                        <span class="settings__name">Пульс</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-2" class="settings__input" checked/>
+                    <label for="check-2" class="settings__label">
+                        <i class="settings__icon settings__icon--pressure"></i>
+                        <span class="settings__name">Давление</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-3" class="settings__input"/>
+                    <label for="check-3" class="settings__label">
+                        <i class="settings__icon settings__icon--weight"></i>
+                        <span class="settings__name">Вес</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-4" class="settings__input" checked/>
+                    <label for="check-4" class="settings__label">
+                        <i class="settings__icon settings__icon--temp"></i>
+                        <span class="settings__name">Температура</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item settings__item--disabled">
+                    <input type="checkbox" id="check-5" class="settings__input" disabled/>
+                    <label for="check-5" class="settings__label">
+                        <i class="settings__icon settings__icon--sugar"></i>
+                        <span class="settings__name">Сахар</span>
+                    </label>
+                </div>
+
+                <!-- Settings item -->
+                <div class="settings__item">
+                    <input type="checkbox" id="check-6" class="settings__input"/>
+                    <label for="check-6" class="settings__label">
+                        <i class="settings__icon settings__icon--cholesterol"></i>
+                        <span class="settings__name">Холестерин</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="row">
+                <div class="col-xs-36 text-center">
+                    <input type="submit" class="widget-btn widget-btn--submit-no" value="Отмена">
+                    <input type="submit" class="widget-btn widget-btn--submit-yes" value="OK">
+                </div>
+            </div>
+
+            <span class="settings__close"></span>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+</div>
+
+            </div>
+            <!-- / Right page block with mini widgets -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <p class="col-xs-36 main-footer__copyright text-center">OnDoc — система персонального здравоохранения</p>
+            </div>
+        </div>
+    </footer>
+    <!-- / PAGE FOOTER-->
+
+    <!-- JavaScript-->
+    <script src="js/main.min.js"></script>
+    <!-- / JavaScript -->
+
+
+</body>
+</html>
